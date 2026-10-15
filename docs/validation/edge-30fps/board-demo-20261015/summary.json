@@ -1,0 +1,25 @@
+{
+  "version": "edge-30fps",
+  "build_id": "0x6010100a",
+  "final_load": "PASS",
+  "capture_fps": 29.98236331569665,
+  "process_fps": 29.730410682791636,
+  "initial_compare_picture_confirmed_by_user": true,
+  "other_functions_visual_acceptance": "pending user inspection",
+  "settings": {
+    "ui_view": 3,
+    "ui_focus": 0,
+    "algorithm": 0,
+    "threshold_shown": 32,
+    "ui_median": 1,
+    "recognition": 0,
+    "frame_mode": 0
+  },
+  "counter_deltas": {
+    "errors": 0,
+    "underflow_cycles": 0,
+    "mixed_words": 0,
+    "frame_bus_errors": 0,
+    "failed_frames": 0
+  }
+}

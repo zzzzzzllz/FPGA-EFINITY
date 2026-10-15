@@ -1,0 +1,581 @@
+{
+  "repository_path": "D:\\Desktop_New\\EfinityNEW",
+  "revision": "7965d09946ef54ca2f48ce9775d4d630cff5f50a",
+  "reason": "Local Git has no remote origin; Archify repository URL contract cannot represent this repository without inventing a remote. Sources recorded separately.",
+  "nodes": [
+    {
+      "id": "root",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-30fps.md",
+          "line": 3,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "keys",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "reset",
+      "sources": [
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 51,
+          "end_line": 55
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 79,
+          "end_line": 89
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "hold",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 1,
+          "end_line": 34
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-30fps/ti60f225_oob.sdc",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "id": "adjust",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-30fps/rtl/threshold_control.v",
+          "line": 24,
+          "end_line": 44
+        }
+      ]
+    },
+    {
+      "id": "menus",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "menu_view",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "algo",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_algorithm_pair.v",
+          "line": 20,
+          "end_line": 48
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store.v",
+          "line": 80,
+          "end_line": 105
+        }
+      ]
+    },
+    {
+      "id": "threshold",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/threshold_control.v",
+          "line": 38,
+          "end_line": 58
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m09-canny.md",
+          "line": 13,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "id": "median",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_algorithm_pair.v",
+          "line": 20,
+          "end_line": 24
+        }
+      ]
+    },
+    {
+      "id": "recognition",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m10-shapes.md",
+          "line": 5,
+          "end_line": 11
+        }
+      ]
+    },
+    {
+      "id": "frame",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "views",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        }
+      ]
+    },
+    {
+      "id": "gray",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 46,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "edge",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 46,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 46,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "denoise",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 46,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "overlay",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 46,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "reference",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/compare_display.v",
+          "line": 39,
+          "end_line": 61
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        },
+        {
+          "path": "docs/design/stages/edge-m08-frames.md",
+          "line": 46,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "actions",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/threshold_osd.v",
+          "line": 60,
+          "end_line": 67
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "cancel",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "step",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "play",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "pause",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "setref",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "live",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "clearref",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 130,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/edge_ui.v",
+          "line": 63,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/ti60f225_oob_top.v",
+          "line": 642,
+          "end_line": 680
+        }
+      ]
+    },
+    {
+      "id": "capture",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/ti60f225_oob_top.v",
+          "line": 853,
+          "end_line": 894
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/frame_store.v",
+          "line": 115,
+          "end_line": 144
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store_control.v",
+          "line": 174,
+          "end_line": 206
+        }
+      ]
+    },
+    {
+      "id": "processing",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/ti60f225_oob_top.v",
+          "line": 900,
+          "end_line": 905
+        },
+        {
+          "path": "coding/edge-30fps/rtl/frame_store.v",
+          "line": 80,
+          "end_line": 105
+        }
+      ]
+    },
+    {
+      "id": "display",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/ti60f225_oob_top.v",
+          "line": 974,
+          "end_line": 979
+        },
+        {
+          "path": "coding/edge-30fps/rtl/ti60f225_oob_top.v",
+          "line": 1017,
+          "end_line": 1020
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "sources": [
+        {
+          "path": "coding/edge-30fps/rtl/ti60f225_oob_top.v",
+          "line": 605,
+          "end_line": 613
+        },
+        {
+          "path": "coding/edge-30fps/rtl/threshold_control.v",
+          "line": 38,
+          "end_line": 58
+        }
+      ]
+    }
+  ]
+}

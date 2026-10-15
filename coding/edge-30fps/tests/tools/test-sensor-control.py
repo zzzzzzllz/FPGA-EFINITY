@@ -74,7 +74,7 @@ with patch.object(sc.time, 'sleep'):
     sensor.mismatch = True
     rejects(lambda: sc.apply(sensor, baseline, 900), RuntimeError)
     with tempfile.TemporaryDirectory() as directory:
-        path = Path(directory)/'saved.json'
+        path = Path(directory)/'sensor-history'/'saved.json'
         sc.save(path, baseline)
         rejects(lambda: sc.save(path, baseline), FileExistsError)
 print('PASS O1: grouped updates, six exposure values, restore, invalid input, NACK and readback mismatch')

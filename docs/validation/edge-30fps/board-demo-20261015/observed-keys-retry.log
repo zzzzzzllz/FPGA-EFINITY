@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Desktop_New\EfinityNEW\coding\edge-30fps\control.py", line 91, in <module>
+    debug = manager.create_debug_session(session, profile)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Efinity/pgm/bin\efx_pgm\efx_hw_manager.py", line 584, in create_debug_session
+    raise exc
+  File "D:\Efinity/pgm/bin\efx_pgm\efx_hw_manager.py", line 581, in create_debug_session
+    JtagManager().validate_debug_cores(dbg_sesh)
+  File "D:\Efinity/debugger/bin\efx_dbg\jtag.py", line 2216, in validate_debug_cores
+    raise EfxDbgMisMatchCoreUUIDError('Debug Core UUID mismatch, Please check if the device is programmed with correct bitstream.', \
+efx_dbg.exception.EfxDbgMisMatchCoreUUIDError: Debug Core UUID mismatch, Please check if the device is programmed with correct bitstream.

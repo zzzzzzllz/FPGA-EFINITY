@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "diagram_type": "tree",
+  "meta": {
+    "title": "第一版上板导览：按键、画面与架构",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "tools/archify/edge-30fps-guide-20261015/guide.html"
+  },
+  "layout": {
+    "direction": "right"
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "label": "第一版：原完整边缘系统",
+      "sublabel": "edge-30fps · 0x6010100a"
+    },
+    {
+      "id": "keys",
+      "label": "先认四个按键",
+      "sublabel": "看屏幕底部菜单，决定 KEY2 / KEY3 的作用",
+      "parent": "root"
+    },
+    {
+      "id": "reset",
+      "label": "KEY0：系统复位",
+      "sublabel": "演示中无需按；复位会清掉录制和参考帧状态",
+      "parent": "keys"
+    },
+    {
+      "id": "next",
+      "label": "KEY1 短按：下一菜单",
+      "sublabel": "到 FRAME 时，短按执行选中动作，再回 VIEW",
+      "parent": "keys"
+    },
+    {
+      "id": "hold",
+      "label": "KEY1 长按约 0.8 秒",
+      "sublabel": "实时／录制时冻结；冻结／回放时恢复实时",
+      "parent": "keys"
+    },
+    {
+      "id": "adjust",
+      "label": "KEY2 减／关，KEY3 加／开",
+      "sublabel": "阈值长按可连调；其他项每次按下切换一次",
+      "parent": "keys"
+    },
+    {
+      "id": "menus",
+      "label": "菜单顺序与作用",
+      "sublabel": "KEY1 依次前进；Sobel 自动跳过 LOW RATIO",
+      "parent": "root"
+    },
+    {
+      "id": "menu_view",
+      "label": "1 · VIEW",
+      "sublabel": "KEY2 上一视图，KEY3 下一视图；循环选择",
+      "parent": "menus"
+    },
+    {
+      "id": "algo",
+      "label": "2 · ALGORITHM",
+      "sublabel": "KEY2 = Sobel；KEY3 = Canny。Canny做细化与连通筛选",
+      "parent": "menus"
+    },
+    {
+      "id": "threshold",
+      "label": "3 · THRESHOLD",
+      "sublabel": "KEY2 −16，KEY3 +16；增大通常减少边缘，减小会保留更多纹理",
+      "parent": "menus"
+    },
+    {
+      "id": "ratio",
+      "label": "4 · LOW RATIO，仅 Canny",
+      "sublabel": "循环 1/4、1/2、3/4；小比例允许更多相连弱边",
+      "parent": "menus"
+    },
+    {
+      "id": "median",
+      "label": "5 · MEDIAN",
+      "sublabel": "KEY2 关，KEY3 开；中值抑制孤立噪点，也可能损失细纹理",
+      "parent": "menus"
+    },
+    {
+      "id": "recognition",
+      "label": "6 · RECOGNITION",
+      "sublabel": "KEY2 关，KEY3 开；圆／矩形分类和最多4个框，处理速度可能下降",
+      "parent": "menus"
+    },
+    {
+      "id": "frame",
+      "label": "7 · FRAME",
+      "sublabel": "KEY2 / KEY3 选动作，KEY1 短按才执行",
+      "parent": "menus"
+    },
+    {
+      "id": "views",
+      "label": "VIEW：画面怎么变",
+      "sublabel": "循环含 COLOR 原图；本次不单独演示 COLOR",
+      "parent": "root"
+    },
+    {
+      "id": "gray",
+      "label": "GRAY · 灰度",
+      "sublabel": "全屏黑白亮度图，保留明暗层次",
+      "parent": "views"
+    },
+    {
+      "id": "edge",
+      "label": "EDGE · 边缘",
+      "sublabel": "全屏二值边缘，黑底白线",
+      "parent": "views"
+    },
+    {
+      "id": "compare",
+      "label": "COMPARE · 同帧对比",
+      "sublabel": "左侧原灰度，右侧边缘；两侧均保留完整视野",
+      "parent": "views"
+    },
+    {
+      "id": "denoise",
+      "label": "DENOISE · 去噪对比",
+      "sublabel": "左侧原灰度，右侧滤波灰度；配合 MEDIAN 开关",
+      "parent": "views"
+    },
+    {
+      "id": "overlay",
+      "label": "OVERLAY · 红边叠加",
+      "sublabel": "彩色画面上叠加红色边缘",
+      "parent": "views"
+    },
+    {
+      "id": "reference",
+      "label": "REFERENCE · 参考对比",
+      "sublabel": "先 SET REF；左参考灰度，右当前灰度。无参考时跳过此项",
+      "parent": "views"
+    },
+    {
+      "id": "actions",
+      "label": "FRAME：选中后按 KEY1",
+      "sublabel": "动作名称与屏幕上的英文一致",
+      "parent": "root"
+    },
+    {
+      "id": "cancel",
+      "label": "CANCEL",
+      "sublabel": "退出菜单，不执行帧操作",
+      "parent": "actions"
+    },
+    {
+      "id": "step",
+      "label": "STEP LIVE",
+      "sublabel": "从摄像头取一张新帧，随后冻结；与片段 NEXT 区分",
+      "parent": "actions"
+    },
+    {
+      "id": "record",
+      "label": "RECORD 32",
+      "sublabel": "覆盖旧片段，录制32帧；录满后停在首帧",
+      "parent": "actions"
+    },
+    {
+      "id": "play",
+      "label": "PLAY LOOP",
+      "sublabel": "循环播放已录片段；须先录制",
+      "parent": "actions"
+    },
+    {
+      "id": "pause",
+      "label": "PAUSE / NEXT CLIP",
+      "sublabel": "PAUSE 停在显示帧；NEXT CLIP 前进到片段下一帧",
+      "parent": "actions"
+    },
+    {
+      "id": "setref",
+      "label": "SET REF",
+      "sublabel": "把当前显示原帧设为参考；再去 VIEW 选 REFERENCE",
+      "parent": "actions"
+    },
+    {
+      "id": "live",
+      "label": "LIVE",
+      "sublabel": "返回实时摄像头画面",
+      "parent": "actions"
+    },
+    {
+      "id": "clearref",
+      "label": "CLEAR REF",
+      "sublabel": "清除参考；REFERENCE 视图随之退回 COMPARE",
+      "parent": "actions"
+    },
+    {
+      "id": "architecture",
+      "label": "项目架构：谁负责什么",
+      "sublabel": "这些分支是模块职责，下面卡片说明数据流",
+      "parent": "root"
+    },
+    {
+      "id": "capture",
+      "label": "采集与颜色恢复",
+      "sublabel": "SC431HAI → RAW10 → raw_full_view → RGB与灰度",
+      "parent": "architecture"
+    },
+    {
+      "id": "memory",
+      "label": "DDR 与帧管理",
+      "sublabel": "frame_store：保存原帧、录放、参考帧，调度算法并发布完整结果",
+      "parent": "architecture"
+    },
+    {
+      "id": "processing",
+      "label": "Sobel / Canny / 识别",
+      "sublabel": "edge_algorithm_pair 做局部算子；DDR侧完成连通处理和形状识别",
+      "parent": "architecture"
+    },
+    {
+      "id": "display",
+      "label": "画面合成与 HDMI",
+      "sublabel": "compare_display 合成视图，threshold_osd 叠菜单与识别信息",
+      "parent": "architecture"
+    },
+    {
+      "id": "control",
+      "label": "按键与电脑控制",
+      "sublabel": "edge_ui 管菜单；threshold_control 管阈值；JTAG可设置同类参数",
+      "parent": "architecture"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "第一次按键路线",
+      "items": [
+        "初始为 COMPARE / Sobel / T=32 / 中值开 / 识别关。短按 KEY1 一次到 ALGORITHM，按 KEY3 切 Canny。",
+        "长按 KEY1 冻结，再短按到 THRESHOLD，用 KEY2 / KEY3 调阈值；同一原帧会重新计算，便于比较。"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "实际数据流",
+      "items": [
+        "摄像头采集的原帧先进入 DDR；帧管理器把选定原帧送给算法，结果完整后才发布给显示。",
+        "实时、冻结和回放共用算法。HDMI显示刷新与摄像头采集、算法完成帧率是三个不同的计数。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "观察效果时",
+      "items": [
+        "功能切换效果随场景变化。打开识别不保证30帧；板上计数正常也不能代替你对画面效果的判断。",
+        "曝光只能用电脑控制入口设置，没有板载按键菜单。当前加载入口恢复配套约20ms曝光。",
+        "KEY0复位不等同重新运行load.cmd；演示中优先用KEY1长按返回实时。"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 当前操作以for-reader内的文档为准。validation保存某次验证的原始结果，design/stages保存对应阶段的技术细节；其中的历史路径不是当前加载入口。
 
 - [使用指南](for-reader/usage.md)：四个版本怎么构建、测试、烧录和控制。
+- [第一版按键与效果导览](for-reader/versions/edge-30fps-demo.md)：原完整边缘版的上板检查顺序和思维导图。
 - [版本与目录说明](for-reader/project-structure-audit.md)：功能差异、目录边界与已知问题。
 - [术语](for-reader/GLOSSARY.md)：帧率、全视野、默认关闭和验收状态。
 - [当前系统结构](design/architecture.md)：采集、算法、存储、显示和控制的关系。
