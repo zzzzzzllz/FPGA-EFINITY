@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "seconds": 1123.1704189777374,
+  "log": "final-canny.log",
+  "sha256": "7e26ce9c87d46ca87e20eb841b5c9fbba45f8b228402e280efe68022ff0294a7",
+  "source_hashes": {
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\frame_store.v": "0c99e04e55798c37f65315681ecc2f5efa495982dd50ea3e7b7a28369866c371",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\frame_store_control.v": "66ef59c1a86643002394c12d4c0f6a662e36767d8f52e0232fbcda4576f0ba98",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\frame_store_dma.v": "3d6bda3b5fe916fc1af380d1dc28eb7717272b64e3ae25d117bcabad96ac28f0",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\frame_pair_fifo.v": "0bb14afc8957eaf124413d2bbc3abad2c8d5b88c9eed976953a3b652e3651ce1",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\frame_mailbox.v": "0303cc53abd4b82e1cce65a6bb7a5b53b4dcdbeaf43223dd5018732aa2e7ade5",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\frame_buffer_V4\\DC_FIFO.v": "d930fed56a5c7e80733ec600f05d19923b86d0fd0b71dbb643c66d88cbe17847",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\median_pair.v": "d90d76c508b4c7fcb5b603b5a0aa21a543ab1a75fe4443eb20fa236416fa2b92",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\gaussian_pair.v": "e7bef78824d7244712abe8b438fd64a8a2412bccf930ab386a688f2567a89574",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\sobel_pair.v": "1022ce5489b360c69de84a95af7051ec27faaa77c0440efa98e0c0f997105dd7",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\canny_nms_pair.v": "174b8f67f892b0774cb306f4acf5284a11738b451b96e8c611c2880b80968a9f",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\edge_algorithm_pair.v": "0802f0802f12d43a00ecb7a80bc2e19dc1e121dde8f8d97c8e6b4817e5b0b750",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\canny_hysteresis.v": "c65a72098d0748d84bad3c1d937456ff20d59f969e5aefc5187d00e978cc8eae",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\shape_recognizer.v": "86bf7302f10d308d1f0ff3eeab9692ff1d2e9c9917688f15a74153314da96e1a",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\tb_canny_store.v": "f4b6763736c2917b73fd000070162f11d5e850c4d75853775efacecd3a961a47",
+    "camera_trials\\median_source_20261013\\quality_preserve\\tools\\test-canny-store-final.py": "a4d927bf208c79fc05e6d9d581f57ad169a188731f3500b5b1b6a5e626546fa9",
+    "camera_trials\\median_source_20261013\\quality_preserve\\tools\\canny_reference.py": "dbb028d209d2403b7f1230f6ac00b21ad4249aff8cfa0d1674e79e6b4158367b",
+    "camera_trials\\median_source_20261013\\quality_preserve\\tools\\shape_reference.py": "fe5af3f3899be14040a3c2fd7bac0c7608dab3b8e27152ad785421eba993dd43"
+  }
+}

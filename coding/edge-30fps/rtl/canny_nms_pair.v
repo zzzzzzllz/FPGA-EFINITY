@@ -1,0 +1,125 @@
+// Two pixels per cycle, MS pixel first. EOL needs one tail cycle; EOF also
+// needs one synthetic row. The camera supplies these cycles in blanking.
+module canny_nms_pair #(
+    parameter WIDTH=1280, HEIGHT=720, CONFIG_WIDTH=16
+)(
+    input clk, rst_n,
+    input in_valid, output in_ready,
+    input [CONFIG_WIDTH-1:0] in_config,
+    output reg [CONFIG_WIDTH-1:0] out_config,
+    input [89:0] in_rgby,
+    input in_sof, in_eol, in_eof,
+    input [31:0] in_frame_id, in_epoch,
+    output reg out_valid, input out_ready,
+    output reg [63:0] out_rgby,
+    output reg out_sof, out_eol, out_eof,
+    output reg [31:0] out_frame_id, out_epoch
+);
+    localparam PAIRS=WIDTH/2, AW=$clog2(PAIRS);
+    reg [89:0] row_rgb [0:PAIRS-1];
+    reg [25:0] row_y [0:PAIRS-1];
+    reg [AW:0] x;
+    reg [15:0] y, tail_y;
+    reg tail, flush;
+    reg [31:0] frame_id, epoch;
+    reg [CONFIG_WIDTH-1:0] frame_config;
+    wire advance=!out_valid || out_ready;
+    assign in_ready=advance && !tail && !flush;
+    wire read_pair=advance && !tail && (flush || in_valid);
+    wire [AW:0] rx=in_sof && !flush ? 0 : x;
+    wire [15:0] ry=in_sof && !flush ? 0 : y;
+
+    reg q_valid,q_tail;
+    reg [AW:0] qx;
+    reg [15:0] qy;
+    reg [25:0] top_q,bottom_q;
+    reg [89:0] center_q;
+    reg [31:0] q_id,q_epoch;
+    // Synchronous read-before-write RAM. The second row is written one
+    // enabled cycle later, using the first row's registered read data.
+    always @(posedge clk) begin
+        if(read_pair) begin
+            center_q<=row_rgb[rx[AW-1:0]];
+            top_q<=row_y[rx[AW-1:0]];
+            bottom_q<={in_rgby[89:77],in_rgby[44:32]};
+            if(!flush) row_rgb[rx[AW-1:0]]<=in_rgby;
+        end
+        if(advance && q_valid && !q_tail)
+            row_y[qx[AW-1:0]]<={center_q[89:77],center_q[44:32]};
+    end
+
+    // Saved pair and its left neighbour, separately for all three rows.
+    reg [25:0] pt,pm,pb;
+    reg [12:0] lt,lm,lb;
+    reg [89:0] pc;
+    wire [25:0] ct=qy==1 ? {center_q[89:77],center_q[44:32]} : top_q;
+    wire [25:0] cm={center_q[89:77],center_q[44:32]};
+    wire [25:0] cb=qy==HEIGHT ? cm : bottom_q;
+
+    function [1:0] classify;
+        input [12:0] a,b,c,d,e,f,g,h,i;
+        input border;
+        input [15:0] config_value;
+        reg [10:0] before_value,after_value,low;
+        reg [12:0] product;
+        begin
+            case(e[12:11])
+                0:begin before_value=d[10:0];after_value=f[10:0];end
+                1:begin before_value=b[10:0];after_value=h[10:0];end
+                2:begin before_value=a[10:0];after_value=i[10:0];end
+                3:begin before_value=c[10:0];after_value=g[10:0];end
+            endcase
+            product={2'b0,config_value[10:0]}*({1'b0,config_value[15:14]}+3'd1);
+            low=product[12:2];
+            classify=0;
+            if(!border && e[10:0]>before_value && e[10:0]>=after_value && e[10:0]!=0) begin
+                if(e[10:0]>config_value[10:0]) classify=2;
+                else if(e[10:0]>low) classify=1;
+            end
+        end
+    endfunction
+    wire border=qy==1 || qy==HEIGHT;
+    wire [1:0] class0=classify(qx==1?pt[25:13]:lt,pt[25:13],pt[12:0],
+        qx==1?pm[25:13]:lm,pm[25:13],pm[12:0],qx==1?pb[25:13]:lb,pb[25:13],pb[12:0],border || qx==1,frame_config);
+    wire [1:0] class1=classify(pt[25:13],pt[12:0],q_tail?pt[12:0]:ct[25:13],
+        pm[25:13],pm[12:0],q_tail?pm[12:0]:cm[25:13],pb[25:13],pb[12:0],q_tail?pb[12:0]:cb[25:13],border || q_tail,frame_config);
+    always @(posedge clk) begin
+        if(!rst_n) begin
+            frame_config<=13'd2080;out_config<=13'd2080;
+            x<=0; y<=0; tail_y<=0; tail<=0; flush<=0; frame_id<=0; epoch<=0;
+            q_valid<=0; q_tail<=0; qx<=0; qy<=0; q_id<=0; q_epoch<=0;
+            pt<=0;pm<=0;pb<=0;lt<=0;lm<=0;lb<=0;pc<=0;
+            out_valid<=0;
+            out_rgby<=0; out_sof<=0; out_eol<=0; out_eof<=0;
+            out_frame_id<=0; out_epoch<=0;
+        end else if(advance) begin
+            q_valid<=read_pair || tail;
+            q_tail<=tail;
+            if(tail) begin
+                qx<=PAIRS; qy<=tail_y; q_id<=frame_id; q_epoch<=epoch;
+                tail<=0;
+                if(tail_y==HEIGHT) begin flush<=0; y<=0; end
+            end else if(read_pair) begin
+                qx<=rx; qy<=ry;
+                q_id<=in_sof && !flush ? in_frame_id : frame_id;
+                q_epoch<=in_sof && !flush ? in_epoch : epoch;
+                if(in_sof && !flush) begin frame_id<=in_frame_id; epoch<=in_epoch; frame_config<=in_config; end
+                if((!flush && in_eol) || (flush && x==PAIRS-1)) begin
+                    x<=0; y<=ry+1'b1; tail<=1; tail_y<=ry;
+                    if(!flush && in_eof) flush<=1;
+                end else begin x<=rx+1'b1; y<=ry; end
+            end
+            if(q_valid) begin
+                if(!q_tail) begin
+                    pt<=ct; pm<=cm; pb<=cb; pc<=center_q;
+                    lt<=pt[12:0]; lm<=pm[12:0]; lb<=pb[12:0];
+                end
+            end
+            out_valid<=q_valid && qy!=0 && qx!=0;
+            out_rgby<=frame_config[13] ? {class0,6'b0,pc[68:45],class1,6'b0,pc[23:0]} : {pc[76:45],pc[31:0]};
+            out_config<=frame_config;
+            {out_sof,out_eol,out_eof}<={qy==1 && qx==1,q_tail,qy==HEIGHT && q_tail};
+            out_frame_id<=q_id;out_epoch<=q_epoch;
+        end
+    end
+endmodule

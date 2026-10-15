@@ -1,0 +1,96 @@
+{
+  "debug_cores": [
+    {
+      "name": "status",
+      "type": "vio",
+      "uuid": "60101001a441496584a8d28cc3a137fb",
+      "probes": [
+        {
+          "name": "build_id",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "frames",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "errors",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "width",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "height",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "mipi_debug",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "ddr_ready",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "underflow",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "sum_r",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "sum_g",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "sum_b",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "r_gain",
+          "width": 16,
+          "init": "0x100"
+        },
+        {
+          "name": "g_gain",
+          "width": 16,
+          "init": "0x100"
+        },
+        {
+          "name": "b_gain",
+          "width": 16,
+          "init": "0x100"
+        },
+        {
+          "name": "gamma_sel",
+          "width": 1,
+          "init": "0x1"
+        },
+        {
+          "name": "phase",
+          "width": 2,
+          "init": "0x0"
+        }
+      ]
+    }
+  ],
+  "session": {
+    "debug_widget": [],
+    "wizard": {}
+  },
+  "jtag_user": "USER1"
+}

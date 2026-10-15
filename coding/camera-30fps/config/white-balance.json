@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-10",
+  "reference": "User white card after board power cycle, illumination reduced to avoid saturation",
+  "sample_count": 12,
+  "source_log": "logs/camera-720p-restore30-whitecard-dim.log",
+  "raw10_means": {
+    "r": 171.7367191116898,
+    "g": 260.69245985243055,
+    "b": 156.20865659360533
+  },
+  "q8_8_gains": {
+    "r": 389,
+    "g": 256,
+    "b": 427
+  },
+  "gamma": 0,
+  "bayer_phase": 0,
+  "predicted_balanced_means": {
+    "r": 260.9593114626849,
+    "g": 260.69245985243055,
+    "b": 260.55115767761515
+  },
+  "relative_sample_spread": {
+    "r": 0.002934791722720199,
+    "g": 0.003923694627553417,
+    "b": 0.003668498454401513
+  },
+  "verification": "PASS: gains applied; capture healthy; user confirmed white card normal",
+  "application_log": "logs/camera-720p-restore30-whitecard-applied.log",
+  "visual_confirmation": "白卡颜色正常",
+  "previous_calibration": "logs/white-balance-before-720p-recovery.json"
+}

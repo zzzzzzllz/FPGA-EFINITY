@@ -1,0 +1,186 @@
+{
+  "debug_cores": [
+    {
+      "name": "status",
+      "type": "vio",
+      "uuid": "60101065a441496584a8d28cc3a137fb",
+      "probes": [
+        {
+          "name": "build_id",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "frames",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "errors",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "width",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "height",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "mipi_debug",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "ddr_ready",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "underflow",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "sum_r",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "sum_g",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "sum_b",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "r_gain",
+          "width": 16,
+          "init": "0x18d"
+        },
+        {
+          "name": "g_gain",
+          "width": 16,
+          "init": "0x100"
+        },
+        {
+          "name": "b_gain",
+          "width": 16,
+          "init": "0x1d7"
+        },
+        {
+          "name": "gamma_sel",
+          "width": 1,
+          "init": "0x0"
+        },
+        {
+          "name": "phase",
+          "width": 2,
+          "init": "0x0"
+        },
+        {
+          "name": "processed_frames",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "last_frame_id",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "last_epoch",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "config_epoch",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "active_r",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "active_g",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "active_b",
+          "width": 16,
+          "init": null
+        },
+        {
+          "name": "active_phase",
+          "width": 2,
+          "init": null
+        },
+        {
+          "name": "active_gamma",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "active_gray",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "mipi_flag_cycles",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "underflow_cycles",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "gray_sel",
+          "width": 1,
+          "init": "0x1"
+        },
+        {
+          "name": "edge_sel",
+          "width": 1,
+          "init": "0x1"
+        },
+        {
+          "name": "active_edge",
+          "width": 1,
+          "init": null
+        },
+        {
+          "name": "sobel_threshold",
+          "width": 11,
+          "init": null
+        },
+        {
+          "name": "sobel_overrun_cycles",
+          "width": 32,
+          "init": null
+        },
+        {
+          "name": "sensor_exposure_gain",
+          "width": 32,
+          "init": null
+        }
+      ]
+    }
+  ],
+  "session": {
+    "debug_widget": [],
+    "wizard": {}
+  },
+  "jtag_user": "USER1"
+}

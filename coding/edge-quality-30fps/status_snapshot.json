@@ -1,0 +1,391 @@
+{
+  "width": 1905,
+  "page_width": 64,
+  "pages": 30,
+  "probes": [
+    {
+      "name": "build_id",
+      "width": 32,
+      "init": null,
+      "offset": 0
+    },
+    {
+      "name": "frames",
+      "width": 32,
+      "init": null,
+      "offset": 32
+    },
+    {
+      "name": "errors",
+      "width": 32,
+      "init": null,
+      "offset": 64
+    },
+    {
+      "name": "width",
+      "width": 16,
+      "init": null,
+      "offset": 96
+    },
+    {
+      "name": "height",
+      "width": 16,
+      "init": null,
+      "offset": 112
+    },
+    {
+      "name": "mipi_debug",
+      "width": 16,
+      "init": null,
+      "offset": 128
+    },
+    {
+      "name": "ddr_ready",
+      "width": 1,
+      "init": null,
+      "offset": 144
+    },
+    {
+      "name": "underflow",
+      "width": 1,
+      "init": null,
+      "offset": 145
+    },
+    {
+      "name": "sum_r",
+      "width": 32,
+      "init": null,
+      "offset": 146
+    },
+    {
+      "name": "sum_g",
+      "width": 32,
+      "init": null,
+      "offset": 178
+    },
+    {
+      "name": "sum_b",
+      "width": 32,
+      "init": null,
+      "offset": 210
+    },
+    {
+      "name": "processed_frames",
+      "width": 32,
+      "init": null,
+      "offset": 242
+    },
+    {
+      "name": "last_frame_id",
+      "width": 32,
+      "init": null,
+      "offset": 274
+    },
+    {
+      "name": "last_epoch",
+      "width": 32,
+      "init": null,
+      "offset": 306
+    },
+    {
+      "name": "config_epoch",
+      "width": 32,
+      "init": null,
+      "offset": 338
+    },
+    {
+      "name": "active_r",
+      "width": 16,
+      "init": null,
+      "offset": 370
+    },
+    {
+      "name": "active_g",
+      "width": 16,
+      "init": null,
+      "offset": 386
+    },
+    {
+      "name": "active_b",
+      "width": 16,
+      "init": null,
+      "offset": 402
+    },
+    {
+      "name": "active_phase",
+      "width": 2,
+      "init": null,
+      "offset": 418
+    },
+    {
+      "name": "active_gamma",
+      "width": 1,
+      "init": null,
+      "offset": 420
+    },
+    {
+      "name": "active_gray",
+      "width": 1,
+      "init": null,
+      "offset": 421
+    },
+    {
+      "name": "mipi_flag_cycles",
+      "width": 32,
+      "init": null,
+      "offset": 422
+    },
+    {
+      "name": "underflow_cycles",
+      "width": 32,
+      "init": null,
+      "offset": 454
+    },
+    {
+      "name": "active_edge",
+      "width": 1,
+      "init": null,
+      "offset": 486
+    },
+    {
+      "name": "sobel_threshold",
+      "width": 11,
+      "init": null,
+      "offset": 487
+    },
+    {
+      "name": "sobel_overrun_cycles",
+      "width": 32,
+      "init": null,
+      "offset": 498
+    },
+    {
+      "name": "mixed_words",
+      "width": 32,
+      "init": null,
+      "offset": 530
+    },
+    {
+      "name": "display_frames",
+      "width": 32,
+      "init": null,
+      "offset": 562
+    },
+    {
+      "name": "ddr_write_status",
+      "width": 64,
+      "init": null,
+      "offset": 594
+    },
+    {
+      "name": "source_signature",
+      "width": 32,
+      "init": null,
+      "offset": 658
+    },
+    {
+      "name": "ddr_data",
+      "width": 64,
+      "init": null,
+      "offset": 690
+    },
+    {
+      "name": "ddr_banks",
+      "width": 64,
+      "init": null,
+      "offset": 754
+    },
+    {
+      "name": "threshold_ack",
+      "width": 1,
+      "init": null,
+      "offset": 818
+    },
+    {
+      "name": "threshold_pending",
+      "width": 11,
+      "init": null,
+      "offset": 819
+    },
+    {
+      "name": "threshold_shown",
+      "width": 11,
+      "init": null,
+      "offset": 830
+    },
+    {
+      "name": "threshold_epoch",
+      "width": 32,
+      "init": null,
+      "offset": 841
+    },
+    {
+      "name": "key_minus_events",
+      "width": 32,
+      "init": null,
+      "offset": 873
+    },
+    {
+      "name": "key_plus_events",
+      "width": 32,
+      "init": null,
+      "offset": 905
+    },
+    {
+      "name": "threshold_keys",
+      "width": 2,
+      "init": null,
+      "offset": 937
+    },
+    {
+      "name": "response_cycles",
+      "width": 32,
+      "init": null,
+      "offset": 939
+    },
+    {
+      "name": "response_busy",
+      "width": 1,
+      "init": null,
+      "offset": 971
+    },
+    {
+      "name": "median_active",
+      "width": 1,
+      "init": null,
+      "offset": 972
+    },
+    {
+      "name": "denoise_active",
+      "width": 1,
+      "init": null,
+      "offset": 973
+    },
+    {
+      "name": "median_shown",
+      "width": 1,
+      "init": null,
+      "offset": 974
+    },
+    {
+      "name": "denoise_shown",
+      "width": 1,
+      "init": null,
+      "offset": 975
+    },
+    {
+      "name": "median_epoch",
+      "width": 32,
+      "init": null,
+      "offset": 976
+    },
+    {
+      "name": "overlay_active",
+      "width": 1,
+      "init": null,
+      "offset": 1008
+    },
+    {
+      "name": "overlay_shown",
+      "width": 1,
+      "init": null,
+      "offset": 1009
+    },
+    {
+      "name": "frame_command_ack",
+      "width": 1,
+      "init": null,
+      "offset": 1010
+    },
+    {
+      "name": "reference_requested",
+      "width": 1,
+      "init": null,
+      "offset": 1011
+    },
+    {
+      "name": "shown_frame_id",
+      "width": 32,
+      "init": null,
+      "offset": 1012
+    },
+    {
+      "name": "shown_frame_epoch",
+      "width": 32,
+      "init": null,
+      "offset": 1044
+    },
+    {
+      "name": "reference_frame_id",
+      "width": 32,
+      "init": null,
+      "offset": 1076
+    },
+    {
+      "name": "frame_generation",
+      "width": 32,
+      "init": null,
+      "offset": 1108
+    },
+    {
+      "name": "ignored_frames",
+      "width": 32,
+      "init": null,
+      "offset": 1140
+    },
+    {
+      "name": "skipped_frames",
+      "width": 32,
+      "init": null,
+      "offset": 1172
+    },
+    {
+      "name": "failed_frames",
+      "width": 32,
+      "init": null,
+      "offset": 1204
+    },
+    {
+      "name": "frame_bus_errors",
+      "width": 32,
+      "init": null,
+      "offset": 1236
+    },
+    {
+      "name": "result_overflow",
+      "width": 32,
+      "init": null,
+      "offset": 1268
+    },
+    {
+      "name": "ui_short_events",
+      "width": 32,
+      "init": null,
+      "offset": 1300
+    },
+    {
+      "name": "ui_long_events",
+      "width": 32,
+      "init": null,
+      "offset": 1332
+    },
+    {
+      "name": "frame_state",
+      "width": 32,
+      "init": null,
+      "offset": 1364
+    },
+    {
+      "name": "ui_state",
+      "width": 32,
+      "init": null,
+      "offset": 1396
+    },
+    {
+      "name": "memory_traffic",
+      "width": 477,
+      "init": null,
+      "offset": 1428
+    }
+  ]
+}

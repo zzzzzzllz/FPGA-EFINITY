@@ -1,0 +1,1012 @@
+{
+  "version": "edge-30fps",
+  "build_id": "0x6010100a",
+  "original_project": "camera_edge/Ti60f225_sc431hai2hdmi_v7",
+  "bitstream_sha256": "078fa0cbc8461b3bfd866213a164562262ac1495976962a07047802f67b6b771",
+  "source_files": [
+    {
+      "path": "debug.json",
+      "sha256": "268316492fa05338e65be49237c10e58d1d45e6e26efdada45615afd9000fb86",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/debug.json"
+    },
+    {
+      "path": "debug_profile.wizard.json",
+      "sha256": "97230909244759d17929eaea8a02e85204d3c3c28a3b4dcf103082d2f369bf8e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/debug_profile.wizard.json"
+    },
+    {
+      "path": "debug_top.v",
+      "sha256": "7f0760c888a33bad5d62c7751890c73d2d53ae64a92e21d6eaca3892ce5971e2",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/debug_top.v"
+    },
+    {
+      "path": "full_view_profile.json",
+      "sha256": "05544d268b8a750ffb98625e134d9c776eee0f57838aa9a696b00564aea5bb36",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/full_view_profile.json"
+    },
+    {
+      "path": "package_settings.xml",
+      "sha256": "377260fd3c86568bbae321726dc0dd8d845eb80506741c520f402c0f24fa8e0e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/package_settings.xml"
+    },
+    {
+      "path": "Panel_1080p_reg.mem",
+      "sha256": "1b192b20b57bda019d39b24126789c582ae5da0b9df5395152854a8c2c4576b7",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/Panel_1080p_reg.mem"
+    },
+    {
+      "path": "status_snapshot.json",
+      "sha256": "2b796fe133e4dde43b9ccabbb25ccd6c3e1bfcc9d6d142ce6e8ec90c2305317e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/status_snapshot.json"
+    },
+    {
+      "path": "tb_canny_hysteresis.v",
+      "sha256": "3144940496535ebea98964d9eee705ff0d99a0bd0bfea6e9078480f75467732e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_canny_hysteresis.v"
+    },
+    {
+      "path": "tb_canny_local.v",
+      "sha256": "586e6e4ff5905cc37a2eb107372d842aff12f0d052d3aede4a55714dfde9e2ff",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_canny_local.v"
+    },
+    {
+      "path": "tb_canny_rules.v",
+      "sha256": "5a01e2137f7933aa544a18acda33d60dcf6df6a698aa91a569e95e4bffa6e05c",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_canny_rules.v"
+    },
+    {
+      "path": "tb_canny_store.v",
+      "sha256": "f4b6763736c2917b73fd000070162f11d5e850c4d75853775efacecd3a961a47",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_canny_store.v"
+    },
+    {
+      "path": "tb_compare_display.v",
+      "sha256": "05962c358b415ae791895526010aa9a4cc6086b8171d238eabf2c71452983406",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_compare_display.v"
+    },
+    {
+      "path": "tb_compare_pipeline.v",
+      "sha256": "5b123c96161f6a486c347ad44121642c72d1421d1022c294290d67d9157c0525",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_compare_pipeline.v"
+    },
+    {
+      "path": "tb_debug_status_snapshot.v",
+      "sha256": "fb1a539c539f33b95c0fe27721104d0698300cd15a9e025f04ad508dcfad2a35",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_debug_status_snapshot.v"
+    },
+    {
+      "path": "tb_edge_display.v",
+      "sha256": "9dd09fb0d1af679452394a726a9f83b1606d2a6ca0ffb9774ea4907c8fca8264",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_edge_display.v"
+    },
+    {
+      "path": "tb_edge_ui.v",
+      "sha256": "32ecce909658afe2d618074b2ca67b76e5f2515fd0c95e221b36ccc60cdea42e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_edge_ui.v"
+    },
+    {
+      "path": "tb_frame_display.v",
+      "sha256": "696100b788c567482bcc0dba723b5b12c9cc3cd01ebde9e47584a254736b3ead",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_frame_display.v"
+    },
+    {
+      "path": "tb_frame_memory_probe.v",
+      "sha256": "c0467e670d92f83ce551f1229d9761a3d99555417bed3752149584c3f1ac8139",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_frame_memory_probe.v"
+    },
+    {
+      "path": "tb_frame_publish.v",
+      "sha256": "6c43041111e65e2c7e00207c0d98e3777ca5c8aa63abc8737e0904995c90613b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_frame_publish.v"
+    },
+    {
+      "path": "tb_frame_reference_header.v",
+      "sha256": "178307b643eca9bcd7a4c4a0f43cec05b24f552995eee039671b2aac984b9e35",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_frame_reference_header.v"
+    },
+    {
+      "path": "tb_frame_store.v",
+      "sha256": "556c0aceefb75f10ab525b7f2a394d6aaf2c0b7cd5427da191aee3cc4480c9dc",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_frame_store.v"
+    },
+    {
+      "path": "tb_frame_store_control.v",
+      "sha256": "fb2b2fac76705c481f693682a72fe2f5a7a0adbbc46e7cf83aab9b0b66eec72d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_frame_store_control.v"
+    },
+    {
+      "path": "tb_full_view.v",
+      "sha256": "b5d71453a593a2b4b0e847b15ca33981f66b85001024aa08097d9af1c63b8854",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_full_view.v"
+    },
+    {
+      "path": "tb_full_view_gray.v",
+      "sha256": "5963d651dd2aaa260bbb739e3ad438ee7eba60aab382f4812ebc088da28619f7",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_full_view_gray.v"
+    },
+    {
+      "path": "tb_gamma_baseline.v",
+      "sha256": "9b573754ee9ffe317d4c3d7ce2687411e0b6ac3f53ca46ec839af193fb617a6a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_gamma_baseline.v"
+    },
+    {
+      "path": "tb_gamma_rom.v",
+      "sha256": "fefdace52813afde7c3628872ab91e91de9731b5aab4928548bf5484ed92922b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_gamma_rom.v"
+    },
+    {
+      "path": "tb_gray.v",
+      "sha256": "bb54cf881762680e90ae27b39686ef456d86575612b232c97c0ca000646052e4",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_gray.v"
+    },
+    {
+      "path": "tb_gray_frame.v",
+      "sha256": "587b4e43471929b344675a6c3d0091f5328bf733c5408abce539f7d2bbe64778",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_gray_frame.v"
+    },
+    {
+      "path": "tb_median.v",
+      "sha256": "0c67c717910788db5b3d2311a5f33a1b7d93972cfc9997678305f38f3619c8a9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_median.v"
+    },
+    {
+      "path": "tb_o1_i2c.v",
+      "sha256": "a00cdcc1e1c9c5c6e937bcc6c5013696570a97f01ebcc1e87af6839bfc1446bb",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_o1_i2c.v"
+    },
+    {
+      "path": "tb_o1_response_cdc.v",
+      "sha256": "6cca706683795fce6f9a765d484f0edcbd0399b2a2d0fb0015b4d5ce896c4cd0",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_o1_response_cdc.v"
+    },
+    {
+      "path": "tb_o1_sensor.v",
+      "sha256": "6d1f850857498ba2da0074350dd37f1a6b7616f8ce091ea860da17012e3bacd3",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_o1_sensor.v"
+    },
+    {
+      "path": "tb_shape_overlay.v",
+      "sha256": "d52b83d7a198c7a0cbeab41f980499ec8f2bcd0842ea55f85a9e5fd46b69237c",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_shape_overlay.v"
+    },
+    {
+      "path": "tb_shape_recognizer.v",
+      "sha256": "2cf7030a6eef32a86a119d4b0e825b0ab8e165265a726bb9dbafd8ed1518e1b6",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_shape_recognizer.v"
+    },
+    {
+      "path": "tb_sobel.v",
+      "sha256": "5d5b748d1142a15f1286330b7945d2feffb0d5b4331f68fb96e86c30359f11ae",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_sobel.v"
+    },
+    {
+      "path": "tb_threshold_control.v",
+      "sha256": "12f233940fccbd2b3c60507f9895d24a7e515097b994b055159c0db0782c4bd0",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_threshold_control.v"
+    },
+    {
+      "path": "tb_threshold_osd.v",
+      "sha256": "27e0646cff6a2512dd07daa34f2bdbcfd21a284e438b4060e39139b75f139a37",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_threshold_osd.v"
+    },
+    {
+      "path": "tb_threshold_sobel.v",
+      "sha256": "f3791502bb743c4b3e7ca50c513b6349799a3006e8ca5c0d99d0a8cb710a0aef",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_threshold_sobel.v"
+    },
+    {
+      "path": "ti60f225_oob.peri.xml",
+      "sha256": "3ef87f8ab04e5a501e76c8ade6d2c148987aa70b022857831de0f6b333b59acb",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ti60f225_oob.peri.xml"
+    },
+    {
+      "path": "ti60f225_oob.sdc",
+      "sha256": "bd433416f1dbce36174bd8a6315b098d2d6082b04dad217c31d85898a12a5ed8",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ti60f225_oob.sdc"
+    },
+    {
+      "path": "ti60f225_oob.xml",
+      "sha256": "7d2dbc5b86738e0f69661ea1a05dd1dfcceb347b728d923f7efa8e05017d9d01",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ti60f225_oob.xml"
+    },
+    {
+      "path": "yuvpattern_mif.memh",
+      "sha256": "f8e37b33e6e7bcc9b0633c906f48a18bafe02d9fd8aff04b5c434661335f34d8",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/yuvpattern_mif.memh"
+    },
+    {
+      "path": "rtl/canny_hysteresis.v",
+      "sha256": "c65a72098d0748d84bad3c1d937456ff20d59f969e5aefc5187d00e978cc8eae",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/canny_hysteresis.v"
+    },
+    {
+      "path": "rtl/canny_nms_pair.v",
+      "sha256": "f3e358b748160e9357feead311978b6cdfad335ef32e7925169f6b83d012584e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/canny_nms_pair.v"
+    },
+    {
+      "path": "rtl/compare_display.v",
+      "sha256": "7c4eb37f22fc9f509c7019e15f9ecdcb4cae6e2aac6d2b57318b3feb7405f207",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/compare_display.v"
+    },
+    {
+      "path": "rtl/csi_rx_controller.sv",
+      "sha256": "685d96fd52a604434a1da0bb404131cd4413bf76ed8ee738ac596b32ce373e5a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/csi_rx_controller.sv"
+    },
+    {
+      "path": "rtl/debug_status_snapshot.v",
+      "sha256": "3c56dec588194b43f337c58225c442771de9bedd188f89811e7e9f70862da685",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debug_status_snapshot.v"
+    },
+    {
+      "path": "rtl/dual_clock_fifo.v",
+      "sha256": "2d6f56dedb23fb47e10d412e97e987f338a30fc39c86b1ada4d356fb2f3893dd",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dual_clock_fifo.v"
+    },
+    {
+      "path": "rtl/edge_algorithm_pair.v",
+      "sha256": "a9553e14a871db24c966bd6ee5bc1dc2f0d37f1fffd6e917c4ce1b49b6fe0a49",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/edge_algorithm_pair.v"
+    },
+    {
+      "path": "rtl/edge_ui.v",
+      "sha256": "c829ae814ce589d07b1461b06d14fb7a0f4b3084e27d9af64b370599fbef0395",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/edge_ui.v"
+    },
+    {
+      "path": "rtl/efx_dsi_tx.sv",
+      "sha256": "6e2d541b69967f4009fd4c62e3f08044aa9a8fa7fa74681d6809dbd340960c97",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/efx_dsi_tx.sv"
+    },
+    {
+      "path": "rtl/frame_mailbox.v",
+      "sha256": "0303cc53abd4b82e1cce65a6bb7a5b53b4dcdbeaf43223dd5018732aa2e7ade5",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_mailbox.v"
+    },
+    {
+      "path": "rtl/frame_memory_probe.v",
+      "sha256": "2b8efe244f26e1c5b774f49fa6e5be78efbf73b8cec7562fbec9629370510aa2",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_memory_probe.v"
+    },
+    {
+      "path": "rtl/frame_pair_fifo.v",
+      "sha256": "0bb14afc8957eaf124413d2bbc3abad2c8d5b88c9eed976953a3b652e3651ce1",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_pair_fifo.v"
+    },
+    {
+      "path": "rtl/frame_store.v",
+      "sha256": "0c99e04e55798c37f65315681ecc2f5efa495982dd50ea3e7b7a28369866c371",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_store.v"
+    },
+    {
+      "path": "rtl/frame_store_control.v",
+      "sha256": "66ef59c1a86643002394c12d4c0f6a662e36767d8f52e0232fbcda4576f0ba98",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_store_control.v"
+    },
+    {
+      "path": "rtl/frame_store_dma.v",
+      "sha256": "3d6bda3b5fe916fc1af380d1dc28eb7717272b64e3ae25d117bcabad96ac28f0",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_store_dma.v"
+    },
+    {
+      "path": "rtl/gaussian_pair.v",
+      "sha256": "295ae0125e6576e3947cfb0d0bbd6f96a927deaac524c08850d668675c09c0de",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gaussian_pair.v"
+    },
+    {
+      "path": "rtl/median_pair.v",
+      "sha256": "89a12714b2c5c937ff449fd7ffef2e7c5580cf26c593ad1e10836279c5805167",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/median_pair.v"
+    },
+    {
+      "path": "rtl/raw_full_view.v",
+      "sha256": "825334aa8aa4278ada61fe2f4eaae36eef7e7d17e69efffc7051c8041f373236",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/raw_full_view.v"
+    },
+    {
+      "path": "rtl/reset.v",
+      "sha256": "126540013b52b8cab339cdaf57b1a6947d3088e97eeb9cb84fb68448f8a2e978",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/reset.v"
+    },
+    {
+      "path": "rtl/rgb_to_gray.v",
+      "sha256": "c2107e5cd7434aae0fb09ad4b56c6a1d7fc0bdd6e19ef81d07d56efbc16a7706",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/rgb_to_gray.v"
+    },
+    {
+      "path": "rtl/shape_recognizer.v",
+      "sha256": "86bf7302f10d308d1f0ff3eeab9692ff1d2e9c9917688f15a74153314da96e1a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/shape_recognizer.v"
+    },
+    {
+      "path": "rtl/simple_dual_port_ram.v",
+      "sha256": "01b74e74d39c4e4ae380bc7be73329987b17fffaea58bc7c92a9b24e4a110c5d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/simple_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/sobel_pair.v",
+      "sha256": "1022ce5489b360c69de84a95af7051ec27faaa77c0440efa98e0c0f997105dd7",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/sobel_pair.v"
+    },
+    {
+      "path": "rtl/threshold_control.v",
+      "sha256": "0eb2ec9c2ef795aa60c9b4ffe1ffc26bdca0462f32d2ceb92802910b810d9852",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/threshold_control.v"
+    },
+    {
+      "path": "rtl/threshold_osd.v",
+      "sha256": "b313867ad246c3fc9f3cd982bb34b5e26c073af10fe9769c4d14c6fe371057bb",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/threshold_osd.v"
+    },
+    {
+      "path": "rtl/ti60f225_oob_top.v",
+      "sha256": "1323094d802bc51bf2636177665636055a6a2d504cd318a32ef73796918b8315",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ti60f225_oob_top.v"
+    },
+    {
+      "path": "rtl/true_dual_port_ram.v",
+      "sha256": "44bfb696e997b4d31bfd3c414623623c9b60964bfe711c611cf80a39222e8e8f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/true_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/user_dual_port_ram.v",
+      "sha256": "f522e90f71c388ba4e2e91fd2506039982bdb60b8bb4710d6d99f8895e9367df",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/user_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/cam/i2c_phy.v",
+      "sha256": "e2d25e6720a52419b0f2ec1642350a46012c68b874862d994081ffa655fd7b56",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/i2c_phy.v"
+    },
+    {
+      "path": "rtl/cam/imx185_1080p_reg.mem",
+      "sha256": "91a563349d23d90d5604e88e9986ec963cef7d5872577cbeb194d296b227f830",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/imx185_1080p_reg.mem"
+    },
+    {
+      "path": "rtl/cam/imx185_config.v",
+      "sha256": "5b3d8d37275e87d24b429a4983898663c4d6851f6f9ea10ff86e97bfe6bbe8dd",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/imx185_config.v"
+    },
+    {
+      "path": "rtl/cam/piv2_1080p_reg - Copy.mem",
+      "sha256": "4e2f401ffe262886a77b1afd6e65cdd8aef29403c149eca63c2cf698c5a2943d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_1080p_reg - Copy.mem"
+    },
+    {
+      "path": "rtl/cam/piv2_1080p_reg.mem",
+      "sha256": "289decd9b14f44496e74ecde0be82831fe3ad61eb3a098791b182aa0890475cc",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_1080p_reg.mem"
+    },
+    {
+      "path": "rtl/cam/piv2_720p_7M_1L_reg.mem",
+      "sha256": "f7b04e8085801360fec5b9e9d5c1cd56a17b57b9c7f477e70fde2be5b01ebf0a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_720p_7M_1L_reg.mem"
+    },
+    {
+      "path": "rtl/cam/piv2_720p_7M_2L_reg.mem",
+      "sha256": "4dc3d43c163937fc2e66c32d07463f4c28151630fd4b807f4b2d07665eead384",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_720p_7M_2L_reg.mem"
+    },
+    {
+      "path": "rtl/cam/piv2_720p_9M_1L_reg.mem",
+      "sha256": "815a9278aeb0417ce94c718c300e2d7fe3a5d20685b5b87cdf76cd82ae8fd90f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_720p_9M_1L_reg.mem"
+    },
+    {
+      "path": "rtl/cam/piv2_720p_9M_2L_reg.mem",
+      "sha256": "440ebe49a6f9d019eeba810ca1f5dd68639caf2740b2b228edaa6e5e9a38e2ca",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_720p_9M_2L_reg.mem"
+    },
+    {
+      "path": "rtl/cam/piv2_config.v",
+      "sha256": "53496295e0ce4fbe5d4722dfba93807e9ea57232b20d5dfacf4c8bff0bde33c8",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/piv2_config.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/I2C_Master.docx",
+      "sha256": "d994b6fd94f005bfbc26ed383f973a14b7b4f6530c2c71bd9e37920eb9aa369b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/I2C_Master.docx"
+    },
+    {
+      "path": "rtl/ddr3_controller/ddr3_parameter.vh",
+      "sha256": "688995ba379237b1daa428ccb119b564c3dcb760227f75f2fe86b8d50a41de80",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/ddr3_parameter.vh"
+    },
+    {
+      "path": "rtl/ddr3_controller/ddr3_top.v",
+      "sha256": "7d8d9cd8a2c69e44ebe9a143f91e6591136aa57f3be22b2cff76904f67d0236a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/ddr3_top.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/lb2_axi_clk.v",
+      "sha256": "9cef7d5361e79d8c7f1deeab3af981444941ea50447c6c7c8b782e381f41dc2d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/lb2_axi_clk.v"
+    },
+    {
+      "path": "rtl/debayer/debayer_top_2to1.v",
+      "sha256": "f6240a41141046ce9888cff98a5e59fb18ce81b7e7de46dc2db70c8f144b6dd9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debayer/debayer_top_2to1.v"
+    },
+    {
+      "path": "rtl/debayer/line_buffer.v",
+      "sha256": "b2772202f1c8a8773f23a4c62a9470d814978b462c8b8ea52b47d11745855a36",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debayer/line_buffer.v"
+    },
+    {
+      "path": "rtl/debayer/raw_to_rgb.v",
+      "sha256": "8eabea4dde2241a8d896b132eb991c4637abc9441d5f58a9f448e14025c0b860",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debayer/raw_to_rgb.v"
+    },
+    {
+      "path": "rtl/debayer/rgb_gain.v",
+      "sha256": "bc09c97f4a0aa7007014fcb8eb95e579229ae704266261232d1ce12ebe6434b9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debayer/rgb_gain.v"
+    },
+    {
+      "path": "rtl/debayer/rgb_gain_v1.v",
+      "sha256": "ebc9c0b0fc589d7620b708fdd7a952e37ccc27b1abfa94e041d0e10323602b09",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debayer/rgb_gain_v1.v"
+    },
+    {
+      "path": "rtl/debayer/true_dual_port_ram.v",
+      "sha256": "b0e1be82204d5526f5c718d7483b755d6b257cff253bdeddc6bc52480fdb4e3a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/debayer/true_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/dvi_tx/audio_clock_regeneration_packet.sv",
+      "sha256": "a00a00548fd646d3cbc4e706410cdc8360f3a48700d3ca5b5c4dce5761c19cc3",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/audio_clock_regeneration_packet.sv"
+    },
+    {
+      "path": "rtl/dvi_tx/audio_infoframe_packet.sv",
+      "sha256": "d09b51e8b389647499f31b3e06123aa0ea4fbd096e4fe3d102824d5d95a23831",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/audio_infoframe_packet.sv"
+    },
+    {
+      "path": "rtl/dvi_tx/audio_packet.sv",
+      "sha256": "94b5d63d5aecff2979795606aa494bf5bc5201d6e3a4c85f6736d4c85d7c9ca9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/audio_packet.sv"
+    },
+    {
+      "path": "rtl/dvi_tx/auxiliary_video_information_info_frame.sv",
+      "sha256": "994994405fa384f531e1b2de55f52cd344b3b37b8539a3f7cd30adafcce3e161",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/auxiliary_video_information_info_frame.sv"
+    },
+    {
+      "path": "rtl/dvi_tx/DC_FIFO.v",
+      "sha256": "60120a28d8c12599cb7d2cb6d7e3e1f44479f3366156fa4055c3260e46cc05ff",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/DC_FIFO.v"
+    },
+    {
+      "path": "rtl/dvi_tx/dvi_encoder.v_encrypted.v",
+      "sha256": "2a35ca4e11dd93b3c329eef7c9e1d94498864c80041672c01e86ec1450e60381",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/dvi_encoder.v_encrypted.v"
+    },
+    {
+      "path": "rtl/dvi_tx/ecc_calc_v1.v",
+      "sha256": "7bace5b6945f65a0cc9b3593a81eb92130c4f2a1043d1d427ed8c3fc0429c8bd",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/ecc_calc_v1.v"
+    },
+    {
+      "path": "rtl/dvi_tx/efx_fifo.v",
+      "sha256": "0f9be5de03c280743837b1b27011b95d9203bc0daa414cec45d676a76dde0581",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/efx_fifo.v"
+    },
+    {
+      "path": "rtl/dvi_tx/efx_fifo_define.vh",
+      "sha256": "6f231c473c47144f223714938cfe6f3f73131a8adf3e3b7d73371b130e06ae63",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/efx_fifo_define.vh"
+    },
+    {
+      "path": "rtl/dvi_tx/encode.v_encrypted.v",
+      "sha256": "d1a0a8139a41f13736ba97c65a9f481267c0642acd51f2c66120e0e7f543bd3f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/encode.v_encrypted.v"
+    },
+    {
+      "path": "rtl/dvi_tx/packet_assembler.sv",
+      "sha256": "76287f0e960fa1abdd650ca01d8f66d22dd9afae7248a5f5c86b4862c44a3514",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/packet_assembler.sv"
+    },
+    {
+      "path": "rtl/dvi_tx/Sc_Fifo_Slr8.v",
+      "sha256": "6dc746e307436d3b6f0881e24b654a349fceeda4ca76025fdc4c310c1d47c9e6",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/Sc_Fifo_Slr8.v"
+    },
+    {
+      "path": "rtl/dvi_tx/simple_dual_port_ram.v",
+      "sha256": "0e0c7acf31e66724073dc59f379880b6b8115c3e6d1fb179ede1624ed01d4434",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/simple_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/dvi_tx/tx_aux.v_encrypted.v",
+      "sha256": "579c75fab971980053dfc9b4fa07de2431bda6dd0e37515f427a5b2f869d72b5",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/tx_aux.v_encrypted.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/axi_ram.v",
+      "sha256": "a262c60912b260defb5338356395a4499ae725d90c442481c5d705b1befec4a9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/axi_ram.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/bank_switch.v",
+      "sha256": "47e886098c21ef3b0217f333efe5573e7628dd65e8a0f02501aca8c5b103d263",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/bank_switch.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/color_bar_rgb.v",
+      "sha256": "d8da9192ab0284bbab70c20971d362e33b02b7feb5e021d8fe1848bdd0a65e12",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/color_bar_rgb.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/color_bar_tb.v",
+      "sha256": "8b0111c8e60ec03ad85116e6130cb2fb97a2c8bbc7b06e09f73b5481537919d8",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/color_bar_tb.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/data_tx.v",
+      "sha256": "5dc2cf6ba15ea207b79cb31d49b51a78ee0c2c8446811e714ac8f6916e2a1ad8",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/data_tx.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/DC_FIFO.v",
+      "sha256": "d930fed56a5c7e80733ec600f05d19923b86d0fd0b71dbb643c66d88cbe17847",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/DC_FIFO.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/ddr_buffer.v",
+      "sha256": "baa5dd4544763b209c969e852af6eec9f3dd5726f61bfe5dcdb6dca4a27e9aeb",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/ddr_buffer.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/ddr_rd_buffer.v",
+      "sha256": "88754345e639f852e872925b8bb03a30815e50d72687f0524729ffe46a556184",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/ddr_rd_buffer.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/ddr_wr_buffer.v",
+      "sha256": "25d495f81185ebbf17d100e18e9543a9dde64d97cee7efb50c8bfd41a359510f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/ddr_wr_buffer.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/ddr_wr_buffer_v1.v",
+      "sha256": "5c65081a3b683021126a4034a9d1b66080532aa4136377095200b39230fb6c9f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/ddr_wr_buffer_v1.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/frame_buffer.v",
+      "sha256": "b14fa4b34f4f1fa4f08b163e481aa96a6565eb726b0e19df280acbd904e98e70",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/frame_buffer.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/frame_info_det.v",
+      "sha256": "bfb1b04c0608bb0fe24e8bea4eacdd27cf5a00f8fc6528492e71e78b65cfc9cb",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/frame_info_det.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/lpddr4_mixer_tb.v",
+      "sha256": "faa8d20bc2fb47eb4fde3110b422a3b5cc575d97e46928afada861ff73373cd5",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/lpddr4_mixer_tb.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/lpddr4_tb.v",
+      "sha256": "690e07820828490293fb3cece0c5d8dcb3d2756350a8562edc6176182da9b8e3",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/lpddr4_tb.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/par2ser.v",
+      "sha256": "7e7899d6f2db836c4eb8e53828fd2b061c29167ba8f65f7368476878bbeaeba6",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/par2ser.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/rst_n_piple.v",
+      "sha256": "2c127c90995a2b0e647db1eec3719c0e746a73def78d0c04bc7884195c2ca2d4",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/rst_n_piple.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/ser2par.v",
+      "sha256": "6a141621a7c34b372a558d8e95c80cc4f75c9acc99415e060a4f67e4e126f9a4",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/ser2par.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/ser2par_v1.v",
+      "sha256": "d3d3e2730957e0edd9fe1be3cc1993ed7f466a0f6d3663a8de30e5d3ab88d3b2",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/ser2par_v1.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/sim.do",
+      "sha256": "0bb0801af33a61a49e074e4b2fa88e870ac1ccd5d1ec7c97fe9c90361fe4bfde",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/sim.do"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/vid_check.v",
+      "sha256": "cbcf6dc3e6f875d57bbf2de73db16140e78f1ab6703bbaebab0f91310a84d2c0",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/vid_check.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/vid_par2ser.v",
+      "sha256": "376f73cbcb1149e7d29468131db796a119610371e11b6822084ffa0a44a2a987",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/vid_par2ser.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/vid_rx_align_v1.v",
+      "sha256": "cd97abc44c86cb7a2dc90ae427e06b0ca18d61028f69ebcfc36c446f31f0d66e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/vid_rx_align_v1.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/wave.do",
+      "sha256": "48d3dbf32c09f34418c205bbb0c680b95581e95e85b8a64f55d22115fe32bae0",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/wave.do"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/~$调试总结 .docx",
+      "sha256": "bc377db68ce1732df37407009d1cd382220cae5e3b62939b010bf3549d52462d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/~$调试总结 .docx"
+    },
+    {
+      "path": "rtl/gamma_conrrection/2P0.mem",
+      "sha256": "106f129182e2b8350ace85722d418c7f44c252f8be59b42f58f29db8df30c4d6",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/2P0.mem"
+    },
+    {
+      "path": "rtl/gamma_conrrection/2P1.mem",
+      "sha256": "bce1459c3e76195090b285fd6f2e90753fef59e33f77404b801a9da7419bc769",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/2P1.mem"
+    },
+    {
+      "path": "rtl/gamma_conrrection/2P2.mem",
+      "sha256": "bb22604f3b0c25f48b53c22667a0474368364b9396c926e8ec565d4aa77fd895",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/2P2.mem"
+    },
+    {
+      "path": "rtl/gamma_conrrection/2P3.mem",
+      "sha256": "f5fa6e316d1e06fe3015c0aa140c92a478431b8bc6eea6d1194051c7530d9e5d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/2P3.mem"
+    },
+    {
+      "path": "rtl/gamma_conrrection/2P4.mem",
+      "sha256": "323a5f24bfd17eda602a7d4ab6eada6180ef545d2f2be73288f398d85bae4923",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/2P4.mem"
+    },
+    {
+      "path": "rtl/gamma_conrrection/gamma_correction.v",
+      "sha256": "113f385725b527129c0c12a8df1cc4b039fc85b4dff5c14f90497885ec239cb4",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/gamma_correction.v"
+    },
+    {
+      "path": "rtl/mipi_config/panel_config.v",
+      "sha256": "65106f2a94983eb9403042f1bdc235192e1cc762120babc7d1005aee8d7295fa",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/mipi_config/panel_config.v"
+    },
+    {
+      "path": "rtl/mipi_config/true_dual_port_ram.v",
+      "sha256": "44bfb696e997b4d31bfd3c414623623c9b60964bfe711c611cf80a39222e8e8f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/mipi_config/true_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/soc_oob/apb3_slave_oob.v",
+      "sha256": "f8d6aaeaf82714a64ac24c6330564b6980e7136a8e999bb1ef94ca040a38a89c",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/apb3_slave_oob.v"
+    },
+    {
+      "path": "rtl/soc_oob/top_soc_oob.v",
+      "sha256": "0b6c4c14e488a752153197af7c4aeed25ac777dd98ccbba2a5de3fb9dae15141",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/top_soc_oob.v"
+    },
+    {
+      "path": "rtl/user_cvo_axi_v2/cvo_axi_v2.v",
+      "sha256": "6d9fdeb24f05d75e143572fc3e6456483696d6406bc4abd8c59d8ed9fab07b72",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/user_cvo_axi_v2/cvo_axi_v2.v"
+    },
+    {
+      "path": "rtl/user_cvo_axi_v2/DC_FIFO.v",
+      "sha256": "ecc22c4e4ca706391b32ade38d6d00332841df5be98c6a2f03a5a27eee696796",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/user_cvo_axi_v2/DC_FIFO.v"
+    },
+    {
+      "path": "rtl/user_cvo_axi_v2/rev_description.txt",
+      "sha256": "ae504c7dc0252bd698ec5f1e657841c68429403ca355e19dc6864127eeaca560",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/user_cvo_axi_v2/rev_description.txt"
+    },
+    {
+      "path": "rtl/soc_oob/axistream/axi_streamin.v",
+      "sha256": "2cfb82e94e4ce535c28c3b45dcf3713cbd86a6d83106f2669f343d844402ac71",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/axistream/axi_streamin.v"
+    },
+    {
+      "path": "rtl/soc_oob/axistream/axi_streamout.v",
+      "sha256": "6ec22d41ae390e0233fcbc458c1a445be536d6b37b54d56496a4f1ced75dbf08",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/axistream/axi_streamout.v"
+    },
+    {
+      "path": "rtl/soc_oob/axistream/axi_streamout_div4.v",
+      "sha256": "af95943abef71d8c90b3e5b7452d802f88f042730341de4ab29af47458f2e56b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/axistream/axi_streamout_div4.v"
+    },
+    {
+      "path": "rtl/soc_oob/axistream/fifo.v",
+      "sha256": "cdbf3b8de324461290f5d5737d07ad7fe69c498d85dab403c374b1b7f4a1a89d",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/axistream/fifo.v"
+    },
+    {
+      "path": "rtl/soc_oob/axistream/vga_buffer.v",
+      "sha256": "7394c8b649154486fa07b4fc1ea7b46333c586b37e4875e9dd7f2ea266123062",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/soc_oob/axistream/vga_buffer.v"
+    },
+    {
+      "path": "rtl/gamma_conrrection/testbench/gamma_correction_tb.do",
+      "sha256": "4f8dfa325b949a07b4b4a4717670d66139623f7345a637fc0769830c2ad48042",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/testbench/gamma_correction_tb.do"
+    },
+    {
+      "path": "rtl/gamma_conrrection/testbench/gamma_correction_tb.v",
+      "sha256": "4c889465526f6483f3041fbdd5c9becb0039dd7564ceb8d75c829ea68db7e8c3",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/testbench/gamma_correction_tb.v"
+    },
+    {
+      "path": "rtl/gamma_conrrection/testbench/true_dual_port_ram.v",
+      "sha256": "b0e1be82204d5526f5c718d7483b755d6b257cff253bdeddc6bc52480fdb4e3a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/testbench/true_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/gamma_conrrection/testbench/vga_gen.v",
+      "sha256": "972add783bbdfd81fe5d9d7e77e1000958932f37803f6d4e4c3a9f96bd86a801",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/testbench/vga_gen.v"
+    },
+    {
+      "path": "rtl/gamma_conrrection/testbench/vsim.wlf",
+      "sha256": "bc387738091bfadc2c19ce1a67bcddf00ce41ae289f08b837483145c4802649a",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/gamma_conrrection/testbench/vsim.wlf"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/user_cvo_axi_v1/cvo_axi_v1.v",
+      "sha256": "d26c06e5a5be2bccc918b40de1a797adbf0d07172666282d6c7c85cf5e0d9365",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/user_cvo_axi_v1/cvo_axi_v1.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/user_cvo_axi_v1/DC_FIFO.v",
+      "sha256": "ecc22c4e4ca706391b32ade38d6d00332841df5be98c6a2f03a5a27eee696796",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/user_cvo_axi_v1/DC_FIFO.v"
+    },
+    {
+      "path": "rtl/frame_buffer_V4/user_cvo_axi_v1/rev_description.txt",
+      "sha256": "ae504c7dc0252bd698ec5f1e657841c68429403ca355e19dc6864127eeaca560",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/user_cvo_axi_v1/rev_description.txt"
+    },
+    {
+      "path": "rtl/dvi_tx/simple_dual_port_ram/ram_init_file.mem",
+      "sha256": "92ae78d93e86e4e15231de8f4aa58428f4547fdfef01db57ecbb4d66e74357d7",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/simple_dual_port_ram/ram_init_file.mem"
+    },
+    {
+      "path": "rtl/dvi_tx/simple_dual_port_ram/simple_dual_port_ram.v",
+      "sha256": "0e0c7acf31e66724073dc59f379880b6b8115c3e6d1fb179ede1624ed01d4434",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/simple_dual_port_ram/simple_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/dvi_tx/simple_dual_port_ram/simple_dual_port_ram_tb.v",
+      "sha256": "b1dad008b9929a40abe35493a4bfa1a6c601b30ec051e8e1cdafa52a7c9b4acf",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/dvi_tx/simple_dual_port_ram/simple_dual_port_ram_tb.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v",
+      "sha256": "e908d8045fe2332a1740f3aca0226b5fe0bf4d03e25b040fe0f32015d573ad5b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/axi4_bus_ctl/axi4_bus_ctl.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/axi4_bus_ctl/axi_upsizer.v",
+      "sha256": "03c25e7276781d9c22f4cbd7b25b76b6317ed7083874a7c94b052a0abd1188e0",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/axi4_bus_ctl/axi_upsizer.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/common/simple_dual_port_ram.v",
+      "sha256": "41da4fb5d1e10b94a1f35df8075a594071bdf154823ff4edc87ac5f4e128d934",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/common/simple_dual_port_ram.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/local_bus_ctl/local_bus_ctl.v",
+      "sha256": "822d5d0f54c7ba0ea8d66f19f1e97cdea3a159932c64295dfe5ca86f9f814608",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/local_bus_ctl/local_bus_ctl.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v",
+      "sha256": "a12b886a37278bd44bc207c2debd11156eab1d579e4e3aa7702b229508778882",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/memory_bus_ctl/memory_bus_ctl.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/ddr_calibration_ini.v",
+      "sha256": "7a6976bceca5e4598ed9c53c17b522e7c86e07c97f0dbda16f8286d321035522",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/ddr_calibration_ini.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v",
+      "sha256": "08446b90c5897750ae6214918981de8262513745da7f7d25850ba6a124b9763e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/ddr_mpr_rdlvl.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/ddr_phy_if.v",
+      "sha256": "ce8dfd7600e8be615611d353cc6b62e7ccf6411d22ac47c45f9b650ad908584b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/ddr_phy_if.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v",
+      "sha256": "bb5e2c9d76c2816164a9bfcbf51a3c2760d897c1340ae493d29867fee601e31f",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/ddr_phy_rdlvl_dqs.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/ddr_phy_wrcal.v",
+      "sha256": "50acbb56f307a0fc9847981216389d41438649993908fdf96c09d823ee7e5ca9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/ddr_phy_wrcal.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v",
+      "sha256": "aec2c9677c03e1110c542ccc643c1ea0458f1f7fbb93dcaad105a7623d4a8591",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/ddr_phy_wrlvl.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/phy_ctl/phy_ctl.v",
+      "sha256": "2b106e88fb017cbcda86a6ace62f81049d9725a79d4a2ffe9b44672bb4dbc08b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/phy_ctl/phy_ctl.v"
+    },
+    {
+      "path": "rtl/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v",
+      "sha256": "040558d9dafd6d7f4c6610b8cd8040cdedc3f95b58a6f31f32dbd7429182eb98",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/ddr3_controller/common/efx_fifo_v2.3/efx_fifo_wrapper.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v",
+      "sha256": "1721ab5b1e30c7df3752c2cc0a8e2b4f219708ad4e01cf96fd85923a4dfa9c33",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c/i2c_16addr_8data.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c/i2c_8addr_8data.v",
+      "sha256": "15c787d98cb272a155584941841c55dbb4a489a009ce79bc589c9cab5e913159",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c/i2c_8addr_8data.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v",
+      "sha256": "9ff382f4bf8a8525e9a4e99a03ff7467eb8cc60ee25d75668c2fbf74665916a9",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v",
+      "sha256": "551dd653b1e3215af4e6972e7ad5c5f880f6e20987bf4cbf65007bc97e0335ca",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v",
+      "sha256": "e19bf7e0f4e196d4005577118eaed9ecc0cf9303484cc077c584ace74f1834ce",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v",
+      "sha256": "2df1f5d522725ea216385829a4dec38fdd616e4979aaa0aef7053ac34bf8ac8c",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c_master/i2c_master_bit_ctrl.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v",
+      "sha256": "442159006425fa36a946f67afc62391f9f80142aad379a640118a28ce67c9f80",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c_master/i2c_master_byte_ctrl.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v",
+      "sha256": "b6dcf92c66c3dc80192206621e732f0474709579662ee09943e48db0077f302e",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c_master/i2c_master_defines.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v",
+      "sha256": "bf5dd12f2bf30dbc46a1d4cf1d3d1accc05106e14ca1cecf467fd09b46cd45c8",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c_master/i2c_master_top.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c_master/oc_i2c_master.v",
+      "sha256": "dde241966dd153f0f65eb711d6c0b00b9dfc806a733c5f2bf5ff6255bc54ad29",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c_master/oc_i2c_master.v"
+    },
+    {
+      "path": "rtl/cam_i2c_ctrl/i2c_master/timescale.v",
+      "sha256": "d98dd66323e809ee4bc88896063327802ca13241b5742a5e25db17db17a40a4c",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam_i2c_ctrl/i2c_master/timescale.v"
+    },
+    {
+      "path": "rtl/cam/doc/IMX219PQ.pdf",
+      "sha256": "49250b153d55fe91a5a184651ef0eeab4316a195f7f6c2d42c068b336f237219",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/cam/doc/IMX219PQ.pdf"
+    },
+    {
+      "path": "ip/csi_rx_controller/csi_rx_controller.sv",
+      "sha256": "dbd18fbb5c375a68e3ed13f3e742db377a3596f0676ed71357348ae9fd86868b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/csi_rx_controller.sv"
+    },
+    {
+      "path": "ip/csi_rx_controller/csi_rx_controller_define.svh",
+      "sha256": "3f5bd0d4ba2a72e8a397fe8f091c058ce879c83ad86ce7091f9a41c6775784ff",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/csi_rx_controller_define.svh"
+    },
+    {
+      "path": "ip/csi_rx_controller/csi_rx_controller_define.vh",
+      "sha256": "149c14940be1b2bb5f21f7475358e57481bf8bbb4d35929de1f01e9b8b304fc1",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/csi_rx_controller_define.vh"
+    },
+    {
+      "path": "ip/csi_rx_controller/csi_rx_controller_tmpl.sv",
+      "sha256": "6df4aeaab593511f6c9a0a32c97d15ed43b4aba32dd34ac5654195a655ad9e82",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/csi_rx_controller_tmpl.sv"
+    },
+    {
+      "path": "ip/csi_rx_controller/csi_rx_controller_tmpl.v",
+      "sha256": "3f04b23a6e20705198b0b3949e68e0cf0e2472f5cd87b4fe3d7a95b6682e1482",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/csi_rx_controller_tmpl.v"
+    },
+    {
+      "path": "ip/csi_rx_controller/csi_rx_controller_tmpl.vhd",
+      "sha256": "60dcfd875ae0b60af4c190bf298f2ac65e57724c1c92abc3d01fa992f6daec95",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/csi_rx_controller_tmpl.vhd"
+    },
+    {
+      "path": "ip/csi_rx_controller/settings.json",
+      "sha256": "21ace23896a1d40671c9fe7c2510ab82b6a126aff0c7bc81859edd41d6607e1b",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/settings.json"
+    },
+    {
+      "path": "ip/dsi_tx/dsi_tx.sv",
+      "sha256": "086c703559d8064a5889b6cd390d9c9c7107ae65800a76eebf31738e48eed5e4",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/dsi_tx.sv"
+    },
+    {
+      "path": "ip/dsi_tx/dsi_tx_define.svh",
+      "sha256": "9215b5bae493b6051b7ded8a412e1c002e7c34249eeb7b388de5c9b5d19264ca",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/dsi_tx_define.svh"
+    },
+    {
+      "path": "ip/dsi_tx/dsi_tx_define.vh",
+      "sha256": "f24bf85c429ce6b48da786924c16e52cfbda9f8910bff58e135617ccf6404688",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/dsi_tx_define.vh"
+    },
+    {
+      "path": "ip/dsi_tx/dsi_tx_tmpl.sv",
+      "sha256": "b4b6c9d46f7545d1ac8317e624e9101a859022023f3d37a210cd3d3e1191d4c1",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/dsi_tx_tmpl.sv"
+    },
+    {
+      "path": "ip/dsi_tx/dsi_tx_tmpl.v",
+      "sha256": "c2419a773c60ac4ce124c79b69d0248ed6abdd8255fe018625a6783172fd1743",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/dsi_tx_tmpl.v"
+    },
+    {
+      "path": "ip/dsi_tx/dsi_tx_tmpl.vhd",
+      "sha256": "4118182e46c1ef1adc1a2e064166d2305632beba3615a7573880bde2f9bfc5b1",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/dsi_tx_tmpl.vhd"
+    },
+    {
+      "path": "ip/dsi_tx/settings.json",
+      "sha256": "84a9892f8d0cb22115959282a2d4f6e061e15b05d69b816fb21c9be415be3161",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/settings.json"
+    },
+    {
+      "path": "ip/dsi_tx/ipm/component.pickle",
+      "sha256": "70d2d24df1c0fad3e6d8834e4fc03d4d060ea0f381e0d04c4e1605c9a417d2b4",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/ipm/component.pickle"
+    },
+    {
+      "path": "ip/dsi_tx/ipm/graph.pickle",
+      "sha256": "d59235836463ef250a4e17c30f46ab2d4b6c2f86ed5c9d374e589bec39922621",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/dsi_tx/ipm/graph.pickle"
+    },
+    {
+      "path": "ip/csi_rx_controller/ipm/component.pickle",
+      "sha256": "fa7f940e4f0a48c590937b98d8b6748d88e2bd6e5a267418d6d144953717e691",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/ipm/component.pickle"
+    },
+    {
+      "path": "ip/csi_rx_controller/ipm/graph.pickle",
+      "sha256": "53a0ce7af9a182004af0e527799e9a1f6299ae0dc89e97360ee49516b235f7e2",
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/ip/csi_rx_controller/ipm/graph.pickle"
+    }
+  ],
+  "config_sha256": {
+    "config/sensor.json": "83dd8a4a81ab5badebddee3fdde3cd67394a127595dcf0c4c5e14ee2456dc7f5",
+    "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f"
+  }
+}

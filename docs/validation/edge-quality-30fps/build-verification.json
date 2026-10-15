@@ -1,0 +1,47 @@
+{
+  "board_tested": false,
+  "project": "camera_trials\\median_source_20261013\\quality_preserve\\resource2",
+  "resources": {
+    "xlr": {
+      "used": 48532,
+      "total": 60800,
+      "remaining_percent": 20.17763157894737
+    },
+    "ram": {
+      "used": 189,
+      "total": 256,
+      "remaining_percent": 26.171875
+    },
+    "dsp": {
+      "used": 127,
+      "total": 160,
+      "remaining_percent": 20.625
+    },
+    "ddr_mib": {
+      "used": 140.25,
+      "total": 256,
+      "remaining_percent": 45.21484375
+    }
+  },
+  "errors": [],
+  "setup_min_ns": 0.377,
+  "hold_min_ns": 0.026,
+  "changed_build_inputs": [],
+  "production_files_checked": 201,
+  "production_changed": [],
+  "bitstream_sha256": "cb2809a860f8a2a9b8818e1be1317c7ae756d6c7247e9dd752f57fc6c707765d",
+  "report_hashes": {
+    "ti60f225_oob.cdc.rpt": "4de7506dbf2b0d0ae971914d76163e11492591100a78a8f03395f4a678988b28",
+    "ti60f225_oob.hier_util.rpt": "7f5ec3959ede8e906258e46d062d3b58a4c386201538b12011bdaebe8e40032c",
+    "ti60f225_oob.hold_fixing.rpt": "74913c7dd42c1997a27e3518276405a983355f4bec55699dd87db557decfb34f",
+    "ti60f225_oob.map.rpt": "b034f3e7854a57524e9740dc8748aa3b1305c1b0a852895bf3370d3625534366",
+    "ti60f225_oob.pinout.rpt": "0d791e395c0b8e45c227f466b1961e4c08489f3c1c1ec60ccd657f38720bcec9",
+    "ti60f225_oob.place.rpt": "86569bc77937c079a06f73e3adb93acb108e1c045ed0c46b4ad9b841d830771f",
+    "ti60f225_oob.place.timing.rpt": "75381afc0da208715a438762433852717f71c5c91494ced18a42cefbcefb6b81",
+    "ti60f225_oob.pt.rpt": "77403a04aac64443897668dc09a892d28513011f38f921726b015069b98f8404",
+    "ti60f225_oob.pt_timing.rpt": "811baa2a270e061621a8c9a3b76dc8a3aa47f5902b2216c857eae78389f28ef0",
+    "ti60f225_oob.route.rpt": "ea69c01be1e3e2e3323302ceed7205636e6a294d96218c81aa7bdafed9d321e9",
+    "ti60f225_oob.timing.rpt": "0bb4ba4d82c71fb07777790298b8dd40f9c02d4ac171830b1c1d152784b3b99a"
+  },
+  "offline_build_passed": true
+}

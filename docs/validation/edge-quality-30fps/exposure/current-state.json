@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-14T21:31:15.5858283+08:00",
+  "build_id": "0x6010100f",
+  "current_configuration": "30fps Canny 24/12; exposure 1800 half-lines; analog gain 80/3f",
+  "left_active": true,
+  "exposure_accepted": true,
+  "canny_stability_resolved": false,
+  "verification": "verification.json",
+  "reload": "load-30fps-20ms.cmd"
+}

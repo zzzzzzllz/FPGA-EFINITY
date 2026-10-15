@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "files": {
+    "apply20ms.jsonl": "f467fecf82c7df209e7f3b9ec1c67aa9287188aa50cb57a7042fc73ff46c0cd5",
+    "current-state.json": "b6e2d6b484f1054c306355bfee8b224a47a52fef9b9d6b391c0710c0d24410dc",
+    "load-30fps-20ms.cmd": "ea0c6e01068503cadee5032b6f2394c93f893f36dfd252270bc9d1a759949b50",
+    "load30.log": "89c3a97be63eb90b384e079c619c890b13f85c0241244ad7988cc5aa6ecb83ea",
+    "preflight.json": "0f86e7d112f66b3eaac7a8a5d49e21731b9cbf5bbfb681ff7b49c34378e5b1f3",
+    "README.md": "8454f0bce8dbc8a95c8525160e9bd15dcdc4c8290c93246224497afbf0f58812",
+    "restore-30fps-before-exposure.cmd": "c51c286922f2c33b9ab2e56c3e790a0dcbfbbc7d316cd24860428c7251779b72",
+    "sensor-before30-read.jsonl": "977cfa5fc8b60bd4c6ff89c3fbb45fe26906f5e9a07ae94fc1427ac8bad6c97c",
+    "sensor-before30.json": "5f69b534ff99e0deacac1b0642c7749abf654ca203cc11e7621fcd85c2f736d3",
+    "target-health.jsonl": "4216e5e22cca8fd323d249d730678b9e46cb6714e749b82b5ff5236d26831693",
+    "target-sensor.json": "a9a4d80a9cd5c462b1d5144c7465f99ae2ff5f29fb289b4e75cdc37aff3c62d7",
+    "verification.json": "daa3e8bb5ebbe3c826d241249e85735238d4b4cbcf36a482a64e9a6a4ac9a970",
+    "previous66\\build-verification.json": "63731a6cb288b7f59f56b5c681f2bf3f21cc6966283e99c30a42839db3d2898c",
+    "previous66\\camera-control.py": "8eb423f11f181b65fb31567fb5dbb0c98510a056ce5a0acd084002d8d2aa4972",
+    "previous66\\full_view_profile.json": "1962d05f80553c1561609a27eaa25cc296f94c6d64193b087eb00b09c2a41982",
+    "previous66\\ti60f225_oob.bit": "bae26e378bf364b9878315da9788a716df073e3009e4585b1b172192af809e35"
+  }
+}
