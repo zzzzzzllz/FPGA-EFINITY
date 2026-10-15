@@ -1,0 +1,17 @@
+{
+  "local_markdown_links_checked": 76,
+  "broken_links": [],
+  "documents_outside_docs": [],
+  "root_entries": [
+    ".git",
+    ".gitattributes",
+    ".gitignore",
+    "README.md",
+    "coding",
+    "docs",
+    "tmp",
+    "tools"
+  ],
+  "production_sources": "checked separately by verify-project.py",
+  "tmp_empty": true
+}

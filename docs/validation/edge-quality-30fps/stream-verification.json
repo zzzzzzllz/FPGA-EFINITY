@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "results": [
+    "PASS cleanup 4x3 8 contiguous frames, pixels/modes/metadata/stalls\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-4-3.v:28: $finish called at 1275000 (1ps)\n",
+    "PASS cleanup 32x24 8 contiguous frames, pixels/modes/metadata/stalls\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-32-24.v:28: $finish called at 47805000 (1ps)\n",
+    "PASS cleanup 1280x720 4 contiguous frames, pixels/modes/metadata/stalls\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-1280-720.v:28: $finish called at 26843575000 (1ps)\n"
+  ],
+  "source_hashes": {
+    "camera_trials\\median_source_20261013\\quality_preserve\\verify_stream.py": "dd14be6fb01a6d110967a9340e5e9000c714253a273d2ed7cfd2d522bc039c91",
+    "camera_trials\\median_source_20261013\\quality_preserve\\model.py": "82617a32ca0ea6318372b51af5d02d4495953cf01258ff1aaf9db04ec4f68e88",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\canny_nms_pair.v": "1668d4577d8739cd850116f3cb54aa111268ddba6e5289318020c25376bb2e6c",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\in-4-3.hex": "4a4ebd32f1dfbdf54ff6660a628dbd9dcb773479261b56315cc8bd0d043e90e6",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\exp-4-3.hex": "4a4ebd32f1dfbdf54ff6660a628dbd9dcb773479261b56315cc8bd0d043e90e6",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-4-3.v": "5b19d078623460f48c04d29db1f5bf0d609e031fcebc26e229533de7ec2bef5f",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\in-32-24.hex": "cadfd46c21280f10216ede03f58e6edf3bdc69378b97375019d9ec3ac035c3a5",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\exp-32-24.hex": "efe1afe32662337d1097b77d16eeac678e339d23a0f37286678d0387a5fc2f2e",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-32-24.v": "e6d558c2fe8822e20ecfd4bfc16d27fb29695858b0c71815a6680f52211ea825",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\in-1280-720.hex": "8e3d1644487b728f4b8e8794924ab91398fc9c5fcbfe25631f1dcd1ad4630ba0",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\exp-1280-720.hex": "e05d14e28e31a2ce8fa126b04bc819c152ecf02dcdd58523933b64c01c3258b4",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-1280-720.v": "718b5acb6d70518f74d35622e9a150a27af1b4202586ce49569ac553d25dcce0"
+  }
+}

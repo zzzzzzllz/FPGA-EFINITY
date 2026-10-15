@@ -1,0 +1,912 @@
+{
+  "passed": true,
+  "arithmetic": "PASS 301510 exhaustive cleanup vectors; all neighbour states and protected/bypass paths\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_rules.v:9: $finish called at 0 (1s)\n",
+  "image_cases": 148,
+  "image_pixels": 7615232,
+  "results": [
+    {
+      "case": "dev-thin_line_0-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_0-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5171 enqueued=32 highwater=4 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 51775000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_0-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5453 enqueued=125 highwater=125 cache_misses=1 transactions=193\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 54595000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_0-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5441 enqueued=123 highwater=123 cache_misses=1 transactions=193\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 54475000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_30-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5947 enqueued=136 highwater=111 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59535000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_30-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5872 enqueued=127 highwater=104 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 58785000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_30-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5610 enqueued=137 highwater=137 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 56165000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_30-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5606 enqueued=136 highwater=136 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 56125000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_60-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6013 enqueued=137 highwater=106 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 60195000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_60-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5963 enqueued=135 highwater=111 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59695000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_60-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5633 enqueued=134 highwater=134 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 56395000 (1ps)"
+    },
+    {
+      "case": "dev-thin_line_60-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5657 enqueued=137 highwater=137 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 56635000 (1ps)"
+    },
+    {
+      "case": "dev-arc-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6207 enqueued=177 highwater=174 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62135000 (1ps)"
+    },
+    {
+      "case": "dev-arc-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6230 enqueued=177 highwater=173 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62365000 (1ps)"
+    },
+    {
+      "case": "dev-arc-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5928 enqueued=180 highwater=180 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59345000 (1ps)"
+    },
+    {
+      "case": "dev-arc-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5915 enqueued=178 highwater=178 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59215000 (1ps)"
+    },
+    {
+      "case": "dev-low_contrast_rectangle-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6153 enqueued=202 highwater=202 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61595000 (1ps)"
+    },
+    {
+      "case": "dev-low_contrast_rectangle-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6165 enqueued=204 highwater=204 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61715000 (1ps)"
+    },
+    {
+      "case": "dev-low_contrast_rectangle-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6123 enqueued=200 highwater=200 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61295000 (1ps)"
+    },
+    {
+      "case": "dev-low_contrast_rectangle-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6144 enqueued=200 highwater=200 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61505000 (1ps)"
+    },
+    {
+      "case": "dev-texture_background-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6278 enqueued=178 highwater=175 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62845000 (1ps)"
+    },
+    {
+      "case": "dev-texture_background-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6281 enqueued=180 highwater=175 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62875000 (1ps)"
+    },
+    {
+      "case": "dev-texture_background-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5914 enqueued=174 highwater=174 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59205000 (1ps)"
+    },
+    {
+      "case": "dev-texture_background-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5914 enqueued=174 highwater=174 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59205000 (1ps)"
+    },
+    {
+      "case": "dev-flat_noise-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "dev-flat_noise-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "dev-flat_noise-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "dev-flat_noise-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_15-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5883 enqueued=127 highwater=94 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 58895000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_15-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5840 enqueued=127 highwater=104 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 58465000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_15-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5432 enqueued=124 highwater=124 cache_misses=1 transactions=193\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 54385000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_15-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5432 enqueued=124 highwater=124 cache_misses=1 transactions=193\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 54385000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_45-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6045 enqueued=134 highwater=83 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 60515000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_45-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6087 enqueued=133 highwater=73 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 60935000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_45-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5618 enqueued=134 highwater=134 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 56245000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_45-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5618 enqueued=134 highwater=134 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 56245000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_75-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6004 enqueued=129 highwater=97 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 60105000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_75-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5953 enqueued=126 highwater=97 cache_misses=1 transactions=194\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59595000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_75-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5555 enqueued=125 highwater=125 cache_misses=1 transactions=193\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 55615000 (1ps)"
+    },
+    {
+      "case": "holdout-thin_line_75-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5542 enqueued=126 highwater=126 cache_misses=1 transactions=193\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 55485000 (1ps)"
+    },
+    {
+      "case": "holdout-arc-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6236 enqueued=176 highwater=171 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62425000 (1ps)"
+    },
+    {
+      "case": "holdout-arc-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6243 enqueued=178 highwater=173 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62495000 (1ps)"
+    },
+    {
+      "case": "holdout-arc-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5902 enqueued=175 highwater=175 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59085000 (1ps)"
+    },
+    {
+      "case": "holdout-arc-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5915 enqueued=178 highwater=178 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59215000 (1ps)"
+    },
+    {
+      "case": "holdout-low_contrast_rectangle-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6144 enqueued=204 highwater=204 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61505000 (1ps)"
+    },
+    {
+      "case": "holdout-low_contrast_rectangle-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6460 enqueued=204 highwater=203 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 64665000 (1ps)"
+    },
+    {
+      "case": "holdout-low_contrast_rectangle-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6144 enqueued=204 highwater=204 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61505000 (1ps)"
+    },
+    {
+      "case": "holdout-low_contrast_rectangle-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6144 enqueued=204 highwater=204 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61505000 (1ps)"
+    },
+    {
+      "case": "holdout-texture_background-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6283 enqueued=183 highwater=181 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62895000 (1ps)"
+    },
+    {
+      "case": "holdout-texture_background-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=6325 enqueued=187 highwater=182 cache_misses=1 transactions=196\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 63315000 (1ps)"
+    },
+    {
+      "case": "holdout-texture_background-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5926 enqueued=176 highwater=176 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59325000 (1ps)"
+    },
+    {
+      "case": "holdout-texture_background-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=5932 enqueued=177 highwater=177 cache_misses=1 transactions=195\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59385000 (1ps)"
+    },
+    {
+      "case": "holdout-flat_noise-c8-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "holdout-flat_noise-c8-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "holdout-flat_noise-c24-s1",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "holdout-flat_noise-c24-s2",
+      "pixels": 12288,
+      "local": "PASS local 128x96 config=6018 pixels=12288 cycles=7400\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 74045000 (1ps)",
+      "final": "PASS hysteresis 128x96 cycles=4243 enqueued=0 highwater=0 cache_misses=0 transactions=192\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 42495000 (1ps)"
+    },
+    {
+      "case": "raw-paper-frame-00",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=5055 enqueued=332 highwater=186 cache_misses=1 transactions=68\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 50615000 (1ps)"
+    },
+    {
+      "case": "raw-paper-frame-01",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=4719 enqueued=299 highwater=179 cache_misses=1 transactions=68\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 47255000 (1ps)"
+    },
+    {
+      "case": "raw-paper-frame-02",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=5075 enqueued=334 highwater=190 cache_misses=1 transactions=68\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 50815000 (1ps)"
+    },
+    {
+      "case": "raw-paper-frame-03",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=5093 enqueued=332 highwater=181 cache_misses=1 transactions=68\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 50995000 (1ps)"
+    },
+    {
+      "case": "raw-dark-frame-00",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=6143 enqueued=477 highwater=407 cache_misses=1 transactions=72\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 61495000 (1ps)"
+    },
+    {
+      "case": "raw-dark-frame-01",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=6075 enqueued=466 highwater=398 cache_misses=1 transactions=72\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 60815000 (1ps)"
+    },
+    {
+      "case": "raw-dark-frame-02",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=6197 enqueued=481 highwater=407 cache_misses=1 transactions=72\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 62035000 (1ps)"
+    },
+    {
+      "case": "raw-dark-frame-03",
+      "pixels": 4096,
+      "local": "PASS local 64x64 config=6018 pixels=4096 cycles=2582\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 25865000 (1ps)",
+      "final": "PASS hysteresis 64x64 cycles=5939 enqueued=460 highwater=410 cache_misses=1 transactions=72\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 59455000 (1ps)"
+    },
+    {
+      "case": "prior-thin_7-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7469 enqueued=148 highwater=88 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74755000 (1ps)"
+    },
+    {
+      "case": "prior-thin_7-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7426 enqueued=151 highwater=102 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74325000 (1ps)"
+    },
+    {
+      "case": "prior-thin_7-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7012 enqueued=151 highwater=151 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70185000 (1ps)"
+    },
+    {
+      "case": "prior-thin_7-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7008 enqueued=151 highwater=151 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70145000 (1ps)"
+    },
+    {
+      "case": "prior-thin_22-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7429 enqueued=153 highwater=136 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74355000 (1ps)"
+    },
+    {
+      "case": "prior-thin_22-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7413 enqueued=151 highwater=120 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74195000 (1ps)"
+    },
+    {
+      "case": "prior-thin_22-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7012 enqueued=151 highwater=151 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70185000 (1ps)"
+    },
+    {
+      "case": "prior-thin_22-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7026 enqueued=153 highwater=153 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70325000 (1ps)"
+    },
+    {
+      "case": "prior-thin_38-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7501 enqueued=162 highwater=126 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 75075000 (1ps)"
+    },
+    {
+      "case": "prior-thin_38-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7497 enqueued=163 highwater=122 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 75035000 (1ps)"
+    },
+    {
+      "case": "prior-thin_38-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7118 enqueued=160 highwater=160 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 71245000 (1ps)"
+    },
+    {
+      "case": "prior-thin_38-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7116 enqueued=160 highwater=160 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 71225000 (1ps)"
+    },
+    {
+      "case": "prior-thin_53-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7622 enqueued=167 highwater=132 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 76285000 (1ps)"
+    },
+    {
+      "case": "prior-thin_53-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7571 enqueued=162 highwater=128 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 75775000 (1ps)"
+    },
+    {
+      "case": "prior-thin_53-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7148 enqueued=164 highwater=164 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 71545000 (1ps)"
+    },
+    {
+      "case": "prior-thin_53-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7148 enqueued=164 highwater=164 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 71545000 (1ps)"
+    },
+    {
+      "case": "prior-thin_68-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7466 enqueued=150 highwater=133 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74725000 (1ps)"
+    },
+    {
+      "case": "prior-thin_68-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7439 enqueued=156 highwater=127 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74455000 (1ps)"
+    },
+    {
+      "case": "prior-thin_68-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7086 enqueued=152 highwater=152 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70925000 (1ps)"
+    },
+    {
+      "case": "prior-thin_68-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7059 enqueued=150 highwater=150 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70655000 (1ps)"
+    },
+    {
+      "case": "prior-thin_83-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7419 enqueued=148 highwater=104 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74255000 (1ps)"
+    },
+    {
+      "case": "prior-thin_83-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7445 enqueued=148 highwater=98 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 74515000 (1ps)"
+    },
+    {
+      "case": "prior-thin_83-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7021 enqueued=148 highwater=148 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70275000 (1ps)"
+    },
+    {
+      "case": "prior-thin_83-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7034 enqueued=150 highwater=150 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 70405000 (1ps)"
+    },
+    {
+      "case": "prior-arc_17-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7225 enqueued=133 highwater=130 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 72315000 (1ps)"
+    },
+    {
+      "case": "prior-arc_17-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7113 enqueued=128 highwater=126 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 71195000 (1ps)"
+    },
+    {
+      "case": "prior-arc_17-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=6820 enqueued=128 highwater=128 cache_misses=1 transactions=254\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 68265000 (1ps)"
+    },
+    {
+      "case": "prior-arc_17-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=6889 enqueued=130 highwater=130 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 68955000 (1ps)"
+    },
+    {
+      "case": "prior-arc_29-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7891 enqueued=221 highwater=216 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 78975000 (1ps)"
+    },
+    {
+      "case": "prior-arc_29-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7886 enqueued=222 highwater=217 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 78925000 (1ps)"
+    },
+    {
+      "case": "prior-arc_29-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7593 enqueued=220 highwater=220 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 75995000 (1ps)"
+    },
+    {
+      "case": "prior-arc_29-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7621 enqueued=223 highwater=223 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 76275000 (1ps)"
+    },
+    {
+      "case": "prior-arc_37-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=8396 enqueued=280 highwater=276 cache_misses=1 transactions=258\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 84025000 (1ps)"
+    },
+    {
+      "case": "prior-arc_37-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=8433 enqueued=280 highwater=273 cache_misses=1 transactions=258\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 84395000 (1ps)"
+    },
+    {
+      "case": "prior-arc_37-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=8124 enqueued=279 highwater=279 cache_misses=1 transactions=257\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 81305000 (1ps)"
+    },
+    {
+      "case": "prior-arc_37-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=8086 enqueued=276 highwater=276 cache_misses=1 transactions=257\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 80925000 (1ps)"
+    },
+    {
+      "case": "prior-flat-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=5553 enqueued=0 highwater=0 cache_misses=0 transactions=252\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 55595000 (1ps)"
+    },
+    {
+      "case": "prior-flat-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=5553 enqueued=0 highwater=0 cache_misses=0 transactions=252\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 55595000 (1ps)"
+    },
+    {
+      "case": "prior-flat-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=5553 enqueued=0 highwater=0 cache_misses=0 transactions=252\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 55595000 (1ps)"
+    },
+    {
+      "case": "prior-flat-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=5553 enqueued=0 highwater=0 cache_misses=0 transactions=252\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 55595000 (1ps)"
+    },
+    {
+      "case": "prior-texture-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7894 enqueued=219 highwater=213 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 79005000 (1ps)"
+    },
+    {
+      "case": "prior-texture-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=8135 enqueued=239 highwater=213 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 81415000 (1ps)"
+    },
+    {
+      "case": "prior-texture-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7531 enqueued=212 highwater=212 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 75375000 (1ps)"
+    },
+    {
+      "case": "prior-texture-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7931 enqueued=223 highwater=215 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 79375000 (1ps)"
+    },
+    {
+      "case": "prior-rectangle-c8-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7966 enqueued=229 highwater=227 cache_misses=1 transactions=256\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 79725000 (1ps)"
+    },
+    {
+      "case": "prior-rectangle-c8-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7634 enqueued=229 highwater=229 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 76405000 (1ps)"
+    },
+    {
+      "case": "prior-rectangle-c24-s1",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7608 enqueued=228 highwater=228 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 76145000 (1ps)"
+    },
+    {
+      "case": "prior-rectangle-c24-s2",
+      "pixels": 16128,
+      "local": "PASS local 144x112 config=6018 pixels=16128 cycles=9556\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 95605000 (1ps)",
+      "final": "PASS hysteresis 144x112 cycles=7608 enqueued=228 highwater=228 cache_misses=1 transactions=255\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 76145000 (1ps)"
+    },
+    {
+      "case": "dev-photo-8068",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=456966 enqueued=44792 highwater=37660 cache_misses=11 transactions=3251\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4569725000 (1ps)"
+    },
+    {
+      "case": "dev-photo-198087",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=313677 enqueued=27603 highwater=24637 cache_misses=12 transactions=3380\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3136835000 (1ps)"
+    },
+    {
+      "case": "dev-photo-281017",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=431763 enqueued=40301 highwater=32726 cache_misses=12 transactions=3503\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4317695000 (1ps)"
+    },
+    {
+      "case": "dev-photo-16068",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=482995 enqueued=48936 highwater=45675 cache_misses=11 transactions=3328\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4830015000 (1ps)"
+    },
+    {
+      "case": "dev-photo-208078",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=406324 enqueued=40082 highwater=37592 cache_misses=11 transactions=3210\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4063305000 (1ps)"
+    },
+    {
+      "case": "dev-photo-108036",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=510411 enqueued=52969 highwater=50825 cache_misses=11 transactions=3405\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5104175000 (1ps)"
+    },
+    {
+      "case": "dev-photo-123057",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=442287 enqueued=43844 highwater=39758 cache_misses=11 transactions=3239\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4422935000 (1ps)"
+    },
+    {
+      "case": "dev-photo-141048",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=511284 enqueued=53572 highwater=52614 cache_misses=11 transactions=3420\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5112905000 (1ps)"
+    },
+    {
+      "case": "dev-photo-100099",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=343655 enqueued=31882 highwater=27760 cache_misses=11 transactions=3056\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3436615000 (1ps)"
+    },
+    {
+      "case": "dev-photo-164046",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=559223 enqueued=55593 highwater=48465 cache_misses=12 transactions=3759\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5592295000 (1ps)"
+    },
+    {
+      "case": "dev-photo-279005",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=277664 enqueued=24496 highwater=23620 cache_misses=12 transactions=3285\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 2776705000 (1ps)"
+    },
+    {
+      "case": "dev-photo-202000",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=375733 enqueued=36022 highwater=31841 cache_misses=11 transactions=3125\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3757395000 (1ps)"
+    },
+    {
+      "case": "photo-103006",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=461146 enqueued=46855 highwater=44529 cache_misses=11 transactions=3291\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4611525000 (1ps)"
+    },
+    {
+      "case": "photo-145079",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=469670 enqueued=48329 highwater=46576 cache_misses=11 transactions=3329\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4696765000 (1ps)"
+    },
+    {
+      "case": "photo-49024",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=351619 enqueued=32650 highwater=28308 cache_misses=11 transactions=3094\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3516255000 (1ps)"
+    },
+    {
+      "case": "photo-81066",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=424126 enqueued=42898 highwater=40205 cache_misses=11 transactions=3231\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4241325000 (1ps)"
+    },
+    {
+      "case": "photo-10081",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=347956 enqueued=32968 highwater=28366 cache_misses=10 transactions=3057\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3479625000 (1ps)"
+    },
+    {
+      "case": "photo-317043",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=546465 enqueued=57913 highwater=57278 cache_misses=11 transactions=3484\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5464715000 (1ps)"
+    },
+    {
+      "case": "photo-108004",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=567254 enqueued=60472 highwater=60215 cache_misses=11 transactions=3531\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5672605000 (1ps)"
+    },
+    {
+      "case": "photo-309040",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=470235 enqueued=47637 highwater=44841 cache_misses=11 transactions=3320\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4702415000 (1ps)"
+    },
+    {
+      "case": "photo-388067",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=499703 enqueued=49407 highwater=43963 cache_misses=12 transactions=3651\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4997095000 (1ps)"
+    },
+    {
+      "case": "photo-368037",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=399472 enqueued=38766 highwater=35135 cache_misses=11 transactions=3174\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3994785000 (1ps)"
+    },
+    {
+      "case": "photo-189006",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=363170 enqueued=33374 highwater=29607 cache_misses=12 transactions=3406\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3631765000 (1ps)"
+    },
+    {
+      "case": "photo-71099",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=459226 enqueued=45756 highwater=40818 cache_misses=11 transactions=3267\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4592325000 (1ps)"
+    },
+    {
+      "case": "photo-385022",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=487406 enqueued=51050 highwater=50455 cache_misses=11 transactions=3383\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4874125000 (1ps)"
+    },
+    {
+      "case": "photo-134049",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=488087 enqueued=50738 highwater=49849 cache_misses=11 transactions=3374\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4880935000 (1ps)"
+    },
+    {
+      "case": "photo-5096",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=444646 enqueued=44544 highwater=41248 cache_misses=11 transactions=3261\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4446525000 (1ps)"
+    },
+    {
+      "case": "photo-101084",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=560206 enqueued=58283 highwater=56651 cache_misses=12 transactions=3803\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5602125000 (1ps)"
+    },
+    {
+      "case": "photo-296058",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=502805 enqueued=52393 highwater=51457 cache_misses=11 transactions=3397\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5028115000 (1ps)"
+    },
+    {
+      "case": "photo-257098",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=410177 enqueued=39924 highwater=36632 cache_misses=12 transactions=3498\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4101835000 (1ps)"
+    },
+    {
+      "case": "photo-176051",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=258216 enqueued=22260 highwater=19451 cache_misses=11 transactions=2908\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 2582225000 (1ps)"
+    },
+    {
+      "case": "photo-140088",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=314533 enqueued=27621 highwater=23156 cache_misses=12 transactions=3299\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3145395000 (1ps)"
+    },
+    {
+      "case": "photo-268048",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=478991 enqueued=48988 highwater=47099 cache_misses=11 transactions=3337\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 4789975000 (1ps)"
+    },
+    {
+      "case": "photo-344010",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=526164 enqueued=54908 highwater=52603 cache_misses=11 transactions=3423\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 5261705000 (1ps)"
+    },
+    {
+      "case": "photo-347031",
+      "pixels": 184704,
+      "local": "PASS local 384x481 config=6018 pixels=184704 cycles=105100\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 1051045000 (1ps)",
+      "final": "PASS hysteresis 384x481 cycles=313566 enqueued=28202 highwater=25804 cache_misses=12 transactions=3333\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3135725000 (1ps)"
+    },
+    {
+      "case": "photo-118015",
+      "pixels": 164352,
+      "local": "PASS local 512x321 config=6018 pixels=164352 cycles=93921\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v:56: $finish called at 939255000 (1ps)",
+      "final": "PASS hysteresis 512x321 cycles=351494 enqueued=34401 highwater=33019 cache_misses=11 transactions=3115\nD:\\Desktop_New\\EfinityNEW\\camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v:74: $finish called at 3515005000 (1ps)"
+    }
+  ],
+  "natural_padding": "JPEG width padded by replication to a 64-pixel multiple for the existing DDR seed scanner; central region at least 10px from original frame borders verified identical; 9px protected frame border differs when width is extended",
+  "source_hashes": {
+    "camera_trials\\median_source_20261013\\quality_preserve\\verify_rtl.py": "0862ce40e1e90916500bc6131c10b6ca806f505bb7f4bc5cc587897f9c45ae16",
+    "camera_trials\\median_source_20261013\\quality_preserve\\model.py": "82617a32ca0ea6318372b51af5d02d4495953cf01258ff1aaf9db04ec4f68e88",
+    "camera_trials\\median_source_20261013\\quality_preserve\\verify_rules.py": "8a19e720b39621dee80d7b60080066942d25c34ceaf6cf365f407df820571095",
+    "camera_trials\\median_source_20261013\\quality_preserve\\verification\\rules.hex": "702f580ce2a5757383e88957903a3bbe44703fa96ead00368b73630c8d6339e0",
+    "camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_rules.v": "1d3880e06d3b577cf278a99b6b197bcf906a0ed4c5833a156715e55fb52bb020",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\median_pair.v": "d90d76c508b4c7fcb5b603b5a0aa21a543ab1a75fe4443eb20fa236416fa2b92",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\gaussian_pair.v": "e7bef78824d7244712abe8b438fd64a8a2412bccf930ab386a688f2567a89574",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\edge_algorithm_pair.v": "0802f0802f12d43a00ecb7a80bc2e19dc1e121dde8f8d97c8e6b4817e5b0b750",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\sobel_pair.v": "1022ce5489b360c69de84a95af7051ec27faaa77c0440efa98e0c0f997105dd7",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\canny_nms_pair.v": "1668d4577d8739cd850116f3cb54aa111268ddba6e5289318020c25376bb2e6c",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\canny_hysteresis.v": "c65a72098d0748d84bad3c1d937456ff20d59f969e5aefc5187d00e978cc8eae",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\tb_canny_local.v": "586e6e4ff5905cc37a2eb107372d842aff12f0d052d3aede4a55714dfde9e2ff",
+    "camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_canny_hysteresis_aligned.v": "3567d5aef2c7a2e1e79d023cc86564ef48daf2e0a18f26f3bb66de9dd35d5f61"
+  }
+}

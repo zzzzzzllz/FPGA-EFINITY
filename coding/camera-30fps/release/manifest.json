@@ -390,9 +390,9 @@
       "source": "camera_raw/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/wave.do"
     },
     {
-      "path": "rtl/frame_buffer_V4/~$调试总结 .docx",
+      "path": "rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx",
       "sha256": "bc377db68ce1732df37407009d1cd382220cae5e3b62939b010bf3549d52462d",
-      "source": "camera_raw/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/~$调试总结 .docx"
+      "source": "camera_raw/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx"
     },
     {
       "path": "rtl/gamma_conrrection/2P0.mem",
@@ -756,6 +756,10 @@
     }
   ],
   "config_sha256": {
+    "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f"
+  },
+  "runtime_sha256": {
+    "full_view_profile.json": "ca3f97b06633fd966d4f61df4877ca2faa6f356fdc94e5533c7b4422efb08029",
     "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f"
   }
 }

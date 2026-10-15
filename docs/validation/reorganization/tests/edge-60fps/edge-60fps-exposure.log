@@ -1,0 +1,2 @@
+PASS: exposure=1381 half-lines gain=803d, ROM writes/reads and startup readback
+tests/tb_exposure.v:52: $finish called at 2040000 (1ps)

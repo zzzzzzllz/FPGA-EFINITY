@@ -1,0 +1,209 @@
+{
+  "date": "2026-10-15",
+  "baseline_commit": "d9a1e7a",
+  "hardware_tested_this_migration": false,
+  "production_RTL_changed": false,
+  "builds": [
+    {
+      "version": "camera-30fps",
+      "build_id": "0x60101001",
+      "release_sha256": "8856fef875d9434260f9b55aaf9d3689527b45a63dd02b26845bb155f94d5f8c",
+      "runtime": "PASS",
+      "source_hashes": 144,
+      "xml_inputs": 61,
+      "source": "PASS",
+      "python_syntax": "PASS",
+      "build": "PASS",
+      "timing_min_slack_ns": [
+        0.387,
+        0.026
+      ],
+      "built_bitstream_sha256": "ddded7468275f18cf3198f2144d9debb0bbdc5ecc2537448206fbc3f781f4357",
+      "resources": {
+        "XLRs": {
+          "used": 28026,
+          "total": 60800
+        },
+        "Memory Blocks": {
+          "used": 90,
+          "total": 256
+        },
+        "DSP Blocks": {
+          "used": 6,
+          "total": 160
+        }
+      }
+    },
+    {
+      "version": "edge-30fps",
+      "build_id": "0x6010100a",
+      "release_sha256": "078fa0cbc8461b3bfd866213a164562262ac1495976962a07047802f67b6b771",
+      "runtime": "PASS",
+      "source_hashes": 194,
+      "xml_inputs": 79,
+      "source": "PASS",
+      "python_syntax": "PASS",
+      "build": "PASS",
+      "timing_min_slack_ns": [
+        0.322,
+        0.026
+      ],
+      "built_bitstream_sha256": "ad58fbc804851310dbee9f806cd8f7e43cd71e83d6e986cbdf5fe3d0e3fc1103",
+      "resources": {
+        "XLRs": {
+          "used": 48598,
+          "total": 60800
+        },
+        "Memory Blocks": {
+          "used": 171,
+          "total": 256
+        },
+        "DSP Blocks": {
+          "used": 64,
+          "total": 160
+        }
+      }
+    },
+    {
+      "version": "edge-60fps",
+      "build_id": "0x60101065",
+      "release_sha256": "065f00238e20c663e21368683f64b855b74a0bf9623c155e221853d26f7fafbc",
+      "runtime": "PASS",
+      "source_hashes": 124,
+      "xml_inputs": 64,
+      "source": "PASS",
+      "python_syntax": "PASS",
+      "build": "PASS",
+      "timing_min_slack_ns": [
+        0.352,
+        0.026
+      ],
+      "built_bitstream_sha256": "ea9c2f17e0b63f666e79dc53b88b0fa2390b79fd7fc96b090ebd7fad7786a933",
+      "resources": {
+        "XLRs": {
+          "used": 31017,
+          "total": 60800
+        },
+        "Memory Blocks": {
+          "used": 139,
+          "total": 256
+        },
+        "DSP Blocks": {
+          "used": 60,
+          "total": 160
+        }
+      }
+    },
+    {
+      "version": "edge-quality-30fps",
+      "build_id": "0x6010100f",
+      "release_sha256": "cb2809a860f8a2a9b8818e1be1317c7ae756d6c7247e9dd752f57fc6c707765d",
+      "runtime": "PASS",
+      "source_hashes": 195,
+      "xml_inputs": 79,
+      "source": "PASS",
+      "python_syntax": "PASS",
+      "build": "PASS",
+      "timing_min_slack_ns": [
+        0.377,
+        0.026
+      ],
+      "built_bitstream_sha256": "c7fdaab73d60436ae529d40548024c6dd7afcfea41b49fae113d4a6c95072c06",
+      "resources": {
+        "XLRs": {
+          "used": 48532,
+          "total": 60800
+        },
+        "Memory Blocks": {
+          "used": 189,
+          "total": 256
+        },
+        "DSP Blocks": {
+          "used": 127,
+          "total": 160
+        }
+      }
+    }
+  ],
+  "tests": [
+    {
+      "version": "camera-30fps",
+      "group": "full-view, four Bayer arrangements",
+      "result": "PASS"
+    },
+    {
+      "version": "edge-30fps",
+      "group": "small",
+      "commands": 41,
+      "after_old_directories_removed": true,
+      "result": "PASS"
+    },
+    {
+      "version": "edge-60fps",
+      "group": "eight small-frame cases and 10ms exposure",
+      "result": "PASS"
+    },
+    {
+      "version": "edge-quality-30fps",
+      "group": "small",
+      "commands": 41,
+      "after_old_directories_removed": true,
+      "result": "PASS"
+    }
+  ],
+  "post_cleanup_inputs": [
+    {
+      "version": "camera-30fps",
+      "build_id": "0x60101001",
+      "release_sha256": "8856fef875d9434260f9b55aaf9d3689527b45a63dd02b26845bb155f94d5f8c",
+      "runtime": "PASS",
+      "source_hashes": 144,
+      "xml_inputs": 61,
+      "source": "PASS",
+      "python_syntax": "PASS"
+    },
+    {
+      "version": "edge-30fps",
+      "build_id": "0x6010100a",
+      "release_sha256": "078fa0cbc8461b3bfd866213a164562262ac1495976962a07047802f67b6b771",
+      "runtime": "PASS",
+      "source_hashes": 194,
+      "xml_inputs": 79,
+      "source": "PASS",
+      "python_syntax": "PASS"
+    },
+    {
+      "version": "edge-60fps",
+      "build_id": "0x60101065",
+      "release_sha256": "065f00238e20c663e21368683f64b855b74a0bf9623c155e221853d26f7fafbc",
+      "runtime": "PASS",
+      "source_hashes": 124,
+      "xml_inputs": 64,
+      "source": "PASS",
+      "python_syntax": "PASS"
+    },
+    {
+      "version": "edge-quality-30fps",
+      "build_id": "0x6010100f",
+      "release_sha256": "cb2809a860f8a2a9b8818e1be1317c7ae756d6c7247e9dd752f57fc6c707765d",
+      "runtime": "PASS",
+      "source_hashes": 195,
+      "xml_inputs": 79,
+      "source": "PASS",
+      "python_syntax": "PASS"
+    }
+  ],
+  "retired_directories_absent": [
+    "backups",
+    "camera_edge",
+    "camera_raw",
+    "camera_trials",
+    "deliverables",
+    "logs",
+    "outflow_edge",
+    "output",
+    "research",
+    "work_syn"
+  ],
+  "cleanup_manifest": "cleanup-manifest.json"
+}

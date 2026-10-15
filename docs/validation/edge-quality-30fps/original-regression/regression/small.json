@@ -1,0 +1,289 @@
+[
+  {
+    "name": "canny_rules-compile",
+    "returncode": 0,
+    "seconds": 0.217,
+    "log": "regression\\canny_rules-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "canny_rules",
+    "returncode": 0,
+    "seconds": 0.205,
+    "log": "regression\\canny_rules.log",
+    "sha256": "da8bb85fe511f758064d64bb26b1b9dd4cfc7659d7f827e02da20fbf62abed51"
+  },
+  {
+    "name": "test-canny-local",
+    "returncode": 0,
+    "seconds": 7.053,
+    "log": "regression\\test-canny-local.log",
+    "sha256": "8e1abbd714fcc1b6be019c5be50679d62a2c919d39406c245a7e22a207fad35d"
+  },
+  {
+    "name": "test-canny-denoise",
+    "returncode": 0,
+    "seconds": 7.612,
+    "log": "regression\\test-canny-denoise.log",
+    "sha256": "575b3b937151af3c2930ac637a713bf227a90d5d91c5035894bd8df992409ea1"
+  },
+  {
+    "name": "test-canny-hysteresis",
+    "returncode": 0,
+    "seconds": 3.235,
+    "log": "regression\\test-canny-hysteresis.log",
+    "sha256": "479d6e80262f5c49ca88b56e06bd60346e7676a61b442011b9094c5dce4ad57f"
+  },
+  {
+    "name": "test-canny-store",
+    "returncode": 0,
+    "seconds": 43.443,
+    "log": "regression\\test-canny-store.log",
+    "sha256": "22147115bb4ad401ccf1620db198656ddbb7ee2e0c7c1a562f401626b99fb759"
+  },
+  {
+    "name": "test-canny-faults",
+    "returncode": 0,
+    "seconds": 1.439,
+    "log": "regression\\test-canny-faults.log",
+    "sha256": "8cd3e08243da7074bdf417dc689b7ad89df01a3db9198c460b221539b0383be8"
+  },
+  {
+    "name": "test-canny-hysteresis-medium",
+    "returncode": 0,
+    "seconds": 30.247,
+    "log": "regression\\test-canny-hysteresis-medium.log",
+    "sha256": "eb4e804c22808eea64605d5e31913edea1dcac0b3098824181e1f3be05f879e6"
+  },
+  {
+    "name": "test-canny-store-medium-shape",
+    "returncode": 0,
+    "seconds": 185.813,
+    "log": "regression\\test-canny-store-medium-shape.log",
+    "sha256": "722d4b867414c29494b2c3219798a05f5e99bee022c0d9ab0831683968f18915"
+  },
+  {
+    "name": "frame_memory_probe-compile",
+    "returncode": 0,
+    "seconds": 0.278,
+    "log": "regression\\frame_memory_probe-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "frame_memory_probe",
+    "returncode": 0,
+    "seconds": 0.219,
+    "log": "regression\\frame_memory_probe.log",
+    "sha256": "dd4e8926eaa5492e31ac305918d77447b9138ffc25c80fc3e7609868664fe325"
+  },
+  {
+    "name": "frame_store_control-compile",
+    "returncode": 0,
+    "seconds": 0.181,
+    "log": "regression\\frame_store_control-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "frame_store_control",
+    "returncode": 0,
+    "seconds": 0.219,
+    "log": "regression\\frame_store_control.log",
+    "sha256": "746f851eddfbc01a8f96b1b1b8dbc95008882a49bf79534937228e8e056328e1"
+  },
+  {
+    "name": "frame_reference_header-compile",
+    "returncode": 0,
+    "seconds": 0.321,
+    "log": "regression\\frame_reference_header-compile.log",
+    "sha256": "5f467661265a1923a0116162c94e13b7cfc7d87ce84f281d72c4ab238a68d30c"
+  },
+  {
+    "name": "frame_reference_header",
+    "returncode": 0,
+    "seconds": 0.128,
+    "log": "regression\\frame_reference_header.log",
+    "sha256": "5e91729e6c373f2392dc940925f6dc60b088823f9294605c336b56f922347157"
+  },
+  {
+    "name": "frame_store-compile",
+    "returncode": 0,
+    "seconds": 0.402,
+    "log": "regression\\frame_store-compile.log",
+    "sha256": "8a4dc9230026cae486a5b0359ec7b529857cfcc7b94b139b3c842e780dbf8341"
+  },
+  {
+    "name": "frame_store",
+    "returncode": 0,
+    "seconds": 113.052,
+    "log": "regression\\frame_store.log",
+    "sha256": "627f112a6a70baa9d29cfd88d8941cbf3d5f4bda4562dd82effa769ecdd0f733"
+  },
+  {
+    "name": "frame_store+REAL_ALGORITHM-compile",
+    "returncode": 0,
+    "seconds": 0.292,
+    "log": "regression\\frame_store+REAL_ALGORITHM-compile.log",
+    "sha256": "e351640085411d374b8ee76bf8fd72085c347987dafee0e69496ddd2dc2a7412"
+  },
+  {
+    "name": "frame_store+REAL_ALGORITHM",
+    "returncode": 0,
+    "seconds": 346.535,
+    "log": "regression\\frame_store+REAL_ALGORITHM.log",
+    "sha256": "627f112a6a70baa9d29cfd88d8941cbf3d5f4bda4562dd82effa769ecdd0f733"
+  },
+  {
+    "name": "edge_ui-compile",
+    "returncode": 0,
+    "seconds": 0.069,
+    "log": "regression\\edge_ui-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "edge_ui",
+    "returncode": 0,
+    "seconds": 0.173,
+    "log": "regression\\edge_ui.log",
+    "sha256": "c95f27087e8fd000d2243ec009a5800e1f593a22661ad4a775792e76f9f15798"
+  },
+  {
+    "name": "threshold_control-compile",
+    "returncode": 0,
+    "seconds": 0.062,
+    "log": "regression\\threshold_control-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "threshold_control",
+    "returncode": 0,
+    "seconds": 0.028,
+    "log": "regression\\threshold_control.log",
+    "sha256": "a3573b5e2259c8fae95317840936fae577d57c25815641fbd604627928d94c99"
+  },
+  {
+    "name": "threshold_osd-compile",
+    "returncode": 0,
+    "seconds": 0.227,
+    "log": "regression\\threshold_osd-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "threshold_osd",
+    "returncode": 0,
+    "seconds": 18.317,
+    "log": "regression\\threshold_osd.log",
+    "sha256": "ccc73b881a19e76d433fd8831509afa3a3f5e7270045fdec33e297a82b3fb67a"
+  },
+  {
+    "name": "compare_display-compile",
+    "returncode": 0,
+    "seconds": 0.101,
+    "log": "regression\\compare_display-compile.log",
+    "sha256": "d600f6a4429c1e804d77da480b47d4fe3ec3f0b2711cb0acc89b965ea69369ae"
+  },
+  {
+    "name": "compare_display",
+    "returncode": 0,
+    "seconds": 0.224,
+    "log": "regression\\compare_display.log",
+    "sha256": "b2a67c2704ec1cacba15bb4f25e216784e689324364652e758b969ee7c71037c"
+  },
+  {
+    "name": "gamma_rom-compile",
+    "returncode": 0,
+    "seconds": 0.145,
+    "log": "regression\\gamma_rom-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "gamma_rom",
+    "returncode": 0,
+    "seconds": 0.163,
+    "log": "regression\\gamma_rom.log",
+    "sha256": "23affa80f2ccd92d38ced274ccffb36f2248a9e3ceba2a24ddfeb5f7eb0efae9"
+  },
+  {
+    "name": "debug_status_snapshot-compile",
+    "returncode": 0,
+    "seconds": 0.211,
+    "log": "regression\\debug_status_snapshot-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "debug_status_snapshot",
+    "returncode": 0,
+    "seconds": 0.052,
+    "log": "regression\\debug_status_snapshot.log",
+    "sha256": "8e0ed0be9453bfc0c799a09314a24a2e95c659c30e73ebac950ea2e0a5a2fb0b"
+  },
+  {
+    "name": "shape_overlay-compile",
+    "returncode": 0,
+    "seconds": 0.195,
+    "log": "regression\\shape_overlay-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "shape_overlay",
+    "returncode": 0,
+    "seconds": 74.577,
+    "log": "regression\\shape_overlay.log",
+    "sha256": "3e1974c22a7d5a0d7d47a47e73cc120770d3f6aef8fdfdecdcb7e8a4d087e25b"
+  },
+  {
+    "name": "test-sensor-control",
+    "returncode": 0,
+    "seconds": 0.192,
+    "log": "regression\\test-sensor-control.log",
+    "sha256": "0623cfbdf90c9f9d53006deaa325ba91c6f555b3e51f92d3e437bfd32bcb844b"
+  },
+  {
+    "name": "test-paged-status",
+    "returncode": 0,
+    "seconds": 0.096,
+    "log": "regression\\test-paged-status.log",
+    "sha256": "5eba81572e1fdb71b5ab89e6d5a2994b1dbc60b37fedde2eaee9a98b71d314c0"
+  },
+  {
+    "name": "o1_i2c-compile",
+    "returncode": 0,
+    "seconds": 0.118,
+    "log": "regression\\o1_i2c-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "o1_i2c",
+    "returncode": 0,
+    "seconds": 0.063,
+    "log": "regression\\o1_i2c.log",
+    "sha256": "9c0c65740ba2b4bab27a2e41b793f01cf9ad90d1b0d3dfe284d54ff2cb3c2e95"
+  },
+  {
+    "name": "o1_sensor-compile",
+    "returncode": 0,
+    "seconds": 0.134,
+    "log": "regression\\o1_sensor-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "o1_sensor",
+    "returncode": 0,
+    "seconds": 0.029,
+    "log": "regression\\o1_sensor.log",
+    "sha256": "496636d9333f2ad0cf347c931d0d84fb872e5e5e2e549621d121c32d9fd4436b"
+  },
+  {
+    "name": "o1_response_cdc-compile",
+    "returncode": 0,
+    "seconds": 0.066,
+    "log": "regression\\o1_response_cdc-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "o1_response_cdc",
+    "returncode": 0,
+    "seconds": 0.071,
+    "log": "regression\\o1_response_cdc.log",
+    "sha256": "301ebe712441fadde272bd293f529fe678ff3a63874ef3097bc0cf2654000309"
+  }
+]

@@ -1,0 +1,318 @@
+START canny_rules-compile
+
+START canny_rules
+PASS Canny rules: all 6120 threshold/ratio combinations, Gaussian rounding, signed direction ties, four NMS plateaus, border
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_rules.v:37: $finish called at 0 (1ps)
+
+START test-canny-local
+Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=88a0 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=a8a0 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=0020 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=2020 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=0820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=2820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=47f8 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=67f8 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=4ff8 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=6ff8 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS 24576 local pixels across 32 frames with backpressure and metadata
+
+START test-canny-denoise
+New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=5820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=7820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=5020 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=7020 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=5820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=7820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=5020 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=7020 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=5820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS local 32x24 config=7820 pixels=768 cycles=553
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_local.v:56: $finish called at 5575000 (1ps)
+PASS 32 denoise payload frames: median on/off, Sobel/Canny, stalls and metadata
+
+START test-canny-hysteresis
+3: $finish called at 18945000 (1ps)
+
+7-0-1
+PASS hysteresis 32x24 cycles=277 enqueued=0 highwater=0 cache_misses=0 transactions=12
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 2835000 (1ps)
+
+7-1-1
+PASS hysteresis 32x24 cycles=277 enqueued=0 highwater=0 cache_misses=0 transactions=12
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 2835000 (1ps)
+
+winding
+PASS hysteresis 32x24 cycles=4609 enqueued=341 highwater=17 cache_misses=1 transactions=14
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 46155000 (1ps)
+
+no-seed
+PASS hysteresis 32x24 cycles=277 enqueued=0 highwater=0 cache_misses=0 transactions=12
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 2835000 (1ps)
+
+corner
+PASS hysteresis 32x24 cycles=1131 enqueued=24 highwater=1 cache_misses=1 transactions=14
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 11375000 (1ps)
+
+dense
+PASS hysteresis 32x24 cycles=7036 enqueued=768 highwater=768 cache_misses=1 transactions=24
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 70425000 (1ps)
+
+weak-dense
+PASS hysteresis 32x24 cycles=10240 enqueued=768 highwater=396 cache_misses=1 transactions=25
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 102465000 (1ps)
+
+random
+PASS hysteresis 32x24 cycles=4777 enqueued=341 highwater=79 cache_misses=1 transactions=14
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 47835000 (1ps)
+
+PASS 22 complete DDR hysteresis cases, 32x24
+
+START test-canny-store
+tore.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=0820 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=2820 complete_job_cycles=3212 queue=154
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=47f8 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=67f8 complete_job_cycles=1351 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=4ff8 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=6ff8 complete_job_cycles=1351 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS compact-state DDR write failure aborts before hysteresis/publication
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:90: $finish called at 23315000 (1ps)
+PASS frozen slot reuse: old RGB/edges stay coherent while new epochs 20/21 are processed
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:130: $finish called at 142429000 (1ps)
+PASS Canny reference: coherent grayscale and metadata without edge-state reads
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:134: $finish called at 99883000 (1ps)
+PASS 32 frame-store cases: final pixels, frame metadata, publication gate, AXI stalls
+
+START test-canny-faults
+PASS hysteresis DDR error transaction=1 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 145000 (1ps)
+PASS hysteresis DDR error transaction=2 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 355000 (1ps)
+PASS hysteresis DDR error transaction=3 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 595000 (1ps)
+PASS hysteresis DDR error transaction=5 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 1055000 (1ps)
+PASS hysteresis DDR error transaction=10 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 2155000 (1ps)
+PASS hysteresis DDR error transaction=15 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 24745000 (1ps)
+PASS hysteresis DDR error transaction=20 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 70945000 (1ps)
+PASS 7 DDR failure cases
+
+START test-canny-hysteresis-medium
+winding
+PASS hysteresis 128x256 cycles=193828 enqueued=16129 highwater=191 cache_misses=2 transactions=196
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 1938345000 (1ps)
+
+no-seed
+PASS hysteresis 128x256 cycles=9094 enqueued=0 highwater=0 cache_misses=0 transactions=64
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 91005000 (1ps)
+
+corner
+PASS hysteresis 128x256 cycles=11424 enqueued=128 highwater=1 cache_misses=2 transactions=67
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 114305000 (1ps)
+
+dense
+PASS hysteresis 128x256 cycles=274423 enqueued=32768 highwater=32768 cache_misses=2 transactions=577
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 2744295000 (1ps)
+
+weak-dense
+PASS hysteresis 128x256 cycles=395960 enqueued=32768 highwater=16972 cache_misses=2 transactions=450
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 3959665000 (1ps)
+
+random
+PASS hysteresis 128x256 cycles=199223 enqueued=16318 highwater=3559 cache_misses=2 transactions=252
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 1992295000 (1ps)
+
+PASS 6 complete DDR hysteresis cases, 128x256
+
+START test-canny-store-medium-shape
+ityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189:        : Padding 1 high bits of the expression.
+Wrote 32 vectors, 128x256
+PASS Canny store 128x256 config=6820 complete_job_cycles=62522 queue=254
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 2014943000 (1ps)
+PASS Canny store 128x256 config=a8a0 complete_job_cycles=358948 queue=11459
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 4771669000 (1ps)
+PASS compact-state DDR write failure aborts before hysteresis/publication
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:90: $finish called at 775445000 (1ps)
+PASS 2 frame-store cases: final pixels, frame metadata, publication gate, AXI stalls
+
+START frame_memory_probe-compile
+
+START frame_memory_probe
+PASS: DDR 256 MiB address probes, both patterns, AXI stalls; 128 MiB alias rejected at 00400000
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_memory_probe.v:50: $finish called at 24885000 (1ps)
+
+START frame_store_control-compile
+
+START frame_store_control
+PASS: frame references, freeze/reprocess, step, 32 frames, wrap, independent reference, late result isolation
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store_control.v:96: $finish called at 29460000 (1ps)
+
+START frame_reference_header-compile
+ supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_reference_header.v:6: warning: Port 12 (config_value) of frame_store expects 16 bits, got 13.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_reference_header.v:6:        : Padding 3 high bits of the port.
+
+START frame_reference_header
+PASS: REF metadata matches the DMA frame snapshot at both view-switch boundaries
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_reference_header.v:35: $finish called at 1120000 (1ps)
+
+START frame_store-compile
+fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189:        : Padding 1 high bits of the expression.
+
+START frame_store
+CHECK: initial frame id10 at 32827000
+CHECK: same raw frame id10 epoch1 at 137897000
+CHECK: live step id20 at 200939000
+PASS: actual CDC FIFOs + AXI stalls, raw pixel preservation, freeze/reprocess, step, 32-frame record/replay, reference comparison;         306 display frames
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store.v:220: $finish called at 6442097000 (1ps)
+
+START frame_store+REAL_ALGORITHM-compile
+ are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store.v:52: warning: Port 5 (in_config) of median_pair expects 13 bits, got 16.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store.v:52:        : Pruning 3 high bits of the expression.
+
+START frame_store+REAL_ALGORITHM
+CHECK: initial frame id10 at 32827000
+CHECK: same raw frame id10 epoch1 at 137897000
+CHECK: live step id20 at 200939000
+PASS: actual CDC FIFOs + AXI stalls, raw pixel preservation, freeze/reprocess, step, 32-frame record/replay, reference comparison;         306 display frames
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store.v:220: $finish called at 6442097000 (1ps)
+
+START edge_ui-compile
+
+START edge_ui
+PASS: three physical keys, bounce, short/long exclusion, enum/no-repeat, threshold repeat, median, record menu, JTAG override
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_edge_ui.v:67: $finish called at 19880000 (1ps)
+
+START threshold_control-compile
+
+START threshold_control
+PASS control: +/-10, contact bounce, frame commit, saturation, JTAG override, hold/repeat, opposite keys
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_threshold_control.v:43: $finish called at 19240000 (1ps)
+
+START threshold_osd-compile
+
+START threshold_osd
+PASS OSD: T=0/32/192/2040, decimal digits, same-frame FIFO metadata, glyph strokes and image preservation
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_threshold_osd.v:37: $finish called at 8217880000 (1ps)
+
+START compare_display-compile
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_compare_display.v:14: warning: Port 8 (frame_descriptor) of compare_display expects 294 bits, got 105.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_compare_display.v:14:        : Padding 189 high bits of the port.
+
+START compare_display
+PASS compare: 32x16, 12 frames, all six views and in-frame request changes, mapping, rounded mean, OR, full color, gaps/stalls and mixed-tag detection
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_compare_display.v:82: $finish called at 71536000 (1ps)
+
+START gamma_rom-compile
+
+START gamma_rom
+WARNING: D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\true_dual_port_ram.v:52: $readmemh: The behaviour for reg[...] mem[N:0]; $readmemh("...", mem); changed in the 1364-2005 standard. To avoid ambiguity, use mem[0:N] or explicit range parameters $readmemh("...", mem, start, stop);. Defaulting to 1364-2005 behavior.
+WARNING: D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\true_dual_port_ram.v:52: $readmemh: The behaviour for reg[...] mem[N:0]; $readmemh("...", mem); changed in the 1364-2005 standard. To avoid ambiguity, use mem[0:N] or explicit range parameters $readmemh("...", mem, start, stop);. Defaulting to 1364-2005 behavior.
+WARNING: D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\true_dual_port_ram.v:52: $readmemh: The behaviour for reg[...] mem[N:0]; $readmemh("...", mem); changed in the 1364-2005 standard. To avoid ambiguity, use mem[0:N] or explicit range parameters $readmemh("...", mem, start, stop);. Defaulting to 1364-2005 behavior.
+PASS: Gamma ROM matches the accepted curve for every 8-bit channel input, outputs and one-cycle sync/blanking
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_gamma_rom.v:22: $finish called at 21280000 (1ps)
+
+START debug_status_snapshot-compile
+
+START debug_status_snapshot
+PASS snapshot capture, immutable pages, recapture, padding and invalid page
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_debug_status_snapshot.v:22: $finish called at 38650000 (1ps)
+
+START shape_overlay-compile
+
+START shape_overlay
+PASS shape HDMI descriptor, same-frame boxes, split/reference mapping, off clears boxes: 3020800 pixels
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_shape_overlay.v:35: $finish called at 36864210000 (1ps)
+
+START test-sensor-control
+PASS O1: grouped updates, six exposure values, restore, invalid input, NACK and readback mismatch
+PASS O1 host transport: snapshot preserved, request toggles, register packing, NACK surfaced
+
+START test-paged-status
+PASS 64 fields, 30 pages, stale acknowledgements, controls untouched
+
+START o1_i2c-compile
+
+START o1_i2c
+PASS O1 I2C: registered RX data, read/write NACK, error clears on next request
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_o1_i2c.v:33: $finish called at 81400000 (1ps)
+
+START o1_sensor-compile
+
+START o1_sensor
+PASS O1 arbitration: ROM unchanged, idle untouched, reads, frame-boundary writes, NACK, no duplicates
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_o1_sensor.v:51: $finish called at 502800000 (1ps)
+
+START o1_response_cdc-compile
+
+START o1_response_cdc
+PASS O1 top-level response CDC: readiness, both toggle directions, data and NACK coherent
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_o1_response_cdc.v:27: $finish called at 308000 (1ps)
+
+PASS small 41 commands

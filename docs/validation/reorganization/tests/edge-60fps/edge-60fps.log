@@ -1,0 +1,95 @@
+frame=0 pixels=384 first=543 last=3904 budget=6000
+frame=1 pixels=384 first=543 last=3904 budget=6000
+PASS: 48x18 phase=0 burst=0, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=542 last=3903 budget=6000
+frame=1 pixels=384 first=542 last=3903 budget=6000
+PASS: 48x18 phase=0 burst=1, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=543 last=3904 budget=6000
+frame=1 pixels=384 first=543 last=3904 budget=6000
+PASS: 48x18 phase=1 burst=0, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=542 last=3903 budget=6000
+frame=1 pixels=384 first=542 last=3903 budget=6000
+PASS: 48x18 phase=1 burst=1, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=543 last=3904 budget=6000
+frame=1 pixels=384 first=543 last=3904 budget=6000
+PASS: 48x18 phase=2 burst=0, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=542 last=3903 budget=6000
+frame=1 pixels=384 first=542 last=3903 budget=6000
+PASS: 48x18 phase=2 burst=1, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=543 last=3904 budget=6000
+frame=1 pixels=384 first=543 last=3904 budget=6000
+PASS: 48x18 phase=3 burst=0, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+frame=0 pixels=384 first=542 last=3903 budget=6000
+frame=1 pixels=384 first=542 last=3903 budget=6000
+PASS: 48x18 phase=3 burst=1, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)
+{
+  "detail_regression": [
+    {
+      "phase": 0,
+      "pair_repeat_fraction_before": 1.0,
+      "pair_repeat_fraction_after": 0.0
+    },
+    {
+      "phase": 1,
+      "pair_repeat_fraction_before": 1.0,
+      "pair_repeat_fraction_after": 0.0
+    },
+    {
+      "phase": 2,
+      "pair_repeat_fraction_before": 1.0,
+      "pair_repeat_fraction_after": 0.0
+    },
+    {
+      "phase": 3,
+      "pair_repeat_fraction_before": 1.0,
+      "pair_repeat_fraction_after": 0.0
+    }
+  ],
+  "simulation_logs": [
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p0-b0.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p0-b1.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p1-b0.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p1-b1.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p2-b0.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p2-b1.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p3-b0.log",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-60fps\\reports\\sim-48x18-p3-b1.log"
+  ],
+  "synthetic_noise_comparison": {
+    "type": "synthetic flat RAW10 field with independent Gaussian noise, sigma=20 DN",
+    "old_rgb_std_8bit": [
+      13.776033266211526,
+      9.97265457027405,
+      14.795663741271174
+    ],
+    "new_rgb_std_8bit": [
+      8.790991970071593,
+      5.736878167180205,
+      9.442788694162042
+    ],
+    "std_reduction_percent": [
+      36.18633317594219,
+      42.4739107651399,
+      36.178674648963316
+    ],
+    "old_rgb_mean": [
+      175.44319080840046,
+      175.77707853855006,
+      175.72213481731876
+    ],
+    "new_rgb_mean": [
+      175.55147799194475,
+      175.7826569692175,
+      175.82528858601842
+    ]
+  },
+  "hardware_tested": false
+}

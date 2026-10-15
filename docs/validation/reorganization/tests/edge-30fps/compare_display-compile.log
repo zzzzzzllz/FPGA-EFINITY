@@ -1,0 +1,2 @@
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_compare_display.v:14: warning: Port 8 (frame_descriptor) of compare_display expects 294 bits, got 105.
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_compare_display.v:14:        : Padding 189 high bits of the port.

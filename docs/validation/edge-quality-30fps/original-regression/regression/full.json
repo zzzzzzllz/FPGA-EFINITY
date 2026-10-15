@@ -1,0 +1,23 @@
+[
+  {
+    "name": "frame_store+REAL_ALGORITHM+FULL_SMOKE-compile",
+    "returncode": 0,
+    "seconds": 0.355,
+    "log": "regression\\frame_store+REAL_ALGORITHM+FULL_SMOKE-compile.log",
+    "sha256": "74caf1125377075f09e4e3c94a3ec1cdf6eab4e8ffb116bc100591e0dbd80021"
+  },
+  {
+    "name": "frame_store+REAL_ALGORITHM+FULL_SMOKE",
+    "returncode": 0,
+    "seconds": 2345.117,
+    "log": "regression\\frame_store+REAL_ALGORITHM+FULL_SMOKE.log",
+    "sha256": "a7846d464f95b402e33217668361f2eedcbbe6f3c1144fe448a75b4eb7fed014"
+  },
+  {
+    "name": "test-canny-store-full-shape-target",
+    "returncode": 0,
+    "seconds": 1039.597,
+    "log": "regression\\test-canny-store-full-shape-target.log",
+    "sha256": "5fa989e7bda3ab43ec2682dedd98d54baa65774b62185ff07dc956932289e722"
+  }
+]

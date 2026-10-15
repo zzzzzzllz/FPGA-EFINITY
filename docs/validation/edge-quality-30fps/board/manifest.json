@@ -1,0 +1,22 @@
+{
+  "before-status.log": "67fd7c034bb740fe34e1b97006c939520cf9472ef9dc02f8f21d95dc3d420c47",
+  "camera-control.cmd": "e79827b913db0ed71425c79ee5ea2df02b9a092b1b25e416795ce0136f7b5c18",
+  "camera-control.py": "9a950bc5467fdbed65d436b0e38659be1b81ecaabe1c89ac277616cdb9fe8287",
+  "canny.log": "dbecc4f02ce65736bd307d0d41dc88f70cc633e25217d80822cc59b7b38ce05f",
+  "color.log": "c3b323ad074476ac82af74c46a58f70070f0f53dfd2ae0abdae57ead2cfbdcc3",
+  "freeze.log": "fa17bb8eefd8c78fef21045a4d0401330c1925df5401ffad05094238d1663dba",
+  "health.log": "8f9d006d4e29a5805b8aef7ff4b603b8422717e717d6b2a17cff566d300bba2a",
+  "live.log": "d430985b4c356a145b00f0fe52d39e2c5e98dc1dfab918e9fb99ad2cdd37929d",
+  "load.cmd": "51e59d5cb56ac71244aaba7bbd63bc8e8c0bc5fdddbb1081c1a6e93e70a4f589",
+  "program.log": "5259eebc2909f5cf48cf30c757276d833914f8ccac8b99e1fdb3b606dfc48248",
+  "progress.json": "13afb0192e78d800721cc9f004119c291531b5349579a2b5f2affecbb12a4713",
+  "README.md": "dc83c447e3ae61dae168ed678392f01f1a21f813f094ea780e47b14264b62d29",
+  "sobel.log": "dfd991381626558f8a4f3bdd4489fd79d9474687094ad810c8b49a34048bbeb5",
+  "startup-candidate.log": "e1e7af1ae2c2dbd2842f5a9075b160fc2a06a26565a1c224fab7632967c5e2f8",
+  "startup.log": "7c2b9c7c487ce46b28e985ad153f2de940b87e194f85986828aeed89c6dd857d",
+  "verification.json": "2177f13a6737971b3a32fce6ce371f3d80bdfea892b0a87f5c9aed403fd2cd71",
+  "verify-run.log": "bc4aabe6996a686a5d522c2d300cb835f1f869df33ccb32a7d5bf7ffe49c91d3",
+  "verify.py": "58797cace1ca41e0dfe3debdeb615dd628a12d545b27e4e87c5821c359cf4f8d",
+  "tools\\paged_status.py": "a35c79145a77a4c586648ac534d513022fde20515b3baf61ab4fa44f502ddff5",
+  "tools\\sensor_control.py": "92b08d5d842344782e105249395389d186e139e853550d10e4c34d176a1ca677"
+}

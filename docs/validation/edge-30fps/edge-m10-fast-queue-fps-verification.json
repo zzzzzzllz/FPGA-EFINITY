@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-12",
+  "status": "failed_30fps_acceptance",
+  "bitstream_sha256": "1acd7dd9023d75767a7fe0619cedce12a9d017db397c036f99ede9d710a1ad22",
+  "view": "reference",
+  "rates": {
+    "canny_recognition_on": {
+      "log": "logs/edge-m10-fast-queue-live-profile.log",
+      "samples": 31,
+      "elapsed_s": 59.438,
+      "capture_fps": 29.98082035061745,
+      "processing_fps": 13.930482183115178,
+      "display_fps": 59.97846495507924,
+      "max_processing_ms": 99.75192,
+      "deltas": {
+        "frames": 1782,
+        "processed_frames": 828,
+        "display_frames": 3565,
+        "skipped_frames": 954,
+        "errors": 0,
+        "mipi_flag_cycles": 0,
+        "underflow_cycles": 0,
+        "sobel_overrun_cycles": 0,
+        "mixed_words": 0,
+        "failed_frames": 0,
+        "frame_bus_errors": 0,
+        "result_overflow": 0,
+        "ui_short_events": 0,
+        "ui_long_events": 0
+      }
+    },
+    "canny_recognition_off": {
+      "log": "logs/edge-m10-fast-queue-canny-off-live.log",
+      "samples": 31,
+      "elapsed_s": 59.437,
+      "capture_fps": 29.98132476403587,
+      "processing_fps": 29.86355300570352,
+      "display_fps": 59.99629860188099,
+      "max_processing_ms": 39.4026,
+      "deltas": {
+        "frames": 1782,
+        "processed_frames": 1775,
+        "display_frames": 3566,
+        "skipped_frames": 8,
+        "errors": 0,
+        "mipi_flag_cycles": 0,
+        "underflow_cycles": 0,
+        "sobel_overrun_cycles": 0,
+        "mixed_words": 0,
+        "failed_frames": 0,
+        "frame_bus_errors": 0,
+        "result_overflow": 0,
+        "ui_short_events": 0,
+        "ui_long_events": 0
+      }
+    },
+    "sobel_recognition_on": {
+      "log": "logs/edge-m10-fast-queue-sobel-on-live.log",
+      "samples": 31,
+      "elapsed_s": 61.157,
+      "capture_fps": 30.021093251794564,
+      "processing_fps": 12.541491570874962,
+      "display_fps": 60.025835145608845,
+      "max_processing_ms": 93.33686,
+      "deltas": {
+        "frames": 1836,
+        "processed_frames": 767,
+        "display_frames": 3671,
+        "skipped_frames": 1069,
+        "errors": 0,
+        "mipi_flag_cycles": 0,
+        "underflow_cycles": 0,
+        "sobel_overrun_cycles": 0,
+        "mixed_words": 0,
+        "failed_frames": 0,
+        "frame_bus_errors": 0,
+        "result_overflow": 0,
+        "ui_short_events": 0,
+        "ui_long_events": 0
+      }
+    }
+  },
+  "frozen": {
+    "on": {
+      "log": "logs/edge-m10-fast-queue-frozen-on.log",
+      "frame_id": 5837,
+      "processing_ms": 62.50687,
+      "recognition": 1,
+      "algorithm": 1,
+      "threshold": 32,
+      "median": 1,
+      "view": 6
+    },
+    "off": {
+      "log": "logs/edge-m10-fast-queue-frozen-off.log",
+      "frame_id": 5837,
+      "processing_ms": 26.79589,
+      "recognition": 0,
+      "algorithm": 1,
+      "threshold": 32,
+      "median": 1,
+      "view": 6
+    }
+  }
+}

@@ -1,0 +1,28 @@
+WARNING: cannot find correct IV value
+Creating D:\Desktop_New\EfinityNEW\tmp\build\edge-60fps\outflow
+Running: efx_run_map.py ti60f225_oob --family Titanium --device Ti60F225 --project_xml D:\Desktop_New\EfinityNEW\tmp\build\edge-60fps\ti60f225_oob.xml --output_dir outflow --work_dir work_syn --opt root=ti60f225_oob_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on
+   map :	PASS 
+Running: efx_run_pt_unified.py ti60f225_oob Titanium Ti60F225 --output_dir outflow --timing_model I3 --project_xml ti60f225_oob.xml
+   interface :	PASS 
+Running: efx_run_pnr.py ti60f225_oob --prj D:\Desktop_New\EfinityNEW\tmp\build\edge-60fps\ti60f225_oob.xml --family Titanium --device Ti60F225 --timing_model I3 --output_dir outflow --work_dir work_pnr --opt sdc_file=ti60f225_oob.sdc
+   pnr :	PASS 
+Running: efx_run_pgm.py ti60f225_oob --family Titanium --device Ti60F225 --output_dir outflow --work_dir work_pnr --opt mode=active width=1 enable_roms=on spi_low_power_mode=on io_weak_pullup=on oscillator_clock_divider=DIV8 enable_crc_check=on bitstream_compression=on active_capture_clk_edge=posedge release_tri_then_reset=on enable_external_master_clock=off jtag_usercode=0xFFFFFFFF
+   pgm :	PASS 
+{
+  "version": "edge-60fps",
+  "build_id": "0x60101065",
+  "release_sha256": "065f00238e20c663e21368683f64b855b74a0bf9623c155e221853d26f7fafbc",
+  "runtime": "PASS",
+  "source_hashes": 124,
+  "xml_inputs": 64,
+  "source": "PASS",
+  "python_syntax": "PASS",
+  "build": "PASS",
+  "timing_min_slack_ns": [
+    0.352,
+    0.026
+  ],
+  "built_bitstream_sha256": "ea9c2f17e0b63f666e79dc53b88b0fa2390b79fd7fc96b090ebd7fad7786a933"
+}
+Built bitstream: D:\Desktop_New\EfinityNEW\tmp\build\edge-60fps\outflow\ti60f225_oob.bit
+The frozen release bitstream was not overwritten.

@@ -5,7 +5,6 @@ __pycache__/
 /coding/*/release/*.bit
 /coding/*/work_*/
 /coding/*/outflow*/
-/tools/archify/**/*.html
 /tools/archify/**/*.delivery.json
 /tools/archify/**/*.finalize*.json
 /tools/archify/**/*.browser-check.json

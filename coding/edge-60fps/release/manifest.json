@@ -370,9 +370,9 @@
       "source": "backups/edge60-bilinear-10ms-20261014/rtl/frame_buffer_V4/wave.do"
     },
     {
-      "path": "rtl/frame_buffer_V4/~$调试总结 .docx",
+      "path": "rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx",
       "sha256": "bc377db68ce1732df37407009d1cd382220cae5e3b62939b010bf3549d52462d",
-      "source": "backups/edge60-bilinear-10ms-20261014/rtl/frame_buffer_V4/~$调试总结 .docx"
+      "source": "backups/edge60-bilinear-10ms-20261014/rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx"
     },
     {
       "path": "rtl/gamma_conrrection/2P0.mem",
@@ -656,6 +656,10 @@
     }
   ],
   "config_sha256": {
+    "config/white-balance.json": "b3315a84d29b624f3cfb4f0ae3e22ce0b7cbacb188812bda704477fae5ca2dd2"
+  },
+  "runtime_sha256": {
+    "full_view_profile.json": "0c1a98353629f64eeb6295891a526f934a4ce6bcedb54da3cfb863b62a3ca392",
     "config/white-balance.json": "b3315a84d29b624f3cfb4f0ae3e22ce0b7cbacb188812bda704477fae5ca2dd2"
   }
 }

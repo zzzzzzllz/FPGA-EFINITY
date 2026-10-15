@@ -1,0 +1,24 @@
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:31: warning: Port 13 (count) of frame_pair_fifo expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:31:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:34: warning: Port 13 (count) of frame_pair_fifo expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:34:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189:        : Padding 1 high bits of the expression.

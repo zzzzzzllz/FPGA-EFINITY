@@ -1,0 +1,2 @@
+PASS: three physical keys, bounce, short/long exclusion, enum/no-repeat, threshold repeat, median, record menu, JTAG override
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_edge_ui.v:67: $finish called at 19880000 (1ps)

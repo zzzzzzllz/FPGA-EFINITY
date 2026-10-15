@@ -1,0 +1,28 @@
+WARNING: cannot find correct IV value
+Creating D:\Desktop_New\EfinityNEW\tmp\build\camera-30fps\outflow
+Running: efx_run_map.py ti60f225_oob --family Titanium --device Ti60F225 --project_xml D:\Desktop_New\EfinityNEW\tmp\build\camera-30fps\ti60f225_oob.xml --output_dir outflow --work_dir work_syn --opt root=ti60f225_oob_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on
+   map :	PASS 
+Running: efx_run_pt_unified.py ti60f225_oob Titanium Ti60F225 --output_dir outflow --timing_model I3 --project_xml ti60f225_oob.xml
+   interface :	PASS 
+Running: efx_run_pnr.py ti60f225_oob --prj D:\Desktop_New\EfinityNEW\tmp\build\camera-30fps\ti60f225_oob.xml --family Titanium --device Ti60F225 --timing_model I3 --output_dir outflow --work_dir work_pnr --opt sdc_file=ti60f225_oob.sdc
+   pnr :	PASS 
+Running: efx_run_pgm.py ti60f225_oob --family Titanium --device Ti60F225 --output_dir outflow --work_dir work_pnr --opt mode=active width=1 enable_roms=on spi_low_power_mode=on io_weak_pullup=on oscillator_clock_divider=DIV8 enable_crc_check=on bitstream_compression=on active_capture_clk_edge=posedge release_tri_then_reset=on enable_external_master_clock=off jtag_usercode=0xFFFFFFFF
+   pgm :	PASS 
+{
+  "version": "camera-30fps",
+  "build_id": "0x60101001",
+  "release_sha256": "8856fef875d9434260f9b55aaf9d3689527b45a63dd02b26845bb155f94d5f8c",
+  "runtime": "PASS",
+  "source_hashes": 144,
+  "xml_inputs": 61,
+  "source": "PASS",
+  "python_syntax": "PASS",
+  "build": "PASS",
+  "timing_min_slack_ns": [
+    0.387,
+    0.026
+  ],
+  "built_bitstream_sha256": "ddded7468275f18cf3198f2144d9debb0bbdc5ecc2537448206fbc3f781f4357"
+}
+Built bitstream: D:\Desktop_New\EfinityNEW\tmp\build\camera-30fps\outflow\ti60f225_oob.bit
+The frozen release bitstream was not overwritten.

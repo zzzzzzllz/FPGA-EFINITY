@@ -1,0 +1,2 @@
+PASS control: +/-10, contact bounce, frame commit, saturation, JTAG override, hold/repeat, opposite keys
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_threshold_control.v:43: $finish called at 19240000 (1ps)

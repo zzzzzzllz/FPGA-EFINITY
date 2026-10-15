@@ -132,7 +132,9 @@
     {
       "path": "tb_gamma_rom.v",
       "sha256": "fefdace52813afde7c3628872ab91e91de9731b5aab4928548bf5484ed92922b",
-      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_gamma_rom.v"
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/tb_gamma_rom.v",
+      "relocated_sha256": "edb74ef33ea9f63905cc8fec769417d1b8e0f2c96f8bb31e4e4bf38627f6a5f3",
+      "relocation_note": "Only the testbench memory-file path changed to the local project."
     },
     {
       "path": "tb_gray.v",
@@ -640,9 +642,9 @@
       "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/wave.do"
     },
     {
-      "path": "rtl/frame_buffer_V4/~$调试总结 .docx",
+      "path": "rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx",
       "sha256": "bc377db68ce1732df37407009d1cd382220cae5e3b62939b010bf3549d52462d",
-      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/~$调试总结 .docx"
+      "source": "camera_edge/Ti60f225_sc431hai2hdmi_v7/rtl/frame_buffer_V4/~$璋冭瘯鎬荤粨 .docx"
     },
     {
       "path": "rtl/gamma_conrrection/2P0.mem",
@@ -1006,6 +1008,11 @@
     }
   ],
   "config_sha256": {
+    "config/sensor.json": "83dd8a4a81ab5badebddee3fdde3cd67394a127595dcf0c4c5e14ee2456dc7f5",
+    "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f"
+  },
+  "runtime_sha256": {
+    "full_view_profile.json": "05544d268b8a750ffb98625e134d9c776eee0f57838aa9a696b00564aea5bb36",
     "config/sensor.json": "83dd8a4a81ab5badebddee3fdde3cd67394a127595dcf0c4c5e14ee2456dc7f5",
     "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f"
   }

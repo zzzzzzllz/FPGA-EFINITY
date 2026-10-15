@@ -1,0 +1,2 @@
+PASS: all Bayer phases, RGB ordering, gaps, frame resets, full-field 2560x1440
+D:\Desktop_New\EfinityNEW\coding\camera-30fps\tests\tb_full_view.v:75: $finish called at 49652596000 (1ps)

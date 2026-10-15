@@ -1,0 +1,30 @@
+{
+  "version": "camera-30fps",
+  "build_id": "0x60101001",
+  "release_sha256": "8856fef875d9434260f9b55aaf9d3689527b45a63dd02b26845bb155f94d5f8c",
+  "runtime": "PASS",
+  "source_hashes": 144,
+  "xml_inputs": 61,
+  "source": "PASS",
+  "python_syntax": "PASS",
+  "build": "PASS",
+  "timing_min_slack_ns": [
+    0.387,
+    0.026
+  ],
+  "built_bitstream_sha256": "ddded7468275f18cf3198f2144d9debb0bbdc5ecc2537448206fbc3f781f4357",
+  "resources": {
+    "XLRs": {
+      "used": 28026,
+      "total": 60800
+    },
+    "Memory Blocks": {
+      "used": 90,
+      "total": 256
+    },
+    "DSP Blocks": {
+      "used": 6,
+      "total": 160
+    }
+  }
+}

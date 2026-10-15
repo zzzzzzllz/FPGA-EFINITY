@@ -1,0 +1,2 @@
+PASS compare: 32x16, 12 frames, all six views and in-frame request changes, mapping, rounded mean, OR, full color, gaps/stalls and mixed-tag detection
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_compare_display.v:82: $finish called at 71536000 (1ps)

@@ -1,0 +1,5 @@
+CHECK: initial frame id10 at 32827000
+CHECK: same raw frame id10 epoch1 at 137897000
+CHECK: live step id20 at 200939000
+PASS: actual CDC FIFOs + AXI stalls, raw pixel preservation, freeze/reprocess, step, 32-frame record/replay, reference comparison;         306 display frames
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store.v:220: $finish called at 6442097000 (1ps)

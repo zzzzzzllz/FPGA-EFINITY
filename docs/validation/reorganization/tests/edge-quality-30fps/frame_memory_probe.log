@@ -1,0 +1,2 @@
+PASS: DDR 256 MiB address probes, both patterns, AXI stalls; 128 MiB alias rejected at 00400000
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_memory_probe.v:50: $finish called at 24885000 (1ps)

@@ -1,0 +1,5 @@
+{
+  "directory": "resource2",
+  "input_manifest": "resource2-inputs.json",
+  "description": "Equivalent boolean factoring of the frozen cleanup truth table; original synthesis settings"
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "diagram_type": "tree",
+  "meta": {
+    "title": "项目结构：四套独立工程",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "tools/archify/project-structure-20261015/target.html"
+  },
+  "layout": {
+    "direction": "right"
+  },
+  "nodes": [
+    {
+      "id": "root",
+      "label": "EfinityNEW",
+      "sublabel": "实际目录 · 本地 Git main"
+    },
+    {
+      "id": "coding",
+      "parent": "root",
+      "label": "coding",
+      "sublabel": "四类工程各保留一版"
+    },
+    {
+      "id": "cam",
+      "parent": "coding",
+      "label": "camera-30fps",
+      "sublabel": "全幅彩色直显"
+    },
+    {
+      "id": "edge",
+      "parent": "coding",
+      "label": "edge-30fps",
+      "sublabel": "原完整边缘系统"
+    },
+    {
+      "id": "quality",
+      "parent": "coding",
+      "label": "edge-quality-30fps",
+      "sublabel": "画质优化完整边缘系统"
+    },
+    {
+      "id": "fast",
+      "parent": "coding",
+      "label": "edge-60fps",
+      "sublabel": "65版 · 10ms · 黑屏未解决"
+    },
+    {
+      "id": "docs",
+      "parent": "root",
+      "label": "docs",
+      "sublabel": "所有长期文档"
+    },
+    {
+      "id": "reader",
+      "parent": "docs",
+      "label": "for-reader",
+      "sublabel": "给你看的导览与操作说明"
+    },
+    {
+      "id": "technical",
+      "parent": "docs",
+      "label": "design / reference",
+      "sublabel": "当前设计与必要参考资料"
+    },
+    {
+      "id": "validation",
+      "parent": "docs",
+      "label": "validation",
+      "sublabel": "所留版本的验收依据"
+    },
+    {
+      "id": "tools",
+      "parent": "root",
+      "label": "tools",
+      "sublabel": "共享调试与可视化"
+    },
+    {
+      "id": "archify",
+      "parent": "tools",
+      "label": "archify",
+      "sublabel": "结构图与图源"
+    },
+    {
+      "id": "debug",
+      "parent": "tools",
+      "label": "共享工具与仿真器",
+      "sublabel": "保留仍使用的脚本"
+    },
+    {
+      "id": "tmp",
+      "parent": "root",
+      "label": "tmp",
+      "sublabel": "可清空的构建与临时输出"
+    },
+    {
+      "id": "entry",
+      "parent": "root",
+      "label": "README.md / Git规则",
+      "sublabel": "根目录只保留导览和版本管理"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "每个工程自成一套",
+      "items": [
+        "源码、IP、约束、测试和本版本专用的 build / load / control / test 入口随工程保存。",
+        "已选位流和哈希清单放 release/，运行参数放 config/；构建与测试输出放 tmp/。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "明确可用范围",
+      "items": [
+        "前三类全视野30帧；60帧是裁切视野，不是全幅60帧。",
+        "edge-quality-30fps 是最近确认的完整Canny版；识别功能保留，但未完成实拍性能验收。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Git与清理边界",
+      "items": [
+        "本地 Git 保存迁移前四版本基线及整理结果；跟踪源码、配置、文档和工具脚本。未设置远程仓库。",
+        "旧工程与重复备份已清理。位流、仿真器二进制、缓存和生成数据不进入 Git。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "frame_display-compile",
+    "returncode": 0,
+    "seconds": 0.091,
+    "log": "regression-display_sobel\\frame_display-compile.log",
+    "sha256": "89e570c9b0d81fe2004bf48f455f3073cf51b93a4a59e4157f90044035bf15de"
+  },
+  {
+    "name": "frame_display",
+    "returncode": 0,
+    "seconds": 1050.42,
+    "log": "regression-display_sobel\\frame_display.log",
+    "sha256": "e8c13f2d46eb1898f199664973c1917551155862196a37b64243ecc4d83e3999"
+  }
+]

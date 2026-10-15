@@ -1,0 +1,32 @@
+[
+  {
+    "directory": ".git",
+    "files": 527,
+    "bytes": 11646410.0,
+    "MiB": 11.11
+  },
+  {
+    "directory": "coding",
+    "files": 724,
+    "bytes": 31797025.0,
+    "MiB": 30.32
+  },
+  {
+    "directory": "docs",
+    "files": 252,
+    "bytes": 29187864.0,
+    "MiB": 27.84
+  },
+  {
+    "directory": "tmp",
+    "files": 0,
+    "bytes": null,
+    "MiB": 0.0
+  },
+  {
+    "directory": "tools",
+    "files": 1236,
+    "bytes": 85324593.0,
+    "MiB": 81.37
+  }
+]

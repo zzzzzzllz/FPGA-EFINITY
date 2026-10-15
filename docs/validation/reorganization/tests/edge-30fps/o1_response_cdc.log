@@ -1,0 +1,2 @@
+PASS O1 top-level response CDC: readiness, both toggle directions, data and NACK coherent
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_o1_response_cdc.v:27: $finish called at 308000 (1ps)

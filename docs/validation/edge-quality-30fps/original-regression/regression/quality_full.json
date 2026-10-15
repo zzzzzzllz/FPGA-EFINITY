@@ -1,0 +1,9 @@
+[
+  {
+    "name": "test-canny-store-quality-full-shape-target",
+    "returncode": 0,
+    "seconds": 1041.497,
+    "log": "regression\\test-canny-store-quality-full-shape-target.log",
+    "sha256": "25f10873ddbfb95018b02aa4dcfdc2e9de3be6ade4bbfb07d84bd298aef8625d"
+  }
+]

@@ -1,0 +1,10 @@
+Connecting to JTAG_TAP: efx_ti
+jtag programming started!
+JTAG Programming on ftdi://0x0403:0x6011:0:1/1
+Programming 'D:\Desktop_New\EfinityNEW\camera_trials\edge_720p60_quality\outflow_quality\ti60f225_oob.bit' via JTAG at freq 6.0 MHz
+Device ID read from JTAG: 0x10660A79
+... finished with JTAG programming
+{"set": [704, 512, 758, 0, 0, 0, 0]}
+{"elapsed_s": 0.0, "signals": {"build_id": 1611665509, "frames": 241, "errors": 0, "width": 1920, "height": 1080, "mipi_debug": 0, "ddr_ready": 1, "underflow": 0, "sum_r": 427160329, "sum_g": 623597946, "sum_b": 367200225, "processed_frames": 241, "last_frame_id": 241, "last_epoch": 1, "config_epoch": 1, "active_r": 704, "active_g": 512, "active_b": 758, "active_phase": 0, "active_gamma": 0, "active_gray": 0, "mipi_flag_cycles": 0, "underflow_cycles": 3, "active_edge": 0, "sobel_threshold": 64, "sobel_overrun_cycles": 0, "sensor_exposure_gain": 90538045}}
+{"elapsed_s": 1.015, "signals": {"build_id": 1611665509, "frames": 302, "errors": 0, "width": 1920, "height": 1080, "mipi_debug": 0, "ddr_ready": 1, "underflow": 0, "sum_r": 425832994, "sum_g": 621683802, "sum_b": 366193721, "processed_frames": 302, "last_frame_id": 302, "last_epoch": 1, "config_epoch": 1, "active_r": 704, "active_g": 512, "active_b": 758, "active_phase": 0, "active_gamma": 0, "active_gray": 0, "mipi_flag_cycles": 0, "underflow_cycles": 3, "active_edge": 0, "sobel_threshold": 64, "sobel_overrun_cycles": 0, "sensor_exposure_gain": 90538045}}
+{"elapsed_s": 2.031, "signals": {"build_id": 1611665509, "frames": 364, "errors": 0, "width": 1920, "height": 1080, "mipi_debug": 0, "ddr_ready": 1, "underflow": 0, "sum_r": 423921850, "sum_g": 617578404, "sum_b": 364491464, "processed_frames": 364, "last_frame_id": 364, "last_epoch": 1, "config_epoch": 1, "active_r": 704, "active_g": 512, "active_b": 758, "active_phase": 0, "active_gamma": 0, "active_gray": 0, "mipi_flag_cycles": 0, "underflow_cycles": 3, "active_edge": 0, "sobel_threshold": 64, "sobel_overrun_cycles": 0, "sensor_exposure_gain": 90538045}}

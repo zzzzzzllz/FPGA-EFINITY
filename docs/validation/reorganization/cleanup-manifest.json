@@ -1,0 +1,806 @@
+[
+  {
+    "path": "backups",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\backups",
+    "files": 5917,
+    "bytes": 1267027432.0
+  },
+  {
+    "path": "camera_edge",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera_edge",
+    "files": 257,
+    "bytes": 116534668.0
+  },
+  {
+    "path": "camera_raw",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera_raw",
+    "files": 225,
+    "bytes": 100864909.0
+  },
+  {
+    "path": "camera_trials",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera_trials",
+    "files": 19081,
+    "bytes": 5054617849.0
+  },
+  {
+    "path": "deliverables",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\deliverables",
+    "files": 106,
+    "bytes": 9105841.0
+  },
+  {
+    "path": "logs",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\logs",
+    "files": 1065,
+    "bytes": 24670358.0
+  },
+  {
+    "path": "outflow_edge",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\outflow_edge",
+    "files": 5,
+    "bytes": 402178.0
+  },
+  {
+    "path": "output",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\output",
+    "files": 2,
+    "bytes": 117596.0
+  },
+  {
+    "path": "research",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\research",
+    "files": 20,
+    "bytes": 320697.0
+  },
+  {
+    "path": "work_syn",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\work_syn",
+    "files": 1,
+    "bytes": 486.0
+  },
+  {
+    "path": "__pycache__",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\__pycache__",
+    "files": 4,
+    "bytes": 67081.0
+  },
+  {
+    "path": "tools/__pycache__",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\__pycache__",
+    "files": 20,
+    "bytes": 187482.0
+  },
+  {
+    "path": "docs/reference/vendor/rtl",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\reference\\vendor\\rtl",
+    "files": 4,
+    "bytes": 2907005.0
+  },
+  {
+    "path": "tools/iverilog-12/app/share/man",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\share\\man",
+    "files": 3,
+    "bytes": 38222.0
+  },
+  {
+    "path": "摄像头SC431HAI_数据手册_V1.1.pdf",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\摄像头SC431HAI_数据手册_V1.1.pdf",
+    "files": 1,
+    "bytes": 1693340.0
+  },
+  {
+    "path": "易灵思.pdf",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\易灵思.pdf",
+    "files": 1,
+    "bytes": 616482.0
+  },
+  {
+    "path": "build-camera-1080-to720.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-camera-1080-to720.cmd",
+    "files": 1,
+    "bytes": 225.0
+  },
+  {
+    "path": "build-camera-60fps-trial.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-camera-60fps-trial.cmd",
+    "files": 1,
+    "bytes": 231.0
+  },
+  {
+    "path": "build-camera-720p-native.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-camera-720p-native.cmd",
+    "files": 1,
+    "bytes": 234.0
+  },
+  {
+    "path": "build-camera-720p-trial.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-camera-720p-trial.cmd",
+    "files": 1,
+    "bytes": 230.0
+  },
+  {
+    "path": "build-camera.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-camera.cmd",
+    "files": 1,
+    "bytes": 238.0
+  },
+  {
+    "path": "build-edge.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-edge.cmd",
+    "files": 1,
+    "bytes": 403.0
+  },
+  {
+    "path": "build-edge60.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\build-edge60.cmd",
+    "files": 1,
+    "bytes": 227.0
+  },
+  {
+    "path": "camera-1080-to720-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-1080-to720-control.py",
+    "files": 1,
+    "bytes": 4985.0
+  },
+  {
+    "path": "camera-720p-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-720p-control.py",
+    "files": 1,
+    "bytes": 3673.0
+  },
+  {
+    "path": "camera-720p-display-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-720p-display-control.py",
+    "files": 1,
+    "bytes": 3563.0
+  },
+  {
+    "path": "camera-720p-native-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-720p-native-control.py",
+    "files": 1,
+    "bytes": 3683.0
+  },
+  {
+    "path": "camera-720p-snapshot.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-720p-snapshot.py",
+    "files": 1,
+    "bytes": 4105.0
+  },
+  {
+    "path": "camera-control.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-control.cmd",
+    "files": 1,
+    "bytes": 216.0
+  },
+  {
+    "path": "camera-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-control.py",
+    "files": 1,
+    "bytes": 13637.0
+  },
+  {
+    "path": "camera-edge60-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-edge60-control.py",
+    "files": 1,
+    "bytes": 4621.0
+  },
+  {
+    "path": "camera-m08-probe-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-m08-probe-control.py",
+    "files": 1,
+    "bytes": 5736.0
+  },
+  {
+    "path": "camera-o1-probe-control.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-o1-probe-control.cmd",
+    "files": 1,
+    "bytes": 231.0
+  },
+  {
+    "path": "camera-o1-probe-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-o1-probe-control.py",
+    "files": 1,
+    "bytes": 13654.0
+  },
+  {
+    "path": "camera-quality-raw-control.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-quality-raw-control.cmd",
+    "files": 1,
+    "bytes": 234.0
+  },
+  {
+    "path": "camera-quality-raw-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-quality-raw-control.py",
+    "files": 1,
+    "bytes": 13651.0
+  },
+  {
+    "path": "camera-trial-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\camera-trial-control.py",
+    "files": 1,
+    "bytes": 3691.0
+  },
+  {
+    "path": "Demo(1).zip",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\Demo(1).zip",
+    "files": 1,
+    "bytes": 315034278.0
+  },
+  {
+    "path": "findings.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\findings.md",
+    "files": 1,
+    "bytes": 20795.0
+  },
+  {
+    "path": "load-camera-1080-to720.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-camera-1080-to720.cmd",
+    "files": 1,
+    "bytes": 290.0
+  },
+  {
+    "path": "load-camera-60fps-trial.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-camera-60fps-trial.cmd",
+    "files": 1,
+    "bytes": 281.0
+  },
+  {
+    "path": "load-camera-720p-native.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-camera-720p-native.cmd",
+    "files": 1,
+    "bytes": 288.0
+  },
+  {
+    "path": "load-camera-720p-trial.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-camera-720p-trial.cmd",
+    "files": 1,
+    "bytes": 277.0
+  },
+  {
+    "path": "load-camera-720p60.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-camera-720p60.cmd",
+    "files": 1,
+    "bytes": 274.0
+  },
+  {
+    "path": "load-camera.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-camera.cmd",
+    "files": 1,
+    "bytes": 254.0
+  },
+  {
+    "path": "load-edge.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-edge.cmd",
+    "files": 1,
+    "bytes": 294.0
+  },
+  {
+    "path": "load-edge60.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\load-edge60.cmd",
+    "files": 1,
+    "bytes": 291.0
+  },
+  {
+    "path": "progress.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\progress.md",
+    "files": 1,
+    "bytes": 66183.0
+  },
+  {
+    "path": "task_plan.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\task_plan.md",
+    "files": 1,
+    "bytes": 18924.0
+  },
+  {
+    "path": "test-camera-1080-to720.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-camera-1080-to720.cmd",
+    "files": 1,
+    "bytes": 527.0
+  },
+  {
+    "path": "test-camera-720p.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-camera-720p.cmd",
+    "files": 1,
+    "bytes": 619.0
+  },
+  {
+    "path": "test-edge-m04.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m04.cmd",
+    "files": 1,
+    "bytes": 1289.0
+  },
+  {
+    "path": "test-edge-m05.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m05.cmd",
+    "files": 1,
+    "bytes": 961.0
+  },
+  {
+    "path": "test-edge-m06.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m06.cmd",
+    "files": 1,
+    "bytes": 2185.0
+  },
+  {
+    "path": "test-edge-m07.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m07.cmd",
+    "files": 1,
+    "bytes": 1431.0
+  },
+  {
+    "path": "test-edge-m08.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m08.cmd",
+    "files": 1,
+    "bytes": 3280.0
+  },
+  {
+    "path": "test-edge-m09.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m09.cmd",
+    "files": 1,
+    "bytes": 1636.0
+  },
+  {
+    "path": "test-edge-m10.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-m10.cmd",
+    "files": 1,
+    "bytes": 1911.0
+  },
+  {
+    "path": "test-edge-o1.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge-o1.cmd",
+    "files": 1,
+    "bytes": 1155.0
+  },
+  {
+    "path": "test-edge.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge.cmd",
+    "files": 1,
+    "bytes": 2545.0
+  },
+  {
+    "path": "test-edge60.cmd",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\test-edge60.cmd",
+    "files": 1,
+    "bytes": 718.0
+  },
+  {
+    "path": "TI60F225_DEMOBOARD-装配图.pdf",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\TI60F225_DEMOBOARD-装配图.pdf",
+    "files": 1,
+    "bytes": 170408.0
+  },
+  {
+    "path": "verify-camera-720p.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\verify-camera-720p.py",
+    "files": 1,
+    "bytes": 1457.0
+  },
+  {
+    "path": "white-balance-60fps.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\white-balance-60fps.json",
+    "files": 1,
+    "bytes": 947.0
+  },
+  {
+    "path": "white-balance.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\white-balance.json",
+    "files": 1,
+    "bytes": 987.0
+  },
+  {
+    "path": "docs/camera-1080-to720.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\camera-1080-to720.md",
+    "files": 1,
+    "bytes": 5251.0
+  },
+  {
+    "path": "docs/camera-720p60.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\camera-720p60.md",
+    "files": 1,
+    "bytes": 6698.0
+  },
+  {
+    "path": "docs/edge-m01-baseline-check.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m01-baseline-check.md",
+    "files": 1,
+    "bytes": 4711.0
+  },
+  {
+    "path": "docs/edge-m02-grayscale.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m02-grayscale.md",
+    "files": 1,
+    "bytes": 5387.0
+  },
+  {
+    "path": "docs/edge-m03-sobel.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m03-sobel.md",
+    "files": 1,
+    "bytes": 11274.0
+  },
+  {
+    "path": "docs/edge-m04-compare.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m04-compare.md",
+    "files": 1,
+    "bytes": 5568.0
+  },
+  {
+    "path": "docs/edge-m05-threshold.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m05-threshold.md",
+    "files": 1,
+    "bytes": 5588.0
+  },
+  {
+    "path": "docs/edge-m06-median.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m06-median.md",
+    "files": 1,
+    "bytes": 5965.0
+  },
+  {
+    "path": "docs/edge-m07-overlay.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m07-overlay.md",
+    "files": 1,
+    "bytes": 5554.0
+  },
+  {
+    "path": "docs/edge-m08-frames.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m08-frames.md",
+    "files": 1,
+    "bytes": 10248.0
+  },
+  {
+    "path": "docs/edge-m09-canny.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m09-canny.md",
+    "files": 1,
+    "bytes": 6104.0
+  },
+  {
+    "path": "docs/edge-m10-shapes.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-m10-shapes.md",
+    "files": 1,
+    "bytes": 13906.0
+  },
+  {
+    "path": "docs/edge-o1-exposure.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-o1-exposure.md",
+    "files": 1,
+    "bytes": 11041.0
+  },
+  {
+    "path": "docs/edge-system-design.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edge-system-design.md",
+    "files": 1,
+    "bytes": 37669.0
+  },
+  {
+    "path": "docs/edgeaware-area-fixed.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\edgeaware-area-fixed.md",
+    "files": 1,
+    "bytes": 10482.0
+  },
+  {
+    "path": "docs/image-chain-coordination.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\image-chain-coordination.md",
+    "files": 1,
+    "bytes": 21750.0
+  },
+  {
+    "path": "docs/image-quality-baseline.md",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\docs\\image-quality-baseline.md",
+    "files": 1,
+    "bytes": 9607.0
+  },
+  {
+    "path": "tools/analyze-o1-pixels.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\analyze-o1-pixels.py",
+    "files": 1,
+    "bytes": 6310.0
+  },
+  {
+    "path": "tools/canny_reference.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\canny_reference.py",
+    "files": 1,
+    "bytes": 6819.0
+  },
+  {
+    "path": "tools/capture-o1-pixels.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\capture-o1-pixels.py",
+    "files": 1,
+    "bytes": 6400.0
+  },
+  {
+    "path": "tools/capture-quality-raw.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\capture-quality-raw.py",
+    "files": 1,
+    "bytes": 6576.0
+  },
+  {
+    "path": "tools/check-edge-m05-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m05-board.py",
+    "files": 1,
+    "bytes": 5826.0
+  },
+  {
+    "path": "tools/check-edge-m06-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m06-board.py",
+    "files": 1,
+    "bytes": 6083.0
+  },
+  {
+    "path": "tools/check-edge-m07-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m07-board.py",
+    "files": 1,
+    "bytes": 6290.0
+  },
+  {
+    "path": "tools/check-edge-m08-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m08-board.py",
+    "files": 1,
+    "bytes": 5276.0
+  },
+  {
+    "path": "tools/check-edge-m08-resume.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m08-resume.py",
+    "files": 1,
+    "bytes": 3462.0
+  },
+  {
+    "path": "tools/check-edge-m09-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m09-board.py",
+    "files": 1,
+    "bytes": 5833.0
+  },
+  {
+    "path": "tools/check-edge-m10-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edge-m10-board.py",
+    "files": 1,
+    "bytes": 6731.0
+  },
+  {
+    "path": "tools/check-edgeaware-build.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\check-edgeaware-build.py",
+    "files": 1,
+    "bytes": 7158.0
+  },
+  {
+    "path": "tools/create-m08-backup.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\create-m08-backup.py",
+    "files": 1,
+    "bytes": 3124.0
+  },
+  {
+    "path": "tools/create-m09-backup.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\create-m09-backup.py",
+    "files": 1,
+    "bytes": 3317.0
+  },
+  {
+    "path": "tools/create-m10-backup.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\create-m10-backup.py",
+    "files": 1,
+    "bytes": 3666.0
+  },
+  {
+    "path": "tools/create-m10-print-targets.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\create-m10-print-targets.py",
+    "files": 1,
+    "bytes": 3581.0
+  },
+  {
+    "path": "tools/create-o1-backup.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\create-o1-backup.py",
+    "files": 1,
+    "bytes": 4180.0
+  },
+  {
+    "path": "tools/edgeaware_dsp_sim.v",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\edgeaware_dsp_sim.v",
+    "files": 1,
+    "bytes": 1548.0
+  },
+  {
+    "path": "tools/edgeaware_fixed.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\edgeaware_fixed.py",
+    "files": 1,
+    "bytes": 1439.0
+  },
+  {
+    "path": "tools/generate-edge-debug.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\generate-edge-debug.py",
+    "files": 1,
+    "bytes": 601.0
+  },
+  {
+    "path": "tools/plot-quality-baseline.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\plot-quality-baseline.py",
+    "files": 1,
+    "bytes": 2485.0
+  },
+  {
+    "path": "tools/prepare-m08-ddr-probe.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\prepare-m08-ddr-probe.py",
+    "files": 1,
+    "bytes": 4869.0
+  },
+  {
+    "path": "tools/prepare-m10-profile.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\prepare-m10-profile.py",
+    "files": 1,
+    "bytes": 7542.0
+  },
+  {
+    "path": "tools/profile-edge-m10-board.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\profile-edge-m10-board.py",
+    "files": 1,
+    "bytes": 4449.0
+  },
+  {
+    "path": "tools/quality_baseline.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\quality_baseline.py",
+    "files": 1,
+    "bytes": 10297.0
+  },
+  {
+    "path": "tools/quality_frontend.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\quality_frontend.py",
+    "files": 1,
+    "bytes": 7387.0
+  },
+  {
+    "path": "tools/shape_reference.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\shape_reference.py",
+    "files": 1,
+    "bytes": 6099.0
+  },
+  {
+    "path": "tools/test-canny-cache-display.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-canny-cache-display.py",
+    "files": 1,
+    "bytes": 912.0
+  },
+  {
+    "path": "tools/test-canny-denoise.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-canny-denoise.py",
+    "files": 1,
+    "bytes": 1715.0
+  },
+  {
+    "path": "tools/test-canny-faults.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-canny-faults.py",
+    "files": 1,
+    "bytes": 858.0
+  },
+  {
+    "path": "tools/test-canny-hysteresis.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-canny-hysteresis.py",
+    "files": 1,
+    "bytes": 3486.0
+  },
+  {
+    "path": "tools/test-canny-local.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-canny-local.py",
+    "files": 1,
+    "bytes": 1297.0
+  },
+  {
+    "path": "tools/test-canny-store.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-canny-store.py",
+    "files": 1,
+    "bytes": 4290.0
+  },
+  {
+    "path": "tools/test-edgeaware-area.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-edgeaware-area.py",
+    "files": 1,
+    "bytes": 5540.0
+  },
+  {
+    "path": "tools/test-m10-ram-compare.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-m10-ram-compare.py",
+    "files": 1,
+    "bytes": 2007.0
+  },
+  {
+    "path": "tools/test-paged-status.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-paged-status.py",
+    "files": 1,
+    "bytes": 1392.0
+  },
+  {
+    "path": "tools/test-sensor-control.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-sensor-control.py",
+    "files": 1,
+    "bytes": 4059.0
+  },
+  {
+    "path": "tools/test-shape-components.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-shape-components.py",
+    "files": 1,
+    "bytes": 1053.0
+  },
+  {
+    "path": "tools/test-shape-reference.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-shape-reference.py",
+    "files": 1,
+    "bytes": 2687.0
+  },
+  {
+    "path": "tools/test-shape-rtl.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\test-shape-rtl.py",
+    "files": 1,
+    "bytes": 4732.0
+  },
+  {
+    "path": "tools/verify-edge-m08-build.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\verify-edge-m08-build.py",
+    "files": 1,
+    "bytes": 1217.0
+  },
+  {
+    "path": "tools/verify-edge-m09-build.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\verify-edge-m09-build.py",
+    "files": 1,
+    "bytes": 1219.0
+  },
+  {
+    "path": "tools/verify-edge-m10-build.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\verify-edge-m10-build.py",
+    "files": 1,
+    "bytes": 1515.0
+  },
+  {
+    "path": "tools/verify-edge-o1.py",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\verify-edge-o1.py",
+    "files": 1,
+    "bytes": 2830.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current-check",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current-check",
+    "files": 3,
+    "bytes": 43337.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current-verified",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current-verified",
+    "files": 3,
+    "bytes": 58019.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current.browser-check.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current.browser-check.json",
+    "files": 1,
+    "bytes": 1899.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current.delivery.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current.delivery.json",
+    "files": 1,
+    "bytes": 595.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current.finalize-summary.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current.finalize-summary.json",
+    "files": 1,
+    "bytes": 1838.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current.finalize.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current.finalize.json",
+    "files": 1,
+    "bytes": 11876.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current.html",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current.html",
+    "files": 1,
+    "bytes": 825503.0
+  },
+  {
+    "path": "tools/archify/project-structure-20261015/current.json",
+    "absolute_path": "D:\\Desktop_New\\EfinityNEW\\tools\\archify\\project-structure-20261015\\current.json",
+    "files": 1,
+    "bytes": 3430.0
+  }
+]

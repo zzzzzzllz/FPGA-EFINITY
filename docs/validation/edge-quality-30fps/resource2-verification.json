@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "changed_inputs": [
+    "rtl\\canny_nms_pair.v"
+  ],
+  "runs": [
+    {
+      "bench": "verification\\tb_rules.v",
+      "log": "resource2-verification\\tb_rules.log",
+      "sha256": "170eb6ebaf90aa226f477e843d00e9d8431dee9c3e65855f7d9ba2c9a2c2423d"
+    },
+    {
+      "bench": "stream-verification\\tb-1280-720.v",
+      "log": "resource2-verification\\tb-1280-720.log",
+      "sha256": "b67a1807515b878e4b6b3d5d2d01f34db5f1738dab9324ed8bf77d95f6b8d1e6"
+    },
+    {
+      "bench": "stream-verification\\tb-32-24.v",
+      "log": "resource2-verification\\tb-32-24.log",
+      "sha256": "198bd899af48ccb5f2b5ebe03f960e89d73f684791cae519d54a4d4da60174eb"
+    },
+    {
+      "bench": "stream-verification\\tb-4-3.v",
+      "log": "resource2-verification\\tb-4-3.log",
+      "sha256": "fbe177b8371b23c1b162c253a61b466efdda705000b49326a1350319a8012be4"
+    }
+  ],
+  "source_hashes": {
+    "camera_trials\\median_source_20261013\\quality_preserve\\verify_resource2.py": "fab7e30c0393786761f2dbc4586011f9740f71203f5c24c1870723848e0a6091",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2\\rtl\\canny_nms_pair.v": "174b8f67f892b0774cb306f4acf5284a11738b451b96e8c611c2880b80968a9f",
+    "camera_trials\\median_source_20261013\\quality_preserve\\project\\rtl\\canny_nms_pair.v": "1668d4577d8739cd850116f3cb54aa111268ddba6e5289318020c25376bb2e6c",
+    "camera_trials\\median_source_20261013\\quality_preserve\\verification\\tb_rules.v": "1d3880e06d3b577cf278a99b6b197bcf906a0ed4c5833a156715e55fb52bb020",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2-verification\\tb_rules.log": "170eb6ebaf90aa226f477e843d00e9d8431dee9c3e65855f7d9ba2c9a2c2423d",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-1280-720.v": "718b5acb6d70518f74d35622e9a150a27af1b4202586ce49569ac553d25dcce0",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2-verification\\tb-1280-720.log": "b67a1807515b878e4b6b3d5d2d01f34db5f1738dab9324ed8bf77d95f6b8d1e6",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-32-24.v": "e6d558c2fe8822e20ecfd4bfc16d27fb29695858b0c71815a6680f52211ea825",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2-verification\\tb-32-24.log": "198bd899af48ccb5f2b5ebe03f960e89d73f684791cae519d54a4d4da60174eb",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\tb-4-3.v": "5b19d078623460f48c04d29db1f5bf0d609e031fcebc26e229533de7ec2bef5f",
+    "camera_trials\\median_source_20261013\\quality_preserve\\resource2-verification\\tb-4-3.log": "fbe177b8371b23c1b162c253a61b466efdda705000b49326a1350319a8012be4",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\exp-1280-720.hex": "e05d14e28e31a2ce8fa126b04bc819c152ecf02dcdd58523933b64c01c3258b4",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\exp-32-24.hex": "efe1afe32662337d1097b77d16eeac678e339d23a0f37286678d0387a5fc2f2e",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\exp-4-3.hex": "4a4ebd32f1dfbdf54ff6660a628dbd9dcb773479261b56315cc8bd0d043e90e6",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\in-1280-720.hex": "8e3d1644487b728f4b8e8794924ab91398fc9c5fcbfe25631f1dcd1ad4630ba0",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\in-32-24.hex": "cadfd46c21280f10216ede03f58e6edf3bdc69378b97375019d9ec3ac035c3a5",
+    "camera_trials\\median_source_20261013\\quality_preserve\\stream-verification\\in-4-3.hex": "4a4ebd32f1dfbdf54ff6660a628dbd9dcb773479261b56315cc8bd0d043e90e6",
+    "camera_trials\\median_source_20261013\\quality_preserve\\verification\\rules.hex": "702f580ce2a5757383e88957903a3bbe44703fa96ead00368b73630c8d6339e0"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "frame_display+CANNY_DISPLAY-compile",
+    "returncode": 0,
+    "seconds": 0.091,
+    "log": "regression-display_canny\\frame_display+CANNY_DISPLAY-compile.log",
+    "sha256": "89e570c9b0d81fe2004bf48f455f3073cf51b93a4a59e4157f90044035bf15de"
+  },
+  {
+    "name": "frame_display+CANNY_DISPLAY",
+    "returncode": 0,
+    "seconds": 1149.599,
+    "log": "regression-display_canny\\frame_display+CANNY_DISPLAY.log",
+    "sha256": "8372767285862d1fe345b86f005e67a74945ad8fac3bf97551422f3f795291e6"
+  }
+]

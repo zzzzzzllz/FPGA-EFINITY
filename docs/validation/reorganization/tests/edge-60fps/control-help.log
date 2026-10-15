@@ -1,0 +1,14 @@
+usage: control.py [-h] [--samples SAMPLES] [--interval INTERVAL] [--edge]
+                  [--view {color,gray,edge}] [--set R G B GAMMA PHASE]
+
+Control the independent 720p60 area-filtered camera build.
+
+options:
+  -h, --help            show this help message and exit
+  --samples SAMPLES
+  --interval INTERVAL
+  --edge                Use the edge-system project
+  --view {color,gray,edge}
+                        Edge display mode; keeps active gains
+  --set R G B GAMMA PHASE
+                        Q8.8 gains (256=1x), gamma 0/1, Bayer phase 0..3

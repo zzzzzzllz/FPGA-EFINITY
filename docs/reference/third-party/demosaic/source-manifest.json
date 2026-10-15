@@ -1,0 +1,20 @@
+{
+  "antmicro": {
+    "commit": "edf67203b6454118e823940ec390a8928f6e869a",
+    "url": "https://github.com/antmicro/fpga-isp-core/commit/edf67203b6454118e823940ec390a8928f6e869a",
+    "files": {
+      "antmicro-bilinear.py": "fd0d1af49ae4f317b36c373c5a8ef3d3121b2fed1fae5b9b07a6320d577e0026",
+      "antmicro-commit.json": "006c475e37b580888d7bcc21312e90638bd36d4f269f994e6a9583f5b34f5ea3",
+      "antmicro-LICENSE": "2ee5187e0c57c836cef9fc46f5b683bd1ae805d27d2eb7cbbb07d9cbfe4a9761"
+    }
+  },
+  "colour": {
+    "commit": "7bff324983fb77b41444fda3bf922e354d386d1c",
+    "url": "https://github.com/colour-science/colour-demosaicing/commit/7bff324983fb77b41444fda3bf922e354d386d1c",
+    "files": {
+      "colour-bilinear.py": "b3c59f6c2f614dfc0be55214510d551d4dd5ed9cbce04e4e16701425562b0b03",
+      "colour-commit.json": "aa44d8149d1913b82585ec5088155e150fd07dce717f251264727e631082e634",
+      "colour-LICENSE": "62f431963cc2e7387c118c0798bcb323a1e0c0129b28265099ab74bf2a0c04af"
+    }
+  }
+}

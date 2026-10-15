@@ -1,0 +1,35 @@
+{
+  "simulation_logs": [
+    "reports\\sim-1920x1080-p0-b0.log",
+    "reports\\sim-1920x1080-p0-b1.log"
+  ],
+  "synthetic_noise_comparison": {
+    "type": "synthetic flat RAW10 field with independent Gaussian noise, sigma=20 DN",
+    "old_rgb_std_8bit": [
+      13.776033266211526,
+      9.97265457027405,
+      14.795663741271174
+    ],
+    "new_rgb_std_8bit": [
+      10.704934012706305,
+      5.500509406179161,
+      11.495479609357863
+    ],
+    "std_reduction_percent": [
+      22.293059214931667,
+      44.84407970396587,
+      22.305076606382613
+    ],
+    "old_rgb_mean": [
+      175.44319080840046,
+      175.77707853855006,
+      175.72213481731876
+    ],
+    "new_rgb_mean": [
+      175.44679588607596,
+      175.62574169303798,
+      175.7096159378596
+    ]
+  },
+  "hardware_tested": false
+}

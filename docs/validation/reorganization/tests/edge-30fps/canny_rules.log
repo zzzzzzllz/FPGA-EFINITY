@@ -1,0 +1,2 @@
+PASS Canny rules: all 6120 threshold/ratio combinations, Gaussian rounding, signed direction ties, four NMS plateaus, border
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_rules.v:37: $finish called at 0 (1ps)

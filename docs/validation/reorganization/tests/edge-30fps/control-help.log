@@ -1,0 +1,46 @@
+usage: control.py [-h] [--samples SAMPLES] [--interval INTERVAL] [--edge]
+                  [--threshold THRESHOLD]
+                  [--view {color,gray,edge,compare,denoise,overlay,reference}]
+                  [--frame {live,freeze,step,record,play,pause,next,reference,clear-reference}]
+                  [--set R G B GAMMA PHASE] [--algorithm {sobel,canny}]
+                  [--low-ratio {1/4,1/2,3/4}] [--median {on,off}]
+                  [--recognition {on,off}] [--sensor-status]
+                  [--exposure-half-lines EXPOSURE_HALF_LINES | --exposure-ms EXPOSURE_MS]
+                  [--sensor-gain {1,2,3}] [--sensor-save SENSOR_SAVE]
+                  [--sensor-restore SENSOR_RESTORE]
+
+Read the full-field camera and set its Bayer phase or white balance.
+
+options:
+  -h, --help            show this help message and exit
+  --samples SAMPLES
+  --interval INTERVAL
+  --edge                Use the edge-system project
+  --threshold THRESHOLD
+                        Threshold: Sobel 0..2040, Canny 1..2040
+  --view {color,gray,edge,compare,denoise,overlay,reference}
+                        Edge display mode; keeps active gains
+  --frame {live,freeze,step,record,play,pause,next,reference,clear-reference}
+                        Frame operation; record explicitly replaces the
+                        32-frame clip
+  --set R G B GAMMA PHASE
+                        Q8.8 gains (256=1x), gamma 0/1, Bayer phase 0..3
+  --algorithm {sobel,canny}
+                        Frame-committed edge algorithm
+  --low-ratio {1/4,1/2,3/4}
+                        Canny low/high threshold ratio
+  --median {on,off}     Frame-committed median filter
+  --recognition {on,off}
+                        Frame-committed circle/rectangle recognition
+  --sensor-status       Read O1 sensor timing, exposure and gain
+  --exposure-half-lines EXPOSURE_HALF_LINES
+                        SC431HAI manual exposure in half-lines
+  --exposure-ms EXPOSURE_MS
+                        Exposure in ms, calibrated from measured capture FPS
+  --sensor-gain {1,2,3}
+                        Analog gain 1x, 2.021x or 3.032x; digital gain stays
+                        1x
+  --sensor-save SENSOR_SAVE
+                        Save sensor registers to a new JSON file
+  --sensor-restore SENSOR_RESTORE
+                        Restore exposure/gain from a saved O1 JSON file

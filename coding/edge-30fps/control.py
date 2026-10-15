@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 import time
 from unittest.mock import patch
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from tools.paged_status import read_snapshot
 from tools import sensor_control
 
@@ -28,7 +29,7 @@ class Console:
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--samples', type=int, default=5)
 parser.add_argument('--interval', type=float, default=1)
-parser.add_argument('--edge', action='store_true', help='Use the edge-system project')
+parser.add_argument('--edge', action='store_true', default=True, help='Use the edge-system project')
 parser.add_argument('--threshold', type=int, help='Threshold: Sobel 0..2040, Canny 1..2040')
 parser.add_argument('--view', choices=('color', 'gray', 'edge', 'compare', 'denoise', 'overlay', 'reference'), help='Edge display mode; keeps active gains')
 parser.add_argument('--frame', choices=('live','freeze','step','record','play','pause','next','reference','clear-reference'), help='Frame operation; record explicitly replaces the 32-frame clip')
@@ -69,9 +70,9 @@ if args.set and (any(not 1 <= x <= 4096 for x in args.set[:3]) or
                  args.set[3] not in (0, 1) or args.set[4] not in range(4)):
     parser.error('Gains must be 1..4096, gamma 0/1, phase 0..3')
 root = Path(__file__).resolve().parent
-project = 'camera_edge' if args.edge else 'camera_raw'
+project = root
 profile, warning = DebugProfileBuilder.from_file(str(
-    root/project/'Ti60f225_sc431hai2hdmi_v7/full_view_profile.json'))
+    project/'full_view_profile.json'))
 if warning:
     raise ValueError(warning)
 set_efinity_user_dir_env()
@@ -91,7 +92,7 @@ try:
     try:
         probes = list(profile.get_core_spec('status').get_probe_ins())
         if args.edge:
-            snapshot_layout = json.loads((root/project/'Ti60f225_sc431hai2hdmi_v7/status_snapshot.json').read_text())
+            snapshot_layout = json.loads((project/'status_snapshot.json').read_text())
 
         def read():
             if args.edge:
@@ -144,7 +145,7 @@ try:
                                   'actual_ms_estimate': 1000*half_lines/(2*before['vts']*capture_fps)}), flush=True)
             if sensor_change:
                 restore = json.loads(args.sensor_restore.read_text(encoding='utf-8')) if args.sensor_restore else None
-                baseline = root/'logs'/f'o1-sensor-before-{time.time_ns()}.json'
+                baseline = root/'config/sensor-history'/f'o1-sensor-before-{time.time_ns()}.json'
                 sensor_control.save(baseline, before)
                 print(json.dumps({'sensor_baseline': str(baseline)}), flush=True)
                 before = sensor_control.apply(sensor, before, half_lines, args.sensor_gain, restore)

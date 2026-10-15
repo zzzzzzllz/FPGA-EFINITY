@@ -1,0 +1,43 @@
+WARNING: cannot find correct IV value
+Creating D:\Desktop_New\EfinityNEW\tmp\build\edge-quality-30fps\outflow
+Running: efx_run_map.py ti60f225_oob --family Titanium --device Ti60F225 --project_xml D:\Desktop_New\EfinityNEW\tmp\build\edge-quality-30fps\ti60f225_oob.xml --output_dir outflow --work_dir work_syn --opt root=ti60f225_oob_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on
+   map :	PASS 
+Running: efx_run_pt_unified.py ti60f225_oob Titanium Ti60F225 --output_dir outflow --timing_model I3 --project_xml ti60f225_oob.xml
+   interface :	PASS 
+Running: efx_run_pnr.py ti60f225_oob --prj D:\Desktop_New\EfinityNEW\tmp\build\edge-quality-30fps\ti60f225_oob.xml --family Titanium --device Ti60F225 --timing_model I3 --output_dir outflow --work_dir work_pnr --opt sdc_file=ti60f225_oob.sdc
+   pnr :	PASS 
+Running: efx_run_pgm.py ti60f225_oob --family Titanium --device Ti60F225 --output_dir outflow --work_dir work_pnr --opt mode=active width=1 enable_roms=on spi_low_power_mode=on io_weak_pullup=on oscillator_clock_divider=DIV8 enable_crc_check=on bitstream_compression=on active_capture_clk_edge=posedge release_tri_then_reset=on enable_external_master_clock=off jtag_usercode=0xFFFFFFFF
+   pgm :	PASS 
+PASS: synthesized DDR camera pixel input is not constant zero.
+{
+  "version": "edge-quality-30fps",
+  "build_id": "0x6010100f",
+  "release_sha256": "cb2809a860f8a2a9b8818e1be1317c7ae756d6c7247e9dd752f57fc6c707765d",
+  "runtime": "PASS",
+  "source_hashes": 195,
+  "xml_inputs": 79,
+  "source": "PASS",
+  "python_syntax": "PASS",
+  "build": "PASS",
+  "timing_min_slack_ns": [
+    0.377,
+    0.026
+  ],
+  "built_bitstream_sha256": "c7fdaab73d60436ae529d40548024c6dd7afcfea41b49fae113d4a6c95072c06",
+  "resources": {
+    "XLRs": {
+      "used": 48532,
+      "total": 60800
+    },
+    "Memory Blocks": {
+      "used": 189,
+      "total": 256
+    },
+    "DSP Blocks": {
+      "used": 127,
+      "total": 160
+    }
+  }
+}
+Built bitstream: D:\Desktop_New\EfinityNEW\tmp\build\edge-quality-30fps\outflow\ti60f225_oob.bit
+The frozen release bitstream was not overwritten.

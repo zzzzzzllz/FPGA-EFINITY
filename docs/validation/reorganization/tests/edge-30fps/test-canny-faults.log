@@ -1,0 +1,15 @@
+PASS hysteresis DDR error transaction=1 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 145000 (1ps)
+PASS hysteresis DDR error transaction=2 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 355000 (1ps)
+PASS hysteresis DDR error transaction=3 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 595000 (1ps)
+PASS hysteresis DDR error transaction=5 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 1055000 (1ps)
+PASS hysteresis DDR error transaction=10 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 2155000 (1ps)
+PASS hysteresis DDR error transaction=15 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 24745000 (1ps)
+PASS hysteresis DDR error transaction=20 detected, aborted, no subsequent request
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_canny_hysteresis.v:66: $finish called at 70945000 (1ps)
+PASS 7 DDR failure cases

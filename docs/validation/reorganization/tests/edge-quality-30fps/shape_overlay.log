@@ -1,0 +1,2 @@
+PASS shape HDMI descriptor, same-frame boxes, split/reference mapping, off clears boxes: 3020800 pixels
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_shape_overlay.v:35: $finish called at 36864210000 (1ps)

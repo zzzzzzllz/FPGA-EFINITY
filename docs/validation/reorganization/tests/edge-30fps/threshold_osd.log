@@ -1,0 +1,2 @@
+PASS OSD: T=0/32/192/2040, decimal digits, same-frame FIFO metadata, glyph strokes and image preservation
+D:\Desktop_New\EfinityNEW\coding\edge-30fps\tests\tb_threshold_osd.v:37: $finish called at 8217880000 (1ps)

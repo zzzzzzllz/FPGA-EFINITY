@@ -1,0 +1,4 @@
+frame=0 pixels=384 first=543 last=3904 budget=6000
+frame=1 pixels=384 first=543 last=3904 budget=6000
+PASS: 48x18 phase=1 burst=0, two frames, every pixel, RAW stats, FIFO and deadline
+tests/tb_quality.v:85: $finish called at 121716000 (1ps)

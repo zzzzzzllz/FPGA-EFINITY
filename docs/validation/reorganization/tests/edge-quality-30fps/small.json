@@ -1,0 +1,330 @@
+[
+  {
+    "name": "canny_rules-compile",
+    "returncode": 0,
+    "seconds": 0.137,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\canny_rules-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "canny_rules-compile.log"
+  },
+  {
+    "name": "canny_rules",
+    "returncode": 0,
+    "seconds": 0.232,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\canny_rules.log",
+    "sha256": "6f75655c59da00c13a7bdda689f2fb7efa67b8a3f64e0bef43c1ac07a381b863",
+    "saved_log": "canny_rules.log"
+  },
+  {
+    "name": "test-canny-local",
+    "returncode": 0,
+    "seconds": 6.84,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-local.log",
+    "sha256": "215a504bc23ba34dd36dc1db7f17f2d88671ca98dedfa18c124a40a2b7b98b02",
+    "saved_log": "test-canny-local.log"
+  },
+  {
+    "name": "test-canny-denoise",
+    "returncode": 0,
+    "seconds": 6.147,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-denoise.log",
+    "sha256": "dace3da88270d6d64f2583a0516e54548fc79e5ac9593b2c8c94c6b2ba7d460e",
+    "saved_log": "test-canny-denoise.log"
+  },
+  {
+    "name": "test-canny-hysteresis",
+    "returncode": 0,
+    "seconds": 2.775,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-hysteresis.log",
+    "sha256": "4d0b5f3d51c109454d9b3a65fa2a117aa5efdd2a1c1f9cf0babf18ded2f62cc0",
+    "saved_log": "test-canny-hysteresis.log"
+  },
+  {
+    "name": "test-canny-store",
+    "returncode": 0,
+    "seconds": 43.915,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-store.log",
+    "sha256": "4cbdba5aa8c9447d2a0b8586d2341aa85d925f30b47660dc5712a54ddd8f355f",
+    "saved_log": "test-canny-store.log"
+  },
+  {
+    "name": "test-canny-faults",
+    "returncode": 0,
+    "seconds": 0.668,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-faults.log",
+    "sha256": "83e71d414b4151fd370accca94e3159d648cf720af14b5abc593f88a68b79e30",
+    "saved_log": "test-canny-faults.log"
+  },
+  {
+    "name": "test-canny-hysteresis-medium",
+    "returncode": 0,
+    "seconds": 30.157,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-hysteresis-medium.log",
+    "sha256": "3fbe3799d31acaf5cf423d01bf7b0de301d941bb5e33f51c21ffa3b6401479c8",
+    "saved_log": "test-canny-hysteresis-medium.log"
+  },
+  {
+    "name": "test-canny-store-medium-shape",
+    "returncode": 0,
+    "seconds": 199.976,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-store-medium-shape.log",
+    "sha256": "77b37d2cfbc86dec428fbd340eda90e851b50490d4e04e75b7fc821238e11c51",
+    "saved_log": "test-canny-store-medium-shape.log"
+  },
+  {
+    "name": "frame_memory_probe-compile",
+    "returncode": 0,
+    "seconds": 0.088,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_memory_probe-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "frame_memory_probe-compile.log"
+  },
+  {
+    "name": "frame_memory_probe",
+    "returncode": 0,
+    "seconds": 0.108,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_memory_probe.log",
+    "sha256": "a877bb105e20671260311baa52c92a363d078851cde5f04edd5988423b2b59e8",
+    "saved_log": "frame_memory_probe.log"
+  },
+  {
+    "name": "frame_store_control-compile",
+    "returncode": 0,
+    "seconds": 0.092,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store_control-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "frame_store_control-compile.log"
+  },
+  {
+    "name": "frame_store_control",
+    "returncode": 0,
+    "seconds": 0.18,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store_control.log",
+    "sha256": "a656d94248f131397d2361cbc69d9005eaa0e230f8674e63ea0ccdfa066bd2da",
+    "saved_log": "frame_store_control.log"
+  },
+  {
+    "name": "frame_reference_header-compile",
+    "returncode": 0,
+    "seconds": 0.176,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_reference_header-compile.log",
+    "sha256": "9de46254926c8322686b26db6b85d6029ab23d742f63111faa27bd18e56205c8",
+    "saved_log": "frame_reference_header-compile.log"
+  },
+  {
+    "name": "frame_reference_header",
+    "returncode": 0,
+    "seconds": 0.079,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_reference_header.log",
+    "sha256": "36d9f8b7e298709603b39e2183fbeca6fc049a1ddea98442814aa9007a21d290",
+    "saved_log": "frame_reference_header.log"
+  },
+  {
+    "name": "frame_store-compile",
+    "returncode": 0,
+    "seconds": 0.149,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store-compile.log",
+    "sha256": "424614f14763e9df5c6d45ae3c8e75ae1342cd617567e28c992b3673a9da4151",
+    "saved_log": "frame_store-compile.log"
+  },
+  {
+    "name": "frame_store",
+    "returncode": 0,
+    "seconds": 68.83,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store.log",
+    "sha256": "aada3329c174efed6d5a62029aa03831d9f9d452f4c63308b3ee3ec80f5794f2",
+    "saved_log": "frame_store.log"
+  },
+  {
+    "name": "frame_store+REAL_ALGORITHM-compile",
+    "returncode": 0,
+    "seconds": 0.153,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store+REAL_ALGORITHM-compile.log",
+    "sha256": "103c1ea790fea8b389620dfae01aeeb150a88ab339da98646c54cbd71ac6e224",
+    "saved_log": "frame_store+REAL_ALGORITHM-compile.log"
+  },
+  {
+    "name": "frame_store+REAL_ALGORITHM",
+    "returncode": 0,
+    "seconds": 407.031,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store+REAL_ALGORITHM.log",
+    "sha256": "aada3329c174efed6d5a62029aa03831d9f9d452f4c63308b3ee3ec80f5794f2",
+    "saved_log": "frame_store+REAL_ALGORITHM.log"
+  },
+  {
+    "name": "edge_ui-compile",
+    "returncode": 0,
+    "seconds": 0.146,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "edge_ui-compile.log"
+  },
+  {
+    "name": "edge_ui",
+    "returncode": 0,
+    "seconds": 0.054,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui.log",
+    "sha256": "cca631ca26da5b43fc83682ffeee985005f9be0610622c0dbf560bf6c6368687",
+    "saved_log": "edge_ui.log"
+  },
+  {
+    "name": "threshold_control-compile",
+    "returncode": 0,
+    "seconds": 0.111,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\threshold_control-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "threshold_control-compile.log"
+  },
+  {
+    "name": "threshold_control",
+    "returncode": 0,
+    "seconds": 0.072,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\threshold_control.log",
+    "sha256": "396f27a967b8530dbdb29a27f9756e24434d26282f3106da79fd19790d0a729a",
+    "saved_log": "threshold_control.log"
+  },
+  {
+    "name": "threshold_osd-compile",
+    "returncode": 0,
+    "seconds": 0.313,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\threshold_osd-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "threshold_osd-compile.log"
+  },
+  {
+    "name": "threshold_osd",
+    "returncode": 0,
+    "seconds": 23.786,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\threshold_osd.log",
+    "sha256": "45ac0e924a9aa14e426e5ace0dad40543b391d81b8ec95363e9d560d94afbec5",
+    "saved_log": "threshold_osd.log"
+  },
+  {
+    "name": "compare_display-compile",
+    "returncode": 0,
+    "seconds": 0.133,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\compare_display-compile.log",
+    "sha256": "e00d6234556a117230af366593e006a67c34079edd5be1d74d97344b36930476",
+    "saved_log": "compare_display-compile.log"
+  },
+  {
+    "name": "compare_display",
+    "returncode": 0,
+    "seconds": 0.272,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\compare_display.log",
+    "sha256": "59acb96907e4dd4de8159259878a294bf8b439e548fc797a53140244dc7ac5d1",
+    "saved_log": "compare_display.log"
+  },
+  {
+    "name": "gamma_rom-compile",
+    "returncode": 0,
+    "seconds": 0.264,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\gamma_rom-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "gamma_rom-compile.log"
+  },
+  {
+    "name": "gamma_rom",
+    "returncode": 0,
+    "seconds": 0.061,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\gamma_rom.log",
+    "sha256": "d3d27e1352e5159b0e57185c4d7bec27fde899ff8d5833dd3aa50c61ea2b69c3",
+    "saved_log": "gamma_rom.log"
+  },
+  {
+    "name": "debug_status_snapshot-compile",
+    "returncode": 0,
+    "seconds": 0.121,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\debug_status_snapshot-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "debug_status_snapshot-compile.log"
+  },
+  {
+    "name": "debug_status_snapshot",
+    "returncode": 0,
+    "seconds": 0.087,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\debug_status_snapshot.log",
+    "sha256": "8d3aba1ace1a6b68e892f865bd67f96b9f9375bb43bff739250b5f7bcf13c8a9",
+    "saved_log": "debug_status_snapshot.log"
+  },
+  {
+    "name": "shape_overlay-compile",
+    "returncode": 0,
+    "seconds": 0.362,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\shape_overlay-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "shape_overlay-compile.log"
+  },
+  {
+    "name": "shape_overlay",
+    "returncode": 0,
+    "seconds": 101.525,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\shape_overlay.log",
+    "sha256": "9f8ada81dcf5d860e836832dcea89ffab2eb7e0255a76ed94a0c9763b3a85a14",
+    "saved_log": "shape_overlay.log"
+  },
+  {
+    "name": "test-sensor-control",
+    "returncode": 0,
+    "seconds": 0.436,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-sensor-control.log",
+    "sha256": "0623cfbdf90c9f9d53006deaa325ba91c6f555b3e51f92d3e437bfd32bcb844b",
+    "saved_log": "test-sensor-control.log"
+  },
+  {
+    "name": "test-paged-status",
+    "returncode": 0,
+    "seconds": 0.146,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-paged-status.log",
+    "sha256": "5eba81572e1fdb71b5ab89e6d5a2994b1dbc60b37fedde2eaee9a98b71d314c0",
+    "saved_log": "test-paged-status.log"
+  },
+  {
+    "name": "o1_i2c-compile",
+    "returncode": 0,
+    "seconds": 0.18,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\o1_i2c-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "o1_i2c-compile.log"
+  },
+  {
+    "name": "o1_i2c",
+    "returncode": 0,
+    "seconds": 0.024,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\o1_i2c.log",
+    "sha256": "9894891dd5334e0ef37dbf689998a50e9f361c2b7080660c58accbc8e6d8eb12",
+    "saved_log": "o1_i2c.log"
+  },
+  {
+    "name": "o1_sensor-compile",
+    "returncode": 0,
+    "seconds": 0.071,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\o1_sensor-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "o1_sensor-compile.log"
+  },
+  {
+    "name": "o1_sensor",
+    "returncode": 0,
+    "seconds": 0.067,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\o1_sensor.log",
+    "sha256": "a2aaae3a3e31435cb3728fc4f75b154e14dbb8c80724c6bc41c154def311e47c",
+    "saved_log": "o1_sensor.log"
+  },
+  {
+    "name": "o1_response_cdc-compile",
+    "returncode": 0,
+    "seconds": 0.167,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\o1_response_cdc-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "saved_log": "o1_response_cdc-compile.log"
+  },
+  {
+    "name": "o1_response_cdc",
+    "returncode": 0,
+    "seconds": 0.06,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\o1_response_cdc.log",
+    "sha256": "f88e3384c14bf99b689e1e19f3183e1c7c51610429a712b47125663cc1a911ef",
+    "saved_log": "o1_response_cdc.log"
+  }
+]

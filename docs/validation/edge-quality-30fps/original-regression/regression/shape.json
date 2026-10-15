@@ -1,0 +1,37 @@
+[
+  {
+    "name": "test-shape-components",
+    "returncode": 0,
+    "seconds": 1.487,
+    "log": "regression\\test-shape-components.log",
+    "sha256": "a4ac116b196d60732195456fefbea878d004727f83442ddaa917edc4823b2f01"
+  },
+  {
+    "name": "test-shape-reference",
+    "returncode": 0,
+    "seconds": 109.011,
+    "log": "regression\\test-shape-reference.log",
+    "sha256": "d72e3a91d958d2f91d80c4a05b5b6abec8ce6b44e3790f08ab43479456e9ec23"
+  },
+  {
+    "name": "test-shape-rtl",
+    "returncode": 0,
+    "seconds": 38.447,
+    "log": "regression\\test-shape-rtl.log",
+    "sha256": "4fb3aebf893cf36977b7e2b3abf8554f4491a3a18a831ebc8995a5392911c3dd"
+  },
+  {
+    "name": "test-shape-rtl-stress",
+    "returncode": 0,
+    "seconds": 90.226,
+    "log": "regression\\test-shape-rtl-stress.log",
+    "sha256": "db4321333697b43d6aee163420335f02d70cc0270d76a13f08c69766b6c1de31"
+  },
+  {
+    "name": "test-shape-rtl-validation",
+    "returncode": 0,
+    "seconds": 745.759,
+    "log": "regression\\test-shape-rtl-validation.log",
+    "sha256": "2782f1b606de3409d76cffc4f83c36ead11d466aff994844d46a475b87fd6047"
+  }
+]

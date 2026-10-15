@@ -40,7 +40,7 @@ if args.set and (any(not 1 <= x <= 4096 for x in args.set[:3]) or
                  args.set[3] not in (0, 1) or args.set[4] not in range(4)):
     parser.error('Gains must be 1..4096, gamma 0/1, phase 0..3')
 root = Path(__file__).resolve().parent
-project = 'camera_edge' if args.edge else 'camera_raw'
+project = root
 profile, warning = DebugProfileBuilder.from_file(str(
     root/'full_view_profile.json'))
 if warning:
