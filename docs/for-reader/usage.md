@@ -1,6 +1,6 @@
-# 四版本操作指南
+# 主线与归档版本操作指南
 
-在项目根打开PowerShell。先选版本，再运行该版本目录内的入口；不要混用另一版的位流、profile或控制脚本。
+在项目根打开PowerShell。日常使用 `main` 中的第二版。其他版本分别保存在 `archive/camera-30fps`、`archive/edge-30fps`、`archive/edge-60fps`，需先切换对应分支才能执行下面的入口，具体见 [Git使用说明](git.md)。不要混用另一版的位流、profile或控制脚本。
 
 ## 选择与加载
 

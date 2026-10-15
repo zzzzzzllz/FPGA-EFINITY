@@ -1,5 +1,7 @@
 # 画质优化完整边缘系统
 
+本版已选为 `main` 的唯一开发主线。源码、配置和冻结位流随Git管理；其他版本留在归档分支。选为主线不代表功能已全部验收。
+
 工程：[coding/edge-quality-30fps](../../../coding/edge-quality-30fps/ti60f225_oob.xml)。构建ID：`0x6010100f`。
 
 保留完整边缘系统，使用EA前端、精确中值资源优化、高斯复用及自然边界保护清理。来自quality_preserve/resource2。

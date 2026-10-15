@@ -2,10 +2,12 @@
 
 当前操作以for-reader内的文档为准。validation保存某次验证的原始结果，design/stages保存对应阶段的技术细节；其中的历史路径不是当前加载入口。
 
+当前主线为第二版 `edge-quality-30fps`，其他代码版本已移到归档分支。旧文档中的工程链接需切换到对应分支；当前分支安排见 [本地Git使用说明](for-reader/git.md)。
+
 - [使用指南](for-reader/usage.md)：四个版本怎么构建、测试、烧录和控制。
 - [第一版按键与效果导览](for-reader/versions/edge-30fps-demo.md)：原完整边缘版的上板检查顺序和思维导图。
 - [第二版画质版导览](for-reader/versions/edge-quality-30fps-demo.md)：画质版的默认参数、按键与架构图。
-- [第三版60帧导览](for-reader/versions/edge-60fps-demo.md)：当前上板版本的电脑切换命令、效果与架构图。
+- [第三版60帧导览](for-reader/versions/edge-60fps-demo.md)：归档60帧版本的电脑切换命令、效果与架构图。
 - [版本与目录说明](for-reader/project-structure-audit.md)：功能差异、目录边界与已知问题。
 - [术语](for-reader/GLOSSARY.md)：帧率、全视野、默认关闭和验收状态。
 - [当前系统结构](design/architecture.md)：采集、算法、存储、显示和控制的关系。

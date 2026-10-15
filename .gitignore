@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 /tools/iverilog-12/
 /coding/*/release/*.bit
+!/coding/*/release/ti60f225_oob.bit
 /coding/*/work_*/
 /coding/*/outflow*/
 /tools/archify/**/*.delivery.json

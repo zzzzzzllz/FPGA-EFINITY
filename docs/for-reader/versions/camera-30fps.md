@@ -1,5 +1,7 @@
 # 全视野30帧直显
 
+归档分支：`archive/camera-30fps`。下方工程链接和命令须先切换到该分支。
+
 工程：[coding/camera-30fps](../../../coding/camera-30fps/ti60f225_oob.xml)。构建ID：`0x60101001`。
 
 完整2560×1440输入，输出1280×720彩色图像，约30fps采集处理、60Hz显示。支持RGB增益、Gamma、Bayer相位和状态统计。
