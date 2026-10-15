@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "diagram_type": "tree",
+  "meta": {
+    "title": "第三版上板导览：60帧裁切版",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": "tools/archify/edge-60fps-guide-20261015/guide.html"
+  },
+  "layout": {"direction": "right"},
+  "nodes": [
+    {"id":"root","label":"第三版：60帧／10ms","sublabel":"edge-60fps · 0x60101065 · 中央裁切视野"},
+    {"id":"operation","parent":"root","label":"怎样操作","sublabel":"本版通过电脑 control.cmd 切换画面"},
+    {"id":"edge","parent":"operation","label":"--view edge：Sobel 边缘","sublabel":"当前模式；全屏黑底白边，阈值固定64"},
+    {"id":"gray","parent":"operation","label":"--view gray：灰度","sublabel":"全屏黑白亮度图，保留明暗层次"},
+    {"id":"color","parent":"operation","label":"--view color：恢复彩色","sublabel":"load.cmd 默认彩色；本次跳过原图演示"},
+    {"id":"keys","parent":"operation","label":"板上按键","sublabel":"KEY0复位；KEY1／2／3没有接入功能菜单"},
+    {"id":"pipeline","parent":"root","label":"图像处理架构","sublabel":"按工程XML中的实际源文件核对"},
+    {"id":"camera","parent":"pipeline","label":"SC431HAI → MIPI RAW","sublabel":"1920×1080中央裁切输入，约60fps、10ms曝光"},
+    {"id":"front","parent":"pipeline","label":"颜色恢复 → 面积缩放","sublabel":"raw_demosaic4 + raw_1080_to_720；双线性重建到720p"},
+    {"id":"sobel","parent":"pipeline","label":"灰度 → Sobel","sublabel":"rgb_to_gray + sobel_pair；保留RGB并附带二值边缘"},
+    {"id":"memory","parent":"pipeline","label":"DDR三帧缓冲 → HDMI","sublabel":"frame_buffer保存RGB与边缘；显示端选择彩色／灰度／边缘"},
+    {"id":"control","parent":"pipeline","label":"电脑 → JTAG 控制","sublabel":"control.py设置视图与白平衡，读取版本和运行计数"},
+    {"id":"scope","parent":"root","label":"检查范围","sublabel":"重点看运动连贯性、边缘噪点及是否闪黑"},
+    {"id":"absent","parent":"scope","label":"只有彩色、灰度、Sobel","sublabel":"没有Canny、阈值菜单、中值开关、录放、识别或左右对比"},
+    {"id":"known","parent":"scope","label":"偶发黑屏仍未解决","sublabel":"本次短时运行计数正常；实际显示效果由本轮上板检查确认"}
+  ],
+  "cards": [
+    {"dot":"emerald","title":"切换命令","items":["在项目根运行：.\\coding\\edge-60fps\\control.cmd --view gray","切回当前边缘：.\\coding\\edge-60fps\\control.cmd --view edge","不加 --view 只读取状态；KEY1／2／3不会切模式。"]},
+    {"dot":"cyan","title":"数据流与文件","items":["摄像头 → MIPI → 双线性颜色恢复 → 3:2面积缩放 → 灰度／Sobel → DDR缓冲 → HDMI。","实际前端文件是raw_1080_to_720.v，模块名为raw_full_view；工程未选择同目录的旧raw_full_view.v。","DDR三帧缓冲用于连续显示，不提供前两版的32帧录制回放。"]},
+    {"dot":"amber","title":"这次怎么看","items":["先保持当前Sobel，用手或物体移动观察轮廓连续性，再切灰度观察亮度细节。","边缘阈值固定64，不能用按键调整；它是Sobel二值边缘，没有Canny细化与连通筛选。","画面来自中央裁切，视野比全幅30帧版小。偶发黑屏是已有问题，本次计数检查不等于问题已消失。"]}
+  ]
+}

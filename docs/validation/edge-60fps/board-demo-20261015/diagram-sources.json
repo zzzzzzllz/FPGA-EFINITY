@@ -1,0 +1,161 @@
+{
+  "repository_path": "D:\\Desktop_New\\EfinityNEW",
+  "revision": "1bc338600c67bec46cbc23ca5aa3fe6caf3d8255",
+  "reason": "Local Git has no remote origin; Archify repository URL contract cannot represent this repository without inventing a remote. Sources recorded separately.",
+  "nodes": [
+    {
+      "id": "root",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-60fps.md",
+          "line": 3,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "operation",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/control.py",
+          "line": 28,
+          "end_line": 100
+        }
+      ]
+    },
+    {
+      "id": "edge",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/rtl/sobel_pair.v",
+          "line": 3,
+          "end_line": 79
+        }
+      ]
+    },
+    {
+      "id": "gray",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/rtl/ti60f225_oob_top.v",
+          "line": 938,
+          "end_line": 951
+        }
+      ]
+    },
+    {
+      "id": "color",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/load.cmd",
+          "line": 1,
+          "end_line": 11
+        }
+      ]
+    },
+    {
+      "id": "keys",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/rtl/ti60f225_oob_top.v",
+          "line": 19,
+          "end_line": 170
+        }
+      ]
+    },
+    {
+      "id": "pipeline",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/ti60f225_oob.xml",
+          "line": 8,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "camera",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-60fps.md",
+          "line": 5,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "front",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/rtl/raw_1080_to_720.v",
+          "line": 1,
+          "end_line": 38
+        }
+      ]
+    },
+    {
+      "id": "sobel",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/rtl/ti60f225_oob_top.v",
+          "line": 853,
+          "end_line": 874
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/rtl/ti60f225_oob_top.v",
+          "line": 575,
+          "end_line": 604
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/control.py",
+          "line": 28,
+          "end_line": 100
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-60fps.md",
+          "line": 5,
+          "end_line": 9
+        }
+      ]
+    },
+    {
+      "id": "absent",
+      "sources": [
+        {
+          "path": "coding/edge-60fps/ti60f225_oob.xml",
+          "line": 1,
+          "end_line": 90
+        }
+      ]
+    },
+    {
+      "id": "known",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-60fps.md",
+          "line": 9,
+          "end_line": 9
+        }
+      ]
+    }
+  ],
+  "changed_ranges_reviewed": {
+    "path": "docs/for-reader/versions/edge-60fps.md",
+    "note": "A guide link was added after the source revision; source evidence line numbers refer to that revision."
+  }
+}
