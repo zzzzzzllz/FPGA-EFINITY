@@ -5,11 +5,11 @@ SC431HAI摄像头输入，经Ti60F225处理后输出720p HDMI。项目保留四�
 | 版本 | 作用 | 状态 |
 |---|---|---|
 | [camera-30fps](docs/for-reader/versions/camera-30fps.md) | 全视野30帧彩色直显与白平衡 | 已有板测及人工确认 |
-| [edge-30fps](docs/for-reader/versions/edge-30fps.md) | 原M10/O1完整边缘系统 | 完整Canny与帧功能已实现；识别性能未验收 |
+| [edge-30fps](docs/for-reader/versions/edge-30fps.md) | 原M10/O1完整边缘系统 | 10月15日用户实测反馈多处问题、无法正常使用，待定位 |
 | [edge-quality-30fps](docs/for-reader/versions/edge-quality-30fps.md) | 完整边缘系统加EA前端和自然边界保护 | 最近确认的30帧画质版；边缘闪动仍存在 |
 | [edge-60fps](docs/for-reader/versions/edge-60fps.md) | 中心裁切60帧彩色／灰度／Sobel，10ms曝光 | 保留65版；偶发黑屏未解决，无完整Canny |
 
-首次使用先看 [操作指南](docs/for-reader/usage.md)。日常使用完整边缘功能时，选择 `edge-quality-30fps`。
+首次使用先看 [操作指南](docs/for-reader/usage.md)。当前正在逐版上板复核，已切换到 [画质版导览](docs/for-reader/versions/edge-quality-30fps-demo.md) 继续检查。
 
 ## 目录
 

@@ -4,6 +4,7 @@
 
 - [使用指南](for-reader/usage.md)：四个版本怎么构建、测试、烧录和控制。
 - [第一版按键与效果导览](for-reader/versions/edge-30fps-demo.md)：原完整边缘版的上板检查顺序和思维导图。
+- [第二版画质版导览](for-reader/versions/edge-quality-30fps-demo.md)：当前上板版本的默认参数、按键与架构图。
 - [版本与目录说明](for-reader/project-structure-audit.md)：功能差异、目录边界与已知问题。
 - [术语](for-reader/GLOSSARY.md)：帧率、全视野、默认关闭和验收状态。
 - [当前系统结构](design/architecture.md)：采集、算法、存储、显示和控制的关系。

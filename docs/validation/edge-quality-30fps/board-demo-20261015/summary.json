@@ -1,0 +1,23 @@
+{
+  "build_id": "0x6010100f",
+  "load": "PASS",
+  "capture_fps": 29.737903225806452,
+  "process_fps": 29.989919354838708,
+  "visual_function_acceptance": "pending user inspection",
+  "settings": {
+    "ui_view": 3,
+    "algorithm": 1,
+    "threshold_shown": 24,
+    "low_ratio": 1,
+    "ui_median": 0,
+    "recognition": 0,
+    "frame_mode": 0
+  },
+  "counter_deltas": {
+    "errors": 0,
+    "underflow_cycles": 0,
+    "mixed_words": 0,
+    "frame_bus_errors": 0,
+    "failed_frames": 0
+  }
+}
