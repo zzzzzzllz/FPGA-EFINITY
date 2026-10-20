@@ -1,6 +1,6 @@
 // One selected algorithm per serial frame job. RGB/denoise payload follows each window.
 module edge_algorithm_pair #(parameter W=1280,H=720)(
- input clk,rst_n,input [15:0] in_config,
+ input clk,rst_n,input [15:0] in_config,input in_recognition,
  input [63:0] in_pixels,input in_valid,output in_ready,
  input in_sof,in_eol,in_eof,input [31:0] in_id,in_epoch,
  output [63:0] out_pixels,output out_valid,input out_ready,
@@ -8,28 +8,26 @@ module edge_algorithm_pair #(parameter W=1280,H=720)(
  output [15:0] out_config
 );
  wire [63:0] med,gauss,sobel,nms,classified;
+ wire [15:0] original_luma;wire [1:0] raw_edge;
  wire nv,nr,ns,nl,ne;wire [31:0] ni,np;wire [15:0] nc;
  wire mv,mr,ms,ml,me,gv,gr,gs,gl,ge,sv,sr,ss,sl,se;
  wire [31:0] mi,mp,gi,gp,si,sp;
- wire [15:0] mc,gc;
+ wire [16:0] mc,gc;
  wire [25:0] gradient;
  reg [15:0] job_config;
  always @(posedge clk) begin
   if(!rst_n) job_config<=16'h4820;
   else if(in_valid && in_ready && in_sof) job_config<=in_config;
  end
- median_pair #(.WIDTH(W),.HEIGHT(H),.CONFIG_WIDTH(16)) median(
-  .clk(clk),.rst_n(rst_n),.in_config(in_config),.out_config(mc),
+ median_pair #(.WIDTH(W),.HEIGHT(H),.CONFIG_WIDTH(17)) median(
+  .clk(clk),.rst_n(rst_n),.in_config({in_recognition && in_config[13],in_config}),.out_config(mc),
+  .out_original_luma(original_luma),.out_raw_edge(raw_edge),
   .in_rgby(in_pixels),.in_valid(in_valid),.in_ready(in_ready),.in_sof(in_sof),.in_eol(in_eol),.in_eof(in_eof),
   .in_frame_id(in_id),.in_epoch(in_epoch),.out_rgby(med),.out_valid(mv),.out_ready(mr),
   .out_sof(ms),.out_eol(ml),.out_eof(me),.out_frame_id(mi),.out_epoch(mp));
- function [7:0] luma;
-  input [23:0] rgb;reg [15:0] sum;
-  begin sum=77*rgb[23:16]+150*rgb[15:8]+29*rgb[7:0]+128;luma=sum[15:8];end
- endfunction
  wire [63:0] payload=mc[12] ?
-  {med[63:56],luma(med[55:32]),med[63:56],8'd0,med[31:24],luma(med[23:0]),med[31:24],8'd0}:med;
- gaussian_pair #(.WIDTH(W),.HEIGHT(H)) gaussian(
+  {med[63:56],original_luma[15:8],med[63:56],{8{raw_edge[1]}},med[31:24],original_luma[7:0],med[31:24],{8{raw_edge[0]}}}:med;
+ gaussian_pair #(.WIDTH(W),.HEIGHT(H),.CONFIG_WIDTH(17)) gaussian(
   .clk(clk),.rst_n(rst_n),.in_config(mc),.out_config(gc),
   .in_rgby(payload),.in_valid(mv),.in_ready(mr),.in_sof(ms),.in_eol(ml),.in_eof(me),
   .in_frame_id(mi),.in_epoch(mp),.out_rgby(gauss),.out_valid(gv),.out_ready(gr),

@@ -1,10 +1,10 @@
 // KEY2/KEY3 are active low. One event after 20 ms; repeat after 500 ms.
 module threshold_control #(
- parameter DEBOUNCE=1000000, HOLD=25000000, REPEAT=5000000
+ parameter DEBOUNCE=1000000, HOLD=25000000, REPEAT=5000000, RESET_VALUE=32
 )(
- input clk,rst_n,frame_start,
+ input clk,rst_n,frame_start,preset,input [10:0] preset_value,
  input key_minus_n,key_plus_n,
- input canny_enabled,input adjust_enable,output reg [1:0] press_events,
+ input canny_enabled,input adjust_enable,input fine_adjust,output reg [1:0] press_events,
  input [10:0] jtag_value,input jtag_toggle,
  output reg jtag_ack,
  output reg [10:0] pending,active,
@@ -36,18 +36,20 @@ module threshold_control #(
   end
  end
  reg [10:0] next_value;
+ wire [10:0] adjust_step=fine_adjust ? 11'd4 : 11'd16;
  always @* begin
   next_value=pending;
-  if(jtag_toggle!=jtag_ack) next_value=jtag_value>2040?11'd2040:jtag_value;
-  else if(adjust_enable && event_pulse==1 && stable==2) next_value=pending<16?11'd0:pending-11'd16;
-  else if(adjust_enable && event_pulse==2 && stable==1) next_value=pending>2024?11'd2040:pending+11'd16;
+  if(preset) next_value=preset_value;
+  else if(jtag_toggle!=jtag_ack) next_value=jtag_value>2040?11'd2040:jtag_value;
+  else if(adjust_enable && event_pulse==1 && stable==2) next_value=pending<adjust_step?11'd0:pending-adjust_step;
+  else if(adjust_enable && event_pulse==2 && stable==1) next_value=pending>11'd2040-adjust_step?11'd2040:pending+adjust_step;
   if(canny_enabled && next_value==0) next_value=1;
  end
  always @(posedge clk) begin
   if(!rst_n) begin
-   pending<=32;active<=32;jtag_ack<=0;epoch<=0;minus_events<=0;plus_events<=0;
+   pending<=RESET_VALUE;active<=RESET_VALUE;jtag_ack<=0;epoch<=0;minus_events<=0;plus_events<=0;
   end else begin
-   pending<=next_value;jtag_ack<=jtag_toggle;
+   pending<=next_value;if(!preset) jtag_ack<=jtag_toggle;
    if(jtag_toggle==jtag_ack && adjust_enable) begin
     if(event_pulse==1 && stable==2) minus_events<=minus_events+1'b1;
     if(event_pulse==2 && stable==1) plus_events<=plus_events+1'b1;

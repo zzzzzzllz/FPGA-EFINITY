@@ -10,6 +10,7 @@ module tb_frame_store_control;
  wire capture_accept,job_start,display_valid,reference_valid;
  wire [5:0] capture_slot,job_source,recorded,reference_slot;
  wire [1:0] job_result,display_slot;
+ wire [17:0] display_saved_slots;wire [2:0] display_saved_valid;wire [5:0] display_source;
  wire display_reference_valid;wire [5:0] display_reference_slot;
  wire [31:0] display_id,display_epoch,display_reference_id;
  wire [31:0] job_id,job_epoch,reference_id,shown_id,shown_epoch,ignored_frames,skipped_frames,failed_frames,generation;
@@ -74,9 +75,18 @@ module tb_frame_store_control;
    finish_job;show;
    if(shown_id!=200+n%32) $fatal(1,"continuous replay order");
   end
+  // The play scheduler is ahead of HDMI; NEXT must follow the visible frame.
+  cmd(7);finish_job;show;
+  if(shown_id!=200 || mode!=4) $fatal(1,"NEXT while playing skipped the visible successor");
   cmd(6);frozen_id=shown_id;
   repeat(100) tick;
   if(shown_id!=frozen_id) $fatal(1,"pause moved");
+  cmd(10);finish_job;show;
+  if(shown_id!=200 || mode!=4 || playback_index!=0) $fatal(1,"first paused frame");
+  cmd(11);finish_job;show;
+  if(shown_id!=201 || mode!=3) $fatal(1,"resume should continue after paused frame");
+  cmd(6);frozen_id=shown_id;repeat(100) tick;
+  if(shown_id!=frozen_id) $fatal(1,"resume/pause moved");
   // Explicit recording frees the old clip but preserves the independent ref.
   cmd(4);capture(400);finish_job;show;
   if(reference_id!=100 || reference_slot!=pinned || recorded!=1) $fatal(1,"reference lost");
@@ -91,6 +101,15 @@ module tb_frame_store_control;
   if(shown_id!=600) $fatal(1,"pending display frame replaced by unfinished job");
   finish_job;show;
   if(shown_id!=601) $fatal(1,"overlapped live job missing");
+  cmd(9);
+  for(n=0;n<4;n=n+1) begin
+   cmd(3);capture(700+n);finish_job;show;cmd(8);show;
+   if(dut.saved_slots[(n%3)*6 +:6]!=display_source) $fatal(1,"saved tile source mismatch");
+   if(display_saved_valid!=(n==0?1:n==1?3:7)) $fatal(1,"saved tile count mismatch");
+   for(integer t=0;t<3;t=t+1)
+    if(display_saved_valid[t] && !dut.held[display_saved_slots[t*6 +:6]]) $fatal(1,"saved tile is not pinned");
+  end
+  cmd(9);show;if(display_saved_valid!=0 || reference_valid || dut.save_next!=0) $fatal(1,"clear all snapshots");
   if(failed_frames || skipped_frames) $fatal(1,"unexpected failures/skips");
   $display("PASS: frame references, freeze/reprocess, step, 32 frames, wrap, independent reference, late result isolation");
   $finish;

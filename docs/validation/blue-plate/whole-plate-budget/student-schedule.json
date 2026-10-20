@@ -1,0 +1,857 @@
+{
+  "candidate": "Candidate(8,native=True)",
+  "source_sha256": {
+    "tools\\blue_plate\\char_segment\\lprnet_cost.py": "48d21ac865bfef2561ff505f25812c3da34251b31ff7a497a937e89f29f582e4",
+    "docs\\validation\\blue-plate\\char-segment\\lightweight-model-contract.md": "abed6983dfc081a9190e5681d343a4bdc7d8e19e125a9033a97864f2b0020a0c",
+    "docs\\validation\\blue-plate\\char-segment\\lprnet-cost.json": "637be1c46043dcef4baef4bd00ab8182a46a5bf5eb657a85482062b8fc096716"
+  },
+  "descriptors": {
+    "scratch_offset_A": [
+      0,
+      65536
+    ],
+    "scratch_offset_B": [
+      65536,
+      131072
+    ],
+    "scope": "Relative offsets only; DDR physical base must be reserved disjoint from video slots"
+  },
+  "resources": {
+    "weights": 16,
+    "bias_multiplier_shift_72bit": 4,
+    "shared_128bit_io": 7,
+    "cache_tags": 1,
+    "height_sum_uint16": 5,
+    "logits_int32": 10,
+    "ctc_lut_target": 2,
+    "resize_target": 1,
+    "control_target": 1
+  },
+  "allocated_RAM10": 47,
+  "optional_work_margin_RAM10": 4,
+  "allocated_with_work_margin_RAM10": 51,
+  "retained_with_gray_RAM10": 145,
+  "total_with_gray_and_margin_RAM10": 196,
+  "scope": "Memory/address scheduling proof on synthetic bytes; no trained quantization, reciprocal, RTL, Fmax, XLR or AXI timing proof",
+  "activation_fixture": "uint8; integer weights [-2,2]; bias [-255,255]; positive half-up shift 5 then ReLU/clamp; BN assumed folded",
+  "quantized_model_equivalence": false,
+  "arithmetic_checks": [
+    {
+      "layer": "backbone.0",
+      "exact_uint8_elements": 58144
+    },
+    {
+      "layer": "backbone.3",
+      "exact_uint8_elements": 27456
+    },
+    {
+      "layer": "backbone.4.ops.0",
+      "exact_uint8_elements": 13728
+    },
+    {
+      "layer": "backbone.4.ops.2",
+      "exact_uint8_elements": 13728
+    },
+    {
+      "layer": "backbone.4.ops.4",
+      "exact_uint8_elements": 13728
+    },
+    {
+      "layer": "backbone.4.ops.6",
+      "exact_uint8_elements": 54912
+    },
+    {
+      "layer": "backbone.7",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.8.ops.0",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.8.ops.2",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.8.ops.4",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.8.ops.6",
+      "exact_uint8_elements": 24640
+    },
+    {
+      "layer": "backbone.11.ops.0",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.11.ops.2",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.11.ops.4",
+      "exact_uint8_elements": 6160
+    },
+    {
+      "layer": "backbone.11.ops.6",
+      "exact_uint8_elements": 24640
+    },
+    {
+      "layer": "backbone.14",
+      "exact_uint8_elements": 1216
+    },
+    {
+      "layer": "backbone.16",
+      "exact_uint8_elements": 4480
+    },
+    {
+      "layer": "backbone.20",
+      "exact_uint8_elements": 9240
+    }
+  ],
+  "context_checks": [
+    {
+      "tap": 2,
+      "channels": 8,
+      "pooled_bytes": 1120,
+      "height_sum_bytes": 560,
+      "square_sum": 249350
+    },
+    {
+      "tap": 6,
+      "channels": 16,
+      "pooled_bytes": 2240,
+      "height_sum_bytes": 1120,
+      "square_sum": 19040
+    },
+    {
+      "tap": 13,
+      "channels": 32,
+      "pooled_bytes": 4480,
+      "height_sum_bytes": 2240,
+      "square_sum": 53340
+    },
+    {
+      "tap": 22,
+      "channels": 66,
+      "pooled_bytes": 9240,
+      "height_sum_bytes": 4620,
+      "square_sum": 83440
+    }
+  ],
+  "context_projection_float64_error": 2.842170943040401e-14,
+  "mac_schedule_cycles": 453362,
+  "serial_action_scenario": {
+    "tag_and_data_reads": 2779544,
+    "cache_data_and_tag_fills": 58178,
+    "output_rmw": 83596,
+    "output_clear": 18102,
+    "mac_steps": 453362,
+    "maxpool_compares": 278656,
+    "average_pool_adds": 648480,
+    "context_squares": 17080,
+    "context_sum_adds": 17076,
+    "context_height_adds": 12810,
+    "logit_read_write": 18480
+  },
+  "serial_action_scenario_ms_100MHz": 43.85364,
+  "timing_scope": "One cycle per listed serial action scenario; excludes DDR stalls, cache request control, pool division, energy reciprocal, gain multiplication, CTC and resize; not RTL timing",
+  "pool_comparisons": 278656,
+  "traffic": {
+    "reads": 1389772,
+    "misses": 29089,
+    "read_bytes": 465424,
+    "write_bytes": 289632,
+    "output_rmw_beats": 83596,
+    "row_clear_beats": 18102,
+    "max_write_row": 2496
+  },
+  "operations": [
+    {
+      "name": "backbone.0",
+      "input": {
+        "base": 0,
+        "c": 1,
+        "h": 48,
+        "w": 160,
+        "pitch": 160,
+        "size": 7680
+      },
+      "output": {
+        "base": 65536,
+        "c": 8,
+        "h": 46,
+        "w": 158,
+        "pitch": 1264,
+        "size": 58144
+      },
+      "counts": {
+        "reads": 65412,
+        "misses": 480,
+        "read_bytes": 7680,
+        "write_bytes": 58144,
+        "output_rmw_beats": 14536,
+        "row_clear_beats": 3634
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "context_2",
+      "input": {
+        "base": 65536,
+        "c": 8,
+        "h": 46,
+        "w": 158,
+        "pitch": 1264,
+        "size": 58144
+      },
+      "output": null,
+      "counts": {
+        "reads": 271040,
+        "misses": 3476,
+        "read_bytes": 55616,
+        "write_bytes": 0,
+        "output_rmw_beats": 0,
+        "row_clear_beats": 0
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.3",
+      "input": {
+        "base": 65536,
+        "c": 8,
+        "h": 46,
+        "w": 158,
+        "pitch": 1264,
+        "size": 58144
+      },
+      "output": {
+        "base": 0,
+        "c": 8,
+        "h": 22,
+        "w": 156,
+        "pitch": 1248,
+        "size": 27456
+      },
+      "counts": {
+        "reads": 247104,
+        "misses": 3555,
+        "read_bytes": 56880,
+        "write_bytes": 27456,
+        "output_rmw_beats": 6864,
+        "row_clear_beats": 1716
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.4.ops.0",
+      "input": {
+        "base": 0,
+        "c": 8,
+        "h": 22,
+        "w": 156,
+        "pitch": 1248,
+        "size": 27456
+      },
+      "output": {
+        "base": 65536,
+        "c": 4,
+        "h": 22,
+        "w": 156,
+        "pitch": 624,
+        "size": 13728
+      },
+      "counts": {
+        "reads": 27456,
+        "misses": 1716,
+        "read_bytes": 27456,
+        "write_bytes": 13728,
+        "output_rmw_beats": 6864,
+        "row_clear_beats": 858
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.4.ops.2",
+      "input": {
+        "base": 65536,
+        "c": 4,
+        "h": 22,
+        "w": 156,
+        "pitch": 624,
+        "size": 13728
+      },
+      "output": {
+        "base": 0,
+        "c": 4,
+        "h": 22,
+        "w": 156,
+        "pitch": 624,
+        "size": 13728
+      },
+      "counts": {
+        "reads": 39936,
+        "misses": 858,
+        "read_bytes": 13728,
+        "write_bytes": 13728,
+        "output_rmw_beats": 6864,
+        "row_clear_beats": 858
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.4.ops.4",
+      "input": {
+        "base": 0,
+        "c": 4,
+        "h": 22,
+        "w": 156,
+        "pitch": 624,
+        "size": 13728
+      },
+      "output": {
+        "base": 65536,
+        "c": 4,
+        "h": 22,
+        "w": 156,
+        "pitch": 624,
+        "size": 13728
+      },
+      "counts": {
+        "reads": 41008,
+        "misses": 858,
+        "read_bytes": 13728,
+        "write_bytes": 13728,
+        "output_rmw_beats": 6864,
+        "row_clear_beats": 858
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.4.ops.6",
+      "input": {
+        "base": 65536,
+        "c": 4,
+        "h": 22,
+        "w": 156,
+        "pitch": 624,
+        "size": 13728
+      },
+      "output": {
+        "base": 0,
+        "c": 16,
+        "h": 22,
+        "w": 156,
+        "pitch": 2496,
+        "size": 54912
+      },
+      "counts": {
+        "reads": 27456,
+        "misses": 858,
+        "read_bytes": 13728,
+        "write_bytes": 54912,
+        "output_rmw_beats": 13728,
+        "row_clear_beats": 3432
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "context_6",
+      "input": {
+        "base": 0,
+        "c": 16,
+        "h": 22,
+        "w": 156,
+        "pitch": 2496,
+        "size": 54912
+      },
+      "output": null,
+      "counts": {
+        "reads": 224000,
+        "misses": 3120,
+        "read_bytes": 49920,
+        "write_bytes": 0,
+        "output_rmw_beats": 0,
+        "row_clear_beats": 0
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.7",
+      "input": {
+        "base": 0,
+        "c": 16,
+        "h": 22,
+        "w": 156,
+        "pitch": 2496,
+        "size": 54912
+      },
+      "output": {
+        "base": 65536,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 55440,
+        "misses": 4650,
+        "read_bytes": 74400,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.8.ops.0",
+      "input": {
+        "base": 65536,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 6160,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.8.ops.2",
+      "input": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 65536,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 17248,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.8.ops.4",
+      "input": {
+        "base": 65536,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 18320,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.8.ops.6",
+      "input": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 65536,
+        "c": 32,
+        "h": 10,
+        "w": 77,
+        "pitch": 2464,
+        "size": 24640
+      },
+      "counts": {
+        "reads": 24640,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 24640,
+        "output_rmw_beats": 6160,
+        "row_clear_beats": 1540
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.11.ops.0",
+      "input": {
+        "base": 65536,
+        "c": 32,
+        "h": 10,
+        "w": 77,
+        "pitch": 2464,
+        "size": 24640
+      },
+      "output": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 24640,
+        "misses": 1540,
+        "read_bytes": 24640,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.11.ops.2",
+      "input": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 65536,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 17248,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.11.ops.4",
+      "input": {
+        "base": 65536,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "counts": {
+        "reads": 18320,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 6240,
+        "output_rmw_beats": 1540,
+        "row_clear_beats": 390
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.11.ops.6",
+      "input": {
+        "base": 0,
+        "c": 8,
+        "h": 10,
+        "w": 77,
+        "pitch": 624,
+        "size": 6240
+      },
+      "output": {
+        "base": 65536,
+        "c": 32,
+        "h": 10,
+        "w": 77,
+        "pitch": 2464,
+        "size": 24640
+      },
+      "counts": {
+        "reads": 24640,
+        "misses": 390,
+        "read_bytes": 6240,
+        "write_bytes": 24640,
+        "output_rmw_beats": 6160,
+        "row_clear_beats": 1540
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "context_13",
+      "input": {
+        "base": 65536,
+        "c": 32,
+        "h": 10,
+        "w": 77,
+        "pitch": 2464,
+        "size": 24640
+      },
+      "output": null,
+      "counts": {
+        "reads": 161280,
+        "misses": 2464,
+        "read_bytes": 39424,
+        "write_bytes": 0,
+        "output_rmw_beats": 0,
+        "row_clear_beats": 0
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.14",
+      "input": {
+        "base": 65536,
+        "c": 32,
+        "h": 10,
+        "w": 77,
+        "pitch": 2464,
+        "size": 24640
+      },
+      "output": {
+        "base": 0,
+        "c": 8,
+        "h": 4,
+        "w": 38,
+        "pitch": 304,
+        "size": 1216
+      },
+      "counts": {
+        "reads": 10944,
+        "misses": 1848,
+        "read_bytes": 29568,
+        "write_bytes": 1216,
+        "output_rmw_beats": 304,
+        "row_clear_beats": 76
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.16",
+      "input": {
+        "base": 0,
+        "c": 8,
+        "h": 4,
+        "w": 38,
+        "pitch": 304,
+        "size": 1216
+      },
+      "output": {
+        "base": 65536,
+        "c": 32,
+        "h": 4,
+        "w": 35,
+        "pitch": 1120,
+        "size": 4480
+      },
+      "counts": {
+        "reads": 17920,
+        "misses": 76,
+        "read_bytes": 1216,
+        "write_bytes": 4480,
+        "output_rmw_beats": 1120,
+        "row_clear_beats": 280
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "backbone.20",
+      "input": {
+        "base": 65536,
+        "c": 32,
+        "h": 4,
+        "w": 35,
+        "pitch": 1120,
+        "size": 4480
+      },
+      "output": {
+        "base": 0,
+        "c": 66,
+        "h": 4,
+        "w": 35,
+        "pitch": 2320,
+        "size": 9280
+      },
+      "counts": {
+        "reads": 40320,
+        "misses": 280,
+        "read_bytes": 4480,
+        "write_bytes": 9280,
+        "output_rmw_beats": 3352,
+        "row_clear_beats": 580
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    },
+    {
+      "name": "context_22",
+      "input": {
+        "base": 0,
+        "c": 66,
+        "h": 4,
+        "w": 35,
+        "pitch": 2320,
+        "size": 9280
+      },
+      "output": null,
+      "counts": {
+        "reads": 9240,
+        "misses": 580,
+        "read_bytes": 9280,
+        "write_bytes": 0,
+        "output_rmw_beats": 0,
+        "row_clear_beats": 0
+      },
+      "barrier": "All output writes complete before next consumer; invalidate read tags on begin"
+    }
+  ],
+  "tap_lifetimes": [
+    {
+      "producer": "backbone.2",
+      "buffer": 65536,
+      "context_consumed": "immediately before the next backbone operation",
+      "retained_after_context": "height sums until this branch projection; scalar energy",
+      "full_tap_retained": false
+    },
+    {
+      "producer": "backbone.6",
+      "buffer": 0,
+      "context_consumed": "immediately before the next backbone operation",
+      "retained_after_context": "height sums until this branch projection; scalar energy",
+      "full_tap_retained": false
+    },
+    {
+      "producer": "backbone.13",
+      "buffer": 65536,
+      "context_consumed": "immediately before the next backbone operation",
+      "retained_after_context": "height sums until this branch projection; scalar energy",
+      "full_tap_retained": false
+    },
+    {
+      "producer": "backbone.22",
+      "buffer": 0,
+      "context_consumed": "immediately before the next backbone operation",
+      "retained_after_context": "height sums until this branch projection; scalar energy",
+      "full_tap_retained": false
+    }
+  ],
+  "context_projection_events": [
+    {
+      "tap": 2,
+      "height_elements": 280,
+      "logit_updates": 2310,
+      "max_height_address_exclusive": 560,
+      "max_logit_address_exclusive": 9240,
+      "next_action": "release height-sum buffer before next backbone operation"
+    },
+    {
+      "tap": 6,
+      "height_elements": 560,
+      "logit_updates": 2310,
+      "max_height_address_exclusive": 1120,
+      "max_logit_address_exclusive": 9240,
+      "next_action": "release height-sum buffer before next backbone operation"
+    },
+    {
+      "tap": 13,
+      "height_elements": 1120,
+      "logit_updates": 2310,
+      "max_height_address_exclusive": 2240,
+      "max_logit_address_exclusive": 9240,
+      "next_action": "release height-sum buffer before next backbone operation"
+    },
+    {
+      "tap": 22,
+      "height_elements": 2310,
+      "logit_updates": 2310,
+      "max_height_address_exclusive": 4620,
+      "max_logit_address_exclusive": 9240,
+      "next_action": "release height-sum buffer before next backbone operation"
+    }
+  ],
+  "port_phases": [
+    {
+      "phase": "input tag",
+      "read": "tag[index]",
+      "write": null
+    },
+    {
+      "phase": "miss fill",
+      "read": null,
+      "write": "data[index] then tag[index]"
+    },
+    {
+      "phase": "input sample",
+      "read": "data[index]",
+      "write": null
+    },
+    {
+      "phase": "output RMW read",
+      "read": "data[256+row_word]",
+      "write": null
+    },
+    {
+      "phase": "output RMW write",
+      "read": null,
+      "write": "data[256+row_word]"
+    },
+    {
+      "phase": "row flush",
+      "read": "data[256+row_word]",
+      "write": null
+    }
+  ],
+  "caveat": "Context heights/projected values are consumed branch-by-branch in hardware; Python retains oracle copies only.",
+  "source_unchanged": true
+}

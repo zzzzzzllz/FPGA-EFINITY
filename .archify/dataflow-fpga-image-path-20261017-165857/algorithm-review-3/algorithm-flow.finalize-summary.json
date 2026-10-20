@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "dataflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\algorithm-flow.json",
+    "sha256": "0f2cbdff69ec984b69514f271db143f3b12e805cd0f472a69cab71841419ad86",
+    "bytes": 10758
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\algorithm-flow.html",
+    "sha256": "8734db3859d51d99dc6f2294dc299c850a7c6b0fa1c09b788db2c82d9e278788",
+    "bytes": 825664
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\algorithm-review-3\\algorithm-flow.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\algorithm-review-3\\algorithm-flow.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\algorithm-review-3\\algorithm-flow.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.1.0",
+    "availableVersion": "3.1.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-17T09:05:02.273Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3261,
+  "visualReviewRecommendation": {
+    "action": "inspect-route-readability",
+    "signals": {
+      "resolvedCrossovers": 1,
+      "routesOverSuggestedBends": 4
+    },
+    "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+    "affectedRoutes": {
+      "crossings": [
+        {
+          "left": {
+            "id": "intermediate-shape",
+            "from": "intermediate",
+            "to": "shape",
+            "label": "Sobel 识别开",
+            "collectionIndex": 9,
+            "artifactIndex": 10
+          },
+          "right": {
+            "id": "hysteresis-finish",
+            "from": "hysteresis",
+            "to": "finish",
+            "label": "识别关",
+            "collectionIndex": 11,
+            "artifactIndex": 12
+          },
+          "point": [
+            450,
+            225
+          ]
+        }
+      ],
+      "detours": [
+        {
+          "relationship": {
+            "id": "shape-finish",
+            "from": "shape",
+            "to": "finish",
+            "label": "s_done / s_ok",
+            "collectionIndex": 8,
+            "artifactIndex": 9
+          },
+          "bends": 4,
+          "stretch": 1.271
+        },
+        {
+          "relationship": {
+            "id": "intermediate-shape",
+            "from": "intermediate",
+            "to": "shape",
+            "label": "Sobel 识别开",
+            "collectionIndex": 9,
+            "artifactIndex": 10
+          },
+          "bends": 4,
+          "stretch": 1.342,
+          "directCorridorBlockers": [
+            {
+              "id": "hysteresis",
+              "label": "八邻域滞后连接",
+              "box": [
+                474,
+                242,
+                112,
+                58
+              ]
+            }
+          ]
+        },
+        {
+          "relationship": {
+            "id": "intermediate-finish",
+            "from": "intermediate",
+            "to": "finish",
+            "label": "Sobel 识别关",
+            "collectionIndex": 10,
+            "artifactIndex": 11
+          },
+          "bends": 4,
+          "stretch": 1.114,
+          "directCorridorBlockers": [
+            {
+              "id": "hysteresis",
+              "label": "八邻域滞后连接",
+              "box": [
+                474,
+                242,
+                112,
+                58
+              ]
+            },
+            {
+              "id": "shape",
+              "label": "轮廓与形状判定",
+              "box": [
+                259,
+                242,
+                112,
+                58
+              ]
+            }
+          ]
+        },
+        {
+          "relationship": {
+            "id": "hysteresis-finish",
+            "from": "hysteresis",
+            "to": "finish",
+            "label": "识别关",
+            "collectionIndex": 11,
+            "artifactIndex": 12
+          },
+          "bends": 4,
+          "stretch": 1.241,
+          "directCorridorBlockers": [
+            {
+              "id": "shape",
+              "label": "轮廓与形状判定",
+              "box": [
+                259,
+                242,
+                112,
+                58
+              ]
+            }
+          ]
+        }
+      ],
+      "truncated": false
+    },
+    "repair": "Advisory only: this mode places or routes these relationships itself. Report them; do not remove relationships or meaning to reduce crossings."
+  }
+}

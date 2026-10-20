@@ -1,0 +1,125 @@
+Efinity Synthesis report for project char_preprocess
+Version: 2026.1.132.4.5
+Generated at: Oct 18, 2026 13:36:42
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : char_preprocess
+
+family : Titanium
+device : Ti60F225
+project : char_preprocess
+root : char_preprocess
+binary-db : out\char_preprocess.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : speed
+num_srl : -1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-preprocess\synthesis
+project : char_preprocess
+project-xml : D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-preprocess\synthesis\char_preprocess.xml
+retiming : 0
+root : char_preprocess
+use-logic-for-small-rom : 0
+work-dir : work_syn
+write-efx-verilog : out\char_preprocess.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-preprocess\synthesis\char_preprocess.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0677" : ... Memory 'raw_mem' is not initialized, assuming empty initial contents. (D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-preprocess\synthesis\char_preprocess.v:17)
+"MEM|SYN-0677" : ... Memory 'norm_mem' is not initialized, assuming empty initial contents. (D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-preprocess\synthesis\char_preprocess.v:18)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 22
+Total number of FFs with enable signals: 265
++----------+------------------+
+|CE Signal |Number of FF loads|
++----------+------------------+
+|ceg_net35 |               54 |
+|ceg_net33 |               38 |
+|ceg_net91 |               24 |
+|ceg_net98 |               22 |
+|ceg_net31 |               16 |
+|ceg_net181|               15 |
+|ceg_net108|               15 |
+|ceg_net151|               12 |
+|ceg_net154|                9 |
+|ceg_net100|                9 |
+|ceg_net174|                9 |
+|ceg_net104|                9 |
+|ceg_net106|                7 |
+|ceg_net102|                7 |
+|ceg_net171|                6 |
+|ceg_net180|                3 |
+|ceg_net96 |                3 |
+|ceg_net185|                3 |
+|n5462     |                1 |
+|ceg_net177|                1 |
+|n156      |                1 |
+|n5449     |                1 |
++----------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 1
+Total number of FFs with set/reset signals: 262
++---------+------------------+
+|SR Signal|Number of FF loads|
++---------+------------------+
+|rst      |              262 |
++---------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                  FFs      SRLs      ADDs      LUTs    COMB4s      RAMs DSP/MULTs
+---------------------------------       ---      ----      ----      ----      ----      ---- ---------
+char_preprocess:char_preprocess    265(265)      0(0)  189(189)  671(671)      0(0)      5(5)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
+ No DSP in design
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++-----+----------+----------+------------+----------------+
+|Clock|Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++-----+----------+----------+------------+----------------+
+|clk  |      265 |        0 |         10 |              0 |
++-----+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	25
+OUTPUT PORTS    : 	34
+
+EFX_ADD                 : 	189
+EFX_LUT4                : 	671
+   1-2  Inputs          : 	159
+   3    Inputs          : 	210
+   4    Inputs          : 	302
+EFX_FF                  : 	265
+EFX_RAM10               : 	5
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 3s
+Elapsed synthesis time : 3s

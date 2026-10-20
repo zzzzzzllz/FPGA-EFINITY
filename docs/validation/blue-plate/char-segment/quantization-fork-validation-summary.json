@@ -1,0 +1,159 @@
+{
+  "validation": {
+    "summary": {
+      "ocr_only_strict": {
+        "total": 84,
+        "correct": 70,
+        "wrong": 0,
+        "rejected": 14
+      },
+      "combined_strict": {
+        "total": 84,
+        "correct": 70,
+        "wrong": 0,
+        "rejected": 14
+      }
+    },
+    "fp32_summary": {
+      "ocr_only_strict": {
+        "total": 84,
+        "correct": 68,
+        "wrong": 0,
+        "rejected": 16
+      },
+      "combined_strict": {
+        "total": 84,
+        "correct": 68,
+        "wrong": 0,
+        "rejected": 16
+      }
+    },
+    "transitions": {
+      "ocr_only_strict": {
+        "correct -> correct": 68,
+        "rejected -> rejected": 14,
+        "rejected -> correct": 2
+      },
+      "combined_strict": {
+        "correct -> correct": 68,
+        "rejected -> rejected": 14,
+        "rejected -> correct": 2
+      }
+    },
+    "correct_losses": {
+      "ocr_only_strict": 0,
+      "combined_strict": 0
+    },
+    "correct_gains": {
+      "ocr_only_strict": 2,
+      "combined_strict": 2
+    },
+    "new_wrong": {
+      "ocr_only_strict": 0,
+      "combined_strict": 0
+    },
+    "threshold": 0.9931710550839266,
+    "scales_fitted": false,
+    "threshold_fitted": false,
+    "optimizer_steps": 0,
+    "validation_images": 84,
+    "validation_rois": 85,
+    "heldout_image_reads": 0,
+    "source_image_reads": 0,
+    "independent_dp_max_abs_error": 9.159339953157541e-16,
+    "elapsed_seconds": 8.109176899997692,
+    "frozen_candidate_unchanged": true,
+    "input_cache_unchanged": true,
+    "integer_parameters_unchanged": true
+  },
+  "deployment_audit": {
+    "cost": {
+      "original_order_head_macs": 2526336,
+      "height_swapped_head_macs": 631584,
+      "extra_head_macs": 1894752,
+      "original_order_head_lane_cycles": 334368,
+      "extra_head_lane_cycles": 250776,
+      "full_original_order_macs": 144411264,
+      "full_original_order_lane_cycles": 18189792,
+      "mac_only_ms_at_100mhz": 181.89792,
+      "head_requantizations": 4896,
+      "old_height_swapped_requantizations": 1224,
+      "context_regions": [
+        {
+          "branch": 0,
+          "channels": 64,
+          "offset": 0,
+          "row_pitch": 1152,
+          "bytes": 4608
+        },
+        {
+          "branch": 1,
+          "channels": 128,
+          "offset": 4608,
+          "row_pitch": 2304,
+          "bytes": 9216
+        },
+        {
+          "branch": 2,
+          "channels": 256,
+          "offset": 13824,
+          "row_pitch": 4608,
+          "bytes": 18432
+        },
+        {
+          "branch": 3,
+          "channels": 68,
+          "offset": 32256,
+          "row_pitch": 1232,
+          "bytes": 4928
+        }
+      ],
+      "extra_context_ddr_bytes": 37184,
+      "arena_bytes": 7052352,
+      "head_weight_reads_bytes": 185760,
+      "head_extra_weight_reads_bytes": 111456,
+      "total_weight_reads_with_fork_bytes": 9561760,
+      "context_two_pass_window_additions": 2101248,
+      "ram_banks": 51,
+      "saved_accumulator_slot_bytes": 32,
+      "saved_accumulator_bank_reuse": "existing 2 RAM partial-sum bank; after all K segments complete",
+      "head_centered_height_sum_bytes": 2448,
+      "head_output_block_bytes": 1088,
+      "head_full_int32_ddr_buffer_bytes": 0,
+      "hardware_map_pass": false,
+      "full_integer_confidence_pass": false
+    },
+    "checks": {
+      "full_head_numpy_fraction_outputs": 4896,
+      "height_sum_exact": true,
+      "signed32_times_q31_cases": 1049,
+      "wide_product_uses_signed17_by_signed8": true,
+      "output_channel_vectors": 8,
+      "output_channel_cycles": 2320,
+      "context_ddr_regions_roundtrip": true,
+      "validation_selection_independently_recounted": true
+    },
+    "confidence_proposal": {
+      "fraction_bits": 30,
+      "tail_start": 71,
+      "probability_threshold": 0.9531656394030606,
+      "validation_min_probability_threshold_distance": 0.00033331256338209325,
+      "evaluated": false
+    },
+    "source_hashes": {
+      "tools/blue_plate/whole_plate_budget/mac8/rtl/mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+      "tools/blue_plate/whole_plate_budget/partial_sum/rtl/psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e",
+      "tmp/blue-plate-char-segment/fit-gate/research/LossCTC.cu": "f1c987672007344286c85a66e842c5dec211a8bdc1cc50b43e4fa45859bc06bf",
+      "tmp/blue-plate-char-segment/integer-deployment-research/tflite-softmax.h": "39469681d807ac11c10586ec67187fd70fb0da13aaf0c49dcaf20aa11e5d43fd"
+    }
+  },
+  "candidate_unchanged": true,
+  "confidence_proposal_executed": false,
+  "network_rtl_written": false,
+  "product_rom_exported": false,
+  "development_wrong_accept_still_recorded": {
+    "sample_index": 302,
+    "roi_index": 185
+  },
+  "scope": "controlled fixed viewpoint clear complete unoccluded single ordinary blue plate"
+}

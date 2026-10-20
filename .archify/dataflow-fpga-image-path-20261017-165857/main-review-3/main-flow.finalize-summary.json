@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "dataflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+    "sha256": "a61fa58d12807e50f9c547277573f7e5a2e15b719eea936106f16b7ad8ec401c",
+    "bytes": 10755
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html",
+    "sha256": "45eaaedd0503fecd8b53dceae57fc43a0ecf9008e005769e55408e4e53a45d2f",
+    "bytes": 826962
+  },
+  "gates": {
+    "validate": "fail",
+    "deliver": "not-run",
+    "check": "not-run",
+    "browser-check": "not-run"
+  },
+  "failedStage": "validate",
+  "diagnostics": [
+    {
+      "code": "repository-evidence/git-command",
+      "severity": "error",
+      "message": "Evidence root \"D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\source-snapshot\" is not a Git repository.",
+      "subject": {
+        "surface": "repository-evidence"
+      },
+      "evidence": {
+        "gitArgs": [
+          "rev-parse",
+          "--show-toplevel"
+        ],
+        "exitCode": 128
+      },
+      "supportedFixes": [
+        "use the intended local Git repository and verify its origin and revision"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-review-3\\main-flow.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-review-3\\main-flow.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.1.0",
+    "availableVersion": "3.1.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-17T09:05:02.273Z",
+    "source": "network",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 574,
+  "nextAction": {
+    "action": "edit-in-place",
+    "candidate": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+    "constraint": "Preserve unaffected semantics and geometry; apply each diagnostic's supportedFixes, or the fix its message names, and do not replace the whole candidate.",
+    "then": "finalize-once"
+  }
+}

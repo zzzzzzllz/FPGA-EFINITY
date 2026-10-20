@@ -5,7 +5,7 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
  input recognition_enable,input [15:0] config_value,input [31:0] config_epoch,
  output [63:0] algorithm_pixels,output algorithm_valid,input algorithm_ready,
  output algorithm_sof,algorithm_eol,algorithm_eof,
- output [31:0] algorithm_frame_id,algorithm_epoch,output [15:0] algorithm_config,
+ output [31:0] algorithm_frame_id,algorithm_epoch,output [15:0] algorithm_config,output algorithm_recognition,output [14:0] recognition_live,
  input [63:0] result_pixels,input result_valid,result_sof,result_eof,
  output result_ready,
  input [3:0] command,input command_toggle,output command_ack,
@@ -49,6 +49,9 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
  wire [31:0] h_address;wire [7:0] h_len;wire [127:0] h_wdata;
  reg held_recognition;
  wire edge_done,edge_ok,s_done,s_ok,s_busy,s_overflow;
+ wire [5:0] s_state;wire [31:0] s_cycles;
+ frame_mailbox #(.WIDTH(15),.ALWAYS_SEND(1)) shape_debug_cdc(.rst_n(rst_n),.src_clk(core_clk),.dst_clk(pixel_clk),
+  .src_data({h_busy,s_busy,s_state,s_cycles[6:0]}),.delivered(),.dst_data(recognition_live));
  wire [2:0] s_count;wire [175:0] s_boxes;wire [7:0] s_kinds;
  wire s_req,s_write,s_copy,s_response,s_error;wire [31:0] s_address;wire [127:0] s_data,s_result;
  reg [188:0] result_shape[0:2];
@@ -78,10 +81,11 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
  assign job_ok=s_done ? s_ok : edge_ok;
  generate if(ENABLE_SHAPE) begin: shapes
   shape_recognizer #(.W(W),.H(H),.QUEUE_BASE(32'h08700000),.STATE_BASE(32'h08b00000),.VISIT_BASE(32'h08c00000)) engine(.clk(core_clk),.rst_n(rst_n),.start(edge_done && edge_ok && held_recognition),.slot(job_result),
-   .busy(s_busy),.done(s_done),.ok(s_ok),.count(s_count),.overflow(s_overflow),.boxes(s_boxes),.kinds(s_kinds),.candidates(),.cycles(),
-   .mem_valid(s_req),.mem_write(s_write),.mem_copy(s_copy),.mem_address(s_address),.mem_data(s_data),
+   .busy(s_busy),.done(s_done),.ok(s_ok),.count(s_count),.overflow(s_overflow),.boxes(s_boxes),.kinds(s_kinds),.candidates(),.cycles(s_cycles),
+   .debug_state(s_state),.mem_valid(s_req),.mem_write(s_write),.mem_copy(s_copy),.mem_address(s_address),.mem_data(s_data),
    .mem_done(s_response),.mem_error(s_error),.mem_result(s_result));
  end else begin
+  assign s_state=0;assign s_cycles=0;
   assign s_req=0;assign s_write=0;assign s_copy=0;assign s_address=0;assign s_data=0;
   assign s_done=0;assign s_ok=0;assign s_busy=0;assign s_count=0;assign s_overflow=0;assign s_boxes=0;assign s_kinds=0;
  end endgenerate
@@ -105,7 +109,7 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
 
  wire read_start,read_end,read_valid,display_reset;
  wire [1:0] read_slot;
- wire display_reference_valid;
+ wire display_reference_valid;wire [17:0] display_saved_slots;wire [2:0] display_saved_valid;wire [5:0] display_source;
  wire [5:0] display_reference_slot;
  wire [31:0] display_id,display_epoch,display_reference_id;
  wire [2:0] mode;wire [5:0] recorded;wire [4:0] playback_index;
@@ -136,6 +140,7 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
   .capture_done(capture_done),.capture_ok(capture_ok),.job_start(job_start),.job_source(job_source),
   .job_result(job_result),.job_id(job_id),.job_epoch(job_epoch),.job_done(job_done),.job_ok(job_ok),
   .display_start(read_start),.display_end(read_end),.display_valid(read_valid),.display_slot(read_slot),
+  .display_saved_slots(display_saved_slots),.display_saved_valid(display_saved_valid),.display_source(display_source),
   .display_reference_valid(display_reference_valid),.display_reference_slot(display_reference_slot),
   .display_id(display_id),.display_epoch(display_epoch),.display_reference_id(display_reference_id),
   .shown_valid(shown_valid),.shown_slot(shown_slot),.mode(mode),.recorded(recorded),.playback_index(playback_index),
@@ -143,20 +148,21 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
   .shown_id(shown_id),.shown_epoch(shown_epoch),.ignored_frames(ignored_frames),.skipped_frames(skipped_frames),
   .failed_frames(failed_frames),.generation(generation),.command_error(command_error));
  reg job_toggle;
- reg [80:0] job_message;
- wire [80:0] pixel_job;
+ reg [81:0] job_message;
+ wire [81:0] pixel_job;
  wire job_delivered;
  always @(posedge core_clk) begin
   if(!rst_n) begin job_toggle<=0;job_message<=0;end
   else if(job_start) begin
-   job_toggle<=!job_toggle;job_message<={!job_toggle,job_id,job_epoch,core_config[15:0]};
+   job_toggle<=!job_toggle;job_message<={ENABLE_SHAPE && core_config[48],!job_toggle,job_id,job_epoch,core_config[15:0]};
   end
  end
- frame_mailbox #(.WIDTH(81)) job_cdc(.rst_n(rst_n),.src_clk(core_clk),.dst_clk(pixel_clk),
+ frame_mailbox #(.WIDTH(82)) job_cdc(.rst_n(rst_n),.src_clk(core_clk),.dst_clk(pixel_clk),
   .src_data(job_message),.delivered(job_delivered),.dst_data(pixel_job));
  assign algorithm_frame_id=pixel_job[79:48];
  assign algorithm_epoch=pixel_job[47:16];
  assign algorithm_config=pixel_job[15:0];
+ assign algorithm_recognition=pixel_job[81];
  wire [127:0] algorithm_word,algorithm_write_data;
  wire algorithm_empty,algorithm_write,algorithm_take;
  wire [10:0] algorithm_used;
@@ -215,7 +221,7 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
    if(descriptor_sync[1]!=descriptor_ack) begin display_descriptor<=descriptor;descriptor_ack<=descriptor_sync[1];end
   end
  end
- frame_store_dma #(.WORDS(WORDS),.BURST(BURST),.FIFO_DEPTH(FIFO_DEPTH),.ENABLE_CANNY(ENABLE_CANNY)) dma(
+ frame_store_dma #(.WORDS(WORDS),.W(W),.H(H),.BURST(BURST),.FIFO_DEPTH(FIFO_DEPTH),.ENABLE_CANNY(ENABLE_CANNY)) dma(
   .clk(core_clk),.rst_n(rst_n),.enabled(enabled),
   .canny_req_valid(h_req),.canny_req_write(h_write),.canny_address(h_address),.canny_len(h_len),.canny_req_ready(h_ready),
   .canny_write_data(h_wdata),.canny_write_valid(h_wvalid),.canny_write_ready(h_wready),.canny_read_valid(h_rvalid),
@@ -230,7 +236,7 @@ module frame_store #(parameter W=1280,H=720,BURST=128,FIFO_DEPTH=512,PLAY_PERIOD
   .display_reference_active(display_reference_active),
   .display_reset(display_reset),.display_valid(read_valid),.display_slot(read_slot),
   .display_config(result_config[read_slot]),.display_frame_id(display_id),
-  .reference_valid(display_reference_valid),.reference_slot(display_reference_slot),
+  .saved_valid(display_saved_valid),.saved_slots(display_saved_slots),.display_source(display_source),
   .display_data(display_write_data),.display_write(display_write),.display_used(display_used),.bus_errors(bus_errors),.traffic(core_traffic),
   .awaddr(awaddr),.araddr(araddr),.awlen(awlen),.arlen(arlen),.awvalid(awvalid),.wvalid(wvalid),.wlast(wlast),
   .bready(bready),.arvalid(arvalid),.rready(rready),.wdata(wdata),.wstrb(wstrb),.awready(awready),.wready(wready),.bvalid(bvalid),

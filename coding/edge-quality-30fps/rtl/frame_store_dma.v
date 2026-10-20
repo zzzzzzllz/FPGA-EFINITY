@@ -1,7 +1,7 @@
 // Burst transport for the M08 frame store. The existing DDR controller/PHY
 // remains unchanged. Each channel has at most one outstanding transaction.
 module frame_store_dma #(
- parameter WORDS=230400, BURST=128, FIFO_DEPTH=512, RAW_SLOTS=41, ENABLE_CANNY=0,
+ parameter WORDS=230400, W=1280, H=720, BURST=128, FIFO_DEPTH=512, RAW_SLOTS=41, ENABLE_CANNY=0,
  RESULT_BASE=32'h07b00000, STATE_BASE=32'h08b00000
 )(
  input clk,rst_n,enabled,
@@ -24,7 +24,7 @@ module frame_store_dma #(
  output display_reference_active,
  input display_valid,input [1:0] display_slot,
  input [15:0] display_config,input [31:0] display_frame_id,
- input reference_valid,input [5:0] reference_slot,
+ input [2:0] saved_valid,input [17:0] saved_slots,input [5:0] display_source,
  output reg [127:0] display_data,output reg display_write,input [10:0] display_used,
  output reg [31:0] bus_errors,
  output reg [159:0] traffic,
@@ -102,16 +102,26 @@ module frame_store_dma #(
  reg [2:0] reader;
  reg [7:0] rb;
  reg [31:0] read_address;
- reg read_turn,display_active,reference_needed,reference_loaded,state_loaded,read_display_canny;
+ reg read_turn,display_active,reference_needed,state_loaded,read_display_canny;
  reg [15:0] read_config;
  reg [31:0] read_frame_id;
  assign display_reference_active=reference_needed;
- reg [5:0] read_reference_slot;
+ // Read every second source row and keep every second pixel for each tile.
+ localparam ROW_WORDS=W/4, ROW_FACTOR=ROW_WORDS & -ROW_WORDS;
+ localparam QUAD_WORDS=ROW_FACTOR<BURST ? ROW_FACTOR : BURST, QUAD_BEATS=QUAD_WORDS/4;
+ reg [23:0] quad_slots;reg [3:0] quad_valid;
+ reg quad_right,quad_bottom;
+ reg [$clog2(ROW_WORDS+1)-1:0] quad_x;
+ reg [$clog2(H/2+1)-1:0] quad_y;
+ reg [$clog2(WORDS+1)-1:0] quad_row;
+ reg [63:0] quad_pair;
+ wire [1:0] quad_index={quad_bottom,quad_right};
+ wire [23:0] quad_rgb0=quad_valid[quad_index] ? raw_rgb[95:72] : 24'd0;
+ wire [23:0] quad_rgb2=quad_valid[quad_index] ? raw_rgb[47:24] : 24'd0;
+ wire [63:0] quad_samples={1'b0,read_frame_id[6:0],quad_rgb0,1'b0,read_frame_id[6:0],quad_rgb2};
  reg [1:0] read_display_slot;
- reg display_denoise;
- reg [31:0] reference_cache[0:BURST-1];
- reg [31:0] reference_q;reg [127:0] response_q;
- reg response_pending,response_first,response_reference;
+ reg [127:0] response_q;
+ reg response_pending;
  reg [1:0] period_sync;
  reg period_last,restart_pending;
  reg [5:0] restart_count;
@@ -121,7 +131,7 @@ module frame_store_dma #(
  wire canny_write_request=ENABLE_CANNY && canny_req_valid && canny_req_write;
  wire canny_read_request=ENABLE_CANNY && canny_req_valid && !canny_req_write;
  wire choose_canny_write=canny_write_request && !result_burst && (!capture_burst || result_turn);
- wire choose_display=display_burst && (!(algorithm_burst || canny_read_request) || display_used<FIFO_DEPTH/2 || read_turn || reference_loaded || state_loaded);
+ wire choose_display=display_burst && (!(algorithm_burst || canny_read_request) || display_used<FIFO_DEPTH/2 || read_turn || state_loaded);
  assign canny_req_ready=enabled && ((ws==0 && choose_canny_write) ||
    (rs==0 && !restart_pending && restart_count==0 && !choose_display && !algorithm_burst && canny_read_request));
  assign canny_write_ready=ws==2 && writer==2 && wready;
@@ -157,7 +167,7 @@ module frame_store_dma #(
   begin sum=77*rgb[23:16]+150*rgb[15:8]+29*rgb[7:0]+128;luma=sum[15:8];end
  endfunction
  integer p;
- reg [127:0] compared,display_word;
+ reg [127:0] display_word;
  always @* begin
   display_word=rdata;
   if(read_display_canny) for(p=0;p<4;p=p+1) begin
@@ -166,11 +176,6 @@ module frame_store_dma #(
    if(display_offset==0 && rb==0 && p==2) display_word[p*32+24 +:7]=read_config[6:0];
    if(display_offset==0 && rb==0 && p==1) display_word[p*32+24 +:7]={1'b0,read_config[12:11],read_config[10:7]};
   end
-  compared=response_q;
-  for(p=0;p<4;p=p+1)
-   compared[p*32 +:24]={reference_q[p*8 +:8],
-    (display_denoise ? response_q[p*32+16 +:8] : luma(response_q[p*32 +:24])),8'd0};
-  if(response_first) compared[61]=1'b1;
  end
  reg [23:0] capture_watchdog;
  always @(posedge clk) begin
@@ -184,9 +189,8 @@ module frame_store_dma #(
    job_done<=0;job_ok<=0;bus_errors<=0;capture_watchdog<=0;
    traffic<=0;
    rs<=0;reader<=0;rb<=0;read_address<=0;read_turn<=0;
-   display_active<=0;reference_needed<=0;reference_loaded<=0;state_loaded<=0;read_display_canny<=0;read_config<=0;read_frame_id<=0;read_reference_slot<=0;read_display_slot<=0;
-   display_denoise<=0;response_pending<=0;response_q<=0;reference_q<=0;
-   response_first<=0;response_reference<=0;display_write<=0;display_data<=0;
+   display_active<=0;reference_needed<=0;state_loaded<=0;read_display_canny<=0;read_config<=0;read_frame_id<=0;quad_slots<=0;quad_valid<=0;quad_right<=0;quad_bottom<=0;quad_x<=0;quad_y<=0;quad_row<=0;quad_pair<=0;read_display_slot<=0;
+   response_pending<=0;response_q<=0;display_write<=0;display_data<=0;
    period_sync<=0;period_last<=0;restart_pending<=0;restart_count<=0;
    display_start<=0;display_end<=0;display_reset<=1;
   end else begin
@@ -284,25 +288,45 @@ module frame_store_dma #(
     restart_count<=restart_count+1'b1;
     if(restart_count==3) display_start<=1;
     if(restart_count==16) begin
-     display_reset<=0;display_offset<=0;reference_loaded<=0;state_loaded<=0;
-     read_display_slot<=display_slot;read_reference_slot<=reference_slot;
+     display_reset<=0;display_offset<=0;state_loaded<=0;
+     read_display_slot<=display_slot;quad_slots<={display_source,saved_slots};quad_valid<={1'b1,saved_valid};
+     quad_right<=0;quad_bottom<=0;quad_x<=0;quad_y<=0;quad_row<=0;
      read_display_canny<=ENABLE_CANNY && display_config[13];read_config<=display_config;read_frame_id<=display_frame_id;
-     reference_needed<=reference_mode && reference_valid;
+     reference_needed<=reference_mode;
      display_active<=display_valid;restart_count<=0;
     end
    end
    display_write<=response_pending && !display_reset;
-   display_data<=response_reference ? compared : response_q;
+   display_data<=response_q;
    response_pending<=0;
    if(raw_output_valid) begin
     raw_read_index<=raw_read_index+1'b1;
-    if(reader==2) reference_cache[raw_read_index]<={raw_rgby[127:120],raw_rgby[95:88],raw_rgby[63:56],raw_rgby[31:24]};
+    if(reader==2) begin
+     if(!raw_read_index[0]) quad_pair<=quad_samples;
+     else begin
+      response_q<={quad_pair,quad_samples};response_pending<=1;
+      if(display_offset==0 && raw_read_index==1) begin
+       response_q[94:88]<=read_config[6:0];
+       response_q[62:56]<={3'b000,read_config[10:7]};
+      end
+     end
+    end
     if(raw_read_phase==3) begin
      raw_read_phase<=0;
      if(raw_read_last) begin
       rs<=0;
       if(reader==0) begin algorithm_offset<=algorithm_offset+BURST;read_turn<=1;end
-      else reference_loaded<=1;
+      else begin
+       display_offset<=display_offset+QUAD_WORDS/2;read_turn<=0;
+       if(quad_x==ROW_WORDS-QUAD_WORDS) begin
+        quad_x<=0;quad_right<=!quad_right;
+        if(quad_right) begin
+         if(quad_y==H/2-1) begin quad_y<=0;quad_row<=0;quad_bottom<=1;end
+         else begin quad_y<=quad_y+1'b1;quad_row<=quad_row+W/2;end
+        end
+       end else quad_x<=quad_x+QUAD_WORDS;
+       if(display_offset==WORDS-QUAD_WORDS/2) begin display_active<=0;display_end<=1;end
+      end
      end
     end else begin raw_read_carry<=rdata[95:0];raw_read_phase<=raw_read_phase+1'b1;end
    end
@@ -313,10 +337,10 @@ module frame_store_dma #(
      // Split views consume two source rows per output row. Refill their
      // deadline-driven FIFO before spending spare bandwidth on processing.
      if(choose_display) begin
-      if(read_display_canny && !reference_needed && !state_loaded) begin
+      if(reference_needed) begin
+       reader<=2;read_address<=raw_address(quad_slots[quad_index*6 +:6],quad_row+quad_x);read_length<=QUAD_BEATS-1;
+      end else if(read_display_canny && !state_loaded) begin
        reader<=4;read_address<=STATE_BASE+({30'd0,read_display_slot}<<18)+display_offset;read_length<=BURST/16-1;
-      end else if(reference_needed && !reference_loaded) begin
-       reader<=2;read_address<=raw_address(read_reference_slot,display_offset);read_length<=RAW_BEATS-1;
       end else begin
        reader<=1;read_address<=RESULT_BASE+({30'd0,read_display_slot}<<22)+(display_offset<<4);
       end
@@ -331,19 +355,17 @@ module frame_store_dma #(
       if(reader==3) canny_read_bad<=1;
      end
      if(reader==1) begin
-      response_q<=display_word;reference_q<=reference_cache[rb];response_pending<=1;
-      response_reference<=reference_needed;response_first<=display_offset==0 && rb==0;
-      if(display_offset==0 && rb==0) display_denoise<=display_word[61];
+      response_q<=display_word;response_pending<=1;
      end
      if(rb==read_length) begin
       if(raw_read) begin
        if(raw_read_burst==2) raw_read_last<=1;
-       else begin raw_read_burst<=raw_read_burst+1'b1;read_address<=read_address+RAW_BEATS*16;rb<=0;rs<=1;end
+       else begin raw_read_burst<=raw_read_burst+1'b1;read_address<=read_address+(reader==2 ? QUAD_BEATS*16 : RAW_BEATS*16);rb<=0;rs<=1;end
       end else rs<=0;
       case(reader)
        0: ;
        1: begin
-        display_offset<=display_offset+BURST;reference_loaded<=0;state_loaded<=0;read_turn<=0;
+        display_offset<=display_offset+BURST;state_loaded<=0;read_turn<=0;
         if(display_offset==WORDS-BURST) begin display_active<=0;display_end<=1;end
        end
        2: ;

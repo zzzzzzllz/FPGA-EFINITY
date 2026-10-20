@@ -1,0 +1,22 @@
+{
+  "script": "full_lprnet_sharing.py",
+  "exit_code": 0,
+  "source_hashes_rechecked": true,
+  "float64_reorder_max_error": 3.552713678800501e-14,
+  "K_split_exact_outputs": 288,
+  "traffic": {
+    "backbone_scalar_input_taps": 17855424,
+    "pool_scalar_input_taps": 1686528,
+    "context_scalar_input_taps": 1087776,
+    "feature_write_bytes": 1508416,
+    "one_16byte_read_per_scalar_contiguous_write_ceiling": 340786432,
+    "scope": "No cache-miss measurement for full LPRNet. Conservative no-retry read-beat ceiling; excludes input resize, descriptors, scalar lookup tables, CTC and external protocol overhead."
+  },
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\full_lprnet_sharing.py": "2bb1dc498ca9648a73dbdd7a5394a80275d3f6719d6272c2017a94246b9bf27f",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\full-lprnet-sharing.md": "be8d5b2f82f23a50928ec086d809a5bb9f6196ee24da4db5d7c7d95e99d84231",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\full-lprnet-sharing.json": "9899df0ee574d91ed876fd12d8fd13f3a11ea7e96653a58be97350a84c089d3f",
+    "tmp\\blue-plate-whole-plate-budget\\full-lprnet-sharing.log": "f1171bb026e691e4b6da856f32b4150d6aeae05727bfd5d8a273cab2f5af2423"
+  },
+  "scope": "Existing pretrained float64 random-input algebra check plus unscaled K-split arithmetic fixture; no image evaluation, quantization, export, RTL or synthesis"
+}

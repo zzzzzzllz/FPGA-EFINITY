@@ -1,0 +1,2 @@
+PASS: 12-page loop skipping 09, all actions, presets, clip/reference retention, empty clip, wraps, debounce, long-release exclusion, busy/timeout recovery, JTAG
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_edge_ui.v:110: $finish called at 88900000 (1ps)

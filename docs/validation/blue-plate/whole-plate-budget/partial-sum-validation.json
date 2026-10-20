@@ -1,0 +1,144 @@
+{
+  "status": "Full-K RTL, bounded mapped (local LUT startup fix), and map PASS",
+  "resources": {
+    "EFX_ADD": 264,
+    "EFX_LUT4": 908,
+    "EFX_DSP48": 8,
+    "EFX_FF": 433,
+    "EFX_RAM10": 18
+  },
+  "increment_over_weight_bank": {
+    "EFX_RAM10": 2,
+    "EFX_DSP48": 0,
+    "EFX_LUT4": 461,
+    "EFX_FF": 13,
+    "EFX_ADD": 0
+  },
+  "rtl_cycles": 178888,
+  "mapped_cycles": 5640,
+  "rtl_lane_state_checks": 1431104,
+  "mapped_lane_state_checks": 45120,
+  "physical_words": 512,
+  "partial_sum_bytes": 2048,
+  "active_16x8_bytes": 512,
+  "rtl_cases": [
+    {
+      "positions": 16,
+      "valid_lanes": 8,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 16,
+      "valid_lanes": 4,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 8,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 64
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 4,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 64
+    }
+  ],
+  "mapped_cases": [
+    {
+      "positions": 16,
+      "valid_lanes": 8,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 16,
+      "valid_lanes": 4,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 8,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 64
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 4,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 64
+    }
+  ],
+  "frozen_sources_unchanged": true,
+  "hardware_and_netlist_unchanged_after_initial_failure": true,
+  "mapped_model": "Local EFX_LUT4 copy with always_comb startup evaluation; stock model reproducer fails, all 60 actual masks pass 15420 startup/four-state checks.",
+  "timing_status": "Map only. SDC provided; no placed/routed STA or verified 100MHz.",
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\build.ps1": "bb02fcd32e2f98075eda494341a1afb84e40ccca9d25ffb8e803924c9bddcbec",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\lut_startup.py": "c41c8da5eabed3c42322659ea72ba32f99bc53a303b742d94fb709330925444d",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\prepare_synthesis.py": "f4ddc5458177649b98f33553d71b07c920b869a490000105fd319f0d4c20b71c",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\README.md": "cb7ecbc01bbe9e6d7ef0d608ddb86943b084a74fd6f81c06bd447ad00228fdae",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\tb_psum.sv": "63958de044126dad25c3a6438439a3cbcf7201d4b193f40417cd0611dec868ce",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\test_psum.py": "287b5050348ac73d84d3b8bd8e5609f8e78e3e7f70e8553b6513357b8653eae6",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\verify_synthesis.py": "72f9422d17278a22db85ee57808560e8783d7e94072b536c848513f00103f7ba",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\rtl\\psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\__pycache__\\test_psum.cpython-313.pyc": "9396af97f9e504457c1fb10cf48d1c7bb3b3a03f6179424562df2f92f0449814",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\rtl-validation.json": "714f4a922ac52a8baabaed3427611af2bd1242c6aeed2ed9d8e2716ba2965b09",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\mapped-validation.json": "83d8d49d23acc1a5a390eb2a80b398bd44e88709e2dc064923eb7c3e0fdc60e6",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\rtl-run.log": "fe8f2c2a447e7067c91664145fb7dcf6cd0414b4b80c1522de86f4a6be369f85",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\mapped-run.log": "d2bf2c58c86b48e939b2b7603a8becbd5ac28bfd20ecd346df704b545bae3555",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\lut-startup-validation.json": "695eeea7ee9e9c4ecd528b46b2c3905e9300c092522fc48bc8d443b4f4020620",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\lut-stock.log": "204101fc59897aeee6a686b39a0f0286e84ac1043882b6568eed16e989d4b658",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\lut-fixed.log": "8a3f57d56dd78310e5a1e4e961a6c1a0215b86bc441bd0b9e463e4ceeb9fc288",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\audit.log": "4f730324d9bba82efe304732b321beee16ce86c2e8c6b37753313b3a0041bf3e",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\audit.sv": "80c18aa54d40fd8ed1d9a733e182f0e91c588454ba16e8ce8ae1744b76756601",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\probe.sv": "ed5cfe48d94bf1d63c9883842ef7c301df5a3b61ea3909c7c584dababac0f04c",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\probe-vectors.txt": "7a34798c776ef359286db597df769119f0c5a8ab152d40d9f8da49e2aad0a8a9",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\probe-fixed.log": "52c90a4ebc195bd1acf7a4b67c4065703d945bea9cd09ef040cbd18c7025d8cf",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\lut-startup.sv": "840950f89b36c1edcde1764223b03091be3cc904c440a7c3c6a15db7bb859eaf",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\synthesis\\synthesis-summary.json": "e59ef873514e6250670d1b8041911b6df4d23dce7ecf21e4f508e8e6fbf701f9",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\synthesis\\out\\psum_weight_mac8.map.v": "6fe5524578ffe3debffba9f3d8146532b390bc55612edc0abb890d62e0f99f81",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\failure-2603\\mapped-run.log": "f684c87f3f74e11c6c6444b61c8ef7f3f3f8d4873e159c71db548fe6de3046cc",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\failure-2603\\mapped-vectors.txt": "5259b03b266846cb21574d600172e7708306c6877a204e32c81e9ca34cf1eea7",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\failure-2603\\psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e",
+    "tmp\\blue-plate-whole-plate-budget\\partial-sum\\failure-2603\\test_psum.py": "e415c75450bdefe130c06335c54883dc25a48e496f9431e4c64df9a6c2035da3",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\partial-sum-implementation.md": "2a25ac60fbd8ee0b6ab58c96c90c924c786fcab3be5ca4e95c2eb31339f1f5b5"
+  }
+}

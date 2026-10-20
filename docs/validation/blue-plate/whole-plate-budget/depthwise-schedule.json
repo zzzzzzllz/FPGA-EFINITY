@@ -1,0 +1,872 @@
+{
+  "source_sha256": {
+    "docs\\validation\\blue-plate\\whole-plate-budget\\detector-sharing.json": "861eb523009ea5455721d338df286a153f2f35e7ee89ed2dace7b5316572d9a9",
+    "tmp\\blue-plate-normal-g1\\mature-detector\\model-costs.json": "1ffe9264f342eccb91ff40095a28f884a12b93aef4584139734391c29a083413",
+    "tmp\\blue-plate-whole-plate-budget\\detector320.dot": "cf505309a408392c6bd91d837201cb5303cccf33b699e81fd1d3dc0c3d7f7df4"
+  },
+  "layers": [
+    {
+      "name": "onnx_node!MaxPool_9",
+      "type": "maxpool",
+      "channels": 16,
+      "input": [
+        16,
+        160,
+        160
+      ],
+      "output": [
+        16,
+        80,
+        80
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 0,
+      "exact_uint8_elements": 102400,
+      "scalar_cache_reads": 409600,
+      "scalar_cache_misses": 25600,
+      "vector_cache_reads": 51200,
+      "vector_cache_misses": 25600,
+      "vector_read_ddr_bytes": 409600,
+      "output_write_bytes": 102400,
+      "vector_tap_steps": 51200,
+      "padding_vectors": 0,
+      "weight_storage_bytes": 0,
+      "weight_bank_rows": 0,
+      "serial_port_and_mac_actions": 204800,
+      "scalar_pool_compare_actions": 307200,
+      "serial_pool_single_comparator_actions": 460800,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_14",
+      "type": "depthwise",
+      "channels": 16,
+      "input": [
+        16,
+        80,
+        80
+      ],
+      "output": [
+        16,
+        40,
+        40
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 226576,
+      "scalar_cache_misses": 6400,
+      "vector_cache_reads": 28322,
+      "vector_cache_misses": 6400,
+      "vector_read_ddr_bytes": 102400,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 478,
+      "weight_storage_bytes": 144,
+      "weight_bank_rows": 18,
+      "serial_port_and_mac_actions": 98244,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_21",
+      "type": "depthwise",
+      "channels": 32,
+      "input": [
+        32,
+        80,
+        80
+      ],
+      "output": [
+        32,
+        40,
+        40
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 51200,
+      "exact_uint8_elements": 51200,
+      "scalar_cache_reads": 453152,
+      "scalar_cache_misses": 18976,
+      "vector_cache_reads": 56644,
+      "vector_cache_misses": 18976,
+      "vector_read_ddr_bytes": 303616,
+      "output_write_bytes": 51200,
+      "vector_tap_steps": 57600,
+      "padding_vectors": 956,
+      "weight_storage_bytes": 288,
+      "weight_bank_rows": 36,
+      "serial_port_and_mac_actions": 208840,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_48",
+      "type": "depthwise",
+      "channels": 32,
+      "input": [
+        32,
+        40,
+        40
+      ],
+      "output": [
+        32,
+        40,
+        40
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 51200,
+      "exact_uint8_elements": 51200,
+      "scalar_cache_reads": 445568,
+      "scalar_cache_misses": 3200,
+      "vector_cache_reads": 55696,
+      "vector_cache_misses": 3200,
+      "vector_read_ddr_bytes": 51200,
+      "output_write_bytes": 51200,
+      "vector_tap_steps": 57600,
+      "padding_vectors": 1904,
+      "weight_storage_bytes": 288,
+      "weight_bank_rows": 36,
+      "serial_port_and_mac_actions": 175392,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "type": "depthwise",
+      "channels": 32,
+      "input": [
+        32,
+        40,
+        40
+      ],
+      "output": [
+        32,
+        40,
+        40
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 51200,
+      "exact_uint8_elements": 51200,
+      "scalar_cache_reads": 445568,
+      "scalar_cache_misses": 3200,
+      "vector_cache_reads": 55696,
+      "vector_cache_misses": 3200,
+      "vector_read_ddr_bytes": 51200,
+      "output_write_bytes": 51200,
+      "vector_tap_steps": 57600,
+      "padding_vectors": 1904,
+      "weight_storage_bytes": 288,
+      "weight_bank_rows": 36,
+      "serial_port_and_mac_actions": 175392,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_102",
+      "type": "depthwise",
+      "channels": 32,
+      "input": [
+        32,
+        40,
+        40
+      ],
+      "output": [
+        32,
+        40,
+        40
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 51200,
+      "exact_uint8_elements": 51200,
+      "scalar_cache_reads": 445568,
+      "scalar_cache_misses": 3200,
+      "vector_cache_reads": 55696,
+      "vector_cache_misses": 3200,
+      "vector_read_ddr_bytes": 51200,
+      "output_write_bytes": 51200,
+      "vector_tap_steps": 57600,
+      "padding_vectors": 1904,
+      "weight_storage_bytes": 288,
+      "weight_bank_rows": 36,
+      "serial_port_and_mac_actions": 175392,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_112",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        40,
+        40
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 222784,
+      "scalar_cache_misses": 9376,
+      "vector_cache_reads": 27848,
+      "vector_cache_misses": 9376,
+      "vector_read_ddr_bytes": 150016,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 952,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 103248,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_119",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        40,
+        40
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 222784,
+      "scalar_cache_misses": 9376,
+      "vector_cache_reads": 27848,
+      "vector_cache_misses": 9376,
+      "vector_read_ddr_bytes": 150016,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 952,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 103248,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_146",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_173",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_200",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_227",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_254",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_281",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_308",
+      "type": "depthwise",
+      "channels": 64,
+      "input": [
+        64,
+        20,
+        20
+      ],
+      "output": [
+        64,
+        20,
+        20
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 25600,
+      "exact_uint8_elements": 25600,
+      "scalar_cache_reads": 215296,
+      "scalar_cache_misses": 1600,
+      "vector_cache_reads": 26912,
+      "vector_cache_misses": 1600,
+      "vector_read_ddr_bytes": 25600,
+      "output_write_bytes": 25600,
+      "vector_tap_steps": 28800,
+      "padding_vectors": 1888,
+      "weight_storage_bytes": 576,
+      "weight_bank_rows": 72,
+      "serial_port_and_mac_actions": 85824,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_318",
+      "type": "depthwise",
+      "channels": 128,
+      "input": [
+        128,
+        20,
+        20
+      ],
+      "output": [
+        128,
+        10,
+        10
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 12800,
+      "exact_uint8_elements": 12800,
+      "scalar_cache_reads": 107648,
+      "scalar_cache_misses": 4576,
+      "vector_cache_reads": 13456,
+      "vector_cache_misses": 4576,
+      "vector_read_ddr_bytes": 73216,
+      "output_write_bytes": 12800,
+      "vector_tap_steps": 14400,
+      "padding_vectors": 944,
+      "weight_storage_bytes": 1152,
+      "weight_bank_rows": 144,
+      "serial_port_and_mac_actions": 50464,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_325",
+      "type": "depthwise",
+      "channels": 128,
+      "input": [
+        128,
+        20,
+        20
+      ],
+      "output": [
+        128,
+        10,
+        10
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 12800,
+      "exact_uint8_elements": 12800,
+      "scalar_cache_reads": 107648,
+      "scalar_cache_misses": 4576,
+      "vector_cache_reads": 13456,
+      "vector_cache_misses": 4576,
+      "vector_read_ddr_bytes": 73216,
+      "output_write_bytes": 12800,
+      "vector_tap_steps": 14400,
+      "padding_vectors": 944,
+      "weight_storage_bytes": 1152,
+      "weight_bank_rows": 144,
+      "serial_port_and_mac_actions": 50464,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_352",
+      "type": "depthwise",
+      "channels": 128,
+      "input": [
+        128,
+        10,
+        10
+      ],
+      "output": [
+        128,
+        10,
+        10
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 12800,
+      "exact_uint8_elements": 12800,
+      "scalar_cache_reads": 100352,
+      "scalar_cache_misses": 800,
+      "vector_cache_reads": 12544,
+      "vector_cache_misses": 800,
+      "vector_read_ddr_bytes": 12800,
+      "output_write_bytes": 12800,
+      "vector_tap_steps": 14400,
+      "padding_vectors": 1856,
+      "weight_storage_bytes": 1152,
+      "weight_bank_rows": 144,
+      "serial_port_and_mac_actions": 41088,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_379",
+      "type": "depthwise",
+      "channels": 128,
+      "input": [
+        128,
+        10,
+        10
+      ],
+      "output": [
+        128,
+        10,
+        10
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 12800,
+      "exact_uint8_elements": 12800,
+      "scalar_cache_reads": 100352,
+      "scalar_cache_misses": 800,
+      "vector_cache_reads": 12544,
+      "vector_cache_misses": 800,
+      "vector_read_ddr_bytes": 12800,
+      "output_write_bytes": 12800,
+      "vector_tap_steps": 14400,
+      "padding_vectors": 1856,
+      "weight_storage_bytes": 1152,
+      "weight_bank_rows": 144,
+      "serial_port_and_mac_actions": 41088,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    },
+    {
+      "name": "onnx_node!Conv_406",
+      "type": "depthwise",
+      "channels": 128,
+      "input": [
+        128,
+        10,
+        10
+      ],
+      "output": [
+        128,
+        10,
+        10
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "tail_channels": 0,
+      "exact_int32_elements": 12800,
+      "exact_uint8_elements": 12800,
+      "scalar_cache_reads": 100352,
+      "scalar_cache_misses": 800,
+      "vector_cache_reads": 12544,
+      "vector_cache_misses": 800,
+      "vector_read_ddr_bytes": 12800,
+      "output_write_bytes": 12800,
+      "vector_tap_steps": 14400,
+      "padding_vectors": 1856,
+      "weight_storage_bytes": 1152,
+      "weight_bank_rows": 144,
+      "serial_port_and_mac_actions": 41088,
+      "scalar_pool_compare_actions": 0,
+      "serial_pool_single_comparator_actions": 0,
+      "scope": "Cache read actions exclude queue wait; output scalar requantization/RMW and metadata add time"
+    }
+  ],
+  "depthwise_totals": {
+    "exact_int32_elements": 524800,
+    "exact_uint8_elements": 524800,
+    "scalar_cache_reads": 4485424,
+    "scalar_cache_misses": 76480,
+    "vector_cache_reads": 560678,
+    "vector_cache_misses": 76480,
+    "vector_read_ddr_bytes": 1223680,
+    "output_write_bytes": 524800,
+    "weight_storage_bytes": 12240,
+    "serial_port_and_mac_actions": 1864716
+  },
+  "old_depthwise_mac_steps": 4723200,
+  "new_depthwise_mac_steps": 590400,
+  "whole_detector_mac_schedule_cycles": 22977600,
+  "whole_detector_mac_ms_100MHz": 229.776,
+  "old_repeated_depthwise_weight_reads": 2662400,
+  "new_resident_depthwise_weight_reads": 12240,
+  "revised_all_conv_weight_reads": 11388880,
+  "fixed_8DSP": true,
+  "extra_RAM10_for_vector_inputs": 0,
+  "timing_scope": "MAC issue and cache action counts; not RTL latency or quantized-network throughput",
+  "source_unchanged": true
+}

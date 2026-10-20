@@ -1,0 +1,72 @@
+{
+  "status": "Integer golden, RTL, bounded mapped with local LUT startup fix, full-product probe and map PASS",
+  "resources": {
+    "EFX_ADD": 463,
+    "EFX_LUT4": 1898,
+    "EFX_DSP48": 8,
+    "EFX_FF": 593,
+    "EFX_RAM10": 18
+  },
+  "increment_over_partial_sum": {
+    "EFX_RAM10": 0,
+    "EFX_DSP48": 0,
+    "EFX_LUT4": 990,
+    "EFX_FF": 160,
+    "EFX_ADD": 199
+  },
+  "real_scalar_outputs": 100,
+  "rtl": {
+    "cases": 638,
+    "cycles": 38900,
+    "stalls": 3149
+  },
+  "mapped": {
+    "cases": 218,
+    "cycles": 14249,
+    "stalls": 1162
+  },
+  "mapped_full_product_probe": {
+    "cases": 27,
+    "cycles": 1654,
+    "stalls": 135
+  },
+  "lut_truth_table_checks": 36237,
+  "latency_enabled_edges_after_accept": "19 + shift, excluding acceptance, result consumption, group save/restore and CE/backpressure",
+  "frozen_sources_unchanged": true,
+  "no_extra_DSP_or_RAM": true,
+  "timing_status": "Map only. SDC provided; no placed/routed STA or verified 100MHz.",
+  "scope": "Standalone sharing wrapper; no network, DDR or board integration; local LUT startup adaptation explicitly required for mapped simulation.",
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\requant\\build.ps1": "03e414b2367800ef0fe7d2bf3d89367906ee0d069959de654c2381d5d5dcd4cc",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\golden.py": "110f4ec95896076f17e13e61470752d2b539b137de99498b806330732441f67b",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\prepare_synthesis.py": "8e68c3f46c1ee696d062f2171a82c894885dee67db28ef23a45fcec02806486a",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\README.md": "efe5a8a091632b16c17172358a64b758f068db17d8a3f5f0a2a1205d3661c6df",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\tb_requant.sv": "dce581afe59858bd9c488a164c2251d0826f6eeeb7dfc61e2251959a95f837de",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\test_requant.py": "825753ea33308a8a2edb160759289763268a4220de53dbe16ba853abf03a6d7c",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\verify_synthesis.py": "ef81e07291a547fca7e2ca3b4976fd85ec2ff9cfa94a1d34c20b7e61f90bf583",
+    "tools\\blue_plate\\whole_plate_budget\\requant\\rtl\\q31_psum_mac8.v": "1b3151d8aa5c172a4bb0d12e26e8fb81146ca6dc2829f1816f5756f0a8580c7e",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\golden-validation.json": "8dc67a8e69825ce0e4500a8b794f0b48729f2105a29f6df0b632eea4a2e6cd20",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\rtl-validation.json": "3d9b3cbd617a1c34d2911f9ce0524a13a7233f7adf862fca66000e4b5e267525",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\mapped-validation.json": "d9780873f61e3493366fb0e541ca3f53268430adc7049e84b5902c624a527ae1",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\lut-startup-validation.json": "a5518070e85614e8f1daf1ba121022bb4d33f9d7f589e4186c3ec60003043fd0",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\rtl-run.log": "5e27a316711d70a2ebe836d6889887a835cac693c2c7a02ab56d622be5e52094",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\mapped-run.log": "e6c72b3adbbe56e58736b5c65c80ecdb8494e1c1e06ac896a68e6f392ca85a92",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\tb_wide_probe.sv": "b73a1d85343694689ff1d962e3687cccec5e34deeb34795027bd444ad68995a1",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\wide-probe-vectors.txt": "55b16644b8a6e9a0d6d79bad3755fd0525d7b99219ca7cd3f7869e34908bea68",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\wide-probe-run.log": "1fe8cc962854db472034eeae5becb92144b4f4d1cdcab55f682ce27aea506695",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\synthesis-summary.json": "914832c7a8419429b0b34d36dd091883e20f0420c66f09f93281b0b9d5632ea1",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\out\\q31_psum_mac8.map.v": "cc20041f6f1212d47c6174c7074a8d7ee42e820deb39960b4a99d2f1db8d885c",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\out\\q31_psum_mac8.map.rpt": "9ffbd68b18ccdc7a60a81b25b8e2aca31594504a17e63446b218c8040cfbe835",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\q31_psum_mac8.before.xml": "a710256f89f33c7556639e5a20c13fdcd879ec67bad02dd66f864efa3461730f",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\q31_psum_mac8.xml": "a710256f89f33c7556639e5a20c13fdcd879ec67bad02dd66f864efa3461730f",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\q31_psum_mac8.sdc": "5152900f5300390ada1a2a5216bc758c6194e5b6250f82d20356aeddf4c850b7",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\input-hashes.json": "1bd3a45e37020210e2eb9fc64708e99b6ab901b1d21190e81aee47d88f5e1fe2",
+    "tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\map.console.log": "0f460e4ed5536f8efb29fcdf77d4fe4d8c382462efcaa28230f143793043c2ed",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\requant-implementation.md": "2aedacbc1fbc83d62a93ce8d59e3f0675f1abfc13e0c196cf1c043532f87ef39",
+    "tools\\blue_plate\\whole_plate_budget\\partial_sum\\lut_startup.py": "c41c8da5eabed3c42322659ea72ba32f99bc53a303b742d94fb709330925444d",
+    "tmp\\blue-plate-char-segment\\quantization-research\\cmsis-nn-support.h": "0d5f6dd9f81ae6361e2d0ffa7fa91ccd3ae1f84fb898942b027260609caaae6b",
+    "tmp\\blue-plate-char-segment\\quantization-research\\tflite-quantization-util.cc": "22e46f15663437c407298f5230545600faa2f6b2f1b46488e20c97ff3a5c96f9",
+    "tmp\\blue-plate-char-segment\\quantization-w8a8\\real-mac-vectors.json": "4ef30a60658787c5ac698c7e0e29ead386c58a7fc8544a229d01d2100d96164d"
+  }
+}

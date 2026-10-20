@@ -1,0 +1,4 @@
+MEASURE first_start_after_w_arstn_us=846.701
+MEASURE no_sensor_ack configured=1 runtime_error=0 starts=164 time_us=207560.300
+PASS observed all-NACK init still declares configured
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-standalone-startup\tb_startup.sv:32: $finish called at 207561300000 (1ps)

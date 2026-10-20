@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "dataflow",
+  "quality": "showcase",
+  "startedAt": "2026-10-17T09:05:02.018Z",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+    "sha256": "a61fa58d12807e50f9c547277573f7e5a2e15b719eea936106f16b7ad8ec401c",
+    "bytes": 10755
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html",
+    "sha256": "45eaaedd0503fecd8b53dceae57fc43a0ecf9008e005769e55408e4e53a45d2f",
+    "bytes": 826962
+  },
+  "stages": {
+    "validate": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": null,
+      "command": [
+        "C:\\Users\\35075\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\Users\\35075\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "dataflow",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\source-snapshot",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "deliver",
+        "receiptId": "2679d22c-9ab3-40dc-8b90-895a65e6ae6a",
+        "stage": "render",
+        "type": "dataflow",
+        "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+        "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html",
+        "error": "Evidence root \"D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\source-snapshot\" is not a Git repository.",
+        "diagnostics": [
+          {
+            "code": "repository-evidence/git-command",
+            "severity": "error",
+            "message": "Evidence root \"D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\source-snapshot\" is not a Git repository.",
+            "subject": {
+              "surface": "repository-evidence"
+            },
+            "evidence": {
+              "gitArgs": [
+                "rev-parse",
+                "--show-toplevel"
+              ],
+              "exitCode": 128
+            },
+            "supportedFixes": [
+              "use the intended local Git repository and verify its origin and revision"
+            ]
+          }
+        ],
+        "provenance": "failed",
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      },
+      "execution": "embedded-in-deliver"
+    },
+    "deliver": {
+      "status": "not-run",
+      "execution": "blocked-by-validate"
+    }
+  },
+  "diagnostics": [
+    {
+      "code": "repository-evidence/git-command",
+      "severity": "error",
+      "message": "Evidence root \"D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\source-snapshot\" is not a Git repository.",
+      "subject": {
+        "surface": "repository-evidence"
+      },
+      "evidence": {
+        "gitArgs": [
+          "rev-parse",
+          "--show-toplevel"
+        ],
+        "exitCode": 128
+      },
+      "supportedFixes": [
+        "use the intended local Git repository and verify its origin and revision"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-review-3\\main-flow.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-review-3\\main-flow.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "validate",
+  "finishedAt": "2026-10-17T09:05:02.592Z",
+  "durationMs": 574,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.1.0",
+    "availableVersion": "3.1.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-17T09:05:02.273Z",
+    "source": "network",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

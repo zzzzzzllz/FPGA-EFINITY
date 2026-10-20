@@ -1,0 +1,46 @@
+{
+  "original_source_hashes": 237,
+  "original_source": "PASS",
+  "candidate_inputs": "PASS",
+  "mapped_primitives": {
+    "EFX_ADD": 3348,
+    "EFX_LUT4": 20557,
+    "EFX_DSP48": 74,
+    "EFX_DSP24": 18,
+    "EFX_FF": 18622,
+    "EFX_SRL8": 1365,
+    "EFX_RAM10": 153,
+    "EFX_DPRAM10": 1,
+    "EFX_GBUFCE": 1
+  },
+  "mapped_memory_dsp_blocks": [
+    154,
+    92
+  ],
+  "XLR_budget_verdict": "PASS",
+  "live_hierarchy_present": true,
+  "placed_resources": {
+    "XLRs": {
+      "used": 34833,
+      "physical_total": 60800,
+      "limit": 49248,
+      "budget_left": 14415
+    },
+    "Memory Blocks": {
+      "used": 154,
+      "physical_total": 256,
+      "limit": 204,
+      "budget_left": 50
+    },
+    "DSP Blocks": {
+      "used": 92,
+      "physical_total": 160,
+      "limit": 128,
+      "budget_left": 36
+    }
+  },
+  "timing_min_setup_hold_slack_ns": [
+    0.387,
+    0.026
+  ]
+}

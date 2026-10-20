@@ -1,0 +1,14 @@
+$ErrorActionPreference='Stop'
+$repo=(Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '../../../..')).Path
+$efinity='D:/Efinity'
+$env:PYTHONHOME=Join-Path $efinity 'python311'
+$python=Join-Path $efinity 'python311/bin/python.exe'
+& $python -B (Join-Path $PSScriptRoot 'prepare_synthesis.py')
+if ($LASTEXITCODE -ne 0) { throw 'Preparation failed' }
+Push-Location -LiteralPath (Join-Path $repo 'tmp/blue-plate-whole-plate-budget/weight-bank/synthesis')
+try {
+    & (Join-Path $efinity 'bin/efx_run.bat') weight_mac8.xml --flow map --output_dir out *> map.console.log
+    if ($LASTEXITCODE -ne 0) { throw 'Efinity map failed; see map.console.log' }
+    & $python -B (Join-Path $PSScriptRoot 'verify_synthesis.py')
+    if ($LASTEXITCODE -ne 0) { throw 'Mapping verification failed' }
+} finally { Pop-Location }

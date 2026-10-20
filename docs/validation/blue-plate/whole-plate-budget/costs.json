@@ -1,0 +1,1020 @@
+{
+  "resources": {
+    "video": {
+      "EFX_ADD": 2031,
+      "EFX_LUT4": 14282,
+      "EFX_DSP48": 70,
+      "EFX_DSP24": 15,
+      "EFX_FF": 13586,
+      "EFX_SRL8": 1154,
+      "EFX_RAM10": 105,
+      "EFX_DPRAM10": 1,
+      "EFX_GBUFCE": 1
+    },
+    "reader": {
+      "EFX_ADD": 205,
+      "EFX_LUT4": 1272,
+      "EFX_FF": 573,
+      "EFX_RAM10": 7
+    },
+    "geometry": {
+      "EFX_ADD": 4232,
+      "EFX_LUT4": 9495,
+      "EFX_DSP48": 1,
+      "EFX_FF": 4730,
+      "EFX_RAM10": 2
+    },
+    "display": {
+      "EFX_ADD": 400,
+      "EFX_LUT4": 2740,
+      "EFX_DSP48": 3,
+      "EFX_FF": 4085,
+      "EFX_RAM10": 16
+    },
+    "old_classifier": {
+      "EFX_ADD": 65,
+      "EFX_LUT4": 471,
+      "EFX_DSP48": 1,
+      "EFX_FF": 216,
+      "EFX_RAM10": 36
+    },
+    "old_preprocess": {
+      "EFX_ADD": 189,
+      "EFX_LUT4": 671,
+      "EFX_FF": 265,
+      "EFX_RAM10": 5
+    },
+    "budget": {
+      "limits": {
+        "XLR": 49248,
+        "RAM10": 204,
+        "DSP": 128
+      },
+      "video_placed": {
+        "XLR": 24090,
+        "RAM10": 106,
+        "DSP": 85
+      },
+      "retained_ram": 131,
+      "retained_dsp": 89,
+      "new_map_totals": {
+        "LUT4": 13507,
+        "FF": 9388,
+        "ADD": 4837
+      },
+      "xlr_remaining_ideal_cross_module_pack": 6814,
+      "xlr_remaining_ideal_module_local_pack": 5869,
+      "xlr_remaining_no_ff_pack": -2574,
+      "xlr_scope": "packing envelope for unchanged mapped primitives; not PNR or guaranteed bounds after optimization/routing"
+    }
+  },
+  "lprnet": {
+    "classes": 68,
+    "trainable_parameters": 446976,
+    "conv_macs": 144411264,
+    "conv_weights": 443344,
+    "conv_biases": 1576,
+    "int8_weights_int32_bias_bytes": 449648,
+    "with_int32_multiplier_shift_bytes": 462256,
+    "max_output_elements": 230400,
+    "logits_shape": [
+      1,
+      68,
+      18
+    ],
+    "layers": [
+      {
+        "name": "backbone.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          3,
+          24,
+          94
+        ],
+        "output": [
+          1,
+          64,
+          22,
+          92
+        ],
+        "kernel": [
+          3,
+          3
+        ],
+        "weights": 1728,
+        "bias": 64,
+        "K": 27,
+        "positions": 2024,
+        "macs": 3497472,
+        "input_bytes": 6768,
+        "output_bytes": 129536,
+        "full_channel_line_bytes": 564
+      },
+      {
+        "name": "backbone.3",
+        "type": "MaxPool3d",
+        "input": [
+          1,
+          64,
+          22,
+          92
+        ],
+        "output": [
+          1,
+          64,
+          20,
+          90
+        ],
+        "kernel": [
+          1,
+          3,
+          3
+        ],
+        "stride": [
+          1,
+          1,
+          1
+        ],
+        "selected_input_bytes": 129536,
+        "output_bytes": 115200
+      },
+      {
+        "name": "backbone.4.block.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 2048,
+        "bias": 32,
+        "K": 64,
+        "positions": 1800,
+        "macs": 3686400,
+        "input_bytes": 115200,
+        "output_bytes": 57600,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.4.block.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "weights": 3072,
+        "bias": 32,
+        "K": 96,
+        "positions": 1800,
+        "macs": 5529600,
+        "input_bytes": 57600,
+        "output_bytes": 57600,
+        "full_channel_line_bytes": 5760
+      },
+      {
+        "name": "backbone.4.block.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "weights": 3072,
+        "bias": 32,
+        "K": 96,
+        "positions": 1800,
+        "macs": 5529600,
+        "input_bytes": 57600,
+        "output_bytes": 57600,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.4.block.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          128,
+          20,
+          90
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 4096,
+        "bias": 128,
+        "K": 32,
+        "positions": 1800,
+        "macs": 7372800,
+        "input_bytes": 57600,
+        "output_bytes": 230400,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.7",
+        "type": "MaxPool3d",
+        "input": [
+          1,
+          128,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          3,
+          3
+        ],
+        "stride": [
+          2,
+          1,
+          2
+        ],
+        "selected_input_bytes": 115200,
+        "output_bytes": 50688
+      },
+      {
+        "name": "backbone.8.block.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 4096,
+        "bias": 64,
+        "K": 64,
+        "positions": 792,
+        "macs": 3244032,
+        "input_bytes": 50688,
+        "output_bytes": 50688,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.8.block.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "weights": 12288,
+        "bias": 64,
+        "K": 192,
+        "positions": 792,
+        "macs": 9732096,
+        "input_bytes": 50688,
+        "output_bytes": 50688,
+        "full_channel_line_bytes": 5632
+      },
+      {
+        "name": "backbone.8.block.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "weights": 12288,
+        "bias": 64,
+        "K": 192,
+        "positions": 792,
+        "macs": 9732096,
+        "input_bytes": 50688,
+        "output_bytes": 50688,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.8.block.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 16384,
+        "bias": 256,
+        "K": 64,
+        "positions": 792,
+        "macs": 12976128,
+        "input_bytes": 50688,
+        "output_bytes": 202752,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.11.block.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 16384,
+        "bias": 64,
+        "K": 256,
+        "positions": 792,
+        "macs": 12976128,
+        "input_bytes": 202752,
+        "output_bytes": 50688,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.11.block.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          3,
+          1
+        ],
+        "weights": 12288,
+        "bias": 64,
+        "K": 192,
+        "positions": 792,
+        "macs": 9732096,
+        "input_bytes": 50688,
+        "output_bytes": 50688,
+        "full_channel_line_bytes": 5632
+      },
+      {
+        "name": "backbone.11.block.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          3
+        ],
+        "weights": 12288,
+        "bias": 64,
+        "K": 192,
+        "positions": 792,
+        "macs": 9732096,
+        "input_bytes": 50688,
+        "output_bytes": 50688,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.11.block.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 16384,
+        "bias": 256,
+        "K": 64,
+        "positions": 792,
+        "macs": 12976128,
+        "input_bytes": 50688,
+        "output_bytes": 202752,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.14",
+        "type": "MaxPool3d",
+        "input": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          16,
+          21
+        ],
+        "kernel": [
+          1,
+          3,
+          3
+        ],
+        "stride": [
+          4,
+          1,
+          2
+        ],
+        "selected_input_bytes": 50688,
+        "output_bytes": 21504
+      },
+      {
+        "name": "backbone.16",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          16,
+          21
+        ],
+        "output": [
+          1,
+          256,
+          16,
+          18
+        ],
+        "kernel": [
+          1,
+          4
+        ],
+        "weights": 65536,
+        "bias": 256,
+        "K": 256,
+        "positions": 288,
+        "macs": 18874368,
+        "input_bytes": 21504,
+        "output_bytes": 73728,
+        "full_channel_line_bytes": 0
+      },
+      {
+        "name": "backbone.20",
+        "type": "Conv2d",
+        "input": [
+          1,
+          256,
+          16,
+          18
+        ],
+        "output": [
+          1,
+          68,
+          4,
+          18
+        ],
+        "kernel": [
+          13,
+          1
+        ],
+        "weights": 226304,
+        "bias": 68,
+        "K": 3328,
+        "positions": 72,
+        "macs": 16293888,
+        "input_bytes": 73728,
+        "output_bytes": 4896,
+        "full_channel_line_bytes": 55296
+      },
+      {
+        "name": "container.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          516,
+          4,
+          18
+        ],
+        "output": [
+          1,
+          68,
+          4,
+          18
+        ],
+        "kernel": [
+          1,
+          1
+        ],
+        "weights": 35088,
+        "bias": 68,
+        "K": 516,
+        "positions": 72,
+        "macs": 2526336,
+        "input_bytes": 37152,
+        "output_bytes": 4896,
+        "full_channel_line_bytes": 0
+      }
+    ],
+    "contexts": [
+      {
+        "channels": 64,
+        "elements": 4608,
+        "max_int8_square_sum": 75497472
+      },
+      {
+        "channels": 128,
+        "elements": 9216,
+        "max_int8_square_sum": 150994944
+      },
+      {
+        "channels": 256,
+        "elements": 18432,
+        "max_int8_square_sum": 301989888
+      },
+      {
+        "channels": 68,
+        "elements": 4896,
+        "max_int8_square_sum": 80216064
+      }
+    ],
+    "serial_nonconv": {
+      "maxpool_comparisons": 1499136,
+      "context_average_additions": 1050624,
+      "context_squares": 37152,
+      "context_sum_additions": 37148,
+      "context_rescale_multiplications": 37152
+    },
+    "compulsory_external_weights_input_logits_bytes": 473920,
+    "one_read_per_operator_spill_payload_bytes": 3860416,
+    "schedules": [
+      {
+        "PE": 16,
+        "S": 16,
+        "Ktile": 512,
+        "activation_payload": 9233280,
+        "weight_payload": 9445248,
+        "output_payload": 1325888,
+        "other_payload": 1106464,
+        "total_payload_bytes": 21110880,
+        "uncached_16byte_activation_beats_total": 159610080,
+        "one_16byte_beat_per_nonweight_byte_ceiling": 196095360,
+        "compute_cycles": 9233280,
+        "psum_serial_cycles": 2735872,
+        "output_requant_serial_cycles": 1325888,
+        "arithmetic_schedule_ms": 132.9504,
+        "ideal_mac_ms": 90.25704,
+        "details": [
+          {
+            "name": "backbone.0",
+            "activation_payload": 218592,
+            "weight_payload": 219456,
+            "compute_cycles": 218592,
+            "psum_cycles": 259072
+          },
+          {
+            "name": "backbone.4.block.0",
+            "activation_payload": 230400,
+            "weight_payload": 231424,
+            "compute_cycles": 230400,
+            "psum_cycles": 115200
+          },
+          {
+            "name": "backbone.4.block.2",
+            "activation_payload": 345600,
+            "weight_payload": 347136,
+            "compute_cycles": 345600,
+            "psum_cycles": 115200
+          },
+          {
+            "name": "backbone.4.block.4",
+            "activation_payload": 345600,
+            "weight_payload": 347136,
+            "compute_cycles": 345600,
+            "psum_cycles": 115200
+          },
+          {
+            "name": "backbone.4.block.6",
+            "activation_payload": 460800,
+            "weight_payload": 462848,
+            "compute_cycles": 460800,
+            "psum_cycles": 460800
+          },
+          {
+            "name": "backbone.8.block.0",
+            "activation_payload": 202752,
+            "weight_payload": 204800,
+            "compute_cycles": 202752,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.8.block.2",
+            "activation_payload": 608256,
+            "weight_payload": 614400,
+            "compute_cycles": 608256,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.8.block.4",
+            "activation_payload": 608256,
+            "weight_payload": 614400,
+            "compute_cycles": 608256,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.8.block.6",
+            "activation_payload": 811008,
+            "weight_payload": 819200,
+            "compute_cycles": 811008,
+            "psum_cycles": 405504
+          },
+          {
+            "name": "backbone.11.block.0",
+            "activation_payload": 811008,
+            "weight_payload": 819200,
+            "compute_cycles": 811008,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.11.block.2",
+            "activation_payload": 608256,
+            "weight_payload": 614400,
+            "compute_cycles": 608256,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.11.block.4",
+            "activation_payload": 608256,
+            "weight_payload": 614400,
+            "compute_cycles": 608256,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.11.block.6",
+            "activation_payload": 811008,
+            "weight_payload": 819200,
+            "compute_cycles": 811008,
+            "psum_cycles": 405504
+          },
+          {
+            "name": "backbone.16",
+            "activation_payload": 1179648,
+            "weight_payload": 1179648,
+            "compute_cycles": 1179648,
+            "psum_cycles": 147456
+          },
+          {
+            "name": "backbone.20",
+            "activation_payload": 1198080,
+            "weight_payload": 1331200,
+            "compute_cycles": 1198080,
+            "psum_cycles": 80640
+          },
+          {
+            "name": "container.0",
+            "activation_payload": 185760,
+            "weight_payload": 206400,
+            "compute_cycles": 185760,
+            "psum_cycles": 23040
+          }
+        ]
+      },
+      {
+        "PE": 32,
+        "S": 16,
+        "Ktile": 512,
+        "activation_payload": 4755024,
+        "weight_payload": 9752768,
+        "output_payload": 1325888,
+        "other_payload": 1106464,
+        "total_payload_bytes": 16940144,
+        "uncached_16byte_activation_beats_total": 88265504,
+        "one_16byte_beat_per_nonweight_byte_ceiling": 124750784,
+        "compute_cycles": 4755024,
+        "psum_serial_cycles": 2756608,
+        "output_requant_serial_cycles": 1325888,
+        "arithmetic_schedule_ms": 88.3752,
+        "ideal_mac_ms": 45.12852,
+        "details": [
+          {
+            "name": "backbone.0",
+            "activation_payload": 109296,
+            "weight_payload": 219456,
+            "compute_cycles": 109296,
+            "psum_cycles": 259072
+          },
+          {
+            "name": "backbone.4.block.0",
+            "activation_payload": 115200,
+            "weight_payload": 231424,
+            "compute_cycles": 115200,
+            "psum_cycles": 115200
+          },
+          {
+            "name": "backbone.4.block.2",
+            "activation_payload": 172800,
+            "weight_payload": 347136,
+            "compute_cycles": 172800,
+            "psum_cycles": 115200
+          },
+          {
+            "name": "backbone.4.block.4",
+            "activation_payload": 172800,
+            "weight_payload": 347136,
+            "compute_cycles": 172800,
+            "psum_cycles": 115200
+          },
+          {
+            "name": "backbone.4.block.6",
+            "activation_payload": 230400,
+            "weight_payload": 462848,
+            "compute_cycles": 230400,
+            "psum_cycles": 460800
+          },
+          {
+            "name": "backbone.8.block.0",
+            "activation_payload": 101376,
+            "weight_payload": 204800,
+            "compute_cycles": 101376,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.8.block.2",
+            "activation_payload": 304128,
+            "weight_payload": 614400,
+            "compute_cycles": 304128,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.8.block.4",
+            "activation_payload": 304128,
+            "weight_payload": 614400,
+            "compute_cycles": 304128,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.8.block.6",
+            "activation_payload": 405504,
+            "weight_payload": 819200,
+            "compute_cycles": 405504,
+            "psum_cycles": 405504
+          },
+          {
+            "name": "backbone.11.block.0",
+            "activation_payload": 405504,
+            "weight_payload": 819200,
+            "compute_cycles": 405504,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.11.block.2",
+            "activation_payload": 304128,
+            "weight_payload": 614400,
+            "compute_cycles": 304128,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.11.block.4",
+            "activation_payload": 304128,
+            "weight_payload": 614400,
+            "compute_cycles": 304128,
+            "psum_cycles": 101376
+          },
+          {
+            "name": "backbone.11.block.6",
+            "activation_payload": 405504,
+            "weight_payload": 819200,
+            "compute_cycles": 405504,
+            "psum_cycles": 405504
+          },
+          {
+            "name": "backbone.16",
+            "activation_payload": 589824,
+            "weight_payload": 1179648,
+            "compute_cycles": 589824,
+            "psum_cycles": 147456
+          },
+          {
+            "name": "backbone.20",
+            "activation_payload": 718848,
+            "weight_payload": 1597440,
+            "compute_cycles": 718848,
+            "psum_cycles": 96768
+          },
+          {
+            "name": "container.0",
+            "activation_payload": 111456,
+            "weight_payload": 247680,
+            "compute_cycles": 111456,
+            "psum_cycles": 27648
+          }
+        ]
+      }
+    ],
+    "width_sketches": [
+      {
+        "hidden_width_multiplier": 1,
+        "macs": 144411264,
+        "int8_weights_int32_bias_bytes": 449648,
+        "scope": "analytic same-spatial-geometry sketch only; no new model or accuracy claim"
+      },
+      {
+        "hidden_width_multiplier": 0.5,
+        "macs": 41848704,
+        "int8_weights_int32_bias_bytes": 182352,
+        "scope": "analytic same-spatial-geometry sketch only; no new model or accuracy claim"
+      },
+      {
+        "hidden_width_multiplier": 0.25,
+        "macs": 13459968,
+        "int8_weights_int32_bias_bytes": 82496,
+        "scope": "analytic same-spatial-geometry sketch only; no new model or accuracy claim"
+      }
+    ]
+  },
+  "engine_allocations": [
+    {
+      "PE": 16,
+      "RAM10": {
+        "weight_pingpong_512deep": 14,
+        "serial_int32_partial_sums": 2,
+        "activation_cache_8KiB": 8,
+        "axi128_read_write_buffers": 14,
+        "bias_multiplier_shift": 4,
+        "int32_logits": 6
+      },
+      "total_RAM10": 48,
+      "DSP_MAC": 16,
+      "DSP_requant_allowance": 4,
+      "total_DSP": 20,
+      "RAM10_remaining": 25,
+      "DSP_remaining": 19,
+      "scope": "Analytic allocation only; excludes locator and unmapped integration logic; XLR not established"
+    },
+    {
+      "PE": 32,
+      "RAM10": {
+        "weight_pingpong_512deep": 26,
+        "serial_int32_partial_sums": 2,
+        "activation_cache_8KiB": 8,
+        "axi128_read_write_buffers": 14,
+        "bias_multiplier_shift": 4,
+        "int32_logits": 6
+      },
+      "total_RAM10": 60,
+      "DSP_MAC": 32,
+      "DSP_requant_allowance": 4,
+      "total_DSP": 36,
+      "RAM10_remaining": 13,
+      "DSP_remaining": 3,
+      "scope": "Analytic allocation only; excludes locator and unmapped integration logic; XLR not established"
+    }
+  ],
+  "hyperlpr_cost_correction": {
+    "recognizer": {
+      "macs": 319933440,
+      "weight_bias_bytes": 2233656,
+      "ms_39DSP_1MAC": 82.03421538461538,
+      "ms_39DSP_dual_ceiling": 41.01710769230769,
+      "ms_32DSP_1MAC": 99.9792
+    },
+    "detector320": {
+      "macs": 183417600,
+      "weight_bias_bytes": 457212,
+      "ms_39DSP_1MAC": 47.030153846153844,
+      "ms_39DSP_dual_ceiling": 23.515076923076922,
+      "ms_32DSP_1MAC": 57.318
+    },
+    "detector640": {
+      "macs": 733670400,
+      "weight_bias_bytes": 457212,
+      "ms_39DSP_1MAC": 188.12061538461538,
+      "ms_39DSP_dual_ceiling": 94.06030769230769,
+      "ms_32DSP_1MAC": 229.272
+    }
+  },
+  "checks": {
+    "shape_formula": true,
+    "pool_channel_decimation_exact": [
+      "backbone.3",
+      "backbone.7",
+      "backbone.14"
+    ],
+    "source_unchanged": true
+  },
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\mature-research\\lprnet\\model\\LPRNet.py": "94a49696268ff942d92d58285ddeacab9b2ef35a4102bd73862518729e0dfc14",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\mature-research\\lprnet\\data\\load_data.py": "a00ffd27459414a1244dd8205876d25c14677d1368537399e1f6c4d124bcf83a",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\video-base\\evidence\\live-map.rpt": "b97c85798b878220393291dddf4e4e4920f8117632769dc28dbc3afe4c79b8e7",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\frame-reader\\evidence\\frame_reader.map.rpt": "fffa9f6a13cc15307b59fd20ba6b6f1771a329f1dfb5a82977aaf14420574140",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-geometry\\synthesis\\out\\perspective_quad.map.rpt": "c8a69194ee9d93b65782a0f57d3b8fc5e9e3e93a6b80a0304d27266bb890f561",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\plate-display\\plate_display.map.rpt": "67d8208a31372059c21f1b8e7967233af300738b5621b1d4a862dec4848fd465",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\char-model\\geometry11.map.rpt": "59df3bbfe8e16124f78fb39a54fe31127f7256d70ef8b534428a65e38f26a77f",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\char-preprocess\\evidence\\char_preprocess.map.rpt": "8794e9ea3959bf04ca58cf0d255e9e407726290667fa205bfa47f75e831d41bf",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\video-base\\evidence\\live-place.rpt": "8012cc761e649452ad79ff5c540dc6347ef081f765d538760e4e4e81ca8a6fea",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-normal-g1\\mature-detector\\resource-audit.json": "6f94e608dc167c944e1dc73096245ced2bd6b7d3a8e4a0811ef22fc562a24d0e",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-normal-g1\\mature-detector\\model-costs.json": "1ffe9264f342eccb91ff40095a28f884a12b93aef4584139734391c29a083413",
+    "D:\\Efinity\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33"
+  },
+  "scope": "No accuracy evaluation, model training, new CNN implementation, synthesis or board access"
+}

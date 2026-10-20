@@ -1,0 +1,30 @@
+{
+  "download_attempts": [
+    {
+      "url": "https://raw.githubusercontent.com/Xilinx/finn-hlslib/master/vvau.hpp",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Xilinx/finn-hlslib/master/slidingwindow.h",
+      "error": "The read operation timed out"
+    }
+  ],
+  "actual_web_source_reads": [
+    {
+      "url": "https://raw.githubusercontent.com/Xilinx/finn-hlslib/master/vvau.hpp",
+      "lines": [
+        "80-147",
+        "184-259"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Xilinx/finn-hlslib/master/slidingwindow.h",
+      "lines": [
+        "737-834",
+        "863-976"
+      ]
+    }
+  ],
+  "local_source_copy": false,
+  "note": "Raw downloads timed out; actual implementations read with web tool. No fixed FINN commit claimed and no HLS source executed."
+}

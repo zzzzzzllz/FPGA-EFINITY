@@ -1,0 +1,13 @@
+{
+  "script": "lane16_comparison.py",
+  "exit_code": 0,
+  "source_hashes_rechecked": true,
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\lane16_comparison.py": "709d8239b7f0e27cd27ba3fc7b00e5697285d4c8035067f0075e567bd8e26b08",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\lane16-comparison.md": "dd682a0c8442921ba71e443c347ef39accaa90b29b92eaf4314c9def33556f1a",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\lane16-comparison.json": "1d76658e6aa4f61a2626a73d0d1040d853d2b0eaae35d8a5bb652661997ff36b",
+    "tmp\\blue-plate-whole-plate-budget\\lane16-comparison.log": "fc790df6e8f8c1afd865e6f0d270c04c334a817f411082191ddebce2984df1bb",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\lane16-layers.csv": "5aab00f907865a43bce14bc537664aca874b3f25819cda353231254d69d9e719"
+  },
+  "scope": "MAC loops and explicitly serialized tag/data/MAC hit-path schedule. No cache-miss trace, cycle RTL, XLR, DDR service, quantization or display changes."
+}

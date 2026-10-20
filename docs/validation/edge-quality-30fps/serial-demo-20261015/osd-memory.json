@@ -1,0 +1,44 @@
+[
+  {
+    "name": "demo_osd-compile",
+    "returncode": 0,
+    "seconds": 0.257,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\demo_osd-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "demo_osd",
+    "returncode": 0,
+    "seconds": 44.913,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\demo_osd.log",
+    "sha256": "a84b4a38495cdbc5508f03645b4723206f4523d0ef4095ed14376b28ed527a7e"
+  },
+  {
+    "name": "threshold_osd-compile",
+    "returncode": 0,
+    "seconds": 0.244,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\threshold_osd-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "threshold_osd",
+    "returncode": 0,
+    "seconds": 23.885,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\threshold_osd.log",
+    "sha256": "45ac0e924a9aa14e426e5ace0dad40543b391d81b8ec95363e9d560d94afbec5"
+  },
+  {
+    "name": "shape_overlay-compile",
+    "returncode": 0,
+    "seconds": 0.126,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\shape_overlay-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "shape_overlay",
+    "returncode": 0,
+    "seconds": 94.995,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\shape_overlay.log",
+    "sha256": "9f8ada81dcf5d860e836832dcea89ffab2eb7e0255a76ed94a0c9763b3a85a14"
+  }
+]

@@ -1,0 +1,5351 @@
+{
+  "heldout_scored": 0,
+  "candidate_unchanged": true,
+  "models": {
+    "frozen-linear": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 32,
+          "accepted_correct": 30,
+          "accepted_wrong": 2,
+          "rejected": 6
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 16,
+          "accepted_correct": 14,
+          "accepted_wrong": 1,
+          "rejected": 3
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 16,
+          "accepted_correct": 16,
+          "accepted_wrong": 1,
+          "rejected": 3
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 254,
+          "accepted_wrong": 2,
+          "rejected": 5
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3726,
+        "correct": 3522,
+        "wrong": 30,
+        "reject": 384
+      },
+      "validation_error_changes": [],
+      "changes": [],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": -6333,
+          "margin": 5481,
+          "accepted": true
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 52,
+          "char": "X",
+          "score": -27,
+          "margin": 3955,
+          "accepted": true
+        }
+      ]
+    },
+    "mlp64": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 33,
+          "accepted_correct": 29,
+          "accepted_wrong": 1,
+          "rejected": 8
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 15,
+          "accepted_correct": 14,
+          "accepted_wrong": 0,
+          "rejected": 4
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 18,
+          "accepted_correct": 15,
+          "accepted_wrong": 1,
+          "rejected": 4
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 255,
+          "accepted_wrong": 1,
+          "rejected": 9
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3764,
+        "correct": 3487,
+        "wrong": 32,
+        "reject": 417
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 293,
+          "truth": "0",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 34,
+            "char": "D",
+            "score": -1089,
+            "margin": 633,
+            "accepted": false
+          },
+          "after": {
+            "id": 60,
+            "char": "5",
+            "score": 105069,
+            "margin": 17238,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_2673.jpg",
+          "file_sha256": "38b83d05afbc348c37f4898cf47f46f0564c73e8caf6f284fc093f7a55cc354e"
+        },
+        {
+          "dataset_id": 4610,
+          "truth": "8",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 64,
+            "char": "9",
+            "score": -9283,
+            "margin": 7957,
+            "accepted": true
+          },
+          "after": {
+            "id": 46,
+            "char": "R",
+            "score": -34619,
+            "margin": 3092,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_746.jpg",
+          "file_sha256": "a084786a0b4355a6b39f4966be12db6be037937a9ac1b2930f8c41404d511aeb"
+        },
+        {
+          "dataset_id": 5508,
+          "truth": "9",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 51,
+            "char": "W",
+            "score": -12044,
+            "margin": 5953,
+            "accepted": true
+          },
+          "after": {
+            "id": 51,
+            "char": "W",
+            "score": -32699,
+            "margin": 2278,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/9/debug_char_auxRoi_6508.jpg",
+          "file_sha256": "c9d64b2eaae698f4ad0f73ad60dc39aa3171b4f18740dc3978fe2ceffc473b90"
+        },
+        {
+          "dataset_id": 7264,
+          "truth": "C",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 41,
+            "char": "L",
+            "score": 435,
+            "margin": 896,
+            "accepted": false
+          },
+          "after": {
+            "id": 41,
+            "char": "L",
+            "score": 120480,
+            "margin": 48696,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/C/debug_char_auxRoi_875.jpg",
+          "file_sha256": "36c9800cb97c6839bc69d7bf65d0488d94ca97ad1b770f20e72e71defa537381"
+        },
+        {
+          "dataset_id": 7525,
+          "truth": "D",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 55,
+            "char": "0",
+            "score": 3369,
+            "margin": 5691,
+            "accepted": true
+          },
+          "after": {
+            "id": 34,
+            "char": "D",
+            "score": 115577,
+            "margin": 3410,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/D/gt_1092_1.jpg",
+          "file_sha256": "b8a9702db19aec398a94c7b1a81f24425cb354a28f7726e688fbcfa2b8c826bf"
+        },
+        {
+          "dataset_id": 7919,
+          "truth": "F",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": -2255,
+            "margin": 663,
+            "accepted": false
+          },
+          "after": {
+            "id": 35,
+            "char": "E",
+            "score": 88963,
+            "margin": 26145,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/F/gt_1296_1.jpg",
+          "file_sha256": "50c1a68e30ee0c8a30f530349ebac7d748654490eb5e3f037ab91c7ca98fe91b"
+        },
+        {
+          "dataset_id": 8774,
+          "truth": "L",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": 3935,
+            "margin": 7029,
+            "accepted": true
+          },
+          "after": {
+            "id": 35,
+            "char": "E",
+            "score": 107106,
+            "margin": 3164,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_2679.jpg",
+          "file_sha256": "e5d6f060c9722a6c7cdad1d7355033419b831882406d829e738d6bdd1a3fad75"
+        },
+        {
+          "dataset_id": 8990,
+          "truth": "M",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 42,
+            "char": "M",
+            "score": 1090,
+            "margin": 9647,
+            "accepted": true
+          },
+          "after": {
+            "id": 60,
+            "char": "5",
+            "score": 77878,
+            "margin": 20536,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/M/debug_char_auxRoi_706.jpg",
+          "file_sha256": "b4d81bfd1cd13e5af4dd2abe7dd2424380e7f5151534921b7e570b0eb1f3da02"
+        },
+        {
+          "dataset_id": 9823,
+          "truth": "T",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 42,
+            "char": "M",
+            "score": 1211,
+            "margin": 2209,
+            "accepted": false
+          },
+          "after": {
+            "id": 61,
+            "char": "6",
+            "score": 63216,
+            "margin": 18934,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_2152.jpg",
+          "file_sha256": "8b05358d27f70f67e8b2af9cae04efac19adbb0ae29790876429a2b40c6f4026"
+        },
+        {
+          "dataset_id": 9926,
+          "truth": "U",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 45,
+            "char": "Q",
+            "score": -1513,
+            "margin": 601,
+            "accepted": false
+          },
+          "after": {
+            "id": 45,
+            "char": "Q",
+            "score": 98659,
+            "margin": 82363,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/U/debug_char_auxRoi_2560.jpg",
+          "file_sha256": "1246fc0abbad4ad7200b2dd60854713bf0a2361ef56d656e6557f8dab7624623"
+        },
+        {
+          "dataset_id": 10642,
+          "truth": "贵",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 1989,
+            "margin": 6557,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 30139,
+            "margin": 10394,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat234.jpg",
+          "file_sha256": "663851cd3529d56e21aec617f31668d1d6e5a279bb1e56871ef4f3f243c999ed"
+        },
+        {
+          "dataset_id": 10711,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 16,
+            "char": "豫",
+            "score": 3908,
+            "margin": 6977,
+            "accepted": true
+          },
+          "after": {
+            "id": 16,
+            "char": "豫",
+            "score": 65362,
+            "margin": 5482,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat230.jpg",
+          "file_sha256": "feffc39b4a629c890d61f35d74ce8b0eedcd969684cf52869c83d707bce9515c"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 30662,
+            "margin": 20105,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11025,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 550,
+            "margin": 5885,
+            "accepted": true
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 18597,
+            "margin": 8086,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_ji/debug_specMat135.jpg",
+          "file_sha256": "e6a87b2be0bd5cdd202bded2274d2fd79b3eb325e15370fa02dca5973db8c8ab"
+        },
+        {
+          "dataset_id": 11124,
+          "truth": "津",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 307,
+            "margin": 6393,
+            "accepted": true
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": 26885,
+            "margin": 18396,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat25.jpg",
+          "file_sha256": "e115647672f018319b44626fdba6716dca4b6b84351559ab3ecbe9a635a47592"
+        },
+        {
+          "dataset_id": 11237,
+          "truth": "京",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -6241,
+            "margin": 2370,
+            "accepted": false
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": 48117,
+            "margin": 32769,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jing/323_sun_jing_1.jpg",
+          "file_sha256": "8471cc0bc8819885e8184fcaa266ab7c3085aa3ee3130803e8fd634c34722b8c"
+        },
+        {
+          "dataset_id": 11413,
+          "truth": "辽",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 17,
+            "char": "鄂",
+            "score": -1933,
+            "margin": 4031,
+            "accepted": false
+          },
+          "after": {
+            "id": 17,
+            "char": "鄂",
+            "score": 66499,
+            "margin": 40014,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat917.jpg",
+          "file_sha256": "ad253af78150e251a4e137f84853e324fbe152765650684a35af762228754aba"
+        },
+        {
+          "dataset_id": 11414,
+          "truth": "辽",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 9,
+            "char": "黑",
+            "score": 4325,
+            "margin": 4237,
+            "accepted": false
+          },
+          "after": {
+            "id": 17,
+            "char": "鄂",
+            "score": 70260,
+            "margin": 40308,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat918.jpg",
+          "file_sha256": "9106413a4c21c11d15c67c0547edad910dfe199bb5988bde2ffd9d6e926eb172"
+        },
+        {
+          "dataset_id": 11567,
+          "truth": "蒙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 17,
+            "char": "鄂",
+            "score": 2570,
+            "margin": 11775,
+            "accepted": true
+          },
+          "after": {
+            "id": 17,
+            "char": "鄂",
+            "score": 26929,
+            "margin": 2464,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat415.jpg",
+          "file_sha256": "489b251a724402a4d2bcec584173dbfd399d9661dbcf925fe51b8dc6b6bb6eb5"
+        },
+        {
+          "dataset_id": 12028,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 3213,
+            "margin": 6367,
+            "accepted": true
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 82224,
+            "margin": 17114,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/189-7.jpg",
+          "file_sha256": "dbc9213653c2870ef3fb1b888e03a41bd20046dd26aa7d11a4ce51b743d31be4"
+        },
+        {
+          "dataset_id": 12141,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 0,
+            "char": "皖",
+            "score": 1941,
+            "margin": 5688,
+            "accepted": true
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 63270,
+            "margin": 38263,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/gt_1632_0.jpg",
+          "file_sha256": "99be38f39939eec6c636618984b13b9003d0c1f1867d4300d9e17df20bc50844"
+        },
+        {
+          "dataset_id": 12430,
+          "truth": "渝",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 3,
+            "char": "渝",
+            "score": 2938,
+            "margin": 7805,
+            "accepted": true
+          },
+          "after": {
+            "id": 10,
+            "char": "苏",
+            "score": 60334,
+            "margin": 43887,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat205.jpg",
+          "file_sha256": "bdef17a99664c71d91c01255e84732197c726edd8cfbcb40efb1c4e4d18cd6f7"
+        },
+        {
+          "dataset_id": 12452,
+          "truth": "粤",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -765,
+            "margin": 1861,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 39530,
+            "margin": 34632,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_yue/320_sun_yue_4.jpg",
+          "file_sha256": "368d39fbc1dcf352abef9a20a38eafb9fb97b9c1122d1b87857248e7aa9628b4"
+        },
+        {
+          "dataset_id": 12892,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": 1996,
+            "margin": 9009,
+            "accepted": true
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 48549,
+            "margin": 630,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_23_41_195413.jpg",
+          "file_sha256": "1e67526dbf4b6b3647f13682e41ddf30d9b6b7084d6b670ecd87f1eac4c5c4bc"
+        },
+        {
+          "dataset_id": 13023,
+          "truth": "川",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -1905,
+            "margin": 3299,
+            "accepted": false
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": 58003,
+            "margin": 36338,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_25_29_195903.jpg",
+          "file_sha256": "187557bba47b28fec743243e398550c5367c89d1e0616da22ac6668bda5a7a6a"
+        },
+        {
+          "dataset_id": 13234,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -269,
+            "margin": 4470,
+            "accepted": true
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 30017,
+            "margin": 3505,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_32_195365.jpg",
+          "file_sha256": "ff4ab62cfaa606bf48196ef6f744cb5750d846c7573dd929488f43391b406386"
+        },
+        {
+          "dataset_id": 13308,
+          "truth": "鄂",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -1058,
+            "margin": 2708,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 37714,
+            "margin": 29822,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_e/chars__2017-04-23 16_23_49_228014.jpg",
+          "file_sha256": "c0ba34c1fa59daeefb2865ff1b72715198c0ad9860ed07a9c777981b518a73ed"
+        },
+        {
+          "dataset_id": 14015,
+          "truth": "赣",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 883,
+            "margin": 5647,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 34097,
+            "margin": 20401,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan/chars__2017-04-23 16_46_19_224173.jpg",
+          "file_sha256": "f18f42605ae7fc8fec6077ec0f92cabbaf3a1a6849562bc1b7e8b6e02ae2ba45"
+        },
+        {
+          "dataset_id": 14234,
+          "truth": "甘",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 1,
+            "char": "沪",
+            "score": -4192,
+            "margin": 786,
+            "accepted": false
+          },
+          "after": {
+            "id": 1,
+            "char": "沪",
+            "score": 78306,
+            "margin": 65211,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan1/chars__2017-04-23 16_42_09_215770.jpg",
+          "file_sha256": "636aa91f12af50d73aed0baa80131f7fcf40fc8977a6a8b8d81050f523f4adad"
+        },
+        {
+          "dataset_id": 15465,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 9047,
+            "margin": 5770,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 94450,
+            "margin": 10389,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hei/chars__2017-04-23 16_48_39_260331.jpg",
+          "file_sha256": "c1b8ae06f8c8e88ff14679e5ac93afa064d329c0925a1ed6836129fb1cfa273d"
+        },
+        {
+          "dataset_id": 15524,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 1149,
+            "margin": 2140,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 88114,
+            "margin": 44269,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/14_2_zh_cuan.jpg",
+          "file_sha256": "6ef1f6b79ce1d054dc82539af0c120a43050b7421466b71b4692122d728f01f1"
+        },
+        {
+          "dataset_id": 15571,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -455,
+            "margin": 2129,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 68102,
+            "margin": 41213,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/44_2_zh_cuan.jpg",
+          "file_sha256": "74590e531777358408a2ee45fbc50d7ac80c2dcba1829c20aba634a7f0845f14"
+        },
+        {
+          "dataset_id": 15709,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": 1534,
+            "margin": 4522,
+            "accepted": true
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": 70284,
+            "margin": 9394,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/142.jpg",
+          "file_sha256": "54ef0d9b16496218cd39850ec28eed7379477755f2f53640749a4ccede8abab6"
+        },
+        {
+          "dataset_id": 17169,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 7,
+            "char": "辽",
+            "score": 816,
+            "margin": 5701,
+            "accepted": true
+          },
+          "after": {
+            "id": 1,
+            "char": "沪",
+            "score": 49679,
+            "margin": 9471,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/35.jpg",
+          "file_sha256": "16d06c6a3369d8b2b3761783192565ade45f650071e44a2d093457549397e0a0"
+        },
+        {
+          "dataset_id": 20337,
+          "truth": "青",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 293,
+            "margin": 2126,
+            "accepted": false
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": 81534,
+            "margin": 40711,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_qing/chars__2017-04-03 19_29_01.jpg",
+          "file_sha256": "6a62f9a053aab0ea053100a9c8739c372a8dfde6d834689c0e6a346b411a6c30"
+        },
+        {
+          "dataset_id": 21620,
+          "truth": "苏",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 4045,
+            "margin": 3602,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 65235,
+            "margin": 35905,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_su/41_1_zh_ning.jpg",
+          "file_sha256": "50dadd6bc47ea4a4e14852edfcd778f9a3c3710cd1cb77705249c552428e93c2"
+        },
+        {
+          "dataset_id": 22722,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -601,
+            "margin": 4558,
+            "accepted": true
+          },
+          "after": {
+            "id": 27,
+            "char": "甘",
+            "score": 16924,
+            "margin": 6603,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/24_2_zh_shan.jpg",
+          "file_sha256": "789fbef606172c3f8853beb9128fec80e405a873d85abe7c8a488f565a4094c9"
+        },
+        {
+          "dataset_id": 22758,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": -1647,
+            "margin": 7105,
+            "accepted": false
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 49208,
+            "margin": 39003,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/758.jpg",
+          "file_sha256": "a6dcbf7f5c64684d4a2f5c55fbec29a4280537cbba6c837553669e71eba504d5"
+        },
+        {
+          "dataset_id": 23987,
+          "truth": "渝",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 3,
+            "char": "渝",
+            "score": -3371,
+            "margin": 1429,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": 29732,
+            "margin": 35053,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_yu1/461305_2375.jpg",
+          "file_sha256": "e61d4dc0fa2ace8a96f9afd9f71f42b7980a1ed5f7296829b258d5ff743f097d"
+        },
+        {
+          "dataset_id": 25922,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": 651,
+            "margin": 6585,
+            "accepted": true
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 33446,
+            "margin": 9869,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/chars__2017-04-23 16_31_33_200951.jpg",
+          "file_sha256": "eb7552359e2714ee48b2cf5269d17d300c33c1cbbec4d2866cc7b3da824bfda1"
+        }
+      ],
+      "changes": [
+        {
+          "model": "mlp64",
+          "key": "030-oracle",
+          "label": "皖AZQ867",
+          "mode": "oracle",
+          "before": "皖AZQ86Z",
+          "before_accepted": false,
+          "after": "皖AZQ867",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp64",
+          "key": "050-oracle",
+          "label": "皖AX815V",
+          "mode": "oracle",
+          "before": "皖AX815W",
+          "before_accepted": true,
+          "after": "皖AX815V",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp64",
+          "key": "066-automatic",
+          "label": "皖AYL155",
+          "mode": "automatic",
+          "before": "皖AYL155",
+          "before_accepted": false,
+          "after": "苏AYL155",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp64",
+          "key": "115-automatic",
+          "label": "皖A43Y26",
+          "mode": "automatic",
+          "before": "皖A43X26",
+          "before_accepted": true,
+          "after": "皖A43X26",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp64",
+          "key": "135-oracle",
+          "label": "皖AKF203",
+          "mode": "oracle",
+          "before": "豫AKF203",
+          "before_accepted": false,
+          "after": "豫AKF203",
+          "after_accepted": true
+        },
+        {
+          "model": "mlp64",
+          "key": "159-oracle",
+          "label": "皖AP066D",
+          "mode": "oracle",
+          "before": "皖AP066D",
+          "before_accepted": true,
+          "after": "皖AP0662",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp64",
+          "key": "186-oracle",
+          "label": "皖AG683H",
+          "mode": "oracle",
+          "before": "皖AG6839",
+          "before_accepted": false,
+          "after": "皖AG683H",
+          "after_accepted": false
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 50,
+          "char": "V",
+          "score": 70287,
+          "margin": 5571,
+          "accepted": false
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 52,
+          "char": "X",
+          "score": 80084,
+          "margin": 9714,
+          "accepted": false
+        }
+      ]
+    },
+    "mlp128": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 30,
+          "accepted_correct": 28,
+          "accepted_wrong": 2,
+          "rejected": 8
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 15,
+          "accepted_correct": 13,
+          "accepted_wrong": 0,
+          "rejected": 5
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 15,
+          "accepted_correct": 15,
+          "accepted_wrong": 2,
+          "rejected": 3
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 252,
+          "accepted_wrong": 2,
+          "rejected": 7
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3782,
+        "correct": 3575,
+        "wrong": 21,
+        "reject": 340
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 749,
+          "truth": "1",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 58,
+            "char": "3",
+            "score": -10308,
+            "margin": 3636,
+            "accepted": true
+          },
+          "after": {
+            "id": 58,
+            "char": "3",
+            "score": 20713,
+            "margin": 11813,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_665.jpg",
+          "file_sha256": "5c71f2b9abfc8d101c4c8af73b2f2671b446deabb18d7f1311bda1f07cf26709"
+        },
+        {
+          "dataset_id": 4610,
+          "truth": "8",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 64,
+            "char": "9",
+            "score": -9283,
+            "margin": 7957,
+            "accepted": true
+          },
+          "after": {
+            "id": 58,
+            "char": "3",
+            "score": 1609,
+            "margin": 1736,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_746.jpg",
+          "file_sha256": "a084786a0b4355a6b39f4966be12db6be037937a9ac1b2930f8c41404d511aeb"
+        },
+        {
+          "dataset_id": 6969,
+          "truth": "B",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 42,
+            "char": "M",
+            "score": 35,
+            "margin": 8436,
+            "accepted": true
+          },
+          "after": {
+            "id": 42,
+            "char": "M",
+            "score": 100855,
+            "margin": 16023,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/B/debug_char_auxRoi_2679.jpg",
+          "file_sha256": "1953076c8e96222edcb1715568e5c882d7b4c4f7709d2651bd6662ca9a0be762"
+        },
+        {
+          "dataset_id": 7264,
+          "truth": "C",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 41,
+            "char": "L",
+            "score": 435,
+            "margin": 896,
+            "accepted": false
+          },
+          "after": {
+            "id": 41,
+            "char": "L",
+            "score": 130391,
+            "margin": 32410,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/C/debug_char_auxRoi_875.jpg",
+          "file_sha256": "36c9800cb97c6839bc69d7bf65d0488d94ca97ad1b770f20e72e71defa537381"
+        },
+        {
+          "dataset_id": 7525,
+          "truth": "D",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 55,
+            "char": "0",
+            "score": 3369,
+            "margin": 5691,
+            "accepted": true
+          },
+          "after": {
+            "id": 34,
+            "char": "D",
+            "score": 119173,
+            "margin": 9455,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/D/gt_1092_1.jpg",
+          "file_sha256": "b8a9702db19aec398a94c7b1a81f24425cb354a28f7726e688fbcfa2b8c826bf"
+        },
+        {
+          "dataset_id": 7979,
+          "truth": "F",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 46,
+            "char": "R",
+            "score": -5191,
+            "margin": 3534,
+            "accepted": false
+          },
+          "after": {
+            "id": 46,
+            "char": "R",
+            "score": 55104,
+            "margin": 37853,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/F/gt_250_5.jpg",
+          "file_sha256": "40b315d179e0d2b40b28c65e89d76bcc28154f2cbbbc62eb8a8a4fe03a66cf1b"
+        },
+        {
+          "dataset_id": 8774,
+          "truth": "L",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": 3935,
+            "margin": 7029,
+            "accepted": true
+          },
+          "after": {
+            "id": 35,
+            "char": "E",
+            "score": 82944,
+            "margin": 5509,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_2679.jpg",
+          "file_sha256": "e5d6f060c9722a6c7cdad1d7355033419b831882406d829e738d6bdd1a3fad75"
+        },
+        {
+          "dataset_id": 9926,
+          "truth": "U",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 45,
+            "char": "Q",
+            "score": -1513,
+            "margin": 601,
+            "accepted": false
+          },
+          "after": {
+            "id": 45,
+            "char": "Q",
+            "score": 116929,
+            "margin": 74746,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/U/debug_char_auxRoi_2560.jpg",
+          "file_sha256": "1246fc0abbad4ad7200b2dd60854713bf0a2361ef56d656e6557f8dab7624623"
+        },
+        {
+          "dataset_id": 10128,
+          "truth": "X",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": 1742,
+            "margin": 4165,
+            "accepted": true
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": 73166,
+            "margin": 7298,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_909.jpg",
+          "file_sha256": "3ae93607d8b8c30f7910ab6cf524ca0210d77de94aa3fffa4e5743c820d482c4"
+        },
+        {
+          "dataset_id": 10642,
+          "truth": "贵",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 1989,
+            "margin": 6557,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 55460,
+            "margin": 30096,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat234.jpg",
+          "file_sha256": "663851cd3529d56e21aec617f31668d1d6e5a279bb1e56871ef4f3f243c999ed"
+        },
+        {
+          "dataset_id": 10711,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 16,
+            "char": "豫",
+            "score": 3908,
+            "margin": 6977,
+            "accepted": true
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 101657,
+            "margin": 25765,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat230.jpg",
+          "file_sha256": "feffc39b4a629c890d61f35d74ce8b0eedcd969684cf52869c83d707bce9515c"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 56534,
+            "margin": 4091,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11025,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 550,
+            "margin": 5885,
+            "accepted": true
+          },
+          "after": {
+            "id": 25,
+            "char": "藏",
+            "score": 40479,
+            "margin": 577,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_ji/debug_specMat135.jpg",
+          "file_sha256": "e6a87b2be0bd5cdd202bded2274d2fd79b3eb325e15370fa02dca5973db8c8ab"
+        },
+        {
+          "dataset_id": 11282,
+          "truth": "京",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 9,
+            "char": "黑",
+            "score": -6220,
+            "margin": 2566,
+            "accepted": false
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 46807,
+            "margin": 33247,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jing/debug_chineseMat35.jpg",
+          "file_sha256": "d3c2d69998aff0c41aaf10a9866969a87f3c1547bdf245ff685617279df986d1"
+        },
+        {
+          "dataset_id": 11567,
+          "truth": "蒙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 17,
+            "char": "鄂",
+            "score": 2570,
+            "margin": 11775,
+            "accepted": true
+          },
+          "after": {
+            "id": 17,
+            "char": "鄂",
+            "score": 49174,
+            "margin": 6676,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat415.jpg",
+          "file_sha256": "489b251a724402a4d2bcec584173dbfd399d9661dbcf925fe51b8dc6b6bb6eb5"
+        },
+        {
+          "dataset_id": 12028,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 3213,
+            "margin": 6367,
+            "accepted": true
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 62909,
+            "margin": 4981,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/189-7.jpg",
+          "file_sha256": "dbc9213653c2870ef3fb1b888e03a41bd20046dd26aa7d11a4ce51b743d31be4"
+        },
+        {
+          "dataset_id": 12723,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": 2543,
+            "margin": 7836,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 64905,
+            "margin": 24633,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_811.jpg",
+          "file_sha256": "138bad9f4cdd6a12860f5bc71e9e2ef0e1543e64b85924474615cb25a7d185e4"
+        },
+        {
+          "dataset_id": 12892,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": 1996,
+            "margin": 9009,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 62271,
+            "margin": 26571,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_23_41_195413.jpg",
+          "file_sha256": "1e67526dbf4b6b3647f13682e41ddf30d9b6b7084d6b670ecd87f1eac4c5c4bc"
+        },
+        {
+          "dataset_id": 13149,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 2125,
+            "margin": 4848,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 48958,
+            "margin": 17010,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_27_194985.jpg",
+          "file_sha256": "e7c7941c78309bdb44d7391b0ea149c69aef143cf266086a01bfee48cccc0f06"
+        },
+        {
+          "dataset_id": 13234,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -269,
+            "margin": 4470,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 46953,
+            "margin": 28308,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_32_195365.jpg",
+          "file_sha256": "ff4ab62cfaa606bf48196ef6f744cb5750d846c7573dd929488f43391b406386"
+        },
+        {
+          "dataset_id": 14015,
+          "truth": "赣",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 883,
+            "margin": 5647,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 46974,
+            "margin": 24476,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan/chars__2017-04-23 16_46_19_224173.jpg",
+          "file_sha256": "f18f42605ae7fc8fec6077ec0f92cabbaf3a1a6849562bc1b7e8b6e02ae2ba45"
+        },
+        {
+          "dataset_id": 15306,
+          "truth": "桂",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": 1576,
+            "margin": 3970,
+            "accepted": false
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 73564,
+            "margin": 40444,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gui1/1031.jpg",
+          "file_sha256": "a15636b60b872297a04b1b2a76832a37dd5e2249b4e3e3f06addfdfd8bae0f1f"
+        },
+        {
+          "dataset_id": 15465,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 9047,
+            "margin": 5770,
+            "accepted": true
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 116753,
+            "margin": 1763,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hei/chars__2017-04-23 16_48_39_260331.jpg",
+          "file_sha256": "c1b8ae06f8c8e88ff14679e5ac93afa064d329c0925a1ed6836129fb1cfa273d"
+        },
+        {
+          "dataset_id": 15524,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 1149,
+            "margin": 2140,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 136155,
+            "margin": 66579,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/14_2_zh_cuan.jpg",
+          "file_sha256": "6ef1f6b79ce1d054dc82539af0c120a43050b7421466b71b4692122d728f01f1"
+        },
+        {
+          "dataset_id": 15571,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -455,
+            "margin": 2129,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 82795,
+            "margin": 39621,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/44_2_zh_cuan.jpg",
+          "file_sha256": "74590e531777358408a2ee45fbc50d7ac80c2dcba1829c20aba634a7f0845f14"
+        },
+        {
+          "dataset_id": 15628,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 4026,
+            "margin": 2108,
+            "accepted": false
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 116112,
+            "margin": 58614,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/chars__2017-04-23 16_28_08_197566.jpg",
+          "file_sha256": "80586fd33e988e381fe3dda00a8ac6e46c448836b5fc03bb7d5de545abbaf16e"
+        },
+        {
+          "dataset_id": 17169,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 7,
+            "char": "辽",
+            "score": 816,
+            "margin": 5701,
+            "accepted": true
+          },
+          "after": {
+            "id": 11,
+            "char": "浙",
+            "score": 53232,
+            "margin": 21892,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/35.jpg",
+          "file_sha256": "16d06c6a3369d8b2b3761783192565ade45f650071e44a2d093457549397e0a0"
+        },
+        {
+          "dataset_id": 18938,
+          "truth": "鲁",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 30,
+            "char": "新",
+            "score": -5635,
+            "margin": 11,
+            "accepted": false
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 81952,
+            "margin": 37688,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_lu/3171_1073.jpg",
+          "file_sha256": "ee6b06fc2493bcfc8d1a44da3f283e1a82cf3b5c9c62134d567afc82316df99b"
+        },
+        {
+          "dataset_id": 18977,
+          "truth": "鲁",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": -2897,
+            "margin": 6167,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 35836,
+            "margin": 35784,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_lu/3172_1105.jpg",
+          "file_sha256": "8ea9a81ec26d12f624a2009810dc809f537b84ad1339e1f791f054efc68a4a6e"
+        },
+        {
+          "dataset_id": 20337,
+          "truth": "青",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 293,
+            "margin": 2126,
+            "accepted": false
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": 88193,
+            "margin": 42159,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_qing/chars__2017-04-03 19_29_01.jpg",
+          "file_sha256": "6a62f9a053aab0ea053100a9c8739c372a8dfde6d834689c0e6a346b411a6c30"
+        },
+        {
+          "dataset_id": 22722,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -601,
+            "margin": 4558,
+            "accepted": true
+          },
+          "after": {
+            "id": 0,
+            "char": "皖",
+            "score": 42485,
+            "margin": 3410,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/24_2_zh_shan.jpg",
+          "file_sha256": "789fbef606172c3f8853beb9128fec80e405a873d85abe7c8a488f565a4094c9"
+        },
+        {
+          "dataset_id": 25478,
+          "truth": "浙",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 8,
+            "char": "吉",
+            "score": -3800,
+            "margin": 570,
+            "accepted": false
+          },
+          "after": {
+            "id": 8,
+            "char": "吉",
+            "score": 42423,
+            "margin": 39295,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/chars_78_2017-04-03 11_34_50.jpg",
+          "file_sha256": "fb0c85864ff08a514dc1f7e5c2c3706cd924939fd95496cd250177cebccd54e1"
+        },
+        {
+          "dataset_id": 25922,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": 651,
+            "margin": 6585,
+            "accepted": true
+          },
+          "after": {
+            "id": 2,
+            "char": "津",
+            "score": 64115,
+            "margin": 12919,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/chars__2017-04-23 16_31_33_200951.jpg",
+          "file_sha256": "eb7552359e2714ee48b2cf5269d17d300c33c1cbbec4d2866cc7b3da824bfda1"
+        }
+      ],
+      "changes": [
+        {
+          "model": "mlp128",
+          "key": "030-oracle",
+          "label": "皖AZQ867",
+          "mode": "oracle",
+          "before": "皖AZQ86Z",
+          "before_accepted": false,
+          "after": "皖AZQ86X",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp128",
+          "key": "050-oracle",
+          "label": "皖AX815V",
+          "mode": "oracle",
+          "before": "皖AX815W",
+          "before_accepted": true,
+          "after": "皖AX815W",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp128",
+          "key": "066-automatic",
+          "label": "皖AYL155",
+          "mode": "automatic",
+          "before": "皖AYL155",
+          "before_accepted": false,
+          "after": "苏AYL155",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp128",
+          "key": "115-automatic",
+          "label": "皖A43Y26",
+          "mode": "automatic",
+          "before": "皖A43X26",
+          "before_accepted": true,
+          "after": "皖A43Y26",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp128",
+          "key": "135-oracle",
+          "label": "皖AKF203",
+          "mode": "oracle",
+          "before": "豫AKF203",
+          "before_accepted": false,
+          "after": "豫AKF203",
+          "after_accepted": true
+        },
+        {
+          "model": "mlp128",
+          "key": "159-oracle",
+          "label": "皖AP066D",
+          "mode": "oracle",
+          "before": "皖AP066D",
+          "before_accepted": true,
+          "after": "皖AP0662",
+          "after_accepted": true
+        },
+        {
+          "model": "mlp128",
+          "key": "186-automatic",
+          "label": "皖AG683H",
+          "mode": "automatic",
+          "before": "皖AG683H",
+          "before_accepted": true,
+          "after": "皖AG683H",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp128",
+          "key": "186-oracle",
+          "label": "皖AG683H",
+          "mode": "oracle",
+          "before": "皖AG6839",
+          "before_accepted": false,
+          "after": "皖AG6838",
+          "after_accepted": false
+        },
+        {
+          "model": "mlp128",
+          "key": "192-automatic",
+          "label": "皖AY8R52",
+          "mode": "automatic",
+          "before": "皖AY8R52",
+          "before_accepted": false,
+          "after": "皖AY8R57",
+          "after_accepted": false
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": 101468,
+          "margin": 597,
+          "accepted": false
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 53,
+          "char": "Y",
+          "score": 69393,
+          "margin": 1685,
+          "accepted": false
+        }
+      ]
+    },
+    "stroke-cross": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 31,
+          "accepted_correct": 27,
+          "accepted_wrong": 3,
+          "rejected": 8
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 16,
+          "accepted_correct": 12,
+          "accepted_wrong": 0,
+          "rejected": 6
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 15,
+          "accepted_correct": 15,
+          "accepted_wrong": 3,
+          "rejected": 2
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 253,
+          "accepted_wrong": 3,
+          "rejected": 9
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3696,
+        "correct": 3446,
+        "wrong": 30,
+        "reject": 460
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 293,
+          "truth": "0",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 34,
+            "char": "D",
+            "score": -1089,
+            "margin": 633,
+            "accepted": false
+          },
+          "after": {
+            "id": 34,
+            "char": "D",
+            "score": -4330,
+            "margin": 3872,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_2673.jpg",
+          "file_sha256": "38b83d05afbc348c37f4898cf47f46f0564c73e8caf6f284fc093f7a55cc354e"
+        },
+        {
+          "dataset_id": 749,
+          "truth": "1",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 58,
+            "char": "3",
+            "score": -10308,
+            "margin": 3636,
+            "accepted": true
+          },
+          "after": {
+            "id": 53,
+            "char": "Y",
+            "score": -12775,
+            "margin": 1605,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_665.jpg",
+          "file_sha256": "5c71f2b9abfc8d101c4c8af73b2f2671b446deabb18d7f1311bda1f07cf26709"
+        },
+        {
+          "dataset_id": 994,
+          "truth": "2",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 57,
+            "char": "2",
+            "score": -650,
+            "margin": 2924,
+            "accepted": false
+          },
+          "after": {
+            "id": 62,
+            "char": "7",
+            "score": -1186,
+            "margin": 4213,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/2/69-3.jpg",
+          "file_sha256": "d29670ef77a7b504979d310de40c0ff8d6070a03e8bdf5009987873a2f541fcd"
+        },
+        {
+          "dataset_id": 1099,
+          "truth": "2",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 64,
+            "char": "9",
+            "score": 6213,
+            "margin": 13018,
+            "accepted": true
+          },
+          "after": {
+            "id": 64,
+            "char": "9",
+            "score": 5830,
+            "margin": 603,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/2/debug_char_auxRoi_2097.jpg",
+          "file_sha256": "bd16a839f943c2769a5f4ce6c6d125b396cc5cf5c47d6eb2078901e5caedfc74"
+        },
+        {
+          "dataset_id": 1657,
+          "truth": "3",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 32,
+            "char": "B",
+            "score": -3112,
+            "margin": 6281,
+            "accepted": true
+          },
+          "after": {
+            "id": 32,
+            "char": "B",
+            "score": -9871,
+            "margin": 2983,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/3/gt_406_1.jpg",
+          "file_sha256": "e555ca37a017dc619b6f016f0703cff887dacd3bc9b09d38de9cd03eb7da5eb9"
+        },
+        {
+          "dataset_id": 6074,
+          "truth": "A",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": -2144,
+            "margin": 2032,
+            "accepted": false
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": -5368,
+            "margin": 3649,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/A/320_sun_A_3.jpg",
+          "file_sha256": "be6e86233e184d77731ee0abe0fb9fb1fced078c0985af7e11787ceac7074588"
+        },
+        {
+          "dataset_id": 7919,
+          "truth": "F",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": -2255,
+            "margin": 663,
+            "accepted": false
+          },
+          "after": {
+            "id": 35,
+            "char": "E",
+            "score": 3235,
+            "margin": 11246,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/F/gt_1296_1.jpg",
+          "file_sha256": "50c1a68e30ee0c8a30f530349ebac7d748654490eb5e3f037ab91c7ca98fe91b"
+        },
+        {
+          "dataset_id": 8774,
+          "truth": "L",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": 3935,
+            "margin": 7029,
+            "accepted": true
+          },
+          "after": {
+            "id": 61,
+            "char": "6",
+            "score": 2867,
+            "margin": 1078,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_2679.jpg",
+          "file_sha256": "e5d6f060c9722a6c7cdad1d7355033419b831882406d829e738d6bdd1a3fad75"
+        },
+        {
+          "dataset_id": 9926,
+          "truth": "U",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 45,
+            "char": "Q",
+            "score": -1513,
+            "margin": 601,
+            "accepted": false
+          },
+          "after": {
+            "id": 45,
+            "char": "Q",
+            "score": -1006,
+            "margin": 9662,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/U/debug_char_auxRoi_2560.jpg",
+          "file_sha256": "1246fc0abbad4ad7200b2dd60854713bf0a2361ef56d656e6557f8dab7624623"
+        },
+        {
+          "dataset_id": 10192,
+          "truth": "Y",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 53,
+            "char": "Y",
+            "score": -761,
+            "margin": 3325,
+            "accepted": false
+          },
+          "after": {
+            "id": 48,
+            "char": "T",
+            "score": -1142,
+            "margin": 3466,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/Y/debug_char_auxRoi_1536.jpg",
+          "file_sha256": "fe093d14555b11c17b0a55f68fdfcfac8e9427f5c78f9b6f9bad5f21b1ced17b"
+        },
+        {
+          "dataset_id": 10480,
+          "truth": "鄂",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 9,
+            "char": "黑",
+            "score": 4514,
+            "margin": 7313,
+            "accepted": true
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 5448,
+            "margin": 5034,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat74.jpg",
+          "file_sha256": "8ef645e2fe0948f92fd3006d042c48f15b10f16d011be2104d4a1ab8d1e852c0"
+        },
+        {
+          "dataset_id": 10544,
+          "truth": "赣",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 10,
+            "char": "苏",
+            "score": -5543,
+            "margin": 2773,
+            "accepted": false
+          },
+          "after": {
+            "id": 10,
+            "char": "苏",
+            "score": 416,
+            "margin": 6882,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat183.jpg",
+          "file_sha256": "32b1cfefdf0f04cfc2b00d4ad777eb2f3e01d145724017081e5dd31b28dd82a3"
+        },
+        {
+          "dataset_id": 10642,
+          "truth": "贵",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 1989,
+            "margin": 6557,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 1087,
+            "margin": 5412,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat234.jpg",
+          "file_sha256": "663851cd3529d56e21aec617f31668d1d6e5a279bb1e56871ef4f3f243c999ed"
+        },
+        {
+          "dataset_id": 10711,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 16,
+            "char": "豫",
+            "score": 3908,
+            "margin": 6977,
+            "accepted": true
+          },
+          "after": {
+            "id": 16,
+            "char": "豫",
+            "score": -1560,
+            "margin": 1389,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat230.jpg",
+          "file_sha256": "feffc39b4a629c890d61f35d74ce8b0eedcd969684cf52869c83d707bce9515c"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 3195,
+            "margin": 3239,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11025,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 550,
+            "margin": 5885,
+            "accepted": true
+          },
+          "after": {
+            "id": 12,
+            "char": "京",
+            "score": 669,
+            "margin": 1392,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_ji/debug_specMat135.jpg",
+          "file_sha256": "e6a87b2be0bd5cdd202bded2274d2fd79b3eb325e15370fa02dca5973db8c8ab"
+        },
+        {
+          "dataset_id": 11124,
+          "truth": "津",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 307,
+            "margin": 6393,
+            "accepted": true
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": -6296,
+            "margin": 238,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat25.jpg",
+          "file_sha256": "e115647672f018319b44626fdba6716dca4b6b84351559ab3ecbe9a635a47592"
+        },
+        {
+          "dataset_id": 12028,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 3213,
+            "margin": 6367,
+            "accepted": true
+          },
+          "after": {
+            "id": 0,
+            "char": "皖",
+            "score": 4586,
+            "margin": 3815,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/189-7.jpg",
+          "file_sha256": "dbc9213653c2870ef3fb1b888e03a41bd20046dd26aa7d11a4ce51b743d31be4"
+        },
+        {
+          "dataset_id": 12093,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": -788,
+            "margin": 1271,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 4595,
+            "margin": 8302,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/debug_char_auxRoi_1751.jpg",
+          "file_sha256": "23d458940c58163ac6e0602b063d58b54bd35aed89ca5509e0a82c0b7c2e3139"
+        },
+        {
+          "dataset_id": 12510,
+          "truth": "粤",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": -4801,
+            "margin": 262,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 2049,
+            "margin": 7199,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_yue/debug_char_auxRoi_2300.jpg",
+          "file_sha256": "60dbd9670e567b659208c1ae225ebae1cb172513ec28f7b4d81476d17c75f389"
+        },
+        {
+          "dataset_id": 12700,
+          "truth": "浙",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": -5820,
+            "margin": 1550,
+            "accepted": false
+          },
+          "after": {
+            "id": 18,
+            "char": "湘",
+            "score": -347,
+            "margin": 7546,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_1405.jpg",
+          "file_sha256": "ab188a9060667d69b72e31ed26063b6bf0b0d6e6bc4c1c3673ff090e3bef18d5"
+        },
+        {
+          "dataset_id": 12973,
+          "truth": "川",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 29,
+            "char": "宁",
+            "score": -404,
+            "margin": 505,
+            "accepted": false
+          },
+          "after": {
+            "id": 29,
+            "char": "宁",
+            "score": -303,
+            "margin": 6234,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_24_49_195669.jpg",
+          "file_sha256": "6db7882949c96422ab0827cfa2f99e68284c41a2b337eb5d154bda375c21df6e"
+        },
+        {
+          "dataset_id": 13234,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -269,
+            "margin": 4470,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 801,
+            "margin": 6089,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_32_195365.jpg",
+          "file_sha256": "ff4ab62cfaa606bf48196ef6f744cb5750d846c7573dd929488f43391b406386"
+        },
+        {
+          "dataset_id": 14015,
+          "truth": "赣",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 883,
+            "margin": 5647,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 1444,
+            "margin": 626,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan/chars__2017-04-23 16_46_19_224173.jpg",
+          "file_sha256": "f18f42605ae7fc8fec6077ec0f92cabbaf3a1a6849562bc1b7e8b6e02ae2ba45"
+        },
+        {
+          "dataset_id": 14728,
+          "truth": "贵",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -75,
+            "margin": 797,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": 2872,
+            "margin": 7460,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gui/chars__2017-04-23 16_44_38_220563.jpg",
+          "file_sha256": "95c7a218b0e10a8ae7534777d091113e866577bb1c7fe203726a1abe334647f5"
+        },
+        {
+          "dataset_id": 14820,
+          "truth": "贵",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -3302,
+            "margin": 1472,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": -342,
+            "margin": 6121,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gui/chars__2017-04-23 16_44_44_220728.jpg",
+          "file_sha256": "a7a5df4e6c9bca0556c6025267b7a300b8d17fa6b3c60236c3491540bbefa279"
+        },
+        {
+          "dataset_id": 15465,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 9047,
+            "margin": 5770,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 6530,
+            "margin": 927,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hei/chars__2017-04-23 16_48_39_260331.jpg",
+          "file_sha256": "c1b8ae06f8c8e88ff14679e5ac93afa064d329c0925a1ed6836129fb1cfa273d"
+        },
+        {
+          "dataset_id": 15524,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 1149,
+            "margin": 2140,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 2033,
+            "margin": 6126,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/14_2_zh_cuan.jpg",
+          "file_sha256": "6ef1f6b79ce1d054dc82539af0c120a43050b7421466b71b4692122d728f01f1"
+        },
+        {
+          "dataset_id": 15628,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 4026,
+            "margin": 2108,
+            "accepted": false
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 7048,
+            "margin": 7302,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/chars__2017-04-23 16_28_08_197566.jpg",
+          "file_sha256": "80586fd33e988e381fe3dda00a8ac6e46c448836b5fc03bb7d5de545abbaf16e"
+        },
+        {
+          "dataset_id": 15709,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": 1534,
+            "margin": 4522,
+            "accepted": true
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": 3690,
+            "margin": 5719,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/142.jpg",
+          "file_sha256": "54ef0d9b16496218cd39850ec28eed7379477755f2f53640749a4ccede8abab6"
+        },
+        {
+          "dataset_id": 15906,
+          "truth": "冀",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": -7118,
+            "margin": 1253,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": -1392,
+            "margin": 8891,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/chars__2017-04-23 16_45_24_185813.jpg",
+          "file_sha256": "84f076f3a8ea69322ec4b9828da5d88653545d1e05db80f62de3cd01c0c3c686"
+        },
+        {
+          "dataset_id": 17166,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 21,
+            "char": "琼",
+            "score": 2520,
+            "margin": 6757,
+            "accepted": true
+          },
+          "after": {
+            "id": 21,
+            "char": "琼",
+            "score": 2036,
+            "margin": 2917,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/1230.jpg",
+          "file_sha256": "9b891af3111eabc958ffafdc25a16b326d2e0b061ad314809c0775986f48d898"
+        },
+        {
+          "dataset_id": 17169,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 7,
+            "char": "辽",
+            "score": 816,
+            "margin": 5701,
+            "accepted": true
+          },
+          "after": {
+            "id": 7,
+            "char": "辽",
+            "score": 3664,
+            "margin": 370,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/35.jpg",
+          "file_sha256": "16d06c6a3369d8b2b3761783192565ade45f650071e44a2d093457549397e0a0"
+        },
+        {
+          "dataset_id": 22722,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -601,
+            "margin": 4558,
+            "accepted": true
+          },
+          "after": {
+            "id": 27,
+            "char": "甘",
+            "score": -4208,
+            "margin": 324,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/24_2_zh_shan.jpg",
+          "file_sha256": "789fbef606172c3f8853beb9128fec80e405a873d85abe7c8a488f565a4094c9"
+        },
+        {
+          "dataset_id": 22758,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": -1647,
+            "margin": 7105,
+            "accepted": false
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 399,
+            "margin": 7910,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/758.jpg",
+          "file_sha256": "a6dcbf7f5c64684d4a2f5c55fbec29a4280537cbba6c837553669e71eba504d5"
+        },
+        {
+          "dataset_id": 23887,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -2641,
+            "margin": 8213,
+            "accepted": false
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": -1140,
+            "margin": 7247,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_36_196531.jpg",
+          "file_sha256": "27464596d84f128817add1afb2653645edc3a215506d25ad9526d3d41a5139d4"
+        }
+      ],
+      "changes": [
+        {
+          "model": "stroke-cross",
+          "key": "030-oracle",
+          "label": "皖AZQ867",
+          "mode": "oracle",
+          "before": "皖AZQ86Z",
+          "before_accepted": false,
+          "after": "皖AZQ86K",
+          "after_accepted": true
+        },
+        {
+          "model": "stroke-cross",
+          "key": "050-oracle",
+          "label": "皖AX815V",
+          "mode": "oracle",
+          "before": "皖AX815W",
+          "before_accepted": true,
+          "after": "皖AX815W",
+          "after_accepted": false
+        },
+        {
+          "model": "stroke-cross",
+          "key": "115-automatic",
+          "label": "皖A43Y26",
+          "mode": "automatic",
+          "before": "皖A43X26",
+          "before_accepted": true,
+          "after": "皖A43X26",
+          "after_accepted": false
+        },
+        {
+          "model": "stroke-cross",
+          "key": "135-oracle",
+          "label": "皖AKF203",
+          "mode": "oracle",
+          "before": "豫AKF203",
+          "before_accepted": false,
+          "after": "蒙AKF203",
+          "after_accepted": false
+        },
+        {
+          "model": "stroke-cross",
+          "key": "159-oracle",
+          "label": "皖AP066D",
+          "mode": "oracle",
+          "before": "皖AP066D",
+          "before_accepted": true,
+          "after": "皖AP0669",
+          "after_accepted": true
+        },
+        {
+          "model": "stroke-cross",
+          "key": "163-automatic",
+          "label": "皖A351A7",
+          "mode": "automatic",
+          "before": "皖A351A7",
+          "before_accepted": true,
+          "after": "皖A351A7",
+          "after_accepted": false
+        },
+        {
+          "model": "stroke-cross",
+          "key": "186-automatic",
+          "label": "皖AG683H",
+          "mode": "automatic",
+          "before": "皖AG683H",
+          "before_accepted": true,
+          "after": "皖AG683H",
+          "after_accepted": false
+        },
+        {
+          "model": "stroke-cross",
+          "key": "186-oracle",
+          "label": "皖AG683H",
+          "mode": "oracle",
+          "before": "皖AG6839",
+          "before_accepted": false,
+          "after": "皖AG6839",
+          "after_accepted": true
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": -5236,
+          "margin": 2010,
+          "accepted": false
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 52,
+          "char": "X",
+          "score": -1909,
+          "margin": 1121,
+          "accepted": false
+        }
+      ]
+    },
+    "stroke-horizontal": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 32,
+          "accepted_correct": 30,
+          "accepted_wrong": 2,
+          "rejected": 6
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 16,
+          "accepted_correct": 14,
+          "accepted_wrong": 1,
+          "rejected": 3
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 16,
+          "accepted_correct": 16,
+          "accepted_wrong": 1,
+          "rejected": 3
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 254,
+          "accepted_wrong": 2,
+          "rejected": 5
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3723,
+        "correct": 3506,
+        "wrong": 30,
+        "reject": 400
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 293,
+          "truth": "0",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 34,
+            "char": "D",
+            "score": -1089,
+            "margin": 633,
+            "accepted": false
+          },
+          "after": {
+            "id": 34,
+            "char": "D",
+            "score": 980,
+            "margin": 6036,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_2673.jpg",
+          "file_sha256": "38b83d05afbc348c37f4898cf47f46f0564c73e8caf6f284fc093f7a55cc354e"
+        },
+        {
+          "dataset_id": 749,
+          "truth": "1",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 58,
+            "char": "3",
+            "score": -10308,
+            "margin": 3636,
+            "accepted": true
+          },
+          "after": {
+            "id": 58,
+            "char": "3",
+            "score": -9269,
+            "margin": 4302,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_665.jpg",
+          "file_sha256": "5c71f2b9abfc8d101c4c8af73b2f2671b446deabb18d7f1311bda1f07cf26709"
+        },
+        {
+          "dataset_id": 1657,
+          "truth": "3",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 32,
+            "char": "B",
+            "score": -3112,
+            "margin": 6281,
+            "accepted": true
+          },
+          "after": {
+            "id": 32,
+            "char": "B",
+            "score": -5196,
+            "margin": 3365,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/3/gt_406_1.jpg",
+          "file_sha256": "e555ca37a017dc619b6f016f0703cff887dacd3bc9b09d38de9cd03eb7da5eb9"
+        },
+        {
+          "dataset_id": 1884,
+          "truth": "4",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 62,
+            "char": "7",
+            "score": 1464,
+            "margin": 1445,
+            "accepted": false
+          },
+          "after": {
+            "id": 62,
+            "char": "7",
+            "score": 1858,
+            "margin": 7766,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/4/debug_char_auxRoi_363.jpg",
+          "file_sha256": "5472bb8fdefcd7d42cf5878875c6297c90284f826e18ba41690e83f52c216f18"
+        },
+        {
+          "dataset_id": 9890,
+          "truth": "U",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 34,
+            "char": "D",
+            "score": -5369,
+            "margin": 666,
+            "accepted": false
+          },
+          "after": {
+            "id": 38,
+            "char": "H",
+            "score": -3403,
+            "margin": 5222,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/U/379-3.jpg",
+          "file_sha256": "c1a9b9e3b1bfab15b4bef6918de26239410be65497f1b33c2a97cf1cda6cd169"
+        },
+        {
+          "dataset_id": 10128,
+          "truth": "X",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": 1742,
+            "margin": 4165,
+            "accepted": true
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": -1591,
+            "margin": 3414,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_909.jpg",
+          "file_sha256": "3ae93607d8b8c30f7910ab6cf524ca0210d77de94aa3fffa4e5743c820d482c4"
+        },
+        {
+          "dataset_id": 10544,
+          "truth": "赣",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 10,
+            "char": "苏",
+            "score": -5543,
+            "margin": 2773,
+            "accepted": false
+          },
+          "after": {
+            "id": 10,
+            "char": "苏",
+            "score": -1184,
+            "margin": 5774,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat183.jpg",
+          "file_sha256": "32b1cfefdf0f04cfc2b00d4ad777eb2f3e01d145724017081e5dd31b28dd82a3"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 2119,
+            "margin": 2694,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11025,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 550,
+            "margin": 5885,
+            "accepted": true
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": -227,
+            "margin": 5516,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_ji/debug_specMat135.jpg",
+          "file_sha256": "e6a87b2be0bd5cdd202bded2274d2fd79b3eb325e15370fa02dca5973db8c8ab"
+        },
+        {
+          "dataset_id": 11124,
+          "truth": "津",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 307,
+            "margin": 6393,
+            "accepted": true
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": -4609,
+            "margin": 2545,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat25.jpg",
+          "file_sha256": "e115647672f018319b44626fdba6716dca4b6b84351559ab3ecbe9a635a47592"
+        },
+        {
+          "dataset_id": 11251,
+          "truth": "京",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": -767,
+            "margin": 647,
+            "accepted": false
+          },
+          "after": {
+            "id": 18,
+            "char": "湘",
+            "score": 3224,
+            "margin": 6756,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jing/debug_char_auxRoi_28.jpg",
+          "file_sha256": "6f4fcfab38c8cd6aa044e83b48faeacb17b93fc09ba7194a13f69e2bfcaa7878"
+        },
+        {
+          "dataset_id": 11679,
+          "truth": "琼",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": -3772,
+            "margin": 845,
+            "accepted": false
+          },
+          "after": {
+            "id": 0,
+            "char": "皖",
+            "score": -1150,
+            "margin": 6109,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat107.jpg",
+          "file_sha256": "21db321ee56782a19fed6bead6d8ae863a663081ba9c51faac1e1a205a8c8b15"
+        },
+        {
+          "dataset_id": 12028,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 3213,
+            "margin": 6367,
+            "accepted": true
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 3261,
+            "margin": 3658,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/189-7.jpg",
+          "file_sha256": "dbc9213653c2870ef3fb1b888e03a41bd20046dd26aa7d11a4ce51b743d31be4"
+        },
+        {
+          "dataset_id": 12883,
+          "truth": "川",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": -1967,
+            "margin": 1796,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": 599,
+            "margin": 5914,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-03 19_38_10.jpg",
+          "file_sha256": "04c3391393200a07a5fc634c854bc40902d73b91bc435e76970ee9045b54a0ef"
+        },
+        {
+          "dataset_id": 12973,
+          "truth": "川",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 29,
+            "char": "宁",
+            "score": -404,
+            "margin": 505,
+            "accepted": false
+          },
+          "after": {
+            "id": 29,
+            "char": "宁",
+            "score": 211,
+            "margin": 5775,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_24_49_195669.jpg",
+          "file_sha256": "6db7882949c96422ab0827cfa2f99e68284c41a2b337eb5d154bda375c21df6e"
+        },
+        {
+          "dataset_id": 13149,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 2125,
+            "margin": 4848,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": -1373,
+            "margin": 2912,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_27_194985.jpg",
+          "file_sha256": "e7c7941c78309bdb44d7391b0ea149c69aef143cf266086a01bfee48cccc0f06"
+        },
+        {
+          "dataset_id": 15465,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 9047,
+            "margin": 5770,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 6930,
+            "margin": 3810,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hei/chars__2017-04-23 16_48_39_260331.jpg",
+          "file_sha256": "c1b8ae06f8c8e88ff14679e5ac93afa064d329c0925a1ed6836129fb1cfa273d"
+        },
+        {
+          "dataset_id": 15709,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": 1534,
+            "margin": 4522,
+            "accepted": true
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": -482,
+            "margin": 4040,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/142.jpg",
+          "file_sha256": "54ef0d9b16496218cd39850ec28eed7379477755f2f53640749a4ccede8abab6"
+        },
+        {
+          "dataset_id": 17169,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 7,
+            "char": "辽",
+            "score": 816,
+            "margin": 5701,
+            "accepted": true
+          },
+          "after": {
+            "id": 7,
+            "char": "辽",
+            "score": 4283,
+            "margin": 5570,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/35.jpg",
+          "file_sha256": "16d06c6a3369d8b2b3761783192565ade45f650071e44a2d093457549397e0a0"
+        },
+        {
+          "dataset_id": 21620,
+          "truth": "苏",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 4045,
+            "margin": 3602,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 4953,
+            "margin": 5676,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_su/41_1_zh_ning.jpg",
+          "file_sha256": "50dadd6bc47ea4a4e14852edfcd778f9a3c3710cd1cb77705249c552428e93c2"
+        },
+        {
+          "dataset_id": 22722,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -601,
+            "margin": 4558,
+            "accepted": true
+          },
+          "after": {
+            "id": 27,
+            "char": "甘",
+            "score": -852,
+            "margin": 2445,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/24_2_zh_shan.jpg",
+          "file_sha256": "789fbef606172c3f8853beb9128fec80e405a873d85abe7c8a488f565a4094c9"
+        },
+        {
+          "dataset_id": 22758,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": -1647,
+            "margin": 7105,
+            "accepted": false
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": -1387,
+            "margin": 7038,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/758.jpg",
+          "file_sha256": "a6dcbf7f5c64684d4a2f5c55fbec29a4280537cbba6c837553669e71eba504d5"
+        },
+        {
+          "dataset_id": 23887,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -2641,
+            "margin": 8213,
+            "accepted": false
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": -3147,
+            "margin": 6342,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_36_196531.jpg",
+          "file_sha256": "27464596d84f128817add1afb2653645edc3a215506d25ad9526d3d41a5139d4"
+        },
+        {
+          "dataset_id": 24238,
+          "truth": "粤",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": -3201,
+            "margin": 3685,
+            "accepted": false
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": -2346,
+            "margin": 5612,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_yue/41755_417.jpg",
+          "file_sha256": "ef91787ff10c1efa4dc34c830e575f0e57d06967c6e3b02b0607739ba75e630e"
+        }
+      ],
+      "changes": [
+        {
+          "model": "stroke-horizontal",
+          "key": "135-oracle",
+          "label": "皖AKF203",
+          "mode": "oracle",
+          "before": "豫AKF203",
+          "before_accepted": false,
+          "after": "蒙AKF203",
+          "after_accepted": false
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": -2220,
+          "margin": 5884,
+          "accepted": true
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 52,
+          "char": "X",
+          "score": -550,
+          "margin": 6545,
+          "accepted": true
+        }
+      ]
+    },
+    "balanced": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 32,
+          "accepted_correct": 30,
+          "accepted_wrong": 3,
+          "rejected": 5
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 16,
+          "accepted_correct": 14,
+          "accepted_wrong": 1,
+          "rejected": 3
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 16,
+          "accepted_correct": 16,
+          "accepted_wrong": 2,
+          "rejected": 2
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 254,
+          "accepted_wrong": 3,
+          "rejected": 4
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3731,
+        "correct": 3487,
+        "wrong": 27,
+        "reject": 422
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 749,
+          "truth": "1",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 58,
+            "char": "3",
+            "score": -10308,
+            "margin": 3636,
+            "accepted": true
+          },
+          "after": {
+            "id": 58,
+            "char": "3",
+            "score": -10391,
+            "margin": 3323,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_665.jpg",
+          "file_sha256": "5c71f2b9abfc8d101c4c8af73b2f2671b446deabb18d7f1311bda1f07cf26709"
+        },
+        {
+          "dataset_id": 7525,
+          "truth": "D",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 55,
+            "char": "0",
+            "score": 3369,
+            "margin": 5691,
+            "accepted": true
+          },
+          "after": {
+            "id": 55,
+            "char": "0",
+            "score": 2778,
+            "margin": 3267,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/D/gt_1092_1.jpg",
+          "file_sha256": "b8a9702db19aec398a94c7b1a81f24425cb354a28f7726e688fbcfa2b8c826bf"
+        },
+        {
+          "dataset_id": 7979,
+          "truth": "F",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 46,
+            "char": "R",
+            "score": -5191,
+            "margin": 3534,
+            "accepted": false
+          },
+          "after": {
+            "id": 46,
+            "char": "R",
+            "score": -3735,
+            "margin": 5243,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/F/gt_250_5.jpg",
+          "file_sha256": "40b315d179e0d2b40b28c65e89d76bcc28154f2cbbbc62eb8a8a4fe03a66cf1b"
+        },
+        {
+          "dataset_id": 10642,
+          "truth": "贵",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 1989,
+            "margin": 6557,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -1075,
+            "margin": 3848,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat234.jpg",
+          "file_sha256": "663851cd3529d56e21aec617f31668d1d6e5a279bb1e56871ef4f3f243c999ed"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": -578,
+            "margin": 1400,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11414,
+          "truth": "辽",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 9,
+            "char": "黑",
+            "score": 4325,
+            "margin": 4237,
+            "accepted": false
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 9464,
+            "margin": 11084,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat918.jpg",
+          "file_sha256": "9106413a4c21c11d15c67c0547edad910dfe199bb5988bde2ffd9d6e926eb172"
+        },
+        {
+          "dataset_id": 13149,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 2125,
+            "margin": 4848,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 1173,
+            "margin": 4840,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_27_194985.jpg",
+          "file_sha256": "e7c7941c78309bdb44d7391b0ea149c69aef143cf266086a01bfee48cccc0f06"
+        },
+        {
+          "dataset_id": 13234,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -269,
+            "margin": 4470,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": -1331,
+            "margin": 4525,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_32_195365.jpg",
+          "file_sha256": "ff4ab62cfaa606bf48196ef6f744cb5750d846c7573dd929488f43391b406386"
+        },
+        {
+          "dataset_id": 13987,
+          "truth": "赣",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 9,
+            "char": "黑",
+            "score": -1663,
+            "margin": 3124,
+            "accepted": false
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 875,
+            "margin": 7603,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan/chars__2017-04-23 16_46_06_223602.jpg",
+          "file_sha256": "a9be3362ceb4dc75976bfee283ec98005870c791d3f3517db7b2d8f587320b70"
+        },
+        {
+          "dataset_id": 14654,
+          "truth": "贵",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 14,
+            "char": "赣",
+            "score": -266,
+            "margin": 2937,
+            "accepted": false
+          },
+          "after": {
+            "id": 14,
+            "char": "赣",
+            "score": 1016,
+            "margin": 5281,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gui/chars__2017-04-23 16_44_32_220407.jpg",
+          "file_sha256": "36e1e3c38fb33ed391075d3b4db8c2af59efe42008cda62b3d2591ef6b1f006b"
+        },
+        {
+          "dataset_id": 15134,
+          "truth": "贵",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": -1769,
+            "margin": 3866,
+            "accepted": false
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": -117,
+            "margin": 7890,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gui/chars__2017-04-23 16_45_03_221284.jpg",
+          "file_sha256": "2b4eb6997d118ac400e1bcc3082afc33f1d7ed14c2c486a06f23c93ada4c3e38"
+        },
+        {
+          "dataset_id": 15465,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 9047,
+            "margin": 5770,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 7420,
+            "margin": 1485,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hei/chars__2017-04-23 16_48_39_260331.jpg",
+          "file_sha256": "c1b8ae06f8c8e88ff14679e5ac93afa064d329c0925a1ed6836129fb1cfa273d"
+        },
+        {
+          "dataset_id": 15628,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 4026,
+            "margin": 2108,
+            "accepted": false
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 8650,
+            "margin": 8188,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/chars__2017-04-23 16_28_08_197566.jpg",
+          "file_sha256": "80586fd33e988e381fe3dda00a8ac6e46c448836b5fc03bb7d5de545abbaf16e"
+        },
+        {
+          "dataset_id": 15709,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": 1534,
+            "margin": 4522,
+            "accepted": true
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": 675,
+            "margin": 3561,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/142.jpg",
+          "file_sha256": "54ef0d9b16496218cd39850ec28eed7379477755f2f53640749a4ccede8abab6"
+        },
+        {
+          "dataset_id": 17169,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 7,
+            "char": "辽",
+            "score": 816,
+            "margin": 5701,
+            "accepted": true
+          },
+          "after": {
+            "id": 7,
+            "char": "辽",
+            "score": -210,
+            "margin": 698,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/35.jpg",
+          "file_sha256": "16d06c6a3369d8b2b3761783192565ade45f650071e44a2d093457549397e0a0"
+        },
+        {
+          "dataset_id": 22709,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": -3623,
+            "margin": 2913,
+            "accepted": false
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": -1743,
+            "margin": 5168,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/123_2_zh_qing.jpg",
+          "file_sha256": "b0a82415624857f6bf2a8be3f020ef1d73b8965407760cd21cf80a152141a334"
+        },
+        {
+          "dataset_id": 22722,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -601,
+            "margin": 4558,
+            "accepted": true
+          },
+          "after": {
+            "id": 27,
+            "char": "甘",
+            "score": -1378,
+            "margin": 4674,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/24_2_zh_shan.jpg",
+          "file_sha256": "789fbef606172c3f8853beb9128fec80e405a873d85abe7c8a488f565a4094c9"
+        }
+      ],
+      "changes": [
+        {
+          "model": "balanced",
+          "key": "135-oracle",
+          "label": "皖AKF203",
+          "mode": "oracle",
+          "before": "豫AKF203",
+          "before_accepted": false,
+          "after": "豫AKF203",
+          "after_accepted": true
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": -3432,
+          "margin": 10819,
+          "accepted": true
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 52,
+          "char": "X",
+          "score": 408,
+          "margin": 3887,
+          "accepted": true
+        }
+      ]
+    },
+    "geometry": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 34,
+          "accepted_correct": 32,
+          "accepted_wrong": 1,
+          "rejected": 5
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 17,
+          "accepted_correct": 15,
+          "accepted_wrong": 0,
+          "rejected": 3
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 17,
+          "accepted_correct": 17,
+          "accepted_wrong": 1,
+          "rejected": 2
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 256,
+          "accepted_wrong": 1,
+          "rejected": 4
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3726,
+        "correct": 3462,
+        "wrong": 31,
+        "reject": 443
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 1657,
+          "truth": "3",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 32,
+            "char": "B",
+            "score": -3112,
+            "margin": 6281,
+            "accepted": true
+          },
+          "after": {
+            "id": 32,
+            "char": "B",
+            "score": -4839,
+            "margin": 634,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/3/gt_406_1.jpg",
+          "file_sha256": "e555ca37a017dc619b6f016f0703cff887dacd3bc9b09d38de9cd03eb7da5eb9"
+        },
+        {
+          "dataset_id": 3422,
+          "truth": "6",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 32,
+            "char": "B",
+            "score": -5426,
+            "margin": 2315,
+            "accepted": false
+          },
+          "after": {
+            "id": 32,
+            "char": "B",
+            "score": -3133,
+            "margin": 6511,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/6/gt_844_1.jpg",
+          "file_sha256": "259ccc47b870ff825cacc0018f19119f6361ac533b6104744347f3567aa526e4"
+        },
+        {
+          "dataset_id": 4610,
+          "truth": "8",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 64,
+            "char": "9",
+            "score": -9283,
+            "margin": 7957,
+            "accepted": true
+          },
+          "after": {
+            "id": 51,
+            "char": "W",
+            "score": -21431,
+            "margin": 1047,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_746.jpg",
+          "file_sha256": "a084786a0b4355a6b39f4966be12db6be037937a9ac1b2930f8c41404d511aeb"
+        },
+        {
+          "dataset_id": 6074,
+          "truth": "A",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": -2144,
+            "margin": 2032,
+            "accepted": false
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": -177,
+            "margin": 7545,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/A/320_sun_A_3.jpg",
+          "file_sha256": "be6e86233e184d77731ee0abe0fb9fb1fced078c0985af7e11787ceac7074588"
+        },
+        {
+          "dataset_id": 6734,
+          "truth": "A",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": -1225,
+            "margin": 173,
+            "accepted": false
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": 4283,
+            "margin": 7252,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/A/gt_546_1.jpg",
+          "file_sha256": "34c8c89e8a6eb3ea858e192054a2300aefa35262c62b9a70974529c96b2c46fa"
+        },
+        {
+          "dataset_id": 7525,
+          "truth": "D",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 55,
+            "char": "0",
+            "score": 3369,
+            "margin": 5691,
+            "accepted": true
+          },
+          "after": {
+            "id": 55,
+            "char": "0",
+            "score": 2599,
+            "margin": 3722,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/D/gt_1092_1.jpg",
+          "file_sha256": "b8a9702db19aec398a94c7b1a81f24425cb354a28f7726e688fbcfa2b8c826bf"
+        },
+        {
+          "dataset_id": 7596,
+          "truth": "D",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 55,
+            "char": "0",
+            "score": -135,
+            "margin": 7880,
+            "accepted": true
+          },
+          "after": {
+            "id": 55,
+            "char": "0",
+            "score": -5726,
+            "margin": 2601,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/D/gt_813_2.jpg",
+          "file_sha256": "b47ac6afc19b8c9fc6655a8ed94157768ff8937b729e0087bdd3fe7d3f5f076d"
+        },
+        {
+          "dataset_id": 8143,
+          "truth": "G",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 64,
+            "char": "9",
+            "score": -8087,
+            "margin": 1284,
+            "accepted": false
+          },
+          "after": {
+            "id": 64,
+            "char": "9",
+            "score": -6212,
+            "margin": 4228,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/G/debug_specMat78.jpg",
+          "file_sha256": "f861e9c6a7269d7b340c3988410c9fbec3584ebc2386f9b222303d114ebb428c"
+        },
+        {
+          "dataset_id": 8774,
+          "truth": "L",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": 3935,
+            "margin": 7029,
+            "accepted": true
+          },
+          "after": {
+            "id": 41,
+            "char": "L",
+            "score": 5104,
+            "margin": 5135,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_2679.jpg",
+          "file_sha256": "e5d6f060c9722a6c7cdad1d7355033419b831882406d829e738d6bdd1a3fad75"
+        },
+        {
+          "dataset_id": 9823,
+          "truth": "T",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 42,
+            "char": "M",
+            "score": 1211,
+            "margin": 2209,
+            "accepted": false
+          },
+          "after": {
+            "id": 42,
+            "char": "M",
+            "score": 9812,
+            "margin": 6701,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_2152.jpg",
+          "file_sha256": "8b05358d27f70f67e8b2af9cae04efac19adbb0ae29790876429a2b40c6f4026"
+        },
+        {
+          "dataset_id": 9926,
+          "truth": "U",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 45,
+            "char": "Q",
+            "score": -1513,
+            "margin": 601,
+            "accepted": false
+          },
+          "after": {
+            "id": 45,
+            "char": "Q",
+            "score": 494,
+            "margin": 5625,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/U/debug_char_auxRoi_2560.jpg",
+          "file_sha256": "1246fc0abbad4ad7200b2dd60854713bf0a2361ef56d656e6557f8dab7624623"
+        },
+        {
+          "dataset_id": 10642,
+          "truth": "贵",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 1989,
+            "margin": 6557,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -585,
+            "margin": 9704,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat234.jpg",
+          "file_sha256": "663851cd3529d56e21aec617f31668d1d6e5a279bb1e56871ef4f3f243c999ed"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 467,
+            "margin": 564,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11025,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 550,
+            "margin": 5885,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -1291,
+            "margin": 3159,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_ji/debug_specMat135.jpg",
+          "file_sha256": "e6a87b2be0bd5cdd202bded2274d2fd79b3eb325e15370fa02dca5973db8c8ab"
+        },
+        {
+          "dataset_id": 11124,
+          "truth": "津",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 307,
+            "margin": 6393,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": -1004,
+            "margin": 886,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat25.jpg",
+          "file_sha256": "e115647672f018319b44626fdba6716dca4b6b84351559ab3ecbe9a635a47592"
+        },
+        {
+          "dataset_id": 11355,
+          "truth": "吉",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 8,
+            "char": "吉",
+            "score": -2472,
+            "margin": 396,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 7062,
+            "margin": 9919,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat880.jpg",
+          "file_sha256": "7156cdcd4c6a5d7c524243a77488860b1bf08be99711eca1ef14cdecfcb15837"
+        },
+        {
+          "dataset_id": 12452,
+          "truth": "粤",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -765,
+            "margin": 1861,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 3821,
+            "margin": 7659,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_yue/320_sun_yue_4.jpg",
+          "file_sha256": "368d39fbc1dcf352abef9a20a38eafb9fb97b9c1122d1b87857248e7aa9628b4"
+        },
+        {
+          "dataset_id": 12723,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": 2543,
+            "margin": 7836,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": -2662,
+            "margin": 1080,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_811.jpg",
+          "file_sha256": "138bad9f4cdd6a12860f5bc71e9e2ef0e1543e64b85924474615cb25a7d185e4"
+        },
+        {
+          "dataset_id": 12892,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": 1996,
+            "margin": 9009,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 162,
+            "margin": 8513,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_23_41_195413.jpg",
+          "file_sha256": "1e67526dbf4b6b3647f13682e41ddf30d9b6b7084d6b670ecd87f1eac4c5c4bc"
+        },
+        {
+          "dataset_id": 13149,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 2125,
+            "margin": 4848,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": -1919,
+            "margin": 2126,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_27_194985.jpg",
+          "file_sha256": "e7c7941c78309bdb44d7391b0ea149c69aef143cf266086a01bfee48cccc0f06"
+        },
+        {
+          "dataset_id": 13234,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -269,
+            "margin": 4470,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": -2135,
+            "margin": 1888,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_32_195365.jpg",
+          "file_sha256": "ff4ab62cfaa606bf48196ef6f744cb5750d846c7573dd929488f43391b406386"
+        },
+        {
+          "dataset_id": 14015,
+          "truth": "赣",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 883,
+            "margin": 5647,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -1408,
+            "margin": 6664,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan/chars__2017-04-23 16_46_19_224173.jpg",
+          "file_sha256": "f18f42605ae7fc8fec6077ec0f92cabbaf3a1a6849562bc1b7e8b6e02ae2ba45"
+        },
+        {
+          "dataset_id": 15524,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 1149,
+            "margin": 2140,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 2516,
+            "margin": 9782,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/14_2_zh_cuan.jpg",
+          "file_sha256": "6ef1f6b79ce1d054dc82539af0c120a43050b7421466b71b4692122d728f01f1"
+        },
+        {
+          "dataset_id": 15709,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": 1534,
+            "margin": 4522,
+            "accepted": true
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": -2175,
+            "margin": 1103,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/142.jpg",
+          "file_sha256": "54ef0d9b16496218cd39850ec28eed7379477755f2f53640749a4ccede8abab6"
+        },
+        {
+          "dataset_id": 16858,
+          "truth": "津",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": -529,
+            "margin": 1748,
+            "accepted": false
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 3040,
+            "margin": 7331,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jin/chars__2017-04-23 16_29_19_198527.jpg",
+          "file_sha256": "4e64a98e974e944eb84400d5148a36ddff3557ef6566c47588162d5207fee1b8"
+        },
+        {
+          "dataset_id": 19630,
+          "truth": "闽",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -2437,
+            "margin": 1535,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 867,
+            "margin": 4829,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_min/244_1_zh_zang.jpg",
+          "file_sha256": "6e11a720e4ccb9e7f5db44ae39f601242633184769d04b42162e0681e99cc456"
+        },
+        {
+          "dataset_id": 21276,
+          "truth": "陕",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -2036,
+            "margin": 397,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 2763,
+            "margin": 5800,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_shan/chars__2017-04-23 16_43_58_250396.jpg",
+          "file_sha256": "9ae8721ae9a78a347d74483d1948f721e519d9cbe903b8a679931f9d65eb1bd4"
+        },
+        {
+          "dataset_id": 21620,
+          "truth": "苏",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 4045,
+            "margin": 3602,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 2777,
+            "margin": 11753,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_su/41_1_zh_ning.jpg",
+          "file_sha256": "50dadd6bc47ea4a4e14852edfcd778f9a3c3710cd1cb77705249c552428e93c2"
+        },
+        {
+          "dataset_id": 22722,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 27,
+            "char": "甘",
+            "score": -601,
+            "margin": 4558,
+            "accepted": true
+          },
+          "after": {
+            "id": 27,
+            "char": "甘",
+            "score": -473,
+            "margin": 6624,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/24_2_zh_shan.jpg",
+          "file_sha256": "789fbef606172c3f8853beb9128fec80e405a873d85abe7c8a488f565a4094c9"
+        },
+        {
+          "dataset_id": 23649,
+          "truth": "湘",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 17,
+            "char": "鄂",
+            "score": -1117,
+            "margin": 3335,
+            "accepted": false
+          },
+          "after": {
+            "id": 17,
+            "char": "鄂",
+            "score": 2642,
+            "margin": 7474,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xiang/chars__2017-04-23 16_32_47_203265.jpg",
+          "file_sha256": "28cf4e64cf46c0c8d2e6dfa41f76cc685400c5b4c978f3d5594ed9a7a99be0ac"
+        },
+        {
+          "dataset_id": 23863,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": -4101,
+            "margin": 693,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": 1762,
+            "margin": 8181,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_31_196470.jpg",
+          "file_sha256": "1a7732ff36ae5ddfdbb31cc85da74f7d848dacf0f4d57e6db5d658bffc30ca93"
+        },
+        {
+          "dataset_id": 23883,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 1449,
+            "margin": 3357,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": 5870,
+            "margin": 7594,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_35_196516.jpg",
+          "file_sha256": "f31428d87fad699f1df7b8b6c6de34e0467dd0dfde37ea014f34d277ba4acd6f"
+        },
+        {
+          "dataset_id": 25442,
+          "truth": "浙",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": -1820,
+            "margin": 2075,
+            "accepted": false
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 3371,
+            "margin": 6426,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/461305_898.jpg",
+          "file_sha256": "a3fe335779f396817260c65a5dfa901f51840bd8af99ec64ac856126b4f6e044"
+        },
+        {
+          "dataset_id": 25554,
+          "truth": "浙",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 18,
+            "char": "湘",
+            "score": -2281,
+            "margin": 601,
+            "accepted": false
+          },
+          "after": {
+            "id": 18,
+            "char": "湘",
+            "score": 1873,
+            "margin": 7014,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/chars__2017-04-23 16_31_06_200269.jpg",
+          "file_sha256": "203180c3511f66885ffe8eb85deba8f10cd3180003f870882ca85606d52b4c93"
+        },
+        {
+          "dataset_id": 25922,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": 651,
+            "margin": 6585,
+            "accepted": true
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": -1655,
+            "margin": 3193,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/chars__2017-04-23 16_31_33_200951.jpg",
+          "file_sha256": "eb7552359e2714ee48b2cf5269d17d300c33c1cbbec4d2866cc7b3da824bfda1"
+        }
+      ],
+      "changes": [
+        {
+          "model": "geometry",
+          "key": "030-oracle",
+          "label": "皖AZQ867",
+          "mode": "oracle",
+          "before": "皖AZQ86Z",
+          "before_accepted": false,
+          "after": "皖AZQ867",
+          "after_accepted": true
+        },
+        {
+          "model": "geometry",
+          "key": "115-automatic",
+          "label": "皖A43Y26",
+          "mode": "automatic",
+          "before": "皖A43X26",
+          "before_accepted": true,
+          "after": "皖A43Y26",
+          "after_accepted": true
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": 928,
+          "margin": 10298,
+          "accepted": true
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 53,
+          "char": "Y",
+          "score": 7600,
+          "margin": 10783,
+          "accepted": true
+        }
+      ]
+    },
+    "geometry-regularized": {
+      "summary": {
+        "all": {
+          "pairs": 38,
+          "raw_correct": 34,
+          "accepted_correct": 34,
+          "accepted_wrong": 1,
+          "rejected": 3
+        },
+        "automatic": {
+          "pairs": 18,
+          "raw_correct": 17,
+          "accepted_correct": 17,
+          "accepted_wrong": 0,
+          "rejected": 1
+        },
+        "oracle": {
+          "pairs": 20,
+          "raw_correct": 17,
+          "accepted_correct": 17,
+          "accepted_wrong": 1,
+          "rejected": 2
+        },
+        "characters": {
+          "total": 259,
+          "raw_correct": 256,
+          "accepted_wrong": 1,
+          "rejected": 2
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3707,
+        "correct": 3448,
+        "wrong": 28,
+        "reject": 460
+      },
+      "validation_error_changes": [
+        {
+          "dataset_id": 1657,
+          "truth": "3",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 32,
+            "char": "B",
+            "score": -3112,
+            "margin": 6281,
+            "accepted": true
+          },
+          "after": {
+            "id": 63,
+            "char": "8",
+            "score": -4246,
+            "margin": 344,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/3/gt_406_1.jpg",
+          "file_sha256": "e555ca37a017dc619b6f016f0703cff887dacd3bc9b09d38de9cd03eb7da5eb9"
+        },
+        {
+          "dataset_id": 6074,
+          "truth": "A",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": -2144,
+            "margin": 2032,
+            "accepted": false
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": -1837,
+            "margin": 3811,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/A/320_sun_A_3.jpg",
+          "file_sha256": "be6e86233e184d77731ee0abe0fb9fb1fced078c0985af7e11787ceac7074588"
+        },
+        {
+          "dataset_id": 6734,
+          "truth": "A",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 56,
+            "char": "1",
+            "score": -1225,
+            "margin": 173,
+            "accepted": false
+          },
+          "after": {
+            "id": 56,
+            "char": "1",
+            "score": 2208,
+            "margin": 5300,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/A/gt_546_1.jpg",
+          "file_sha256": "34c8c89e8a6eb3ea858e192054a2300aefa35262c62b9a70974529c96b2c46fa"
+        },
+        {
+          "dataset_id": 8774,
+          "truth": "L",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 35,
+            "char": "E",
+            "score": 3935,
+            "margin": 7029,
+            "accepted": true
+          },
+          "after": {
+            "id": 41,
+            "char": "L",
+            "score": 2861,
+            "margin": 4744,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_2679.jpg",
+          "file_sha256": "e5d6f060c9722a6c7cdad1d7355033419b831882406d829e738d6bdd1a3fad75"
+        },
+        {
+          "dataset_id": 9823,
+          "truth": "T",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 42,
+            "char": "M",
+            "score": 1211,
+            "margin": 2209,
+            "accepted": false
+          },
+          "after": {
+            "id": 42,
+            "char": "M",
+            "score": 5739,
+            "margin": 5077,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_2152.jpg",
+          "file_sha256": "8b05358d27f70f67e8b2af9cae04efac19adbb0ae29790876429a2b40c6f4026"
+        },
+        {
+          "dataset_id": 10480,
+          "truth": "鄂",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 9,
+            "char": "黑",
+            "score": 4514,
+            "margin": 7313,
+            "accepted": true
+          },
+          "after": {
+            "id": 9,
+            "char": "黑",
+            "score": 695,
+            "margin": 1098,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat74.jpg",
+          "file_sha256": "8ef645e2fe0948f92fd3006d042c48f15b10f16d011be2104d4a1ab8d1e852c0"
+        },
+        {
+          "dataset_id": 10711,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 16,
+            "char": "豫",
+            "score": 3908,
+            "margin": 6977,
+            "accepted": true
+          },
+          "after": {
+            "id": 16,
+            "char": "豫",
+            "score": -938,
+            "margin": 2791,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat230.jpg",
+          "file_sha256": "feffc39b4a629c890d61f35d74ce8b0eedcd969684cf52869c83d707bce9515c"
+        },
+        {
+          "dataset_id": 10725,
+          "truth": "黑",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 174,
+            "margin": 4301,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": -288,
+            "margin": 2054,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat250.jpg",
+          "file_sha256": "491d3d5a411b7dedafb36ace7b662cde9306cb67bccafa8305744b5d18a17b60"
+        },
+        {
+          "dataset_id": 11025,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 550,
+            "margin": 5885,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -1395,
+            "margin": 3469,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_ji/debug_specMat135.jpg",
+          "file_sha256": "e6a87b2be0bd5cdd202bded2274d2fd79b3eb325e15370fa02dca5973db8c8ab"
+        },
+        {
+          "dataset_id": 11124,
+          "truth": "津",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 15,
+            "char": "鲁",
+            "score": 307,
+            "margin": 6393,
+            "accepted": true
+          },
+          "after": {
+            "id": 15,
+            "char": "鲁",
+            "score": -4965,
+            "margin": 273,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat25.jpg",
+          "file_sha256": "e115647672f018319b44626fdba6716dca4b6b84351559ab3ecbe9a635a47592"
+        },
+        {
+          "dataset_id": 11355,
+          "truth": "吉",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 8,
+            "char": "吉",
+            "score": -2472,
+            "margin": 396,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 3936,
+            "margin": 7695,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat880.jpg",
+          "file_sha256": "7156cdcd4c6a5d7c524243a77488860b1bf08be99711eca1ef14cdecfcb15837"
+        },
+        {
+          "dataset_id": 12028,
+          "truth": "皖",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 20,
+            "char": "桂",
+            "score": 3213,
+            "margin": 6367,
+            "accepted": true
+          },
+          "after": {
+            "id": 20,
+            "char": "桂",
+            "score": 1414,
+            "margin": 4058,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_wan/189-7.jpg",
+          "file_sha256": "dbc9213653c2870ef3fb1b888e03a41bd20046dd26aa7d11a4ce51b743d31be4"
+        },
+        {
+          "dataset_id": 12452,
+          "truth": "粤",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -765,
+            "margin": 1861,
+            "accepted": false
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": 3093,
+            "margin": 6986,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_yue/320_sun_yue_4.jpg",
+          "file_sha256": "368d39fbc1dcf352abef9a20a38eafb9fb97b9c1122d1b87857248e7aa9628b4"
+        },
+        {
+          "dataset_id": 12723,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": 2543,
+            "margin": 7836,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": -222,
+            "margin": 3686,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_811.jpg",
+          "file_sha256": "138bad9f4cdd6a12860f5bc71e9e2ef0e1543e64b85924474615cb25a7d185e4"
+        },
+        {
+          "dataset_id": 13149,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": 2125,
+            "margin": 4848,
+            "accepted": true
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": -1724,
+            "margin": 2378,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_27_194985.jpg",
+          "file_sha256": "e7c7941c78309bdb44d7391b0ea149c69aef143cf266086a01bfee48cccc0f06"
+        },
+        {
+          "dataset_id": 13234,
+          "truth": "川",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 23,
+            "char": "贵",
+            "score": -269,
+            "margin": 4470,
+            "accepted": true
+          },
+          "after": {
+            "id": 23,
+            "char": "贵",
+            "score": -1487,
+            "margin": 3440,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_cuan/chars__2017-04-23 16_49_32_195365.jpg",
+          "file_sha256": "ff4ab62cfaa606bf48196ef6f744cb5750d846c7573dd929488f43391b406386"
+        },
+        {
+          "dataset_id": 14015,
+          "truth": "赣",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": 883,
+            "margin": 5647,
+            "accepted": true
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -4280,
+            "margin": 2635,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_gan/chars__2017-04-23 16_46_19_224173.jpg",
+          "file_sha256": "f18f42605ae7fc8fec6077ec0f92cabbaf3a1a6849562bc1b7e8b6e02ae2ba45"
+        },
+        {
+          "dataset_id": 15524,
+          "truth": "沪",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 1149,
+            "margin": 2140,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 1296,
+            "margin": 7017,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_hu/14_2_zh_cuan.jpg",
+          "file_sha256": "6ef1f6b79ce1d054dc82539af0c120a43050b7421466b71b4692122d728f01f1"
+        },
+        {
+          "dataset_id": 15709,
+          "truth": "冀",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": 1534,
+            "margin": 4522,
+            "accepted": true
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": -2297,
+            "margin": 713,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_ji/142.jpg",
+          "file_sha256": "54ef0d9b16496218cd39850ec28eed7379477755f2f53640749a4ccede8abab6"
+        },
+        {
+          "dataset_id": 16858,
+          "truth": "津",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 5,
+            "char": "晋",
+            "score": -529,
+            "margin": 1748,
+            "accepted": false
+          },
+          "after": {
+            "id": 5,
+            "char": "晋",
+            "score": 1439,
+            "margin": 5667,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jin/chars__2017-04-23 16_29_19_198527.jpg",
+          "file_sha256": "4e64a98e974e944eb84400d5148a36ddff3557ef6566c47588162d5207fee1b8"
+        },
+        {
+          "dataset_id": 17166,
+          "truth": "京",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 21,
+            "char": "琼",
+            "score": 2520,
+            "margin": 6757,
+            "accepted": true
+          },
+          "after": {
+            "id": 21,
+            "char": "琼",
+            "score": 1699,
+            "margin": 5064,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_jing/1230.jpg",
+          "file_sha256": "9b891af3111eabc958ffafdc25a16b326d2e0b061ad314809c0775986f48d898"
+        },
+        {
+          "dataset_id": 18977,
+          "truth": "鲁",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": -2897,
+            "margin": 6167,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -3574,
+            "margin": 5218,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_lu/3172_1105.jpg",
+          "file_sha256": "8ea9a81ec26d12f624a2009810dc809f537b84ad1339e1f791f054efc68a4a6e"
+        },
+        {
+          "dataset_id": 21073,
+          "truth": "琼",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": 7445,
+            "margin": 12024,
+            "accepted": true
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": 2447,
+            "margin": 4803,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_qiong/chars__2017-04-03 20_26_02.jpg",
+          "file_sha256": "11d33b0be7504b2944e58b3689f845bb0fd6aa752abbbb2cd22cb4ea0f28ccf9"
+        },
+        {
+          "dataset_id": 21620,
+          "truth": "苏",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 22,
+            "char": "川",
+            "score": 4045,
+            "margin": 3602,
+            "accepted": false
+          },
+          "after": {
+            "id": 22,
+            "char": "川",
+            "score": 1716,
+            "margin": 7061,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_su/41_1_zh_ning.jpg",
+          "file_sha256": "50dadd6bc47ea4a4e14852edfcd778f9a3c3710cd1cb77705249c552428e93c2"
+        },
+        {
+          "dataset_id": 22758,
+          "truth": "皖",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": -1647,
+            "margin": 7105,
+            "accepted": false
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": -496,
+            "margin": 6803,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_wan/758.jpg",
+          "file_sha256": "a6dcbf7f5c64684d4a2f5c55fbec29a4280537cbba6c837553669e71eba504d5"
+        },
+        {
+          "dataset_id": 23649,
+          "truth": "湘",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 17,
+            "char": "鄂",
+            "score": -1117,
+            "margin": 3335,
+            "accepted": false
+          },
+          "after": {
+            "id": 17,
+            "char": "鄂",
+            "score": 3009,
+            "margin": 8120,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xiang/chars__2017-04-23 16_32_47_203265.jpg",
+          "file_sha256": "28cf4e64cf46c0c8d2e6dfa41f76cc685400c5b4c978f3d5594ed9a7a99be0ac"
+        },
+        {
+          "dataset_id": 23863,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 4,
+            "char": "冀",
+            "score": -4101,
+            "margin": 693,
+            "accepted": false
+          },
+          "after": {
+            "id": 4,
+            "char": "冀",
+            "score": -657,
+            "margin": 5785,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_31_196470.jpg",
+          "file_sha256": "1a7732ff36ae5ddfdbb31cc85da74f7d848dacf0f4d57e6db5d658bffc30ca93"
+        },
+        {
+          "dataset_id": 23883,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 28,
+            "char": "青",
+            "score": 1449,
+            "margin": 3357,
+            "accepted": false
+          },
+          "after": {
+            "id": 28,
+            "char": "青",
+            "score": 3518,
+            "margin": 5289,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_35_196516.jpg",
+          "file_sha256": "f31428d87fad699f1df7b8b6c6de34e0467dd0dfde37ea014f34d277ba4acd6f"
+        },
+        {
+          "dataset_id": 23887,
+          "truth": "新",
+          "change": "new_accepted_error",
+          "before": {
+            "id": 13,
+            "char": "闽",
+            "score": -2641,
+            "margin": 8213,
+            "accepted": false
+          },
+          "after": {
+            "id": 13,
+            "char": "闽",
+            "score": -1535,
+            "margin": 7284,
+            "accepted": true
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_xin/chars__2017-04-23 16_26_36_196531.jpg",
+          "file_sha256": "27464596d84f128817add1afb2653645edc3a215506d25ad9526d3d41a5139d4"
+        },
+        {
+          "dataset_id": 25922,
+          "truth": "浙",
+          "change": "removed_accepted_error",
+          "before": {
+            "id": 19,
+            "char": "粤",
+            "score": 651,
+            "margin": 6585,
+            "accepted": true
+          },
+          "after": {
+            "id": 19,
+            "char": "粤",
+            "score": -2159,
+            "margin": 3080,
+            "accepted": false
+          },
+          "path": "tmp/blue-plate-g1/chinese-gray/annCh/zh_zhe/chars__2017-04-23 16_31_33_200951.jpg",
+          "file_sha256": "eb7552359e2714ee48b2cf5269d17d300c33c1cbbec4d2866cc7b3da824bfda1"
+        }
+      ],
+      "changes": [
+        {
+          "model": "geometry-regularized",
+          "key": "030-oracle",
+          "label": "皖AZQ867",
+          "mode": "oracle",
+          "before": "皖AZQ86Z",
+          "before_accepted": false,
+          "after": "皖AZQ867",
+          "after_accepted": true
+        },
+        {
+          "model": "geometry-regularized",
+          "key": "066-automatic",
+          "label": "皖AYL155",
+          "mode": "automatic",
+          "before": "皖AYL155",
+          "before_accepted": false,
+          "after": "皖AYL155",
+          "after_accepted": true
+        },
+        {
+          "model": "geometry-regularized",
+          "key": "115-automatic",
+          "label": "皖A43Y26",
+          "mode": "automatic",
+          "before": "皖A43X26",
+          "before_accepted": true,
+          "after": "皖A43Y26",
+          "after_accepted": true
+        },
+        {
+          "model": "geometry-regularized",
+          "key": "192-automatic",
+          "label": "皖AY8R52",
+          "mode": "automatic",
+          "before": "皖AY8R52",
+          "before_accepted": false,
+          "after": "皖AY8R52",
+          "after_accepted": true
+        }
+      ],
+      "targets": [
+        {
+          "key": "050-oracle",
+          "position": 6,
+          "truth": "V",
+          "id": 51,
+          "char": "W",
+          "score": -3068,
+          "margin": 4222,
+          "accepted": true
+        },
+        {
+          "key": "115-automatic",
+          "position": 4,
+          "truth": "Y",
+          "id": 53,
+          "char": "Y",
+          "score": 3974,
+          "margin": 6101,
+          "accepted": true
+        }
+      ]
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "version": "edge-quality-30fps",
-  "build_id": "0x6010100f",
+  "build_id": "0x60101704",
   "original_project": "camera_trials/median_source_20261013/quality_preserve/resource2",
-  "bitstream_sha256": "cb2809a860f8a2a9b8818e1be1317c7ae756d6c7247e9dd752f57fc6c707765d",
+  "bitstream_sha256": "6e8c40886106793b78ef0dea46ee7b77d266fddbf51ae1cf33b15cfc318709df",
   "source_files": [
     {
       "path": "debug.json",
@@ -36,8 +36,9 @@
     },
     {
       "path": "status_snapshot.json",
-      "sha256": "2b796fe133e4dde43b9ccabbb25ccd6c3e1bfcc9d6d142ce6e8ec90c2305317e",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/status_snapshot.json"
+      "sha256": "d868c61a58ee280261a1f94b7d03a6a84ce625c8bc08eacef53c796e4c9c9800",
+      "source": "coding/edge-quality-30fps/status_snapshot.json",
+      "previous_sha256": "2b796fe133e4dde43b9ccabbb25ccd6c3e1bfcc9d6d142ce6e8ec90c2305317e"
     },
     {
       "path": "tb_canny_hysteresis.v",
@@ -46,23 +47,29 @@
     },
     {
       "path": "tb_canny_local.v",
-      "sha256": "586e6e4ff5905cc37a2eb107372d842aff12f0d052d3aede4a55714dfde9e2ff",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_canny_local.v"
+      "sha256": "3fb2da0fb88e6a17e599fb6262df9a2506720d6e1ce32d1ea301fb9b54108c09",
+      "source": "coding/edge-quality-30fps/tests/tb_canny_local.v",
+      "previous_sha256": "586e6e4ff5905cc37a2eb107372d842aff12f0d052d3aede4a55714dfde9e2ff"
     },
     {
       "path": "tb_canny_rules.v",
-      "sha256": "5a01e2137f7933aa544a18acda33d60dcf6df6a698aa91a569e95e4bffa6e05c",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_canny_rules.v"
+      "sha256": "df051d047e1672effd320aad70ac536097a03f3557b2d73e87934b65c1089e65",
+      "source": "coding/edge-quality-30fps/tests/tb_canny_rules.v",
+      "previous_sha256": "9822e881e717f2536d7249966d1d878aad2efcf3abc9f7c1f96f0f2d3db035a2",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_canny_rules.v"
     },
     {
       "path": "tb_canny_store.v",
-      "sha256": "f4b6763736c2917b73fd000070162f11d5e850c4d75853775efacecd3a961a47",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_canny_store.v"
+      "sha256": "2b53320827bc3421e7f733835b682b007942a4ec6ad5d70ebc59636f98e41b0d",
+      "source": "coding/edge-quality-30fps/tests/tb_canny_store.v",
+      "previous_sha256": "ce75b4eeaeaab06806191cc6120112f09ce729227bd4ee9f4695f44821c7f8cf"
     },
     {
       "path": "tb_compare_display.v",
-      "sha256": "05962c358b415ae791895526010aa9a4cc6086b8171d238eabf2c71452983406",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_compare_display.v"
+      "sha256": "8ce77418eba6b524644f014d2b01f948b8a1224b07a969eaf4f68b25188a8937",
+      "source": "coding/edge-quality-30fps/tests/tb_compare_display.v",
+      "previous_sha256": "05962c358b415ae791895526010aa9a4cc6086b8171d238eabf2c71452983406",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_compare_display.v"
     },
     {
       "path": "tb_compare_pipeline.v",
@@ -86,13 +93,17 @@
     },
     {
       "path": "tb_edge_ui.v",
-      "sha256": "32ecce909658afe2d618074b2ca67b76e5f2515fd0c95e221b36ccc60cdea42e",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_edge_ui.v"
+      "sha256": "096e0aa3a1e4b7b8feb70ff192d799d153b3c52c7c5707a47996083c08149c3d",
+      "source": "coding/edge-quality-30fps/tests/tb_edge_ui.v",
+      "previous_sha256": "020ff480270da28c65161a6252ed5a3d2649b03e40164308bd8218b2ded5a6c1",
+      "origin_source": "coding/edge-quality-30fps/tests/tb_edge_ui.v"
     },
     {
       "path": "tb_frame_display.v",
-      "sha256": "696100b788c567482bcc0dba723b5b12c9cc3cd01ebde9e47584a254736b3ead",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_frame_display.v"
+      "sha256": "dcd64f26877e19c01b4f06f39315f9d582f425dc7f6c5bf87245ea9486260c8e",
+      "source": "coding/edge-quality-30fps/tests/tb_frame_display.v",
+      "previous_sha256": "696100b788c567482bcc0dba723b5b12c9cc3cd01ebde9e47584a254736b3ead",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_frame_display.v"
     },
     {
       "path": "tb_frame_memory_probe.v",
@@ -111,13 +122,17 @@
     },
     {
       "path": "tb_frame_store.v",
-      "sha256": "556c0aceefb75f10ab525b7f2a394d6aaf2c0b7cd5427da191aee3cc4480c9dc",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_frame_store.v"
+      "sha256": "6ba944768e87ebf07c2f7babcb2fd9566995ee5e3c23c6a0a05fd67bfd8024f3",
+      "source": "coding/edge-quality-30fps/tests/tb_frame_store.v",
+      "previous_sha256": "3ac58221b5e2ab226001157ceeed950fae54a7a9ce41f583317f5e542330636a",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_frame_store.v"
     },
     {
       "path": "tb_frame_store_control.v",
-      "sha256": "fb2b2fac76705c481f693682a72fe2f5a7a0adbbc46e7cf83aab9b0b66eec72d",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_frame_store_control.v"
+      "sha256": "e0bfea4258f49974ef9776a520f5ba9abd70afaaf59bb89c8899c76324e8a108",
+      "source": "coding/edge-quality-30fps/tests/tb_frame_store_control.v",
+      "previous_sha256": "4b060b92b4aa98dae2d57774b95fbc865ac93ed89e3b8cd5fe939e9cf1e212c2",
+      "origin_source": "coding/edge-quality-30fps/tests/tb_frame_store_control.v"
     },
     {
       "path": "tb_full_view.v",
@@ -188,8 +203,10 @@
     },
     {
       "path": "tb_threshold_control.v",
-      "sha256": "12f233940fccbd2b3c60507f9895d24a7e515097b994b055159c0db0782c4bd0",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/tb_threshold_control.v"
+      "sha256": "ed53c2589e4f02de4684ce540cd8ac0d1786290455802e458eee14686cdb078a",
+      "source": "coding/edge-quality-30fps/tests/tb_threshold_control.v",
+      "previous_sha256": "ed77dfe96331d89a94995260290786064874353460d89722db15c12ff61b153d",
+      "origin_source": "coding/edge-quality-30fps/tests/tb_threshold_control.v"
     },
     {
       "path": "tb_threshold_osd.v",
@@ -233,8 +250,10 @@
     },
     {
       "path": "rtl/compare_display.v",
-      "sha256": "7c4eb37f22fc9f509c7019e15f9ecdcb4cae6e2aac6d2b57318b3feb7405f207",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/compare_display.v"
+      "sha256": "2fa8da219de24cfce20be469f8a931738654a9f2e1f405e37c323051808957a4",
+      "source": "coding/edge-quality-30fps/rtl/compare_display.v",
+      "previous_sha256": "7c4eb37f22fc9f509c7019e15f9ecdcb4cae6e2aac6d2b57318b3feb7405f207",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/compare_display.v"
     },
     {
       "path": "rtl/csi_rx_controller.sv",
@@ -253,13 +272,17 @@
     },
     {
       "path": "rtl/edge_algorithm_pair.v",
-      "sha256": "0802f0802f12d43a00ecb7a80bc2e19dc1e121dde8f8d97c8e6b4817e5b0b750",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/edge_algorithm_pair.v"
+      "sha256": "610609b8667014b0c42f8dd9d888950c93b07fa54d3fd1197328a127d5ed8944",
+      "source": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+      "previous_sha256": "c9471e0a986565b2a4460daff59dfdddbbeaea1db3935d5dcea974ad660b6974",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/edge_algorithm_pair.v"
     },
     {
       "path": "rtl/edge_ui.v",
-      "sha256": "c829ae814ce589d07b1461b06d14fb7a0f4b3084e27d9af64b370599fbef0395",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/edge_ui.v"
+      "sha256": "afefdd3d5ed3e58a8e89161699f0a70bddf126ad8a7c65ef722e4a6010ca20a5",
+      "source": "coding/edge-quality-30fps/rtl/edge_ui.v",
+      "previous_sha256": "1a77b209e0ec21ff44fb1ca0692c175773c0b3ebb49ac5d30129085b3cf5131e",
+      "origin_source": "coding/edge-quality-30fps/rtl/edge_ui.v"
     },
     {
       "path": "rtl/efx_dsi_tx.sv",
@@ -283,28 +306,38 @@
     },
     {
       "path": "rtl/frame_store.v",
-      "sha256": "0c99e04e55798c37f65315681ecc2f5efa495982dd50ea3e7b7a28369866c371",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/frame_store.v"
+      "sha256": "2aaa5037cc3cb220dd07135d252c84ab11befe752618184d56b442c6b46ad628",
+      "source": "coding/edge-quality-30fps/rtl/frame_store.v",
+      "previous_sha256": "eb98b5d3967c6079c1ee1dcac4806c322209d538197a0234f3e7da1c34256934",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/frame_store.v"
     },
     {
       "path": "rtl/frame_store_control.v",
-      "sha256": "66ef59c1a86643002394c12d4c0f6a662e36767d8f52e0232fbcda4576f0ba98",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/frame_store_control.v"
+      "sha256": "3f5e0b41c35c77a3f4142ea9b2d1409d4f483d023fc2cb8624a62e178b5eaa96",
+      "source": "coding/edge-quality-30fps/rtl/frame_store_control.v",
+      "previous_sha256": "14e556a9ee9b6bcbcb2b8991c2b3f0988740a0556f7730ec6915db84712e55a4",
+      "origin_source": "coding/edge-quality-30fps/rtl/frame_store_control.v"
     },
     {
       "path": "rtl/frame_store_dma.v",
-      "sha256": "3d6bda3b5fe916fc1af380d1dc28eb7717272b64e3ae25d117bcabad96ac28f0",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/frame_store_dma.v"
+      "sha256": "b70b6ff71c0029bc8041f321edbd6983e596aaa2cbe369d83fc8e4402bbd8377",
+      "source": "coding/edge-quality-30fps/rtl/frame_store_dma.v",
+      "previous_sha256": "3d6bda3b5fe916fc1af380d1dc28eb7717272b64e3ae25d117bcabad96ac28f0",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/frame_store_dma.v"
     },
     {
       "path": "rtl/gaussian_pair.v",
-      "sha256": "e7bef78824d7244712abe8b438fd64a8a2412bccf930ab386a688f2567a89574",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/gaussian_pair.v"
+      "sha256": "8a45b5d3e2cf7c0a04687a217eb63a37dad2ab68e3ee724a8c43e770612a7aad",
+      "source": "coding/edge-quality-30fps/rtl/gaussian_pair.v",
+      "previous_sha256": "44de998f14a85b93bd3f192bd267e4823fd15e19bfbb31de29ccd679e725829c",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/gaussian_pair.v"
     },
     {
       "path": "rtl/median_pair.v",
-      "sha256": "d90d76c508b4c7fcb5b603b5a0aa21a543ab1a75fe4443eb20fa236416fa2b92",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/median_pair.v"
+      "sha256": "c56d0389c28aba7e6463b0158b46edb363bbe13a72ad32442f104b80944ba088",
+      "source": "coding/edge-quality-30fps/rtl/median_pair.v",
+      "previous_sha256": "d90d76c508b4c7fcb5b603b5a0aa21a543ab1a75fe4443eb20fa236416fa2b92",
+      "origin_source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/median_pair.v"
     },
     {
       "path": "rtl/raw_edgeaware_area.v",
@@ -323,8 +356,9 @@
     },
     {
       "path": "rtl/shape_recognizer.v",
-      "sha256": "86bf7302f10d308d1f0ff3eeab9692ff1d2e9c9917688f15a74153314da96e1a",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/shape_recognizer.v"
+      "sha256": "f04a6632bfe273a4b0389e9270149c10bc023fcebb37759bad83e7582795924c",
+      "source": "coding/edge-quality-30fps/rtl/shape_recognizer.v",
+      "previous_sha256": "86bf7302f10d308d1f0ff3eeab9692ff1d2e9c9917688f15a74153314da96e1a"
     },
     {
       "path": "rtl/simple_dual_port_ram.v",
@@ -338,18 +372,24 @@
     },
     {
       "path": "rtl/threshold_control.v",
-      "sha256": "0eb2ec9c2ef795aa60c9b4ffe1ffc26bdca0462f32d2ceb92802910b810d9852",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/threshold_control.v"
+      "sha256": "21d56606018ec9b1860098cf25aecc996afb5dedad34d5d28850223309e7a0a1",
+      "source": "coding/edge-quality-30fps/rtl/threshold_control.v",
+      "previous_sha256": "1605e5165555cbf38a133117691facf1987747f221c761f5f47e121a2296d263",
+      "origin_source": "coding/edge-quality-30fps/rtl/threshold_control.v"
     },
     {
       "path": "rtl/threshold_osd.v",
-      "sha256": "b313867ad246c3fc9f3cd982bb34b5e26c073af10fe9769c4d14c6fe371057bb",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/threshold_osd.v"
+      "sha256": "bda08246d2f34e4adb50f9074d9a764c0ee84f55ef105e5e46d816afe4e17123",
+      "source": "coding/edge-quality-30fps/rtl/threshold_osd.v",
+      "previous_sha256": "cba79c3380da4a5a4a08224438ab543dc9fd5861b1658b6881808b1c86e18c2d",
+      "origin_source": "coding/edge-quality-30fps/rtl/threshold_osd.v"
     },
     {
       "path": "rtl/ti60f225_oob_top.v",
-      "sha256": "c697c87f1cf0b2549aa4f0ba6731836766daa15f6c07b41e9e4506f47ec0092a",
-      "source": "camera_trials/median_source_20261013/quality_preserve/resource2/rtl/ti60f225_oob_top.v"
+      "sha256": "bf9f348865c69d7bc03377d1f0dd44cd30a8d270b487319ef03132a183378dbe",
+      "source": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+      "previous_sha256": "18814daba55d1b187a2fd4cd19f7fab68ecce5629cad10465506c64d75be0296",
+      "origin_source": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v"
     },
     {
       "path": "rtl/true_dual_port_ram.v",
@@ -1010,6 +1050,68 @@
       "path": "ip/csi_rx_controller/ipm/graph.pickle",
       "sha256": "53a0ce7af9a182004af0e527799e9a1f6299ae0dc89e97360ee49516b235f7e2",
       "source": "camera_trials/median_source_20261013/quality_preserve/resource2/ip/csi_rx_controller/ipm/graph.pickle"
+    },
+    {
+      "path": "control.py",
+      "sha256": "2e0ebbb0b04bc16cb2cc12ef3e2622e40726e3aa891cedf4ba09235b005c993f",
+      "source": "coding/edge-quality-30fps/control.py",
+      "previous_sha256": "591df68de47004a14f31fa153480e912ede335e572d52ff862d59b2f0a45015f",
+      "origin_source": "coding/edge-quality-30fps/control.py"
+    },
+    {
+      "path": "load.cmd",
+      "sha256": "16c0f6096a595839aecb3d703af81f74beb8a60ffde2ef547819cc672b27f10b",
+      "source": "coding/edge-quality-30fps/load.cmd",
+      "previous_sha256": "69755ce97ba1dd4719e8698e54375865f744881359c7fff8a14857a35b0f94c3",
+      "origin_source": "coding/edge-quality-30fps/load.cmd"
+    },
+    {
+      "path": "tests/regression.py",
+      "sha256": "514ea8b9e9deead31eca813126405445aa394754fa21bc49bd8a7feda73fcd96",
+      "source": "coding/edge-quality-30fps/tests/regression.py",
+      "previous_sha256": "3b805b4b6b614e065edbf00cfa42b4613df315cb3c6ab971e7263eb0dfb383ed"
+    },
+    {
+      "path": "tests/tb_demo_osd.v",
+      "sha256": "a99ffc64786437abc265a2057b8bdea1b8e6f7afda94c022cc50892847a689c8",
+      "source": "coding/edge-quality-30fps/tests/tb_demo_osd.v",
+      "previous_sha256": "af12b55857215fb4f3fa15c1d7de00ae8e7125c666da264481ba85fbd07073a3",
+      "origin_source": "coding/edge-quality-30fps/tests/tb_demo_osd.v"
+    },
+    {
+      "path": "recognition.cmd",
+      "sha256": "ac6211cb1ad836cfc96d8b9b3a2a0c4226607ac41233e488bc0a7039b2d78045",
+      "source": "coding/edge-quality-30fps/recognition.cmd"
+    },
+    {
+      "path": "tests/tools/test-shape-smoothing.py",
+      "sha256": "12cc5e311beeeba4011e2063d3df91acedc0a4761f651bfbad61b7256df36dd4",
+      "source": "coding/edge-quality-30fps/tests/tools/test-shape-smoothing.py"
+    },
+    {
+      "path": "tests/tools/canny_reference.py",
+      "sha256": "c5539c58856ca290306ade2e2a4be2239c6b4380accbfc76873b49a204126f4f",
+      "source": "coding/edge-quality-30fps/tests/tools/canny_reference.py"
+    },
+    {
+      "path": "tests/tools/test-canny-store.py",
+      "sha256": "57d5e50b9c02b249268f3103f5269876ebdba825f0da870d5b6be11a328f8203",
+      "source": "coding/edge-quality-30fps/tests/tools/test-canny-store.py"
+    },
+    {
+      "path": "tests/tools/test-canny-store-quality.py",
+      "sha256": "13b2492cb3a5bd714c414877437e5884dd624c8e9bec1cc2612c4b0adf49ab3f",
+      "source": "coding/edge-quality-30fps/tests/tools/test-canny-store-quality.py"
+    },
+    {
+      "path": "tests/tools/test-paged-status.py",
+      "sha256": "01322f2ae385b143894c4d576683a3c6366e2ecce3f77e20a55cf42761647acd",
+      "source": "coding/edge-quality-30fps/tests/tools/test-paged-status.py"
+    },
+    {
+      "path": "tests/tb_shape_budget.v",
+      "sha256": "4f2d5eb5dec4000a1e33de26b5692aa7db91179638e3669f115d0519bb442ad5",
+      "source": "coding/edge-quality-30fps/tests/tb_shape_budget.v"
     }
   ],
   "config_sha256": {
@@ -1019,6 +1121,14 @@
   "runtime_sha256": {
     "full_view_profile.json": "05544d268b8a750ffb98625e134d9c776eee0f57838aa9a696b00564aea5bb36",
     "config/sensor.json": "a9a4d80a9cd5c462b1d5144c7465f99ae2ff5f29fb289b4e75cdc37aff3c62d7",
-    "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f"
+    "config/white-balance.json": "5fa664fd5cb0286c219e750fabe97582ab967453143df6ec00404e70bd75d86f",
+    "status_snapshot.json": "d868c61a58ee280261a1f94b7d03a6a84ce625c8bc08eacef53c796e4c9c9800"
+  },
+  "parent_bitstream_sha256": "58e7dcec0b6beb61729d2b5f1ad84a274cc5ca99e70fadf4a2fa98cdf4281874",
+  "revision": "task8-keys-20261017",
+  "acceptance": "pending-user",
+  "validation": "docs/validation/edge-quality-30fps/task8-keys-20261017.md",
+  "resource_headroom_percent": {
+    "XLRs": 19
   }
 }

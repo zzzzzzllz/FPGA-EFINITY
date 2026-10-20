@@ -1,0 +1,6 @@
+CHECK changing RGB frame 10 complete words=230400 expected=230400
+CHECK changing RGB frame 11 complete words=230400 expected=230400
+CHECK changing RGB frame 12 complete words=230400 expected=230400
+CHECK changing RGB frame 13 complete words=230400 expected=230400
+PASS live RGB 1280x720: four changing frames, exact RGB/coordinates, AXI and display stalls, no history commands
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-video-base\tests\full-complete-inputs\tb_live_rgb.v:187: $finish called at 138176787000 (1ps)

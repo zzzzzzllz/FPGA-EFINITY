@@ -1,0 +1,614 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-86_91-298%26341_449%26414-458%26394_308%26410_304%26357_454%26341-0_0_14_28_24_26_29-124-24.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-86_91-298&341_449&414-458&394_308&410_304&357_454&341-0_0_14_28_24_26_29-124-24.jpg",
+    "bytes": 69119,
+    "sha256": "7bd4c8e48efbd284879b246f987ea0d46451aa5851d8e2e603458bcc92a666df"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-89_84-231%26482_413%26539-422%26537_242%26536_219%26475_399%26476-0_0_15_11_25_26_26-121-16.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_84-231&482_413&539-422&537_242&536_219&475_399&476-0_0_15_11_25_26_26-121-16.jpg",
+    "bytes": 87592,
+    "sha256": "2bcbd59be6cd8dc68774966ec3c5731201adad82ed09e0ea5956fc859b659432"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-89_90-302%26482_487%26539-497%26538_295%26550_294%26490_496%26478-0_0_30_25_29_31_24-130-26.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_90-302&482_487&539-497&538_295&550_294&490_496&478-0_0_30_25_29_31_24-130-26.jpg",
+    "bytes": 62550,
+    "sha256": "4ffc147125db3ebae5bcb5c3db4857bab7ac769bd584259bd268cde6051ece4b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-89_92-300%26547_485%26612-496%26612_301%26613_297%26552_492%26551-0_0_28_32_30_31_33-140-41.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_92-300&547_485&612-496&612_301&613_297&552_492&551-0_0_28_32_30_31_33-140-41.jpg",
+    "bytes": 78474,
+    "sha256": "64777520df048500d994fcb35d20ec6be5998a26a104fa6414e342f425ba2ccb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-90_78-181%26326_369%26395-375%26403_178%26391_165%26323_362%26335-0_0_23_25_33_30_9-94-13.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_78-181&326_369&395-375&403_178&391_165&323_362&335-0_0_23_25_33_30_9-94-13.jpg",
+    "bytes": 46233,
+    "sha256": "b35ec15813992a9c9c79a0abcaa9381e84c6fe00b7a524e5db8ecda9fa4a76aa"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-90_85-274%26361_472%26420-475%26416_277%26422_271%26357_469%26351-0_0_25_29_33_26_30-165-31.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_85-274&361_472&420-475&416_277&422_271&357_469&351-0_0_25_29_33_26_30-165-31.jpg",
+    "bytes": 63335,
+    "sha256": "7c46173790d95a7b6c1c91525b6217047cb28fa9c728dff4279a7ccab48a3e81"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-90_85-274%26482_457%26544-456%26545_270%26533_261%26470_447%26482-0_0_16_24_31_28_31-146-27.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_85-274&482_457&544-456&545_270&533_261&470_447&482-0_0_16_24_31_28_31-146-27.jpg",
+    "bytes": 72681,
+    "sha256": "1eaf9a1f8615b163139d5cea31396c2b793f4b63ad99e9f3fe4d88fede870690"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-90_86-222%26446_405%26507-400%26505_225%26500_227%26442_402%26447-0_0_20_0_24_30_26-66-28.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-222&446_405&507-400&505_225&500_227&442_402&447-0_0_20_0_24_30_26-66-28.jpg",
+    "bytes": 117724,
+    "sha256": "0174c2b57a1f4d70af7e0742c128c0fbff26d8c886086e2ac3aeae6c34bd568f"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-90_86-307%26460_498%26529-501%26530_302%26528_303%26463_502%26465-0_0_14_10_33_32_29-108-26.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-307&460_498&529-501&530_302&528_303&463_502&465-0_0_14_10_33_32_29-108-26.jpg",
+    "bytes": 83811,
+    "sha256": "5974d391a31882f2ae45e36df1f4bc35130b9071467c4f118e94d7e74cf7ea7b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_base/01-90_87-240%26501_441%26563-437%26567_237%26561_230%26490_430%26496-0_0_2_12_32_26_26-180-20.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_87-240&501_441&563-437&567_237&561_230&490_430&496-0_0_2_12_32_26_26-180-20.jpg",
+    "bytes": 78469,
+    "sha256": "a5fe061ef525b766b846e576f5b0dc3a03d34f50ac1e7bb0b9259900e70276f7"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/01-1_3-263%26456_407%26514-407%26510_268%26514_263%26460_402%26456-0_0_10_23_32_28_33-166-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/01-1_3-263&456_407&514-407&510_268&514_263&460_402&456-0_0_10_23_32_28_33-166-2.jpg",
+    "bytes": 55478,
+    "sha256": "8906827a6568a8cfb4ef54fe1eb20df99d840b583e25bede5d65ecafc0a6e602"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/01-2_3-306%26477_450%26535-450%26535_307%26528_306%26477_449%26484-0_0_15_32_30_29_1-131-4.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/01-2_3-306&477_450&535-450&535_307&528_306&477_449&484-0_0_15_32_30_29_1-131-4.jpg",
+    "bytes": 89949,
+    "sha256": "5aa3ef4ff19e41377e6bb33db2ffd19323afa195ac9950c48d63cc7ea6a57705"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/02-1_4-352%26371_544%26458-539%26454_352%26458_357%26375_544%26371-0_0_20_24_21_30_27-19-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-1_4-352&371_544&458-539&454_352&458_357&375_544&371-0_0_20_24_21_30_27-19-2.jpg",
+    "bytes": 39751,
+    "sha256": "58978b8cd1d9d8150b0a43f9a5ae9f93524288321c9b0779e8d124b19c02c94a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/02-22_32-248%26422_392%26538-392%26538_259%26483_248%26422_381%26477-0_0_19_17_26_26_27-90-5.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-22_32-248&422_392&538-392&538_259&483_248&422_381&477-0_0_19_17_26_26_27-90-5.jpg",
+    "bytes": 41590,
+    "sha256": "b2e64ba4a79d92aa8edc22993107f582b15a958b3b4446f5bde843bddc8e942c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/02-3_2-234%26503_426%26590-418%26590_234%26579_242%26503_426%26514-0_0_1_30_27_27_29-157-5.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-3_2-234&503_426&590-418&590_234&579_242&503_426&514-0_0_1_30_27_27_29-157-5.jpg",
+    "bytes": 53107,
+    "sha256": "d4f2b7cb9a6957ec6ff1d489d8b794d6ff8b7be4b2293b4580a24b2c5a0aa1c2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/02-3_3-297%26451_489%26538-489%26538_297%26527_297%26451_489%26462-0_0_15_21_27_32_33-177-6.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-3_3-297&451_489&538-489&538_297&527_297&451_489&462-0_0_15_21_27_32_33-177-6.jpg",
+    "bytes": 60672,
+    "sha256": "7da7a15dffd8597dcd99f21389ff53233ad9f400536c2e1f7afc1ce22066c4de"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/02-4_11-250%26466_442%26553-442%26553_259%26539_250%26466_433%26480-0_12_14_30_26_24_24-38-3.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-4_11-250&466_442&553-442&553_259&539_250&466_433&480-0_12_14_30_26_24_24-38-3.jpg",
+    "bytes": 44247,
+    "sha256": "4ae10106b205488447a3e0054517cfb687eacbf61ca2d8a791d502c6b11a6832"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/03-1_1-332%26441_593%26537-589%26537_332%26532_336%26441_593%26446-0_0_9_32_25_32_29-131-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/03-1_1-332&441_593&537-589&537_332&532_336&441_593&446-0_0_9_32_25_32_29-131-2.jpg",
+    "bytes": 35485,
+    "sha256": "ea38c64a17e05e58a20b5068e5e67f5127870fa7f3316d8080c7952237a82638"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/03-1_28-193%26500_481%26587-481%26587_235%26582_193%26500_439%26505-0_0_23_13_26_25_26-87-3.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/03-1_28-193&500_481&587-481&587_235&582_193&500_439&505-0_0_23_13_26_25_26-87-3.jpg",
+    "bytes": 39829,
+    "sha256": "da2567cd17f034ded5b279476de4d1854c7332439e57b4b5f09e58273f324e6a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_blur/03-1_9-274%26459_535%26555-517%26555_274%26547_292%26459_535%26467-0_0_32_27_18_26_26-127-5.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/03-1_9-274&459_535&555-517&555_274&547_292&459_535&467-0_0_32_27_18_26_26-127-5.jpg",
+    "bytes": 55551,
+    "sha256": "b9a060f4eca4659d6d496f00bc08c9170999e2339bd28a47bbb7b39d6ed19f4d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/01-0_0-276%26527_420%26585-420%26583_276%26585_276%26529_420%26527-0_0_7_27_30_30_23-98-6.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-0_0-276&527_420&585-420&583_276&585_276&529_420&527-0_0_7_27_30_30_23-98-6.jpg",
+    "bytes": 54082,
+    "sha256": "789050cf4512f87b98522ad6eb6b54ed52a7d08b045847e11e53c2f46b7c2a31"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/01-0_0-277%26502_421%26560-420%26560_277%26559_278%26502_421%26503-0_0_28_7_24_26_24-143-28.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-0_0-277&502_421&560-420&560_277&559_278&502_421&503-0_0_28_7_24_26_24-143-28.jpg",
+    "bytes": 74806,
+    "sha256": "4780a5db2dab63d42a5eb12a216713abea12213e9744fe62a3078194248a7ac1"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/01-1_3-263%26456_407%26514-407%26510_268%26514_263%26460_402%26456-0_0_10_23_32_28_33-166-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-1_3-263&456_407&514-407&510_268&514_263&460_402&456-0_0_10_23_32_28_33-166-2.jpg",
+    "bytes": 55478,
+    "sha256": "8906827a6568a8cfb4ef54fe1eb20df99d840b583e25bede5d65ecafc0a6e602"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/01-2_0-273%26491_417%26549-417%26542_276%26549_273%26498_414%26491-0_0_8_27_25_28_20-80-17.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-2_0-273&491_417&549-417&542_276&549_273&498_414&491-0_0_8_27_25_28_20-80-17.jpg",
+    "bytes": 80984,
+    "sha256": "d4a6fb2f8e7f3eaa20831dd8372f9573266d0b5196f83d65c88cde82761b213c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/01-2_3-306%26477_450%26535-450%26535_307%26528_306%26477_449%26484-0_0_15_32_30_29_1-131-4.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-2_3-306&477_450&535-450&535_307&528_306&477_449&484-0_0_15_32_30_29_1-131-4.jpg",
+    "bytes": 89949,
+    "sha256": "5aa3ef4ff19e41377e6bb33db2ffd19323afa195ac9950c48d63cc7ea6a57705"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/02-0_1-244%26488_436%26575-436%26575_246%26574_244%26488_434%26489-0_0_30_29_27_14_27-146-17.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-0_1-244&488_436&575-436&575_246&574_244&488_434&489-0_0_30_29_27_14_27-146-17.jpg",
+    "bytes": 55330,
+    "sha256": "b4aef4bf4759b310f205fef300c1f1c5aeba2e09146237889de5459c0d24c101"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/02-1_4-352%26371_544%26458-539%26454_352%26458_357%26375_544%26371-0_0_20_24_21_30_27-19-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-1_4-352&371_544&458-539&454_352&458_357&375_544&371-0_0_20_24_21_30_27-19-2.jpg",
+    "bytes": 39751,
+    "sha256": "58978b8cd1d9d8150b0a43f9a5ae9f93524288321c9b0779e8d124b19c02c94a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/02-2_0-262%26445_454%26532-454%26524_266%26532_262%26453_450%26445-0_0_3_3_33_27_31-121-16.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-2_0-262&445_454&532-454&524_266&532_262&453_450&445-0_0_3_3_33_27_31-121-16.jpg",
+    "bytes": 51353,
+    "sha256": "7e5f270705c1d2f71fb555e63fbff0dbe684508640c0c6063285bde86daa1ee9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/02-3_2-234%26503_426%26590-418%26590_234%26579_242%26503_426%26514-0_0_1_30_27_27_29-157-5.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-3_2-234&503_426&590-418&590_234&579_242&503_426&514-0_0_1_30_27_27_29-157-5.jpg",
+    "bytes": 53107,
+    "sha256": "d4f2b7cb9a6957ec6ff1d489d8b794d6ff8b7be4b2293b4580a24b2c5a0aa1c2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_challenge/02-3_3-297%26451_489%26538-489%26538_297%26527_297%26451_489%26462-0_0_15_21_27_32_33-177-6.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-3_3-297&451_489&538-489&538_297&527_297&451_489&462-0_0_15_21_27_32_33-177-6.jpg",
+    "bytes": 60672,
+    "sha256": "7da7a15dffd8597dcd99f21389ff53233ad9f400536c2e1f7afc1ce22066c4de"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/015-4_10-282%26451_456%26523-456%26523_288%26510_282%26451_450%26464-0_0_16_4_29_33_24-21-15.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/015-4_10-282&451_456&523-456&523_288&510_282&451_450&464-0_0_16_4_29_33_24-21-15.jpg",
+    "bytes": 41758,
+    "sha256": "12a1c3900bbdebd9b5ae4cb879055acfa52550bb5f7be681adb32e3b56804ced"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/015-4_5-308%26502_482%26574-482%26560_319%26574_308%26516_471%26502-0_0_23_11_27_26_32-29-21.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/015-4_5-308&502_482&574-482&560_319&574_308&516_471&502-0_0_23_11_27_26_32-29-21.jpg",
+    "bytes": 96779,
+    "sha256": "ca1bcb2c95e8fdf048aeed796798c6d973ed0e6cdb9846ea3bace5fabc73b6f7"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/02-1_4-352%26371_544%26458-539%26454_352%26458_357%26375_544%26371-0_0_20_24_21_30_27-19-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-1_4-352&371_544&458-539&454_352&458_357&375_544&371-0_0_20_24_21_30_27-19-2.jpg",
+    "bytes": 39751,
+    "sha256": "58978b8cd1d9d8150b0a43f9a5ae9f93524288321c9b0779e8d124b19c02c94a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/02-6_2-365%26355_557%26442-553%26442_365%26422_369%26355_557%26375-0_0_33_26_25_23_30-16-17.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-6_2-365&355_557&442-553&442_365&422_369&355_557&375-0_0_33_26_25_23_30-16-17.jpg",
+    "bytes": 55079,
+    "sha256": "82342cfa30a7c3b935ba23b3454aad8c68724c1af739882f58180d6941fec04c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/02-7_1-325%26351_517%26438-507%26438_325%26414_335%26351_517%26375-0_0_11_1_29_29_24-30-25.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-7_1-325&351_517&438-507&438_325&414_335&351_517&375-0_0_11_1_29_29_24-30-25.jpg",
+    "bytes": 44179,
+    "sha256": "2b001c9438faa13958d9ddfe0967b0a7cbca75394fd154a1a961e8c37f0f89a9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/02-8_5-425%26460_599%26556-599%26531_429%26556_425%26485_595%26460-0_0_1_29_33_32_9-13-12.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-8_5-425&460_599&556-599&531_429&556_425&485_595&460-0_0_1_29_33_32_9-13-12.jpg",
+    "bytes": 51742,
+    "sha256": "7a88c3f036f6bd46132bc7d42a7a8609abc4365f8639bce63b0589ad08c9918c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/03-3_0-207%26476_468%26572-463%26572_207%26557_212%26476_468%26491-0_0_3_11_28_26_27-45-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/03-3_0-207&476_468&572-463&572_207&557_212&476_468&491-0_0_3_11_28_26_27-45-2.jpg",
+    "bytes": 47082,
+    "sha256": "46450aefef2ef2a4c724e3ea02695584191e75be9382b0c95c91125e6f6d929c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/03-3_20-238%26473_499%26569-499%26569_263%26554_238%26473_474%26488-0_0_32_30_24_31_24-29-4.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/03-3_20-238&473_499&569-499&569_263&554_238&473_474&488-0_0_32_30_24_31_24-29-4.jpg",
+    "bytes": 29843,
+    "sha256": "003d2effd0fe3f06d5bd40cf2a68d601e08472f82947dc08d366aff7ba6f4334"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/03-8_22-224%26454_456%26562-437%26531_224%26562_243%26485_456%26454-0_13_16_32_27_25_29-40-16.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/03-8_22-224&454_456&562-437&531_224&562_243&485_456&454-0_13_16_32_27_25_29-40-16.jpg",
+    "bytes": 41893,
+    "sha256": "fcd59579ae13db9957db36409034eca8f71a3d01d755b528ab1290152c40cf20"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_db/05-10_19-223%26481_513%26625-499%26572_223%26625_237%26534_513%26481-0_0_18_9_29_26_29-24-2.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_db/05-10_19-223&481_513&625-499&572_223&625_237&534_513&481-0_0_18_9_29_26_29-24-2.jpg",
+    "bytes": 33845,
+    "sha256": "621f2384cc69d102c40b9f3a0d8cc8a0e32b8b32562f1d6bc4674dc55833fc34"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/005-0_4-462%26482_549%26530-549%26529_466%26530_462%26483_545%26482-0_0_12_10_27_25_31-98-12.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/005-0_4-462&482_549&530-549&529_466&530_462&483_545&482-0_0_12_10_27_25_31-98-12.jpg",
+    "bytes": 103312,
+    "sha256": "c6de20418f7e938af77e91a35466146564d4eae052eb0fc4571bd06b164dd042"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/005-10_11-323%26466_395%26524-394%26511_323%26524_324%26479_395%26466-0_0_32_3_33_26_26-110-17.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/005-10_11-323&466_395&524-394&511_323&524_324&479_395&466-0_0_32_3_33_26_26-110-17.jpg",
+    "bytes": 72545,
+    "sha256": "059ceea8c3c6e3829e70fd7bf8625773ee8de093c0b79f04ffbe482e0ded3c13"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/08-13_49-154%26462_538%26636-469%26558_154%26636_223%26540_538%26462-0_0_1_25_9_31_31-76-151.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-13_49-154&462_538&636-469&558_154&636_223&540_538&462-0_0_1_25_9_31_31-76-151.jpg",
+    "bytes": 52130,
+    "sha256": "d22cdd0c1ef2a50c5e0781db1727850aa7bd7a2ffdba7a85533b01db201df5d7"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/08-18_45-217%26464_565%26656-517%26558_217%26656_265%26562_565%26464-0_0_13_31_29_31_23-79-32.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-18_45-217&464_565&656-517&558_217&656_265&562_565&464-0_0_13_31_29_31_23-79-32.jpg",
+    "bytes": 49493,
+    "sha256": "1c1a2a70203e8995bb572245d0940ea3eb3bcef690eb60aa79d355bd8751ba4e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/08-23_9-89%26449_377%26681-377%26567_118%26681_89%26563_348%26449-0_0_29_25_26_16_32-106-53.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-23_9-89&449_377&681-377&567_118&681_89&563_348&449-0_0_29_25_26_16_32-106-53.jpg",
+    "bytes": 45255,
+    "sha256": "9d76741ea0567912551b89fa232b953ca8310190a0f5fbad5cea7dc77a92bca5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/08-30_24-247%26476_508%26732-496%26732_247%26585_259%26476_508%26623-0_0_22_14_26_32_32-109-261.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-30_24-247&476_508&732-496&732_247&585_259&476_508&623-0_0_22_14_26_32_32-109-261.jpg",
+    "bytes": 110463,
+    "sha256": "a9d5b1532a8a9c468ff6026b63d7cbc81b844abe987b4cb417b8c18523f75006"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/09-1_13-81%26477_603%26621-578%26604_81%26621_106%26494_603%26477-0_0_24_31_3_27_30-102-134.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/09-1_13-81&477_603&621-578&604_81&621_106&494_603&477-0_0_24_31_3_27_30-102-134.jpg",
+    "bytes": 75967,
+    "sha256": "8dc208338846d2c166ac2f238baa49734f4ca44fdd68150cf746b92e2b9aebd1"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/1-0_5-115%26464_595%26638-581%26631_115%26638_129%26471_595%26464-10_9_20_27_33_24_23-212-90.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/1-0_5-115&464_595&638-581&631_115&638_129&471_595&464-10_9_20_27_33_24_23-212-90.jpg",
+    "bytes": 118884,
+    "sha256": "13ba99a996cb5184e775747f0bf06035c62842492e97b8e45a67932538dc7a26"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/1-18_16-193%26286_541%26526-537%26526_193%26409_197%26286_541%26403-0_0_7_31_25_26_21-78-85.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/1-18_16-193&286_541&526-537&526_193&409_197&286_541&403-0_0_7_31_25_26_21-78-85.jpg",
+    "bytes": 59195,
+    "sha256": "5c73ea4bf8957f784d543657f0aebb664e1f06be7144353af6904a104dc75722"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_fn/1-5_57-0%26518_576%26663-576%26663_94%26618_0%26518_448%26563-0_0_1_1_29_31_29-68-134.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/1-5_57-0&518_576&663-576&663_94&618_0&518_448&563-0_0_1_1_29_31_29-68-134.jpg",
+    "bytes": 68767,
+    "sha256": "c691afea64d9cb490145b43f91b69c2fe27d57f8fbcda2aefad54434cf22f17e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/112.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/112.jpg",
+    "bytes": 72394,
+    "sha256": "3f04a78468dafafa73a4c843bf1174f20ed3474d3978b93b2edb60538abddee8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/153.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/153.jpg",
+    "bytes": 42101,
+    "sha256": "2ba8ab212d12973d5b5fbd0de32c01404fe3edb3c1f8f3f2e70270e0e1073d90"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/160.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/160.jpg",
+    "bytes": 127696,
+    "sha256": "ea0cf9cbd50fdae3c3cae26fdbbc01f4a5bb6706e345ac8878e5b639fc7d21ad"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/166.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/166.jpg",
+    "bytes": 48661,
+    "sha256": "07533d356efd97f9ea1c6a3d02c9b75cd9c8fd820f72506073535ba7173d8191"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/172.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/172.jpg",
+    "bytes": 68888,
+    "sha256": "6c4bb6a4ff0057252808512a34d55dfb25642a363a4abeb13f59aeeb589f8e48"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/184.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/184.jpg",
+    "bytes": 30512,
+    "sha256": "08b9cacc4c4d88e0971097cdbdbeea9ddde62d9f54013f1e49411f04d815f3b4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/210.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/210.jpg",
+    "bytes": 36268,
+    "sha256": "d42f259b286ad69d81e4d0b9f58ffdea608e40e8172fb63ed5d6429575d54cd6"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/246.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/246.jpg",
+    "bytes": 92320,
+    "sha256": "02a33bb3fa5788425c0843468f92130cc00b9a4ad0faf9386b2d3926894c8ebb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/248.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/248.jpg",
+    "bytes": 99645,
+    "sha256": "5d553cb526e401a93081596c674ab80e9a16573f62baaeeb6a5a982193ab2fda"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_np/3.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_np/3.jpg",
+    "bytes": 81393,
+    "sha256": "97eb45de2787ab0fa43543ed5043f5dd06d83ea385138163e60505f9d14e9aa9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/02-18_19-271%26483_415%26599-415%26599_272%26552_271%26483_414%26530-0_11_15_31_29_29_29-116-98.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/02-18_19-271&483_415&599-415&599_272&552_271&483_414&530-0_11_15_31_29_29_29-116-98.jpg",
+    "bytes": 127593,
+    "sha256": "70833835fba568e33dbdb4b8495d9b10af4e1c4c222d390a6b27660cd144f156"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/04-18_11-431%26437_623%26611-623%26553_445%26611_431%26495_609%26437-0_0_16_32_20_30_29-108-52.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/04-18_11-431&437_623&611-623&553_445&611_431&495_609&437-0_0_16_32_20_30_29-108-52.jpg",
+    "bytes": 58600,
+    "sha256": "50a9dc2c6ad10d7eb9157a63a32fa5882c8d5dcd6a4d09a3dd1b209ab4dd579a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/04-26_16-213%26440_405%26614-405%26527_228%26614_213%26527_390%26440-0_0_23_33_24_28_7-156-24.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/04-26_16-213&440_405&614-405&527_228&614_213&527_390&440-0_0_23_33_24_28_7-156-24.jpg",
+    "bytes": 45595,
+    "sha256": "0926ec537b996b17bef1fa3471b5c8b7f874694f898b2fb275ce2ef0704c53bb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/04-31_11-174%26457_366%26631-340%26631_174%26528_200%26457_366%26560-0_0_21_29_25_32_23-77-230.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/04-31_11-174&457_366&631-340&631_174&528_200&457_366&560-0_0_21_29_25_32_23-77-230.jpg",
+    "bytes": 110194,
+    "sha256": "3a5226a11971e374cc4c028957ec9fdae77d80c3286e3c76bef89340efd8243a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/05-16_17-176%26448_416%26622-415%26549_176%26622_177%26521_416%26448-10_1_31_18_19_31_26-146-41.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-16_17-176&448_416&622-415&549_176&622_177&521_416&448-10_1_31_18_19_31_26-146-41.jpg",
+    "bytes": 69159,
+    "sha256": "e12e103fa17638725514c9a24f1838308f6e1fc998bd6bb8716b1fcfd9180095"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/05-17_15-146%26426_386%26600-383%26600_146%26527_149%26426_386%26499-16_2_32_30_25_29_6-99-16.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-17_15-146&426_386&600-383&600_146&527_149&426_386&499-16_2_32_30_25_29_6-99-16.jpg",
+    "bytes": 48075,
+    "sha256": "2ada62d2584c7c4f55a67c488bcbc773e8f2cbe02c56b111717e32f03d0787d8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/05-20_19-316%26379_556%26553-555%26553_316%26463_317%26379_556%26469-0_0_3_30_8_26_33-144-313.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-20_19-316&379_556&553-555&553_316&463_317&379_556&469-0_0_3_30_8_26_33-144-313.jpg",
+    "bytes": 85016,
+    "sha256": "e17651a2c21d69c1ff38697537ba0e21d1fcff9904af05c4d01f8b87139db3bd"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/08-21_18-262%26397_550%26629-542%26629_262%26516_270%26397_550%26510-0_0_8_33_24_30_33-53-34.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/08-21_18-262&397_550&629-542&629_262&516_270&397_550&510-0_0_8_33_24_30_33-53-34.jpg",
+    "bytes": 48527,
+    "sha256": "eb4d2fbeddcd1b43d732028483993c79da55e5ad810718429ab4c9edf6ecac07"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/08-23_9-89%26449_377%26681-377%26567_118%26681_89%26563_348%26449-0_0_29_25_26_16_32-106-53.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/08-23_9-89&449_377&681-377&567_118&681_89&563_348&449-0_0_29_25_26_16_32-106-53.jpg",
+    "bytes": 45255,
+    "sha256": "9d76741ea0567912551b89fa232b953ca8310190a0f5fbad5cea7dc77a92bca5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_rotate/1-18_16-193%26286_541%26526-537%26526_193%26409_197%26286_541%26403-0_0_7_31_25_26_21-78-85.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/1-18_16-193&286_541&526-537&526_193&409_197&286_541&403-0_0_7_31_25_26_21-78-85.jpg",
+    "bytes": 59195,
+    "sha256": "5c73ea4bf8957f784d543657f0aebb664e1f06be7144353af6904a104dc75722"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/02-16_17-230%26540_374%26656-372%26615_230%26656_232%26581_374%26540-0_0_20_27_29_24_22-119-35.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/02-16_17-230&540_374&656-372&615_230&656_232&581_374&540-0_0_20_27_29_24_22-119-35.jpg",
+    "bytes": 69555,
+    "sha256": "44d720fb0394d4d588583a75e5970ef8ab6ca1587f9ed769edc8fab6d83cc5d8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/02-22_32-248%26422_392%26538-392%26538_259%26483_248%26422_381%26477-0_0_19_17_26_26_27-90-5.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/02-22_32-248&422_392&538-392&538_259&483_248&422_381&477-0_0_19_17_26_26_27-90-5.jpg",
+    "bytes": 41590,
+    "sha256": "b2e64ba4a79d92aa8edc22993107f582b15a958b3b4446f5bde843bddc8e942c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/02-31_27-348%26472_464%26616-464%26548_353%26616_348%26540_459%26472-0_0_3_29_1_32_32-78-42.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/02-31_27-348&472_464&616-464&548_353&616_348&540_459&472-0_0_3_29_1_32_32-78-42.jpg",
+    "bytes": 85273,
+    "sha256": "4cda23317ddf95bcf99c8609b0e6169eb80152ef4a79520e2f7b0be3132720fe"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/04-20_48-240%26477_472%26621-472%26621_278%26548_240%26477_434%26550-0_12_20_13_32_32_32-77-90.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/04-20_48-240&477_472&621-472&621_278&548_240&477_434&550-0_12_20_13_32_32_32-77-90.jpg",
+    "bytes": 96981,
+    "sha256": "1226715845dbd7c778f09b7ed7c35c53e1655bf1c02bdb1aebb425637ae45c14"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/04-24_25-81%26475_273%26649-273%26649_83%26563_81%26475_271%26561-5_4_11_11_33_28_29-97-170.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/04-24_25-81&475_273&649-273&649_83&563_81&475_271&561-5_4_11_11_33_28_29-97-170.jpg",
+    "bytes": 91415,
+    "sha256": "e2e3719271e4fe68942c70425452216d47bb1a103eb1238afcdaed40befa1833"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/04-26_16-213%26440_405%26614-405%26527_228%26614_213%26527_390%26440-0_0_23_33_24_28_7-156-24.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/04-26_16-213&440_405&614-405&527_228&614_213&527_390&440-0_0_23_33_24_28_7-156-24.jpg",
+    "bytes": 45595,
+    "sha256": "0926ec537b996b17bef1fa3471b5c8b7f874694f898b2fb275ce2ef0704c53bb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/05-16_17-176%26448_416%26622-415%26549_176%26622_177%26521_416%26448-10_1_31_18_19_31_26-146-41.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/05-16_17-176&448_416&622-415&549_176&622_177&521_416&448-10_1_31_18_19_31_26-146-41.jpg",
+    "bytes": 69159,
+    "sha256": "e12e103fa17638725514c9a24f1838308f6e1fc998bd6bb8716b1fcfd9180095"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/05-16_21-277%26310_538%26470-538%26470_285%26397_277%26310_530%26383-0_0_7_33_25_32_13-120-138.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/05-16_21-277&310_538&470-538&470_285&397_277&310_530&383-0_0_7_33_25_32_13-120-138.jpg",
+    "bytes": 68142,
+    "sha256": "1cbe36e5e6169de9de38e530dd54d88355588e403543b74fe7a9397208c39248"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/05-16_53-194%26442_482%26587-421%26521_194%26587_255%26508_482%26442-0_0_4_30_27_25_25-98-156.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/05-16_53-194&442_482&587-421&521_194&587_255&508_482&442-0_0_4_30_27_25_25-98-156.jpg",
+    "bytes": 58308,
+    "sha256": "3051dbd6befbf45bb3c49cde0d112d8fc3108fefa4b470ee551720fd692fe047"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_tilt/05-17_15-146%26426_386%26600-383%26600_146%26527_149%26426_386%26499-16_2_32_30_25_29_6-99-16.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/05-17_15-146&426_386&600-383&600_146&527_149&426_386&499-16_2_32_30_25_29_6-99-16.jpg",
+    "bytes": 48075,
+    "sha256": "2ada62d2584c7c4f55a67c488bcbc773e8f2cbe02c56b111717e32f03d0787d8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/015-3_2-220%26571_394%26643-394%26631_222%26643_220%26583_392%26571-0_0_21_25_29_33_32-65-63.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/015-3_2-220&571_394&643-394&631_222&643_220&583_392&571-0_0_21_25_29_33_32-65-63.jpg",
+    "bytes": 172027,
+    "sha256": "9753710921a72b456f3161a3f25c75704de3dd3368ba64986572b5d779e963d5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/015-3_3-147%26436_321%26508-321%26508_147%26497_147%26436_321%26447-0_0_8_26_29_31_18-78-17.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/015-3_3-147&436_321&508-321&508_147&497_147&436_321&447-0_0_8_26_29_31_18-78-17.jpg",
+    "bytes": 65311,
+    "sha256": "b4a48e8ec06eba9f2d1c66ed87170d40b2140cd4484e6f9cc7418edba422e656"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/02-10_16-292%26475_466%26571-460%26539_292%26571_298%26507_466%26475-0_0_14_6_30_25_29-55-22.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/02-10_16-292&475_466&571-460&539_292&571_298&507_466&475-0_0_14_6_30_25_29-55-22.jpg",
+    "bytes": 79697,
+    "sha256": "cf1bb70ca16f5e44ef2043ee67742a7b53d4fe9791b24a27fffe31842f358374"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/02-1_10-178%26467_410%26539-410%26539_189%26535_178%26467_399%26471-0_0_2_33_31_33_18-80-28.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/02-1_10-178&467_410&539-410&539_189&535_178&467_399&471-0_0_2_33_31_33_18-80-28.jpg",
+    "bytes": 61046,
+    "sha256": "6d9c9c51a54bca11fe316cde6a06865f723414903a02ca28963cf0abad759f84"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/04-3_3-282%26431_570%26547-558%26547_282%26531_294%26431_570%26447-0_0_9_25_30_25_32-89-22.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/04-3_3-282&431_570&547-558&547_282&531_294&431_570&447-0_0_9_25_30_25_32-89-22.jpg",
+    "bytes": 54747,
+    "sha256": "5db3fd41ff75699b8fab6c502e27202780e8df3094caaae2d1ac43dfb591d83d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/05-11_2-321%26382_611%26526-597%26526_321%26469_335%26382_611%26439-0_0_25_1_30_28_24-79-61.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/05-11_2-321&382_611&526-597&526_321&469_335&382_611&439-0_0_25_1_30_28_24-79-61.jpg",
+    "bytes": 70154,
+    "sha256": "c2cddffb2236a16f817fcb802efd56df173b0410689ad83a2646a17911fbc832"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/05-11_24-162%26391_452%26535-452%26535_184%26482_162%26391_430%26444-0_0_15_11_33_29_31-63-18.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/05-11_24-162&391_452&535-452&535_184&482_162&391_430&444-0_0_15_11_33_29_31-63-18.jpg",
+    "bytes": 48575,
+    "sha256": "738fabfcec7397ce604dfcca24f3f4e54bf9d32f6a63940e6731f3b4b1327368"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/05-3_0-204%26493_552%26613-552%26593_210%26613_204%26513_546%26493-0_0_23_11_32_32_25-136-114.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/05-3_0-204&493_552&613-552&593_210&613_204&513_546&493-0_0_23_11_32_32_25-136-114.jpg",
+    "bytes": 92241,
+    "sha256": "20cee9714518e06bb2cb23c7e714f1481abfebd53346304f86f11bec0384decc"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/07-0_3-151%26459_557%26603-557%26603_158%26599_151%26459_550%26463-0_0_2_29_25_32_31-107-82.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/07-0_3-151&459_557&603-557&603_158&599_151&459_550&463-0_0_2_29_25_32_31-107-82.jpg",
+    "bytes": 47357,
+    "sha256": "8d60fcba9f5c3c39dfec04726a4cefdfac9ad2b1e6419a24db83e1d583007426"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/1gubigu/ccpd/7a61f4ea777da73c96e125ddd72d063b77219b1a/ccpd_weather/07-4_10-206%26461_542%26635-528%26607_206%26635_220%26489_542%26461-0_0_5_27_24_27_16-45-202.jpg",
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/07-4_10-206&461_542&635-528&607_206&635_220&489_542&461-0_0_5_27_24_27_16-45-202.jpg",
+    "bytes": 77260,
+    "sha256": "90dea5369bb024d83cbc06b99458d55ad2c9cd84244b89f7fc426ed9e3e10bfb"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/LICENSE",
+    "path": "tmp/blue-plate-g1/easypr/LICENSE",
+    "bytes": 11325,
+    "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/README.md",
+    "path": "tmp/blue-plate-g1/easypr/README.md",
+    "bytes": 9438,
+    "sha256": "1164c4037085c1e9a717405c70c5cdae93645d9101a97c1c30b341c02c34aab9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/resources/train/ann.7z",
+    "path": "tmp/blue-plate-g1/easypr/resources/train/ann.7z",
+    "bytes": 4300316,
+    "sha256": "27c84904923c83d839a8d138befa0d80c33de8f94430e41108ea06a39b7736e4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/resources/train/annCh.7z",
+    "path": "tmp/blue-plate-g1/easypr/resources/train/annCh.7z",
+    "bytes": 4464608,
+    "sha256": "7c6bf5e0c94b18d687d0dba606623ab78d0ff9becf152d062cd1a61254a8bea8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/model/province_mapping",
+    "path": "tmp/blue-plate-g1/easypr/model/province_mapping",
+    "bytes": 464,
+    "sha256": "beac5e3c56ea106ecc2b7cd053f3dde1ac9b5962c1b39e9b2dfdd9eaf2ba8322"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/src/train/ann_train.cpp",
+    "path": "tmp/blue-plate-g1/easypr/src/train/ann_train.cpp",
+    "bytes": 10557,
+    "sha256": "72f906a8692da385cb757bf07dcccd7f4014259ac19d7ad74509e5cf64f4dd93"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/src/train/annCh_train.cpp",
+    "path": "tmp/blue-plate-g1/easypr/src/train/annCh_train.cpp",
+    "bytes": 9101,
+    "sha256": "f34e46bae2708764531badccdb91ca6dfa48ad3597adccfdb0f887a8b6bc4cc4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/detectRecog/CCPD/02aaea15137c4d2fe662e57d257c6822356e9304/LICENSE",
+    "path": "tmp/blue-plate-g1/ccpd/LICENSE",
+    "bytes": 1060,
+    "sha256": "13e97e902b4063612467c1b084bdc1f528ffc835c4f1e05d28bc1218e6fa7814"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/detectRecog/CCPD/02aaea15137c4d2fe662e57d257c6822356e9304/README.md",
+    "path": "tmp/blue-plate-g1/ccpd/README.md",
+    "bytes": 8882,
+    "sha256": "bff365836db5fad25a5e2deac037289b838c807d41e2084653964fd97bd03557"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/detectRecog/CCPD/02aaea15137c4d2fe662e57d257c6822356e9304/rpnet/load_data.py",
+    "path": "tmp/blue-plate-g1/ccpd/rpnet/load_data.py",
+    "bytes": 5446,
+    "sha256": "c118d3d695d9ed4c91e41a486d42125858269d7720e13df153290415c7c7e075"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/model/ann.xml",
+    "path": "tmp/blue-plate-g1/easypr/model/ann.xml",
+    "bytes": 220612,
+    "sha256": "d762283d281f0f4357e4ca3742b3d773e769c63ecbdccd2991a20936b413b2d3"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/liuruoze/EasyPR/a0a9f3c3f612e7c8d9046bd9c5770249cfb86850/model/ann_chinese.xml",
+    "path": "tmp/blue-plate-g1/easypr/model/ann_chinese.xml",
+    "bytes": 547278,
+    "sha256": "d06aaf7e38a0aec713523f0a4bd1c8cac36045a2fe00af71b4b8da8b4b520fc9"
+  }
+]

@@ -15,7 +15,7 @@ module tb_canny_store;
  reg [31:0] capture_frame_id=901,config_epoch=19;reg [15:0] config_value;
  wire [63:0] algorithm_pixels;wire algorithm_valid;wire algorithm_ready;
  wire algorithm_sof,algorithm_eol,algorithm_eof;
- wire [31:0] algorithm_frame_id,algorithm_epoch;wire [15:0] algorithm_config;
+ wire [31:0] algorithm_frame_id,algorithm_epoch;wire [15:0] algorithm_config;wire algorithm_recognition;wire [14:0] recognition_live;
  wire [63:0] result_pixels;wire result_valid,result_sof,result_eof,result_ready;
  reg [3:0] command=0;reg command_toggle=0;wire command_ack;
  reg reference_mode=0,display_period=0;
@@ -37,7 +37,7 @@ module tb_canny_store;
  reg [1023:0] input_file,final_file;
  reg [1023:0] shapes_file;reg [188:0] expected_shapes[0:0];
  wire result_eol;wire [31:0] result_id,result_epoch;wire [15:0] result_config;
- edge_algorithm_pair #(.W(W),.H(H)) algorithm(.clk(pixel_clk),.rst_n(rst_n),.in_config(algorithm_config),
+ edge_algorithm_pair #(.W(W),.H(H)) algorithm(.clk(pixel_clk),.rst_n(rst_n),.in_config(algorithm_config),.in_recognition(algorithm_recognition),
   .in_pixels(algorithm_pixels),.in_valid(algorithm_valid),.in_ready(algorithm_ready),
   .in_sof(algorithm_sof),.in_eol(algorithm_eol),.in_eof(algorithm_eof),.in_id(algorithm_frame_id),.in_epoch(algorithm_epoch),
   .out_pixels(result_pixels),.out_valid(result_valid),.out_ready(result_ready),.out_sof(result_sof),.out_eol(result_eol),.out_eof(result_eof),

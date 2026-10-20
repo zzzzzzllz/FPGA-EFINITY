@@ -1,0 +1,16 @@
+[
+  {
+    "name": "edge_ui-compile",
+    "returncode": 0,
+    "seconds": 0.045,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "edge_ui",
+    "returncode": 0,
+    "seconds": 0.044,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui.log",
+    "sha256": "5b7d85e9f43e5a05421d2d055b3c202990ac41ca248eae148dc654228eee0221"
+  }
+]

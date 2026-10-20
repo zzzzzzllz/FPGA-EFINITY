@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "unique_masks": 152,
+  "checks": 39064,
+  "change": "Local simulation copy: explicit input sensitivity replaced with always_comb; startup evaluation included. No RTL/netlist/vendor installation changes.",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\lut_startup.py": "c41c8da5eabed3c42322659ea72ba32f99bc53a303b742d94fb709330925444d",
+    "D:\\Efinity\\sim_models\\verilog\\efx_lut4.v": "49f8494172ab8ff1be8f9a487015451e924cff911ab36cfcefe2555fbb06586e",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\tb_lut_startup.sv": "9cf4994262193ac2610b7a8faf50956830730d56595ae9ab15cde4284722b5c0",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\synthesis\\out\\q31_static_mac8.map.v": "cdf91b9f5dbf6a5b06e41798beca440755950d12095c58e94d26c80c5961caea"
+  },
+  "stdout": "PASS LUT startup and four-state truth tables\nD:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\tb_lut_startup.sv:39476: $finish called at 257000 (1ps)\n"
+}

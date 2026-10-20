@@ -1,0 +1,4 @@
+PERIOD tag=1 time=3511262000
+PERIOD tag=2 time=7022370000
+PASS display Canny=0 reference=1: 3 full 1280x128 split frames, saturated algorithm read contention, AXI bubbles, all HDMI pixels and deadlines
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_display.v:167: $finish called at 10420878468 (1ps)

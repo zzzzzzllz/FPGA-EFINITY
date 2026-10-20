@@ -1,0 +1,528 @@
+[
+  {
+    "key": "115-automatic",
+    "position": 4,
+    "label": "皖A43Y26",
+    "truth": "Y",
+    "prediction": "X",
+    "raw_shape": {
+      "height": 42,
+      "width": 21,
+      "density": 0.3820861678004535,
+      "foreground": 337
+    },
+    "normalized_shape": {
+      "height": 27,
+      "width": 14,
+      "density": 0.3941798941798942,
+      "foreground": 149
+    },
+    "top_scores": [
+      {
+        "char": "X",
+        "score": -27
+      },
+      {
+        "char": "Y",
+        "score": -3982
+      },
+      {
+        "char": "M",
+        "score": -6672
+      },
+      {
+        "char": "W",
+        "score": -7457
+      },
+      {
+        "char": "K",
+        "score": -9694
+      },
+      {
+        "char": "V",
+        "score": -10485
+      },
+      {
+        "char": "Z",
+        "score": -12061
+      },
+      {
+        "char": "F",
+        "score": -12639
+      }
+    ],
+    "true_minus_predicted_feature_contribution": {
+      "grid_top_half": 13672,
+      "grid_bottom_half": -17408,
+      "column_projection": -554,
+      "row_projection": -214,
+      "bias": 549,
+      "total": -3955
+    },
+    "train_distributions": {
+      "Y": {
+        "count": 66,
+        "density_quantiles": [
+          0.3488202973497091,
+          0.4041125541125541,
+          0.44711538461538464
+        ],
+        "aspect_quantiles": [
+          0.39285714285714285,
+          0.4642857142857143,
+          0.5714285714285714
+        ]
+      },
+      "X": {
+        "count": 63,
+        "density_quantiles": [
+          0.45285714285714285,
+          0.512987012987013,
+          0.613265306122449
+        ],
+        "aspect_quantiles": [
+          0.39285714285714285,
+          0.5,
+          0.5357142857142857
+        ]
+      }
+    },
+    "neighbors": [
+      {
+        "id": 10249,
+        "char": "Y",
+        "distance": 642,
+        "path": "tmp/blue-plate-g1/characters/Y/gt_239_5.jpg",
+        "file_sha256": "3984121ca5fc1e8985c3476da239f4c0cfb74e244d98ba88075f9f2f87cc70ae",
+        "shape": {
+          "height": 28,
+          "width": 13,
+          "density": 0.3708791208791209,
+          "foreground": 135
+        }
+      },
+      {
+        "id": 10233,
+        "char": "Y",
+        "distance": 650,
+        "path": "tmp/blue-plate-g1/characters/Y/gt_1529_3.jpg",
+        "file_sha256": "d5cb54d59d84375de7993e47d89ef881a951c584abccc617ca6a94a1e0151f72",
+        "shape": {
+          "height": 28,
+          "width": 13,
+          "density": 0.46703296703296704,
+          "foreground": 170
+        }
+      },
+      {
+        "id": 10171,
+        "char": "Y",
+        "distance": 710,
+        "path": "tmp/blue-plate-g1/characters/Y/406-5.jpg",
+        "file_sha256": "e3a80bb5389072c25d105aab777cfae595fe4410adeb7ccef149850f73e53b16",
+        "shape": {
+          "height": 28,
+          "width": 13,
+          "density": 0.3489010989010989,
+          "foreground": 127
+        }
+      },
+      {
+        "id": 10238,
+        "char": "Y",
+        "distance": 712,
+        "path": "tmp/blue-plate-g1/characters/Y/gt_1712_2.jpg",
+        "file_sha256": "84bdf5c06833bf4ef1d06e99a64106674798a3bce4fa985a1ce34d90758e15a8",
+        "shape": {
+          "height": 28,
+          "width": 13,
+          "density": 0.3516483516483517,
+          "foreground": 128
+        }
+      },
+      {
+        "id": 10121,
+        "char": "X",
+        "distance": 778,
+        "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_23 (2).jpg",
+        "file_sha256": "eece9732a4ac1c786ce9490eb91ecd27cb3eaefa52dc2128a4bda4118e171c23",
+        "shape": {
+          "height": 28,
+          "width": 11,
+          "density": 0.5681818181818182,
+          "foreground": 175
+        }
+      },
+      {
+        "id": 10114,
+        "char": "X",
+        "distance": 780,
+        "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_1992.jpg",
+        "file_sha256": "c0fae2ae21fa70dd4571baef04bcda03e355a62219426bd7c60fd92e1fa99d4a",
+        "shape": {
+          "height": 28,
+          "width": 11,
+          "density": 0.6071428571428571,
+          "foreground": 187
+        }
+      },
+      {
+        "id": 10124,
+        "char": "X",
+        "distance": 790,
+        "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_6428.jpg",
+        "file_sha256": "46fd03ef2b8b4523088e0146a22b68e5dbf5bceab565d158cca9dc60f2861789",
+        "shape": {
+          "height": 28,
+          "width": 11,
+          "density": 0.5584415584415584,
+          "foreground": 172
+        }
+      },
+      {
+        "id": 10081,
+        "char": "X",
+        "distance": 792,
+        "path": "tmp/blue-plate-g1/characters/X/134-4.jpg",
+        "file_sha256": "7236bc4ce42e499b558bb2494561e62fc0637483d79ebc7e867a65e769e509c2",
+        "shape": {
+          "height": 28,
+          "width": 11,
+          "density": 0.512987012987013,
+          "foreground": 158
+        }
+      }
+    ],
+    "input_column_sums": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      4,
+      14,
+      19,
+      24,
+      23,
+      15,
+      11,
+      7,
+      7,
+      7,
+      7,
+      5,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "input_row_sums": [
+      0,
+      0,
+      0,
+      7,
+      8,
+      8,
+      8,
+      9,
+      8,
+      10,
+      9,
+      7,
+      6,
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      0,
+      0
+    ]
+  },
+  {
+    "key": "050-oracle",
+    "position": 6,
+    "label": "皖AX815V",
+    "truth": "V",
+    "prediction": "W",
+    "raw_shape": {
+      "height": 36,
+      "width": 24,
+      "density": 0.5891203703703703,
+      "foreground": 509
+    },
+    "normalized_shape": {
+      "height": 28,
+      "width": 19,
+      "density": 0.6071428571428571,
+      "foreground": 323
+    },
+    "top_scores": [
+      {
+        "char": "W",
+        "score": -6333
+      },
+      {
+        "char": "V",
+        "score": -11814
+      },
+      {
+        "char": "B",
+        "score": -14918
+      },
+      {
+        "char": "K",
+        "score": -18397
+      },
+      {
+        "char": "9",
+        "score": -22922
+      },
+      {
+        "char": "8",
+        "score": -25158
+      },
+      {
+        "char": "M",
+        "score": -25842
+      },
+      {
+        "char": "U",
+        "score": -26188
+      }
+    ],
+    "true_minus_predicted_feature_contribution": {
+      "grid_top_half": -5120,
+      "grid_bottom_half": -6240,
+      "column_projection": -2410,
+      "row_projection": -1142,
+      "bias": 9431,
+      "total": -5481
+    },
+    "train_distributions": {
+      "V": {
+        "count": 36,
+        "density_quantiles": [
+          0.4251700680272109,
+          0.48840445269016697,
+          0.5614853896103896
+        ],
+        "aspect_quantiles": [
+          0.39285714285714285,
+          0.5,
+          0.6071428571428571
+        ]
+      },
+      "W": {
+        "count": 51,
+        "density_quantiles": [
+          0.6190476190476191,
+          0.6964285714285714,
+          0.7797619047619048
+        ],
+        "aspect_quantiles": [
+          0.4642857142857143,
+          0.5,
+          0.6428571428571429
+        ]
+      }
+    },
+    "neighbors": [
+      {
+        "id": 9955,
+        "char": "V",
+        "distance": 1060,
+        "path": "tmp/blue-plate-g1/characters/V/143-5.jpg",
+        "file_sha256": "d6c0e0fa22af144b1b84d8d56c28899cc2c97a2f00990bf4d6f98fc386adc2df",
+        "shape": {
+          "height": 28,
+          "width": 17,
+          "density": 0.5546218487394958,
+          "foreground": 264
+        }
+      },
+      {
+        "id": 10007,
+        "char": "V",
+        "distance": 1090,
+        "path": "tmp/blue-plate-g1/characters/V/gt_906_5.jpg",
+        "file_sha256": "28a9302d72ebd3173bc31d26d14ea30f6c125c1aeb57bdb584af0002a705f3fb",
+        "shape": {
+          "height": 28,
+          "width": 17,
+          "density": 0.4789915966386555,
+          "foreground": 228
+        }
+      },
+      {
+        "id": 9994,
+        "char": "V",
+        "distance": 1116,
+        "path": "tmp/blue-plate-g1/characters/V/gt_1538_2.jpg",
+        "file_sha256": "3e44723e2a3d4cf7fce32d8bec4fdcaa56ea99e7c72ce10f538951868182c051",
+        "shape": {
+          "height": 28,
+          "width": 15,
+          "density": 0.5285714285714286,
+          "foreground": 222
+        }
+      },
+      {
+        "id": 10004,
+        "char": "V",
+        "distance": 1142,
+        "path": "tmp/blue-plate-g1/characters/V/gt_825_5.jpg",
+        "file_sha256": "3a06f6d81eec288374638b2c506446b219f6f4f65d6ee93be7b66f4c3d695c3b",
+        "shape": {
+          "height": 28,
+          "width": 15,
+          "density": 0.5095238095238095,
+          "foreground": 214
+        }
+      },
+      {
+        "id": 10069,
+        "char": "W",
+        "distance": 1202,
+        "path": "tmp/blue-plate-g1/characters/W/gt_1712_3.jpg",
+        "file_sha256": "8776bce0c6536670fd2d316a2a9bca921cc4f94d223346fd3b9975dd916d9b6f",
+        "shape": {
+          "height": 28,
+          "width": 14,
+          "density": 0.7397959183673469,
+          "foreground": 290
+        }
+      },
+      {
+        "id": 10012,
+        "char": "W",
+        "distance": 1252,
+        "path": "tmp/blue-plate-g1/characters/W/122-4.jpg",
+        "file_sha256": "43a233f178af1097c71f9b9489763410c258e8a6dfc6e31dabb3d268ae734c43",
+        "shape": {
+          "height": 28,
+          "width": 15,
+          "density": 0.6928571428571428,
+          "foreground": 291
+        }
+      },
+      {
+        "id": 10016,
+        "char": "W",
+        "distance": 1252,
+        "path": "tmp/blue-plate-g1/characters/W/166-3.jpg",
+        "file_sha256": "0671f980e3c68f566734dabce87d8dabb086d24a9ed43e35384955c80d1e0f04",
+        "shape": {
+          "height": 28,
+          "width": 13,
+          "density": 0.7939560439560439,
+          "foreground": 289
+        }
+      },
+      {
+        "id": 10063,
+        "char": "W",
+        "distance": 1252,
+        "path": "tmp/blue-plate-g1/characters/W/gt_1605_2.jpg",
+        "file_sha256": "af92bd35b47d1488ba8a5442497983f58c50cb3dd6418dc41fe768246253b4cd",
+        "shape": {
+          "height": 28,
+          "width": 17,
+          "density": 0.680672268907563,
+          "foreground": 324
+        }
+      }
+    ],
+    "input_column_sums": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      11,
+      18,
+      27,
+      28,
+      27,
+      26,
+      21,
+      17,
+      17,
+      20,
+      19,
+      16,
+      18,
+      18,
+      14,
+      9,
+      7,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "input_row_sums": [
+      0,
+      0,
+      11,
+      12,
+      13,
+      13,
+      13,
+      13,
+      12,
+      13,
+      14,
+      13,
+      13,
+      14,
+      14,
+      14,
+      13,
+      13,
+      13,
+      13,
+      10,
+      10,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      8,
+      7,
+      0,
+      0
+    ]
+  }
+]

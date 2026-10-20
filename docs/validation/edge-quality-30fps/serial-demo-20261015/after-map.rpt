@@ -1,0 +1,122 @@
+Efinity Synthesis report for project osd
+Version: 2026.1.132.4.5
+Generated at: Oct 15, 2026 20:39:45
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : threshold_osd
+
+family : Titanium
+device : Ti60F225
+project : osd
+root : threshold_osd
+binary-db : out\osd.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : area2
+num_srl : -1
+mult-decomp-retime : 0
+operator-sharing : 1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\after
+project : osd
+project-xml : D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\after\osd.xml
+root : threshold_osd
+use-logic-for-small-rom : 8192
+work-dir : work_syn
+write-efx-verilog : out\osd.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\after.v
+
+### ### Report Section Start ### ###
+
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 7
+Total number of FFs with enable signals: 712
++---------+------------------+
+|CE Signal|Number of FF loads|
++---------+------------------+
+|n8118    |              343 |
+|n8114    |              294 |
+|ceg_net3 |               30 |
+|n8104    |               15 |
+|de       |               12 |
+|n8091    |               11 |
+|n8102    |                7 |
++---------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 3
+Total number of FFs with set/reset signals: 713
++---------+------------------+
+|SR Signal|Number of FF loads|
++---------+------------------+
+|rst_n    |              689 |
+|n8119    |               23 |
+|n9393    |                1 |
++---------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'menu_rom' Port WDATA is tied off because it is disabled.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                              FFs      SRLs      ADDs       LUTs    COMB4s      RAMs DSP/MULTs
+-----------------------------       ---      ----      ----       ----      ----      ---- ---------
+threshold_osd:threshold_osd    713(713)      0(0)  149(149) 1620(1620)      0(0)      1(1)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
+ No DSP in design
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++-----+----------+----------+------------+----------------+
+|Clock|Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++-----+----------+----------+------------+----------------+
+|clk  |      713 |        0 |          1 |              0 |
++-----+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Memory Mapping Report (begin) ### ### ###
+
+1. menu_rom (D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\after.v:76):
+	EFX_RAM10: menu_rom
+
+### ### Memory Mapping Report (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	99
+OUTPUT PORTS    : 	340
+
+EFX_ADD                 : 	149
+EFX_LUT4                : 	1620
+   1-2  Inputs          : 	261
+   3    Inputs          : 	557
+   4    Inputs          : 	802
+EFX_FF                  : 	713
+EFX_RAM10               : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 72s
+Elapsed synthesis time : 72s

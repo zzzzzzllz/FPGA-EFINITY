@@ -1,0 +1,30 @@
+{
+  "version": "edge-quality-30fps",
+  "build_id": "0x60101702",
+  "release_sha256": "cb67ac8b6cfd1f5fb9a1e26817598186527080361d4c35f5909a9c7119e10892",
+  "runtime": "PASS",
+  "source_hashes": 199,
+  "xml_inputs": 79,
+  "source": "PASS",
+  "python_syntax": "PASS",
+  "build": "PASS",
+  "timing_min_slack_ns": [
+    0.308,
+    0.026
+  ],
+  "built_bitstream_sha256": "cb67ac8b6cfd1f5fb9a1e26817598186527080361d4c35f5909a9c7119e10892",
+  "resources": {
+    "XLRs": {
+      "used": 48102,
+      "total": 60800
+    },
+    "Memory Blocks": {
+      "used": 190,
+      "total": 256
+    },
+    "DSP Blocks": {
+      "used": 123,
+      "total": 160
+    }
+  }
+}

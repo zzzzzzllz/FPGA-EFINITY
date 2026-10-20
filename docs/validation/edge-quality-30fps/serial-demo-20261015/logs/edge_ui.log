@@ -1,0 +1,2 @@
+PASS: 14-step route, all actions, presets, clip/reference retention, empty clip, boundaries, debounce, long-release exclusion, busy/timeout recovery, JTAG
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_edge_ui.v:98: $finish called at 75940000 (1ps)

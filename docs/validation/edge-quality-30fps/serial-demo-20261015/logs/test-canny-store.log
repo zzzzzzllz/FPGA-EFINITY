@@ -1,0 +1,96 @@
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:31: warning: Port 13 (count) of frame_pair_fifo expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:31:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:34: warning: Port 13 (count) of frame_pair_fifo expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:34:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:180:        : Padding 1 high bits of the expression.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_buffer_V4\DC_FIFO.v:788: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189: warning: Port 4 (WrDNum) of DC_FIFO expects 10 bits, got 11.
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\rtl\frame_store.v:189:        : Padding 1 high bits of the expression.
+Wrote 32 vectors, 32x24
+PASS Canny store 32x24 config=0001 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=2001 complete_job_cycles=1351 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=0801 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=2801 complete_job_cycles=1351 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=4020 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=6020 complete_job_cycles=2042 queue=22
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=4820 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=6820 complete_job_cycles=2042 queue=22
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=8040 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=a040 complete_job_cycles=2084 queue=30
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=8840 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=a840 complete_job_cycles=2084 queue=30
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=00ff complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=20ff complete_job_cycles=2202 queue=44
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=08ff complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=28ff complete_job_cycles=2202 queue=44
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=4060 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=6060 complete_job_cycles=2232 queue=48
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=4860 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=6860 complete_job_cycles=2232 queue=48
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=80a0 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=a0a0 complete_job_cycles=4201 queue=251
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 73661000 (1ps)
+PASS Canny store 32x24 config=88a0 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=a8a0 complete_job_cycles=4131 queue=228
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 73661000 (1ps)
+PASS Canny store 32x24 config=0020 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=2020 complete_job_cycles=3212 queue=154
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=0820 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=2820 complete_job_cycles=3212 queue=154
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=47f8 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=67f8 complete_job_cycles=1351 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS Canny store 32x24 config=4ff8 complete_job_cycles=1083 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50379000 (1ps)
+PASS Canny store 32x24 config=6ff8 complete_job_cycles=1351 queue=0
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:137: $finish called at 50743000 (1ps)
+PASS compact-state DDR write failure aborts before hysteresis/publication
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:90: $finish called at 23315000 (1ps)
+PASS frozen slot reuse: old RGB/edges stay coherent while new epochs 20/21 are processed
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:130: $finish called at 142429000 (1ps)
+PASS Canny reference: coherent grayscale and metadata without edge-state reads
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_store.v:134: $finish called at 99883000 (1ps)
+PASS 32 frame-store cases: final pixels, frame metadata, publication gate, AXI stalls

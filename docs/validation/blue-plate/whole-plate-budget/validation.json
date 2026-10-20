@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "script": "audit.py",
+      "exit_code": 0
+    },
+    {
+      "script": "student_schedule.py",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes_rechecked": true,
+  "student_exact_outputs": 289032,
+  "outputs_sha256": {
+    "docs\\validation\\blue-plate\\whole-plate-budget\\report.md": "5bdfa3811654b38ddd90f349e238df9ba6a8425661db6ce8b718919e1a998a58",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\student-schedule.md": "d33a343182448ad3f6b923a2756366c0d03ad31af870b06069eae0a59328e437",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\costs.json": "78a0bf006fe28a5222f67a29541d71a74842db99b340aea242f80882242e5285",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\student-schedule.json": "7967389ef8950de5b59b380d76e22592ae72aded26f316bbcedccccb6063cdb5",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\layers.csv": "633837c9b63980eb3ff48213cde61d9ef52b2238c1942e192168c68d37f57414",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\sources.json": "984857ab065ffac5767bb3e2db64f5aaf133e7c170876e8f0f6b44bcc02aa17a",
+    "tools\\blue_plate\\whole_plate_budget\\audit.py": "a708fe9e286f783326d4006acc39150ffb02347f4fc95f3a9ee87573823b5f10",
+    "tools\\blue_plate\\whole_plate_budget\\student_schedule.py": "98f9404626c010ac84e886b918362f5a37fbe2ea6a36ff8b78f3e1a07eb653e8",
+    "tools\\blue_plate\\whole_plate_budget\\README.md": "075789a2485217e2dfe8970878b36193ffa013b11b335ed9f8bf25a47dafe88f"
+  },
+  "scope": "Read-only source audit and synthetic scheduling; no synthesis, hardware, dataset evaluation or trained model export"
+}

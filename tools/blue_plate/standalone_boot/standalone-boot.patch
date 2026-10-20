@@ -1,0 +1,149 @@
+--- a/rtl/ti60f225_oob_top.v
++++ b/rtl/ti60f225_oob_top.v
+@@ -514,18 +514,20 @@
+ wire sda_padoen_o;
+ 
+ 
+-reg [12:0] i2c_rst_cnt = '0;
++reg [15:0] i2c_rst_cnt = '0;
+ 
+ always @( posedge CLK_5M or negedge w_arstn )
+ begin
+     if( !w_arstn )
+        i2c_rst_cnt <= 'd0;
+     else 
+-       i2c_rst_cnt <= i2c_rst_cnt[12] ? i2c_rst_cnt : i2c_rst_cnt + 1'b1;
+-end
+-wire i2c_rst_n = i2c_rst_cnt[12];
+-
++       i2c_rst_cnt <= i2c_rst_cnt[15] ? i2c_rst_cnt : i2c_rst_cnt + 1'b1;
++end
++wire i2c_rst_n = i2c_rst_cnt[15];
++
++wire sensor_init_success, sensor_init_error;
+ i2c_master_ctrl_top u2_i2c_master_ctrl_top(
++  .init_success(sensor_init_success), .init_error(sensor_init_error),
+   .sensor_command(sensor_command), .sensor_response(sensor_response),
+   .frame_toggle(w_mipi_rx_vs),
+   /*i*/.clk			(CLK_5M		),
+@@ -814,7 +816,7 @@
+ wire [15:0] source_width,source_height;
+ wire full_vs,full_valid;
+ wire [63:0] full_rgb;
+-reg [15:0] active_r=397, active_g=256, active_b=471;
++reg [15:0] active_r=389, active_g=256, active_b=427;
+ reg [1:0] active_phase=0;
+ reg [31:0] config_epoch=0;
+ reg camera_vs_d=0;
+@@ -835,7 +837,7 @@
+  .minus_events(key_minus_events),.plus_events(key_plus_events),.keys(threshold_keys));
+ always @(posedge i_mipi_rx_pclk) begin
+  if (!w_arstn) begin
+-  active_r<=397; active_g<=256; active_b<=471; active_phase<=0;
++  active_r<=389; active_g<=256; active_b<=427; active_phase<=0;
+   config_epoch<=0; camera_vs_d<=0;median_active<=0;denoise_active<=0;median_epoch<=0;algorithm_active<=0;ratio_active<=1;recognition_active<=0;
+  end else begin
+   camera_vs_d<=w_mipi_rx_vs;
+--- a/debug_top.v
++++ b/debug_top.v
+@@ -134,9 +134,9 @@
+         .PROBE_OUT16_WIDTH      ( 1 ),
+         .PROBE_OUT17_WIDTH      ( 2 ),
+         .PROBE_OUT18_WIDTH      ( 1 ),
+-        .PROBE_OUT0_INIT_VAL    ( 'h18d ),
++        .PROBE_OUT0_INIT_VAL    ( 'h185 ),
+         .PROBE_OUT1_INIT_VAL    ( 'h100 ),
+-        .PROBE_OUT2_INIT_VAL    ( 'h1d7 ),
++        .PROBE_OUT2_INIT_VAL    ( 'h1ab ),
+         .PROBE_OUT3_INIT_VAL    ( 'h0 ),
+         .PROBE_OUT4_INIT_VAL    ( 'h0 ),
+         .PROBE_OUT5_INIT_VAL    ( 'h1 ),
+--- a/full_view_profile.json
++++ b/full_view_profile.json
+@@ -13,7 +13,7 @@
+         {
+           "name": "r_gain",
+           "width": 16,
+-          "init": "0x18d"
++          "init": "0x185"
+         },
+         {
+           "name": "g_gain",
+@@ -23,7 +23,7 @@
+         {
+           "name": "b_gain",
+           "width": 16,
+-          "init": "0x1d7"
++          "init": "0x1ab"
+         },
+         {
+           "name": "gamma_sel",
+--- a/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v
++++ b/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v
+@@ -1,5 +1,5 @@
+ module i2c_master_ctrl_top #(
+-	parameter DATA_LENGTH = 164,
++	parameter DATA_LENGTH = 166,
+ 	parameter I2C_REG_ADDR_WIDTH = 16,
+ 	parameter I2C_DATA_WIDTH = 8,
+ 	parameter I2C_DEVICE_ADDR = 8'h60,
+@@ -12,6 +12,8 @@
+ input wire [25:0] sensor_command,
+ input wire frame_toggle,
+ output wire [10:0] sensor_response,
++output wire init_success,
++output reg init_error,
+ 
+ input  scl_pad_i,       // SCL-line input
+ output scl_pad_o,       // SCL-line output (always 1'b0)
+@@ -33,6 +35,13 @@
+ (* async_reg="true" *) reg [2:0] frame_sync;
+ (* async_reg="true" *) reg [1:0] request_sync;
+ assign sensor_response = {read_byte, configured, error, ack};
++// Table completion and successful initialization are distinct states.
++assign init_success = configured && !init_error;
++always @(posedge clk or negedge rst_n) begin
++    if(!rst_n) init_error <= 0;
++    else if(!configured && (wr_done || rd_done) && nack_error)
++        init_error <= 1;
++end
+ // One command at a time. All writes start just after a sensor frame boundary.
+ // The host encloses exposure/gain bytes in the documented Group Hold sequence.
+ always @(posedge clk or negedge rst_n) begin
+--- a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v
++++ b/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v
+@@ -197,8 +197,8 @@
+ ROM[8'h72] = {16'h393e,8'h80,1'b0};
+ // Keep exposure within the 1500-line frame: 2989 half-lines maximum.
+ ROM[8'h73] = {16'h3e00,8'h00,1'b0};
+-ROM[8'h74] = {16'h3e01,8'hba,1'b0};
+-ROM[8'h75] = {16'h3e02,8'hd0,1'b0};
++ROM[8'h74] = {16'h3e01,8'h70,1'b0};
++ROM[8'h75] = {16'h3e02,8'h80,1'b0};
+ ROM[8'h76] = {16'h3e16,8'h00,1'b0};
+ ROM[8'h77] = {16'h3e17,8'hc5,1'b0};
+ ROM[8'h78] = {16'h3e18,8'h00,1'b0};
+@@ -243,8 +243,10 @@
+ ROM[8'h9f] = {16'h3212,8'h00,1'b0};
+ ROM[8'ha0] = {16'h3213,8'h04,1'b0};
+ ROM[8'ha1] = {16'h3E08,8'h80,1'b0};
+-ROM[8'ha2] = {16'h3E09,8'h2a,1'b0};
+-ROM[8'ha3] = {16'h0100,8'h01,1'b0};
++ROM[8'ha2] = {16'h3E09,8'h3f,1'b0};
++ROM[8'ha3] = {16'h3e06,8'h00,1'b0};
++ROM[8'ha4] = {16'h3e07,8'h80,1'b0};
++ROM[8'ha5] = {16'h0100,8'h01,1'b0};
+ end 
+ // write is unused
+ wire [ADDR_WIDTH-1:0] ADDRA = {ADDR_WIDTH{1'b0}}; 
+--- a/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v
++++ b/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_set.v
+@@ -1,7 +1,7 @@
+ 
+ 
+ module i2c_master_reg_set #(
+-	parameter DATA_LENGTH = 61,
++	parameter DATA_LENGTH = 166,
+ 	parameter I2C_REG_ADDR_WIDTH = 16,
+ 	parameter I2C_DATA_WIDTH = 8,
+ 	parameter I2C_DEVICE_ADDR = 8'h20

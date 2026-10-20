@@ -1,0 +1,252 @@
+[
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_92-300&547_485&612-496&612_301&613_297&552_492&551-0_0_28_32_30_31_33-140-41.jpg",
+    "label": "皖A48679",
+    "rects": [
+      [
+        6,
+        13,
+        24,
+        37
+      ],
+      [
+        36,
+        12,
+        21,
+        39
+      ],
+      [
+        74,
+        12,
+        22,
+        39
+      ],
+      [
+        102,
+        12,
+        23,
+        39
+      ],
+      [
+        130,
+        12,
+        24,
+        38
+      ],
+      [
+        159,
+        12,
+        24,
+        39
+      ],
+      [
+        188,
+        12,
+        24,
+        38
+      ]
+    ],
+    "coordinate_system": "224x64 oracle-rectified plate",
+    "selection": "clear development images; visually audited"
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_85-274&482_457&544-456&545_270&533_261&470_447&482-0_0_16_24_31_28_31-146-27.jpg",
+    "label": "皖AS0747",
+    "rects": [
+      [
+        4,
+        11,
+        27,
+        39
+      ],
+      [
+        36,
+        11,
+        22,
+        40
+      ],
+      [
+        73,
+        11,
+        23,
+        40
+      ],
+      [
+        99,
+        11,
+        26,
+        41
+      ],
+      [
+        128,
+        11,
+        25,
+        43
+      ],
+      [
+        156,
+        11,
+        26,
+        44
+      ],
+      [
+        186,
+        11,
+        34,
+        44
+      ]
+    ],
+    "coordinate_system": "224x64 oracle-rectified plate",
+    "selection": "clear development images; visually audited"
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-222&446_405&507-400&505_225&500_227&442_402&447-0_0_20_0_24_30_26-66-28.jpg",
+    "label": "皖AWA062",
+    "rects": [
+      [
+        5,
+        14,
+        24,
+        36
+      ],
+      [
+        34,
+        13,
+        24,
+        38
+      ],
+      [
+        75,
+        13,
+        23,
+        38
+      ],
+      [
+        103,
+        13,
+        24,
+        39
+      ],
+      [
+        131,
+        13,
+        26,
+        39
+      ],
+      [
+        159,
+        14,
+        28,
+        38
+      ],
+      [
+        187,
+        13,
+        33,
+        39
+      ]
+    ],
+    "coordinate_system": "224x64 oracle-rectified plate",
+    "selection": "clear development images; visually audited"
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-307&460_498&529-501&530_302&528_303&463_502&465-0_0_14_10_33_32_29-108-26.jpg",
+    "label": "皖AQL985",
+    "rects": [
+      [
+        4,
+        16,
+        24,
+        35
+      ],
+      [
+        34,
+        13,
+        22,
+        38
+      ],
+      [
+        74,
+        13,
+        22,
+        38
+      ],
+      [
+        102,
+        12,
+        23,
+        39
+      ],
+      [
+        131,
+        13,
+        23,
+        36
+      ],
+      [
+        159,
+        12,
+        24,
+        38
+      ],
+      [
+        188,
+        12,
+        23,
+        38
+      ]
+    ],
+    "coordinate_system": "224x64 oracle-rectified plate",
+    "selection": "clear development images; visually audited"
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_87-240&501_441&563-437&567_237&561_230&490_430&496-0_0_2_12_32_26_26-180-20.jpg",
+    "label": "皖ACN822",
+    "rects": [
+      [
+        4,
+        12,
+        27,
+        39
+      ],
+      [
+        36,
+        13,
+        21,
+        38
+      ],
+      [
+        72,
+        13,
+        24,
+        37
+      ],
+      [
+        100,
+        12,
+        25,
+        39
+      ],
+      [
+        129,
+        12,
+        24,
+        39
+      ],
+      [
+        158,
+        12,
+        26,
+        39
+      ],
+      [
+        188,
+        12,
+        25,
+        39
+      ]
+    ],
+    "coordinate_system": "224x64 oracle-rectified plate",
+    "selection": "clear development images; visually audited"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "resources": {
+    "EFX_ADD": 205,
+    "EFX_LUT4": 1272,
+    "EFX_FF": 573,
+    "EFX_RAM10": 7
+  },
+  "DSP": 0,
+  "stage": "map only; no placement XLR or routed timing claim",
+  "source_sha256": {
+    "frame_reader.sdc": "3706f2f5fe329dc9354939bd1b8df11913846c146f2f75b66d5831ccc601c38f",
+    "frame_reader.v": "96de672190fa6792f797b2b53e9d11d17d2bdea861569efa3371adb2ab6539b3",
+    "frame_reader.xml": "29dfb23da3ec4c125387d2d5ac58f667c0c22fc38ad2bef3af59ccc169c21c92"
+  },
+  "xml_before_sha256": "29dfb23da3ec4c125387d2d5ac58f667c0c22fc38ad2bef3af59ccc169c21c92",
+  "xml_after_sha256": "3bbb8b3fce46601d4ec1519fc4e7a72cec566ea8a9e17327f775f395ee690470",
+  "xml_semantically_identical": true,
+  "original_input_manifest_unchanged": true,
+  "rewrite_cause": "D:/Efinity/scripts/efx_run.py updates sw_version and serializes ElementTree at line 2120; sw_version is unchanged here, empty-element formatting changes.",
+  "map_report_sha256": "fffa9f6a13cc15307b59fd20ba6b6f1771a329f1dfb5a82977aaf14420574140",
+  "netlist_sha256": "2546d92099a459384a3346f74cf46dde290b944224589b34030836e53b6e5113"
+}

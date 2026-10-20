@@ -1,0 +1,46 @@
+{
+  "input_sha256": {
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_ctrl_top.v": "9ff382f4bf8a8525e9a4e99a03ff7467eb8cc60ee25d75668c2fbf74665916a9",
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_set.v": "e19bf7e0f4e196d4005577118eaed9ecc0cf9303484cc077c584ace74f1834ce",
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_rom.v": "551dd653b1e3215af4e6972e7ad5c5f880f6e20987bf4cbf65007bc97e0335ca",
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_16addr_8data.v": "1721ab5b1e30c7df3752c2cc0a8e2b4f219708ad4e01cf96fd85923a4dfa9c33",
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_top.v": "bf5dd12f2bf30dbc46a1d4cf1d3d1accc05106e14ca1cecf467fd09b46cd45c8",
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_byte_ctrl.v": "442159006425fa36a946f67afc62391f9f80142aad379a640118a28ce67c9f80",
+    "coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_bit_ctrl.v": "2df1f5d522725ea216385829a4dec38fdd616e4979aaa0aef7053ac34bf8ac8c",
+    "tmp\\blue-plate-standalone-startup\\tb_startup.sv": "3c1ab81afb2a8bd8b2252ee12f595824dbd37778831979de84377b9f2bb0a022"
+  },
+  "commands": [
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-I",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master",
+      "-s",
+      "tb_startup",
+      "-o",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-standalone-startup\\startup.vvp",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_ctrl_top.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_set.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_rom.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_16addr_8data.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_top.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_byte_ctrl.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_bit_ctrl.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-standalone-startup\\tb_startup.sv"
+    ],
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-standalone-startup\\startup.vvp"
+    ]
+  ],
+  "stages": {
+    "compile": {
+      "exit_code": 0,
+      "seconds": 0.04939879999983532
+    },
+    "run": {
+      "exit_code": 0,
+      "seconds": 26.737814199999775
+    }
+  }
+}

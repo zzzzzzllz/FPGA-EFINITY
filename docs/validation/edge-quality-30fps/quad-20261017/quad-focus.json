@@ -1,0 +1,44 @@
+[
+  {
+    "name": "edge_ui-compile",
+    "returncode": 0,
+    "seconds": 0.044,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "edge_ui",
+    "returncode": 0,
+    "seconds": 0.042,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui.log",
+    "sha256": "3ebf479f64597a8f790a158f87b48f7f2ef7823a67766599b732bd63d7f9e4f2"
+  },
+  {
+    "name": "frame_store_control-compile",
+    "returncode": 0,
+    "seconds": 0.046,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store_control-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "frame_store_control",
+    "returncode": 0,
+    "seconds": 0.122,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store_control.log",
+    "sha256": "0151d49d42f533a258a8127d7eb73066bd5aa545f3aac584fbe45f130d9e3ca8"
+  },
+  {
+    "name": "frame_display+REFERENCE_DISPLAY+SHORT_DISPLAY-compile",
+    "returncode": 0,
+    "seconds": 0.066,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_display+REFERENCE_DISPLAY+SHORT_DISPLAY-compile.log",
+    "sha256": "438d6874a7fd287ccaacda7442df3815d65d3c0abad9b766a2df80851dc51274"
+  },
+  {
+    "name": "frame_display+REFERENCE_DISPLAY+SHORT_DISPLAY",
+    "returncode": 0,
+    "seconds": 87.377,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_display+REFERENCE_DISPLAY+SHORT_DISPLAY.log",
+    "sha256": "568685ece976379046dab80536432613f1b0865660357280783c6997b7c646db"
+  }
+]

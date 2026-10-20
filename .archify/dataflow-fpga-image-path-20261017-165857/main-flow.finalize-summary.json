@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "dataflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+    "sha256": "a61fa58d12807e50f9c547277573f7e5a2e15b719eea936106f16b7ad8ec401c",
+    "bytes": 10755
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html",
+    "sha256": "45eaaedd0503fecd8b53dceae57fc43a0ecf9008e005769e55408e4e53a45d2f",
+    "bytes": 826962
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "fail"
+  },
+  "failedStage": "browser-check",
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html"
+      },
+      "evidence": {
+        "reason": "Temporary directory ancestor identity is unavailable: C:\\Users\\35075\\AppData\\Local\\Temp"
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1386
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "8378dc61-2c54-4529-ac94-008b18850784",
+  "status": "current",
+  "command": "deliver",
+  "type": "workflow",
+  "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\candidate.json",
+  "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\loop-demo.html",
+  "specification": {
+    "sha256": "471bd3b5d377120f9f713bac6e8c9a0131bb6dca06826c5c4521cef89037b3ea",
+    "bytes": 8768
+  },
+  "artifact": {
+    "sha256": "1712b27bc0d78d958df5eb8c1d22b9e0ebd02bdbb02b55ef1313c3936fdb5813",
+    "bytes": 838145
+  }
+}

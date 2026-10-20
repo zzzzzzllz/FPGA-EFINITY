@@ -1,0 +1,347 @@
+{
+  "raw_files": 29793,
+  "retained": 25945,
+  "content_groups": 25591,
+  "conflicts": 31,
+  "counts": {
+    "皖": {
+      "train": 335,
+      "validation": 76,
+      "test": 58
+    },
+    "沪": {
+      "train": 243,
+      "test": 59,
+      "validation": 54
+    },
+    "津": {
+      "train": 627,
+      "validation": 145,
+      "test": 144
+    },
+    "渝": {
+      "test": 37,
+      "train": 142,
+      "validation": 36
+    },
+    "冀": {
+      "train": 566,
+      "validation": 128,
+      "test": 119
+    },
+    "晋": {
+      "train": 393,
+      "test": 100,
+      "validation": 98
+    },
+    "蒙": {
+      "test": 83,
+      "train": 419,
+      "validation": 92
+    },
+    "辽": {
+      "validation": 135,
+      "train": 564,
+      "test": 113
+    },
+    "吉": {
+      "train": 215,
+      "validation": 57,
+      "test": 38
+    },
+    "黑": {
+      "validation": 38,
+      "train": 127,
+      "test": 27
+    },
+    "苏": {
+      "train": 659,
+      "test": 142,
+      "validation": 143
+    },
+    "浙": {
+      "train": 520,
+      "validation": 108,
+      "test": 108
+    },
+    "京": {
+      "validation": 122,
+      "train": 605,
+      "test": 136
+    },
+    "闽": {
+      "validation": 102,
+      "test": 99,
+      "train": 442
+    },
+    "赣": {
+      "train": 162,
+      "validation": 36,
+      "test": 29
+    },
+    "鲁": {
+      "train": 168,
+      "validation": 38,
+      "test": 37
+    },
+    "豫": {
+      "train": 120,
+      "validation": 27,
+      "test": 26
+    },
+    "鄂": {
+      "train": 482,
+      "validation": 116,
+      "test": 100
+    },
+    "湘": {
+      "train": 570,
+      "validation": 120,
+      "test": 130
+    },
+    "粤": {
+      "train": 570,
+      "test": 132,
+      "validation": 129
+    },
+    "桂": {
+      "train": 102,
+      "test": 26,
+      "validation": 19
+    },
+    "琼": {
+      "train": 53,
+      "validation": 9,
+      "test": 12
+    },
+    "川": {
+      "train": 343,
+      "validation": 83,
+      "test": 87
+    },
+    "贵": {
+      "validation": 99,
+      "train": 527,
+      "test": 105
+    },
+    "云": {
+      "train": 397,
+      "test": 100,
+      "validation": 87
+    },
+    "藏": {
+      "train": 21,
+      "test": 3,
+      "validation": 3
+    },
+    "陕": {
+      "train": 285,
+      "validation": 56,
+      "test": 54
+    },
+    "甘": {
+      "train": 439,
+      "test": 93,
+      "validation": 89
+    },
+    "青": {
+      "train": 513,
+      "test": 112,
+      "validation": 111
+    },
+    "宁": {
+      "train": 100,
+      "validation": 19,
+      "test": 15
+    },
+    "新": {
+      "test": 35,
+      "train": 136,
+      "validation": 31
+    },
+    "A": {
+      "validation": 143,
+      "train": 568,
+      "test": 111
+    },
+    "B": {
+      "train": 241,
+      "test": 65,
+      "validation": 32
+    },
+    "C": {
+      "train": 181,
+      "validation": 40,
+      "test": 31
+    },
+    "D": {
+      "train": 113,
+      "validation": 28,
+      "test": 25
+    },
+    "E": {
+      "train": 166,
+      "test": 28,
+      "validation": 33
+    },
+    "F": {
+      "validation": 25,
+      "train": 122,
+      "test": 41
+    },
+    "G": {
+      "train": 140,
+      "validation": 28,
+      "test": 31
+    },
+    "H": {
+      "train": 118,
+      "validation": 23,
+      "test": 21
+    },
+    "J": {
+      "test": 19,
+      "train": 85,
+      "validation": 22
+    },
+    "K": {
+      "train": 147,
+      "validation": 31,
+      "test": 31
+    },
+    "L": {
+      "validation": 37,
+      "train": 143,
+      "test": 28
+    },
+    "M": {
+      "train": 126,
+      "validation": 34,
+      "test": 35
+    },
+    "N": {
+      "train": 120,
+      "test": 22,
+      "validation": 20
+    },
+    "P": {
+      "test": 24,
+      "train": 102,
+      "validation": 14
+    },
+    "Q": {
+      "test": 13,
+      "train": 68,
+      "validation": 14
+    },
+    "R": {
+      "train": 90,
+      "test": 23,
+      "validation": 18
+    },
+    "S": {
+      "train": 94,
+      "test": 21,
+      "validation": 16
+    },
+    "T": {
+      "train": 75,
+      "validation": 11,
+      "test": 13
+    },
+    "U": {
+      "train": 63,
+      "validation": 10,
+      "test": 8
+    },
+    "V": {
+      "test": 10,
+      "train": 36,
+      "validation": 11
+    },
+    "W": {
+      "train": 51,
+      "validation": 8,
+      "test": 11
+    },
+    "X": {
+      "train": 63,
+      "validation": 8,
+      "test": 7
+    },
+    "Y": {
+      "train": 66,
+      "test": 21,
+      "validation": 16
+    },
+    "Z": {
+      "train": 54,
+      "validation": 9,
+      "test": 10
+    },
+    "0": {
+      "validation": 91,
+      "train": 398,
+      "test": 78
+    },
+    "1": {
+      "train": 235,
+      "validation": 50,
+      "test": 54
+    },
+    "2": {
+      "test": 69,
+      "train": 282,
+      "validation": 78
+    },
+    "3": {
+      "train": 303,
+      "validation": 65,
+      "test": 64
+    },
+    "4": {
+      "train": 241,
+      "validation": 46,
+      "test": 38
+    },
+    "5": {
+      "test": 115,
+      "train": 580,
+      "validation": 111
+    },
+    "6": {
+      "train": 397,
+      "test": 78,
+      "validation": 82
+    },
+    "7": {
+      "train": 468,
+      "test": 104,
+      "validation": 96
+    },
+    "8": {
+      "validation": 158,
+      "train": 648,
+      "test": 155
+    },
+    "9": {
+      "validation": 122,
+      "train": 683,
+      "test": 134
+    }
+  },
+  "sources": {
+    "binary": {
+      "files": 16151,
+      "median_foreground": 0.2725,
+      "median_border": 0.1
+    },
+    "gray": {
+      "files": 13642,
+      "median_foreground": 0.453125,
+      "median_border": 0.057692307692307696
+    }
+  },
+  "split_boundary": "Content-disjoint only. EasyPR supplies no vehicle/session identity. Unknown augmented relatives may remain.",
+  "provenance": "https://github.com/liuruoze/EasyPR/resources/train; repository Apache-2.0; no CCPD labels used"
+}

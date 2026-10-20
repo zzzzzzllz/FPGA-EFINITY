@@ -1,0 +1,263 @@
+{
+  "status": "substantial_precision_recovery_one_new_strict_wrong_accept_remains",
+  "acceptance_scope": "controlled fixed viewpoint, clear complete unoccluded single ordinary blue plate; occlusion rejection deferred by user",
+  "results": {
+    "fp32": {
+      "ocr_only": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 290,
+          "wrong": 6,
+          "rejected": 8
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 250,
+          "wrong": 0,
+          "rejected": 54
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 61,
+          "wrong": 0,
+          "rejected": 15
+        }
+      },
+      "combined": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 288,
+          "wrong": 6,
+          "rejected": 10
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 249,
+          "wrong": 0,
+          "rejected": 55
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 61,
+          "wrong": 0,
+          "rejected": 15
+        }
+      }
+    },
+    "first_integer": {
+      "ocr_only": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 284,
+          "wrong": 9,
+          "rejected": 11
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 229,
+          "wrong": 3,
+          "rejected": 72
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 70,
+          "wrong": 1,
+          "rejected": 5
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 55,
+          "wrong": 0,
+          "rejected": 21
+        }
+      },
+      "combined": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 282,
+          "wrong": 8,
+          "rejected": 14
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 228,
+          "wrong": 3,
+          "rejected": 73
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 70,
+          "wrong": 0,
+          "rejected": 6
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 55,
+          "wrong": 0,
+          "rejected": 21
+        }
+      }
+    },
+    "fork_integer_with_float_ctc": {
+      "ocr_only": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 287,
+          "wrong": 8,
+          "rejected": 9
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 251,
+          "wrong": 1,
+          "rejected": 52
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 72,
+          "wrong": 1,
+          "rejected": 3
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 60,
+          "wrong": 0,
+          "rejected": 16
+        }
+      },
+      "combined": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 285,
+          "wrong": 8,
+          "rejected": 11
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 250,
+          "wrong": 1,
+          "rejected": 53
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 72,
+          "wrong": 1,
+          "rejected": 3
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 60,
+          "wrong": 0,
+          "rejected": 16
+        }
+      }
+    },
+    "greedy_changed_vs_fp32": 7,
+    "greedy_changed_vs_first_integer": 14,
+    "fp32_pool_selection_checks": 514,
+    "prior_fusion_max_abs": 4.57763671875e-05,
+    "trunk_quantization": {
+      "scale": 0.032588472553327974,
+      "zero": -128,
+      "constant_zero": false
+    },
+    "calibration_range": [
+      0.0,
+      8.310060501098633
+    ],
+    "original_delivery_unchanged": true,
+    "parameters_unchanged": true,
+    "model_state_unchanged": true,
+    "optimizer_steps": 0,
+    "validation_image_reads": 0,
+    "heldout_image_reads": 0,
+    "elapsed_seconds": 48.50578980000137
+  },
+  "verification": {
+    "saved_logits_replay_exact": true,
+    "selected_accumulators_numpy_int64_exact": 50688,
+    "fork_outputs_fraction_exact": 101376,
+    "full_context_output_unchanged": true,
+    "first_three_context_branches_unchanged": true,
+    "spatial_max_numpy_exact": true,
+    "requant_max_commutation_exact": true,
+    "fp32_channel_selection_exact": true,
+    "ddr_writes": 132,
+    "ddr_output_values_verified": 253440,
+    "write_block_bytes": 3840,
+    "two_slot_live_peak_bytes": 304128,
+    "output_slot_reused_only_after_last_input_read": true,
+    "parameter_rows": 320,
+    "changed_existing_arrays": [
+      "backbone.16.bias",
+      "backbone.16.multiplier",
+      "backbone.16.shift"
+    ],
+    "original_candidate_unchanged": true,
+    "fixed_scores_recounted": true,
+    "original_artifacts_unchanged": true
+  },
+  "resource_plan": {
+    "ram_banks": 51,
+    "mac_dsps": 8,
+    "parameter_rows": 320,
+    "parameter_capacity": 512,
+    "parameter_extra_payload_bytes": 320,
+    "parameter_extra_reserved_bytes": 576,
+    "output_block_bytes": 3840,
+    "output_block_capacity": 4096,
+    "spatial_block_size": 12,
+    "spatial_blocks": 66,
+    "coarse_ddr_interval": [
+      0,
+      202752
+    ],
+    "trunk_ddr_interval": [
+      202752,
+      253440
+    ],
+    "slot_capacity": 262144,
+    "input_live_bytes": 50688,
+    "fork_live_bytes": 304128,
+    "extra_requantizations": 50688,
+    "extra_weight_reads_bytes": 262144,
+    "extra_activation_writes_bytes": 50688,
+    "arena_bytes": 7015168,
+    "arena_capacity": 8388608,
+    "extra_ram_banks": 0,
+    "extra_mac_dsps": 0,
+    "extra_full_int32_feature_buffers": 0,
+    "extra_mac_operations": 0,
+    "lifecycle": "keep both tap2 outputs until context consumed and trunk maxpool reads complete; single outstanding DMA",
+    "block_coverage_verified": true,
+    "hardware_map_pass": false
+  },
+  "software_ctc": "float64 host",
+  "candidate_count": 1,
+  "threshold_changed": false,
+  "validation84_opened": false,
+  "heldout112_opened": false,
+  "original_candidate_unchanged": true,
+  "network_rtl_authorized": false,
+  "board_programming_authorized": false,
+  "remaining_wrong": {
+    "sample_index": 302,
+    "roi_index": 185,
+    "label": "皖A157G6",
+    "code": "皖A15706",
+    "fp32_score": 0.9922865070504269,
+    "fork_score": 0.9950030770085062
+  }
+}

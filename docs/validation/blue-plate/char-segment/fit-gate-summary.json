@@ -1,0 +1,301 @@
+{
+  "training": {
+    "conditions": [
+      {
+        "condition": "original",
+        "stage": "fit",
+        "passed_fitting_gate": true,
+        "stop_reason": "three_consecutive_exact_evaluations",
+        "steps": 650,
+        "seconds": 28.91192139999839,
+        "best": {
+          "step": 650,
+          "checkpoint_sha256": "4497ecc48e3c05ccfadf0b5f2fc14ee2cabf93008a51f8269445080acf4f328c",
+          "exact": 8
+        },
+        "validation_images_read": 0,
+        "heldout_images_read": 0
+      },
+      {
+        "condition": "no_dropout",
+        "stage": "fit",
+        "passed_fitting_gate": false,
+        "stop_reason": "step_limit",
+        "steps": 2000,
+        "seconds": 116.78635479999866,
+        "best": {
+          "step": 1500,
+          "checkpoint_sha256": "f8dc78748cdfa5bdfbdb78251d971d9b7a8ac0c57e7f6648d166765970a2e267",
+          "exact": 6
+        },
+        "validation_images_read": 0,
+        "heldout_images_read": 0
+      }
+    ],
+    "development": {
+      "condition": "original",
+      "stage": "development",
+      "passed_fitting_gate": false,
+      "stop_reason": "no_calibrated_gain_last_four_evaluations",
+      "steps": 2250,
+      "seconds": 134.2140643999992,
+      "best": {
+        "step": 1250,
+        "checkpoint_sha256": "f4689e4132485fdca7aa64633fc03d0527e1ad82ede870e897ec0ae3f5a07397",
+        "exact": 38,
+        "tune": {
+          "loss": 1.2559976415974754,
+          "raw": {
+            "total": 78,
+            "exact": 9,
+            "lengths": {
+              "7": 39,
+              "8": 18,
+              "6": 11,
+              "3": 2,
+              "5": 2,
+              "9": 3,
+              "4": 1,
+              "10": 2
+            },
+            "blank_fraction": 0.7175824175824175
+          },
+          "threshold": -0.21263481889452254,
+          "metrics": {
+            "total": 76,
+            "correct": 4,
+            "wrong": 3,
+            "reject": 69,
+            "raw_exact": 9
+          },
+          "unfiltered": {
+            "total": 76,
+            "correct": 9,
+            "wrong": 30,
+            "reject": 37,
+            "raw_exact": 9
+          }
+        }
+      },
+      "validation_images_read": 0,
+      "heldout_images_read": 0
+    },
+    "total_new_steps": 4900,
+    "total_training_seconds": 281.09238370000094,
+    "budget_seconds": 900,
+    "validation_images_read": 0,
+    "heldout_images_read": 0
+  },
+  "fixed_ids": [
+    0,
+    2,
+    3,
+    4,
+    9,
+    13,
+    28,
+    31
+  ],
+  "ctc_backend": {
+    "loss_error": 3.814697265625e-06,
+    "gradient_max_error": 1.34296715259552e-06,
+    "repeated_labels": [
+      "皖A11223",
+      "皖AA796N",
+      "皖FLL589"
+    ]
+  },
+  "bn": {
+    "train": {
+      "changed_predictions": 161,
+      "eval": {
+        "total": 207,
+        "lengths": {
+          "7": 99,
+          "6": 34,
+          "8": 50,
+          "9": 15,
+          "5": 7,
+          "10": 2
+        },
+        "blank_fraction": 0.7037957211870257,
+        "exact": 38
+      },
+      "batch_stats_no_updates": {
+        "total": 207,
+        "lengths": {
+          "7": 104,
+          "6": 30,
+          "9": 17,
+          "8": 54,
+          "11": 1,
+          "5": 1
+        },
+        "blank_fraction": 0.6868184955141478,
+        "exact": 63
+      }
+    },
+    "tune_unlabeled": {
+      "changed_predictions": 67,
+      "eval": {
+        "total": 78,
+        "lengths": {
+          "7": 39,
+          "8": 18,
+          "6": 11,
+          "3": 2,
+          "5": 2,
+          "9": 3,
+          "4": 1,
+          "10": 2
+        },
+        "blank_fraction": 0.7175824175824175
+      },
+      "batch_stats_no_updates": {
+        "total": 78,
+        "lengths": {
+          "7": 34,
+          "8": 24,
+          "3": 1,
+          "9": 6,
+          "5": 3,
+          "6": 9,
+          "10": 1
+        },
+        "blank_fraction": 0.6824175824175823
+      }
+    }
+  },
+  "zero_error_tune_curve": [
+    {
+      "step": 0,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      }
+    },
+    {
+      "step": 250,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      }
+    },
+    {
+      "step": 500,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      }
+    },
+    {
+      "step": 750,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      }
+    },
+    {
+      "step": 1000,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 2
+      }
+    },
+    {
+      "step": 1250,
+      "threshold": -0.07424299206052508,
+      "metrics": {
+        "total": 76,
+        "correct": 1,
+        "wrong": 0,
+        "reject": 75,
+        "raw_exact": 9
+      }
+    },
+    {
+      "step": 1500,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      }
+    },
+    {
+      "step": 1750,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 5
+      }
+    },
+    {
+      "step": 2000,
+      "threshold": -0.02399197220802307,
+      "metrics": {
+        "total": 76,
+        "correct": 1,
+        "wrong": 0,
+        "reject": 75,
+        "raw_exact": 3
+      }
+    },
+    {
+      "step": 2250,
+      "threshold": -0.0711398891040257,
+      "metrics": {
+        "total": 76,
+        "correct": 1,
+        "wrong": 0,
+        "reject": 75,
+        "raw_exact": 2
+      }
+    }
+  ],
+  "original_pipeline_same_tune": {
+    "correct": 49,
+    "wrong": 0,
+    "reject": 27
+  },
+  "calibration_performed": false,
+  "validation_images_read": 0,
+  "heldout_images_read": 0,
+  "source_hashes": {
+    "tools\\blue_plate\\char_segment\\fit_gate.py": "40c1c2b2264cc132c31da85498faf29e8e3217d7f819d7029fcb472878d186c3",
+    "tools\\blue_plate\\char_segment\\fit_gate_analysis.py": "733bbdf75aa1f0310d2418c75f65e92375f349bfb4ec81d7eb80052486728644",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\summary.json": "70d59715b9fafc09a4b7c0a42d5d359360a08dc6c0389ffae885a03b934fc09c",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\fixed-eight.json": "fc422498a248f9ccd82a5ac7c5c486d9d1db0989b7ba264a6fd491f69ac3803c",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\ctc-backend-check.json": "88072b11719f2b5f7a0d951cf043c1562fff28eb0009f95d27fbaea29e885b93",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\analysis.json": "227b0157156e4e84e83aad4516945796e8a680513ca0ace13a0336e4b57ad3f9",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\bn-diagnosis.json": "575c251ba5d005f8a6cdc4bd665ed091562d01f7b798f5ca760aea5871d7b9da",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\development\\frozen.json": "d1b4dcce7d0a71d791184b953a0bf620e590cc1a95ca19ec7dec8cd7301575b7",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\research\\source-review.json": "50e1aa022fe8f27e6e70e1e0ef4ec973ad251ea3b5e8173b98e5754e97a4fa28",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\fit-gate\\research\\bn-calibration-source.json": "d77bd94fe5403b7c02eb37122d15dcedfa20d07c909a550369274b8cf9081df9"
+  }
+}

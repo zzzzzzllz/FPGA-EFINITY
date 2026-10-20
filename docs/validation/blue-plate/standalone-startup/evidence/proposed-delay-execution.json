@@ -1,0 +1,38 @@
+{
+  "scope": "isolated testbench counter substitution only; no project RTL edits",
+  "commands": [
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-I",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master",
+      "-s",
+      "tb_startup",
+      "-o",
+      "tmp\\blue-plate-standalone-startup\\proposed-delay.vvp",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_ctrl_top.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_set.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_master_reg_rom.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c\\i2c_16addr_8data.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_top.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_byte_ctrl.v",
+      "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_bit_ctrl.v",
+      "tmp\\blue-plate-standalone-startup\\tb_proposed_delay.sv"
+    ],
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+      "tmp\\blue-plate-standalone-startup\\proposed-delay.vvp"
+    ]
+  ],
+  "tb_sha256": "5c1c22d065b0f961ac7263ec62bd12c4640c9df6ab66e5c98b496edd4e7f6792",
+  "stages": {
+    "compile": {
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "run": {
+      "exit_code": 0,
+      "log_sha256": "dadeaaca3d9039a5884fa34b62ac1735e1a0b675378df07607626fe1d62cb35c"
+    }
+  }
+}

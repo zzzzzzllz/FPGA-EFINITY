@@ -56,7 +56,9 @@ module median_pair #(
     output reg out_valid, input out_ready,
     output reg [63:0] out_rgby,
     output reg out_sof, out_eol, out_eof,
-    output reg [31:0] out_frame_id, out_epoch
+    output reg [31:0] out_frame_id, out_epoch,
+    output reg [15:0] out_original_luma,
+    output reg [1:0] out_raw_edge
 );
     localparam PAIRS=WIDTH/2, AW=$clog2(PAIRS);
     reg [63:0] row_rgb [0:PAIRS-1];
@@ -106,6 +108,45 @@ module median_pair #(
     reg [31:0] id_pipe[0:9],epoch_pipe[0:9];
     reg [2:0] marks[0:9];
     reg [9:0] valid_pipe;
+    // Reuse the median window for the unfiltered Sobel comparison.
+    // Both edge masks use the same source frame, threshold and zero border.
+    function signed [10:0] gx;
+        input [7:0] a,c,d,f,g,i;
+        begin gx=$signed({3'b0,c})+($signed({3'b0,f})<<<1)+$signed({3'b0,i})
+                -$signed({3'b0,a})-($signed({3'b0,d})<<<1)-$signed({3'b0,g}); end
+    endfunction
+    function signed [10:0] gy;
+        input [7:0] a,b,c,g,h,i;
+        begin gy=$signed({3'b0,g})+($signed({3'b0,h})<<<1)+$signed({3'b0,i})
+                -$signed({3'b0,a})-($signed({3'b0,b})<<<1)-$signed({3'b0,c}); end
+    endfunction
+    function [10:0] magnitude;
+        input signed [10:0] dx,dy;
+        reg [10:0] ax,ay;
+        begin ax=dx[10]?-dx:dx; ay=dy[10]?-dy:dy; magnitude=ax+ay; end
+    endfunction
+    reg signed [10:0] raw_gx0,raw_gy0,raw_gx1,raw_gy1;
+    reg [10:0] raw_mag0,raw_mag1;
+    reg [1:0] raw_border0,raw_border1;
+    reg [1:0] raw_edge_pipe[2:9];
+    integer raw_stage;
+    always @(posedge clk) if(advance) begin
+        if(q_valid) begin
+                raw_gx0<=gx(qx==1?pt[15:8]:lt,pt[7:0],qx==1?pm[15:8]:lm,pm[7:0],qx==1?pb[15:8]:lb,pb[7:0]);
+                raw_gy0<=gy(qx==1?pt[15:8]:lt,pt[15:8],pt[7:0],qx==1?pb[15:8]:lb,pb[15:8],pb[7:0]);
+                raw_gx1<=gx(pt[15:8],q_tail?pt[7:0]:ct[15:8],pm[15:8],q_tail?pm[7:0]:cm[15:8],pb[15:8],q_tail?pb[7:0]:cb[15:8]);
+                raw_gy1<=gy(pt[15:8],pt[7:0],q_tail?pt[7:0]:ct[15:8],pb[15:8],pb[7:0],q_tail?pb[7:0]:cb[15:8]);
+            raw_border0<={qy==1 || qy==HEIGHT || qx==1,qy==1 || qy==HEIGHT || q_tail};
+        end
+        raw_mag0<=magnitude(raw_gx0,raw_gy0);raw_mag1<=magnitude(raw_gx1,raw_gy1);
+        raw_border1<=raw_border0;
+        raw_edge_pipe[2]<={!raw_border1[1] && raw_mag0>config_pipe[1][10:0],
+                           !raw_border1[0] && raw_mag1>config_pipe[1][10:0]};
+        for(raw_stage=3;raw_stage<=9;raw_stage=raw_stage+1)
+            raw_edge_pipe[raw_stage]<=raw_edge_pipe[raw_stage-1];
+        out_raw_edge<=raw_edge_pipe[9];
+        out_original_luma<={rgb_pipe[9][63:56],rgb_pipe[9][31:24]};
+    end
     always @(posedge clk) if(advance) begin
         sort0[1][0+:8]<=sort0[0][0+:8];
         sort1[1][0+:8]<=sort1[0][0+:8];

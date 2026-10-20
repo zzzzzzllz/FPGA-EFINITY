@@ -1,0 +1,1995 @@
+{
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-normal-g1\\mature-detector\\litemodel_cls_96x_r1.onnx": "fe123688d3bf08b9ef029fcd57f3ac4644ac2e5ef8b9e7a676aacd5fad152142",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\hyperlpr_reference.py": "6e1fa355c4b67e5a11e7d6e7c89059853c4d47372eac671419fc351fe579866d",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\mature-research\\hyperlpr\\Prj-Python\\hyperlpr3\\inference\\classification.py": "1946054843bf6d97d33501758c2d667e6aa8daddbb497b1d65f7d2efa0d31a53",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\full-lprnet-sharing.json": "9899df0ee574d91ed876fd12d8fd13f3a11ea7e96653a58be97350a84c089d3f",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\compare_hyperlpr.py": "30c04a7b3f0a82d8f47d16f86674f2194cc46c7e01c626bcd8298c02e93c9b02",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-normal-g1\\mature-detector\\model-costs.json": "1ffe9264f342eccb91ff40095a28f884a12b93aef4584139734391c29a083413"
+  },
+  "source_unchanged": true,
+  "original_model_cost_keys": [
+    "recognizer",
+    "detector320",
+    "detector640"
+  ],
+  "classifier_in_original_model_cost_file": false,
+  "shape": [
+    1,
+    3,
+    96,
+    96
+  ],
+  "output": [
+    1,
+    3
+  ],
+  "layer_types": {
+    "": 1,
+    "Convolution": 52,
+    "ReLU": 35,
+    "NaryEltwise": 10,
+    "Pooling": 1,
+    "Reshape": 1,
+    "Gemm": 2,
+    "PReLU": 1,
+    "Softmax": 1,
+    "Identity": 1
+  },
+  "schedule": [
+    {
+      "name": "onnx_node!Conv_0",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 27,
+      "channels": 8,
+      "positions": 2304,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        8
+      ],
+      "weight_group_bytes": 216,
+      "macs": 497664,
+      "mac_steps": 62208,
+      "packed_weight_bytes": 224,
+      "weight_read_bytes": 32256,
+      "metadata_read_bytes": 80
+    },
+    {
+      "name": "onnx_node!Conv_2",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 8,
+      "positions": 2304,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        8
+      ],
+      "weight_group_bytes": 72,
+      "macs": 165888,
+      "mac_steps": 20736,
+      "packed_weight_bytes": 80,
+      "weight_read_bytes": 80,
+      "metadata_read_bytes": 80
+    },
+    {
+      "name": "onnx_node!Conv_4",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 8,
+      "channels": 4,
+      "positions": 2304,
+      "spatial_tile": 16,
+      "tail_lanes": 4,
+      "metadata_chunks": [
+        4
+      ],
+      "weight_group_bytes": 64,
+      "macs": 73728,
+      "mac_steps": 18432,
+      "packed_weight_bytes": 64,
+      "weight_read_bytes": 9216,
+      "metadata_read_bytes": 48
+    },
+    {
+      "name": "onnx_node!Conv_5",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 4,
+      "channels": 24,
+      "positions": 2304,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        24
+      ],
+      "weight_group_bytes": 32,
+      "macs": 221184,
+      "mac_steps": 27648,
+      "packed_weight_bytes": 96,
+      "weight_read_bytes": 13824,
+      "metadata_read_bytes": 224
+    },
+    {
+      "name": "onnx_node!Conv_7",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 24,
+      "positions": 576,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        24
+      ],
+      "weight_group_bytes": 72,
+      "macs": 124416,
+      "mac_steps": 15552,
+      "packed_weight_bytes": 224,
+      "weight_read_bytes": 224,
+      "metadata_read_bytes": 224
+    },
+    {
+      "name": "onnx_node!Conv_9",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 24,
+      "channels": 6,
+      "positions": 576,
+      "spatial_tile": 16,
+      "tail_lanes": 2,
+      "metadata_chunks": [
+        6
+      ],
+      "weight_group_bytes": 192,
+      "macs": 82944,
+      "mac_steps": 13824,
+      "packed_weight_bytes": 192,
+      "weight_read_bytes": 6912,
+      "metadata_read_bytes": 64
+    },
+    {
+      "name": "onnx_node!Conv_10",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 6,
+      "channels": 36,
+      "positions": 576,
+      "spatial_tile": 16,
+      "tail_lanes": 4,
+      "metadata_chunks": [
+        36
+      ],
+      "weight_group_bytes": 48,
+      "macs": 124416,
+      "mac_steps": 17280,
+      "packed_weight_bytes": 240,
+      "weight_read_bytes": 8640,
+      "metadata_read_bytes": 336
+    },
+    {
+      "name": "onnx_node!Conv_12",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 36,
+      "positions": 576,
+      "spatial_tile": 16,
+      "tail_lanes": 4,
+      "metadata_chunks": [
+        36
+      ],
+      "weight_group_bytes": 72,
+      "macs": 186624,
+      "mac_steps": 25920,
+      "packed_weight_bytes": 368,
+      "weight_read_bytes": 368,
+      "metadata_read_bytes": 336
+    },
+    {
+      "name": "onnx_node!Conv_14",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 36,
+      "channels": 6,
+      "positions": 576,
+      "spatial_tile": 16,
+      "tail_lanes": 2,
+      "metadata_chunks": [
+        6
+      ],
+      "weight_group_bytes": 288,
+      "macs": 124416,
+      "mac_steps": 20736,
+      "packed_weight_bytes": 288,
+      "weight_read_bytes": 10368,
+      "metadata_read_bytes": 64
+    },
+    {
+      "name": "onnx_node!Conv_16",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 6,
+      "channels": 36,
+      "positions": 576,
+      "spatial_tile": 16,
+      "tail_lanes": 4,
+      "metadata_chunks": [
+        36
+      ],
+      "weight_group_bytes": 48,
+      "macs": 124416,
+      "mac_steps": 17280,
+      "packed_weight_bytes": 240,
+      "weight_read_bytes": 8640,
+      "metadata_read_bytes": 336
+    },
+    {
+      "name": "onnx_node!Conv_18",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 36,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 4,
+      "metadata_chunks": [
+        36
+      ],
+      "weight_group_bytes": 72,
+      "macs": 46656,
+      "mac_steps": 6480,
+      "packed_weight_bytes": 368,
+      "weight_read_bytes": 368,
+      "metadata_read_bytes": 336
+    },
+    {
+      "name": "onnx_node!Conv_20",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 36,
+      "channels": 8,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        8
+      ],
+      "weight_group_bytes": 288,
+      "macs": 41472,
+      "mac_steps": 5184,
+      "packed_weight_bytes": 288,
+      "weight_read_bytes": 2592,
+      "metadata_read_bytes": 80
+    },
+    {
+      "name": "onnx_node!Conv_21",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 8,
+      "channels": 48,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        48
+      ],
+      "weight_group_bytes": 64,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 384,
+      "weight_read_bytes": 3456,
+      "metadata_read_bytes": 432
+    },
+    {
+      "name": "onnx_node!Conv_23",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 48,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        48
+      ],
+      "weight_group_bytes": 72,
+      "macs": 62208,
+      "mac_steps": 7776,
+      "packed_weight_bytes": 432,
+      "weight_read_bytes": 432,
+      "metadata_read_bytes": 432
+    },
+    {
+      "name": "onnx_node!Conv_25",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 48,
+      "channels": 8,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        8
+      ],
+      "weight_group_bytes": 384,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 384,
+      "weight_read_bytes": 3456,
+      "metadata_read_bytes": 80
+    },
+    {
+      "name": "onnx_node!Conv_27",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 8,
+      "channels": 48,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        48
+      ],
+      "weight_group_bytes": 64,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 384,
+      "weight_read_bytes": 3456,
+      "metadata_read_bytes": 432
+    },
+    {
+      "name": "onnx_node!Conv_29",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 48,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        48
+      ],
+      "weight_group_bytes": 72,
+      "macs": 62208,
+      "mac_steps": 7776,
+      "packed_weight_bytes": 432,
+      "weight_read_bytes": 432,
+      "metadata_read_bytes": 432
+    },
+    {
+      "name": "onnx_node!Conv_31",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 48,
+      "channels": 8,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        8
+      ],
+      "weight_group_bytes": 384,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 384,
+      "weight_read_bytes": 3456,
+      "metadata_read_bytes": 80
+    },
+    {
+      "name": "onnx_node!Conv_33",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 8,
+      "channels": 48,
+      "positions": 144,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        48
+      ],
+      "weight_group_bytes": 64,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 384,
+      "weight_read_bytes": 3456,
+      "metadata_read_bytes": 432
+    },
+    {
+      "name": "onnx_node!Conv_35",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 48,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        48
+      ],
+      "weight_group_bytes": 72,
+      "macs": 15552,
+      "mac_steps": 1944,
+      "packed_weight_bytes": 432,
+      "weight_read_bytes": 432,
+      "metadata_read_bytes": 432
+    },
+    {
+      "name": "onnx_node!Conv_37",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 48,
+      "channels": 16,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        16
+      ],
+      "weight_group_bytes": 384,
+      "macs": 27648,
+      "mac_steps": 3456,
+      "packed_weight_bytes": 768,
+      "weight_read_bytes": 2304,
+      "metadata_read_bytes": 144
+    },
+    {
+      "name": "onnx_node!Conv_38",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 16,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 128,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_40",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 72,
+      "macs": 31104,
+      "mac_steps": 3888,
+      "packed_weight_bytes": 864,
+      "weight_read_bytes": 864,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_42",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 96,
+      "channels": 16,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        16
+      ],
+      "weight_group_bytes": 768,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 144
+    },
+    {
+      "name": "onnx_node!Conv_44",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 16,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 128,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_46",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 72,
+      "macs": 31104,
+      "mac_steps": 3888,
+      "packed_weight_bytes": 864,
+      "weight_read_bytes": 864,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_48",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 96,
+      "channels": 16,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        16
+      ],
+      "weight_group_bytes": 768,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 144
+    },
+    {
+      "name": "onnx_node!Conv_50",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 16,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 128,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_52",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 72,
+      "macs": 31104,
+      "mac_steps": 3888,
+      "packed_weight_bytes": 864,
+      "weight_read_bytes": 864,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_54",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 96,
+      "channels": 16,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        16
+      ],
+      "weight_group_bytes": 768,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 144
+    },
+    {
+      "name": "onnx_node!Conv_56",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 16,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 128,
+      "macs": 55296,
+      "mac_steps": 6912,
+      "packed_weight_bytes": 1536,
+      "weight_read_bytes": 4608,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_58",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 96,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        96
+      ],
+      "weight_group_bytes": 72,
+      "macs": 31104,
+      "mac_steps": 3888,
+      "packed_weight_bytes": 864,
+      "weight_read_bytes": 864,
+      "metadata_read_bytes": 864
+    },
+    {
+      "name": "onnx_node!Conv_60",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 96,
+      "channels": 24,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        24
+      ],
+      "weight_group_bytes": 768,
+      "macs": 82944,
+      "mac_steps": 10368,
+      "packed_weight_bytes": 2304,
+      "weight_read_bytes": 6912,
+      "metadata_read_bytes": 224
+    },
+    {
+      "name": "onnx_node!Conv_61",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 24,
+      "channels": 144,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        144
+      ],
+      "weight_group_bytes": 192,
+      "macs": 124416,
+      "mac_steps": 15552,
+      "packed_weight_bytes": 3456,
+      "weight_read_bytes": 10368,
+      "metadata_read_bytes": 1296
+    },
+    {
+      "name": "onnx_node!Conv_63",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 144,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        144
+      ],
+      "weight_group_bytes": 72,
+      "macs": 46656,
+      "mac_steps": 5832,
+      "packed_weight_bytes": 1296,
+      "weight_read_bytes": 1296,
+      "metadata_read_bytes": 1296
+    },
+    {
+      "name": "onnx_node!Conv_65",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 144,
+      "channels": 24,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        24
+      ],
+      "weight_group_bytes": 1152,
+      "macs": 124416,
+      "mac_steps": 15552,
+      "packed_weight_bytes": 3456,
+      "weight_read_bytes": 10368,
+      "metadata_read_bytes": 224
+    },
+    {
+      "name": "onnx_node!Conv_67",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 24,
+      "channels": 144,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        144
+      ],
+      "weight_group_bytes": 192,
+      "macs": 124416,
+      "mac_steps": 15552,
+      "packed_weight_bytes": 3456,
+      "weight_read_bytes": 10368,
+      "metadata_read_bytes": 1296
+    },
+    {
+      "name": "onnx_node!Conv_69",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 144,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        144
+      ],
+      "weight_group_bytes": 72,
+      "macs": 46656,
+      "mac_steps": 5832,
+      "packed_weight_bytes": 1296,
+      "weight_read_bytes": 1296,
+      "metadata_read_bytes": 1296
+    },
+    {
+      "name": "onnx_node!Conv_71",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 144,
+      "channels": 24,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        24
+      ],
+      "weight_group_bytes": 1152,
+      "macs": 124416,
+      "mac_steps": 15552,
+      "packed_weight_bytes": 3456,
+      "weight_read_bytes": 10368,
+      "metadata_read_bytes": 224
+    },
+    {
+      "name": "onnx_node!Conv_73",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 24,
+      "channels": 144,
+      "positions": 36,
+      "spatial_tile": 16,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        144
+      ],
+      "weight_group_bytes": 192,
+      "macs": 124416,
+      "mac_steps": 15552,
+      "packed_weight_bytes": 3456,
+      "weight_read_bytes": 10368,
+      "metadata_read_bytes": 1296
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 144,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        144
+      ],
+      "weight_group_bytes": 72,
+      "macs": 11664,
+      "mac_steps": 1458,
+      "packed_weight_bytes": 1296,
+      "weight_read_bytes": 1296,
+      "metadata_read_bytes": 1296
+    },
+    {
+      "name": "onnx_node!Conv_77",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 144,
+      "channels": 40,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        40
+      ],
+      "weight_group_bytes": 1152,
+      "macs": 51840,
+      "mac_steps": 6480,
+      "packed_weight_bytes": 5760,
+      "weight_read_bytes": 5760,
+      "metadata_read_bytes": 368
+    },
+    {
+      "name": "onnx_node!Conv_78",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 40,
+      "channels": 240,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        240
+      ],
+      "weight_group_bytes": 320,
+      "macs": 86400,
+      "mac_steps": 10800,
+      "packed_weight_bytes": 9600,
+      "weight_read_bytes": 9600,
+      "metadata_read_bytes": 2160
+    },
+    {
+      "name": "onnx_node!Conv_80",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 240,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        240
+      ],
+      "weight_group_bytes": 72,
+      "macs": 19440,
+      "mac_steps": 2430,
+      "packed_weight_bytes": 2160,
+      "weight_read_bytes": 2160,
+      "metadata_read_bytes": 2160
+    },
+    {
+      "name": "onnx_node!Conv_82",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 240,
+      "channels": 40,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        40
+      ],
+      "weight_group_bytes": 1920,
+      "macs": 86400,
+      "mac_steps": 10800,
+      "packed_weight_bytes": 9600,
+      "weight_read_bytes": 9600,
+      "metadata_read_bytes": 368
+    },
+    {
+      "name": "onnx_node!Conv_84",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 40,
+      "channels": 240,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        240
+      ],
+      "weight_group_bytes": 320,
+      "macs": 86400,
+      "mac_steps": 10800,
+      "packed_weight_bytes": 9600,
+      "weight_read_bytes": 9600,
+      "metadata_read_bytes": 2160
+    },
+    {
+      "name": "onnx_node!Conv_86",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 240,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        240
+      ],
+      "weight_group_bytes": 72,
+      "macs": 19440,
+      "mac_steps": 2430,
+      "packed_weight_bytes": 2160,
+      "weight_read_bytes": 2160,
+      "metadata_read_bytes": 2160
+    },
+    {
+      "name": "onnx_node!Conv_88",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 240,
+      "channels": 40,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        40
+      ],
+      "weight_group_bytes": 1920,
+      "macs": 86400,
+      "mac_steps": 10800,
+      "packed_weight_bytes": 9600,
+      "weight_read_bytes": 9600,
+      "metadata_read_bytes": 368
+    },
+    {
+      "name": "onnx_node!Conv_90",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 40,
+      "channels": 240,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        240
+      ],
+      "weight_group_bytes": 320,
+      "macs": 86400,
+      "mac_steps": 10800,
+      "packed_weight_bytes": 9600,
+      "weight_read_bytes": 9600,
+      "metadata_read_bytes": 2160
+    },
+    {
+      "name": "onnx_node!Conv_92",
+      "type": "Convolution",
+      "depthwise": true,
+      "K": 9,
+      "channels": 240,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        240
+      ],
+      "weight_group_bytes": 72,
+      "macs": 19440,
+      "mac_steps": 2430,
+      "packed_weight_bytes": 2160,
+      "weight_read_bytes": 2160,
+      "metadata_read_bytes": 2160
+    },
+    {
+      "name": "onnx_node!Conv_94",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 240,
+      "channels": 80,
+      "positions": 9,
+      "spatial_tile": 9,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        80
+      ],
+      "weight_group_bytes": 1920,
+      "macs": 172800,
+      "mac_steps": 21600,
+      "packed_weight_bytes": 19200,
+      "weight_read_bytes": 19200,
+      "metadata_read_bytes": 720
+    },
+    {
+      "name": "onnx_node!Conv_95",
+      "type": "Convolution",
+      "depthwise": false,
+      "K": 80,
+      "channels": 1280,
+      "positions": 9,
+      "spatial_tile": 3,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        512,
+        512,
+        256
+      ],
+      "weight_group_bytes": 640,
+      "macs": 921600,
+      "mac_steps": 115200,
+      "packed_weight_bytes": 102400,
+      "weight_read_bytes": 307200,
+      "metadata_read_bytes": 34560
+    },
+    {
+      "name": "onnx_node!Gemm_101",
+      "type": "Gemm",
+      "depthwise": false,
+      "K": 1280,
+      "channels": 128,
+      "positions": 1,
+      "spatial_tile": 1,
+      "tail_lanes": 0,
+      "metadata_chunks": [
+        128
+      ],
+      "weight_group_bytes": 10240,
+      "macs": 163840,
+      "mac_steps": 20480,
+      "packed_weight_bytes": 163840,
+      "weight_read_bytes": 163840,
+      "metadata_read_bytes": 1152
+    },
+    {
+      "name": "onnx_node!Gemm_103",
+      "type": "Gemm",
+      "depthwise": false,
+      "K": 128,
+      "channels": 3,
+      "positions": 1,
+      "spatial_tile": 1,
+      "tail_lanes": 5,
+      "metadata_chunks": [
+        3
+      ],
+      "weight_group_bytes": 1024,
+      "macs": 384,
+      "mac_steps": 128,
+      "packed_weight_bytes": 1024,
+      "weight_read_bytes": 1024,
+      "metadata_read_bytes": 32
+    }
+  ],
+  "depthwise_address_checks": [
+    {
+      "name": "onnx_node!Conv_2",
+      "channels": 8,
+      "tail_valid_channels": 0,
+      "vector_requests": 20164,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 20164,
+      "padding_vectors": 572
+    },
+    {
+      "name": "onnx_node!Conv_7",
+      "channels": 24,
+      "tail_valid_channels": 0,
+      "vector_requests": 15123,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 15123,
+      "padding_vectors": 429
+    },
+    {
+      "name": "onnx_node!Conv_12",
+      "channels": 36,
+      "tail_valid_channels": 4,
+      "vector_requests": 24500,
+      "cross_word_vectors": 4900,
+      "cache_word_reads": 29400,
+      "padding_vectors": 1420
+    },
+    {
+      "name": "onnx_node!Conv_18",
+      "channels": 36,
+      "tail_valid_channels": 4,
+      "vector_requests": 6125,
+      "cross_word_vectors": 1610,
+      "cache_word_reads": 7735,
+      "padding_vectors": 355
+    },
+    {
+      "name": "onnx_node!Conv_23",
+      "channels": 48,
+      "tail_valid_channels": 0,
+      "vector_requests": 6936,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 6936,
+      "padding_vectors": 840
+    },
+    {
+      "name": "onnx_node!Conv_29",
+      "channels": 48,
+      "tail_valid_channels": 0,
+      "vector_requests": 6936,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 6936,
+      "padding_vectors": 840
+    },
+    {
+      "name": "onnx_node!Conv_35",
+      "channels": 48,
+      "tail_valid_channels": 0,
+      "vector_requests": 1734,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 1734,
+      "padding_vectors": 210
+    },
+    {
+      "name": "onnx_node!Conv_40",
+      "channels": 96,
+      "tail_valid_channels": 0,
+      "vector_requests": 3072,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 3072,
+      "padding_vectors": 816
+    },
+    {
+      "name": "onnx_node!Conv_46",
+      "channels": 96,
+      "tail_valid_channels": 0,
+      "vector_requests": 3072,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 3072,
+      "padding_vectors": 816
+    },
+    {
+      "name": "onnx_node!Conv_52",
+      "channels": 96,
+      "tail_valid_channels": 0,
+      "vector_requests": 3072,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 3072,
+      "padding_vectors": 816
+    },
+    {
+      "name": "onnx_node!Conv_58",
+      "channels": 96,
+      "tail_valid_channels": 0,
+      "vector_requests": 3072,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 3072,
+      "padding_vectors": 816
+    },
+    {
+      "name": "onnx_node!Conv_63",
+      "channels": 144,
+      "tail_valid_channels": 0,
+      "vector_requests": 4608,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 4608,
+      "padding_vectors": 1224
+    },
+    {
+      "name": "onnx_node!Conv_69",
+      "channels": 144,
+      "tail_valid_channels": 0,
+      "vector_requests": 4608,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 4608,
+      "padding_vectors": 1224
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "channels": 144,
+      "tail_valid_channels": 0,
+      "vector_requests": 1152,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 1152,
+      "padding_vectors": 306
+    },
+    {
+      "name": "onnx_node!Conv_80",
+      "channels": 240,
+      "tail_valid_channels": 0,
+      "vector_requests": 1470,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 1470,
+      "padding_vectors": 960
+    },
+    {
+      "name": "onnx_node!Conv_86",
+      "channels": 240,
+      "tail_valid_channels": 0,
+      "vector_requests": 1470,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 1470,
+      "padding_vectors": 960
+    },
+    {
+      "name": "onnx_node!Conv_92",
+      "channels": 240,
+      "tail_valid_channels": 0,
+      "vector_requests": 1470,
+      "cross_word_vectors": 0,
+      "cache_word_reads": 1470,
+      "padding_vectors": 960
+    }
+  ],
+  "lifetimes": [
+    {
+      "name": "_input",
+      "base": 0,
+      "bytes": 27648,
+      "element_bytes": 1,
+      "last_consumer": 1
+    },
+    {
+      "name": "onnx_node!Conv_0",
+      "base": 27648,
+      "bytes": 18432,
+      "element_bytes": 1,
+      "last_consumer": 2
+    },
+    {
+      "name": "onnx_node!Relu_1",
+      "base": 46080,
+      "bytes": 18432,
+      "element_bytes": 1,
+      "last_consumer": 3
+    },
+    {
+      "name": "onnx_node!Conv_2",
+      "base": 64512,
+      "bytes": 18432,
+      "element_bytes": 1,
+      "last_consumer": 4
+    },
+    {
+      "name": "onnx_node!Relu_3",
+      "base": 82944,
+      "bytes": 18432,
+      "element_bytes": 1,
+      "last_consumer": 5
+    },
+    {
+      "name": "onnx_node!Conv_4",
+      "base": 101376,
+      "bytes": 9216,
+      "element_bytes": 1,
+      "last_consumer": 6
+    },
+    {
+      "name": "onnx_node!Conv_5",
+      "base": 110592,
+      "bytes": 55296,
+      "element_bytes": 1,
+      "last_consumer": 7
+    },
+    {
+      "name": "onnx_node!Relu_6",
+      "base": 165888,
+      "bytes": 55296,
+      "element_bytes": 1,
+      "last_consumer": 8
+    },
+    {
+      "name": "onnx_node!Conv_7",
+      "base": 221184,
+      "bytes": 13824,
+      "element_bytes": 1,
+      "last_consumer": 9
+    },
+    {
+      "name": "onnx_node!Relu_8",
+      "base": 235008,
+      "bytes": 13824,
+      "element_bytes": 1,
+      "last_consumer": 10
+    },
+    {
+      "name": "onnx_node!Conv_9",
+      "base": 248832,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 16
+    },
+    {
+      "name": "onnx_node!Conv_10",
+      "base": 252288,
+      "bytes": 20736,
+      "element_bytes": 1,
+      "last_consumer": 12
+    },
+    {
+      "name": "onnx_node!Relu_11",
+      "base": 273024,
+      "bytes": 20736,
+      "element_bytes": 1,
+      "last_consumer": 13
+    },
+    {
+      "name": "onnx_node!Conv_12",
+      "base": 293760,
+      "bytes": 20736,
+      "element_bytes": 1,
+      "last_consumer": 14
+    },
+    {
+      "name": "onnx_node!Relu_13",
+      "base": 314496,
+      "bytes": 20736,
+      "element_bytes": 1,
+      "last_consumer": 15
+    },
+    {
+      "name": "onnx_node!Conv_14",
+      "base": 335232,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 16
+    },
+    {
+      "name": "onnx_node!Add_15",
+      "base": 338688,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 17
+    },
+    {
+      "name": "onnx_node!Conv_16",
+      "base": 342144,
+      "bytes": 20736,
+      "element_bytes": 1,
+      "last_consumer": 18
+    },
+    {
+      "name": "onnx_node!Relu_17",
+      "base": 362880,
+      "bytes": 20736,
+      "element_bytes": 1,
+      "last_consumer": 19
+    },
+    {
+      "name": "onnx_node!Conv_18",
+      "base": 383616,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 20
+    },
+    {
+      "name": "onnx_node!Relu_19",
+      "base": 388800,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 21
+    },
+    {
+      "name": "onnx_node!Conv_20",
+      "base": 393984,
+      "bytes": 1152,
+      "element_bytes": 1,
+      "last_consumer": 27
+    },
+    {
+      "name": "onnx_node!Conv_21",
+      "base": 395136,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 23
+    },
+    {
+      "name": "onnx_node!Relu_22",
+      "base": 402048,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 24
+    },
+    {
+      "name": "onnx_node!Conv_23",
+      "base": 408960,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 25
+    },
+    {
+      "name": "onnx_node!Relu_24",
+      "base": 415872,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 26
+    },
+    {
+      "name": "onnx_node!Conv_25",
+      "base": 422784,
+      "bytes": 1152,
+      "element_bytes": 1,
+      "last_consumer": 27
+    },
+    {
+      "name": "onnx_node!Add_26",
+      "base": 423936,
+      "bytes": 1152,
+      "element_bytes": 1,
+      "last_consumer": 33
+    },
+    {
+      "name": "onnx_node!Conv_27",
+      "base": 425088,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 29
+    },
+    {
+      "name": "onnx_node!Relu_28",
+      "base": 432000,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 30
+    },
+    {
+      "name": "onnx_node!Conv_29",
+      "base": 438912,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 31
+    },
+    {
+      "name": "onnx_node!Relu_30",
+      "base": 445824,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 32
+    },
+    {
+      "name": "onnx_node!Conv_31",
+      "base": 452736,
+      "bytes": 1152,
+      "element_bytes": 1,
+      "last_consumer": 33
+    },
+    {
+      "name": "onnx_node!Add_32",
+      "base": 453888,
+      "bytes": 1152,
+      "element_bytes": 1,
+      "last_consumer": 34
+    },
+    {
+      "name": "onnx_node!Conv_33",
+      "base": 455040,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 35
+    },
+    {
+      "name": "onnx_node!Relu_34",
+      "base": 461952,
+      "bytes": 6912,
+      "element_bytes": 1,
+      "last_consumer": 36
+    },
+    {
+      "name": "onnx_node!Conv_35",
+      "base": 468864,
+      "bytes": 1728,
+      "element_bytes": 1,
+      "last_consumer": 37
+    },
+    {
+      "name": "onnx_node!Relu_36",
+      "base": 470592,
+      "bytes": 1728,
+      "element_bytes": 1,
+      "last_consumer": 38
+    },
+    {
+      "name": "onnx_node!Conv_37",
+      "base": 472320,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 44
+    },
+    {
+      "name": "onnx_node!Conv_38",
+      "base": 472896,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 40
+    },
+    {
+      "name": "onnx_node!Relu_39",
+      "base": 476352,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 41
+    },
+    {
+      "name": "onnx_node!Conv_40",
+      "base": 479808,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 42
+    },
+    {
+      "name": "onnx_node!Relu_41",
+      "base": 483264,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 43
+    },
+    {
+      "name": "onnx_node!Conv_42",
+      "base": 486720,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 44
+    },
+    {
+      "name": "onnx_node!Add_43",
+      "base": 487296,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 50
+    },
+    {
+      "name": "onnx_node!Conv_44",
+      "base": 487872,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 46
+    },
+    {
+      "name": "onnx_node!Relu_45",
+      "base": 491328,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 47
+    },
+    {
+      "name": "onnx_node!Conv_46",
+      "base": 494784,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 48
+    },
+    {
+      "name": "onnx_node!Relu_47",
+      "base": 498240,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 49
+    },
+    {
+      "name": "onnx_node!Conv_48",
+      "base": 501696,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 50
+    },
+    {
+      "name": "onnx_node!Add_49",
+      "base": 502272,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 56
+    },
+    {
+      "name": "onnx_node!Conv_50",
+      "base": 502848,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 52
+    },
+    {
+      "name": "onnx_node!Relu_51",
+      "base": 506304,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 53
+    },
+    {
+      "name": "onnx_node!Conv_52",
+      "base": 509760,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 54
+    },
+    {
+      "name": "onnx_node!Relu_53",
+      "base": 513216,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 55
+    },
+    {
+      "name": "onnx_node!Conv_54",
+      "base": 516672,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 56
+    },
+    {
+      "name": "onnx_node!Add_55",
+      "base": 517248,
+      "bytes": 576,
+      "element_bytes": 1,
+      "last_consumer": 57
+    },
+    {
+      "name": "onnx_node!Conv_56",
+      "base": 517824,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 58
+    },
+    {
+      "name": "onnx_node!Relu_57",
+      "base": 521280,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 59
+    },
+    {
+      "name": "onnx_node!Conv_58",
+      "base": 524736,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 60
+    },
+    {
+      "name": "onnx_node!Relu_59",
+      "base": 528192,
+      "bytes": 3456,
+      "element_bytes": 1,
+      "last_consumer": 61
+    },
+    {
+      "name": "onnx_node!Conv_60",
+      "base": 531648,
+      "bytes": 864,
+      "element_bytes": 1,
+      "last_consumer": 67
+    },
+    {
+      "name": "onnx_node!Conv_61",
+      "base": 532512,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 63
+    },
+    {
+      "name": "onnx_node!Relu_62",
+      "base": 537696,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 64
+    },
+    {
+      "name": "onnx_node!Conv_63",
+      "base": 542880,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 65
+    },
+    {
+      "name": "onnx_node!Relu_64",
+      "base": 548064,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 66
+    },
+    {
+      "name": "onnx_node!Conv_65",
+      "base": 553248,
+      "bytes": 864,
+      "element_bytes": 1,
+      "last_consumer": 67
+    },
+    {
+      "name": "onnx_node!Add_66",
+      "base": 554112,
+      "bytes": 864,
+      "element_bytes": 1,
+      "last_consumer": 73
+    },
+    {
+      "name": "onnx_node!Conv_67",
+      "base": 554976,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 69
+    },
+    {
+      "name": "onnx_node!Relu_68",
+      "base": 560160,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 70
+    },
+    {
+      "name": "onnx_node!Conv_69",
+      "base": 565344,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 71
+    },
+    {
+      "name": "onnx_node!Relu_70",
+      "base": 570528,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 72
+    },
+    {
+      "name": "onnx_node!Conv_71",
+      "base": 575712,
+      "bytes": 864,
+      "element_bytes": 1,
+      "last_consumer": 73
+    },
+    {
+      "name": "onnx_node!Add_72",
+      "base": 576576,
+      "bytes": 864,
+      "element_bytes": 1,
+      "last_consumer": 74
+    },
+    {
+      "name": "onnx_node!Conv_73",
+      "base": 577440,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 75
+    },
+    {
+      "name": "onnx_node!Relu_74",
+      "base": 582624,
+      "bytes": 5184,
+      "element_bytes": 1,
+      "last_consumer": 76
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "base": 587808,
+      "bytes": 1296,
+      "element_bytes": 1,
+      "last_consumer": 77
+    },
+    {
+      "name": "onnx_node!Relu_76",
+      "base": 589104,
+      "bytes": 1296,
+      "element_bytes": 1,
+      "last_consumer": 78
+    },
+    {
+      "name": "onnx_node!Conv_77",
+      "base": 590400,
+      "bytes": 368,
+      "element_bytes": 1,
+      "last_consumer": 84
+    },
+    {
+      "name": "onnx_node!Conv_78",
+      "base": 590768,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 80
+    },
+    {
+      "name": "onnx_node!Relu_79",
+      "base": 592928,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 81
+    },
+    {
+      "name": "onnx_node!Conv_80",
+      "base": 595088,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 82
+    },
+    {
+      "name": "onnx_node!Relu_81",
+      "base": 597248,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 83
+    },
+    {
+      "name": "onnx_node!Conv_82",
+      "base": 599408,
+      "bytes": 368,
+      "element_bytes": 1,
+      "last_consumer": 84
+    },
+    {
+      "name": "onnx_node!Add_83",
+      "base": 599776,
+      "bytes": 368,
+      "element_bytes": 1,
+      "last_consumer": 90
+    },
+    {
+      "name": "onnx_node!Conv_84",
+      "base": 600144,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 86
+    },
+    {
+      "name": "onnx_node!Relu_85",
+      "base": 602304,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 87
+    },
+    {
+      "name": "onnx_node!Conv_86",
+      "base": 604464,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 88
+    },
+    {
+      "name": "onnx_node!Relu_87",
+      "base": 606624,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 89
+    },
+    {
+      "name": "onnx_node!Conv_88",
+      "base": 608784,
+      "bytes": 368,
+      "element_bytes": 1,
+      "last_consumer": 90
+    },
+    {
+      "name": "onnx_node!Add_89",
+      "base": 609152,
+      "bytes": 368,
+      "element_bytes": 1,
+      "last_consumer": 91
+    },
+    {
+      "name": "onnx_node!Conv_90",
+      "base": 609520,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 92
+    },
+    {
+      "name": "onnx_node!Relu_91",
+      "base": 611680,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 93
+    },
+    {
+      "name": "onnx_node!Conv_92",
+      "base": 613840,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 94
+    },
+    {
+      "name": "onnx_node!Relu_93",
+      "base": 616000,
+      "bytes": 2160,
+      "element_bytes": 1,
+      "last_consumer": 95
+    },
+    {
+      "name": "onnx_node!Conv_94",
+      "base": 618160,
+      "bytes": 720,
+      "element_bytes": 1,
+      "last_consumer": 96
+    },
+    {
+      "name": "onnx_node!Conv_95",
+      "base": 618880,
+      "bytes": 11520,
+      "element_bytes": 1,
+      "last_consumer": 97
+    },
+    {
+      "name": "onnx_node!Relu_96",
+      "base": 630400,
+      "bytes": 11520,
+      "element_bytes": 1,
+      "last_consumer": 98
+    },
+    {
+      "name": "onnx_node!AveragePool_99",
+      "base": 641920,
+      "bytes": 2560,
+      "element_bytes": 2,
+      "last_consumer": 99
+    },
+    {
+      "name": "onnx_node!Reshape_100",
+      "base": 644480,
+      "bytes": 2560,
+      "element_bytes": 2,
+      "last_consumer": 100
+    },
+    {
+      "name": "onnx_node!Gemm_101",
+      "base": 647040,
+      "bytes": 128,
+      "element_bytes": 1,
+      "last_consumer": 101
+    },
+    {
+      "name": "onnx_node!PRelu_102",
+      "base": 647168,
+      "bytes": 128,
+      "element_bytes": 1,
+      "last_consumer": 102
+    },
+    {
+      "name": "onnx_node!Gemm_103",
+      "base": 647296,
+      "bytes": 16,
+      "element_bytes": 4,
+      "last_consumer": 103
+    },
+    {
+      "name": "onnx_node!Softmax_104",
+      "base": 647312,
+      "bytes": 16,
+      "element_bytes": 4,
+      "last_consumer": 104
+    },
+    {
+      "name": "output",
+      "base": 647328,
+      "bytes": 16,
+      "element_bytes": 4,
+      "last_consumer": 105
+    }
+  ],
+  "macs": {
+    "convolution": 5215968,
+    "Gemm": 164224,
+    "total": 5380192,
+    "shared8_mac_steps": 697156,
+    "shared8_mac_ms_100MHz": 6.97156,
+    "detector_lpr_color_one_roi_mac_ms": 416.13772,
+    "detector_lpr_color_two_roi_mac_ms": 602.49944
+  },
+  "memory": {
+    "raw_W8": 390088,
+    "raw_bias32": 21420,
+    "packed_weights": 391040,
+    "metadata": 48384,
+    "PReLU_parameter_reserve": 16,
+    "descriptors": 26880,
+    "all_features_reserved_bytes": 647344,
+    "live_peak_bytes": 110592,
+    "max_single_feature_bytes": 55296,
+    "extra_ROI_and_pending_LPR_bytes": 49920,
+    "full_three_model_ddr_reservation": 7014592,
+    "shared_RAM_target": 51,
+    "width_scope": "Capacity assumption: W8/A8, uint16 pool sums, requantized signed A8 FC1/PReLU, int32 final scores; no quantization implemented"
+  },
+  "traffic": {
+    "weight_reads": 764224,
+    "metadata_reads": 71424,
+    "ideal_materialized_edge_reference": 1743296,
+    "cache_miss_read_ceiling": 17053200,
+    "contiguous_feature_writes": 619696,
+    "read_ceiling_plus_contiguous_writes": 17672896,
+    "scope": "No retries; includes descriptors and scalar PReLU reserve; excludes resize, ROI copy, nonlinear LUT traffic and external bus overhead"
+  },
+  "scope": "Actual frozen ONNX, zero synthetic forward, shape and range/packing audit only; no dataset evaluation, quantization, RTL or synthesis"
+}

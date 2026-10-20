@@ -1,0 +1,680 @@
+{
+  "xor16": {
+    "train": {
+      "all": {
+        "total": 18112,
+        "raw_correct": 16288,
+        "correct": 13343,
+        "wrong": 132,
+        "rejected": 4637
+      },
+      "province": {
+        "total": 10845,
+        "raw_correct": 9420,
+        "correct": 7194,
+        "wrong": 73,
+        "rejected": 3578
+      },
+      "alphanumeric": {
+        "total": 7267,
+        "raw_correct": 6868,
+        "correct": 6149,
+        "wrong": 59,
+        "rejected": 1059
+      },
+      "binary": {
+        "total": 8999,
+        "raw_correct": 8202,
+        "correct": 7058,
+        "wrong": 75,
+        "rejected": 1866
+      },
+      "gray": {
+        "total": 9113,
+        "raw_correct": 8086,
+        "correct": 6285,
+        "wrong": 57,
+        "rejected": 2771
+      }
+    },
+    "validation": {
+      "all": {
+        "total": 3936,
+        "raw_correct": 3473,
+        "correct": 2781,
+        "wrong": 26,
+        "rejected": 1129
+      },
+      "province": {
+        "total": 2406,
+        "raw_correct": 2041,
+        "correct": 1511,
+        "wrong": 14,
+        "rejected": 881
+      },
+      "alphanumeric": {
+        "total": 1530,
+        "raw_correct": 1432,
+        "correct": 1270,
+        "wrong": 12,
+        "rejected": 248
+      },
+      "binary": {
+        "total": 1911,
+        "raw_correct": 1713,
+        "correct": 1441,
+        "wrong": 14,
+        "rejected": 456
+      },
+      "gray": {
+        "total": 2025,
+        "raw_correct": 1760,
+        "correct": 1340,
+        "wrong": 12,
+        "rejected": 673
+      }
+    },
+    "test": {
+      "all": {
+        "total": 3897,
+        "raw_correct": 3435,
+        "correct": 2786,
+        "wrong": 43,
+        "rejected": 1068
+      },
+      "province": {
+        "total": 2359,
+        "raw_correct": 2004,
+        "correct": 1517,
+        "wrong": 25,
+        "rejected": 817
+      },
+      "alphanumeric": {
+        "total": 1538,
+        "raw_correct": 1431,
+        "correct": 1269,
+        "wrong": 18,
+        "rejected": 251
+      },
+      "binary": {
+        "total": 1922,
+        "raw_correct": 1721,
+        "correct": 1466,
+        "wrong": 20,
+        "rejected": 436
+      },
+      "gray": {
+        "total": 1975,
+        "raw_correct": 1714,
+        "correct": 1320,
+        "wrong": 23,
+        "rejected": 632
+      }
+    }
+  },
+  "grid32": {
+    "train": {
+      "all": {
+        "total": 18112,
+        "raw_correct": 16592,
+        "correct": 13790,
+        "wrong": 157,
+        "rejected": 4165
+      },
+      "province": {
+        "total": 10845,
+        "raw_correct": 9724,
+        "correct": 7676,
+        "wrong": 90,
+        "rejected": 3079
+      },
+      "alphanumeric": {
+        "total": 7267,
+        "raw_correct": 6868,
+        "correct": 6114,
+        "wrong": 67,
+        "rejected": 1086
+      },
+      "binary": {
+        "total": 8999,
+        "raw_correct": 8299,
+        "correct": 6966,
+        "wrong": 80,
+        "rejected": 1953
+      },
+      "gray": {
+        "total": 9113,
+        "raw_correct": 8293,
+        "correct": 6824,
+        "wrong": 77,
+        "rejected": 2212
+      }
+    },
+    "validation": {
+      "all": {
+        "total": 3936,
+        "raw_correct": 3529,
+        "correct": 2906,
+        "wrong": 25,
+        "rejected": 1005
+      },
+      "province": {
+        "total": 2406,
+        "raw_correct": 2100,
+        "correct": 1656,
+        "wrong": 14,
+        "rejected": 736
+      },
+      "alphanumeric": {
+        "total": 1530,
+        "raw_correct": 1429,
+        "correct": 1250,
+        "wrong": 11,
+        "rejected": 269
+      },
+      "binary": {
+        "total": 1911,
+        "raw_correct": 1735,
+        "correct": 1421,
+        "wrong": 14,
+        "rejected": 476
+      },
+      "gray": {
+        "total": 2025,
+        "raw_correct": 1794,
+        "correct": 1485,
+        "wrong": 11,
+        "rejected": 529
+      }
+    },
+    "test": {
+      "all": {
+        "total": 3897,
+        "raw_correct": 3498,
+        "correct": 2866,
+        "wrong": 43,
+        "rejected": 988
+      },
+      "province": {
+        "total": 2359,
+        "raw_correct": 2060,
+        "correct": 1616,
+        "wrong": 24,
+        "rejected": 719
+      },
+      "alphanumeric": {
+        "total": 1538,
+        "raw_correct": 1438,
+        "correct": 1250,
+        "wrong": 19,
+        "rejected": 269
+      },
+      "binary": {
+        "total": 1922,
+        "raw_correct": 1746,
+        "correct": 1427,
+        "wrong": 24,
+        "rejected": 471
+      },
+      "gray": {
+        "total": 1975,
+        "raw_correct": 1752,
+        "correct": 1439,
+        "wrong": 19,
+        "rejected": 517
+      }
+    }
+  },
+  "linear0.1": {
+    "train": {
+      "all": {
+        "total": 18112,
+        "raw_correct": 17583,
+        "correct": 16861,
+        "wrong": 53,
+        "rejected": 1198
+      },
+      "province": {
+        "total": 10845,
+        "raw_correct": 10363,
+        "correct": 9700,
+        "wrong": 38,
+        "rejected": 1107
+      },
+      "alphanumeric": {
+        "total": 7267,
+        "raw_correct": 7220,
+        "correct": 7161,
+        "wrong": 15,
+        "rejected": 91
+      },
+      "binary": {
+        "total": 8999,
+        "raw_correct": 8836,
+        "correct": 8645,
+        "wrong": 23,
+        "rejected": 331
+      },
+      "gray": {
+        "total": 9113,
+        "raw_correct": 8747,
+        "correct": 8216,
+        "wrong": 30,
+        "rejected": 867
+      }
+    },
+    "validation": {
+      "all": {
+        "total": 3936,
+        "raw_correct": 3726,
+        "correct": 3522,
+        "wrong": 30,
+        "rejected": 384
+      },
+      "province": {
+        "total": 2406,
+        "raw_correct": 2221,
+        "correct": 2041,
+        "wrong": 20,
+        "rejected": 345
+      },
+      "alphanumeric": {
+        "total": 1530,
+        "raw_correct": 1505,
+        "correct": 1481,
+        "wrong": 10,
+        "rejected": 39
+      },
+      "binary": {
+        "total": 1911,
+        "raw_correct": 1832,
+        "correct": 1777,
+        "wrong": 19,
+        "rejected": 115
+      },
+      "gray": {
+        "total": 2025,
+        "raw_correct": 1894,
+        "correct": 1745,
+        "wrong": 11,
+        "rejected": 269
+      }
+    },
+    "test": {
+      "all": {
+        "total": 3897,
+        "raw_correct": 3699,
+        "correct": 3542,
+        "wrong": 35,
+        "rejected": 320
+      },
+      "province": {
+        "total": 2359,
+        "raw_correct": 2186,
+        "correct": 2045,
+        "wrong": 27,
+        "rejected": 287
+      },
+      "alphanumeric": {
+        "total": 1538,
+        "raw_correct": 1513,
+        "correct": 1497,
+        "wrong": 8,
+        "rejected": 33
+      },
+      "binary": {
+        "total": 1922,
+        "raw_correct": 1852,
+        "correct": 1812,
+        "wrong": 15,
+        "rejected": 95
+      },
+      "gray": {
+        "total": 1975,
+        "raw_correct": 1847,
+        "correct": 1730,
+        "wrong": 20,
+        "rejected": 225
+      }
+    }
+  },
+  "linear1.0": {
+    "train": {
+      "all": {
+        "total": 18112,
+        "raw_correct": 17779,
+        "correct": 16784,
+        "wrong": 13,
+        "rejected": 1315
+      },
+      "province": {
+        "total": 10845,
+        "raw_correct": 10525,
+        "correct": 9557,
+        "wrong": 9,
+        "rejected": 1279
+      },
+      "alphanumeric": {
+        "total": 7267,
+        "raw_correct": 7254,
+        "correct": 7227,
+        "wrong": 4,
+        "rejected": 36
+      },
+      "binary": {
+        "total": 8999,
+        "raw_correct": 8918,
+        "correct": 8701,
+        "wrong": 6,
+        "rejected": 292
+      },
+      "gray": {
+        "total": 9113,
+        "raw_correct": 8861,
+        "correct": 8083,
+        "wrong": 7,
+        "rejected": 1023
+      }
+    },
+    "validation": {
+      "all": {
+        "total": 3936,
+        "raw_correct": 3717,
+        "correct": 3441,
+        "wrong": 33,
+        "rejected": 462
+      },
+      "province": {
+        "total": 2406,
+        "raw_correct": 2214,
+        "correct": 1964,
+        "wrong": 19,
+        "rejected": 423
+      },
+      "alphanumeric": {
+        "total": 1530,
+        "raw_correct": 1503,
+        "correct": 1477,
+        "wrong": 14,
+        "rejected": 39
+      },
+      "binary": {
+        "total": 1911,
+        "raw_correct": 1834,
+        "correct": 1754,
+        "wrong": 24,
+        "rejected": 133
+      },
+      "gray": {
+        "total": 2025,
+        "raw_correct": 1883,
+        "correct": 1687,
+        "wrong": 9,
+        "rejected": 329
+      }
+    },
+    "test": {
+      "all": {
+        "total": 3897,
+        "raw_correct": 3693,
+        "correct": 3469,
+        "wrong": 29,
+        "rejected": 399
+      },
+      "province": {
+        "total": 2359,
+        "raw_correct": 2183,
+        "correct": 1974,
+        "wrong": 17,
+        "rejected": 368
+      },
+      "alphanumeric": {
+        "total": 1538,
+        "raw_correct": 1510,
+        "correct": 1495,
+        "wrong": 12,
+        "rejected": 31
+      },
+      "binary": {
+        "total": 1922,
+        "raw_correct": 1855,
+        "correct": 1792,
+        "wrong": 18,
+        "rejected": 112
+      },
+      "gray": {
+        "total": 1975,
+        "raw_correct": 1838,
+        "correct": 1677,
+        "wrong": 11,
+        "rejected": 287
+      }
+    }
+  },
+  "mlp64": {
+    "train": {
+      "all": {
+        "total": 18112,
+        "raw_correct": 18056,
+        "correct": 16651,
+        "wrong": 0,
+        "rejected": 1461
+      },
+      "province": {
+        "total": 10845,
+        "raw_correct": 10793,
+        "correct": 9423,
+        "wrong": 0,
+        "rejected": 1422
+      },
+      "alphanumeric": {
+        "total": 7267,
+        "raw_correct": 7263,
+        "correct": 7228,
+        "wrong": 0,
+        "rejected": 39
+      },
+      "binary": {
+        "total": 8999,
+        "raw_correct": 8987,
+        "correct": 8610,
+        "wrong": 0,
+        "rejected": 389
+      },
+      "gray": {
+        "total": 9113,
+        "raw_correct": 9069,
+        "correct": 8041,
+        "wrong": 0,
+        "rejected": 1072
+      }
+    },
+    "validation": {
+      "all": {
+        "total": 3936,
+        "raw_correct": 3764,
+        "correct": 3487,
+        "wrong": 32,
+        "rejected": 417
+      },
+      "province": {
+        "total": 2406,
+        "raw_correct": 2257,
+        "correct": 2008,
+        "wrong": 20,
+        "rejected": 378
+      },
+      "alphanumeric": {
+        "total": 1530,
+        "raw_correct": 1507,
+        "correct": 1479,
+        "wrong": 12,
+        "rejected": 39
+      },
+      "binary": {
+        "total": 1911,
+        "raw_correct": 1839,
+        "correct": 1751,
+        "wrong": 20,
+        "rejected": 140
+      },
+      "gray": {
+        "total": 2025,
+        "raw_correct": 1925,
+        "correct": 1736,
+        "wrong": 12,
+        "rejected": 277
+      }
+    },
+    "test": {
+      "all": {
+        "total": 3897,
+        "raw_correct": 3718,
+        "correct": 3448,
+        "wrong": 28,
+        "rejected": 421
+      },
+      "province": {
+        "total": 2359,
+        "raw_correct": 2207,
+        "correct": 1964,
+        "wrong": 16,
+        "rejected": 379
+      },
+      "alphanumeric": {
+        "total": 1538,
+        "raw_correct": 1511,
+        "correct": 1484,
+        "wrong": 12,
+        "rejected": 42
+      },
+      "binary": {
+        "total": 1922,
+        "raw_correct": 1853,
+        "correct": 1769,
+        "wrong": 21,
+        "rejected": 132
+      },
+      "gray": {
+        "total": 1975,
+        "raw_correct": 1865,
+        "correct": 1679,
+        "wrong": 7,
+        "rejected": 289
+      }
+    }
+  },
+  "mlp128": {
+    "train": {
+      "all": {
+        "total": 18112,
+        "raw_correct": 18101,
+        "correct": 17390,
+        "wrong": 0,
+        "rejected": 722
+      },
+      "province": {
+        "total": 10845,
+        "raw_correct": 10836,
+        "correct": 10143,
+        "wrong": 0,
+        "rejected": 702
+      },
+      "alphanumeric": {
+        "total": 7267,
+        "raw_correct": 7265,
+        "correct": 7247,
+        "wrong": 0,
+        "rejected": 20
+      },
+      "binary": {
+        "total": 8999,
+        "raw_correct": 8996,
+        "correct": 8801,
+        "wrong": 0,
+        "rejected": 198
+      },
+      "gray": {
+        "total": 9113,
+        "raw_correct": 9105,
+        "correct": 8589,
+        "wrong": 0,
+        "rejected": 524
+      }
+    },
+    "validation": {
+      "all": {
+        "total": 3936,
+        "raw_correct": 3782,
+        "correct": 3575,
+        "wrong": 21,
+        "rejected": 340
+      },
+      "province": {
+        "total": 2406,
+        "raw_correct": 2273,
+        "correct": 2091,
+        "wrong": 14,
+        "rejected": 301
+      },
+      "alphanumeric": {
+        "total": 1530,
+        "raw_correct": 1509,
+        "correct": 1484,
+        "wrong": 7,
+        "rejected": 39
+      },
+      "binary": {
+        "total": 1911,
+        "raw_correct": 1843,
+        "correct": 1774,
+        "wrong": 10,
+        "rejected": 127
+      },
+      "gray": {
+        "total": 2025,
+        "raw_correct": 1939,
+        "correct": 1801,
+        "wrong": 11,
+        "rejected": 213
+      }
+    },
+    "test": {
+      "all": {
+        "total": 3897,
+        "raw_correct": 3736,
+        "correct": 3553,
+        "wrong": 22,
+        "rejected": 322
+      },
+      "province": {
+        "total": 2359,
+        "raw_correct": 2227,
+        "correct": 2064,
+        "wrong": 11,
+        "rejected": 284
+      },
+      "alphanumeric": {
+        "total": 1538,
+        "raw_correct": 1509,
+        "correct": 1489,
+        "wrong": 11,
+        "rejected": 38
+      },
+      "binary": {
+        "total": 1922,
+        "raw_correct": 1853,
+        "correct": 1799,
+        "wrong": 16,
+        "rejected": 107
+      },
+      "gray": {
+        "total": 1975,
+        "raw_correct": 1883,
+        "correct": 1754,
+        "wrong": 6,
+        "rejected": 215
+      }
+    }
+  }
+}

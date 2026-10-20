@@ -1,0 +1,17 @@
+{
+  "exit_code": 0,
+  "stage": "mapped",
+  "bench": "scalar",
+  "stdout": "PASS scalar cycles=9112 all_address_checks=512 scalar_reads=573 real_q_outputs=64 stalls=164\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_scalar.sv:173: $finish called at 91120000 (1ps)\n",
+  "frozen_unchanged": true,
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\test.py": "9fdc9b3b7e227778e3ce01c8197812e6d77229ef267f1757712d60281c4488bc",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\prepare_tests.py": "28b4856129eb95bf609107be782b0208bd74dba514a4c62a391cc3ec7914f2f9",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_scalar.sv": "e9918d6413dab6f71b18577ab7b11b4029141b9016866fd02da915d55270da95",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\real-commands.txt": "e70572be782712f84201953c69f70a283c9bea7079e45a2af2d79c6010cd23b6",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\test-inputs.json": "425ab804d9668ff850d4810364ded8364e99f188cddb1ddbe34822a72347f56f",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\delivery-freeze.json": "64c3a4f1d9c2054d58acad01e9925da5b6a30aa58d6d6b7c1b3020ec6f47bdbc",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\synthesis\\out\\q31_scalar_mac8.map.v": "90921b0afaa4a54102455ee903ed3fd8db245a50fee9f564524be14e9e40915b",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe"
+  }
+}

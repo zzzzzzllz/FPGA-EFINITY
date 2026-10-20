@@ -1,0 +1,2916 @@
+{
+  "shape": [
+    1,
+    3,
+    96,
+    96
+  ],
+  "convolution_macs": 5215968,
+  "opencv_loaded_weight_bytes": 1581776,
+  "opencv_sum_blob_bytes": 2578820,
+  "opencv_reported_flops_not_group_corrected": 130140340,
+  "layer_types": {
+    "": 1,
+    "Convolution": 52,
+    "ReLU": 35,
+    "NaryEltwise": 10,
+    "Pooling": 1,
+    "Reshape": 1,
+    "Gemm": 2,
+    "PReLU": 1,
+    "Softmax": 1,
+    "Identity": 1
+  },
+  "layers": [
+    {
+      "name": "_input",
+      "type": "",
+      "inputs": [
+        [
+          1,
+          3,
+          96,
+          96
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          3,
+          96,
+          96
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_0",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          3,
+          96,
+          96
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "blobs": [
+        [
+          8,
+          3,
+          3,
+          3
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "macs": 497664
+    },
+    {
+      "name": "onnx_node!Relu_1",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_2",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "blobs": [
+        [
+          8,
+          1,
+          3,
+          3
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "macs": 165888
+    },
+    {
+      "name": "onnx_node!Relu_3",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_4",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          8,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          4,
+          48,
+          48
+        ]
+      ],
+      "blobs": [
+        [
+          4,
+          8,
+          1,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "macs": 73728
+    },
+    {
+      "name": "onnx_node!Conv_5",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          4,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          48,
+          48
+        ]
+      ],
+      "blobs": [
+        [
+          24,
+          4,
+          1,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "macs": 221184
+    },
+    {
+      "name": "onnx_node!Relu_6",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          24,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          48,
+          48
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_7",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          24,
+          48,
+          48
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          24,
+          24
+        ]
+      ],
+      "blobs": [
+        [
+          24,
+          1,
+          3,
+          3
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Relu_8",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          24,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          24,
+          24
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_9",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          24,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          6,
+          24,
+          24
+        ]
+      ],
+      "blobs": [
+        [
+          6,
+          24,
+          1,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "macs": 82944
+    },
+    {
+      "name": "onnx_node!Conv_10",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          6,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "blobs": [
+        [
+          36,
+          6,
+          1,
+          1
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Relu_11",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_12",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "blobs": [
+        [
+          36,
+          1,
+          3,
+          3
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "macs": 186624
+    },
+    {
+      "name": "onnx_node!Relu_13",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_14",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          6,
+          24,
+          24
+        ]
+      ],
+      "blobs": [
+        [
+          6,
+          36,
+          1,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Add_15",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          6,
+          24,
+          24
+        ],
+        [
+          1,
+          6,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          6,
+          24,
+          24
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_16",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          6,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "blobs": [
+        [
+          36,
+          6,
+          1,
+          1
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Relu_17",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_18",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          36,
+          24,
+          24
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          36,
+          1,
+          3,
+          3
+        ],
+        [
+          36,
+          1
+        ]
+      ],
+      "macs": 46656
+    },
+    {
+      "name": "onnx_node!Relu_19",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          36,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          36,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_20",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          36,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          8,
+          36,
+          1,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "macs": 41472
+    },
+    {
+      "name": "onnx_node!Conv_21",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          48,
+          8,
+          1,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_22",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_23",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          48,
+          1,
+          3,
+          3
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "macs": 62208
+    },
+    {
+      "name": "onnx_node!Relu_24",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_25",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          8,
+          48,
+          1,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Add_26",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ],
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_27",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          48,
+          8,
+          1,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_28",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_29",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          48,
+          1,
+          3,
+          3
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "macs": 62208
+    },
+    {
+      "name": "onnx_node!Relu_30",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_31",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          8,
+          48,
+          1,
+          1
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Add_32",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ],
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_33",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          8,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": [
+        [
+          48,
+          8,
+          1,
+          1
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_34",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_35",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          48,
+          12,
+          12
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          48,
+          1,
+          3,
+          3
+        ],
+        [
+          48,
+          1
+        ]
+      ],
+      "macs": 15552
+    },
+    {
+      "name": "onnx_node!Relu_36",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          48,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          48,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_37",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          48,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          16,
+          48,
+          1,
+          1
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "macs": 27648
+    },
+    {
+      "name": "onnx_node!Conv_38",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          16,
+          1,
+          1
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_39",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_40",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          1,
+          3,
+          3
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 31104
+    },
+    {
+      "name": "onnx_node!Relu_41",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_42",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          16,
+          96,
+          1,
+          1
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Add_43",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ],
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_44",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          16,
+          1,
+          1
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_45",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_46",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          1,
+          3,
+          3
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 31104
+    },
+    {
+      "name": "onnx_node!Relu_47",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_48",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          16,
+          96,
+          1,
+          1
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Add_49",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ],
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_50",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          16,
+          1,
+          1
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_51",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_52",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          1,
+          3,
+          3
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 31104
+    },
+    {
+      "name": "onnx_node!Relu_53",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_54",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          16,
+          96,
+          1,
+          1
+        ],
+        [
+          16,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Add_55",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ],
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_56",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          16,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          16,
+          1,
+          1
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 55296
+    },
+    {
+      "name": "onnx_node!Relu_57",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_58",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          96,
+          1,
+          3,
+          3
+        ],
+        [
+          96,
+          1
+        ]
+      ],
+      "macs": 31104
+    },
+    {
+      "name": "onnx_node!Relu_59",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_60",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          96,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          24,
+          96,
+          1,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "macs": 82944
+    },
+    {
+      "name": "onnx_node!Conv_61",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          144,
+          24,
+          1,
+          1
+        ],
+        [
+          144,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Relu_62",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_63",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          144,
+          1,
+          3,
+          3
+        ],
+        [
+          144,
+          1
+        ]
+      ],
+      "macs": 46656
+    },
+    {
+      "name": "onnx_node!Relu_64",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_65",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          24,
+          144,
+          1,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Add_66",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ],
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_67",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          144,
+          24,
+          1,
+          1
+        ],
+        [
+          144,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Relu_68",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_69",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          144,
+          1,
+          3,
+          3
+        ],
+        [
+          144,
+          1
+        ]
+      ],
+      "macs": 46656
+    },
+    {
+      "name": "onnx_node!Relu_70",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_71",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          24,
+          144,
+          1,
+          1
+        ],
+        [
+          24,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Add_72",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ],
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_73",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          24,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": [
+        [
+          144,
+          24,
+          1,
+          1
+        ],
+        [
+          144,
+          1
+        ]
+      ],
+      "macs": 124416
+    },
+    {
+      "name": "onnx_node!Relu_74",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          144,
+          6,
+          6
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          144,
+          1,
+          3,
+          3
+        ],
+        [
+          144,
+          1
+        ]
+      ],
+      "macs": 11664
+    },
+    {
+      "name": "onnx_node!Relu_76",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          144,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          144,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_77",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          144,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          40,
+          144,
+          1,
+          1
+        ],
+        [
+          40,
+          1
+        ]
+      ],
+      "macs": 51840
+    },
+    {
+      "name": "onnx_node!Conv_78",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          240,
+          40,
+          1,
+          1
+        ],
+        [
+          240,
+          1
+        ]
+      ],
+      "macs": 86400
+    },
+    {
+      "name": "onnx_node!Relu_79",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_80",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          240,
+          1,
+          3,
+          3
+        ],
+        [
+          240,
+          1
+        ]
+      ],
+      "macs": 19440
+    },
+    {
+      "name": "onnx_node!Relu_81",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_82",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          40,
+          240,
+          1,
+          1
+        ],
+        [
+          40,
+          1
+        ]
+      ],
+      "macs": 86400
+    },
+    {
+      "name": "onnx_node!Add_83",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ],
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_84",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          240,
+          40,
+          1,
+          1
+        ],
+        [
+          240,
+          1
+        ]
+      ],
+      "macs": 86400
+    },
+    {
+      "name": "onnx_node!Relu_85",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_86",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          240,
+          1,
+          3,
+          3
+        ],
+        [
+          240,
+          1
+        ]
+      ],
+      "macs": 19440
+    },
+    {
+      "name": "onnx_node!Relu_87",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_88",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          40,
+          240,
+          1,
+          1
+        ],
+        [
+          40,
+          1
+        ]
+      ],
+      "macs": 86400
+    },
+    {
+      "name": "onnx_node!Add_89",
+      "type": "NaryEltwise",
+      "inputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ],
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_90",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          40,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          240,
+          40,
+          1,
+          1
+        ],
+        [
+          240,
+          1
+        ]
+      ],
+      "macs": 86400
+    },
+    {
+      "name": "onnx_node!Relu_91",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_92",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          240,
+          1,
+          3,
+          3
+        ],
+        [
+          240,
+          1
+        ]
+      ],
+      "macs": 19440
+    },
+    {
+      "name": "onnx_node!Relu_93",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Conv_94",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          240,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          80,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          80,
+          240,
+          1,
+          1
+        ],
+        [
+          80,
+          1
+        ]
+      ],
+      "macs": 172800
+    },
+    {
+      "name": "onnx_node!Conv_95",
+      "type": "Convolution",
+      "inputs": [
+        [
+          1,
+          80,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          1280,
+          3,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          1280,
+          80,
+          1,
+          1
+        ],
+        [
+          1280,
+          1
+        ]
+      ],
+      "macs": 921600
+    },
+    {
+      "name": "onnx_node!Relu_96",
+      "type": "ReLU",
+      "inputs": [
+        [
+          1,
+          1280,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          1280,
+          3,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!AveragePool_99",
+      "type": "Pooling",
+      "inputs": [
+        [
+          1,
+          1280,
+          3,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          1280,
+          1,
+          1
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Reshape_100",
+      "type": "Reshape",
+      "inputs": [
+        [
+          1,
+          1280,
+          1,
+          1
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          1280
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "onnx_node!Gemm_101",
+      "type": "Gemm",
+      "inputs": [
+        [
+          1,
+          1280
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          128
+        ]
+      ],
+      "blobs": [
+        [
+          128,
+          1280
+        ],
+        [
+          128,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "onnx_node!PRelu_102",
+      "type": "PReLU",
+      "inputs": [
+        [
+          1,
+          128
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          128
+        ]
+      ],
+      "blobs": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "onnx_node!Gemm_103",
+      "type": "Gemm",
+      "inputs": [
+        [
+          1,
+          128
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          3
+        ]
+      ],
+      "blobs": [
+        [
+          3,
+          128
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "onnx_node!Softmax_104",
+      "type": "Softmax",
+      "inputs": [
+        [
+          1,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          3
+        ]
+      ],
+      "blobs": []
+    },
+    {
+      "name": "output",
+      "type": "Identity",
+      "inputs": [
+        [
+          1,
+          3
+        ]
+      ],
+      "outputs": [
+        [
+          1,
+          3
+        ]
+      ],
+      "blobs": []
+    }
+  ]
+}

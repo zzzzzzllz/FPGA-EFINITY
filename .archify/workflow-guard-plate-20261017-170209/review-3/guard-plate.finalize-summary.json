@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "workflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\candidate.json",
+    "sha256": "149a4308a7a547d14870ac71c09aebd5aa31b22e6dccd2580539a09350e71b95",
+    "bytes": 8073
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.html",
+    "sha256": "e5f40bd08921a4edb1b59130016576f11189be20111f6488f2a9e70e41ab075e",
+    "bytes": 831739
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\review-3\\guard-plate.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\review-3\\guard-plate.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\review-3\\guard-plate.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.1.0",
+    "availableVersion": "3.1.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-17T09:05:02.273Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3114
+}

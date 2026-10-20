@@ -56,50 +56,55 @@ module threshold_osd #(parameter W=1280,H=720)(
  wire [6:0] top_column=x[10:4];
  reg [7:0] top_character;
  // One byte lookup avoids storing and multiplexing every label in parallel.
- localparam [4095:0] MENU_TEXT={
-  "VIEW COLOR      VIEW GRAY       VIEW EDGE       VIEW COMPARE    ",
-  "VIEW DENOISE    VIEW OVERLAY    VIEW REFERENCE  ALGORITHM SOBEL ",
-  "ALGORITHM CANNY THRESHOLD       LOW RATIO 1/4   LOW RATIO 1/2   ",
-  "LOW RATIO 3/4   MEDIAN OFF      MEDIAN ON       RECOGNITION OFF ",
-  "RECOGNITION ON  FRAME CANCEL    FRAME STEP LIVE FRAME RECORD 32 ",
-  "FRAME PLAY LOOP FRAME PAUSE     FRAME NEXT CLIP FRAME SET REF   ",
-  "FRAME LIVE      FRAME CLEAR REF  NEXT K2- K3+   HOLD K1 FREEZE/L",
-  "IVE                                                             "};
- (* syn_romstyle="block_rom" *) reg [7:0] menu_rom[0:511];
+ localparam [8191:0] MENU_TEXT={
+  "                                                                ",
+  "01 COLOR        K2 -              K3 -                          ",
+  "02 GRAY         K2 -              K3 -                          ",
+  "03 DENOISE      K2 MEDIAN TOGGLE  K3 GRAY / EDGE                ",
+  "04 SOBEL        K2 FULL EDGE      K3 COMPARE                    ",
+  "05 THRESHOLD    K2 -16            K3 +16                        ",
+  "06 CANNY        K2 LOWER RATIO    K3 HIGHER RATIO               ",
+  "07 RED OVERLAY  K2 CANNY          K3 SOBEL                      ",
+  "08 SHAPES       K2 T -4           K3 T +4                       ",
+  "                                                                ",
+  "10 STEP LIVE    K2 NEW FRAME      K3 LIVE                       ",
+  "11 RECORD 32    K2 STOP / LIVE    K3 RECORD NEW                 ",
+  "12 PLAYBACK     K2 PLAY / PAUSE   K3 NEXT FRAME                 ",
+  "13 FOUR FRAMES  K2 SAVE NEXT      K3 CLEAR ALL                  ",
+  "                                                                ",
+  "                                                                "};
+ (* syn_romstyle="block_rom" *) reg [7:0] menu_rom[0:1023];
  integer menu_i;
- initial for(menu_i=0;menu_i<512;menu_i=menu_i+1)
-  menu_rom[menu_i]=MENU_TEXT[(511-menu_i)*8 +:8];
- reg [4:0] menu_label_id;
- reg [8:0] menu_address;
- reg [7:0] menu_character;
+ initial for(menu_i=0;menu_i<1024;menu_i=menu_i+1)
+  menu_rom[menu_i]=MENU_TEXT[(1023-menu_i)*8 +:8];
+ reg [9:0] menu_address;
+ reg [7:0] menu_character,menu_read;
+ // Fetch the next pixel's character so the synchronous ROM does not shift text.
+ wire [10:0] menu_next_x=de ? (x==W-1 ? 11'd0 : x+1'b1) : x;
+ wire [6:0] menu_fetch_column=menu_next_x[10:4];
+ always @(posedge clk) menu_read<=menu_rom[menu_address];
  wire [6:0] menu_column=x[10:4];
+ reg [63:0] message;
  always @* begin
-  menu_label_id=31;
-  case(ui_status[2:0])
-   0:if(ui_status[9:7]<=6) menu_label_id={2'd0,ui_status[9:7]};
-   1:menu_label_id=ui_status[16]?8:7;
-   2:menu_label_id=9;
-   3:if(ui_status[18:17]<=2) menu_label_id=10+{3'd0,ui_status[18:17]};
-   4:menu_label_id=ui_status[10]?14:13;
-   5:menu_label_id=ui_status[23]?16:15;
-   6:if(ui_status[6:3]<=8) menu_label_id=17+{1'b0,ui_status[6:3]};
-   default:;
-  endcase
-  menu_address=511;
-  if(menu_column>=1 && menu_column<=16) menu_address={menu_label_id,4'd0}+menu_column-1'b1;
-  if(menu_column>=17 && menu_column<=64) menu_address=9'd399+menu_column;
-  menu_character=menu_rom[menu_address];
-  if(ui_status[2:0]==6) case(menu_column)
-   18:menu_character="E";19:menu_character="X";20:menu_character="E";21:menu_character="C";
-   default:;
-  endcase
-  if(menu_column==67) menu_character="C";
-  if(menu_column==68) menu_character="=";
-  if(menu_column==69) menu_character=hex_digit({2'b0,ui_status[47:46]});
-  if(menu_column==70) menu_character=hex_digit(ui_status[45:42]);
-  if(menu_column==73) menu_character="E";
-  if(menu_column==74) menu_character="=";
-  if(menu_column==75) menu_character=hex_digit(ui_status[41:38]);
+  menu_address=1023;
+  if(menu_fetch_column>=1 && menu_fetch_column<=64) menu_address={ui_status[27:24],6'd0}+menu_fetch_column-1'b1;
+  menu_character=menu_read;
+  message="        ";
+  if(ui_status[14:12]==2) message="NO CLIP ";
+  else if(ui_status[14:12]==3) message="CMD FAIL";
+  else if(ui_status[14:12]==4) message="TIMEOUT ";
+  else if(ui_status[11]) message="WAIT    ";
+  if(menu_column>=55 && menu_column<=62) menu_character=message[(62-menu_column)*8 +:8];
+  if(menu_column==65) menu_character="M";
+  if(menu_column==66) menu_character=ui_status[10]?"1":"0";
+  if(ui_status[27:24]==3 && menu_column==63) menu_character=ui_status[9:7]==7?"E":"G";
+  if(menu_column==68) menu_character="C";
+  if(menu_column==69) menu_character="=";
+  if(menu_column==70) menu_character=8'd48+ui_status[47:42]/10;
+  if(menu_column==71) menu_character=8'd48+ui_status[47:42]%10;
+  if(menu_column==74) menu_character="E";
+  if(menu_column==75) menu_character="=";
+  if(menu_column==76) menu_character=hex_digit(ui_status[41:38]);
  end
  always @* begin
   top_character=" ";frame_number=0;
@@ -116,9 +121,9 @@ module threshold_osd #(parameter W=1280,H=720)(
    12:top_character="F";13:top_character="=";
    24:top_character="V";25:top_character="=";
    36:top_character="R";37:top_character="=";
-   48:top_character=shown_descriptor[101]?"R":" ";
-   49:top_character=shown_descriptor[101]?"E":" ";
-   50:top_character=shown_descriptor[101]?"F":" ";
+   48:top_character=shown_descriptor[101]?"4":" ";
+   49:top_character=shown_descriptor[101]?"U":" ";
+   50:top_character=shown_descriptor[101]?"P":" ";
    53:top_character=shown_descriptor[102]?"C":"S";
    54:top_character=shown_descriptor[102]?"A":"O";
    55:top_character=shown_descriptor[102]?"N":"B";
@@ -151,13 +156,10 @@ module threshold_osd #(parameter W=1280,H=720)(
    1:character="T";2:character="=";
    3:character=8'd48+{4'd0,bcd[15:12]};4:character=8'd48+{4'd0,bcd[11:8]};
    5:character=8'd48+{4'd0,bcd[7:4]};6:character=8'd48+{4'd0,bcd[3:0]};
-   8:character="K";9:character="E";10:character="Y";11:character="2";12:character="-";
-   14:character="K";15:character="E";16:character="Y";17:character="3";18:character="+";
-   20:character="M";21:character="=";22:character=shown_flags[0]?"1":"0";
-   24:character="D";25:character="=";26:character=shown_flags[1]?"1":"0";
-   28:character="O";29:character="=";30:character=shown_flags[2]?"1":"0";
-   32:character="C";33:character=8'd48+ui_status[63:56]/10;34:character=8'd48+ui_status[63:56]%10;
-   36:character="P";37:character=8'd48+ui_status[55:48]/10;38:character=8'd48+ui_status[55:48]%10;
+   8:character="K";9:character="1";
+   11:character="N";12:character="E";13:character="X";14:character="T";
+   16:character="H";17:character="O";18:character="L";19:character="D";
+   21:character="P";22:character="R";23:character="E";24:character="V";
    default:character=" ";
   endcase
  end
@@ -181,6 +183,7 @@ module threshold_osd #(parameter W=1280,H=720)(
    "F":glyph=35'b11111100001000011110100001000010000;
    "G":glyph=35'b01111100001000010111100011000101111;
    "H":glyph=35'b10001100011000111111100011000110001;
+   "W":glyph=35'b10001_10001_10001_10101_10101_11011_10001;
    "X":glyph=35'b10001100010101000100010101000110001;
    "/":glyph=35'b00001000010001000100010001000010000;
    "I":glyph=35'b01110001000010000100001000010001110;
@@ -238,6 +241,13 @@ module threshold_osd #(parameter W=1280,H=720)(
   label_text=chosen_kind==1 ? "CIRCLE" : "RECT  ";
   label_character=chosen_label_x<96 ? label_text[(5-chosen_label_x[10:4])*8 +:8] : " ";
  end
+ wire quad_active=shown_descriptor[101];
+ wire [10:0] tile_x=x-(x>=W/2 ? W/2 : 0);
+ wire [10:0] tile_y=y-(y>=H/2 ? H/2 : 0);
+ wire tile_label=quad_active && tile_x>=16 && tile_x<112 && tile_y>=32 && tile_y<46;
+ wire tile_border=quad_active && (x==W/2 || y==H/2);
+ wire [47:0] tile_text=y<H/2 ? (x<W/2 ? "SAVE 1" : "SAVE 2") : (x<W/2 ? "SAVE 3" : "LIVE  ");
+ wire [10:0] tile_text_x=tile_x-16,tile_text_y=tile_y-32;
  wire top_active=de && top_strip && x>=16 && x<1280;
  wire menu_active=de && y>=H-80 && y<H-64 && x>=16 && x<1232;
  reg [7:0] font_character;
@@ -247,6 +257,9 @@ module threshold_osd #(parameter W=1280,H=720)(
  always @* begin
   font_character=label_character;font_x=chosen_label_x[3:1];font_y=chosen_label_y[3:1];
   font_valid=label_valid;
+  if(tile_label) begin
+   font_character=tile_text[(5-tile_text_x[6:4])*8 +:8];font_x=tile_text_x[3:1];font_y=tile_text_y[3:1];font_valid=1;
+  end
   if(top_active) begin
    font_character=top_character;font_x=x[3:1];font_y=top_y[3:1];font_valid=top_y<14;
   end else if(menu_active) begin
@@ -259,5 +272,7 @@ module threshold_osd #(parameter W=1280,H=720)(
  wire ink=font_valid && font_x<5 && bitmap[34-font_y*5-font_x];
  assign out_rgb=top_active ? (ink?24'hffffff:24'h202020) :
                 menu_active || strip ? (ink?24'h66ffff:24'h202020) :
+                de && tile_label ? (ink?24'h66ffff:24'h202020) :
+                de && tile_border ? 24'h66ffff :
                 de && (shape_border || ink) ? shape_color : rgb;
 endmodule

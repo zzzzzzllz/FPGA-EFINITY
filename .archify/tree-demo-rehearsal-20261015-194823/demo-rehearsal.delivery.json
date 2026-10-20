@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b003efb7-d5f7-4d58-b8f7-023f22961555",
+  "status": "current",
+  "command": "deliver",
+  "type": "tree",
+  "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\candidate.json",
+  "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+  "specification": {
+    "sha256": "58ba7c5880805504b27c98ec817adbcae39a4f0ae2066e855b82b3312c4c0950",
+    "bytes": 9060
+  },
+  "artifact": {
+    "sha256": "1f4c3d2024e2da69cd3972261752b4fbe90cd57457e61a2e68585506d8e6351a",
+    "bytes": 866130
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "status": "Standalone RTL/map candidate verified; not integrated or placed/routed",
+  "original": {
+    "EFX_ADD": 7,
+    "EFX_LUT4": 475,
+    "EFX_FF": 34,
+    "EFX_RAM10": 16
+  },
+  "candidate": {
+    "EFX_ADD": 9,
+    "EFX_LUT4": 123,
+    "EFX_FF": 38,
+    "EFX_RAM10": 9
+  },
+  "delta": {
+    "EFX_ADD": 2,
+    "EFX_FF": 4,
+    "EFX_LUT4": -352,
+    "EFX_RAM10": -7
+  },
+  "original_unchanged": true,
+  "physical_ROMs": {
+    "font_low__D$030": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "420f9199828fa5bbc2a04ee54f5037dd213d35472457b1614ee034daade44c40",
+      "ones": 2999
+    },
+    "font_low__D$303": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "65e190c24d51d503e6352b6168119bb6554fd5263914d6259c2d5b2cf18b4817",
+      "ones": 1548
+    },
+    "font_low__D$3b0": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "525ce9d9f4c981eba8079035313c1a0cf40cac90e72616b26f02006d275b5f46",
+      "ones": 1395
+    },
+    "font_low__D$c3": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "5fcc42928436dbe33359d507d59c42ef92f4add653d55f8c47720b7ea03f8824",
+      "ones": 1214
+    },
+    "font_low__D$b30": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "2fac3ac3683cad2bfce49b7de47dfeed6e24e873446f634c366d5603da00bdf8",
+      "ones": 1386
+    },
+    "font_high": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "0bdd6437daf3869bc188d77080eb619a32f8743b648a1fa8190c1eb0a61f4131",
+      "ones": 1153
+    },
+    "font_low__D$b03": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "77a89d4fb2bcae11cdb495a2a4f194b80542d0f18539ec67ba55d34d172c8367",
+      "ones": 3037
+    },
+    "font_low__D$c0": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "5190c689b13f74b55b972f3a6a1b2bb2e16b4eedc31842861ed846f93846a855",
+      "ones": 2973
+    },
+    "font_low__D$0b3": {
+      "READ_WIDTH": "1",
+      "WRITE_WIDTH": "1",
+      "OUTPUT_REG": "1'b0",
+      "RESET_RAM": "\"ASYNC\"",
+      "init_sha256": "22d8be680d6eb4388d7ea81715a2ffe0711ade7cf1ea82c213698623a30a628a",
+      "ones": 2706
+    }
+  },
+  "initialization_exact": true,
+  "equivalence": {
+    "RTL_cycles": 981712,
+    "mapped_cycles": 981712,
+    "reset_checks_each": 58,
+    "latency_cycles": 1,
+    "incoming_IDs": 128,
+    "slots": 7,
+    "independent_pixel_reference": true
+  },
+  "mapped_simulation_condition": {
+    "local_vendor_LUT_startup_fix": true,
+    "validated_masks": 40,
+    "truth_checks": 10280
+  },
+  "timing": "13.468ns clock constraint, map only; no PNR timing result",
+  "full_firmware": {
+    "previous_direct_addition_RAM": 232,
+    "conditional_replacement_RAM": 225,
+    "remaining_RAM_deficit": 21,
+    "previous_full_plan_RAM": 264,
+    "conditional_full_plan_RAM": 257,
+    "full_plan_deficit": 53,
+    "integrated_XLR": null,
+    "scope": "Subtract standalone 7-RAM delta only; combined integration not measured"
+  },
+  "prior_frozen_files_verified": {
+    "requant-static": 17,
+    "scalar-read": 31
+  }
+}

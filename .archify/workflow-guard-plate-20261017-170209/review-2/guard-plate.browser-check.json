@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "browser-check",
+  "evidenceKind": "automated-browser",
+  "status": "fail",
+  "visualReview": "not-requested",
+  "provenance": "current",
+  "deliveryReceiptId": "0087cdc6-2f26-45cd-8817-ce4e8290dba4",
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.html",
+    "sha256": "e5f40bd08921a4edb1b59130016576f11189be20111f6488f2a9e70e41ab075e",
+    "bytes": 831739
+  },
+  "state": {
+    "detail": "read",
+    "motion": "still"
+  },
+  "chrome": {
+    "status": "available",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/temp-cleanup-incomplete",
+      "severity": "error",
+      "message": "Browser cleanup could not safely finish; inspect the reported retained path.",
+      "subject": {
+        "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.html"
+      },
+      "evidence": {
+        "reason": "Temporary directory cleanup failed; retained path \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl\": EPERM, Permission denied: \\\\?\\D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl '\\\\?\\D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl'",
+        "retainedDirectory": "D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl"
+      },
+      "supportedFixes": [
+        "resolve the reported process or filesystem failure; verify directory ownership before manual cleanup"
+      ]
+    }
+  ],
+  "containment": {
+    "status": "fail",
+    "policy": "fit-or-reader-declared-readable-vertical-scroll",
+    "viewports": []
+  },
+  "themeStates": {
+    "status": "fail",
+    "viewports": []
+  },
+  "readability": {
+    "status": "fail",
+    "minimumProjectedNodeTextPx": 6,
+    "viewports": []
+  },
+  "viewerChrome": {
+    "status": "fail",
+    "viewports": []
+  },
+  "captures": {
+    "status": "not-requested",
+    "screenshots": [],
+    "contactSheet": null
+  },
+  "sidecars": {
+    "directory": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\review-2",
+    "receipt": "guard-plate.browser-check.json",
+    "files": []
+  },
+  "error": "Temporary directory cleanup failed; retained path \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl\": EPERM, Permission denied: \\\\?\\D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl '\\\\?\\D:\\Desktop_New\\EfinityNEW\\tmp\\archify-runtime\\archify-visual-check-profile-WyaiRl'"
+}

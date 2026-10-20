@@ -1,0 +1,75 @@
+{
+  "status": "Fixed experiments for full development comparison; approved candidate stays frozen",
+  "candidates": {
+    "geometry": {
+      "C": 0.1,
+      "weights_sha256": "b21a547399f17ecb50264d489eec4e4563c2269babab7149dc5447f7a12f5391",
+      "interface_sha256": "2422a2afbff431d0ac54f1dceb473d7c429374b60ac93dcb76aada7713ea09b0",
+      "signed_weight_bits": 11,
+      "absolute_accumulator_bound": 531070,
+      "thresholds": {
+        "province": {
+          "score": 174,
+          "margin": 4417
+        },
+        "alphanumeric": {
+          "score": -21431,
+          "margin": 4068
+        }
+      }
+    },
+    "geometry-regularized": {
+      "C": 0.01,
+      "weights_sha256": "9518e64009be7dd2b479e9a6fee6f98d11aeb58c5863088cbc856854f8cbf142",
+      "interface_sha256": "35a67a0381b98b9da4e05b64a534eb5e34d04cef41251ae14f64be0934370d68",
+      "signed_weight_bits": 10,
+      "absolute_accumulator_bound": 277019,
+      "thresholds": {
+        "province": {
+          "score": -9356,
+          "margin": 5119
+        },
+        "alphanumeric": {
+          "score": -16417,
+          "margin": 2364
+        }
+      }
+    }
+  },
+  "sklearn": "1.6.1",
+  "training_slices_sha256": {
+    "train": "3a86a11096a2726d7feddb5adc39844ce2c946220b0299a774bb61285f42990a",
+    "validation": "6342b92c9f85955a4248697198ea83f724a573649901a8077b27cb3672f2961a"
+  },
+  "trainer_sha256": "e1d8c5cd3416b3e46fca07d0e3a1b8ef35da2ecb7d7418162bae6437b0b63c9e",
+  "model_interface_sha256": "81c45cadb85199837314dc42c433b64b8276d3a3c1364ef41debbb54fcbd933c",
+  "feature_count": 320,
+  "classes": "皖沪津渝冀晋蒙辽吉黑苏浙京闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新ABCDEFGHJKLMNPQRSTUVWXYZ0123456789",
+  "weight_fraction_bits": 8,
+  "bias_fraction_bits": 13,
+  "LinearSVC": {
+    "dual": false,
+    "max_iter": 5000,
+    "random_state": 701,
+    "class_weight": null
+  },
+  "augmentation": {
+    "original": true,
+    "shear": [
+      -0.2,
+      0.2
+    ],
+    "horizontal_scale": [
+      0.85,
+      1.15
+    ],
+    "canvas": [
+      64,
+      64
+    ],
+    "interpolation": "nearest",
+    "renormalize_transformed": true
+  },
+  "threshold_policy": "Original validation-only 1% accepted error budget per province/alphanumeric group",
+  "heldout_scored": 0
+}

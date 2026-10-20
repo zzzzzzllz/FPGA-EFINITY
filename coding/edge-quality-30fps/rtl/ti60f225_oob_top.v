@@ -558,20 +558,24 @@ wire [63:0] frame_algorithm_pixels;
 wire frame_algorithm_valid,frame_algorithm_sof,frame_algorithm_eol,frame_algorithm_eof,sobel_store_ready;
 wire [31:0] frame_algorithm_id,frame_algorithm_epoch,frame_capture_overflow,frame_result_overflow;
 wire [15:0] frame_algorithm_config;
+wire frame_algorithm_recognition;
+wire [14:0] recognition_live;
 wire [3:0] frame_command;
 wire frame_command_toggle,frame_command_ack,reference_sel,frame_shown_toggle;
 wire [293:0] frame_display_descriptor;wire [300:0] frame_shown_descriptor;
 reg [252:0] shape_shown;
+reg [3:0] demo_shown_view;
 (* async_reg="true" *) reg [1:0] shape_shown_sync;
 reg shape_shown_ack;
 // The HDMI descriptor stays fixed for a whole frame. Its toggle crosses first;
 // the bundled payload has settled before the destination captures it.
 always @(posedge i_mipi_rx_pclk) begin
- if(!vid_rst_n) begin shape_shown<=0;shape_shown_sync<=0;shape_shown_ack<=0;end
+ if(!vid_rst_n) begin shape_shown<=0;demo_shown_view<=0;shape_shown_sync<=0;shape_shown_ack<=0;end
  else begin
   shape_shown_sync<={shape_shown_sync[0],frame_shown_toggle};
   if(shape_shown_sync[1]!=shape_shown_ack) begin
    shape_shown<={frame_shown_descriptor[293:105],frame_shown_descriptor[63:0]};
+   demo_shown_view<=frame_shown_descriptor[299:296];
    shape_shown_ack<=shape_shown_sync[1];
   end
  end
@@ -586,39 +590,33 @@ wire [1:0] ui_ratio,jtag_ratio;
 wire ui_recognition,jtag_recognition;reg recognition_active=0;
 reg algorithm_active=0;reg [1:0] ratio_active=1;
 wire [31:0] selected_epoch=config_epoch+threshold_epoch+median_epoch;
-wire [2:0] ui_focus;wire [1:0] ui_presses;
-wire [3:0] ui_action;
+wire [1:0] ui_presses;
+wire [3:0] demo_step;wire threshold_preset;wire [10:0] threshold_preset_value;
 wire [2:0] ui_view,ui_error;
 wire [31:0] ui_short_events,ui_long_events;
 wire [63:0] ui_display_status;
-wire [31:0] ui_state={8'd0,ui_recognition,(frame_status[127:96]!=selected_epoch),flags_shown[5:3],ui_ratio,ui_algorithm,ui_apply_ack,ui_error,ui_busy,ui_median,ui_view,ui_action,ui_focus};
-reg [25:0] fps_timer=0;
-reg [31:0] fps_capture_last=0,fps_process_last=0;
-reg [7:0] capture_fps=0,process_fps=0;
-always @(posedge i_mipi_rx_pclk) begin
- if(!w_arstn) begin fps_timer<=0;fps_capture_last<=0;fps_process_last<=0;capture_fps<=0;process_fps<=0;end
- else if(fps_timer==49999999) begin
-  fps_timer<=0;capture_fps<=full_frames-fps_capture_last;process_fps<=algorithm_status[31:0]-fps_process_last;
-  fps_capture_last<=full_frames;fps_process_last<=algorithm_status[31:0];
- end else fps_timer<=fps_timer+1'b1;
-end
-wire [2:0] jtag_view=jtag_reference?3'd6:jtag_denoise?3'd4:jtag_gray && jtag_edge?3'd3:
+wire [31:0] ui_state={4'd0,demo_step,ui_recognition,(frame_status[127:96]!=selected_epoch),flags_shown[5:3],ui_ratio,ui_algorithm,ui_apply_ack,ui_error,ui_busy,ui_median,ui_view,7'd0};
+wire [2:0] jtag_view=jtag_reference?3'd6:jtag_denoise?(jtag_overlay?3'd7:3'd4):jtag_gray && jtag_edge?3'd3:
                        jtag_overlay?3'd5:jtag_edge?3'd2:jtag_gray?3'd1:3'd0;
 edge_ui user_controls(.clk(i_mipi_rx_pclk),.rst_n(w_arstn),.key_select_n(key_select_n),
+ .frame_start(w_mipi_rx_vs && !camera_vs_d),
+ .settings_visible(shape_shown[63:32]==selected_epoch && demo_shown_view=={overlay_sel,edge_sel,gray_sel,(gray_sel && edge_sel)}),
+ .recorded(frame_status[8:3]),.backend_error(frame_status[18:15]),
  .presses(ui_presses),.keys(threshold_keys),.frame_mode(frame_status[2:0]),.reference_valid(frame_status[14]),
  .jtag_view(jtag_view),.jtag_recognition(jtag_recognition),.jtag_median(jtag_median),.jtag_algorithm(jtag_algorithm),.jtag_ratio(jtag_ratio),.jtag_apply(ui_apply),.jtag_apply_ack(ui_apply_ack),
  .jtag_command(jtag_frame_command),.jtag_command_toggle(jtag_frame_toggle),.jtag_command_ack(jtag_frame_ack),
  .frame_command(frame_command),.frame_toggle(frame_command_toggle),.frame_ack(frame_command_ack),
- .focus(ui_focus),.action(ui_action),.view(ui_view),.recognition(ui_recognition),.median(ui_median),.algorithm(ui_algorithm),.ratio(ui_ratio),
+ .threshold_pending(threshold_pending),.threshold_preset_value(threshold_preset_value),
+ .demo_step(demo_step),.threshold_preset(threshold_preset),.view(ui_view),.recognition(ui_recognition),.median(ui_median),.algorithm(ui_algorithm),.ratio(ui_ratio),
  .short_events(ui_short_events),.long_events(ui_long_events),.error(ui_error),.busy(ui_busy));
-assign gray_sel=ui_view==1 || ui_view==3 || ui_view==4 || ui_view==6;
-assign edge_sel=ui_view==2 || ui_view==3 || ui_view==4 || ui_view==6;
-assign overlay_sel=ui_view==5;
+assign gray_sel=ui_view==1 || ui_view==3 || ui_view==4 || ui_view==7;
+assign edge_sel=ui_view==2 || ui_view==3 || ui_view==4 || ui_view==7;
+assign overlay_sel=ui_view==5 || ui_view==7;
 assign median_set=ui_median;
-assign denoise_set=ui_view==4;
+assign denoise_set=ui_view==4 || ui_view==7;
 assign reference_sel=ui_view==6;
 frame_mailbox #(.WIDTH(64)) ui_display_cdc(.rst_n(w_arstn),.src_clk(i_mipi_rx_pclk),.dst_clk(hdmi_tx_slow_clk),
- .src_data({capture_fps,process_fps,frame_status[8:3],frame_status[18:15],6'd0,ui_state}),
+ .src_data({16'd0,frame_status[8:3],frame_status[18:15],6'd0,ui_state}),
  .delivered(),.dst_data(ui_display_status));
 
 
@@ -645,7 +643,7 @@ wire  fifo_rd_period;
  .recognition_enable(recognition_active),.config_value({ratio_active,algorithm_active,denoise_active,median_active,threshold_active}),.config_epoch(config_epoch+threshold_epoch+median_epoch),
  .algorithm_pixels(frame_algorithm_pixels),.algorithm_valid(frame_algorithm_valid),.algorithm_ready(median_ready),
  .algorithm_sof(frame_algorithm_sof),.algorithm_eol(frame_algorithm_eol),.algorithm_eof(frame_algorithm_eof),
- .algorithm_frame_id(frame_algorithm_id),.algorithm_epoch(frame_algorithm_epoch),.algorithm_config(frame_algorithm_config),
+ .algorithm_frame_id(frame_algorithm_id),.algorithm_epoch(frame_algorithm_epoch),.algorithm_config(frame_algorithm_config),.algorithm_recognition(frame_algorithm_recognition),.recognition_live(recognition_live),
  .result_pixels(stored_pixels),.result_valid(sobel_valid),.result_sof(sobel_sof),.result_eof(sobel_eof),.result_ready(sobel_store_ready),
  .command(frame_command),.command_toggle(frame_command_toggle),.command_ack(frame_command_ack),
  .reference_mode(reference_sel),.display_period(fifo_rd_period),
@@ -821,7 +819,7 @@ reg [1:0] active_phase=0;
 reg [31:0] config_epoch=0;
 reg camera_vs_d=0;
 wire median_set,denoise_set;
-reg median_active=1,denoise_active=0;
+reg median_active=0,denoise_active=0;
 reg [31:0] median_epoch=0;
 wire [15:0] algorithm_output_config;
 wire median_ready;
@@ -829,16 +827,16 @@ wire [10:0] threshold_set,threshold_pending,threshold_active,sobel_frame_thresho
 wire threshold_toggle,threshold_ack;
 wire [31:0] threshold_epoch,key_minus_events,key_plus_events;
 wire [1:0] threshold_keys;
-threshold_control threshold_controls(
+threshold_control #(.RESET_VALUE(56)) threshold_controls(
  .clk(i_mipi_rx_pclk),.rst_n(w_arstn),.frame_start(w_mipi_rx_vs && !camera_vs_d),
- .key_minus_n(key_minus_n),.key_plus_n(key_plus_n),.canny_enabled(ui_algorithm),.adjust_enable(ui_focus==2),.press_events(ui_presses),
+ .key_minus_n(key_minus_n),.key_plus_n(key_plus_n),.canny_enabled(ui_algorithm),.preset(threshold_preset),.preset_value(threshold_preset_value),.adjust_enable((demo_step==5 || demo_step==8) && !ui_busy),.fine_adjust(demo_step==8),.press_events(ui_presses),
  .jtag_value(threshold_set),.jtag_toggle(threshold_toggle),.jtag_ack(threshold_ack),
  .pending(threshold_pending),.active(threshold_active),.epoch(threshold_epoch),
  .minus_events(key_minus_events),.plus_events(key_plus_events),.keys(threshold_keys));
 always @(posedge i_mipi_rx_pclk) begin
  if (!w_arstn) begin
   active_r<=397; active_g<=256; active_b<=471; active_phase<=0;
-  config_epoch<=0; camera_vs_d<=0;median_active<=1;denoise_active<=0;median_epoch<=0;algorithm_active<=0;ratio_active<=1;recognition_active<=0;
+  config_epoch<=0; camera_vs_d<=0;median_active<=0;denoise_active<=0;median_epoch<=0;algorithm_active<=0;ratio_active<=1;recognition_active<=0;
  end else begin
   camera_vs_d<=w_mipi_rx_vs;
   if (w_mipi_rx_vs && !camera_vs_d) begin
@@ -898,7 +896,7 @@ wire sobel_valid,sobel_sof,sobel_eol,sobel_eof;
 wire [31:0] sobel_frame_id,sobel_epoch;
 reg [31:0] sobel_overrun_cycles=0;
 edge_algorithm_pair algorithm_pipeline(
- .clk(i_mipi_rx_pclk),.rst_n(w_arstn),.in_config(frame_algorithm_config),
+ .clk(i_mipi_rx_pclk),.rst_n(w_arstn),.in_config(frame_algorithm_config),.in_recognition(frame_algorithm_recognition),
  .in_pixels(frame_algorithm_pixels),.in_valid(frame_algorithm_valid),.in_ready(median_ready),
  .in_sof(frame_algorithm_sof),.in_eol(frame_algorithm_eol),.in_eof(frame_algorithm_eof),.in_id(frame_algorithm_id),.in_epoch(frame_algorithm_epoch),
  .out_pixels(stored_pixels),.out_valid(sobel_valid),.out_ready(sobel_store_ready),
@@ -1269,11 +1267,11 @@ assign tmds_tx_data1_TX_DATA = ~tmds_data1;
 assign tmds_tx_data2_TX_DATA = ~tmds_data2;
 
 // One capture for a complete CLI report; page reads never modify controls.
-wire [1904:0] debug_live;
+wire [1919:0] debug_live;
 wire [5:0] debug_page,debug_page_ack;
 wire debug_capture,debug_capture_ack;
 wire [63:0] debug_page_data;
-assign debug_live[0 +: 32]=32'h6010100f;
+assign debug_live[0 +: 32]=32'h60101704;
 assign debug_live[32 +: 32]=full_frames;
 assign debug_live[64 +: 32]=full_errors;
 assign debug_live[96 +: 16]=source_width;
@@ -1337,7 +1335,8 @@ assign debug_live[1332 +: 32]=ui_long_events;
 assign debug_live[1364 +: 32]=frame_status[31:0];
 assign debug_live[1396 +: 32]=ui_state;
 assign debug_live[1428 +: 477]={shape_shown[252:64],algorithm_status[223:96],frame_traffic};
-debug_status_snapshot #(.WIDTH(1905)) status_snapshot(
+assign debug_live[1905 +: 15]=recognition_live;
+debug_status_snapshot #(.WIDTH(1920)) status_snapshot(
  .clk(i_mipi_rx_pclk),.rst_n(w_arstn),.live(debug_live),
  .capture(debug_capture),.capture_ack(debug_capture_ack),
  .page(debug_page),.page_ack(debug_page_ack),.data(debug_page_data));
@@ -1375,7 +1374,7 @@ debug_edb_top debug_edb_top_inst(
  
  
  .status_recognition_set(jtag_recognition),
- .status_build_id(32'h6010100f),
+ .status_build_id(32'h60101704),
  
  
  

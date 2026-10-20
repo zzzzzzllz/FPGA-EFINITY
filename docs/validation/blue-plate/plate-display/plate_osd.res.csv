@@ -1,0 +1,8 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Oct 18, 2026 13:47:24
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	       FFs	      SRLs	      ADDs	      LUTs	    COMB4s	      RAMs	 DSP/MULTs
+plate_osd:plate_osd  	   34(34)	     0(0)	     7(7)	 475(475)	     0(0)	   16(16)	     0(0)	

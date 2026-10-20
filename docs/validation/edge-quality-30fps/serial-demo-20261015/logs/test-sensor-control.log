@@ -1,0 +1,2 @@
+PASS O1: grouped updates, six exposure values, restore, invalid input, NACK and readback mismatch
+PASS O1 host transport: snapshot preserved, request toggles, register packing, NACK surfaced

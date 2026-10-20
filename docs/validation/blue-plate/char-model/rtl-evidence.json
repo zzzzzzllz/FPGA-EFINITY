@@ -1,0 +1,132 @@
+{
+  "rtl/simulation.json": {
+    "vectors": 159,
+    "real_and_rejection": 99,
+    "tie_injected_score_bus": 3,
+    "extreme_and_random": 57,
+    "expected_latency_cycles": 41796,
+    "clock_assumption_MHz": 100,
+    "hashes": {
+      "tools/blue_plate/char_model/rtl/char_linear.v": "c29b621ce3d3acf6ff26656dac2140eda1e0c831029e73a2b86c508fb1073577",
+      "tools/blue_plate/char_model/tests/tb_char_linear.sv": "fedfc9005cffc2c2dff57fb7ef3da92f1d0edb850305736d2068b9f4b621268d",
+      "tools/blue_plate/char_model/candidate/w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+      "tools/blue_plate/char_model/candidate/b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8",
+      "tools/blue_plate/char_model/candidate/interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da"
+    },
+    "result": "PASS vectors=159 compared_scores=10465 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv:128: $finish called at 67996990000 (1ps)\n",
+    "commands": [
+      [
+        "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_char_linear",
+        "-o",
+        "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl\\sim.vvp",
+        "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\rtl\\char_linear.v",
+        "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv"
+      ],
+      [
+        "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+        "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl\\sim.vvp",
+        "+count=159"
+      ]
+    ]
+  },
+  "rtl-mapped/simulation.json": {
+    "vectors": 8,
+    "real_and_rejection": 4,
+    "tie_injected_score_bus": 0,
+    "extreme_and_random": 4,
+    "expected_latency_cycles": 41796,
+    "clock_assumption_MHz": 100,
+    "hashes": {
+      "tools/blue_plate/char_model/rtl/char_linear.v": "c29b621ce3d3acf6ff26656dac2140eda1e0c831029e73a2b86c508fb1073577",
+      "tools/blue_plate/char_model/tests/tb_char_linear.sv": "494ba17f26f1f25807fd22d3b4268a8da488ab465d1d805cea76692eed1113ef",
+      "tools/blue_plate/char_model/candidate/w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+      "tools/blue_plate/char_model/candidate/b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8",
+      "tools/blue_plate/char_model/candidate/interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da",
+      "tmp/blue-plate-char-model/synthesis/out/char_linear.map.v": "53aa820b3b2081badde1cf80fe60ed10383ba3805b7f80345d22c8825c0a09fe"
+    },
+    "result": "PASS vectors=8 compared_scores=650 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv:131: $finish called at 4227910000 (1ps)\n",
+    "commands": [
+      [
+        "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_char_linear",
+        "-o",
+        "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl-mapped\\sim.vvp",
+        "-DMAPPED_NETLIST",
+        "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\synthesis\\out\\char_linear.map.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_add.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_comb4.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_dpram10.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_dpram_5k.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_dsp12.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_dsp24.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_dsp48.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_ff.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_gbufce.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_mult.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_ram10.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_ram_10k.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_ram_5k.v",
+        "D:\\Efinity\\sim_models\\verilog\\efx_srl8.v",
+        "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl-mapped\\efx_lut4_icarus.v",
+        "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv"
+      ],
+      [
+        "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+        "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl-mapped\\sim.vvp",
+        "+count=8"
+      ]
+    ],
+    "vendor_model_adaptation": {
+      "source": "D:/Efinity/sim_models/verilog/efx_lut4.v",
+      "source_sha256": "49f8494172ab8ff1be8f9a487015451e924cff911ab36cfcefe2555fbb06586e",
+      "adapted_sha256": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+      "change": "Sensitivity-list always replaced by always_comb to evaluate constant-input LUTs at time zero; hardware netlist unchanged."
+    }
+  },
+  "rtl-mapped/vendor-lut-check.json": {
+    "original": {
+      "exit_code": 1,
+      "output": "initial LUT c43f at 0000: output=0 expected=1\nFATAL: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_vendor_lut_init.sv:15: constant-input LUT initialization differs from truth table\n       Time: 1000  Scope: tb_vendor_lut_init\n",
+      "model_sha256": "49f8494172ab8ff1be8f9a487015451e924cff911ab36cfcefe2555fbb06586e"
+    },
+    "adapted": {
+      "exit_code": 0,
+      "output": "initial LUT c43f at 0000: output=1 expected=1\nPASS constant initialization and 64 truth-table entries\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_vendor_lut_init.sv:21: $finish called at 17000 (1ps)\n",
+      "model_sha256": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe"
+    }
+  },
+  "synthesis/synthesis-summary.json": {
+    "tool": "Efinity 2026.1.132.4.5",
+    "device": "Ti60F225 I3",
+    "flow": "map only",
+    "retiming": 0,
+    "resources": {
+      "EFX_ADD": 65,
+      "EFX_LUT4": 467,
+      "EFX_FF": 216,
+      "EFX_RAM10": 33,
+      "EFX_DSP48": 1
+    },
+    "memory_instances": {
+      "weight": 30,
+      "bias": 2,
+      "features": 1
+    },
+    "placement_and_timing_validated": false,
+    "hashes": {
+      "char_linear.v": "c29b621ce3d3acf6ff26656dac2140eda1e0c831029e73a2b86c508fb1073577",
+      "char_linear.xml": "ac13b37e10bbdfdabdfddd903a7d6b61a7eb1a010921ed6298b05b2fc283c449",
+      "w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+      "b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8",
+      "out/char_linear.map.v": "53aa820b3b2081badde1cf80fe60ed10383ba3805b7f80345d22c8825c0a09fe",
+      "out/char_linear.map.rpt": "dbb43bceacc99bf681a565c365e02b8f5c11478a65abc07feb481b83fbfa6c56"
+    }
+  }
+}

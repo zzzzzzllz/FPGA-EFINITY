@@ -1,0 +1,16 @@
+{
+  "disagreements": 33,
+  "test_disagreements": 5,
+  "float_test_correct": 3700,
+  "range_check_before_cast": true,
+  "actual_ranges": {
+    "w1": [
+      -303,
+      214
+    ],
+    "b1": [
+      -27094,
+      -860
+    ]
+  }
+}

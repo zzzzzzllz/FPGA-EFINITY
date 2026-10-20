@@ -1,0 +1,18 @@
+{
+  "candidates": 656,
+  "accepted": 500,
+  "queue_peak": 113,
+  "max_components": 113,
+  "max_eligible_components": 10,
+  "max_foreground": 6479,
+  "heldout_consumed": 0,
+  "sources": {
+    "tools\\blue_plate\\baseline.py": "2329329c2b90f22bb7554713b36c4771d90a015d73bdc4ee4233319b574e0a89",
+    "tmp\\blue-plate-normal-g1\\integer-geometry-solver\\candidates.json": "de27fac0d24b172a881b83b8704acb06510692ea92ad5ae0a70c8fbe8adeb338",
+    "tmp\\blue-plate-normal-g1\\integer-geometry-solver\\candidate-plates.npz": "de78460516e051a97379916df22b00b366cc467ffd98b5ca154604a04b7e884c",
+    "tools\\blue_plate\\char_segment\\reference.py": "60c10b9a72d34027f3289c50ed74d2dc7e404a9ea4d7588cb0cf36d9c90729ae"
+  },
+  "sampling": "frozen OpenCV warp",
+  "input_gray_sha256": "bd83b5b4ab06e74fd12da07e5825a39292a945c7146cebe2874175fb584f9ab7",
+  "reference_npz_sha256": "5502cbe7883b4950ed7501c6431f2e4d7f37f4818ddf9837b6efa79264f1ca02"
+}

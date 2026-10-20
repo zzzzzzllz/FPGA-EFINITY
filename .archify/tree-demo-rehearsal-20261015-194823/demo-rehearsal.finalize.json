@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "tree",
+  "quality": "showcase",
+  "startedAt": "2026-10-15T11:52:58.131Z",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\candidate.json",
+    "sha256": "58ba7c5880805504b27c98ec817adbcae39a4f0ae2066e855b82b3312c4c0950",
+    "bytes": 9060
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+    "sha256": "1f4c3d2024e2da69cd3972261752b4fbe90cd57457e61a2e68585506d8e6351a",
+    "bytes": 866130
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Users\\35075\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\Users\\35075\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "tree",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\candidate.json",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "58ba7c5880805504b27c98ec817adbcae39a4f0ae2066e855b82b3312c4c0950",
+          "bytes": 9060
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1018,
+      "command": [
+        "C:\\Users\\35075\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\Users\\35075\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "tree",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\candidate.json",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "975959e4-facd-49cb-a779-fc17572d9821",
+        "ok": true,
+        "command": "deliver",
+        "type": "tree",
+        "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\candidate.json",
+        "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+        "specification": {
+          "sha256": "58ba7c5880805504b27c98ec817adbcae39a4f0ae2066e855b82b3312c4c0950",
+          "bytes": 9060
+        },
+        "artifact": {
+          "sha256": "1f4c3d2024e2da69cd3972261752b4fbe90cd57457e61a2e68585506d8e6351a",
+          "bytes": 866130
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 419,
+      "command": [
+        "C:\\Users\\35075\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\Users\\35075\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+        "artifact": {
+          "sha256": "1f4c3d2024e2da69cd3972261752b4fbe90cd57457e61a2e68585506d8e6351a",
+          "bytes": 866130
+        },
+        "checks": [
+          {
+            "name": "single_svg",
+            "ok": true,
+            "details": [
+              "found 1 <svg> block(s)"
+            ]
+          },
+          {
+            "name": "finite_svg",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "orthogonal_arrows",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "label_route_clearance",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_crossings",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_corridors",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "container_border_runs",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "route_rhythm",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "legend_clearance",
+            "ok": true,
+            "details": [
+              "no legend marker found"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "metrics": {
+            "properCrossings": 0,
+            "resolvedCrossovers": 0,
+            "ambiguousCorridors": 0,
+            "arrowheadCollisions": 0,
+            "containerBorderRuns": 0,
+            "labelRouteClearanceIssues": 0,
+            "labelCanvasOverflowIssues": 0,
+            "minLabelRouteClearance": null,
+            "desktopReadabilityIssues": 0,
+            "viewportHeightIssues": 0,
+            "minProjectedNodeTextPx": 9.077196095829636,
+            "maxBends": 0,
+            "routesOverSuggestedBends": 0,
+            "maxStretch": null,
+            "routesOverSuggestedStretch": 0,
+            "minSegmentPx": null,
+            "minInteriorSegmentPx": null,
+            "shortSegmentCount": 0,
+            "shortEndpointSegmentCount": 0,
+            "shortInteriorSegmentCount": 0,
+            "microSegmentCount": 0
+          },
+          "suggestedLimits": {
+            "bendsPerRelationship": 2,
+            "stretch": 1.35,
+            "segmentPx": 16,
+            "microSegmentPx": 8
+          },
+          "routeReview": {
+            "crossings": [],
+            "detours": []
+          },
+          "leadingSpace": {
+            "measured": false,
+            "reviewSuggested": false
+          },
+          "desktopReadability": {
+            "budgetBasis": "legacy-930",
+            "readerContract": "declared-wide-v1",
+            "availableDiagramWidth": 930,
+            "actualBudgetPx": 930,
+            "limit": "legacy",
+            "requestedTargetPx": 7.5,
+            "requestedTargetMet": true,
+            "hardFloorPx": 6,
+            "hardFloorMet": true,
+            "minimumOwner": {
+              "kind": "node",
+              "id": "demo"
+            },
+            "minimumSourceTextPx": 11,
+            "minimumProjectedTextPx": 9.077196095829636,
+            "semanticTextCount": 62
+          },
+          "issues": []
+        },
+        "provenance": "current",
+        "deliveryReceiptId": "975959e4-facd-49cb-a779-fc17572d9821"
+      }
+    },
+    "browser-check": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": 95,
+      "command": [
+        "C:\\Users\\35075\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\Users\\35075\\.codex\\skills\\archify\\bin\\archify.mjs",
+        "browser-check",
+        "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+        "--json",
+        "--require-provenance"
+      ],
+      "execution": "in-process",
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "browser-check",
+        "evidenceKind": "automated-browser",
+        "status": "fail",
+        "visualReview": "not-requested",
+        "provenance": "current",
+        "deliveryReceiptId": "975959e4-facd-49cb-a779-fc17572d9821",
+        "artifact": {
+          "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+          "sha256": "1f4c3d2024e2da69cd3972261752b4fbe90cd57457e61a2e68585506d8e6351a",
+          "bytes": 866130
+        },
+        "state": {
+          "detail": "read",
+          "motion": "still"
+        },
+        "chrome": {
+          "status": "available",
+          "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+        },
+        "diagnostics": [
+          {
+            "code": "viewer/browser-check-runtime",
+            "severity": "error",
+            "message": "browser-check could not complete its Chrome inspection.",
+            "subject": {
+              "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html"
+            },
+            "evidence": {
+              "reason": "Temporary directory ancestor identity is unavailable: C:\\Users\\35075\\AppData\\Local\\Temp"
+            },
+            "supportedFixes": [
+              "resolve the reported Chrome inspection error, then rerun browser-check"
+            ]
+          }
+        ],
+        "containment": {
+          "status": "fail",
+          "policy": "fit-or-reader-declared-readable-vertical-scroll",
+          "viewports": []
+        },
+        "themeStates": {
+          "status": "fail",
+          "viewports": []
+        },
+        "readability": {
+          "status": "fail",
+          "minimumProjectedNodeTextPx": 6,
+          "viewports": []
+        },
+        "viewerChrome": {
+          "status": "fail",
+          "viewports": []
+        },
+        "captures": {
+          "status": "not-requested",
+          "screenshots": [],
+          "contactSheet": null
+        },
+        "sidecars": {
+          "receipt": "demo-rehearsal.browser-check.json",
+          "files": []
+        },
+        "error": "Temporary directory ancestor identity is unavailable: C:\\Users\\35075\\AppData\\Local\\Temp"
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html"
+      },
+      "evidence": {
+        "reason": "Temporary directory ancestor identity is unavailable: C:\\Users\\35075\\AppData\\Local\\Temp"
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "browser-check",
+  "finishedAt": "2026-10-15T11:53:00.689Z",
+  "durationMs": 2557,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "cache-valid"
+  }
+}

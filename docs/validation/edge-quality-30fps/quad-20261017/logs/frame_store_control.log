@@ -1,0 +1,2 @@
+PASS: frame references, freeze/reprocess, step, 32 frames, wrap, independent reference, late result isolation
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_frame_store_control.v:115: $finish called at 32790000 (1ps)

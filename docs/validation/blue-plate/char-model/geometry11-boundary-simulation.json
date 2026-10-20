@@ -1,0 +1,459 @@
+{
+  "kind": "boundary",
+  "weight_bits": 11,
+  "vectors": 36,
+  "expected_score_comparisons": 2470,
+  "latency_cycles": 41796,
+  "rom_roundtrip": {
+    "weights_checked": 20800,
+    "biases_checked": 65,
+    "weight_range": [
+      -1024,
+      1023
+    ],
+    "outside_signed10": 892,
+    "w1_sha256": "a71331fd34bdc5d1ef1fe5774ff2853722a91e896e6d8914ee32aab6cdf76bf8",
+    "b1_sha256": "6c22ec7424fd855609dc28b51baa30552f70faf3cabceca7c3d0d3ab80542af2"
+  },
+  "source_hashes": {
+    "tools\\blue_plate\\char_model\\rtl\\char_linear.v": "f7369e67e7fea59beb4c0db75ebb874914fd94d42445647f343cd94484a6b879",
+    "tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv": "ade9b80ddcf0775551c501e94ae563e2772f4493a05083a650ef56b7ee78bc14"
+  },
+  "weights_sha256": "synthetic boundary fixture; not a model",
+  "records": [
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 30,
+        "char": "新",
+        "score": -34,
+        "margin": 17,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 374,
+        "margin": 17,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": 544,
+        "margin": 17,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 10474976,
+        "margin": 10475138,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 246,
+        "margin": 17,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": 416,
+        "margin": 17,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 5237216,
+        "margin": 5204610,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 33014,
+        "margin": 34,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": 33184,
+        "margin": 34,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 25,
+        "char": "藏",
+        "score": 32617,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 49,
+        "char": "U",
+        "score": 33025,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 33161,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 26,
+        "char": "陕",
+        "score": 32634,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 33042,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 33178,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 27,
+        "char": "甘",
+        "score": 32651,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": 33059,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 33195,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 28,
+        "char": "青",
+        "score": 32668,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 52,
+        "char": "X",
+        "score": 33076,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 33212,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 29,
+        "char": "宁",
+        "score": 32685,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 33093,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 33229,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 30,
+        "char": "新",
+        "score": 32702,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 33110,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 33246,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 23,
+        "char": "贵",
+        "score": 32583,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 47,
+        "char": "S",
+        "score": 32991,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 33263,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 24,
+        "char": "云",
+        "score": 32600,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 48,
+        "char": "T",
+        "score": 33008,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "synthetic-width-boundary",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": 33280,
+        "margin": 136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": true,
+      "kind": "tie-score-bus",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 0,
+        "margin": 0,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": true,
+      "kind": "tie-score-bus",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 0,
+        "margin": 0,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": true,
+      "kind": "tie-score-bus",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 0,
+        "margin": 0,
+        "accepted": false
+      }
+    }
+  ],
+  "result": "PASS vectors=36 compared_scores=2470 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv:144: $finish called at 16053090000 (1ps)\n",
+  "heldout_consumed": 0
+}

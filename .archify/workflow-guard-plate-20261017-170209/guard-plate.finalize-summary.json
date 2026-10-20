@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "workflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\candidate.json",
+    "sha256": "149a4308a7a547d14870ac71c09aebd5aa31b22e6dccd2580539a09350e71b95",
+    "bytes": 8073
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.html",
+    "sha256": "e5f40bd08921a4edb1b59130016576f11189be20111f6488f2a9e70e41ab075e",
+    "bytes": 831739
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "fail"
+  },
+  "failedStage": "browser-check",
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.html"
+      },
+      "evidence": {
+        "reason": "Temporary directory ancestor identity is unavailable: C:\\Users\\35075\\AppData\\Local\\Temp"
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1630
+}

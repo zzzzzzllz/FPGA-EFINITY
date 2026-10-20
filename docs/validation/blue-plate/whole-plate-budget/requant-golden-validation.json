@@ -1,0 +1,1216 @@
+{
+  "exit_code": 0,
+  "real_scalar_outputs": 100,
+  "synthetic_cases": 1620,
+  "real": [
+    {
+      "args": [
+        74197,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        74197,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v00 lane0",
+      "reuse": true
+    },
+    {
+      "args": [
+        1420,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -65,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        -108,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13325,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane4",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13325,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v00 lane4",
+      "reuse": true
+    },
+    {
+      "args": [
+        -123,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane5",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane6",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v00 lane7",
+      "reuse": false
+    },
+    {
+      "args": [
+        47601,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        47601,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v01 lane0",
+      "reuse": true
+    },
+    {
+      "args": [
+        -4,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        489,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        1433,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        36254,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane4",
+      "reuse": false
+    },
+    {
+      "args": [
+        36254,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v01 lane4",
+      "reuse": true
+    },
+    {
+      "args": [
+        -78,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane5",
+      "reuse": false
+    },
+    {
+      "args": [
+        1433,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane6",
+      "reuse": false
+    },
+    {
+      "args": [
+        -2,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v01 lane7",
+      "reuse": false
+    },
+    {
+      "args": [
+        74197,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        74197,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v02 lane0",
+      "reuse": true
+    },
+    {
+      "args": [
+        1420,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -65,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        -108,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13325,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane4",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13325,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v02 lane4",
+      "reuse": true
+    },
+    {
+      "args": [
+        -123,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane5",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane6",
+      "reuse": false
+    },
+    {
+      "args": [
+        -13,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v02 lane7",
+      "reuse": false
+    },
+    {
+      "args": [
+        47601,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        47601,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v03 lane0",
+      "reuse": true
+    },
+    {
+      "args": [
+        -4,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        489,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        1433,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        36254,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane4",
+      "reuse": false
+    },
+    {
+      "args": [
+        36254,
+        1424031313,
+        51,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "fork v03 lane4",
+      "reuse": true
+    },
+    {
+      "args": [
+        -78,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane5",
+      "reuse": false
+    },
+    {
+      "args": [
+        1433,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane6",
+      "reuse": false
+    },
+    {
+      "args": [
+        -2,
+        1261597550,
+        56,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "output v03 lane7",
+      "reuse": false
+    },
+    {
+      "args": [
+        -44840,
+        1770036371,
+        40,
+        false,
+        63
+      ],
+      "expected": -9,
+      "source": "output v04 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        -32999,
+        1300797725,
+        40,
+        false,
+        63
+      ],
+      "expected": 24,
+      "source": "output v04 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -41930,
+        1804543257,
+        40,
+        false,
+        63
+      ],
+      "expected": -6,
+      "source": "output v04 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        -28745,
+        1736573907,
+        40,
+        false,
+        63
+      ],
+      "expected": 18,
+      "source": "output v04 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        -35964,
+        1884973905,
+        40,
+        false,
+        63
+      ],
+      "expected": 1,
+      "source": "output v04 lane4",
+      "reuse": false
+    },
+    {
+      "args": [
+        -42007,
+        1512739015,
+        40,
+        false,
+        63
+      ],
+      "expected": 5,
+      "source": "output v04 lane5",
+      "reuse": false
+    },
+    {
+      "args": [
+        -20966,
+        1542909013,
+        40,
+        false,
+        63
+      ],
+      "expected": 34,
+      "source": "output v04 lane6",
+      "reuse": false
+    },
+    {
+      "args": [
+        -34495,
+        1157690025,
+        40,
+        false,
+        63
+      ],
+      "expected": 27,
+      "source": "output v04 lane7",
+      "reuse": false
+    },
+    {
+      "args": [
+        -16032,
+        1137986398,
+        39,
+        false,
+        63
+      ],
+      "expected": 30,
+      "source": "output v05 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        -22901,
+        1326808075,
+        40,
+        false,
+        63
+      ],
+      "expected": 35,
+      "source": "output v05 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -19057,
+        1888827304,
+        39,
+        false,
+        63
+      ],
+      "expected": -2,
+      "source": "output v05 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        2061,
+        1155320128,
+        37,
+        false,
+        63
+      ],
+      "expected": 80,
+      "source": "output v05 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        -22081,
+        1770036371,
+        40,
+        false,
+        63
+      ],
+      "expected": 27,
+      "source": "output v06 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        -23840,
+        1300797725,
+        40,
+        false,
+        63
+      ],
+      "expected": 35,
+      "source": "output v06 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -22265,
+        1804543257,
+        40,
+        false,
+        63
+      ],
+      "expected": 26,
+      "source": "output v06 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        -23511,
+        1736573907,
+        40,
+        false,
+        63
+      ],
+      "expected": 26,
+      "source": "output v06 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        -25625,
+        1884973905,
+        40,
+        false,
+        63
+      ],
+      "expected": 19,
+      "source": "output v06 lane4",
+      "reuse": false
+    },
+    {
+      "args": [
+        -25660,
+        1512739015,
+        40,
+        false,
+        63
+      ],
+      "expected": 28,
+      "source": "output v06 lane5",
+      "reuse": false
+    },
+    {
+      "args": [
+        -16820,
+        1542909013,
+        40,
+        false,
+        63
+      ],
+      "expected": 39,
+      "source": "output v06 lane6",
+      "reuse": false
+    },
+    {
+      "args": [
+        -28958,
+        1157690025,
+        40,
+        false,
+        63
+      ],
+      "expected": 33,
+      "source": "output v06 lane7",
+      "reuse": false
+    },
+    {
+      "args": [
+        -14623,
+        1137986398,
+        39,
+        false,
+        63
+      ],
+      "expected": 33,
+      "source": "output v07 lane0",
+      "reuse": false
+    },
+    {
+      "args": [
+        -20770,
+        1326808075,
+        40,
+        false,
+        63
+      ],
+      "expected": 38,
+      "source": "output v07 lane1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -6132,
+        1888827304,
+        39,
+        false,
+        63
+      ],
+      "expected": 42,
+      "source": "output v07 lane2",
+      "reuse": false
+    },
+    {
+      "args": [
+        -738,
+        1155320128,
+        37,
+        false,
+        63
+      ],
+      "expected": 57,
+      "source": "output v07 lane3",
+      "reuse": false
+    },
+    {
+      "args": [
+        2657,
+        1350003842,
+        41,
+        true,
+        -128
+      ],
+      "expected": -126,
+      "source": "old scalar 0",
+      "reuse": false
+    },
+    {
+      "args": [
+        -5512,
+        2090630153,
+        40,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 1",
+      "reuse": false
+    },
+    {
+      "args": [
+        -79513,
+        1674592889,
+        57,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 2",
+      "reuse": false
+    },
+    {
+      "args": [
+        -5803,
+        1350003842,
+        41,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 3",
+      "reuse": false
+    },
+    {
+      "args": [
+        -3759,
+        2090630153,
+        40,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 4",
+      "reuse": false
+    },
+    {
+      "args": [
+        -79513,
+        1674592889,
+        57,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 5",
+      "reuse": false
+    },
+    {
+      "args": [
+        -6663,
+        1350003842,
+        41,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 6",
+      "reuse": false
+    },
+    {
+      "args": [
+        1540,
+        2090630153,
+        40,
+        true,
+        -128
+      ],
+      "expected": -125,
+      "source": "old scalar 7",
+      "reuse": false
+    },
+    {
+      "args": [
+        -79513,
+        1674592889,
+        57,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 8",
+      "reuse": false
+    },
+    {
+      "args": [
+        -10652,
+        2009265683,
+        38,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 9",
+      "reuse": false
+    },
+    {
+      "args": [
+        -2504,
+        1681111814,
+        38,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 10",
+      "reuse": false
+    },
+    {
+      "args": [
+        3561,
+        1370392534,
+        38,
+        true,
+        -128
+      ],
+      "expected": -110,
+      "source": "old scalar 11",
+      "reuse": false
+    },
+    {
+      "args": [
+        -11859,
+        2009265683,
+        38,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 12",
+      "reuse": false
+    },
+    {
+      "args": [
+        272,
+        1681111814,
+        38,
+        true,
+        -128
+      ],
+      "expected": -126,
+      "source": "old scalar 13",
+      "reuse": false
+    },
+    {
+      "args": [
+        6840,
+        1370392534,
+        38,
+        true,
+        -128
+      ],
+      "expected": -94,
+      "source": "old scalar 14",
+      "reuse": false
+    },
+    {
+      "args": [
+        -354,
+        2009265683,
+        38,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 15",
+      "reuse": false
+    },
+    {
+      "args": [
+        740,
+        1681111814,
+        38,
+        true,
+        -128
+      ],
+      "expected": -123,
+      "source": "old scalar 16",
+      "reuse": false
+    },
+    {
+      "args": [
+        2201,
+        1370392534,
+        38,
+        true,
+        -128
+      ],
+      "expected": -117,
+      "source": "old scalar 17",
+      "reuse": false
+    },
+    {
+      "args": [
+        -10687,
+        1125700188,
+        40,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 18",
+      "reuse": false
+    },
+    {
+      "args": [
+        -95251,
+        1332467289,
+        54,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 19",
+      "reuse": false
+    },
+    {
+      "args": [
+        -14071,
+        1231514354,
+        39,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 20",
+      "reuse": false
+    },
+    {
+      "args": [
+        -11812,
+        1125700188,
+        40,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 21",
+      "reuse": false
+    },
+    {
+      "args": [
+        -95251,
+        1332467289,
+        54,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 22",
+      "reuse": false
+    },
+    {
+      "args": [
+        -7682,
+        1231514354,
+        39,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 23",
+      "reuse": false
+    },
+    {
+      "args": [
+        14411,
+        1125700188,
+        40,
+        true,
+        -128
+      ],
+      "expected": -113,
+      "source": "old scalar 24",
+      "reuse": false
+    },
+    {
+      "args": [
+        -95251,
+        1332467289,
+        54,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 25",
+      "reuse": false
+    },
+    {
+      "args": [
+        -19780,
+        1231514354,
+        39,
+        true,
+        -128
+      ],
+      "expected": -128,
+      "source": "old scalar 26",
+      "reuse": false
+    },
+    {
+      "args": [
+        -45045,
+        1770036371,
+        40,
+        false,
+        63
+      ],
+      "expected": -10,
+      "source": "old scalar 27",
+      "reuse": false
+    },
+    {
+      "args": [
+        -16396,
+        1728798879,
+        40,
+        false,
+        63
+      ],
+      "expected": 37,
+      "source": "old scalar 28",
+      "reuse": false
+    },
+    {
+      "args": [
+        1664,
+        1155320128,
+        37,
+        false,
+        63
+      ],
+      "expected": 77,
+      "source": "old scalar 29",
+      "reuse": false
+    },
+    {
+      "args": [
+        -21048,
+        1770036371,
+        40,
+        false,
+        63
+      ],
+      "expected": 29,
+      "source": "old scalar 30",
+      "reuse": false
+    },
+    {
+      "args": [
+        -19928,
+        1728798879,
+        40,
+        false,
+        63
+      ],
+      "expected": 32,
+      "source": "old scalar 31",
+      "reuse": false
+    },
+    {
+      "args": [
+        1429,
+        1155320128,
+        37,
+        false,
+        63
+      ],
+      "expected": 75,
+      "source": "old scalar 32",
+      "reuse": false
+    },
+    {
+      "args": [
+        -21980,
+        1770036371,
+        40,
+        false,
+        63
+      ],
+      "expected": 28,
+      "source": "old scalar 33",
+      "reuse": false
+    },
+    {
+      "args": [
+        -12569,
+        1728798879,
+        40,
+        false,
+        63
+      ],
+      "expected": 43,
+      "source": "old scalar 34",
+      "reuse": false
+    },
+    {
+      "args": [
+        -726,
+        1155320128,
+        37,
+        false,
+        63
+      ],
+      "expected": 57,
+      "source": "old scalar 35",
+      "reuse": false
+    }
+  ],
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant\\golden.py": "110f4ec95896076f17e13e61470752d2b539b137de99498b806330732441f67b",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\quantization-tap2-fork\\integer-config.json": "9bb4d04a2cbf7df353b5043477a981299dde987e377d71581868fb778cb70ade",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\quantization-tap2-fork\\integer-parameters.npz": "96952fd1c23ea946a5ede786d3fb5c3144785c687691792c4910554a3821ee15",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\quantization-tap2-fork\\fork-vectors.npz": "c85a982bcca52357bdc60d8f330c180566853e85c02a6400a6a571f493f9492a",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\integer-deployment-audit\\output-channel-mac-vectors.npz": "bf1412756b2d8a85faab125df918bef6dd83033af903584ab69d63fd55e95790",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\integer-deployment-audit\\output-channel-mac-vectors.json": "e0f403bd9f67d4c1d36fea7ea6ec926641b333786fe2712aadc998f96f546d62",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\char-segment\\integer-deployment-addendum.md": "4557d04ec1871db2504033e60ae5ac34d293a8f4f2a8b9652ed4ebfd99487ebe"
+  }
+}

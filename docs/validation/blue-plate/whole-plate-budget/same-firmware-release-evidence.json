@@ -1,0 +1,41 @@
+{
+  "status": "Verified current release/build identity; read-only audit complete; OCR integration remains unmapped",
+  "release_build_id": "0x60101704",
+  "release_revision": "task8-keys-20261017",
+  "bitstream_sha256": "6e8c40886106793b78ef0dea46ee7b77d266fddbf51ae1cf33b15cfc318709df",
+  "release_bit": "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\release\\ti60f225_oob.bit",
+  "matching_build_bit": "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.bit",
+  "place_report": "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.place.rpt",
+  "resources": {
+    "XLR": 49156,
+    "RAM": 188,
+    "DSP": 111
+  },
+  "limits": {
+    "XLR": 49248,
+    "RAM": 204,
+    "DSP": 128
+  },
+  "remaining": {
+    "XLR": 92,
+    "RAM": 16,
+    "DSP": 17
+  },
+  "minimum_unchanged_OCR_core_only_RAM": {
+    "release": 188,
+    "standalone_core": 18,
+    "sum": 206,
+    "budget": 204,
+    "deficit": 2
+  },
+  "known_issue": "Removing detector/color CNN does not reclaim mapped hardware: neither exists as an independently instantiated engine in this release. Sharing must be implemented and measured.",
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\release\\manifest.json": "74fa9f544b232a48f947827e4ac2e6b3fbd1ed4a928a1475f5d3f4583089bf8a",
+    "D:\\Desktop_New\\EfinityNEW\\coding\\edge-quality-30fps\\release\\ti60f225_oob.bit": "6e8c40886106793b78ef0dea46ee7b77d266fddbf51ae1cf33b15cfc318709df",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.bit": "6e8c40886106793b78ef0dea46ee7b77d266fddbf51ae1cf33b15cfc318709df",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.place.rpt": "86ca22db4f98db9cb7d789fed718ca4f0ffa9f496b574416f31ef9b9c7abf175",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.map.rpt": "7f05c8bfce954e44fd5ee133cb9a7a323edc3a11118e2d19f68d862e5c6994ea",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.hier_util.rpt": "5f2b8ac96e0d37234f77c23dae87defcf528a09d3951d045d2f31dc6a30f1e61",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\build\\task8-keys-20261017-v5\\outflow\\ti60f225_oob.timing.rpt": "076670187d60b13e0c9ddfae7362b1792cbce72778432fd2fa940244217ddbb8"
+  }
+}

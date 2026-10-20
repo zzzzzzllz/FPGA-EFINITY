@@ -1,0 +1,39 @@
+{
+  "input_sha256": {
+    "frame_reader.v": "96de672190fa6792f797b2b53e9d11d17d2bdea861569efa3371adb2ab6539b3",
+    "tb_frame_reader.sv": "87261a126b5ae045c3e1797dbd847e94689b8987b3a910427a824a2c12921654"
+  },
+  "oracle_sha256": "b0f7d1f8738a00554e19ceff172b709c117b82681cac48ed8e7e9e1cd9ff0010",
+  "commands": [
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-s",
+      "tb_frame_reader",
+      "-o",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-frame-reader\\quick-v3b\\test.vvp",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-frame-reader\\quick-v3b\\simulation-inputs\\frame_reader.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-frame-reader\\quick-v3b\\simulation-inputs\\tb_frame_reader.sv"
+    ],
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+      "-i",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-frame-reader\\quick-v3b\\test.vvp",
+      "+WORK=D:/Desktop_New/EfinityNEW/tmp/blue-plate-frame-reader",
+      "+QUICK"
+    ]
+  ],
+  "stages": {
+    "compile": {
+      "exit_code": 0,
+      "seconds": 0.044,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "run": {
+      "exit_code": 0,
+      "seconds": 0.526,
+      "log_sha256": "5366f0557428b16d561b0e0212c4fcfec37f7d020b3d5fe64c682445efd198eb"
+    }
+  },
+  "binary_sha256": "f56af5cbd72647633d214debd2a95a43e76f1faaecc78ce07b8c05d28b817ef4"
+}

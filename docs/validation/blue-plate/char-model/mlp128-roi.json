@@ -1,0 +1,927 @@
+{
+  "plates": 15,
+  "characters": 105,
+  "correct_characters": 98,
+  "raw_correct": 9,
+  "correct": 8,
+  "wrong": 1,
+  "reject": 6,
+  "warning": "Visually selected development oracle ROIs. Not automatic localization or heldout plate accuracy.",
+  "rows": [
+    {
+      "index": 3,
+      "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_92-300&547_485&612-496&612_301&613_297&552_492&551-0_0_28_32_30_31_33-140-41.jpg",
+      "label": "皖A48679",
+      "rects": [
+        [
+          6,
+          13,
+          24,
+          37
+        ],
+        [
+          36,
+          12,
+          21,
+          39
+        ],
+        [
+          74,
+          12,
+          22,
+          39
+        ],
+        [
+          102,
+          12,
+          23,
+          39
+        ],
+        [
+          130,
+          12,
+          24,
+          38
+        ],
+        [
+          159,
+          12,
+          24,
+          39
+        ],
+        [
+          188,
+          12,
+          24,
+          38
+        ]
+      ],
+      "source_sha256": "64777520df048500d994fcb35d20ec6be5998a26a104fa6414e342f425ba2ccb",
+      "prediction": "皖A48679",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 6,
+      "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_85-274&482_457&544-456&545_270&533_261&470_447&482-0_0_16_24_31_28_31-146-27.jpg",
+      "label": "皖AS0747",
+      "rects": [
+        [
+          4,
+          11,
+          27,
+          39
+        ],
+        [
+          36,
+          11,
+          22,
+          40
+        ],
+        [
+          73,
+          11,
+          23,
+          40
+        ],
+        [
+          99,
+          11,
+          26,
+          41
+        ],
+        [
+          128,
+          11,
+          25,
+          43
+        ],
+        [
+          156,
+          11,
+          26,
+          44
+        ],
+        [
+          186,
+          11,
+          34,
+          44
+        ]
+      ],
+      "source_sha256": "1eaf9a1f8615b163139d5cea31396c2b793f4b63ad99e9f3fe4d88fede870690",
+      "prediction": "皖AS0747",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 7,
+      "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-222&446_405&507-400&505_225&500_227&442_402&447-0_0_20_0_24_30_26-66-28.jpg",
+      "label": "皖AWA062",
+      "rects": [
+        [
+          5,
+          14,
+          24,
+          36
+        ],
+        [
+          34,
+          13,
+          24,
+          38
+        ],
+        [
+          75,
+          13,
+          23,
+          38
+        ],
+        [
+          103,
+          13,
+          24,
+          39
+        ],
+        [
+          131,
+          13,
+          26,
+          39
+        ],
+        [
+          159,
+          14,
+          28,
+          38
+        ],
+        [
+          187,
+          13,
+          33,
+          39
+        ]
+      ],
+      "source_sha256": "0174c2b57a1f4d70af7e0742c128c0fbff26d8c886086e2ac3aeae6c34bd568f",
+      "prediction": "皖AWA062",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 8,
+      "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-307&460_498&529-501&530_302&528_303&463_502&465-0_0_14_10_33_32_29-108-26.jpg",
+      "label": "皖AQL985",
+      "rects": [
+        [
+          4,
+          16,
+          24,
+          35
+        ],
+        [
+          34,
+          13,
+          22,
+          38
+        ],
+        [
+          74,
+          13,
+          22,
+          38
+        ],
+        [
+          102,
+          12,
+          23,
+          39
+        ],
+        [
+          131,
+          13,
+          23,
+          36
+        ],
+        [
+          159,
+          12,
+          24,
+          38
+        ],
+        [
+          188,
+          12,
+          23,
+          38
+        ]
+      ],
+      "source_sha256": "5974d391a31882f2ae45e36df1f4bc35130b9071467c4f118e94d7e74cf7ea7b",
+      "prediction": "皖AQL985",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 9,
+      "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_87-240&501_441&563-437&567_237&561_230&490_430&496-0_0_2_12_32_26_26-180-20.jpg",
+      "label": "皖ACN822",
+      "rects": [
+        [
+          4,
+          12,
+          27,
+          39
+        ],
+        [
+          36,
+          13,
+          21,
+          38
+        ],
+        [
+          72,
+          13,
+          24,
+          37
+        ],
+        [
+          100,
+          12,
+          25,
+          39
+        ],
+        [
+          129,
+          12,
+          24,
+          39
+        ],
+        [
+          158,
+          12,
+          26,
+          39
+        ],
+        [
+          188,
+          12,
+          25,
+          39
+        ]
+      ],
+      "source_sha256": "a5fe061ef525b766b846e576f5b0dc3a03d34f50ac1e7bb0b9259900e70276f7",
+      "prediction": "皖ACN822",
+      "accepted": false,
+      "char_accepted": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 28,
+      "path": "tmp/blue-plate-g1/images/ccpd_db/02-7_1-325&351_517&438-507&438_325&414_335&351_517&375-0_0_11_1_29_29_24-30-25.jpg",
+      "label": "皖AMB550",
+      "rects": [
+        [
+          4,
+          16,
+          23,
+          34
+        ],
+        [
+          34,
+          13,
+          22,
+          37
+        ],
+        [
+          73,
+          13,
+          23,
+          36
+        ],
+        [
+          101,
+          13,
+          24,
+          37
+        ],
+        [
+          130,
+          13,
+          24,
+          36
+        ],
+        [
+          159,
+          13,
+          23,
+          37
+        ],
+        [
+          187,
+          13,
+          23,
+          37
+        ]
+      ],
+      "source_sha256": "2b001c9438faa13958d9ddfe0967b0a7cbca75394fd154a1a961e8c37f0f89a9",
+      "prediction": "皖AMB550",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 29,
+      "path": "tmp/blue-plate-g1/images/ccpd_db/02-8_5-425&460_599&556-599&531_429&556_425&485_595&460-0_0_1_29_33_32_9-13-12.jpg",
+      "label": "皖AB598K",
+      "rects": [
+        [
+          4,
+          11,
+          21,
+          39
+        ],
+        [
+          31,
+          11,
+          25,
+          40
+        ],
+        [
+          74,
+          11,
+          24,
+          40
+        ],
+        [
+          103,
+          11,
+          25,
+          40
+        ],
+        [
+          133,
+          12,
+          23,
+          39
+        ],
+        [
+          162,
+          13,
+          22,
+          38
+        ],
+        [
+          188,
+          14,
+          22,
+          37
+        ]
+      ],
+      "source_sha256": "7a88c3f036f6bd46132bc7d42a7a8609abc4365f8639bce63b0589ad08c9918c",
+      "prediction": "皖AB598K",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 39,
+      "path": "tmp/blue-plate-g1/images/ccpd_fn/08-30_24-247&476_508&732-496&732_247&585_259&476_508&623-0_0_22_14_26_32_32-109-261.jpg",
+      "label": "皖AYQ288",
+      "rects": [
+        [
+          19,
+          11,
+          20,
+          33
+        ],
+        [
+          43,
+          12,
+          19,
+          33
+        ],
+        [
+          75,
+          11,
+          21,
+          36
+        ],
+        [
+          102,
+          11,
+          23,
+          36
+        ],
+        [
+          129,
+          12,
+          25,
+          35
+        ],
+        [
+          159,
+          12,
+          26,
+          35
+        ],
+        [
+          189,
+          12,
+          28,
+          35
+        ]
+      ],
+      "source_sha256": "a9d5b1532a8a9c468ff6026b63d7cbc81b844abe987b4cb417b8c18523f75006",
+      "prediction": "皖AY0288",
+      "accepted": false,
+      "char_accepted": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "index": 40,
+      "path": "tmp/blue-plate-g1/images/ccpd_fn/09-1_13-81&477_603&621-578&604_81&621_106&494_603&477-0_0_24_31_3_27_30-102-134.jpg",
+      "label": "皖A07D36",
+      "rects": [
+        [
+          4,
+          11,
+          22,
+          40
+        ],
+        [
+          34,
+          11,
+          22,
+          40
+        ],
+        [
+          73,
+          12,
+          25,
+          39
+        ],
+        [
+          103,
+          12,
+          23,
+          39
+        ],
+        [
+          132,
+          13,
+          23,
+          38
+        ],
+        [
+          160,
+          13,
+          22,
+          37
+        ],
+        [
+          187,
+          11,
+          31,
+          39
+        ]
+      ],
+      "source_sha256": "8dc208338846d2c166ac2f238baa49734f4ca44fdd68150cf746b92e2b9aebd1",
+      "prediction": "皖A07D36",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 60,
+      "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-20_19-316&379_556&553-555&553_316&463_317&379_556&469-0_0_3_30_8_26_33-144-313.jpg",
+      "label": "皖AD6J29",
+      "rects": [
+        [
+          9,
+          13,
+          28,
+          39
+        ],
+        [
+          41,
+          13,
+          20,
+          37
+        ],
+        [
+          72,
+          14,
+          25,
+          37
+        ],
+        [
+          100,
+          15,
+          24,
+          36
+        ],
+        [
+          129,
+          13,
+          24,
+          38
+        ],
+        [
+          157,
+          13,
+          26,
+          39
+        ],
+        [
+          188,
+          13,
+          27,
+          38
+        ]
+      ],
+      "source_sha256": "e17651a2c21d69c1ff38697537ba0e21d1fcff9904af05c4d01f8b87139db3bd",
+      "prediction": "闽AD6J29",
+      "accepted": false,
+      "char_accepted": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 62,
+      "path": "tmp/blue-plate-g1/images/ccpd_tilt/02-16_17-230&540_374&656-372&615_230&656_232&581_374&540-0_0_20_27_29_24_22-119-35.jpg",
+      "label": "皖AW350Y",
+      "rects": [
+        [
+          4,
+          23,
+          20,
+          29
+        ],
+        [
+          32,
+          13,
+          24,
+          39
+        ],
+        [
+          74,
+          13,
+          24,
+          39
+        ],
+        [
+          107,
+          13,
+          22,
+          38
+        ],
+        [
+          134,
+          14,
+          22,
+          37
+        ],
+        [
+          162,
+          13,
+          21,
+          37
+        ],
+        [
+          189,
+          13,
+          31,
+          39
+        ]
+      ],
+      "source_sha256": "44d720fb0394d4d588583a75e5970ef8ab6ca1587f9ed769edc8fab6d83cc5d8",
+      "prediction": "浙AW3500",
+      "accepted": false,
+      "char_accepted": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 65,
+      "path": "tmp/blue-plate-g1/images/ccpd_tilt/04-24_25-81&475_273&649-273&649_83&563_81&475_271&561-5_4_11_11_33_28_29-97-170.jpg",
+      "label": "晋EMM945",
+      "rects": [
+        [
+          4,
+          11,
+          30,
+          41
+        ],
+        [
+          38,
+          13,
+          23,
+          36
+        ],
+        [
+          76,
+          11,
+          23,
+          38
+        ],
+        [
+          103,
+          11,
+          26,
+          39
+        ],
+        [
+          132,
+          11,
+          24,
+          38
+        ],
+        [
+          159,
+          11,
+          24,
+          41
+        ],
+        [
+          187,
+          11,
+          33,
+          41
+        ]
+      ],
+      "source_sha256": "e2e3719271e4fe68942c70425452216d47bb1a103eb1238afcdaed40befa1833",
+      "prediction": "川EMM945",
+      "accepted": false,
+      "char_accepted": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "index": 69,
+      "path": "tmp/blue-plate-g1/images/ccpd_weather/015-3_3-147&436_321&508-321&508_147&497_147&436_321&447-0_0_8_26_29_31_18-78-17.jpg",
+      "label": "皖AJ257U",
+      "rects": [
+        [
+          4,
+          14,
+          22,
+          36
+        ],
+        [
+          34,
+          13,
+          21,
+          38
+        ],
+        [
+          73,
+          12,
+          22,
+          37
+        ],
+        [
+          100,
+          12,
+          24,
+          39
+        ],
+        [
+          129,
+          13,
+          24,
+          37
+        ],
+        [
+          158,
+          12,
+          23,
+          39
+        ],
+        [
+          186,
+          12,
+          34,
+          39
+        ]
+      ],
+      "source_sha256": "b4a48e8ec06eba9f2d1c66ed87170d40b2140cd4484e6f9cc7418edba422e656",
+      "prediction": "皖AJ2572",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "index": 71,
+      "path": "tmp/blue-plate-g1/images/ccpd_weather/02-1_10-178&467_410&539-410&539_189&535_178&467_399&471-0_0_2_33_31_33_18-80-28.jpg",
+      "label": "皖AC979U",
+      "rects": [
+        [
+          7,
+          15,
+          21,
+          34
+        ],
+        [
+          36,
+          14,
+          21,
+          36
+        ],
+        [
+          73,
+          13,
+          23,
+          37
+        ],
+        [
+          101,
+          13,
+          23,
+          36
+        ],
+        [
+          129,
+          13,
+          23,
+          37
+        ],
+        [
+          159,
+          14,
+          23,
+          36
+        ],
+        [
+          187,
+          13,
+          31,
+          37
+        ]
+      ],
+      "source_sha256": "6d9c9c51a54bca11fe316cde6a06865f723414903a02ca28963cf0abad759f84",
+      "prediction": "皖AC979J",
+      "accepted": false,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "index": 75,
+      "path": "tmp/blue-plate-g1/images/ccpd_weather/05-3_0-204&493_552&613-552&593_210&613_204&513_546&493-0_0_23_11_32_32_25-136-114.jpg",
+      "label": "皖AZM881",
+      "rects": [
+        [
+          5,
+          12,
+          24,
+          38
+        ],
+        [
+          35,
+          11,
+          23,
+          40
+        ],
+        [
+          73,
+          11,
+          24,
+          40
+        ],
+        [
+          102,
+          12,
+          24,
+          39
+        ],
+        [
+          131,
+          11,
+          23,
+          40
+        ],
+        [
+          159,
+          11,
+          23,
+          40
+        ],
+        [
+          195,
+          11,
+          9,
+          39
+        ]
+      ],
+      "source_sha256": "20cee9714518e06bb2cb23c7e714f1481abfebd53346304f86f11bec0384decc",
+      "prediction": "皖AZM881",
+      "accepted": true,
+      "char_accepted": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ]
+}

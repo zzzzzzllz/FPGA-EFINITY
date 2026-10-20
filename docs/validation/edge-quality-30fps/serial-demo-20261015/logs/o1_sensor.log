@@ -1,0 +1,2 @@
+PASS O1 arbitration: ROM unchanged, idle untouched, reads, frame-boundary writes, NACK, no duplicates
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_o1_sensor.v:51: $finish called at 502800000 (1ps)

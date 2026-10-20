@@ -1,0 +1,32 @@
+{
+  "source_manifest": "tmp/blue-plate-video-base/live/inputs.json",
+  "note": "Snapshot captured while original full store process was running; candidate source hashes remain identical to generation manifest.",
+  "input_sha256": {
+    "tb_live_display.v": "36c99373933983928cbb2e966b3a30256a9a7094e78b88d15c131c8d3b031835",
+    "tb_live_rgb.v": "49c71ef392d1a8db33acbfb53dd7a428b46328139e7f337a42155211c23305e2",
+    "rtl/compare_display.v": "2fa8da219de24cfce20be469f8a931738654a9f2e1f405e37c323051808957a4",
+    "rtl/frame_mailbox.v": "0303cc53abd4b82e1cce65a6bb7a5b53b4dcdbeaf43223dd5018732aa2e7ade5",
+    "rtl/frame_pair_fifo.v": "0bb14afc8957eaf124413d2bbc3abad2c8d5b88c9eed976953a3b652e3651ce1",
+    "rtl/frame_store.v": "2aaa5037cc3cb220dd07135d252c84ab11befe752618184d56b442c6b46ad628",
+    "rtl/frame_store_control.v": "3f5e0b41c35c77a3f4142ea9b2d1409d4f483d023fc2cb8624a62e178b5eaa96",
+    "rtl/frame_store_dma.v": "b70b6ff71c0029bc8041f321edbd6983e596aaa2cbe369d83fc8e4402bbd8377",
+    "rtl/threshold_osd.v": "bcd83e527178e2e151201ed65efa0bb829e592ecb80a697c7f7f2f686ba5e20c",
+    "rtl/video_rgb_passthrough.v": "f441c8a8231b950c5c8251aadf1a15e7da698d0a2f56024f3b24de0b893e8d02",
+    "rtl/frame_buffer_V4/DC_FIFO.v": "d930fed56a5c7e80733ec600f05d19923b86d0fd0b71dbb643c66d88cbe17847",
+    "rtl/user_cvo_axi_v2/cvo_axi_v2.v": "6d9fdeb24f05d75e143572fc3e6456483696d6406bc4abd8c59d8ed9fab07b72"
+  },
+  "binaries": {
+    "full.vvp": "b83e9e8ba74e68ec2b18af0e4025f511c9e0ef12859a44509de4621fc6dd47b6",
+    "display-full.vvp": "529399e40a7777b5dcb538c468c9bf1126bbb05001dced1110a25af043c4eee5"
+  },
+  "full_store_defines": [
+    "FULL_SMOKE"
+  ],
+  "full_display_defines": [],
+  "full_store_session": 81016,
+  "full_store_exit_code": 0,
+  "full_display_session": 88335,
+  "full_display_exit_code": 0,
+  "full_store_run_pass": true,
+  "full_display_run_pass": true
+}

@@ -1,0 +1,4 @@
+METRIC full scan pixels=921600 cycles=3872104
+PASS normal commands=518, 1041178 exact pixels, 7353 bursts
+PASS jobs=33 holds=32 releases=31 reset_clears=1 commands=522 pixels=1042260 bursts=7380
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-frame-reader\final-v3\simulation-inputs\tb_frame_reader.sv:303: $finish called at 43899750000 (1ps)

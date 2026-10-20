@@ -1,0 +1,113 @@
+{
+  "classes": [
+    "皖",
+    "沪",
+    "津",
+    "渝",
+    "冀",
+    "晋",
+    "蒙",
+    "辽",
+    "吉",
+    "黑",
+    "苏",
+    "浙",
+    "京",
+    "闽",
+    "赣",
+    "鲁",
+    "豫",
+    "鄂",
+    "湘",
+    "粤",
+    "桂",
+    "琼",
+    "川",
+    "贵",
+    "云",
+    "藏",
+    "陕",
+    "甘",
+    "青",
+    "宁",
+    "新",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "thresholds": {
+    "province": {
+      "score": -1351,
+      "margin": 4245
+    },
+    "alphanumeric": {
+      "score": -20593,
+      "margin": 3556
+    }
+  },
+  "input": "32x32 row-major binary white foreground",
+  "features": "256 row-major 2x2 sums*8, then 32 column sums, then 32 row sums; each 0..32",
+  "weight_q": 8,
+  "bias_q": 13,
+  "hidden_q": null,
+  "hidden": null,
+  "score_q": 13,
+  "tie": "lowest class ID",
+  "bounds": {
+    "1": {
+      "absolute_accumulator_bound": 349142,
+      "signed_bits": 20,
+      "max_abs_weight": 303
+    }
+  },
+  "macs": 20800,
+  "rom_bytes": 41860,
+  "status": "integration evaluation candidate; not approved for reliable plate output",
+  "model_type": "linear",
+  "selection": "Linear C=0.1 chosen on validation; MLP128 has equal 15-plate development ROI accepted/wrong/reject counts at higher ROM cost.",
+  "normalization": "Tight bbox; aspect fit in 28x28; half-up integer dimensions; center floor in32x32; source coordinates floor(dest*source_size/dest_size).",
+  "input_boundary": "predict takes raw cropped mask and normalizes once; test-vector input is canonical and goes directly to features, never predict. Normalization is not idempotent.",
+  "rom_layout": "destination-major: address=class_id*320+feature_id; w1-s10.mem signed10, b1.mem signed32",
+  "accumulation": "signed32 recommended; all legal feature vectors bounded by +/-349142; no clipping or activation",
+  "strict_operating_point": {
+    "province": {
+      "score": -10797,
+      "margin": 12025
+    },
+    "alphanumeric": {
+      "score": -20593,
+      "margin": 13019
+    }
+  }
+}

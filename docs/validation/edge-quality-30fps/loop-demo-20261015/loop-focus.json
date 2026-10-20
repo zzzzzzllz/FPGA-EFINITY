@@ -1,0 +1,51 @@
+[
+  {
+    "name": "edge_ui-compile",
+    "returncode": 0,
+    "seconds": 0.114,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "edge_ui",
+    "returncode": 0,
+    "seconds": 0.078,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui.log",
+    "sha256": "24a26edc8e2929fce2666fcb3034290eb70af37c6c6d07716b7e927555688afb"
+  },
+  {
+    "name": "compare_display-compile",
+    "returncode": 0,
+    "seconds": 0.287,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\compare_display-compile.log",
+    "sha256": "e00d6234556a117230af366593e006a67c34079edd5be1d74d97344b36930476"
+  },
+  {
+    "name": "compare_display",
+    "returncode": 0,
+    "seconds": 0.268,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\compare_display.log",
+    "sha256": "6c34516e288ee165deb2bfe4565b5676c8116b088ebfcfab29d6f08d00a1d98d"
+  },
+  {
+    "name": "test-canny-denoise",
+    "returncode": 0,
+    "seconds": 6.234,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\test-canny-denoise.log",
+    "sha256": "dace3da88270d6d64f2583a0516e54548fc79e5ac9593b2c8c94c6b2ba7d460e"
+  },
+  {
+    "name": "demo_osd-compile",
+    "returncode": 0,
+    "seconds": 0.105,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\demo_osd-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "demo_osd",
+    "returncode": 0,
+    "seconds": 38.65,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\demo_osd.log",
+    "sha256": "ee806b04ad7eb2b7ae3c5c6741d66b34a42a28b98f57d210afbb8d0177daa2ec"
+  }
+]

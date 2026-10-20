@@ -1,0 +1,4386 @@
+{
+  "kind": "rtl",
+  "weight_bits": 11,
+  "vectors": 320,
+  "expected_score_comparisons": 20930,
+  "latency_cycles": 41796,
+  "rom_roundtrip": {
+    "weights_checked": 20800,
+    "biases_checked": 65,
+    "weight_range": [
+      -586,
+      468
+    ],
+    "outside_signed10": 1,
+    "w1_sha256": "1eaaa654492a8f4b532afffca93f530efe80349fe587c1d32f97eeff42a24a8c",
+    "b1_sha256": "8404d488b71b9bf6ed0c94db84197f0232f8857ea087ee991a1396a06be69669"
+  },
+  "source_hashes": {
+    "tools\\blue_plate\\char_model\\rtl\\char_linear.v": "f7369e67e7fea59beb4c0db75ebb874914fd94d42445647f343cd94484a6b879",
+    "tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv": "ade9b80ddcf0775551c501e94ae563e2772f4493a05083a650ef56b7ee78bc14"
+  },
+  "weights_sha256": "b21a547399f17ecb50264d489eec4e4563c2269babab7149dc5447f7a12f5391",
+  "records": [
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 12025,
+        "margin": 20781,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 12255,
+        "margin": 28262,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 6656,
+        "margin": 16452,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "9",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": 17421,
+        "margin": 30474,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 8794,
+        "margin": 18090,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 8196,
+        "margin": 16563,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 16880,
+        "margin": 28262,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 18547,
+        "margin": 23991,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 20964,
+        "margin": 35434,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 8812,
+        "margin": 19586,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "9",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": 17665,
+        "margin": 32265,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 13933,
+        "margin": 26423,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 13029,
+        "margin": 24239,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 27674,
+        "margin": 40302,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 15919,
+        "margin": 25338,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 12734,
+        "margin": 29757,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "L",
+      "expected": {
+        "id": 41,
+        "char": "L",
+        "score": 11000,
+        "margin": 17794,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 12179,
+        "margin": 20899,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "Z",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 8291,
+        "margin": 14453,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 14519,
+        "margin": 22580,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 21749,
+        "margin": 33175,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 24032,
+        "margin": 33246,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 14886,
+        "margin": 29567,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "L",
+      "expected": {
+        "id": 41,
+        "char": "L",
+        "score": 9563,
+        "margin": 17328,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 14381,
+        "margin": 24005,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "Z",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 4901,
+        "margin": 11156,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 15985,
+        "margin": 26382,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 26058,
+        "margin": 41360,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "浙",
+      "expected": {
+        "id": 11,
+        "char": "浙",
+        "score": 19261,
+        "margin": 24083,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "C",
+      "expected": {
+        "id": 33,
+        "char": "C",
+        "score": 13383,
+        "margin": 23205,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 18312,
+        "margin": 26703,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 15710,
+        "margin": 23536,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "C",
+      "expected": {
+        "id": 33,
+        "char": "C",
+        "score": 10961,
+        "margin": 15441,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "V",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 13591,
+        "margin": 21467,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "019-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 23161,
+        "margin": 35455,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 20252,
+        "margin": 26573,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 5727,
+        "margin": 17584,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "Z",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 9887,
+        "margin": 14055,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "Q",
+      "expected": {
+        "id": 45,
+        "char": "Q",
+        "score": 15446,
+        "margin": 27396,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 10895,
+        "margin": 20656,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 21058,
+        "margin": 35266,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-automatic",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 23060,
+        "margin": 36216,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 12400,
+        "margin": 17795,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 6096,
+        "margin": 18884,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "Z",
+      "expected": {
+        "id": 54,
+        "char": "Z",
+        "score": 5040,
+        "margin": 12745,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "Q",
+      "expected": {
+        "id": 45,
+        "char": "Q",
+        "score": 13679,
+        "margin": 23777,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 18329,
+        "margin": 29294,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 23129,
+        "margin": 23719,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "030-oracle",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 6657,
+        "margin": 15493,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 22509,
+        "margin": 20303,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 2361,
+        "margin": 13557,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "X",
+      "expected": {
+        "id": 52,
+        "char": "X",
+        "score": 15047,
+        "margin": 19111,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 17280,
+        "margin": 28986,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 4737,
+        "margin": 20981,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 21978,
+        "margin": 31510,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "V",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": 928,
+        "margin": 10298,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": -333,
+        "margin": 7024,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 9323,
+        "margin": 24533,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 6359,
+        "margin": 10067,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "L",
+      "expected": {
+        "id": 41,
+        "char": "L",
+        "score": 13652,
+        "margin": 20056,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 8473,
+        "margin": 20825,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 13363,
+        "margin": 23017,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 8200,
+        "margin": 16278,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 8793,
+        "margin": 15506,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 9233,
+        "margin": 25240,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 12918,
+        "margin": 20408,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "L",
+      "expected": {
+        "id": 41,
+        "char": "L",
+        "score": 8585,
+        "margin": 16391,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 7817,
+        "margin": 16895,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 16548,
+        "margin": 28385,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "066-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 14642,
+        "margin": 22893,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 13791,
+        "margin": 20610,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 11303,
+        "margin": 30439,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "T",
+      "expected": {
+        "id": 48,
+        "char": "T",
+        "score": 21014,
+        "margin": 28683,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 7936,
+        "margin": 15630,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 11444,
+        "margin": 22497,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 11953,
+        "margin": 26245,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 15516,
+        "margin": 29020,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 13469,
+        "margin": 21358,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 13943,
+        "margin": 25983,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "T",
+      "expected": {
+        "id": 48,
+        "char": "T",
+        "score": 24986,
+        "margin": 32398,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 13554,
+        "margin": 24110,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 15407,
+        "margin": 28052,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 10816,
+        "margin": 23512,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "081-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 10628,
+        "margin": 24052,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 18267,
+        "margin": 24141,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 8014,
+        "margin": 24787,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "H",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": 10903,
+        "margin": 17558,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 19869,
+        "margin": 33222,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "V",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 4181,
+        "margin": 7753,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 12975,
+        "margin": 24203,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 20026,
+        "margin": 34210,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 23769,
+        "margin": 28218,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 1868,
+        "margin": 9771,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "H",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": 14818,
+        "margin": 24633,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 25557,
+        "margin": 40026,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "V",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 9173,
+        "margin": 13784,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 19425,
+        "margin": 33939,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "088-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 23466,
+        "margin": 36134,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 11916,
+        "margin": 18520,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 14311,
+        "margin": 34281,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "G",
+      "expected": {
+        "id": 37,
+        "char": "G",
+        "score": 12468,
+        "margin": 23055,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 11954,
+        "margin": 23246,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 17481,
+        "margin": 27368,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 8551,
+        "margin": 16862,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-automatic",
+      "truth": "X",
+      "expected": {
+        "id": 52,
+        "char": "X",
+        "score": 8246,
+        "margin": 10727,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 10539,
+        "margin": 12328,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 10190,
+        "margin": 17969,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "G",
+      "expected": {
+        "id": 37,
+        "char": "G",
+        "score": 12065,
+        "margin": 24372,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 10930,
+        "margin": 18533,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 28305,
+        "margin": 42012,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 17002,
+        "margin": 28787,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "102-oracle",
+      "truth": "X",
+      "expected": {
+        "id": 52,
+        "char": "X",
+        "score": 15234,
+        "margin": 15534,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 12446,
+        "margin": 16091,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 5634,
+        "margin": 14841,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "V",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 4770,
+        "margin": 10741,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 16181,
+        "margin": 28760,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "N",
+      "expected": {
+        "id": 43,
+        "char": "N",
+        "score": 4672,
+        "margin": 16523,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 12413,
+        "margin": 20927,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 10197,
+        "margin": 24936,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 20551,
+        "margin": 22405,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 4901,
+        "margin": 16864,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "V",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 3149,
+        "margin": 6051,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 20460,
+        "margin": 32668,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "N",
+      "expected": {
+        "id": 43,
+        "char": "N",
+        "score": 12350,
+        "margin": 21346,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 6782,
+        "margin": 17012,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "106-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 1133,
+        "margin": 14909,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 21225,
+        "margin": 29853,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 6706,
+        "margin": 21247,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "4",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 14346,
+        "margin": 27477,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 19176,
+        "margin": 30989,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 7600,
+        "margin": 10783,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 17837,
+        "margin": 28459,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 23522,
+        "margin": 35988,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 18433,
+        "margin": 27075,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 3978,
+        "margin": 14889,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "4",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 20394,
+        "margin": 35253,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 22837,
+        "margin": 38538,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 17141,
+        "margin": 21836,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 23040,
+        "margin": 34518,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 16143,
+        "margin": 24856,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 10511,
+        "margin": 17454,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 7370,
+        "margin": 21741,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "K",
+      "expected": {
+        "id": 40,
+        "char": "K",
+        "score": 12006,
+        "margin": 23083,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "F",
+      "expected": {
+        "id": 36,
+        "char": "F",
+        "score": 15233,
+        "margin": 19752,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 20722,
+        "margin": 32966,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 12807,
+        "margin": 18825,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-automatic",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 14913,
+        "margin": 26218,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 16,
+        "char": "豫",
+        "score": 3344,
+        "margin": 3458,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 9858,
+        "margin": 21885,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "K",
+      "expected": {
+        "id": 40,
+        "char": "K",
+        "score": 17049,
+        "margin": 23937,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "F",
+      "expected": {
+        "id": 36,
+        "char": "F",
+        "score": 11782,
+        "margin": 14528,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 25768,
+        "margin": 41003,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 18122,
+        "margin": 28633,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "135-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 9694,
+        "margin": 26221,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 9335,
+        "margin": 9454,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 17947,
+        "margin": 28065,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 18633,
+        "margin": 27366,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 19427,
+        "margin": 32638,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "V",
+      "expected": {
+        "id": 50,
+        "char": "V",
+        "score": 8365,
+        "margin": 8360,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 14884,
+        "margin": 24874,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "152-oracle",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 13145,
+        "margin": 27261,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 26181,
+        "margin": 35291,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 8623,
+        "margin": 27282,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "P",
+      "expected": {
+        "id": 44,
+        "char": "P",
+        "score": 19648,
+        "margin": 24043,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 16516,
+        "margin": 23768,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 26644,
+        "margin": 38270,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 26180,
+        "margin": 39589,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-automatic",
+      "truth": "D",
+      "expected": {
+        "id": 34,
+        "char": "D",
+        "score": 7221,
+        "margin": 7642,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 24816,
+        "margin": 32849,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 4784,
+        "margin": 18030,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "P",
+      "expected": {
+        "id": 44,
+        "char": "P",
+        "score": 19358,
+        "margin": 25483,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "0",
+      "expected": {
+        "id": 55,
+        "char": "0",
+        "score": 12292,
+        "margin": 22213,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 28539,
+        "margin": 41472,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 22852,
+        "margin": 38478,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "159-oracle",
+      "truth": "D",
+      "expected": {
+        "id": 34,
+        "char": "D",
+        "score": 9761,
+        "margin": 16253,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 4423,
+        "margin": 12383,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 3444,
+        "margin": 19081,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 12247,
+        "margin": 20971,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 14014,
+        "margin": 25468,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 7964,
+        "margin": 19768,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 12695,
+        "margin": 26255,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-automatic",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 22472,
+        "margin": 33688,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 14265,
+        "margin": 19332,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 9467,
+        "margin": 22541,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 15330,
+        "margin": 29084,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 12361,
+        "margin": 26615,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 12479,
+        "margin": 21905,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 14127,
+        "margin": 26154,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "163-oracle",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 21797,
+        "margin": 35171,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 9211,
+        "margin": 21215,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 11128,
+        "margin": 22961,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "4",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 17104,
+        "margin": 27179,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 22424,
+        "margin": 31293,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "F",
+      "expected": {
+        "id": 36,
+        "char": "F",
+        "score": 9083,
+        "margin": 14924,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 19848,
+        "margin": 22769,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 15763,
+        "margin": 30001,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 17465,
+        "margin": 24085,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 9612,
+        "margin": 25283,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "4",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 16853,
+        "margin": 28202,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 20801,
+        "margin": 27387,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "F",
+      "expected": {
+        "id": 36,
+        "char": "F",
+        "score": 12219,
+        "margin": 15187,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 23077,
+        "margin": 32082,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "176-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 9835,
+        "margin": 20721,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "豫",
+      "expected": {
+        "id": 16,
+        "char": "豫",
+        "score": 7358,
+        "margin": 16083,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "N",
+      "expected": {
+        "id": 43,
+        "char": "N",
+        "score": 9474,
+        "margin": 20877,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "D",
+      "expected": {
+        "id": 34,
+        "char": "D",
+        "score": 7210,
+        "margin": 10977,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "M",
+      "expected": {
+        "id": 42,
+        "char": "M",
+        "score": 14121,
+        "margin": 28011,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 16663,
+        "margin": 28171,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 16427,
+        "margin": 23751,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-automatic",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 8431,
+        "margin": 14982,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "豫",
+      "expected": {
+        "id": 16,
+        "char": "豫",
+        "score": 9414,
+        "margin": 17598,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "N",
+      "expected": {
+        "id": 43,
+        "char": "N",
+        "score": 13473,
+        "margin": 24057,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "D",
+      "expected": {
+        "id": 34,
+        "char": "D",
+        "score": 7656,
+        "margin": 10726,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "M",
+      "expected": {
+        "id": 42,
+        "char": "M",
+        "score": 14546,
+        "margin": 27146,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 19017,
+        "margin": 29479,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 23847,
+        "margin": 35723,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "178-oracle",
+      "truth": "1",
+      "expected": {
+        "id": 56,
+        "char": "1",
+        "score": 7980,
+        "margin": 20073,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 7341,
+        "margin": 16807,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 5467,
+        "margin": 18791,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "G",
+      "expected": {
+        "id": 37,
+        "char": "G",
+        "score": 13604,
+        "margin": 24478,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 22977,
+        "margin": 33304,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 8472,
+        "margin": 19417,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 14348,
+        "margin": 26975,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-automatic",
+      "truth": "H",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": 6963,
+        "margin": 18286,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 17413,
+        "margin": 23660,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 8861,
+        "margin": 20224,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "G",
+      "expected": {
+        "id": 37,
+        "char": "G",
+        "score": 11246,
+        "margin": 22224,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 22300,
+        "margin": 33676,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 13516,
+        "margin": 17921,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 15801,
+        "margin": 28170,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "186-oracle",
+      "truth": "H",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": -3209,
+        "margin": 204,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 7491,
+        "margin": 15310,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 16162,
+        "margin": 28389,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "D",
+      "expected": {
+        "id": 34,
+        "char": "D",
+        "score": 4433,
+        "margin": 5093,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 12755,
+        "margin": 18771,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 16690,
+        "margin": 21230,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "4",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 17826,
+        "margin": 24157,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-automatic",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 22533,
+        "margin": 29001,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 16626,
+        "margin": 26353,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 19915,
+        "margin": 35672,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "D",
+      "expected": {
+        "id": 34,
+        "char": "D",
+        "score": 5029,
+        "margin": 14427,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "3",
+      "expected": {
+        "id": 58,
+        "char": "3",
+        "score": 16406,
+        "margin": 30489,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "7",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": 21025,
+        "margin": 30997,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "4",
+      "expected": {
+        "id": 59,
+        "char": "4",
+        "score": 22428,
+        "margin": 32179,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "187-oracle",
+      "truth": "6",
+      "expected": {
+        "id": 61,
+        "char": "6",
+        "score": 24868,
+        "margin": 32485,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 3542,
+        "margin": 9427,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 12664,
+        "margin": 31149,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 8928,
+        "margin": 16036,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 7936,
+        "margin": 14230,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "R",
+      "expected": {
+        "id": 46,
+        "char": "R",
+        "score": 10855,
+        "margin": 18077,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 12292,
+        "margin": 25583,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-automatic",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 5825,
+        "margin": 3109,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 18136,
+        "margin": 27746,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "A",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 10173,
+        "margin": 24106,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 12972,
+        "margin": 11642,
+        "accepted": true
+      }
+    },
+    {
+      "position": 3,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "8",
+      "expected": {
+        "id": 63,
+        "char": "8",
+        "score": 10638,
+        "margin": 17310,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "R",
+      "expected": {
+        "id": 46,
+        "char": "R",
+        "score": 7832,
+        "margin": 18870,
+        "accepted": true
+      }
+    },
+    {
+      "position": 5,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "5",
+      "expected": {
+        "id": 60,
+        "char": "5",
+        "score": 12862,
+        "margin": 22593,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "192-oracle",
+      "truth": "2",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": 20120,
+        "margin": 31868,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 29,
+        "char": "宁",
+        "score": -5600,
+        "margin": 1967,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 41,
+        "char": "L",
+        "score": -3185,
+        "margin": 1247,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": -1830,
+        "margin": 1355,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 23,
+        "char": "贵",
+        "score": -9326,
+        "margin": 1792,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -22738,
+        "margin": 11876,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -22738,
+        "margin": 10234,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 7,
+        "char": "辽",
+        "score": 2821,
+        "margin": 272,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 32,
+        "char": "B",
+        "score": -22949,
+        "margin": 721,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": -14732,
+        "margin": 8217,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 20,
+        "char": "桂",
+        "score": 725,
+        "margin": 3894,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -10852,
+        "margin": 2220,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -10852,
+        "margin": 2220,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 1,
+        "char": "沪",
+        "score": -9742,
+        "margin": 5297,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 40,
+        "char": "K",
+        "score": -15706,
+        "margin": 728,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 40,
+        "char": "K",
+        "score": -15706,
+        "margin": 728,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 22,
+        "char": "川",
+        "score": -3736,
+        "margin": 9532,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 47,
+        "char": "S",
+        "score": -16316,
+        "margin": 4003,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 47,
+        "char": "S",
+        "score": -16316,
+        "margin": 3811,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 17,
+        "char": "鄂",
+        "score": 582,
+        "margin": 5233,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": -21825,
+        "margin": 1150,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": -21825,
+        "margin": 1150,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 23,
+        "char": "贵",
+        "score": -8633,
+        "margin": 2883,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": -16876,
+        "margin": 5426,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": -16876,
+        "margin": 4943,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 22,
+        "char": "川",
+        "score": 4616,
+        "margin": 755,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -12406,
+        "margin": 5805,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -12406,
+        "margin": 5805,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 27,
+        "char": "甘",
+        "score": -5237,
+        "margin": 7136,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 32,
+        "char": "B",
+        "score": -11907,
+        "margin": 12689,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 32,
+        "char": "B",
+        "score": -11907,
+        "margin": 12608,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 11,
+        "char": "浙",
+        "score": 7775,
+        "margin": 10855,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 46,
+        "char": "R",
+        "score": -18197,
+        "margin": 4385,
+        "accepted": true
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 46,
+        "char": "R",
+        "score": -18197,
+        "margin": 977,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 22,
+        "char": "川",
+        "score": -226,
+        "margin": 10433,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -20576,
+        "margin": 2499,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -20576,
+        "margin": 2499,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 17,
+        "char": "鄂",
+        "score": -8250,
+        "margin": 7000,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 40,
+        "char": "K",
+        "score": -24352,
+        "margin": 57,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 57,
+        "char": "2",
+        "score": -21856,
+        "margin": 1001,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 11,
+        "char": "浙",
+        "score": 127,
+        "margin": 9576,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 42,
+        "char": "M",
+        "score": -28313,
+        "margin": 492,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": -13632,
+        "margin": 14681,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 22,
+        "char": "川",
+        "score": 1160,
+        "margin": 8953,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 42,
+        "char": "M",
+        "score": -11203,
+        "margin": 2352,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 42,
+        "char": "M",
+        "score": -11203,
+        "margin": 2352,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 7,
+        "char": "辽",
+        "score": 6602,
+        "margin": 14323,
+        "accepted": true
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": -16454,
+        "margin": 724,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 38,
+        "char": "H",
+        "score": -16454,
+        "margin": 724,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 22,
+        "char": "川",
+        "score": -6482,
+        "margin": 3040,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -21713,
+        "margin": 2321,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 64,
+        "char": "9",
+        "score": -17462,
+        "margin": 4251,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 13,
+        "char": "闽",
+        "score": -7686,
+        "margin": 4158,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -20510,
+        "margin": 3394,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -20510,
+        "margin": 3394,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 26,
+        "char": "陕",
+        "score": 933,
+        "margin": 2589,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -22001,
+        "margin": 2298,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": -22001,
+        "margin": 2298,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "geometry-outside-signed10",
+      "feature": 120,
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": -2054,
+        "margin": 1066,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": true,
+      "kind": "tie-score-bus",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 0,
+        "margin": 0,
+        "accepted": false
+      }
+    },
+    {
+      "position": 1,
+      "tie": true,
+      "kind": "tie-score-bus",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 0,
+        "margin": 0,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": true,
+      "kind": "tie-score-bus",
+      "expected": {
+        "id": 31,
+        "char": "A",
+        "score": 0,
+        "margin": 0,
+        "accepted": false
+      }
+    }
+  ],
+  "result": "PASS vectors=320 compared_scores=20930 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv:144: $finish called at 135991120000 (1ps)\n",
+  "heldout_consumed": 0
+}

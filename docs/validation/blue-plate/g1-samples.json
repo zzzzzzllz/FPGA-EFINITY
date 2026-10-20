@@ -1,0 +1,2507 @@
+[
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-86_91-298&341_449&414-458&394_308&410_304&357_454&341-0_0_14_28_24_26_29-124-24.jpg",
+    "sha256": "7bd4c8e48efbd284879b246f987ea0d46451aa5851d8e2e603458bcc92a666df",
+    "label": "皖AQ4025",
+    "split": "validation",
+    "subset": "ccpd_base",
+    "box": [
+      298,
+      341,
+      449,
+      414
+    ],
+    "points": [
+      [
+        458,
+        394
+      ],
+      [
+        308,
+        410
+      ],
+      [
+        304,
+        357
+      ],
+      [
+        454,
+        341
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_84-231&482_413&539-422&537_242&536_219&475_399&476-0_0_15_11_25_26_26-121-16.jpg",
+    "sha256": "2bcbd59be6cd8dc68774966ec3c5731201adad82ed09e0ea5956fc859b659432",
+    "label": "皖ARM122",
+    "split": "development",
+    "subset": "ccpd_base",
+    "box": [
+      231,
+      482,
+      413,
+      539
+    ],
+    "points": [
+      [
+        422,
+        537
+      ],
+      [
+        242,
+        536
+      ],
+      [
+        219,
+        475
+      ],
+      [
+        399,
+        476
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_90-302&482_487&539-497&538_295&550_294&490_496&478-0_0_30_25_29_31_24-130-26.jpg",
+    "sha256": "4ffc147125db3ebae5bcb5c3db4857bab7ac769bd584259bd268cde6051ece4b",
+    "label": "皖A61570",
+    "split": "heldout",
+    "subset": "ccpd_base",
+    "box": [
+      302,
+      482,
+      487,
+      539
+    ],
+    "points": [
+      [
+        497,
+        538
+      ],
+      [
+        295,
+        550
+      ],
+      [
+        294,
+        490
+      ],
+      [
+        496,
+        478
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-89_92-300&547_485&612-496&612_301&613_297&552_492&551-0_0_28_32_30_31_33-140-41.jpg",
+    "sha256": "64777520df048500d994fcb35d20ec6be5998a26a104fa6414e342f425ba2ccb",
+    "label": "皖A48679",
+    "split": "development",
+    "subset": "ccpd_base",
+    "box": [
+      300,
+      547,
+      485,
+      612
+    ],
+    "points": [
+      [
+        496,
+        612
+      ],
+      [
+        301,
+        613
+      ],
+      [
+        297,
+        552
+      ],
+      [
+        492,
+        551
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_78-181&326_369&395-375&403_178&391_165&323_362&335-0_0_23_25_33_30_9-94-13.jpg",
+    "sha256": "b35ec15813992a9c9c79a0abcaa9381e84c6fe00b7a524e5db8ecda9fa4a76aa",
+    "label": "皖AZ196K",
+    "split": "heldout",
+    "subset": "ccpd_base",
+    "box": [
+      181,
+      326,
+      369,
+      395
+    ],
+    "points": [
+      [
+        375,
+        403
+      ],
+      [
+        178,
+        391
+      ],
+      [
+        165,
+        323
+      ],
+      [
+        362,
+        335
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_85-274&361_472&420-475&416_277&422_271&357_469&351-0_0_25_29_33_26_30-165-31.jpg",
+    "sha256": "7c46173790d95a7b6c1c91525b6217047cb28fa9c728dff4279a7ccab48a3e81",
+    "label": "皖A15926",
+    "split": "validation",
+    "subset": "ccpd_base",
+    "box": [
+      274,
+      361,
+      472,
+      420
+    ],
+    "points": [
+      [
+        475,
+        416
+      ],
+      [
+        277,
+        422
+      ],
+      [
+        271,
+        357
+      ],
+      [
+        469,
+        351
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_85-274&482_457&544-456&545_270&533_261&470_447&482-0_0_16_24_31_28_31-146-27.jpg",
+    "sha256": "1eaf9a1f8615b163139d5cea31396c2b793f4b63ad99e9f3fe4d88fede870690",
+    "label": "皖AS0747",
+    "split": "development",
+    "subset": "ccpd_base",
+    "box": [
+      274,
+      482,
+      457,
+      544
+    ],
+    "points": [
+      [
+        456,
+        545
+      ],
+      [
+        270,
+        533
+      ],
+      [
+        261,
+        470
+      ],
+      [
+        447,
+        482
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-222&446_405&507-400&505_225&500_227&442_402&447-0_0_20_0_24_30_26-66-28.jpg",
+    "sha256": "0174c2b57a1f4d70af7e0742c128c0fbff26d8c886086e2ac3aeae6c34bd568f",
+    "label": "皖AWA062",
+    "split": "development",
+    "subset": "ccpd_base",
+    "box": [
+      222,
+      446,
+      405,
+      507
+    ],
+    "points": [
+      [
+        400,
+        505
+      ],
+      [
+        225,
+        500
+      ],
+      [
+        227,
+        442
+      ],
+      [
+        402,
+        447
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_86-307&460_498&529-501&530_302&528_303&463_502&465-0_0_14_10_33_32_29-108-26.jpg",
+    "sha256": "5974d391a31882f2ae45e36df1f4bc35130b9071467c4f118e94d7e74cf7ea7b",
+    "label": "皖AQL985",
+    "split": "development",
+    "subset": "ccpd_base",
+    "box": [
+      307,
+      460,
+      498,
+      529
+    ],
+    "points": [
+      [
+        501,
+        530
+      ],
+      [
+        302,
+        528
+      ],
+      [
+        303,
+        463
+      ],
+      [
+        502,
+        465
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_base/01-90_87-240&501_441&563-437&567_237&561_230&490_430&496-0_0_2_12_32_26_26-180-20.jpg",
+    "sha256": "a5fe061ef525b766b846e576f5b0dc3a03d34f50ac1e7bb0b9259900e70276f7",
+    "label": "皖ACN822",
+    "split": "development",
+    "subset": "ccpd_base",
+    "box": [
+      240,
+      501,
+      441,
+      563
+    ],
+    "points": [
+      [
+        437,
+        567
+      ],
+      [
+        237,
+        561
+      ],
+      [
+        230,
+        490
+      ],
+      [
+        430,
+        496
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/01-1_3-263&456_407&514-407&510_268&514_263&460_402&456-0_0_10_23_32_28_33-166-2.jpg",
+    "sha256": "8906827a6568a8cfb4ef54fe1eb20df99d840b583e25bede5d65ecafc0a6e602",
+    "label": "皖ALZ849",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      263,
+      456,
+      407,
+      514
+    ],
+    "points": [
+      [
+        407,
+        510
+      ],
+      [
+        268,
+        514
+      ],
+      [
+        263,
+        460
+      ],
+      [
+        402,
+        456
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_challenge/01-1_3-263&456_407&514-407&510_268&514_263&460_402&456-0_0_10_23_32_28_33-166-2.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/01-2_3-306&477_450&535-450&535_307&528_306&477_449&484-0_0_15_32_30_29_1-131-4.jpg",
+    "sha256": "5aa3ef4ff19e41377e6bb33db2ffd19323afa195ac9950c48d63cc7ea6a57705",
+    "label": "皖AR865B",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      306,
+      477,
+      450,
+      535
+    ],
+    "points": [
+      [
+        450,
+        535
+      ],
+      [
+        307,
+        528
+      ],
+      [
+        306,
+        477
+      ],
+      [
+        449,
+        484
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_challenge/01-2_3-306&477_450&535-450&535_307&528_306&477_449&484-0_0_15_32_30_29_1-131-4.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-1_4-352&371_544&458-539&454_352&458_357&375_544&371-0_0_20_24_21_30_27-19-2.jpg",
+    "sha256": "58978b8cd1d9d8150b0a43f9a5ae9f93524288321c9b0779e8d124b19c02c94a",
+    "label": "皖AW0X63",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      352,
+      371,
+      544,
+      458
+    ],
+    "points": [
+      [
+        539,
+        454
+      ],
+      [
+        352,
+        458
+      ],
+      [
+        357,
+        375
+      ],
+      [
+        544,
+        371
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_challenge/02-1_4-352&371_544&458-539&454_352&458_357&375_544&371-0_0_20_24_21_30_27-19-2.jpg",
+      "tmp/blue-plate-g1/images/ccpd_db/02-1_4-352&371_544&458-539&454_352&458_357&375_544&371-0_0_20_24_21_30_27-19-2.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-22_32-248&422_392&538-392&538_259&483_248&422_381&477-0_0_19_17_26_26_27-90-5.jpg",
+    "sha256": "b2e64ba4a79d92aa8edc22993107f582b15a958b3b4446f5bde843bddc8e942c",
+    "label": "皖AVT223",
+    "split": "heldout",
+    "subset": "ccpd_blur",
+    "box": [
+      248,
+      422,
+      392,
+      538
+    ],
+    "points": [
+      [
+        392,
+        538
+      ],
+      [
+        259,
+        483
+      ],
+      [
+        248,
+        422
+      ],
+      [
+        381,
+        477
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_tilt/02-22_32-248&422_392&538-392&538_259&483_248&422_381&477-0_0_19_17_26_26_27-90-5.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-3_2-234&503_426&590-418&590_234&579_242&503_426&514-0_0_1_30_27_27_29-157-5.jpg",
+    "sha256": "d4f2b7cb9a6957ec6ff1d489d8b794d6ff8b7be4b2293b4580a24b2c5a0aa1c2",
+    "label": "皖AB6335",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      234,
+      503,
+      426,
+      590
+    ],
+    "points": [
+      [
+        418,
+        590
+      ],
+      [
+        234,
+        579
+      ],
+      [
+        242,
+        503
+      ],
+      [
+        426,
+        514
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_challenge/02-3_2-234&503_426&590-418&590_234&579_242&503_426&514-0_0_1_30_27_27_29-157-5.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-3_3-297&451_489&538-489&538_297&527_297&451_489&462-0_0_15_21_27_32_33-177-6.jpg",
+    "sha256": "7da7a15dffd8597dcd99f21389ff53233ad9f400536c2e1f7afc1ce22066c4de",
+    "label": "皖ARX389",
+    "split": "heldout",
+    "subset": "ccpd_blur",
+    "box": [
+      297,
+      451,
+      489,
+      538
+    ],
+    "points": [
+      [
+        489,
+        538
+      ],
+      [
+        297,
+        527
+      ],
+      [
+        297,
+        451
+      ],
+      [
+        489,
+        462
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_challenge/02-3_3-297&451_489&538-489&538_297&527_297&451_489&462-0_0_15_21_27_32_33-177-6.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/02-4_11-250&466_442&553-442&553_259&539_250&466_433&480-0_12_14_30_26_24_24-38-3.jpg",
+    "sha256": "4ae10106b205488447a3e0054517cfb687eacbf61ca2d8a791d502c6b11a6832",
+    "label": "皖NQ6200",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      250,
+      466,
+      442,
+      553
+    ],
+    "points": [
+      [
+        442,
+        553
+      ],
+      [
+        259,
+        539
+      ],
+      [
+        250,
+        466
+      ],
+      [
+        433,
+        480
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/03-1_1-332&441_593&537-589&537_332&532_336&441_593&446-0_0_9_32_25_32_29-131-2.jpg",
+    "sha256": "ea38c64a17e05e58a20b5068e5e67f5127870fa7f3316d8080c7952237a82638",
+    "label": "皖AK8185",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      332,
+      441,
+      593,
+      537
+    ],
+    "points": [
+      [
+        589,
+        537
+      ],
+      [
+        332,
+        532
+      ],
+      [
+        336,
+        441
+      ],
+      [
+        593,
+        446
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/03-1_28-193&500_481&587-481&587_235&582_193&500_439&505-0_0_23_13_26_25_26-87-3.jpg",
+    "sha256": "da2567cd17f034ded5b279476de4d1854c7332439e57b4b5f09e58273f324e6a",
+    "label": "皖AZP212",
+    "split": "validation",
+    "subset": "ccpd_blur",
+    "box": [
+      193,
+      500,
+      481,
+      587
+    ],
+    "points": [
+      [
+        481,
+        587
+      ],
+      [
+        235,
+        582
+      ],
+      [
+        193,
+        500
+      ],
+      [
+        439,
+        505
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_blur/03-1_9-274&459_535&555-517&555_274&547_292&459_535&467-0_0_32_27_18_26_26-127-5.jpg",
+    "sha256": "b9a060f4eca4659d6d496f00bc08c9170999e2339bd28a47bbb7b39d6ed19f4d",
+    "label": "皖A83U22",
+    "split": "development",
+    "subset": "ccpd_blur",
+    "box": [
+      274,
+      459,
+      535,
+      555
+    ],
+    "points": [
+      [
+        517,
+        555
+      ],
+      [
+        274,
+        547
+      ],
+      [
+        292,
+        459
+      ],
+      [
+        535,
+        467
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-0_0-276&527_420&585-420&583_276&585_276&529_420&527-0_0_7_27_30_30_23-98-6.jpg",
+    "sha256": "789050cf4512f87b98522ad6eb6b54ed52a7d08b045847e11e53c2f46b7c2a31",
+    "label": "皖AH366Z",
+    "split": "development",
+    "subset": "ccpd_challenge",
+    "box": [
+      276,
+      527,
+      420,
+      585
+    ],
+    "points": [
+      [
+        420,
+        583
+      ],
+      [
+        276,
+        585
+      ],
+      [
+        276,
+        529
+      ],
+      [
+        420,
+        527
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-0_0-277&502_421&560-420&560_277&559_278&502_421&503-0_0_28_7_24_26_24-143-28.jpg",
+    "sha256": "4780a5db2dab63d42a5eb12a216713abea12213e9744fe62a3078194248a7ac1",
+    "label": "皖A4H020",
+    "split": "development",
+    "subset": "ccpd_challenge",
+    "box": [
+      277,
+      502,
+      421,
+      560
+    ],
+    "points": [
+      [
+        420,
+        560
+      ],
+      [
+        277,
+        559
+      ],
+      [
+        278,
+        502
+      ],
+      [
+        421,
+        503
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/01-2_0-273&491_417&549-417&542_276&549_273&498_414&491-0_0_8_27_25_28_20-80-17.jpg",
+    "sha256": "d4a6fb2f8e7f3eaa20831dd8372f9573266d0b5196f83d65c88cde82761b213c",
+    "label": "皖AJ314W",
+    "split": "development",
+    "subset": "ccpd_challenge",
+    "box": [
+      273,
+      491,
+      417,
+      549
+    ],
+    "points": [
+      [
+        417,
+        542
+      ],
+      [
+        276,
+        549
+      ],
+      [
+        273,
+        498
+      ],
+      [
+        414,
+        491
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-0_1-244&488_436&575-436&575_246&574_244&488_434&489-0_0_30_29_27_14_27-146-17.jpg",
+    "sha256": "b4aef4bf4759b310f205fef300c1f1c5aeba2e09146237889de5459c0d24c101",
+    "label": "皖A653Q3",
+    "split": "development",
+    "subset": "ccpd_challenge",
+    "box": [
+      244,
+      488,
+      436,
+      575
+    ],
+    "points": [
+      [
+        436,
+        575
+      ],
+      [
+        246,
+        574
+      ],
+      [
+        244,
+        488
+      ],
+      [
+        434,
+        489
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_challenge/02-2_0-262&445_454&532-454&524_266&532_262&453_450&445-0_0_3_3_33_27_31-121-16.jpg",
+    "sha256": "7e5f270705c1d2f71fb555e63fbff0dbe684508640c0c6063285bde86daa1ee9",
+    "label": "皖ADD937",
+    "split": "development",
+    "subset": "ccpd_challenge",
+    "box": [
+      262,
+      445,
+      454,
+      532
+    ],
+    "points": [
+      [
+        454,
+        524
+      ],
+      [
+        266,
+        532
+      ],
+      [
+        262,
+        453
+      ],
+      [
+        450,
+        445
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/015-4_10-282&451_456&523-456&523_288&510_282&451_450&464-0_0_16_4_29_33_24-21-15.jpg",
+    "sha256": "12a1c3900bbdebd9b5ae4cb879055acfa52550bb5f7be681adb32e3b56804ced",
+    "label": "皖ASE590",
+    "split": "heldout",
+    "subset": "ccpd_db",
+    "box": [
+      282,
+      451,
+      456,
+      523
+    ],
+    "points": [
+      [
+        456,
+        523
+      ],
+      [
+        288,
+        510
+      ],
+      [
+        282,
+        451
+      ],
+      [
+        450,
+        464
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/015-4_5-308&502_482&574-482&560_319&574_308&516_471&502-0_0_23_11_27_26_32-29-21.jpg",
+    "sha256": "ca1bcb2c95e8fdf048aeed796798c6d973ed0e6cdb9846ea3bace5fabc73b6f7",
+    "label": "皖AZM328",
+    "split": "development",
+    "subset": "ccpd_db",
+    "box": [
+      308,
+      502,
+      482,
+      574
+    ],
+    "points": [
+      [
+        482,
+        560
+      ],
+      [
+        319,
+        574
+      ],
+      [
+        308,
+        516
+      ],
+      [
+        471,
+        502
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-6_2-365&355_557&442-553&442_365&422_369&355_557&375-0_0_33_26_25_23_30-16-17.jpg",
+    "sha256": "82342cfa30a7c3b935ba23b3454aad8c68724c1af739882f58180d6941fec04c",
+    "label": "皖A921Z6",
+    "split": "development",
+    "subset": "ccpd_db",
+    "box": [
+      365,
+      355,
+      557,
+      442
+    ],
+    "points": [
+      [
+        553,
+        442
+      ],
+      [
+        365,
+        422
+      ],
+      [
+        369,
+        355
+      ],
+      [
+        557,
+        375
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-7_1-325&351_517&438-507&438_325&414_335&351_517&375-0_0_11_1_29_29_24-30-25.jpg",
+    "sha256": "2b001c9438faa13958d9ddfe0967b0a7cbca75394fd154a1a961e8c37f0f89a9",
+    "label": "皖AMB550",
+    "split": "development",
+    "subset": "ccpd_db",
+    "box": [
+      325,
+      351,
+      517,
+      438
+    ],
+    "points": [
+      [
+        507,
+        438
+      ],
+      [
+        325,
+        414
+      ],
+      [
+        335,
+        351
+      ],
+      [
+        517,
+        375
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/02-8_5-425&460_599&556-599&531_429&556_425&485_595&460-0_0_1_29_33_32_9-13-12.jpg",
+    "sha256": "7a88c3f036f6bd46132bc7d42a7a8609abc4365f8639bce63b0589ad08c9918c",
+    "label": "皖AB598K",
+    "split": "development",
+    "subset": "ccpd_db",
+    "box": [
+      425,
+      460,
+      599,
+      556
+    ],
+    "points": [
+      [
+        599,
+        531
+      ],
+      [
+        429,
+        556
+      ],
+      [
+        425,
+        485
+      ],
+      [
+        595,
+        460
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/03-3_0-207&476_468&572-463&572_207&557_212&476_468&491-0_0_3_11_28_26_27-45-2.jpg",
+    "sha256": "46450aefef2ef2a4c724e3ea02695584191e75be9382b0c95c91125e6f6d929c",
+    "label": "皖ADM423",
+    "split": "heldout",
+    "subset": "ccpd_db",
+    "box": [
+      207,
+      476,
+      468,
+      572
+    ],
+    "points": [
+      [
+        463,
+        572
+      ],
+      [
+        207,
+        557
+      ],
+      [
+        212,
+        476
+      ],
+      [
+        468,
+        491
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/03-3_20-238&473_499&569-499&569_263&554_238&473_474&488-0_0_32_30_24_31_24-29-4.jpg",
+    "sha256": "003d2effd0fe3f06d5bd40cf2a68d601e08472f82947dc08d366aff7ba6f4334",
+    "label": "皖A86070",
+    "split": "validation",
+    "subset": "ccpd_db",
+    "box": [
+      238,
+      473,
+      499,
+      569
+    ],
+    "points": [
+      [
+        499,
+        569
+      ],
+      [
+        263,
+        554
+      ],
+      [
+        238,
+        473
+      ],
+      [
+        474,
+        488
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/03-8_22-224&454_456&562-437&531_224&562_243&485_456&454-0_13_16_32_27_25_29-40-16.jpg",
+    "sha256": "fcd59579ae13db9957db36409034eca8f71a3d01d755b528ab1290152c40cf20",
+    "label": "皖PS8315",
+    "split": "validation",
+    "subset": "ccpd_db",
+    "box": [
+      224,
+      454,
+      456,
+      562
+    ],
+    "points": [
+      [
+        437,
+        531
+      ],
+      [
+        224,
+        562
+      ],
+      [
+        243,
+        485
+      ],
+      [
+        456,
+        454
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_db/05-10_19-223&481_513&625-499&572_223&625_237&534_513&481-0_0_18_9_29_26_29-24-2.jpg",
+    "sha256": "621f2384cc69d102c40b9f3a0d8cc8a0e32b8b32562f1d6bc4674dc55833fc34",
+    "label": "皖AUK525",
+    "split": "validation",
+    "subset": "ccpd_db",
+    "box": [
+      223,
+      481,
+      513,
+      625
+    ],
+    "points": [
+      [
+        499,
+        572
+      ],
+      [
+        223,
+        625
+      ],
+      [
+        237,
+        534
+      ],
+      [
+        513,
+        481
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/005-0_4-462&482_549&530-549&529_466&530_462&483_545&482-0_0_12_10_27_25_31-98-12.jpg",
+    "sha256": "c6de20418f7e938af77e91a35466146564d4eae052eb0fc4571bd06b164dd042",
+    "label": "皖ANL317",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      462,
+      482,
+      549,
+      530
+    ],
+    "points": [
+      [
+        549,
+        529
+      ],
+      [
+        466,
+        530
+      ],
+      [
+        462,
+        483
+      ],
+      [
+        545,
+        482
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/005-10_11-323&466_395&524-394&511_323&524_324&479_395&466-0_0_32_3_33_26_26-110-17.jpg",
+    "sha256": "059ceea8c3c6e3829e70fd7bf8625773ee8de093c0b79f04ffbe482e0ded3c13",
+    "label": "皖A8D922",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      323,
+      466,
+      395,
+      524
+    ],
+    "points": [
+      [
+        394,
+        511
+      ],
+      [
+        323,
+        524
+      ],
+      [
+        324,
+        479
+      ],
+      [
+        395,
+        466
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-13_49-154&462_538&636-469&558_154&636_223&540_538&462-0_0_1_25_9_31_31-76-151.jpg",
+    "sha256": "d22cdd0c1ef2a50c5e0781db1727850aa7bd7a2ffdba7a85533b01db201df5d7",
+    "label": "皖AB1K77",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      154,
+      462,
+      538,
+      636
+    ],
+    "points": [
+      [
+        469,
+        558
+      ],
+      [
+        154,
+        636
+      ],
+      [
+        223,
+        540
+      ],
+      [
+        538,
+        462
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-18_45-217&464_565&656-517&558_217&656_265&562_565&464-0_0_13_31_29_31_23-79-32.jpg",
+    "sha256": "1c1a2a70203e8995bb572245d0940ea3eb3bcef690eb60aa79d355bd8751ba4e",
+    "label": "皖AP757Z",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      217,
+      464,
+      565,
+      656
+    ],
+    "points": [
+      [
+        517,
+        558
+      ],
+      [
+        217,
+        656
+      ],
+      [
+        265,
+        562
+      ],
+      [
+        565,
+        464
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-23_9-89&449_377&681-377&567_118&681_89&563_348&449-0_0_29_25_26_16_32-106-53.jpg",
+    "sha256": "9d76741ea0567912551b89fa232b953ca8310190a0f5fbad5cea7dc77a92bca5",
+    "label": "皖A512S8",
+    "split": "heldout",
+    "subset": "ccpd_fn",
+    "box": [
+      89,
+      449,
+      377,
+      681
+    ],
+    "points": [
+      [
+        377,
+        567
+      ],
+      [
+        118,
+        681
+      ],
+      [
+        89,
+        563
+      ],
+      [
+        348,
+        449
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_rotate/08-23_9-89&449_377&681-377&567_118&681_89&563_348&449-0_0_29_25_26_16_32-106-53.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/08-30_24-247&476_508&732-496&732_247&585_259&476_508&623-0_0_22_14_26_32_32-109-261.jpg",
+    "sha256": "a9d5b1532a8a9c468ff6026b63d7cbc81b844abe987b4cb417b8c18523f75006",
+    "label": "皖AYQ288",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      247,
+      476,
+      508,
+      732
+    ],
+    "points": [
+      [
+        496,
+        732
+      ],
+      [
+        247,
+        585
+      ],
+      [
+        259,
+        476
+      ],
+      [
+        508,
+        623
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/09-1_13-81&477_603&621-578&604_81&621_106&494_603&477-0_0_24_31_3_27_30-102-134.jpg",
+    "sha256": "8dc208338846d2c166ac2f238baa49734f4ca44fdd68150cf746b92e2b9aebd1",
+    "label": "皖A07D36",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      81,
+      477,
+      603,
+      621
+    ],
+    "points": [
+      [
+        578,
+        604
+      ],
+      [
+        81,
+        621
+      ],
+      [
+        106,
+        494
+      ],
+      [
+        603,
+        477
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/1-0_5-115&464_595&638-581&631_115&638_129&471_595&464-10_9_20_27_33_24_23-212-90.jpg",
+    "sha256": "13ba99a996cb5184e775747f0bf06035c62842492e97b8e45a67932538dc7a26",
+    "label": "苏KW390Z",
+    "split": "heldout",
+    "subset": "ccpd_fn",
+    "box": [
+      115,
+      464,
+      595,
+      638
+    ],
+    "points": [
+      [
+        581,
+        631
+      ],
+      [
+        115,
+        638
+      ],
+      [
+        129,
+        471
+      ],
+      [
+        595,
+        464
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/1-18_16-193&286_541&526-537&526_193&409_197&286_541&403-0_0_7_31_25_26_21-78-85.jpg",
+    "sha256": "5c73ea4bf8957f784d543657f0aebb664e1f06be7144353af6904a104dc75722",
+    "label": "皖AH712X",
+    "split": "heldout",
+    "subset": "ccpd_fn",
+    "box": [
+      193,
+      286,
+      541,
+      526
+    ],
+    "points": [
+      [
+        537,
+        526
+      ],
+      [
+        193,
+        409
+      ],
+      [
+        197,
+        286
+      ],
+      [
+        541,
+        403
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_rotate/1-18_16-193&286_541&526-537&526_193&409_197&286_541&403-0_0_7_31_25_26_21-78-85.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_fn/1-5_57-0&518_576&663-576&663_94&618_0&518_448&563-0_0_1_1_29_31_29-68-134.jpg",
+    "sha256": "c691afea64d9cb490145b43f91b69c2fe27d57f8fbcda2aefad54434cf22f17e",
+    "label": "皖ABB575",
+    "split": "development",
+    "subset": "ccpd_fn",
+    "box": [
+      0,
+      518,
+      576,
+      663
+    ],
+    "points": [
+      [
+        576,
+        663
+      ],
+      [
+        94,
+        618
+      ],
+      [
+        0,
+        518
+      ],
+      [
+        448,
+        563
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/112.jpg",
+    "sha256": "3f04a78468dafafa73a4c843bf1174f20ed3474d3978b93b2edb60538abddee8",
+    "label": "",
+    "split": "development",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/153.jpg",
+    "sha256": "2ba8ab212d12973d5b5fbd0de32c01404fe3edb3c1f8f3f2e70270e0e1073d90",
+    "label": "",
+    "split": "heldout",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/160.jpg",
+    "sha256": "ea0cf9cbd50fdae3c3cae26fdbbc01f4a5bb6706e345ac8878e5b639fc7d21ad",
+    "label": "",
+    "split": "heldout",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/166.jpg",
+    "sha256": "07533d356efd97f9ea1c6a3d02c9b75cd9c8fd820f72506073535ba7173d8191",
+    "label": "",
+    "split": "validation",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/172.jpg",
+    "sha256": "6c4bb6a4ff0057252808512a34d55dfb25642a363a4abeb13f59aeeb589f8e48",
+    "label": "",
+    "split": "development",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/184.jpg",
+    "sha256": "08b9cacc4c4d88e0971097cdbdbeea9ddde62d9f54013f1e49411f04d815f3b4",
+    "label": "",
+    "split": "development",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/210.jpg",
+    "sha256": "d42f259b286ad69d81e4d0b9f58ffdea608e40e8172fb63ed5d6429575d54cd6",
+    "label": "",
+    "split": "validation",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/246.jpg",
+    "sha256": "02a33bb3fa5788425c0843468f92130cc00b9a4ad0faf9386b2d3926894c8ebb",
+    "label": "",
+    "split": "validation",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/248.jpg",
+    "sha256": "5d553cb526e401a93081596c674ab80e9a16573f62baaeeb6a5a982193ab2fda",
+    "label": "",
+    "split": "development",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_np/3.jpg",
+    "sha256": "97eb45de2787ab0fa43543ed5043f5dd06d83ea385138163e60505f9d14e9aa9",
+    "label": "",
+    "split": "development",
+    "subset": "ccpd_np",
+    "box": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "points": [],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/02-18_19-271&483_415&599-415&599_272&552_271&483_414&530-0_11_15_31_29_29_29-116-98.jpg",
+    "sha256": "70833835fba568e33dbdb4b8495d9b10af4e1c4c222d390a6b27660cd144f156",
+    "label": "皖MR7555",
+    "split": "heldout",
+    "subset": "ccpd_rotate",
+    "box": [
+      271,
+      483,
+      415,
+      599
+    ],
+    "points": [
+      [
+        415,
+        599
+      ],
+      [
+        272,
+        552
+      ],
+      [
+        271,
+        483
+      ],
+      [
+        414,
+        530
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/04-18_11-431&437_623&611-623&553_445&611_431&495_609&437-0_0_16_32_20_30_29-108-52.jpg",
+    "sha256": "50a9dc2c6ad10d7eb9157a63a32fa5882c8d5dcd6a4d09a3dd1b209ab4dd579a",
+    "label": "皖AS8W65",
+    "split": "validation",
+    "subset": "ccpd_rotate",
+    "box": [
+      431,
+      437,
+      623,
+      611
+    ],
+    "points": [
+      [
+        623,
+        553
+      ],
+      [
+        445,
+        611
+      ],
+      [
+        431,
+        495
+      ],
+      [
+        609,
+        437
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/04-26_16-213&440_405&614-405&527_228&614_213&527_390&440-0_0_23_33_24_28_7-156-24.jpg",
+    "sha256": "0926ec537b996b17bef1fa3471b5c8b7f874694f898b2fb275ce2ef0704c53bb",
+    "label": "皖AZ904H",
+    "split": "development",
+    "subset": "ccpd_rotate",
+    "box": [
+      213,
+      440,
+      405,
+      614
+    ],
+    "points": [
+      [
+        405,
+        527
+      ],
+      [
+        228,
+        614
+      ],
+      [
+        213,
+        527
+      ],
+      [
+        390,
+        440
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_tilt/04-26_16-213&440_405&614-405&527_228&614_213&527_390&440-0_0_23_33_24_28_7-156-24.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/04-31_11-174&457_366&631-340&631_174&528_200&457_366&560-0_0_21_29_25_32_23-77-230.jpg",
+    "sha256": "3a5226a11971e374cc4c028957ec9fdae77d80c3286e3c76bef89340efd8243a",
+    "label": "皖AX518Z",
+    "split": "development",
+    "subset": "ccpd_rotate",
+    "box": [
+      174,
+      457,
+      366,
+      631
+    ],
+    "points": [
+      [
+        340,
+        631
+      ],
+      [
+        174,
+        528
+      ],
+      [
+        200,
+        457
+      ],
+      [
+        366,
+        560
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-16_17-176&448_416&622-415&549_176&622_177&521_416&448-10_1_31_18_19_31_26-146-41.jpg",
+    "sha256": "e12e103fa17638725514c9a24f1838308f6e1fc998bd6bb8716b1fcfd9180095",
+    "label": "苏B7UV72",
+    "split": "heldout",
+    "subset": "ccpd_rotate",
+    "box": [
+      176,
+      448,
+      416,
+      622
+    ],
+    "points": [
+      [
+        415,
+        549
+      ],
+      [
+        176,
+        622
+      ],
+      [
+        177,
+        521
+      ],
+      [
+        416,
+        448
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_tilt/05-16_17-176&448_416&622-415&549_176&622_177&521_416&448-10_1_31_18_19_31_26-146-41.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-17_15-146&426_386&600-383&600_146&527_149&426_386&499-16_2_32_30_25_29_6-99-16.jpg",
+    "sha256": "2ada62d2584c7c4f55a67c488bcbc773e8f2cbe02c56b111717e32f03d0787d8",
+    "label": "豫C8615G",
+    "split": "validation",
+    "subset": "ccpd_rotate",
+    "box": [
+      146,
+      426,
+      386,
+      600
+    ],
+    "points": [
+      [
+        383,
+        600
+      ],
+      [
+        146,
+        527
+      ],
+      [
+        149,
+        426
+      ],
+      [
+        386,
+        499
+      ]
+    ],
+    "duplicate_paths": [
+      "tmp/blue-plate-g1/images/ccpd_tilt/05-17_15-146&426_386&600-383&600_146&527_149&426_386&499-16_2_32_30_25_29_6-99-16.jpg"
+    ],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/05-20_19-316&379_556&553-555&553_316&463_317&379_556&469-0_0_3_30_8_26_33-144-313.jpg",
+    "sha256": "e17651a2c21d69c1ff38697537ba0e21d1fcff9904af05c4d01f8b87139db3bd",
+    "label": "皖AD6J29",
+    "split": "development",
+    "subset": "ccpd_rotate",
+    "box": [
+      316,
+      379,
+      556,
+      553
+    ],
+    "points": [
+      [
+        555,
+        553
+      ],
+      [
+        316,
+        463
+      ],
+      [
+        317,
+        379
+      ],
+      [
+        556,
+        469
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_rotate/08-21_18-262&397_550&629-542&629_262&516_270&397_550&510-0_0_8_33_24_30_33-53-34.jpg",
+    "sha256": "eb4d2fbeddcd1b43d732028483993c79da55e5ad810718429ab4c9edf6ecac07",
+    "label": "皖AJ9069",
+    "split": "development",
+    "subset": "ccpd_rotate",
+    "box": [
+      262,
+      397,
+      550,
+      629
+    ],
+    "points": [
+      [
+        542,
+        629
+      ],
+      [
+        262,
+        516
+      ],
+      [
+        270,
+        397
+      ],
+      [
+        550,
+        510
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/02-16_17-230&540_374&656-372&615_230&656_232&581_374&540-0_0_20_27_29_24_22-119-35.jpg",
+    "sha256": "44d720fb0394d4d588583a75e5970ef8ab6ca1587f9ed769edc8fab6d83cc5d8",
+    "label": "皖AW350Y",
+    "split": "development",
+    "subset": "ccpd_tilt",
+    "box": [
+      230,
+      540,
+      374,
+      656
+    ],
+    "points": [
+      [
+        372,
+        615
+      ],
+      [
+        230,
+        656
+      ],
+      [
+        232,
+        581
+      ],
+      [
+        374,
+        540
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/02-31_27-348&472_464&616-464&548_353&616_348&540_459&472-0_0_3_29_1_32_32-78-42.jpg",
+    "sha256": "4cda23317ddf95bcf99c8609b0e6169eb80152ef4a79520e2f7b0be3132720fe",
+    "label": "皖AD5B88",
+    "split": "development",
+    "subset": "ccpd_tilt",
+    "box": [
+      348,
+      472,
+      464,
+      616
+    ],
+    "points": [
+      [
+        464,
+        548
+      ],
+      [
+        353,
+        616
+      ],
+      [
+        348,
+        540
+      ],
+      [
+        459,
+        472
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/04-20_48-240&477_472&621-472&621_278&548_240&477_434&550-0_12_20_13_32_32_32-77-90.jpg",
+    "sha256": "1226715845dbd7c778f09b7ed7c35c53e1655bf1c02bdb1aebb425637ae45c14",
+    "label": "皖NWP888",
+    "split": "validation",
+    "subset": "ccpd_tilt",
+    "box": [
+      240,
+      477,
+      472,
+      621
+    ],
+    "points": [
+      [
+        472,
+        621
+      ],
+      [
+        278,
+        548
+      ],
+      [
+        240,
+        477
+      ],
+      [
+        434,
+        550
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/04-24_25-81&475_273&649-273&649_83&563_81&475_271&561-5_4_11_11_33_28_29-97-170.jpg",
+    "sha256": "e2e3719271e4fe68942c70425452216d47bb1a103eb1238afcdaed40befa1833",
+    "label": "晋EMM945",
+    "split": "development",
+    "subset": "ccpd_tilt",
+    "box": [
+      81,
+      475,
+      273,
+      649
+    ],
+    "points": [
+      [
+        273,
+        649
+      ],
+      [
+        83,
+        563
+      ],
+      [
+        81,
+        475
+      ],
+      [
+        271,
+        561
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/05-16_21-277&310_538&470-538&470_285&397_277&310_530&383-0_0_7_33_25_32_13-120-138.jpg",
+    "sha256": "1cbe36e5e6169de9de38e530dd54d88355588e403543b74fe7a9397208c39248",
+    "label": "皖AH918P",
+    "split": "heldout",
+    "subset": "ccpd_tilt",
+    "box": [
+      277,
+      310,
+      538,
+      470
+    ],
+    "points": [
+      [
+        538,
+        470
+      ],
+      [
+        285,
+        397
+      ],
+      [
+        277,
+        310
+      ],
+      [
+        530,
+        383
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_tilt/05-16_53-194&442_482&587-421&521_194&587_255&508_482&442-0_0_4_30_27_25_25-98-156.jpg",
+    "sha256": "3051dbd6befbf45bb3c49cde0d112d8fc3108fefa4b470ee551720fd692fe047",
+    "label": "皖AE6311",
+    "split": "development",
+    "subset": "ccpd_tilt",
+    "box": [
+      194,
+      442,
+      482,
+      587
+    ],
+    "points": [
+      [
+        421,
+        521
+      ],
+      [
+        194,
+        587
+      ],
+      [
+        255,
+        508
+      ],
+      [
+        482,
+        442
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/015-3_2-220&571_394&643-394&631_222&643_220&583_392&571-0_0_21_25_29_33_32-65-63.jpg",
+    "sha256": "9753710921a72b456f3161a3f25c75704de3dd3368ba64986572b5d779e963d5",
+    "label": "皖AX1598",
+    "split": "heldout",
+    "subset": "ccpd_weather",
+    "box": [
+      220,
+      571,
+      394,
+      643
+    ],
+    "points": [
+      [
+        394,
+        631
+      ],
+      [
+        222,
+        643
+      ],
+      [
+        220,
+        583
+      ],
+      [
+        392,
+        571
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/015-3_3-147&436_321&508-321&508_147&497_147&436_321&447-0_0_8_26_29_31_18-78-17.jpg",
+    "sha256": "b4a48e8ec06eba9f2d1c66ed87170d40b2140cd4484e6f9cc7418edba422e656",
+    "label": "皖AJ257U",
+    "split": "development",
+    "subset": "ccpd_weather",
+    "box": [
+      147,
+      436,
+      321,
+      508
+    ],
+    "points": [
+      [
+        321,
+        508
+      ],
+      [
+        147,
+        497
+      ],
+      [
+        147,
+        436
+      ],
+      [
+        321,
+        447
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/02-10_16-292&475_466&571-460&539_292&571_298&507_466&475-0_0_14_6_30_25_29-55-22.jpg",
+    "sha256": "cf1bb70ca16f5e44ef2043ee67742a7b53d4fe9791b24a27fffe31842f358374",
+    "label": "皖AQG615",
+    "split": "heldout",
+    "subset": "ccpd_weather",
+    "box": [
+      292,
+      475,
+      466,
+      571
+    ],
+    "points": [
+      [
+        460,
+        539
+      ],
+      [
+        292,
+        571
+      ],
+      [
+        298,
+        507
+      ],
+      [
+        466,
+        475
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/02-1_10-178&467_410&539-410&539_189&535_178&467_399&471-0_0_2_33_31_33_18-80-28.jpg",
+    "sha256": "6d9c9c51a54bca11fe316cde6a06865f723414903a02ca28963cf0abad759f84",
+    "label": "皖AC979U",
+    "split": "development",
+    "subset": "ccpd_weather",
+    "box": [
+      178,
+      467,
+      410,
+      539
+    ],
+    "points": [
+      [
+        410,
+        539
+      ],
+      [
+        189,
+        535
+      ],
+      [
+        178,
+        467
+      ],
+      [
+        399,
+        471
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/04-3_3-282&431_570&547-558&547_282&531_294&431_570&447-0_0_9_25_30_25_32-89-22.jpg",
+    "sha256": "5db3fd41ff75699b8fab6c502e27202780e8df3094caaae2d1ac43dfb591d83d",
+    "label": "皖AK1618",
+    "split": "development",
+    "subset": "ccpd_weather",
+    "box": [
+      282,
+      431,
+      570,
+      547
+    ],
+    "points": [
+      [
+        558,
+        547
+      ],
+      [
+        282,
+        531
+      ],
+      [
+        294,
+        431
+      ],
+      [
+        570,
+        447
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/05-11_2-321&382_611&526-597&526_321&469_335&382_611&439-0_0_25_1_30_28_24-79-61.jpg",
+    "sha256": "c2cddffb2236a16f817fcb802efd56df173b0410689ad83a2646a17911fbc832",
+    "label": "皖A1B640",
+    "split": "development",
+    "subset": "ccpd_weather",
+    "box": [
+      321,
+      382,
+      611,
+      526
+    ],
+    "points": [
+      [
+        597,
+        526
+      ],
+      [
+        321,
+        469
+      ],
+      [
+        335,
+        382
+      ],
+      [
+        611,
+        439
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/05-11_24-162&391_452&535-452&535_184&482_162&391_430&444-0_0_15_11_33_29_31-63-18.jpg",
+    "sha256": "738fabfcec7397ce604dfcca24f3f4e54bf9d32f6a63940e6731f3b4b1327368",
+    "label": "皖ARM957",
+    "split": "development",
+    "subset": "ccpd_weather",
+    "box": [
+      162,
+      391,
+      452,
+      535
+    ],
+    "points": [
+      [
+        452,
+        535
+      ],
+      [
+        184,
+        482
+      ],
+      [
+        162,
+        391
+      ],
+      [
+        430,
+        444
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/05-3_0-204&493_552&613-552&593_210&613_204&513_546&493-0_0_23_11_32_32_25-136-114.jpg",
+    "sha256": "20cee9714518e06bb2cb23c7e714f1481abfebd53346304f86f11bec0384decc",
+    "label": "皖AZM881",
+    "split": "development",
+    "subset": "ccpd_weather",
+    "box": [
+      204,
+      493,
+      552,
+      613
+    ],
+    "points": [
+      [
+        552,
+        593
+      ],
+      [
+        210,
+        613
+      ],
+      [
+        204,
+        513
+      ],
+      [
+        546,
+        493
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/07-0_3-151&459_557&603-557&603_158&599_151&459_550&463-0_0_2_29_25_32_31-107-82.jpg",
+    "sha256": "8d60fcba9f5c3c39dfec04726a4cefdfac9ad2b1e6419a24db83e1d583007426",
+    "label": "皖AC5187",
+    "split": "validation",
+    "subset": "ccpd_weather",
+    "box": [
+      151,
+      459,
+      557,
+      603
+    ],
+    "points": [
+      [
+        557,
+        603
+      ],
+      [
+        158,
+        599
+      ],
+      [
+        151,
+        459
+      ],
+      [
+        550,
+        463
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  },
+  {
+    "path": "tmp/blue-plate-g1/images/ccpd_weather/07-4_10-206&461_542&635-528&607_206&635_220&489_542&461-0_0_5_27_24_27_16-45-202.jpg",
+    "sha256": "90dea5369bb024d83cbc06b99458d55ad2c9cd84244b89f7fc426ed9e3e10bfb",
+    "label": "皖AF303S",
+    "split": "heldout",
+    "subset": "ccpd_weather",
+    "box": [
+      206,
+      461,
+      542,
+      635
+    ],
+    "points": [
+      [
+        528,
+        607
+      ],
+      [
+        206,
+        635
+      ],
+      [
+        220,
+        489
+      ],
+      [
+        542,
+        461
+      ]
+    ],
+    "duplicate_paths": [],
+    "session": "unknown",
+    "real": true
+  }
+]

@@ -17,19 +17,20 @@ module compare_display #(
  reg [10:0] ix, ox;
  reg [9:0] iy, oy;
  reg [1:0] rows_ready;
- reg [18:0] upper_row [0:HW-1];
- reg [16:0] reduced [0:2*HW-1];
- reg [18:0] upper_q;
- reg [16:0] reduced_q;
+ reg [19:0] upper_row [0:HW-1];
+ reg [17:0] reduced [0:2*HW-1];
+ reg [19:0] upper_q;
+ reg [17:0] reduced_q;
  reg [8:0] pair_filtered;
  reg [1:0] frame_flags;
  reg [3:0] frame_view;
  wire split_mode=frame_view[0] || frame_flags[1];
+ wire edge_compare=frame_flags[1] && frame_view[3];
  wire overlay_active=frame_view[3] && !split_mode;
  reg pair_valid, pair_bank, pair_odd;
  reg [10:0] pair_x;
  reg [8:0] pair_sum;
- reg pair_edge;
+ reg pair_edge,pair_raw_edge;
  reg black_q, right_q;
  reg [31:0] full_q;
  reg [6:0] frame_tag;
@@ -42,7 +43,7 @@ module compare_display #(
  wire slot_ready=!out_valid || out_ready;
  wire pair_take=split_mode && remaining!=0 && iy<H && !rows_ready[iy[1]];
  wire emit=slot_ready && seen_word && oy<H && (split_mode ? (!window_row || rows_ready[read_bank]) : remaining!=0);
- wire [7:0] value=black_q ? 8'd0 : (right_q ? (frame_flags[1]?reduced_q[16:9]:{8{reduced_q[8]}}) : reduced_q[7:0]);
+ wire [7:0] value=black_q ? 8'd0 : edge_compare ? {8{right_q?reduced_q[8]:reduced_q[17]}} : (right_q ? (frame_flags[1]?reduced_q[16:9]:{8{reduced_q[8]}}) : reduced_q[7:0]);
  assign out_data=split_mode ? {1'b0,meta_q,value,value,value} : {full_q[31],meta_q,full_q[23:0]};
  assign in_ready=!frame_period && iy<H && (remaining==0 ||
                  (split_mode ? (pair_take && remaining==2 && !(ix==HW-1 && iy==H-1)) :
@@ -83,16 +84,16 @@ module compare_display #(
    pair_valid<=pair_take;
    if(pair_take) begin
     upper_q<=upper_row[ix];
-    pair_filtered<={1'b0,word_data[111:104]}+{1'b0,word_data[79:72]};pair_sum<=horizontal_sum; pair_edge<=word_data[127] | word_data[95];
+    pair_filtered<={1'b0,word_data[111:104]}+{1'b0,word_data[79:72]};pair_sum<=horizontal_sum; pair_edge<=word_data[127] | word_data[95];pair_raw_edge<=word_data[96] | word_data[64];
     pair_x<=ix; pair_odd<=iy[0]; pair_bank<=iy[1];
     word_data<=word_data<<64; remaining<=remaining-2;
     if(ix==HW-1) begin ix<=0; iy<=iy+1'b1; end
     else ix<=ix+1'b1;
    end
    if(pair_valid) begin
-    if(!pair_odd) upper_row[pair_x]<={pair_filtered,pair_edge,pair_sum};
+    if(!pair_odd) upper_row[pair_x]<={pair_raw_edge,pair_filtered,pair_edge,pair_sum};
     else begin
-     reduced[pair_bank*HW+pair_x]<={filtered_sum[9:2],pair_edge|upper_q[9],block_sum[9:2]};
+     reduced[pair_bank*HW+pair_x]<={pair_raw_edge|upper_q[19],filtered_sum[9:2],pair_edge|upper_q[9],block_sum[9:2]};
      if(pair_x==HW-1) rows_ready[pair_bank]<=1;
     end
    end

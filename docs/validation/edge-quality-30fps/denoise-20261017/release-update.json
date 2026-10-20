@@ -1,0 +1,15 @@
+{
+  "changed_inputs": [
+    "tests/tb_canny_rules.v",
+    "tests/tb_edge_ui.v",
+    "rtl/edge_ui.v",
+    "rtl/gaussian_pair.v",
+    "rtl/ti60f225_oob_top.v",
+    "control.py",
+    "load.cmd"
+  ],
+  "parent_bitstream_sha256": "6dd97ef3ecbd9f3e326b8ff08c381139e7ca27f025e0831a4c232fa183654ece",
+  "bitstream_sha256": "8b64da5dc8886ddbb526708653be3e37721685aa4eed0145551ada9621bc9638",
+  "build_id": "0x60101701",
+  "acceptance": "pending-user"
+}

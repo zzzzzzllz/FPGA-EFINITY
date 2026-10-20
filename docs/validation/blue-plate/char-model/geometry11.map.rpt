@@ -1,0 +1,204 @@
+Efinity Synthesis report for project geometry11_char_linear
+Version: 2026.1.132.4.5
+Generated at: Oct 18, 2026 13:56:05
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : geometry11_char_linear
+
+family : Titanium
+device : Ti60F225
+project : geometry11_char_linear
+root : geometry11_char_linear
+binary-db : out\geometry11_char_linear.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : speed
+num_srl : -1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis
+project : geometry11_char_linear
+project-xml : D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis\geometry11_char_linear.xml
+retiming : 0
+root : geometry11_char_linear
+use-logic-for-small-rom : 0
+work-dir : work_syn
+write-efx-verilog : out\geometry11_char_linear.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis\char_linear.v
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis\geometry11_char_linear.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0677" : ... Memory 'feature_mem' is not initialized, assuming empty initial contents. (D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis\char_linear.v:39)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 14
+Total number of FFs with enable signals: 216
++----------------+------------------+
+|CE Signal       |Number of FF loads|
++----------------+------------------+
+|ceg_net1286     |               71 |
+|ceg_net1104     |               39 |
+|ceg_net1042     |               32 |
+|ceg_net970      |               32 |
+|ceg_net1256     |               15 |
+|ceg_net1341     |                9 |
+|ceg_net1268     |                7 |
+|core/n4444      |                3 |
+|ceg_net1301     |                2 |
+|ceg_net1310     |                2 |
+|core/equal_38/n7|                1 |
+|ceg_net1325     |                1 |
+|ceg_net1306     |                1 |
+|core/n3927      |                1 |
++----------------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 1
+Total number of FFs with set/reset signals: 214
++---------+------------------+
+|SR Signal|Number of FF loads|
++---------+------------------+
+|rst      |              214 |
++---------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'core/bias_mem__D$1' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$312' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$0312' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b012' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3j1' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3i12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3h12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3g12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3f12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3e12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3d12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3c12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$3b12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03j1' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$32' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03i12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03h12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03g12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03f12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03e12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03d12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03c12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$03b12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0j1' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$032' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0i12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0h12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0g12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0f12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0e12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0d12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0c12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b0b12' Port WDATA is tied off because it is disabled.
+Memory instance 'core/weight_mem__D$b02' Port WDATA is tied off because it is disabled.
+Memory instance 'core/bias_mem__D$2' Port WDATA is tied off because it is disabled.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                             FFs      SRLs      ADDs      LUTs    COMB4s      RAMs DSP/MULTs
+------------------------------------------------------------       ---      ----      ----      ----      ----      ---- ---------
+geometry11_char_linear:geometry11_char_linear                   216(0)      0(0)     65(0)    471(0)      0(0)     36(0)      1(0)
+ +core:char_linear(WEIGHT_FILE="w1-s11.bin",PROVINCE_SCOR...  216(216)      0(0)    65(65)  471(471)      0(0)    36(36)      1(1)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
++-----------+-----+------+-------+------+-------+-----+----+
+|DSP        |TYPE |SIGNED|SHIFTER|BFLOAT|CAS_OUT|  O  |REGS|
++-----------+-----+------+-------+------+-------+-----+----+
+|core/mult_3|DSP48|  1   |       |      |       |(A*B)|    |
++-----------+-----+------+-------+------+-------+-----+----+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++-----+----------+----------+------------+----------------+
+|Clock|Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++-----+----------+----------+------------+----------------+
+|clk  |      216 |        0 |         37 |              0 |
++-----+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Memory Mapping Report (begin) ### ### ###
+
+1. core/weight_mem (D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis\char_linear.v:40):
+	EFX_RAM10: core/weight_mem__D$312
+	EFX_RAM10: core/weight_mem__D$0312
+	EFX_RAM10: core/weight_mem__D$b012
+	EFX_RAM10: core/weight_mem__D$3j1
+	EFX_RAM10: core/weight_mem__D$3i12
+	EFX_RAM10: core/weight_mem__D$3h12
+	EFX_RAM10: core/weight_mem__D$3g12
+	EFX_RAM10: core/weight_mem__D$3f12
+	EFX_RAM10: core/weight_mem__D$3e12
+	EFX_RAM10: core/weight_mem__D$3d12
+	EFX_RAM10: core/weight_mem__D$3c12
+	EFX_RAM10: core/weight_mem__D$3b12
+	EFX_RAM10: core/weight_mem__D$03j1
+	EFX_RAM10: core/weight_mem__D$32
+	EFX_RAM10: core/weight_mem__D$03i12
+	EFX_RAM10: core/weight_mem__D$03h12
+	EFX_RAM10: core/weight_mem__D$03g12
+	EFX_RAM10: core/weight_mem__D$03f12
+	EFX_RAM10: core/weight_mem__D$03e12
+	EFX_RAM10: core/weight_mem__D$03d12
+	EFX_RAM10: core/weight_mem__D$03c12
+	EFX_RAM10: core/weight_mem__D$03b12
+	EFX_RAM10: core/weight_mem__D$b0j1
+	EFX_RAM10: core/weight_mem__D$032
+	EFX_RAM10: core/weight_mem__D$b0i12
+	EFX_RAM10: core/weight_mem__D$b0h12
+	EFX_RAM10: core/weight_mem__D$b0g12
+	EFX_RAM10: core/weight_mem__D$b0f12
+	EFX_RAM10: core/weight_mem__D$b0e12
+	EFX_RAM10: core/weight_mem__D$b0d12
+	EFX_RAM10: core/weight_mem__D$b0c12
+	EFX_RAM10: core/weight_mem__D$b0b12
+	EFX_RAM10: core/weight_mem__D$b02
+
+2. core/bias_mem (D:\Desktop_New\EfinityNEW\tmp\blue-plate-char-model\geometry11-hardware\synthesis\char_linear.v:41):
+	EFX_RAM10: core/bias_mem__D$2
+	EFX_RAM10: core/bias_mem__D$1
+
+### ### Memory Mapping Report (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	14
+OUTPUT PORTS    : 	116
+
+EFX_ADD                 : 	65
+EFX_LUT4                : 	471
+   1-2  Inputs          : 	140
+   3    Inputs          : 	123
+   4    Inputs          : 	208
+EFX_DSP48               : 	1
+EFX_FF                  : 	216
+EFX_RAM10               : 	36
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 3s
+Elapsed synthesis time : 3s

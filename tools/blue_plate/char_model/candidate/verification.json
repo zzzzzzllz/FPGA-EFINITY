@@ -1,0 +1,17 @@
+{
+  "model": "linear0.1",
+  "rom_layout": "destination-major, then source; signed hex",
+  "classes_covered": 65,
+  "positions_covered": [
+    0,
+    1,
+    2
+  ],
+  "real_vectors": 89,
+  "rejection_vectors": 10,
+  "tie_vectors": 3,
+  "adversarial_mac_vectors": 32,
+  "scalar_numpy_exact": true,
+  "rom_roundtrip_exact": true,
+  "invalid_inputs_rejected": true
+}

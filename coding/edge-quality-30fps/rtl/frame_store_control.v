@@ -15,6 +15,8 @@ module frame_store_control #(
  input display_start,display_end,
  output reg display_valid,output reg [1:0] display_slot,
  output reg display_reference_valid,output reg [5:0] display_reference_slot,
+ output reg [17:0] display_saved_slots,output reg [2:0] display_saved_valid,
+ output [5:0] display_source,
  output [31:0] display_id,display_epoch,output reg [31:0] display_reference_id,
  // The HDMI consumer acknowledges the result it actually starts displaying.
  input shown_valid,input [1:0] shown_slot,
@@ -29,7 +31,8 @@ module frame_store_control #(
 );
  localparam LIVE=0,FROZEN=1,RECORD=2,PLAY=3,PAUSE=4,STEP=5;
  localparam LIVE_CMD=1,FREEZE_CMD=2,STEP_CMD=3,RECORD_CMD=4,
-            PLAY_CMD=5,PAUSE_CMD=6,NEXT_CMD=7,REFERENCE_CMD=8,CLEAR_REF_CMD=9;
+            PLAY_CMD=5,PAUSE_CMD=6,NEXT_CMD=7,REFERENCE_CMD=8,CLEAR_REF_CMD=9,FIRST_PAUSE_CMD=10,RESUME_CMD=11;
+ reg [17:0] saved_slots;reg [2:0] saved_valid;reg [1:0] save_next;
  reg [5:0] clip[0:31];
  reg [31:0] clip_id[0:31];
  reg [5:0] result_source[0:RESULT_SLOTS-1];
@@ -50,19 +53,35 @@ module frame_store_control #(
  reg [RAW_SLOTS-1:0] held;
  reg [RAW_SLOTS-1:0] recorded_slots;
  integer i,raw_free,result_free;
- wire [4:0] next_index=playback_index==recorded-1 ? 0 : playback_index+1'b1;
- wire [4:0] clip_read_index=command_valid && command==NEXT_CMD ? next_index : playback_index;
+ reg [4:0] actual_clip_index,actual_clip_reverse;
+ reg actual_clip_found;
+ integer c;
+ always @* begin
+  actual_clip_reverse=0;actual_clip_found=0;
+  for(c=0;c<32;c=c+1)
+   if(actual_valid && c<recorded && clip[c]==result_source[actual_slot]) begin
+    actual_clip_reverse=c;actual_clip_found=1;
+   end
+  // Resolve the slot first, then reverse chronological order with one subtractor.
+  actual_clip_index=actual_clip_found ? recorded-1'b1-actual_clip_reverse : playback_index;
+ end
+ wire [4:0] next_index=actual_clip_index==recorded-1 ? 0 : actual_clip_index+1'b1;
+ wire [4:0] clip_read_index=command_valid && (command==NEXT_CMD || command==RESUME_CMD) ? next_index :
+                            command_valid && command==FIRST_PAUSE_CMD ? 5'd0 : playback_index;
  wire [4:0] clip_id_index=recorded-1'b1-clip_read_index;
  wire [31:0] clip_read_id=clip_id[clip_id_index];
  wire [5:0] clip_read_slot=clip[clip_id_index];
+ assign display_source=result_source[display_slot];
  assign display_id=display_valid ? result_id[display_slot] : 0;
  assign display_epoch=display_valid ? result_epoch[display_slot] : 0;
  always @* begin
   held=recorded_slots;
   for(i=0;i<RESULT_SLOTS;i=i+1)
    if(result_valid[i]) held[result_source[i]]=1;
-  if(reference_valid) held[reference_slot]=1;
-  if(display_reference_valid) held[display_reference_slot]=1;
+  for(i=0;i<3;i=i+1) begin
+   if(saved_valid[i]) held[saved_slots[i*6 +:6]]=1;
+   if(display_saved_valid[i]) held[display_saved_slots[i*6 +:6]]=1;
+  end
   if(freeze_valid) held[freeze_source]=1;
   if(capture_busy) held[capture_slot]=1;
   if(job_busy) held[job_source]=1;
@@ -80,6 +99,7 @@ module frame_store_control #(
    capture_busy<=0;capture_accept<=0;capture_slot<=0;capture_record<=0;incoming_id<=0;capture_generation<=0;
    job_busy<=0;job_start<=0;job_source<=0;job_result<=0;job_id<=0;job_epoch<=0;job_generation<=0;
    display_busy<=0;display_valid<=0;display_slot<=0;actual_valid<=0;actual_slot<=0;
+   saved_slots<=0;saved_valid<=0;save_next<=0;display_saved_slots<=0;display_saved_valid<=0;
    reference_valid<=0;reference_slot<=0;freeze_valid<=0;freeze_source<=0;
    display_reference_valid<=0;display_reference_slot<=0;
    display_reference_id<=0;reference_id<=0;pending_id<=0;freeze_id<=0;
@@ -96,6 +116,7 @@ module frame_store_control #(
    end
    if(display_end) display_busy<=0;
    if(display_start && !display_busy) begin
+    display_saved_slots<=saved_slots;display_saved_valid<=saved_valid;
     display_reference_valid<=reference_valid;display_reference_slot<=reference_slot;
     display_reference_id<=reference_id;
     if(command_valid && (command==FREEZE_CMD || command==PAUSE_CMD) && actual_valid) begin
@@ -188,11 +209,19 @@ module frame_store_control #(
      PLAY_CMD: if(recorded!=0) begin
       mode<=PLAY;playback_index<=0;pending_valid<=0;ready_valid<=0;generation<=generation+1'b1;reprocess<=1;
      end else command_error<=2;
+     RESUME_CMD: if(recorded!=0) begin
+      mode<=PLAY;playback_index<=next_index;pending_valid<=0;ready_valid<=0;
+      generation<=generation+1'b1;reprocess<=1;play_ticks<=PLAY_PERIOD;
+     end else command_error<=2;
+     FIRST_PAUSE_CMD: if(recorded!=0) begin
+      mode<=PAUSE;playback_index<=0;freeze_source<=clip_read_slot;freeze_id<=clip_read_id;freeze_valid<=1;
+      pending_valid<=0;ready_valid<=0;generation<=generation+1'b1;reprocess<=1;
+     end else command_error<=2;
      PAUSE_CMD: if(actual_valid) begin
       mode<=PAUSE;freeze_valid<=1;freeze_source<=result_source[actual_slot];
       freeze_id<=result_id[actual_slot];
       ready_valid<=0;generation<=generation+1'b1;reprocess<=0;
-      for(i=0;i<32;i=i+1) if(i<recorded && clip[i]==result_source[actual_slot]) playback_index<=recorded-1-i;
+      playback_index<=actual_clip_index;
      end else command_error<=1;
      NEXT_CMD: if(recorded!=0) begin
       mode<=PAUSE;playback_index<=next_index;
@@ -200,9 +229,10 @@ module frame_store_control #(
       ready_valid<=0;generation<=generation+1'b1;reprocess<=1;
      end else command_error<=2;
      REFERENCE_CMD: if(actual_valid) begin
+      saved_slots[save_next*6 +:6]<=result_source[actual_slot];saved_valid[save_next]<=1;save_next<=save_next==2 ? 0 : save_next+1'b1;
       reference_slot<=result_source[actual_slot];reference_id<=result_id[actual_slot];reference_valid<=1;
      end else command_error<=1;
-     CLEAR_REF_CMD: reference_valid<=0;
+     CLEAR_REF_CMD: begin reference_valid<=0;saved_valid<=0;save_next<=0;end
      default: command_error<=3;
     endcase
    end

@@ -1,0 +1,257 @@
+{
+  "status": "arithmetic_verified_accuracy_failed",
+  "system_status": "integer_neural_core_with_floating_host_ctc",
+  "results": {
+    "fp32": {
+      "ocr_only": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 290,
+          "wrong": 6,
+          "rejected": 8
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 250,
+          "wrong": 0,
+          "rejected": 54
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 61,
+          "wrong": 0,
+          "rejected": 15
+        }
+      },
+      "combined": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 288,
+          "wrong": 6,
+          "rejected": 10
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 249,
+          "wrong": 0,
+          "rejected": 55
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 61,
+          "wrong": 0,
+          "rejected": 15
+        }
+      }
+    },
+    "integer_with_float_ctc": {
+      "ocr_only": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 284,
+          "wrong": 9,
+          "rejected": 11
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 229,
+          "wrong": 3,
+          "rejected": 72
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 70,
+          "wrong": 1,
+          "rejected": 5
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 55,
+          "wrong": 0,
+          "rejected": 21
+        }
+      },
+      "combined": {
+        "development_raw_legal": {
+          "total": 304,
+          "correct": 282,
+          "wrong": 8,
+          "rejected": 14
+        },
+        "development_strict": {
+          "total": 304,
+          "correct": 228,
+          "wrong": 3,
+          "rejected": 73
+        },
+        "tune_raw_legal": {
+          "total": 76,
+          "correct": 70,
+          "wrong": 0,
+          "rejected": 6
+        },
+        "tune_strict": {
+          "total": 76,
+          "correct": 55,
+          "wrong": 0,
+          "rejected": 21
+        }
+      }
+    },
+    "greedy_changed": 15,
+    "fusion_max_abs": 4.57763671875e-05,
+    "logit_scale": 0.2953726375804228,
+    "parameter_hashes": {
+      "calibration-ranges.json": "47c9653ee7dedc9594f78190ab927bfe8736cec0de4fad931989c37dd541a875",
+      "integer-config.json": "9b32ecbf960728159244568cabdaa44d488ef523df67b548464077c78b411ae6",
+      "integer-parameters.npz": "09e4cb2bee92954ce20ba035a5faf8e59a0817e775afbd1ae197257d953fdedb"
+    },
+    "diagnostics": {
+      "integer_backbone_float_context_head": {
+        "ocr_only": {
+          "development_raw_legal": {
+            "total": 304,
+            "correct": 284,
+            "wrong": 7,
+            "rejected": 13
+          },
+          "development_strict": {
+            "total": 304,
+            "correct": 234,
+            "wrong": 3,
+            "rejected": 67
+          },
+          "tune_raw_legal": {
+            "total": 76,
+            "correct": 69,
+            "wrong": 1,
+            "rejected": 6
+          },
+          "tune_strict": {
+            "total": 76,
+            "correct": 56,
+            "wrong": 0,
+            "rejected": 20
+          }
+        },
+        "combined": {
+          "development_raw_legal": {
+            "total": 304,
+            "correct": 282,
+            "wrong": 6,
+            "rejected": 16
+          },
+          "development_strict": {
+            "total": 304,
+            "correct": 233,
+            "wrong": 3,
+            "rejected": 68
+          },
+          "tune_raw_legal": {
+            "total": 76,
+            "correct": 69,
+            "wrong": 0,
+            "rejected": 7
+          },
+          "tune_strict": {
+            "total": 76,
+            "correct": 56,
+            "wrong": 0,
+            "rejected": 20
+          }
+        }
+      },
+      "float_backbone_integer_context_head": {
+        "ocr_only": {
+          "development_raw_legal": {
+            "total": 304,
+            "correct": 289,
+            "wrong": 7,
+            "rejected": 8
+          },
+          "development_strict": {
+            "total": 304,
+            "correct": 245,
+            "wrong": 1,
+            "rejected": 58
+          },
+          "tune_raw_legal": {
+            "total": 76,
+            "correct": 71,
+            "wrong": 1,
+            "rejected": 4
+          },
+          "tune_strict": {
+            "total": 76,
+            "correct": 58,
+            "wrong": 0,
+            "rejected": 18
+          }
+        },
+        "combined": {
+          "development_raw_legal": {
+            "total": 304,
+            "correct": 287,
+            "wrong": 7,
+            "rejected": 10
+          },
+          "development_strict": {
+            "total": 304,
+            "correct": 244,
+            "wrong": 1,
+            "rejected": 59
+          },
+          "tune_raw_legal": {
+            "total": 76,
+            "correct": 71,
+            "wrong": 1,
+            "rejected": 4
+          },
+          "tune_strict": {
+            "total": 76,
+            "correct": 58,
+            "wrong": 0,
+            "rejected": 18
+          }
+        }
+      }
+    },
+    "model_state_unchanged": true,
+    "parameters_unchanged_after_freeze": true,
+    "elapsed_seconds": 772.186107700003,
+    "validation_image_reads": 0,
+    "heldout_image_reads": 0,
+    "optimizer_steps": 0
+  },
+  "verification": {
+    "saved_parameter_replay_exact": true,
+    "full_first_conv_numpy_int64_exact": true,
+    "four_context_branches_numpy_fraction_exact": true,
+    "integer_height_sum_exact": true,
+    "rational_rounding_cases": 555,
+    "real_mac_dots": 36,
+    "real_mac_cycles": 4437,
+    "real_requantized_outputs_match": true,
+    "extreme_signed_mm_cases": 12,
+    "original_artifacts_unchanged": true
+  },
+  "primary_threshold": 0.9931710550839266,
+  "root_cause": "A single tap2 A8 range is shared by all 256 channels and the channel-decimated trunk; retained trunk has only 8 integer values.",
+  "next_candidate_implemented": false,
+  "quantized_validation84_run": false,
+  "network_rtl_or_product_rom": false,
+  "known_occlusion_failure": "Original FP32 strict chain wrong-accepts 66/388 middle occlusions; not retested or fixed here.",
+  "artifacts_root": "tmp/blue-plate-char-segment/quantization-w8a8"
+}

@@ -1,0 +1,10 @@
+{
+  "9": {
+    "rejected": true,
+    "log": "FATAL: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\rtl\\char_linear.v:63: WEIGHT_BITS must be 10 or 11\n       Time: 0  Scope: width_guard.dut.invalid_weight_width\nWARNING: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\rtl\\char_linear.v:67: Excess binary digits (2 of '00000000000') while reading 9-bit words.\n"
+  },
+  "12": {
+    "rejected": true,
+    "log": "FATAL: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\rtl\\char_linear.v:63: WEIGHT_BITS must be 10 or 11\n       Time: 0  Scope: width_guard.dut.invalid_weight_width\n"
+  }
+}

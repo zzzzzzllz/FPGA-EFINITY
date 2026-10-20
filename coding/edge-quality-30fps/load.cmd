@@ -6,7 +6,7 @@ if errorlevel 1 exit /b %errorlevel%
 if errorlevel 1 exit /b %errorlevel%
 call "%EFINITY_HOME%\pgm\bin\ftdi_pgm.bat" -m jtag "%~dp0release\ti60f225_oob.bit"
 if errorlevel 1 exit /b %errorlevel%
-call "%~dp0control.cmd" --set 389 256 427 0 0 --algorithm canny --low-ratio 1/2 --threshold 24 --median off --recognition off --view compare --frame live --samples 3
+call "%~dp0control.cmd" --set 389 256 427 0 0 --algorithm sobel --low-ratio 1/2 --threshold 56 --median off --recognition off --view color --frame live --samples 3
 if errorlevel 1 exit /b %errorlevel%
 call "%~dp0control.cmd" --sensor-restore "%~dp0config\sensor.json" --samples 3
 if errorlevel 1 exit /b %errorlevel%

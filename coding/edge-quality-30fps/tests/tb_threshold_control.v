@@ -5,7 +5,7 @@ module tb_threshold_control;
  reg [10:0] value=32;
  wire [1:0] press_events;wire ack;wire [10:0] pending,active;wire [31:0] epoch,mc,pc;wire [1:0] keys;
  threshold_control #(.DEBOUNCE(5),.HOLD(50),.REPEAT(10)) dut(
-  clk,rst,fs,minus,plus,1'b0,1'b1,press_events,value,toggle,ack,pending,active,epoch,mc,pc,keys);
+  clk,rst,fs,1'b0,11'd32,minus,plus,1'b0,1'b1,1'b0,press_events,value,toggle,ack,pending,active,epoch,mc,pc,keys);
  task cycles(input integer n);repeat(n) @(negedge clk);endtask
  task commit;begin fs=1;cycles(1);fs=0;end endtask
  task set_value(input integer v);begin value=v;toggle=!toggle;cycles(2);end endtask

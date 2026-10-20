@@ -22,7 +22,8 @@ for case,gray in enumerate(images(32,24)):
             # Matching gray RGB makes the RGB->Y reference exact, not an unrelated payload.
             rgb=gray.astype(np.uint32)*0x010101
             raw=(gray.astype(np.uint32)<<24)|rgb
-            denoised=(gray.astype(np.uint32)<<16)|(filtered.astype(np.uint32)<<8)
+            raw_edge=classify(gray,32,1,False,False)[0]==2
+            denoised=(gray.astype(np.uint32)<<16)|(filtered.astype(np.uint32)<<8)|(raw_edge.astype(np.uint32)*255)
             expected=(state.astype(np.uint32)<<30)|denoised
             config=0x5020|(med<<11)|(canny<<13)
             for suffix,data in [('input',raw),('class',expected)]:

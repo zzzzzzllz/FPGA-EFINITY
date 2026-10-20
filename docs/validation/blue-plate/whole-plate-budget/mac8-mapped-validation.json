@@ -1,0 +1,60 @@
+{
+  "stage": "mapped",
+  "exit_code": 0,
+  "cycles": 12938,
+  "lane_state_checks": 103504,
+  "coverage": {
+    "reset": 31,
+    "load": 151,
+    "stall": 978,
+    "mac_lanes": 71923,
+    "overflow_lanes": 26
+  },
+  "split_checks": [
+    {
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "valid_lanes": 8,
+      "result": [
+        98920,
+        -533418,
+        -14476,
+        -35005,
+        288014,
+        900721,
+        -273440,
+        885366
+      ]
+    },
+    {
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "valid_lanes": 4,
+      "result": [
+        319491,
+        -508905,
+        484836,
+        72580,
+        56611,
+        -27908,
+        62530,
+        -39401
+      ]
+    }
+  ],
+  "stdout": "PROGRESS mac8 cycles=1024\nPROGRESS mac8 cycles=2048\nPROGRESS mac8 cycles=3072\nPROGRESS mac8 cycles=4096\nPROGRESS mac8 cycles=5120\nPROGRESS mac8 cycles=6144\nPROGRESS mac8 cycles=7168\nPROGRESS mac8 cycles=8192\nPROGRESS mac8 cycles=9216\nPROGRESS mac8 cycles=10240\nPROGRESS mac8 cycles=11264\nPROGRESS mac8 cycles=12288\nPASS mac8 cycles=12938 lane_states=103504\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\tb_mac8.sv:39: $finish called at 129386000 (1ps)\n",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\tb_mac8.sv": "7775c057e7a49ca8588f0b3b52dbe6b330ed6c51c4019a9e20d2a08831d6c79d",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\test_mac8.py": "08f9eff07093a8ac9c310670d8dc9b43d2555a669a996685b7691b1af55e0688",
+    "D:\\Efinity\\sim_models\\verilog\\efx_dsp48.v": "551e13efac2d55cd532097bb28bf50063848af637f62409890962216c1f5a581",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\mac8\\vectors.txt": "9f0c94cc1c24cc9afda1305a687e5f140921d334874a2e2a96c88033f27b433e",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\mac8\\synthesis\\out\\mac8.map.v": "8b2691956292efb53bff5e40f3bf72566262b095019ac59f7d66df2a3db2d7c2"
+  }
+}

@@ -1,0 +1,111 @@
+Efinity Synthesis report for project osd
+Version: 2026.1.132.4.5
+Generated at: Oct 15, 2026 20:39:44
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : threshold_osd
+
+family : Titanium
+device : Ti60F225
+project : osd
+root : threshold_osd
+binary-db : out\osd.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : area2
+num_srl : -1
+mult-decomp-retime : 0
+operator-sharing : 1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\before
+project : osd
+project-xml : D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\before\osd.xml
+root : threshold_osd
+use-logic-for-small-rom : 8192
+work-dir : work_syn
+write-efx-verilog : out\osd.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\before.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0657" : Mapping into logic memory block 'menu_rom' (8192 bits) (D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\before.v:76) because read port is not synchronous.
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 7
+Total number of FFs with enable signals: 712
++---------+------------------+
+|CE Signal|Number of FF loads|
++---------+------------------+
+|n8051    |              343 |
+|n8049    |              294 |
+|ceg_net3 |               30 |
+|n8045    |               15 |
+|de       |               12 |
+|n8026    |               11 |
+|n8037    |                7 |
++---------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 3
+Total number of FFs with set/reset signals: 713
++---------+------------------+
+|SR Signal|Number of FF loads|
++---------+------------------+
+|rst_n    |              689 |
+|n8054    |               23 |
+|n9274    |                1 |
++---------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                              FFs      SRLs      ADDs       LUTs    COMB4s      RAMs DSP/MULTs
+-----------------------------       ---      ----      ----       ----      ----      ---- ---------
+threshold_osd:threshold_osd    713(713)      0(0)  159(159) 2026(2026)      0(0)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
+ No DSP in design
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++-----+----------+----------+------------+----------------+
+|Clock|Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++-----+----------+----------+------------+----------------+
+|clk  |      713 |        0 |          0 |              0 |
++-----+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	99
+OUTPUT PORTS    : 	340
+
+EFX_ADD                 : 	159
+EFX_LUT4                : 	2026
+   1-2  Inputs          : 	276
+   3    Inputs          : 	684
+   4    Inputs          : 	1066
+EFX_FF                  : 	713
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 107s
+Elapsed synthesis time : 108s

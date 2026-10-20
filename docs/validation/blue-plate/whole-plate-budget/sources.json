@@ -1,0 +1,37 @@
+{
+  "downloaded": [
+    {
+      "file": "lprnet-paper.txt",
+      "bytes": 23651,
+      "sha256": "e2f655bbb071833800ecc870a75524b6498e489d001d5e6b0e321511ec032caf"
+    },
+    {
+      "file": "reviewed-LPRNet.py",
+      "bytes": 3527,
+      "sha256": "94a49696268ff942d92d58285ddeacab9b2ef35a4102bd73862518729e0dfc14"
+    },
+    {
+      "file": "ti60-ds-v3.7.pdf",
+      "bytes": 1183663,
+      "sha256": "ed4281a5c0261caf6b67f88c71735b2223b7923c28845936562bea759826cf76"
+    }
+  ],
+  "remote_source_reads": [
+    {
+      "url": "https://raw.githubusercontent.com/Efinix-Inc/tinyml/main/tools/tinyml_generator/tinyml_generator.py",
+      "lines": "17-107,373-415",
+      "mode": "web tool actual source read; direct download timed out"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Efinix-Inc/tinyml/main/tools/tinyml_generator/lib/resource_lib.py",
+      "lines": "12-33,102-135,154-174",
+      "mode": "web tool actual source read"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/lite/kernels/internal/reference/integer_ops/conv.h",
+      "lines": "20-120",
+      "mode": "web tool actual source read"
+    }
+  ],
+  "note": "LPRNet source/paper text copied from main review fixed material; Efinix datasheet downloaded directly; GitHub tree and raw download timeout, no cloned TinyML repo or fixed commit claimed"
+}

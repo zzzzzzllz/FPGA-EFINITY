@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "stage": "rtl",
+  "bench": "psum",
+  "stdout": "PROGRESS psum cycles=8192\nPROGRESS psum cycles=16384\nPROGRESS psum cycles=24576\nPROGRESS psum cycles=32768\nPROGRESS psum cycles=40960\nPROGRESS psum cycles=49152\nPROGRESS psum cycles=57344\nPROGRESS psum cycles=65536\nPROGRESS psum cycles=73728\nPROGRESS psum cycles=81920\nPROGRESS psum cycles=90112\nPROGRESS psum cycles=98304\nPROGRESS psum cycles=106496\nPROGRESS psum cycles=114688\nPROGRESS psum cycles=122880\nPROGRESS psum cycles=131072\nPROGRESS psum cycles=139264\nPROGRESS psum cycles=147456\nPROGRESS psum cycles=155648\nPROGRESS psum cycles=163840\nPROGRESS psum cycles=172032\nPROGRESS psum cycles=180224\nPASS psum cycles=182056 lane_states=1456448\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_psum.sv:50: $finish called at 1820566000 (1ps)\n",
+  "frozen_unchanged": true,
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\test.py": "9fdc9b3b7e227778e3ce01c8197812e6d77229ef267f1757712d60281c4488bc",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\prepare_tests.py": "28b4856129eb95bf609107be782b0208bd74dba514a4c62a391cc3ec7914f2f9",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_psum.sv": "b21f5514a1f2f8d0eb7b79c61b332752c3c3933a730d9d990c69d679c7833306",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\rtl-psum-vectors.txt": "96adb2d958194a8e50182054fc7985f9c1fd7609402356635d69b668fa47c754",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\test-inputs.json": "425ab804d9668ff850d4810364ded8364e99f188cddb1ddbe34822a72347f56f",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\delivery-freeze.json": "64c3a4f1d9c2054d58acad01e9925da5b6a30aa58d6d6b7c1b3020ec6f47bdbc",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\rtl\\q31_scalar_mac8.v": "93ad7ee9289ae1fb754f2ecf9501f212eda95833a4c5e5e22d5a746651f4e144",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\rtl\\psum_scalar_mac8.v": "e1c9eecdf67a7fddd0e6b93c4b84539fd7c9653d0ca3d9dc371a12b32a0b5a8b",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee"
+  }
+}

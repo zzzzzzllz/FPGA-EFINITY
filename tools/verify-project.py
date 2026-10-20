@@ -74,8 +74,10 @@ def verify(project, runtime=False, build_dir=None):
             match=re.search(r'^'+label+r':\s*(\d+)\s*/\s*(\d+)',place,re.M)
             if not match: raise ValueError(f'Missing resource result: {label}')
             used,total=map(int,match.groups())
-            if used>total*0.8: raise ValueError(f'Resource headroom below 20%: {label}')
-            resources[label]={'used':used,'total':total}
+            headroom=manifest.get('resource_headroom_percent',{}).get(label,20)
+            if not 0<headroom<100: raise ValueError(f'Invalid resource headroom: {label}')
+            if used>total*(1-headroom/100): raise ValueError(f'Resource headroom below {headroom}%: {label}')
+            resources[label]={'used':used,'total':total,'minimum_headroom_percent':headroom}
         result['resources']=resources
         (build_dir/'verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     return result

@@ -1,0 +1,66 @@
+[
+  {
+    "path": "docs/validation/blue-plate/final-component3-summary.json",
+    "sha256": "e45afbe4715ccbfc579b4f918f1b238d92052a5e88ffed95ed3289759ebac0b8"
+  },
+  {
+    "path": "docs/validation/blue-plate/final-grid3-summary.json",
+    "sha256": "a6b809c6d2fd714ac781ac97a744457ae033e9af8a077436ccf7a879ef3edf09"
+  },
+  {
+    "path": "docs/validation/blue-plate/final-letterbox720-summary.json",
+    "sha256": "a29ef1e4d1b0f195a06eb9caea9e9f193b00aba6d1e689cabf98937d840ee682"
+  },
+  {
+    "path": "docs/validation/blue-plate/final-local3-summary.json",
+    "sha256": "212365ca509d12e57ad75e5dc3a5f011f497f44faae51539f9c4c207ea8f8738"
+  },
+  {
+    "path": "docs/validation/blue-plate/final-native-summary.json",
+    "sha256": "2359cf8b7edd9dc70f8295e68cc71b84de9f379e7e17e76c3d557cd8f9f4cc17"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-characters-manual-audit.json",
+    "sha256": "e933d91febbfd0743d6e33eaf3acefea4fa1d270427737b4f8fb5de4fa2f5679"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-characters-results.json",
+    "sha256": "c3daa0e344e9b170c98e84767cdaf5bc93aa0cfbcf398b7ba347f97839cd6785"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-characters-summary.json",
+    "sha256": "79843a1bdc31d38e7e606c432c87f4d9cbdef48792f0debdfbdda4dc6b1a36aa"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-download-sources.json",
+    "sha256": "2efa501f51904529cb5b023532b2750463da8aac8439379bd792ecb6871bf72b"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-results.json",
+    "sha256": "72c5a4c0afce31d6ce4de570518b6d9eef218c3f57c4db7a1dad84b8d7831ef1"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-samples.json",
+    "sha256": "4d7f49952a907f9a734ba52d37e970391785cb208f3a5114db65ead9301fa20a"
+  },
+  {
+    "path": "docs/validation/blue-plate/g1-template-sources.json",
+    "sha256": "a614e77f6a075136bf24afce82e37faa9f1725c61832debbe5cf2bfe82224545"
+  },
+  {
+    "path": "tmp/blue-plate-g1/source-snapshot/baseline.py",
+    "sha256": "1c19824481ff0501ab206bf340f04a1d166adb3e04d6b59aef5db006b57ed12d"
+  },
+  {
+    "path": "tmp/blue-plate-g1/source-snapshot/diagnose_characters.py",
+    "sha256": "11402fd6d0ef476db938f8c939808e2367e13c9407b33fe354372a2209e3f058"
+  },
+  {
+    "path": "tmp/blue-plate-g1/source-snapshot/prepare_data.py",
+    "sha256": "365de2c7fe576c27ed6d77f7c00ff73317bc4be68273f6b820f0fd7d176b8106"
+  },
+  {
+    "path": "tmp/blue-plate-g1/source-snapshot/selftest.py",
+    "sha256": "9b7f37e06c6a8c4caab1a901ba0f89a529bcf65a19bd125624dfc9af8fb85d15"
+  }
+]

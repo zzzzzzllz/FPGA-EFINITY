@@ -13,7 +13,7 @@ module tb_frame_store;
  reg [31:0] capture_frame_id=0,config_epoch=0;reg [15:0] config_value=13'd2080;
  wire [63:0] algorithm_pixels;wire algorithm_valid;wire algorithm_ready;
  wire algorithm_sof,algorithm_eol,algorithm_eof;
- wire [31:0] algorithm_frame_id,algorithm_epoch;wire [15:0] algorithm_config;
+ wire [31:0] algorithm_frame_id,algorithm_epoch;wire [15:0] algorithm_config;wire algorithm_recognition;wire [14:0] recognition_live;
  wire [63:0] result_pixels;wire result_valid,result_sof,result_eof,result_ready;
  reg [3:0] command=0;reg command_toggle=0;wire command_ack;
  reg reference_mode=0,display_period=0;
@@ -155,8 +155,9 @@ module tb_frame_store;
     edge_expected=expected[31:24]>displayed_threshold;
 `endif
     if(desc[101]) begin
-     refpixel=pixel(desc[95:64],idx);
-     if(actual_pixel[23:0]!=={refpixel[31:24],expected[31:24],8'd0}) $fatal(1,"reference pixels id%d at%d got%h",desc[31:0],idx,actual_pixel);
+     refpixel=pixel(idx/W<H/2 ? desc[95:64] : desc[31:0],((idx/W)%(H/2)*2)*W+(idx%W)%(W/2)*2);
+     if((idx/W<H/2 && idx%W>=W/2) || (idx/W>=H/2 && idx%W<W/2)) refpixel=0;
+     if(actual_pixel[23:0]!==refpixel[23:0]) $fatal(1,"four-tile pixels id%d at%d got%h expected%h",desc[31:0],idx,actual_pixel,refpixel);
     end else if(actual_pixel[23:0]!==expected[23:0] || actual_pixel[31]!=edge_expected)
       $fatal(1,"display pixels id%d at%d got%h expected%h",desc[31:0],idx,actual_pixel,expected);
    end

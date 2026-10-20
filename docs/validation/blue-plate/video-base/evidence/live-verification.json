@@ -1,0 +1,61 @@
+{
+  "original_source_hashes": 237,
+  "original_source": "PASS",
+  "candidate_inputs": "PASS",
+  "mapped_primitives": {
+    "EFX_ADD": 2031,
+    "EFX_LUT4": 14282,
+    "EFX_DSP48": 70,
+    "EFX_DSP24": 15,
+    "EFX_FF": 13586,
+    "EFX_SRL8": 1154,
+    "EFX_RAM10": 105,
+    "EFX_DPRAM10": 1,
+    "EFX_GBUFCE": 1
+  },
+  "mapped_memory_dsp_blocks": [
+    106,
+    85
+  ],
+  "XLR_budget_verdict": "PASS",
+  "live_hierarchy_present": true,
+  "demo_history_hierarchies_removed": true,
+  "placed_resources": {
+    "XLRs": {
+      "used": 24090,
+      "physical_total": 60800,
+      "limit": 49248,
+      "budget_left": 25158
+    },
+    "Memory Blocks": {
+      "used": 106,
+      "physical_total": 256,
+      "limit": 204,
+      "budget_left": 98
+    },
+    "DSP Blocks": {
+      "used": 85,
+      "physical_total": 160,
+      "limit": 128,
+      "budget_left": 43
+    }
+  },
+  "timing_min_setup_hold_slack_ns": [
+    0.43,
+    0.027
+  ],
+  "clock_self_slack_ns": {
+    "core_clk": [
+      2.847,
+      0.035
+    ],
+    "i_mipi_rx_pclk": [
+      9.186,
+      0.027
+    ],
+    "hdmi_tx_slow_clk": [
+      7.782,
+      0.045
+    ]
+  }
+}

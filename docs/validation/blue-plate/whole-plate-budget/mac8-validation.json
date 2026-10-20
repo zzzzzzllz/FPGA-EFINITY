@@ -1,0 +1,36 @@
+{
+  "status": "RTL, mapped-netlist golden comparison and map PASS",
+  "cycles_each": 12938,
+  "lane_state_checks_each": 103504,
+  "coverage": {
+    "reset": 31,
+    "load": 151,
+    "stall": 978,
+    "mac_lanes": 71923,
+    "overflow_lanes": 26
+  },
+  "resources": {
+    "EFX_ADD": 264,
+    "EFX_LUT4": 282,
+    "EFX_DSP48": 8,
+    "EFX_FF": 272
+  },
+  "RAM10": 0,
+  "timing_status": "SDC supplied; map-only flow produced no placed/routed STA or Fmax. 100MHz is not verified.",
+  "source_and_test_hashes_rechecked": true,
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\build.ps1": "ba8743562ff162e8e152dafda7e10e0e392be2e91fe92718a2aa2fd06fe267de",
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\prepare_synthesis.py": "bbb6c446e628d818f813ee004bc569830a363e8e80cc8d84b6c46db756caf44e",
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\README.md": "0c44ab7dd85938f510ccc575864d00161731560b2c4c7cf69ea1be1afb9e5db5",
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\tb_mac8.sv": "7775c057e7a49ca8588f0b3b52dbe6b330ed6c51c4019a9e20d2a08831d6c79d",
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\test_mac8.py": "08f9eff07093a8ac9c310670d8dc9b43d2555a669a996685b7691b1af55e0688",
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\verify_synthesis.py": "aa90cea37a3cfbf467a89e4bd4552fd886aa4399ae30336c73c9579577f317f6",
+    "tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "tmp\\blue-plate-whole-plate-budget\\mac8\\rtl-run.log": "ba691a47aedce7478bd5dbeb90af2e6080d3b73b9ea2db0187a2db6cc8276e4d",
+    "tmp\\blue-plate-whole-plate-budget\\mac8\\mapped-run.log": "ba691a47aedce7478bd5dbeb90af2e6080d3b73b9ea2db0187a2db6cc8276e4d",
+    "tmp\\blue-plate-whole-plate-budget\\mac8\\rtl-validation.json": "2e1ced1b93f5e5885107255a0409718ccb74af8f035b16dc1b201901e8ebae31",
+    "tmp\\blue-plate-whole-plate-budget\\mac8\\mapped-validation.json": "1efc80cc088dc7988dfcbdf18b5301dbe65b8ba66b683306021681a4dba4238e",
+    "tmp\\blue-plate-whole-plate-budget\\mac8\\synthesis\\synthesis-summary.json": "de2d941e7b534bdcfeec8e8f01115042c3dbde0e4d52dc22e5eaa770f1527788",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\mac8-implementation.md": "763ccdbf80768c41ca63663b18e8c429df1addf3002f8c832700cfb850bd69f8"
+  }
+}

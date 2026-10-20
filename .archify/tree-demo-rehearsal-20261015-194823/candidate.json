@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "diagram_type": "tree",
+  "meta": {
+    "title": "第二版演示思维导图 · 按键 → 画面 → 赛题要求（草案）",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": ".archify/tree-demo-rehearsal-20261015-194823/demo-rehearsal.html"
+  },
+  "layout": {
+    "direction": "right",
+    "nodeW": 240,
+    "nodeMaxW": 430,
+    "gapX": 48,
+    "gapY": 26
+  },
+  "nodes": [
+    {
+      "id": "demo",
+      "label": "第二版 · 全赛题演示草图",
+      "sublabel": "按 0→6 组排练；现有按键方案，待你确认"
+    },
+    {
+      "id": "prepare",
+      "parent": "demo",
+      "label": "0 · 开场与按键约定",
+      "sublabel": "先加载，再演示；KEY0 不作恢复键"
+    },
+    {
+      "id": "boot",
+      "parent": "prepare",
+      "label": "0.1 · 加载第二版",
+      "sublabel": "电脑运行 load.cmd；Canny 24/12，COMPARE，中值/识别关"
+    },
+    {
+      "id": "nav",
+      "parent": "prepare",
+      "label": "0.2 · 找菜单 / 选参数",
+      "sublabel": "KEY1 短按找菜单；KEY2 减/关/前项，KEY3 加/开/后项"
+    },
+    {
+      "id": "frame_exit",
+      "parent": "prepare",
+      "label": "0.3 · 穿过 FRAME 要先取消",
+      "sublabel": "KEY2/3 选 CANCEL → KEY1；否则会执行上次动作"
+    },
+    {
+      "id": "basic",
+      "parent": "demo",
+      "label": "1 · 采集、灰度与基础边缘",
+      "sublabel": "覆盖基础 1—4；拍棋盘格或数字纸"
+    },
+    {
+      "id": "color",
+      "parent": "basic",
+      "label": "1.1 · 先看彩色原图 COLOR",
+      "sublabel": "初始 VIEW/COMPARE：KEY2×3；移动纸张看实时采集"
+    },
+    {
+      "id": "gray",
+      "parent": "basic",
+      "label": "1.2 · 再看灰度 GRAY",
+      "sublabel": "停在 VIEW/COLOR：KEY3×1；色彩消失，明暗保留"
+    },
+    {
+      "id": "sobel",
+      "parent": "basic",
+      "label": "1.3 · Sobel 分屏与全屏边缘",
+      "sublabel": "ALGORITHM：KEY2；VIEW：KEY2/3 选 COMPARE，再选 EDGE"
+    },
+    {
+      "id": "threshold",
+      "parent": "basic",
+      "label": "1.4 · 动手调阈值",
+      "sublabel": "THRESHOLD：KEY2 24→8，KEY3 8→24→40，再 KEY2 回24"
+    },
+    {
+      "id": "algorithms",
+      "parent": "demo",
+      "label": "2 · 去噪与 Canny 升级",
+      "sublabel": "覆盖高阶 1、2、4；保持同一拍摄场景"
+    },
+    {
+      "id": "median",
+      "parent": "algorithms",
+      "label": "2.1 · 中值开关对照",
+      "sublabel": "VIEW 选 DENOISE；MEDIAN：KEY3 开、KEY2 关，再 KEY3 开"
+    },
+    {
+      "id": "canny",
+      "parent": "algorithms",
+      "label": "2.2 · 同场景切换算法",
+      "sublabel": "VIEW 选 COMPARE；ALGORITHM：KEY2 Sobel → KEY3 Canny"
+    },
+    {
+      "id": "ratio",
+      "parent": "algorithms",
+      "label": "2.3 · 展示高低阈值作用",
+      "sublabel": "THRESHOLD 调高阈值；LOW RATIO 用 KEY2/3，结束选 1/2"
+    },
+    {
+      "id": "visual",
+      "parent": "demo",
+      "label": "3 · 彩色叠加与形状识别",
+      "sublabel": "覆盖高阶 5、6；准备圆形、矩形测试纸"
+    },
+    {
+      "id": "overlay",
+      "parent": "visual",
+      "label": "3.1 · 红色轮廓 OVERLAY",
+      "sublabel": "VIEW：KEY2/3 选 OVERLAY；移动物体看红边是否贴合"
+    },
+    {
+      "id": "recognition",
+      "parent": "visual",
+      "label": "3.2 · 识别圆形和矩形",
+      "sublabel": "RECOGNITION：KEY3 开 → 换形状看分类 → KEY2 关"
+    },
+    {
+      "id": "ddr",
+      "parent": "demo",
+      "label": "4 · DDR 冻结、录放与多帧",
+      "sublabel": "覆盖高阶 3；本组先关识别、选 COLOR"
+    },
+    {
+      "id": "freeze",
+      "parent": "ddr",
+      "label": "4.1 · 冻结 / 恢复现场",
+      "sublabel": "实时状态长按 KEY1 约0.8秒：冻结；再长按：恢复"
+    },
+    {
+      "id": "single",
+      "parent": "ddr",
+      "label": "4.2 · 只更新一张现场图",
+      "sublabel": "FRAME 选 STEP LIVE → KEY1；换物体后再执行一次"
+    },
+    {
+      "id": "record",
+      "parent": "ddr",
+      "label": "4.3 · 录制32帧 → 循环播放",
+      "sublabel": "FRAME：RECORD 32 → KEY1；录满暂停，再 PLAY LOOP → KEY1"
+    },
+    {
+      "id": "pause",
+      "parent": "ddr",
+      "label": "4.4 · 暂停与录像逐帧",
+      "sublabel": "FRAME：PAUSE → KEY1；再 NEXT CLIP → KEY1，每次前进一帧"
+    },
+    {
+      "id": "reference",
+      "parent": "ddr",
+      "label": "4.5 · 保存参考 → 对照现场",
+      "sublabel": "FRAME：SET REF → KEY1；LIVE → KEY1；VIEW 选 REFERENCE"
+    },
+    {
+      "id": "clear",
+      "parent": "ddr",
+      "label": "4.6 · 清参考并恢复实时",
+      "sublabel": "FRAME：CLEAR REF → KEY1；参考视图退回 COMPARE；确认 LIVE"
+    },
+    {
+      "id": "proof",
+      "parent": "demo",
+      "label": "5 · 不能只靠按键证明的要求",
+      "sublabel": "覆盖基础5、稳定性、算法硬件化与流水线"
+    },
+    {
+      "id": "metrics",
+      "parent": "proof",
+      "label": "5.1 · 分辨率、帧率和显示",
+      "sublabel": "电脑 control.cmd --samples 5；配合HDMI信息与连续录像"
+    },
+    {
+      "id": "implementation",
+      "parent": "proof",
+      "label": "5.2 · 展示 RTL / 波形 / 时序",
+      "sublabel": "说明两行缓存、3×3核、移位/DSP、无除法开方及流水线"
+    },
+    {
+      "id": "materials",
+      "parent": "proof",
+      "label": "5.3 · 提交与技术说明",
+      "sublabel": "完整RTL、约束、演示视频；说明DDR与Canny帧级处理延迟"
+    },
+    {
+      "id": "alignment",
+      "parent": "demo",
+      "label": "6 · 看图后逐轮对齐",
+      "sublabel": "全部功能保留在草图中；验收状态另行记录"
+    },
+    {
+      "id": "observations",
+      "parent": "alignment",
+      "label": "6.1 · 当前必须实拍确认",
+      "sublabel": "边缘闪动、中值效果、形状分类、帧功能与开启后的速度"
+    },
+    {
+      "id": "decisions",
+      "parent": "alignment",
+      "label": "6.2 · 待你决定的演示方式",
+      "sublabel": "现有菜单还是顺序演示键；演示时长；是否允许电脑辅助"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "菜单定位约定",
+      "items": [
+        "KEY1 短按依次：VIEW → ALGORITHM → THRESHOLD → LOW RATIO → MEDIAN → RECOGNITION → FRAME。Sobel 跳过 LOW RATIO。看底部名称定位，不盲记跨菜单次数。",
+        "在 FRAME，KEY2/KEY3 只是选择动作，KEY1 才执行并回 VIEW。动作选择会保留；仅想返回 VIEW 时先选 CANCEL。每步等待画面及状态更新后再继续。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "这一版覆盖哪些题目要求",
+      "items": [
+        "基础：稳定采集、灰度、Sobel、对比显示、RTL/约束/演示视频。高阶六项：中值、板载调阈值、DDR帧功能、Canny、彩色边缘叠加、简单形状识别。",
+        "GRAY/EDGE/COMPARE 是基础画面；DENOISE/OVERLAY/REFERENCE 分别用于去噪、彩色叠加、参考帧对比。CANCEL/LIVE/CLEAR REF 是演示后的恢复动作。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "可见效果与验收证据分开",
+      "items": [
+        "采集≥640×480；HDMI最低640×480@60Hz。当前源码目标1280×720，采集FPS、算法FPS和显示刷新率须分别验证；状态采样本身不能证明零丢帧。",
+        "局部算子是流水线；当前系统还使用DDR整帧调度，Canny滞后连接与识别分阶段执行。需给出真实吞吐/延迟和与题目全流水线要求的对应说明，不能把流畅画面称为物理零延迟。",
+        "中值效果用受控椒盐噪声测试支撑，印刷噪点纸可辅助演示但不能替代像素级验证；形状识别待当前版本实拍确认。"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "排练前提与本次边界",
+      "items": [
+        "图中初始状态来自重新运行 load.cmd。KEY0复位会回Sobel/T32/中值开，并清除录放和参考状态，不等同恢复加载参数。",
+        "这是一版按现有源码整理的演示草图，编号是排练顺序，不代表已有“一键下一步”功能。本次未修改固件，也未重新上板验收。",
+        "赛题来源为项目内 docs/reference/hardware/易灵思.pdf 第12—17页；平台见第3—4页。现有待提交要求文档仅用于对照，不冒充固定提交源码。",
+        "按键和功能已核对本地源码，逐节点依据见同目录 source-map.json；仓库无远程，未使用远程仓库绑定。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "afc2ab6f-a8a3-4d98-b514-55423008c4b5",
+  "status": "current",
+  "command": "deliver",
+  "type": "workflow",
+  "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-serial-demo-20261015-195604\\candidate.json",
+  "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-serial-demo-20261015-195604\\serial-demo.html",
+  "specification": {
+    "sha256": "8b5245b26e6469f7904bcbd0832540a5d8ae776018fd6de7465fb241c0c93c42",
+    "bytes": 10715
+  },
+  "artifact": {
+    "sha256": "34ec73cb79c46bd88a079293c66ffa7e35d52235cf2b5cb1885c8a3fce5e4eb7",
+    "bytes": 841456
+  }
+}

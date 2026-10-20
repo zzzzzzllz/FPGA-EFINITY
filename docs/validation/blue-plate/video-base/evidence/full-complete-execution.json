@@ -1,0 +1,49 @@
+{
+  "input_sha256": {
+    "tb_live_rgb.v": "70ae4a7270f869e9a3fb180e980254fce943eb8de0d3e1ac499154189f2336ef",
+    "rtl/frame_mailbox.v": "0303cc53abd4b82e1cce65a6bb7a5b53b4dcdbeaf43223dd5018732aa2e7ade5",
+    "rtl/frame_pair_fifo.v": "0bb14afc8957eaf124413d2bbc3abad2c8d5b88c9eed976953a3b652e3651ce1",
+    "rtl/frame_store.v": "2aaa5037cc3cb220dd07135d252c84ab11befe752618184d56b442c6b46ad628",
+    "rtl/frame_store_control.v": "3f5e0b41c35c77a3f4142ea9b2d1409d4f483d023fc2cb8624a62e178b5eaa96",
+    "rtl/frame_store_dma.v": "b70b6ff71c0029bc8041f321edbd6983e596aaa2cbe369d83fc8e4402bbd8377",
+    "rtl/video_rgb_passthrough.v": "f441c8a8231b950c5c8251aadf1a15e7da698d0a2f56024f3b24de0b893e8d02",
+    "rtl/frame_buffer_V4/DC_FIFO.v": "d930fed56a5c7e80733ec600f05d19923b86d0fd0b71dbb643c66d88cbe17847"
+  },
+  "commands": [
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-DFULL_SMOKE",
+      "-s",
+      "tb_frame_store",
+      "-o",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete.vvp",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\frame_store.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\frame_store_control.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\frame_store_dma.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\frame_pair_fifo.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\frame_mailbox.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\frame_buffer_V4\\DC_FIFO.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\rtl\\video_rgb_passthrough.v",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete-inputs\\tb_live_rgb.v"
+    ],
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+      "-i",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-video-base\\tests\\full-complete.vvp"
+    ]
+  ],
+  "stages": {
+    "compile": {
+      "exit_code": 0,
+      "seconds": 0.12,
+      "log_sha256": "2928a301247d367f25c2ef7e56a4a3cab77ce9c7376c8b2fe5006cbc035f3346"
+    },
+    "run": {
+      "exit_code": 0,
+      "seconds": 8383.288,
+      "log_sha256": "773e8e8a9a0d1591fc02190c54ec57bed4ec93a48d457f733b348d811dfb05e3"
+    }
+  },
+  "vvp_sha256": "12a893e396f6f76ac17a7faaa4b2aeccd864bc6bf2308d123912376e3018f42e"
+}

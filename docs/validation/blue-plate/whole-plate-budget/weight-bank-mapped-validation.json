@@ -1,0 +1,67 @@
+{
+  "exit_code": 0,
+  "stage": "mapped",
+  "cycles": 18087,
+  "lane_state_checks": 144696,
+  "coverage": {
+    "writes": 8705,
+    "reads": 8717,
+    "mac_lanes": 53652,
+    "errors": 5,
+    "stalls": 477,
+    "resets": 3,
+    "loads": 8,
+    "overflow_lanes": 8
+  },
+  "all_addresses_read": 2048,
+  "split_checks": [
+    {
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "valid_lanes": 8,
+      "result": [
+        176528,
+        -7854,
+        -292989,
+        -94293,
+        12689,
+        -170258,
+        -44647,
+        183536
+      ]
+    },
+    {
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "valid_lanes": 4,
+      "result": [
+        176528,
+        -7854,
+        -292989,
+        -94293,
+        -2108,
+        -2885,
+        -3662,
+        -4439
+      ]
+    }
+  ],
+  "stdout": "PROGRESS weight_mac8 cycles=2048\nPROGRESS weight_mac8 cycles=4096\nPROGRESS weight_mac8 cycles=6144\nPROGRESS weight_mac8 cycles=8192\nPROGRESS weight_mac8 cycles=10240\nPROGRESS weight_mac8 cycles=12288\nPROGRESS weight_mac8 cycles=14336\nPROGRESS weight_mac8 cycles=16384\nPASS weight_mac8 cycles=18087 lane_states=144696\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\tb_weight_mac8.sv:42: $finish called at 180876000 (1ps)\n",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\tb_weight_mac8.sv": "7f889bb69d21c04a580c86a75d0ae67f3fb44843d423cf156d7fa44c161f2f15",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\test_weight_mac8.py": "dc2a56404512c97beaa2a8dede9e0b74bef8ced3ba0cae35604ed42efa532016",
+    "D:\\Efinity\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+    "D:\\Efinity\\sim_models\\verilog\\efx_dsp48.v": "551e13efac2d55cd532097bb28bf50063848af637f62409890962216c1f5a581",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\weight-bank\\vectors.txt": "61c81e9e494c366b1c7b2426f6fbcd48cec500a1161257a9beada11964e37e3b",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\weight-bank\\synthesis\\out\\weight_mac8.map.v": "d8c400bcfdc08f4673c3b618fa458ee51cd926ab865ffe0fd3cd5bc2f480aceb"
+  }
+}

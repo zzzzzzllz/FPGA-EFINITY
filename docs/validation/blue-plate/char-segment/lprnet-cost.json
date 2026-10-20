@@ -1,0 +1,1999 @@
+{
+  "source68": {
+    "trainable_parameters": 446976,
+    "conv_weights": 443344,
+    "folded_biases": 1576,
+    "conv_macs": 144411264,
+    "output": [
+      1,
+      68,
+      18
+    ],
+    "largest_layer_output": 230400,
+    "full_retained_context_elements": 567584,
+    "max_materialized_input_output_elements": 288000,
+    "core_materialized_rw_bytes_int8": 3060688,
+    "layers": [
+      {
+        "name": "backbone.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          3,
+          24,
+          94
+        ],
+        "output": [
+          1,
+          64,
+          22,
+          92
+        ],
+        "output_elements": 129536,
+        "weights": 1728,
+        "biases": 64,
+        "k": 27,
+        "macs": 3497472,
+        "dots": 2024,
+        "channels": 64
+      },
+      {
+        "name": "backbone.3",
+        "type": "MaxPool3d",
+        "input": [
+          1,
+          64,
+          22,
+          92
+        ],
+        "output": [
+          1,
+          64,
+          20,
+          90
+        ],
+        "output_elements": 115200
+      },
+      {
+        "name": "backbone.4.block.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output_elements": 57600,
+        "weights": 2048,
+        "biases": 32,
+        "k": 64,
+        "macs": 3686400,
+        "dots": 1800,
+        "channels": 32
+      },
+      {
+        "name": "backbone.4.block.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output_elements": 57600,
+        "weights": 3072,
+        "biases": 32,
+        "k": 96,
+        "macs": 5529600,
+        "dots": 1800,
+        "channels": 32
+      },
+      {
+        "name": "backbone.4.block.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output_elements": 57600,
+        "weights": 3072,
+        "biases": 32,
+        "k": 96,
+        "macs": 5529600,
+        "dots": 1800,
+        "channels": 32
+      },
+      {
+        "name": "backbone.4.block.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          128,
+          20,
+          90
+        ],
+        "output_elements": 230400,
+        "weights": 4096,
+        "biases": 128,
+        "k": 32,
+        "macs": 7372800,
+        "dots": 1800,
+        "channels": 128
+      },
+      {
+        "name": "backbone.7",
+        "type": "MaxPool3d",
+        "input": [
+          1,
+          128,
+          20,
+          90
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688
+      },
+      {
+        "name": "backbone.8.block.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688,
+        "weights": 4096,
+        "biases": 64,
+        "k": 64,
+        "macs": 3244032,
+        "dots": 792,
+        "channels": 64
+      },
+      {
+        "name": "backbone.8.block.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688,
+        "weights": 12288,
+        "biases": 64,
+        "k": 192,
+        "macs": 9732096,
+        "dots": 792,
+        "channels": 64
+      },
+      {
+        "name": "backbone.8.block.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688,
+        "weights": 12288,
+        "biases": 64,
+        "k": 192,
+        "macs": 9732096,
+        "dots": 792,
+        "channels": 64
+      },
+      {
+        "name": "backbone.8.block.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "output_elements": 202752,
+        "weights": 16384,
+        "biases": 256,
+        "k": 64,
+        "macs": 12976128,
+        "dots": 792,
+        "channels": 256
+      },
+      {
+        "name": "backbone.11.block.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688,
+        "weights": 16384,
+        "biases": 64,
+        "k": 256,
+        "macs": 12976128,
+        "dots": 792,
+        "channels": 64
+      },
+      {
+        "name": "backbone.11.block.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688,
+        "weights": 12288,
+        "biases": 64,
+        "k": 192,
+        "macs": 9732096,
+        "dots": 792,
+        "channels": 64
+      },
+      {
+        "name": "backbone.11.block.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output_elements": 50688,
+        "weights": 12288,
+        "biases": 64,
+        "k": 192,
+        "macs": 9732096,
+        "dots": 792,
+        "channels": 64
+      },
+      {
+        "name": "backbone.11.block.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "output_elements": 202752,
+        "weights": 16384,
+        "biases": 256,
+        "k": 64,
+        "macs": 12976128,
+        "dots": 792,
+        "channels": 256
+      },
+      {
+        "name": "backbone.14",
+        "type": "MaxPool3d",
+        "input": [
+          1,
+          256,
+          18,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          16,
+          21
+        ],
+        "output_elements": 21504
+      },
+      {
+        "name": "backbone.16",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          16,
+          21
+        ],
+        "output": [
+          1,
+          256,
+          16,
+          18
+        ],
+        "output_elements": 73728,
+        "weights": 65536,
+        "biases": 256,
+        "k": 256,
+        "macs": 18874368,
+        "dots": 288,
+        "channels": 256
+      },
+      {
+        "name": "backbone.20",
+        "type": "Conv2d",
+        "input": [
+          1,
+          256,
+          16,
+          18
+        ],
+        "output": [
+          1,
+          68,
+          4,
+          18
+        ],
+        "output_elements": 4896,
+        "weights": 226304,
+        "biases": 68,
+        "k": 3328,
+        "macs": 16293888,
+        "dots": 72,
+        "channels": 68
+      },
+      {
+        "name": "container.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          516,
+          4,
+          18
+        ],
+        "output": [
+          1,
+          68,
+          4,
+          18
+        ],
+        "output_elements": 4896,
+        "weights": 35088,
+        "biases": 68,
+        "k": 516,
+        "macs": 2526336,
+        "dots": 72,
+        "channels": 68
+      }
+    ],
+    "lanes": {
+      "8": {
+        "dot_product_cycles": 18189792,
+        "ideal_dot_ms_100mhz": 181.89792,
+        "height_commuted_dot_cycles": 17939016,
+        "padded_weight_bytes": 458720,
+        "banked_weight_ram10": 448,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "16": {
+        "dot_product_cycles": 9233280,
+        "ideal_dot_ms_100mhz": 92.3328,
+        "height_commuted_dot_cycles": 9093960,
+        "padded_weight_bytes": 489472,
+        "banked_weight_ram10": 480,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "32": {
+        "dot_product_cycles": 4755024,
+        "ideal_dot_ms_100mhz": 47.55024,
+        "height_commuted_dot_cycles": 4671432,
+        "padded_weight_bytes": 550976,
+        "banked_weight_ram10": 544,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      }
+    }
+  },
+  "gray_c8": {
+    "trainable_parameters": 17960,
+    "conv_weights": 17276,
+    "folded_biases": 312,
+    "conv_macs": 2028256,
+    "output": [
+      1,
+      66,
+      18
+    ],
+    "largest_layer_output": 16192,
+    "full_retained_context_elements": 46608,
+    "max_materialized_input_output_elements": 23392,
+    "core_materialized_rw_bytes_int8": 211136,
+    "layers": [
+      {
+        "name": "backbone.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          1,
+          24,
+          94
+        ],
+        "output": [
+          1,
+          8,
+          22,
+          92
+        ],
+        "output_elements": 16192,
+        "weights": 72,
+        "biases": 8,
+        "k": 9,
+        "macs": 145728,
+        "dots": 2024,
+        "channels": 8
+      },
+      {
+        "name": "backbone.3",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          8,
+          22,
+          92
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output_elements": 7200
+      },
+      {
+        "name": "backbone.4.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          4,
+          10,
+          90
+        ],
+        "output_elements": 3600,
+        "weights": 32,
+        "biases": 4,
+        "k": 8,
+        "macs": 28800,
+        "dots": 900,
+        "channels": 4
+      },
+      {
+        "name": "backbone.4.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          4,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          4,
+          10,
+          90
+        ],
+        "output_elements": 3600,
+        "weights": 48,
+        "biases": 4,
+        "k": 12,
+        "macs": 43200,
+        "dots": 900,
+        "channels": 4
+      },
+      {
+        "name": "backbone.4.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          4,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          4,
+          10,
+          90
+        ],
+        "output_elements": 3600,
+        "weights": 48,
+        "biases": 4,
+        "k": 12,
+        "macs": 43200,
+        "dots": 900,
+        "channels": 4
+      },
+      {
+        "name": "backbone.4.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          4,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          16,
+          10,
+          90
+        ],
+        "output_elements": 14400,
+        "weights": 64,
+        "biases": 16,
+        "k": 4,
+        "macs": 57600,
+        "dots": 900,
+        "channels": 16
+      },
+      {
+        "name": "backbone.7",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          16,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816
+      },
+      {
+        "name": "backbone.8.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816,
+        "weights": 64,
+        "biases": 8,
+        "k": 8,
+        "macs": 22528,
+        "dots": 352,
+        "channels": 8
+      },
+      {
+        "name": "backbone.8.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 67584,
+        "dots": 352,
+        "channels": 8
+      },
+      {
+        "name": "backbone.8.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 67584,
+        "dots": 352,
+        "channels": 8
+      },
+      {
+        "name": "backbone.8.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          32,
+          8,
+          44
+        ],
+        "output_elements": 11264,
+        "weights": 256,
+        "biases": 32,
+        "k": 8,
+        "macs": 90112,
+        "dots": 352,
+        "channels": 32
+      },
+      {
+        "name": "backbone.11.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816,
+        "weights": 256,
+        "biases": 8,
+        "k": 32,
+        "macs": 90112,
+        "dots": 352,
+        "channels": 8
+      },
+      {
+        "name": "backbone.11.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 67584,
+        "dots": 352,
+        "channels": 8
+      },
+      {
+        "name": "backbone.11.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output_elements": 2816,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 67584,
+        "dots": 352,
+        "channels": 8
+      },
+      {
+        "name": "backbone.11.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          32,
+          8,
+          44
+        ],
+        "output_elements": 11264,
+        "weights": 256,
+        "biases": 32,
+        "k": 8,
+        "macs": 90112,
+        "dots": 352,
+        "channels": 32
+      },
+      {
+        "name": "backbone.14",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          32,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          8,
+          6,
+          21
+        ],
+        "output_elements": 1008
+      },
+      {
+        "name": "backbone.16",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          6,
+          21
+        ],
+        "output": [
+          1,
+          32,
+          6,
+          18
+        ],
+        "output_elements": 3456,
+        "weights": 1024,
+        "biases": 32,
+        "k": 32,
+        "macs": 110592,
+        "dots": 108,
+        "channels": 32
+      },
+      {
+        "name": "backbone.20",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          6,
+          18
+        ],
+        "output": [
+          1,
+          66,
+          4,
+          18
+        ],
+        "output_elements": 4752,
+        "weights": 6336,
+        "biases": 66,
+        "k": 96,
+        "macs": 456192,
+        "dots": 72,
+        "channels": 66
+      },
+      {
+        "name": "container",
+        "type": "Conv2d",
+        "input": [
+          1,
+          122,
+          4,
+          18
+        ],
+        "output": [
+          1,
+          66,
+          4,
+          18
+        ],
+        "output_elements": 4752,
+        "weights": 8052,
+        "biases": 66,
+        "k": 122,
+        "macs": 579744,
+        "dots": 72,
+        "channels": 66
+      }
+    ],
+    "lanes": {
+      "8": {
+        "dot_product_cycles": 279704,
+        "ideal_dot_ms_100mhz": 2.79704,
+        "height_commuted_dot_cycles": 220412,
+        "padded_weight_bytes": 18712,
+        "banked_weight_ram10": 20,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "16": {
+        "dot_product_cycles": 195144,
+        "ideal_dot_ms_100mhz": 1.95144,
+        "height_commuted_dot_cycles": 162204,
+        "padded_weight_bytes": 21872,
+        "banked_weight_ram10": 24,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "32": {
+        "dot_product_cycles": 154664,
+        "ideal_dot_ms_100mhz": 1.54664,
+        "height_commuted_dot_cycles": 134900,
+        "padded_weight_bytes": 28256,
+        "banked_weight_ram10": 32,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      }
+    }
+  },
+  "gray_c16": {
+    "trainable_parameters": 36932,
+    "conv_weights": 35828,
+    "folded_biases": 492,
+    "conv_macs": 5436064,
+    "output": [
+      1,
+      66,
+      18
+    ],
+    "largest_layer_output": 32384,
+    "full_retained_context_elements": 88464,
+    "max_materialized_input_output_elements": 46784,
+    "core_materialized_rw_bytes_int8": 405760,
+    "layers": [
+      {
+        "name": "backbone.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          1,
+          24,
+          94
+        ],
+        "output": [
+          1,
+          16,
+          22,
+          92
+        ],
+        "output_elements": 32384,
+        "weights": 144,
+        "biases": 16,
+        "k": 9,
+        "macs": 291456,
+        "dots": 2024,
+        "channels": 16
+      },
+      {
+        "name": "backbone.3",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          16,
+          22,
+          92
+        ],
+        "output": [
+          1,
+          16,
+          10,
+          90
+        ],
+        "output_elements": 14400
+      },
+      {
+        "name": "backbone.4.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output_elements": 7200,
+        "weights": 128,
+        "biases": 8,
+        "k": 16,
+        "macs": 115200,
+        "dots": 900,
+        "channels": 8
+      },
+      {
+        "name": "backbone.4.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output_elements": 7200,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 172800,
+        "dots": 900,
+        "channels": 8
+      },
+      {
+        "name": "backbone.4.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output_elements": 7200,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 172800,
+        "dots": 900,
+        "channels": 8
+      },
+      {
+        "name": "backbone.4.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          32,
+          10,
+          90
+        ],
+        "output_elements": 28800,
+        "weights": 256,
+        "biases": 32,
+        "k": 8,
+        "macs": 230400,
+        "dots": 900,
+        "channels": 32
+      },
+      {
+        "name": "backbone.7",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          32,
+          10,
+          90
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632
+      },
+      {
+        "name": "backbone.8.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632,
+        "weights": 256,
+        "biases": 16,
+        "k": 16,
+        "macs": 90112,
+        "dots": 352,
+        "channels": 16
+      },
+      {
+        "name": "backbone.8.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632,
+        "weights": 768,
+        "biases": 16,
+        "k": 48,
+        "macs": 270336,
+        "dots": 352,
+        "channels": 16
+      },
+      {
+        "name": "backbone.8.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632,
+        "weights": 768,
+        "biases": 16,
+        "k": 48,
+        "macs": 270336,
+        "dots": 352,
+        "channels": 16
+      },
+      {
+        "name": "backbone.8.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          8,
+          44
+        ],
+        "output_elements": 22528,
+        "weights": 1024,
+        "biases": 64,
+        "k": 16,
+        "macs": 360448,
+        "dots": 352,
+        "channels": 64
+      },
+      {
+        "name": "backbone.11.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632,
+        "weights": 1024,
+        "biases": 16,
+        "k": 64,
+        "macs": 360448,
+        "dots": 352,
+        "channels": 16
+      },
+      {
+        "name": "backbone.11.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632,
+        "weights": 768,
+        "biases": 16,
+        "k": 48,
+        "macs": 270336,
+        "dots": 352,
+        "channels": 16
+      },
+      {
+        "name": "backbone.11.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output_elements": 5632,
+        "weights": 768,
+        "biases": 16,
+        "k": 48,
+        "macs": 270336,
+        "dots": 352,
+        "channels": 16
+      },
+      {
+        "name": "backbone.11.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          64,
+          8,
+          44
+        ],
+        "output_elements": 22528,
+        "weights": 1024,
+        "biases": 64,
+        "k": 16,
+        "macs": 360448,
+        "dots": 352,
+        "channels": 64
+      },
+      {
+        "name": "backbone.14",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          64,
+          8,
+          44
+        ],
+        "output": [
+          1,
+          16,
+          6,
+          21
+        ],
+        "output_elements": 2016
+      },
+      {
+        "name": "backbone.16",
+        "type": "Conv2d",
+        "input": [
+          1,
+          16,
+          6,
+          21
+        ],
+        "output": [
+          1,
+          64,
+          6,
+          18
+        ],
+        "output_elements": 6912,
+        "weights": 4096,
+        "biases": 64,
+        "k": 64,
+        "macs": 442368,
+        "dots": 108,
+        "channels": 64
+      },
+      {
+        "name": "backbone.20",
+        "type": "Conv2d",
+        "input": [
+          1,
+          64,
+          6,
+          18
+        ],
+        "output": [
+          1,
+          66,
+          4,
+          18
+        ],
+        "output_elements": 4752,
+        "weights": 12672,
+        "biases": 66,
+        "k": 192,
+        "macs": 912384,
+        "dots": 72,
+        "channels": 66
+      },
+      {
+        "name": "container",
+        "type": "Conv2d",
+        "input": [
+          1,
+          178,
+          4,
+          18
+        ],
+        "output": [
+          1,
+          66,
+          4,
+          18
+        ],
+        "output_elements": 4752,
+        "weights": 11748,
+        "biases": 66,
+        "k": 178,
+        "macs": 845856,
+        "dots": 72,
+        "channels": 66
+      }
+    ],
+    "lanes": {
+      "8": {
+        "dot_product_cycles": 699488,
+        "ideal_dot_ms_100mhz": 6.99488,
+        "height_commuted_dot_cycles": 612980,
+        "padded_weight_bytes": 38048,
+        "banked_weight_ram10": 40,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "16": {
+        "dot_product_cycles": 391864,
+        "ideal_dot_ms_100mhz": 3.91864,
+        "height_commuted_dot_cycles": 343804,
+        "padded_weight_bytes": 41520,
+        "banked_weight_ram10": 48,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "32": {
+        "dot_product_cycles": 295032,
+        "ideal_dot_ms_100mhz": 2.95032,
+        "height_commuted_dot_cycles": 266196,
+        "padded_weight_bytes": 52960,
+        "banked_weight_ram10": 64,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      }
+    }
+  },
+  "gray_c8_native": {
+    "trainable_parameters": 13736,
+    "conv_weights": 13052,
+    "folded_biases": 312,
+    "conv_macs": 3980560,
+    "output": [
+      1,
+      66,
+      35
+    ],
+    "largest_layer_output": 58144,
+    "full_retained_context_elements": 146936,
+    "max_materialized_input_output_elements": 85600,
+    "core_materialized_rw_bytes_int8": 602824,
+    "layers": [
+      {
+        "name": "backbone.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          1,
+          48,
+          160
+        ],
+        "output": [
+          1,
+          8,
+          46,
+          158
+        ],
+        "output_elements": 58144,
+        "weights": 72,
+        "biases": 8,
+        "k": 9,
+        "macs": 523296,
+        "dots": 7268,
+        "channels": 8
+      },
+      {
+        "name": "backbone.3",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          8,
+          46,
+          158
+        ],
+        "output": [
+          1,
+          8,
+          22,
+          156
+        ],
+        "output_elements": 27456
+      },
+      {
+        "name": "backbone.4.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          22,
+          156
+        ],
+        "output": [
+          1,
+          4,
+          22,
+          156
+        ],
+        "output_elements": 13728,
+        "weights": 32,
+        "biases": 4,
+        "k": 8,
+        "macs": 109824,
+        "dots": 3432,
+        "channels": 4
+      },
+      {
+        "name": "backbone.4.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          4,
+          22,
+          156
+        ],
+        "output": [
+          1,
+          4,
+          22,
+          156
+        ],
+        "output_elements": 13728,
+        "weights": 48,
+        "biases": 4,
+        "k": 12,
+        "macs": 164736,
+        "dots": 3432,
+        "channels": 4
+      },
+      {
+        "name": "backbone.4.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          4,
+          22,
+          156
+        ],
+        "output": [
+          1,
+          4,
+          22,
+          156
+        ],
+        "output_elements": 13728,
+        "weights": 48,
+        "biases": 4,
+        "k": 12,
+        "macs": 164736,
+        "dots": 3432,
+        "channels": 4
+      },
+      {
+        "name": "backbone.4.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          4,
+          22,
+          156
+        ],
+        "output": [
+          1,
+          16,
+          22,
+          156
+        ],
+        "output_elements": 54912,
+        "weights": 64,
+        "biases": 16,
+        "k": 4,
+        "macs": 219648,
+        "dots": 3432,
+        "channels": 16
+      },
+      {
+        "name": "backbone.7",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          16,
+          22,
+          156
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160
+      },
+      {
+        "name": "backbone.8.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160,
+        "weights": 64,
+        "biases": 8,
+        "k": 8,
+        "macs": 49280,
+        "dots": 770,
+        "channels": 8
+      },
+      {
+        "name": "backbone.8.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 147840,
+        "dots": 770,
+        "channels": 8
+      },
+      {
+        "name": "backbone.8.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 147840,
+        "dots": 770,
+        "channels": 8
+      },
+      {
+        "name": "backbone.8.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          32,
+          10,
+          77
+        ],
+        "output_elements": 24640,
+        "weights": 256,
+        "biases": 32,
+        "k": 8,
+        "macs": 197120,
+        "dots": 770,
+        "channels": 32
+      },
+      {
+        "name": "backbone.11.ops.0",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160,
+        "weights": 256,
+        "biases": 8,
+        "k": 32,
+        "macs": 197120,
+        "dots": 770,
+        "channels": 8
+      },
+      {
+        "name": "backbone.11.ops.2",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 147840,
+        "dots": 770,
+        "channels": 8
+      },
+      {
+        "name": "backbone.11.ops.4",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output_elements": 6160,
+        "weights": 192,
+        "biases": 8,
+        "k": 24,
+        "macs": 147840,
+        "dots": 770,
+        "channels": 8
+      },
+      {
+        "name": "backbone.11.ops.6",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          32,
+          10,
+          77
+        ],
+        "output_elements": 24640,
+        "weights": 256,
+        "biases": 32,
+        "k": 8,
+        "macs": 197120,
+        "dots": 770,
+        "channels": 32
+      },
+      {
+        "name": "backbone.14",
+        "type": "ChannelSpatialPool",
+        "input": [
+          1,
+          32,
+          10,
+          77
+        ],
+        "output": [
+          1,
+          8,
+          4,
+          38
+        ],
+        "output_elements": 1216
+      },
+      {
+        "name": "backbone.16",
+        "type": "Conv2d",
+        "input": [
+          1,
+          8,
+          4,
+          38
+        ],
+        "output": [
+          1,
+          32,
+          4,
+          35
+        ],
+        "output_elements": 4480,
+        "weights": 1024,
+        "biases": 32,
+        "k": 32,
+        "macs": 143360,
+        "dots": 140,
+        "channels": 32
+      },
+      {
+        "name": "backbone.20",
+        "type": "Conv2d",
+        "input": [
+          1,
+          32,
+          4,
+          35
+        ],
+        "output": [
+          1,
+          66,
+          4,
+          35
+        ],
+        "output_elements": 9240,
+        "weights": 2112,
+        "biases": 66,
+        "k": 32,
+        "macs": 295680,
+        "dots": 140,
+        "channels": 66
+      },
+      {
+        "name": "container",
+        "type": "Conv2d",
+        "input": [
+          1,
+          122,
+          4,
+          35
+        ],
+        "output": [
+          1,
+          66,
+          4,
+          35
+        ],
+        "output_elements": 9240,
+        "weights": 8052,
+        "biases": 66,
+        "k": 122,
+        "macs": 1127280,
+        "dots": 140,
+        "channels": 66
+      }
+    ],
+    "lanes": {
+      "8": {
+        "dot_product_cycles": 568652,
+        "ideal_dot_ms_100mhz": 5.68652,
+        "height_commuted_dot_cycles": 453362,
+        "padded_weight_bytes": 14104,
+        "banked_weight_ram10": 16,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "16": {
+        "dot_product_cycles": 435084,
+        "ideal_dot_ms_100mhz": 4.35084,
+        "height_commuted_dot_cycles": 371034,
+        "padded_weight_bytes": 16752,
+        "banked_weight_ram10": 24,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      },
+      "32": {
+        "dot_product_cycles": 375164,
+        "ideal_dot_ms_100mhz": 3.75164,
+        "height_commuted_dot_cycles": 336734,
+        "padded_weight_bytes": 22112,
+        "banked_weight_ram10": 32,
+        "assumption": "Each 16-bit ROM bank serves two 8-bit lanes; 512 words per RAM10; pad output channels to lane count; one input broadcast and one MAC/lane/cycle, no stalls. This is a schedule lower bound, not throughput."
+      }
+    }
+  },
+  "checks": {
+    "channel_decimation": [
+      {
+        "batch": 1,
+        "channel_stride": 1,
+        "output": [
+          1,
+          32,
+          6,
+          20
+        ]
+      },
+      {
+        "batch": 1,
+        "channel_stride": 2,
+        "output": [
+          1,
+          16,
+          6,
+          10
+        ]
+      },
+      {
+        "batch": 1,
+        "channel_stride": 4,
+        "output": [
+          1,
+          8,
+          6,
+          10
+        ]
+      },
+      {
+        "batch": 2,
+        "channel_stride": 1,
+        "output": [
+          2,
+          32,
+          6,
+          20
+        ]
+      },
+      {
+        "batch": 2,
+        "channel_stride": 2,
+        "output": [
+          2,
+          16,
+          6,
+          10
+        ]
+      },
+      {
+        "batch": 2,
+        "channel_stride": 4,
+        "output": [
+          2,
+          8,
+          6,
+          10
+        ]
+      }
+    ],
+    "naive_reduced_patch_error": "Calculated padded input size per channel: (1 x 7). Kernel size: (13 x 1). Kernel size can't be greater than actual input size",
+    "context_reorder_float64_max_abs_error": 3.552713678800501e-14,
+    "random_inputs": 3,
+    "minimum_branch_energy": 0.1455886400794766,
+    "quantized_equivalence": false,
+    "training_run": false,
+    "ctc_repeated_label_gradient_finite": true,
+    "optimizer_steps": 0,
+    "parameter_values_unchanged": true,
+    "candidate_eval_batch_independence_error": 3.814697265625e-06
+  },
+  "student_classes": [
+    "\u7696",
+    "\u6caa",
+    "\u6d25",
+    "\u6e1d",
+    "\u5180",
+    "\u664b",
+    "\u8499",
+    "\u8fbd",
+    "\u5409",
+    "\u9ed1",
+    "\u82cf",
+    "\u6d59",
+    "\u4eac",
+    "\u95fd",
+    "\u8d63",
+    "\u9c81",
+    "\u8c6b",
+    "\u9102",
+    "\u6e58",
+    "\u7ca4",
+    "\u6842",
+    "\u743c",
+    "\u5ddd",
+    "\u8d35",
+    "\u4e91",
+    "\u85cf",
+    "\u9655",
+    "\u7518",
+    "\u9752",
+    "\u5b81",
+    "\u65b0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "<blank>"
+  ],
+  "source_sha256": {
+    "tmp\\blue-plate-review\\mature-research\\lprnet\\model\\LPRNet.py": "94a49696268ff942d92d58285ddeacab9b2ef35a4102bd73862518729e0dfc14",
+    "tmp\\blue-plate-review\\mature-research\\lprnet\\weights\\Final_LPRNet_model.pth": "d1ca22ca7a251a90702a166c8ad8ce7f05acb39f5ef8055139a33d462716d1ad",
+    "tmp\\blue-plate-review\\mature-research\\lprnet-paper.pdf": "c34985175f7bc71c7425708979b05ab4e38e93f89733220c768f527ca9c07436",
+    "tools\\blue_plate\\char_model\\candidate\\interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da",
+    "tools\\blue_plate\\char_segment\\lprnet_cost.py": "48d21ac865bfef2561ff505f25812c3da34251b31ff7a497a937e89f29f582e4"
+  }
+}

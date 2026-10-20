@@ -1,0 +1,514 @@
+{
+  "repositoryRoot": "D:/Desktop_New/EfinityNEW",
+  "revision": "538c735cdd7f46c325234601d075e3b3c7faf7e1",
+  "origin": null,
+  "verification": "Local source traced manually. Archify repository binding requires an origin; this local repository has none.",
+  "nodes": [
+    {
+      "id": "demo",
+      "label": "第二版 · 全赛题演示草图",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/load.cmd",
+          "line": 5,
+          "end_line": 11
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "label": "0 · 开场与按键约定",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/load.cmd",
+          "line": 5,
+          "end_line": 11
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "boot",
+      "label": "0.1 · 加载第二版",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/load.cmd",
+          "line": 5,
+          "end_line": 11
+        }
+      ]
+    },
+    {
+      "id": "nav",
+      "label": "0.2 · 找菜单 / 选参数",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/threshold_control.v",
+          "line": 19,
+          "end_line": 57
+        }
+      ]
+    },
+    {
+      "id": "frame_exit",
+      "label": "0.3 · 穿过 FRAME 要先取消",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "id": "basic",
+      "label": "1 · 采集、灰度与基础边缘",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "color",
+      "label": "1.1 · 先看彩色原图 COLOR",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "gray",
+      "label": "1.2 · 再看灰度 GRAY",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/rgb_to_gray.v",
+          "line": 15,
+          "end_line": 38
+        }
+      ]
+    },
+    {
+      "id": "sobel",
+      "label": "1.3 · Sobel 分屏与全屏边缘",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/sobel_pair.v",
+          "line": 62,
+          "end_line": 97
+        }
+      ]
+    },
+    {
+      "id": "threshold",
+      "label": "1.4 · 动手调阈值",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/threshold_control.v",
+          "line": 19,
+          "end_line": 57
+        }
+      ]
+    },
+    {
+      "id": "algorithms",
+      "label": "2 · 去噪与 Canny 升级",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 21,
+          "end_line": 60
+        }
+      ]
+    },
+    {
+      "id": "median",
+      "label": "2.1 · 中值开关对照",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 21,
+          "end_line": 60
+        }
+      ]
+    },
+    {
+      "id": "canny",
+      "label": "2.2 · 同场景切换算法",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 21,
+          "end_line": 60
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 75,
+          "end_line": 97
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "label": "2.3 · 展示高低阈值作用",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/threshold_control.v",
+          "line": 19,
+          "end_line": 57
+        }
+      ]
+    },
+    {
+      "id": "visual",
+      "label": "3 · 彩色叠加与形状识别",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 65,
+          "end_line": 83
+        }
+      ]
+    },
+    {
+      "id": "overlay",
+      "label": "3.1 · 红色轮廓 OVERLAY",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 45,
+          "end_line": 62
+        }
+      ]
+    },
+    {
+      "id": "recognition",
+      "label": "3.2 · 识别圆形和矩形",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 65,
+          "end_line": 83
+        }
+      ]
+    },
+    {
+      "id": "ddr",
+      "label": "4 · DDR 冻结、录放与多帧",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        }
+      ]
+    },
+    {
+      "id": "freeze",
+      "label": "4.1 · 冻结 / 恢复现场",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "single",
+      "label": "4.2 · 只更新一张现场图",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "label": "4.3 · 录制32帧 → 循环播放",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "pause",
+      "label": "4.4 · 暂停与录像逐帧",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "reference",
+      "label": "4.5 · 保存参考 → 对照现场",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "clear",
+      "label": "4.6 · 清参考并恢复实时",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 37,
+          "end_line": 49
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "proof",
+      "label": "5 · 不能只靠按键证明的要求",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/sobel_pair.v",
+          "line": 21,
+          "end_line": 75
+        },
+        {
+          "path": "coding/edge-quality-30fps/control.py",
+          "line": 199,
+          "end_line": 204
+        }
+      ]
+    },
+    {
+      "id": "metrics",
+      "label": "5.1 · 分辨率、帧率和显示",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/control.py",
+          "line": 199,
+          "end_line": 204
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 256,
+          "end_line": 264
+        }
+      ]
+    },
+    {
+      "id": "implementation",
+      "label": "5.2 · 展示 RTL / 波形 / 时序",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/sobel_pair.v",
+          "line": 21,
+          "end_line": 97
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/rgb_to_gray.v",
+          "line": 15,
+          "end_line": 21
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 21,
+          "end_line": 60
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "label": "5.3 · 提交与技术说明",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-quality-30fps.md",
+          "line": 1,
+          "end_line": 25
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 65,
+          "end_line": 97
+        }
+      ]
+    },
+    {
+      "id": "alignment",
+      "label": "6 · 看图后逐轮对齐",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-quality-30fps.md",
+          "line": 1,
+          "end_line": 25
+        }
+      ]
+    },
+    {
+      "id": "observations",
+      "label": "6.1 · 当前必须实拍确认",
+      "sources": [
+        {
+          "path": "docs/for-reader/versions/edge-quality-30fps.md",
+          "line": 7,
+          "end_line": 13
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "label": "6.2 · 待你决定的演示方式",
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_ui.v",
+          "line": 53,
+          "end_line": 94
+        },
+        {
+          "path": "coding/edge-quality-30fps/load.cmd",
+          "line": 5,
+          "end_line": 11
+        }
+      ]
+    }
+  ]
+}

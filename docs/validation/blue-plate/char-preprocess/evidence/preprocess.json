@@ -1,0 +1,1900 @@
+{
+  "compile_seconds": 0.053,
+  "run_seconds": 28.741,
+  "end_to_end": false,
+  "stalls": false,
+  "metrics": [
+    {
+      "case": 0,
+      "error": 0,
+      "preprocess_cycles": 10873,
+      "total_cycles": 10873
+    },
+    {
+      "case": 1,
+      "error": 0,
+      "preprocess_cycles": 10976,
+      "total_cycles": 10976
+    },
+    {
+      "case": 2,
+      "error": 0,
+      "preprocess_cycles": 10898,
+      "total_cycles": 10898
+    },
+    {
+      "case": 3,
+      "error": 0,
+      "preprocess_cycles": 10772,
+      "total_cycles": 10772
+    },
+    {
+      "case": 4,
+      "error": 0,
+      "preprocess_cycles": 10787,
+      "total_cycles": 10787
+    },
+    {
+      "case": 5,
+      "error": 0,
+      "preprocess_cycles": 10667,
+      "total_cycles": 10667
+    },
+    {
+      "case": 6,
+      "error": 0,
+      "preprocess_cycles": 10667,
+      "total_cycles": 10667
+    },
+    {
+      "case": 7,
+      "error": 0,
+      "preprocess_cycles": 10690,
+      "total_cycles": 10690
+    },
+    {
+      "case": 8,
+      "error": 0,
+      "preprocess_cycles": 10634,
+      "total_cycles": 10634
+    },
+    {
+      "case": 9,
+      "error": 0,
+      "preprocess_cycles": 10634,
+      "total_cycles": 10634
+    },
+    {
+      "case": 10,
+      "error": 0,
+      "preprocess_cycles": 10667,
+      "total_cycles": 10667
+    },
+    {
+      "case": 11,
+      "error": 0,
+      "preprocess_cycles": 10634,
+      "total_cycles": 10634
+    },
+    {
+      "case": 12,
+      "error": 0,
+      "preprocess_cycles": 10675,
+      "total_cycles": 10675
+    },
+    {
+      "case": 13,
+      "error": 0,
+      "preprocess_cycles": 10675,
+      "total_cycles": 10675
+    },
+    {
+      "case": 14,
+      "error": 0,
+      "preprocess_cycles": 10748,
+      "total_cycles": 10748
+    },
+    {
+      "case": 15,
+      "error": 0,
+      "preprocess_cycles": 10768,
+      "total_cycles": 10768
+    },
+    {
+      "case": 16,
+      "error": 0,
+      "preprocess_cycles": 10951,
+      "total_cycles": 10951
+    },
+    {
+      "case": 17,
+      "error": 0,
+      "preprocess_cycles": 10979,
+      "total_cycles": 10979
+    },
+    {
+      "case": 18,
+      "error": 0,
+      "preprocess_cycles": 10979,
+      "total_cycles": 10979
+    },
+    {
+      "case": 19,
+      "error": 0,
+      "preprocess_cycles": 10873,
+      "total_cycles": 10873
+    },
+    {
+      "case": 20,
+      "error": 0,
+      "preprocess_cycles": 10816,
+      "total_cycles": 10816
+    },
+    {
+      "case": 21,
+      "error": 0,
+      "preprocess_cycles": 10788,
+      "total_cycles": 10788
+    },
+    {
+      "case": 22,
+      "error": 0,
+      "preprocess_cycles": 10587,
+      "total_cycles": 10587
+    },
+    {
+      "case": 23,
+      "error": 0,
+      "preprocess_cycles": 10785,
+      "total_cycles": 10785
+    },
+    {
+      "case": 24,
+      "error": 0,
+      "preprocess_cycles": 10728,
+      "total_cycles": 10728
+    },
+    {
+      "case": 25,
+      "error": 0,
+      "preprocess_cycles": 10752,
+      "total_cycles": 10752
+    },
+    {
+      "case": 26,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 27,
+      "error": 0,
+      "preprocess_cycles": 10852,
+      "total_cycles": 10852
+    },
+    {
+      "case": 28,
+      "error": 0,
+      "preprocess_cycles": 10785,
+      "total_cycles": 10785
+    },
+    {
+      "case": 29,
+      "error": 0,
+      "preprocess_cycles": 10954,
+      "total_cycles": 10954
+    },
+    {
+      "case": 30,
+      "error": 0,
+      "preprocess_cycles": 10924,
+      "total_cycles": 10924
+    },
+    {
+      "case": 31,
+      "error": 0,
+      "preprocess_cycles": 10855,
+      "total_cycles": 10855
+    },
+    {
+      "case": 32,
+      "error": 0,
+      "preprocess_cycles": 10954,
+      "total_cycles": 10954
+    },
+    {
+      "case": 33,
+      "error": 0,
+      "preprocess_cycles": 10490,
+      "total_cycles": 10490
+    },
+    {
+      "case": 34,
+      "error": 0,
+      "preprocess_cycles": 10785,
+      "total_cycles": 10785
+    },
+    {
+      "case": 35,
+      "error": 0,
+      "preprocess_cycles": 10952,
+      "total_cycles": 10952
+    },
+    {
+      "case": 36,
+      "error": 0,
+      "preprocess_cycles": 10918,
+      "total_cycles": 10918
+    },
+    {
+      "case": 37,
+      "error": 0,
+      "preprocess_cycles": 11027,
+      "total_cycles": 11027
+    },
+    {
+      "case": 38,
+      "error": 0,
+      "preprocess_cycles": 11023,
+      "total_cycles": 11023
+    },
+    {
+      "case": 39,
+      "error": 0,
+      "preprocess_cycles": 10898,
+      "total_cycles": 10898
+    },
+    {
+      "case": 40,
+      "error": 0,
+      "preprocess_cycles": 10689,
+      "total_cycles": 10689
+    },
+    {
+      "case": 41,
+      "error": 0,
+      "preprocess_cycles": 10562,
+      "total_cycles": 10562
+    },
+    {
+      "case": 42,
+      "error": 0,
+      "preprocess_cycles": 10996,
+      "total_cycles": 10996
+    },
+    {
+      "case": 43,
+      "error": 0,
+      "preprocess_cycles": 10454,
+      "total_cycles": 10454
+    },
+    {
+      "case": 44,
+      "error": 0,
+      "preprocess_cycles": 10652,
+      "total_cycles": 10652
+    },
+    {
+      "case": 45,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 46,
+      "error": 0,
+      "preprocess_cycles": 10709,
+      "total_cycles": 10709
+    },
+    {
+      "case": 47,
+      "error": 0,
+      "preprocess_cycles": 10683,
+      "total_cycles": 10683
+    },
+    {
+      "case": 48,
+      "error": 0,
+      "preprocess_cycles": 11469,
+      "total_cycles": 11469
+    },
+    {
+      "case": 49,
+      "error": 0,
+      "preprocess_cycles": 10663,
+      "total_cycles": 10663
+    },
+    {
+      "case": 50,
+      "error": 0,
+      "preprocess_cycles": 10970,
+      "total_cycles": 10970
+    },
+    {
+      "case": 51,
+      "error": 0,
+      "preprocess_cycles": 10785,
+      "total_cycles": 10785
+    },
+    {
+      "case": 52,
+      "error": 0,
+      "preprocess_cycles": 10897,
+      "total_cycles": 10897
+    },
+    {
+      "case": 53,
+      "error": 0,
+      "preprocess_cycles": 9447,
+      "total_cycles": 9447
+    },
+    {
+      "case": 54,
+      "error": 0,
+      "preprocess_cycles": 11026,
+      "total_cycles": 11026
+    },
+    {
+      "case": 55,
+      "error": 0,
+      "preprocess_cycles": 10764,
+      "total_cycles": 10764
+    },
+    {
+      "case": 56,
+      "error": 0,
+      "preprocess_cycles": 10704,
+      "total_cycles": 10704
+    },
+    {
+      "case": 57,
+      "error": 0,
+      "preprocess_cycles": 11103,
+      "total_cycles": 11103
+    },
+    {
+      "case": 58,
+      "error": 0,
+      "preprocess_cycles": 10818,
+      "total_cycles": 10818
+    },
+    {
+      "case": 59,
+      "error": 0,
+      "preprocess_cycles": 11101,
+      "total_cycles": 11101
+    },
+    {
+      "case": 60,
+      "error": 0,
+      "preprocess_cycles": 9359,
+      "total_cycles": 9359
+    },
+    {
+      "case": 61,
+      "error": 0,
+      "preprocess_cycles": 10963,
+      "total_cycles": 10963
+    },
+    {
+      "case": 62,
+      "error": 0,
+      "preprocess_cycles": 10660,
+      "total_cycles": 10660
+    },
+    {
+      "case": 63,
+      "error": 0,
+      "preprocess_cycles": 10516,
+      "total_cycles": 10516
+    },
+    {
+      "case": 64,
+      "error": 0,
+      "preprocess_cycles": 10630,
+      "total_cycles": 10630
+    },
+    {
+      "case": 65,
+      "error": 0,
+      "preprocess_cycles": 10433,
+      "total_cycles": 10433
+    },
+    {
+      "case": 66,
+      "error": 0,
+      "preprocess_cycles": 10659,
+      "total_cycles": 10659
+    },
+    {
+      "case": 67,
+      "error": 0,
+      "preprocess_cycles": 8933,
+      "total_cycles": 8933
+    },
+    {
+      "case": 68,
+      "error": 0,
+      "preprocess_cycles": 10490,
+      "total_cycles": 10490
+    },
+    {
+      "case": 69,
+      "error": 0,
+      "preprocess_cycles": 10469,
+      "total_cycles": 10469
+    },
+    {
+      "case": 70,
+      "error": 0,
+      "preprocess_cycles": 10748,
+      "total_cycles": 10748
+    },
+    {
+      "case": 71,
+      "error": 0,
+      "preprocess_cycles": 10638,
+      "total_cycles": 10638
+    },
+    {
+      "case": 72,
+      "error": 0,
+      "preprocess_cycles": 10767,
+      "total_cycles": 10767
+    },
+    {
+      "case": 73,
+      "error": 0,
+      "preprocess_cycles": 10953,
+      "total_cycles": 10953
+    },
+    {
+      "case": 74,
+      "error": 0,
+      "preprocess_cycles": 10772,
+      "total_cycles": 10772
+    },
+    {
+      "case": 75,
+      "error": 0,
+      "preprocess_cycles": 10848,
+      "total_cycles": 10848
+    },
+    {
+      "case": 76,
+      "error": 0,
+      "preprocess_cycles": 10979,
+      "total_cycles": 10979
+    },
+    {
+      "case": 77,
+      "error": 0,
+      "preprocess_cycles": 10685,
+      "total_cycles": 10685
+    },
+    {
+      "case": 78,
+      "error": 0,
+      "preprocess_cycles": 10516,
+      "total_cycles": 10516
+    },
+    {
+      "case": 79,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 80,
+      "error": 0,
+      "preprocess_cycles": 10685,
+      "total_cycles": 10685
+    },
+    {
+      "case": 81,
+      "error": 0,
+      "preprocess_cycles": 10488,
+      "total_cycles": 10488
+    },
+    {
+      "case": 82,
+      "error": 0,
+      "preprocess_cycles": 10662,
+      "total_cycles": 10662
+    },
+    {
+      "case": 83,
+      "error": 0,
+      "preprocess_cycles": 10785,
+      "total_cycles": 10785
+    },
+    {
+      "case": 84,
+      "error": 0,
+      "preprocess_cycles": 10897,
+      "total_cycles": 10897
+    },
+    {
+      "case": 85,
+      "error": 0,
+      "preprocess_cycles": 11163,
+      "total_cycles": 11163
+    },
+    {
+      "case": 86,
+      "error": 0,
+      "preprocess_cycles": 11211,
+      "total_cycles": 11211
+    },
+    {
+      "case": 87,
+      "error": 0,
+      "preprocess_cycles": 11161,
+      "total_cycles": 11161
+    },
+    {
+      "case": 88,
+      "error": 0,
+      "preprocess_cycles": 10898,
+      "total_cycles": 10898
+    },
+    {
+      "case": 89,
+      "error": 0,
+      "preprocess_cycles": 11029,
+      "total_cycles": 11029
+    },
+    {
+      "case": 90,
+      "error": 0,
+      "preprocess_cycles": 11056,
+      "total_cycles": 11056
+    },
+    {
+      "case": 91,
+      "error": 0,
+      "preprocess_cycles": 10858,
+      "total_cycles": 10858
+    },
+    {
+      "case": 92,
+      "error": 0,
+      "preprocess_cycles": 10758,
+      "total_cycles": 10758
+    },
+    {
+      "case": 93,
+      "error": 0,
+      "preprocess_cycles": 10897,
+      "total_cycles": 10897
+    },
+    {
+      "case": 94,
+      "error": 0,
+      "preprocess_cycles": 10855,
+      "total_cycles": 10855
+    },
+    {
+      "case": 95,
+      "error": 0,
+      "preprocess_cycles": 10728,
+      "total_cycles": 10728
+    },
+    {
+      "case": 96,
+      "error": 0,
+      "preprocess_cycles": 10842,
+      "total_cycles": 10842
+    },
+    {
+      "case": 97,
+      "error": 0,
+      "preprocess_cycles": 10841,
+      "total_cycles": 10841
+    },
+    {
+      "case": 98,
+      "error": 0,
+      "preprocess_cycles": 10973,
+      "total_cycles": 10973
+    },
+    {
+      "case": 99,
+      "error": 0,
+      "preprocess_cycles": 10815,
+      "total_cycles": 10815
+    },
+    {
+      "case": 100,
+      "error": 0,
+      "preprocess_cycles": 10948,
+      "total_cycles": 10948
+    },
+    {
+      "case": 101,
+      "error": 0,
+      "preprocess_cycles": 10790,
+      "total_cycles": 10790
+    },
+    {
+      "case": 102,
+      "error": 0,
+      "preprocess_cycles": 10791,
+      "total_cycles": 10791
+    },
+    {
+      "case": 103,
+      "error": 0,
+      "preprocess_cycles": 10584,
+      "total_cycles": 10584
+    },
+    {
+      "case": 104,
+      "error": 0,
+      "preprocess_cycles": 10486,
+      "total_cycles": 10486
+    },
+    {
+      "case": 105,
+      "error": 0,
+      "preprocess_cycles": 10639,
+      "total_cycles": 10639
+    },
+    {
+      "case": 106,
+      "error": 0,
+      "preprocess_cycles": 10467,
+      "total_cycles": 10467
+    },
+    {
+      "case": 107,
+      "error": 0,
+      "preprocess_cycles": 10703,
+      "total_cycles": 10703
+    },
+    {
+      "case": 108,
+      "error": 0,
+      "preprocess_cycles": 10634,
+      "total_cycles": 10634
+    },
+    {
+      "case": 109,
+      "error": 0,
+      "preprocess_cycles": 10593,
+      "total_cycles": 10593
+    },
+    {
+      "case": 110,
+      "error": 0,
+      "preprocess_cycles": 10593,
+      "total_cycles": 10593
+    },
+    {
+      "case": 111,
+      "error": 0,
+      "preprocess_cycles": 10473,
+      "total_cycles": 10473
+    },
+    {
+      "case": 112,
+      "error": 0,
+      "preprocess_cycles": 10791,
+      "total_cycles": 10791
+    },
+    {
+      "case": 113,
+      "error": 0,
+      "preprocess_cycles": 11001,
+      "total_cycles": 11001
+    },
+    {
+      "case": 114,
+      "error": 0,
+      "preprocess_cycles": 11002,
+      "total_cycles": 11002
+    },
+    {
+      "case": 115,
+      "error": 0,
+      "preprocess_cycles": 11108,
+      "total_cycles": 11108
+    },
+    {
+      "case": 116,
+      "error": 0,
+      "preprocess_cycles": 11217,
+      "total_cycles": 11217
+    },
+    {
+      "case": 117,
+      "error": 0,
+      "preprocess_cycles": 9429,
+      "total_cycles": 9429
+    },
+    {
+      "case": 118,
+      "error": 0,
+      "preprocess_cycles": 10919,
+      "total_cycles": 10919
+    },
+    {
+      "case": 119,
+      "error": 0,
+      "preprocess_cycles": 10883,
+      "total_cycles": 10883
+    },
+    {
+      "case": 120,
+      "error": 0,
+      "preprocess_cycles": 10754,
+      "total_cycles": 10754
+    },
+    {
+      "case": 121,
+      "error": 0,
+      "preprocess_cycles": 10827,
+      "total_cycles": 10827
+    },
+    {
+      "case": 122,
+      "error": 0,
+      "preprocess_cycles": 10880,
+      "total_cycles": 10880
+    },
+    {
+      "case": 123,
+      "error": 0,
+      "preprocess_cycles": 10980,
+      "total_cycles": 10980
+    },
+    {
+      "case": 124,
+      "error": 0,
+      "preprocess_cycles": 9324,
+      "total_cycles": 9324
+    },
+    {
+      "case": 125,
+      "error": 0,
+      "preprocess_cycles": 11469,
+      "total_cycles": 11469
+    },
+    {
+      "case": 126,
+      "error": 0,
+      "preprocess_cycles": 10560,
+      "total_cycles": 10560
+    },
+    {
+      "case": 127,
+      "error": 0,
+      "preprocess_cycles": 10605,
+      "total_cycles": 10605
+    },
+    {
+      "case": 128,
+      "error": 0,
+      "preprocess_cycles": 10847,
+      "total_cycles": 10847
+    },
+    {
+      "case": 129,
+      "error": 0,
+      "preprocess_cycles": 10930,
+      "total_cycles": 10930
+    },
+    {
+      "case": 130,
+      "error": 0,
+      "preprocess_cycles": 10547,
+      "total_cycles": 10547
+    },
+    {
+      "case": 131,
+      "error": 0,
+      "preprocess_cycles": 11108,
+      "total_cycles": 11108
+    },
+    {
+      "case": 132,
+      "error": 0,
+      "preprocess_cycles": 10898,
+      "total_cycles": 10898
+    },
+    {
+      "case": 133,
+      "error": 0,
+      "preprocess_cycles": 10685,
+      "total_cycles": 10685
+    },
+    {
+      "case": 134,
+      "error": 0,
+      "preprocess_cycles": 10583,
+      "total_cycles": 10583
+    },
+    {
+      "case": 135,
+      "error": 0,
+      "preprocess_cycles": 10709,
+      "total_cycles": 10709
+    },
+    {
+      "case": 136,
+      "error": 0,
+      "preprocess_cycles": 10652,
+      "total_cycles": 10652
+    },
+    {
+      "case": 137,
+      "error": 0,
+      "preprocess_cycles": 10524,
+      "total_cycles": 10524
+    },
+    {
+      "case": 138,
+      "error": 0,
+      "preprocess_cycles": 10683,
+      "total_cycles": 10683
+    },
+    {
+      "case": 139,
+      "error": 0,
+      "preprocess_cycles": 11412,
+      "total_cycles": 11412
+    },
+    {
+      "case": 140,
+      "error": 0,
+      "preprocess_cycles": 10520,
+      "total_cycles": 10520
+    },
+    {
+      "case": 141,
+      "error": 0,
+      "preprocess_cycles": 10586,
+      "total_cycles": 10586
+    },
+    {
+      "case": 142,
+      "error": 0,
+      "preprocess_cycles": 10815,
+      "total_cycles": 10815
+    },
+    {
+      "case": 143,
+      "error": 0,
+      "preprocess_cycles": 11189,
+      "total_cycles": 11189
+    },
+    {
+      "case": 144,
+      "error": 0,
+      "preprocess_cycles": 11270,
+      "total_cycles": 11270
+    },
+    {
+      "case": 145,
+      "error": 0,
+      "preprocess_cycles": 11320,
+      "total_cycles": 11320
+    },
+    {
+      "case": 146,
+      "error": 0,
+      "preprocess_cycles": 11213,
+      "total_cycles": 11213
+    },
+    {
+      "case": 147,
+      "error": 0,
+      "preprocess_cycles": 11098,
+      "total_cycles": 11098
+    },
+    {
+      "case": 148,
+      "error": 0,
+      "preprocess_cycles": 10409,
+      "total_cycles": 10409
+    },
+    {
+      "case": 149,
+      "error": 0,
+      "preprocess_cycles": 10667,
+      "total_cycles": 10667
+    },
+    {
+      "case": 150,
+      "error": 0,
+      "preprocess_cycles": 10755,
+      "total_cycles": 10755
+    },
+    {
+      "case": 151,
+      "error": 0,
+      "preprocess_cycles": 10827,
+      "total_cycles": 10827
+    },
+    {
+      "case": 152,
+      "error": 0,
+      "preprocess_cycles": 11066,
+      "total_cycles": 11066
+    },
+    {
+      "case": 153,
+      "error": 0,
+      "preprocess_cycles": 10967,
+      "total_cycles": 10967
+    },
+    {
+      "case": 154,
+      "error": 0,
+      "preprocess_cycles": 10587,
+      "total_cycles": 10587
+    },
+    {
+      "case": 155,
+      "error": 0,
+      "preprocess_cycles": 10856,
+      "total_cycles": 10856
+    },
+    {
+      "case": 156,
+      "error": 0,
+      "preprocess_cycles": 10855,
+      "total_cycles": 10855
+    },
+    {
+      "case": 157,
+      "error": 0,
+      "preprocess_cycles": 10662,
+      "total_cycles": 10662
+    },
+    {
+      "case": 158,
+      "error": 0,
+      "preprocess_cycles": 10405,
+      "total_cycles": 10405
+    },
+    {
+      "case": 159,
+      "error": 0,
+      "preprocess_cycles": 10495,
+      "total_cycles": 10495
+    },
+    {
+      "case": 160,
+      "error": 0,
+      "preprocess_cycles": 9205,
+      "total_cycles": 9205
+    },
+    {
+      "case": 161,
+      "error": 0,
+      "preprocess_cycles": 10782,
+      "total_cycles": 10782
+    },
+    {
+      "case": 162,
+      "error": 0,
+      "preprocess_cycles": 10683,
+      "total_cycles": 10683
+    },
+    {
+      "case": 163,
+      "error": 0,
+      "preprocess_cycles": 10880,
+      "total_cycles": 10880
+    },
+    {
+      "case": 164,
+      "error": 0,
+      "preprocess_cycles": 10904,
+      "total_cycles": 10904
+    },
+    {
+      "case": 165,
+      "error": 0,
+      "preprocess_cycles": 10773,
+      "total_cycles": 10773
+    },
+    {
+      "case": 166,
+      "error": 0,
+      "preprocess_cycles": 10710,
+      "total_cycles": 10710
+    },
+    {
+      "case": 167,
+      "error": 0,
+      "preprocess_cycles": 10925,
+      "total_cycles": 10925
+    },
+    {
+      "case": 168,
+      "error": 0,
+      "preprocess_cycles": 10554,
+      "total_cycles": 10554
+    },
+    {
+      "case": 169,
+      "error": 0,
+      "preprocess_cycles": 10308,
+      "total_cycles": 10308
+    },
+    {
+      "case": 170,
+      "error": 0,
+      "preprocess_cycles": 10662,
+      "total_cycles": 10662
+    },
+    {
+      "case": 171,
+      "error": 0,
+      "preprocess_cycles": 10662,
+      "total_cycles": 10662
+    },
+    {
+      "case": 172,
+      "error": 0,
+      "preprocess_cycles": 10663,
+      "total_cycles": 10663
+    },
+    {
+      "case": 173,
+      "error": 0,
+      "preprocess_cycles": 10703,
+      "total_cycles": 10703
+    },
+    {
+      "case": 174,
+      "error": 0,
+      "preprocess_cycles": 11530,
+      "total_cycles": 11530
+    },
+    {
+      "case": 175,
+      "error": 0,
+      "preprocess_cycles": 10465,
+      "total_cycles": 10465
+    },
+    {
+      "case": 176,
+      "error": 0,
+      "preprocess_cycles": 10584,
+      "total_cycles": 10584
+    },
+    {
+      "case": 177,
+      "error": 0,
+      "preprocess_cycles": 10784,
+      "total_cycles": 10784
+    },
+    {
+      "case": 178,
+      "error": 0,
+      "preprocess_cycles": 11004,
+      "total_cycles": 11004
+    },
+    {
+      "case": 179,
+      "error": 0,
+      "preprocess_cycles": 9311,
+      "total_cycles": 9311
+    },
+    {
+      "case": 180,
+      "error": 0,
+      "preprocess_cycles": 10871,
+      "total_cycles": 10871
+    },
+    {
+      "case": 181,
+      "error": 0,
+      "preprocess_cycles": 11029,
+      "total_cycles": 11029
+    },
+    {
+      "case": 182,
+      "error": 0,
+      "preprocess_cycles": 10671,
+      "total_cycles": 10671
+    },
+    {
+      "case": 183,
+      "error": 0,
+      "preprocess_cycles": 10453,
+      "total_cycles": 10453
+    },
+    {
+      "case": 184,
+      "error": 0,
+      "preprocess_cycles": 10710,
+      "total_cycles": 10710
+    },
+    {
+      "case": 185,
+      "error": 0,
+      "preprocess_cycles": 10609,
+      "total_cycles": 10609
+    },
+    {
+      "case": 186,
+      "error": 0,
+      "preprocess_cycles": 9133,
+      "total_cycles": 9133
+    },
+    {
+      "case": 187,
+      "error": 0,
+      "preprocess_cycles": 10511,
+      "total_cycles": 10511
+    },
+    {
+      "case": 188,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 189,
+      "error": 0,
+      "preprocess_cycles": 10755,
+      "total_cycles": 10755
+    },
+    {
+      "case": 190,
+      "error": 0,
+      "preprocess_cycles": 10725,
+      "total_cycles": 10725
+    },
+    {
+      "case": 191,
+      "error": 0,
+      "preprocess_cycles": 10827,
+      "total_cycles": 10827
+    },
+    {
+      "case": 192,
+      "error": 0,
+      "preprocess_cycles": 10724,
+      "total_cycles": 10724
+    },
+    {
+      "case": 193,
+      "error": 0,
+      "preprocess_cycles": 10725,
+      "total_cycles": 10725
+    },
+    {
+      "case": 194,
+      "error": 0,
+      "preprocess_cycles": 10675,
+      "total_cycles": 10675
+    },
+    {
+      "case": 195,
+      "error": 0,
+      "preprocess_cycles": 10880,
+      "total_cycles": 10880
+    },
+    {
+      "case": 196,
+      "error": 0,
+      "preprocess_cycles": 10640,
+      "total_cycles": 10640
+    },
+    {
+      "case": 197,
+      "error": 0,
+      "preprocess_cycles": 10659,
+      "total_cycles": 10659
+    },
+    {
+      "case": 198,
+      "error": 0,
+      "preprocess_cycles": 10710,
+      "total_cycles": 10710
+    },
+    {
+      "case": 199,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 200,
+      "error": 0,
+      "preprocess_cycles": 10637,
+      "total_cycles": 10637
+    },
+    {
+      "case": 201,
+      "error": 0,
+      "preprocess_cycles": 10560,
+      "total_cycles": 10560
+    },
+    {
+      "case": 202,
+      "error": 0,
+      "preprocess_cycles": 10488,
+      "total_cycles": 10488
+    },
+    {
+      "case": 203,
+      "error": 0,
+      "preprocess_cycles": 10666,
+      "total_cycles": 10666
+    },
+    {
+      "case": 204,
+      "error": 0,
+      "preprocess_cycles": 10978,
+      "total_cycles": 10978
+    },
+    {
+      "case": 205,
+      "error": 0,
+      "preprocess_cycles": 11081,
+      "total_cycles": 11081
+    },
+    {
+      "case": 206,
+      "error": 0,
+      "preprocess_cycles": 11217,
+      "total_cycles": 11217
+    },
+    {
+      "case": 207,
+      "error": 0,
+      "preprocess_cycles": 11081,
+      "total_cycles": 11081
+    },
+    {
+      "case": 208,
+      "error": 0,
+      "preprocess_cycles": 11082,
+      "total_cycles": 11082
+    },
+    {
+      "case": 209,
+      "error": 0,
+      "preprocess_cycles": 9547,
+      "total_cycles": 9547
+    },
+    {
+      "case": 210,
+      "error": 0,
+      "preprocess_cycles": 10731,
+      "total_cycles": 10731
+    },
+    {
+      "case": 211,
+      "error": 0,
+      "preprocess_cycles": 10758,
+      "total_cycles": 10758
+    },
+    {
+      "case": 212,
+      "error": 0,
+      "preprocess_cycles": 10855,
+      "total_cycles": 10855
+    },
+    {
+      "case": 213,
+      "error": 0,
+      "preprocess_cycles": 10855,
+      "total_cycles": 10855
+    },
+    {
+      "case": 214,
+      "error": 0,
+      "preprocess_cycles": 10785,
+      "total_cycles": 10785
+    },
+    {
+      "case": 215,
+      "error": 0,
+      "preprocess_cycles": 10758,
+      "total_cycles": 10758
+    },
+    {
+      "case": 216,
+      "error": 0,
+      "preprocess_cycles": 9317,
+      "total_cycles": 9317
+    },
+    {
+      "case": 217,
+      "error": 0,
+      "preprocess_cycles": 10824,
+      "total_cycles": 10824
+    },
+    {
+      "case": 218,
+      "error": 0,
+      "preprocess_cycles": 10563,
+      "total_cycles": 10563
+    },
+    {
+      "case": 219,
+      "error": 0,
+      "preprocess_cycles": 10824,
+      "total_cycles": 10824
+    },
+    {
+      "case": 220,
+      "error": 0,
+      "preprocess_cycles": 10744,
+      "total_cycles": 10744
+    },
+    {
+      "case": 221,
+      "error": 0,
+      "preprocess_cycles": 10767,
+      "total_cycles": 10767
+    },
+    {
+      "case": 222,
+      "error": 0,
+      "preprocess_cycles": 10745,
+      "total_cycles": 10745
+    },
+    {
+      "case": 223,
+      "error": 0,
+      "preprocess_cycles": 10872,
+      "total_cycles": 10872
+    },
+    {
+      "case": 224,
+      "error": 0,
+      "preprocess_cycles": 10808,
+      "total_cycles": 10808
+    },
+    {
+      "case": 225,
+      "error": 0,
+      "preprocess_cycles": 10418,
+      "total_cycles": 10418
+    },
+    {
+      "case": 226,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 227,
+      "error": 0,
+      "preprocess_cycles": 10615,
+      "total_cycles": 10615
+    },
+    {
+      "case": 228,
+      "error": 0,
+      "preprocess_cycles": 10558,
+      "total_cycles": 10558
+    },
+    {
+      "case": 229,
+      "error": 0,
+      "preprocess_cycles": 10710,
+      "total_cycles": 10710
+    },
+    {
+      "case": 230,
+      "error": 0,
+      "preprocess_cycles": 11574,
+      "total_cycles": 11574
+    },
+    {
+      "case": 231,
+      "error": 0,
+      "preprocess_cycles": 10724,
+      "total_cycles": 10724
+    },
+    {
+      "case": 232,
+      "error": 0,
+      "preprocess_cycles": 10672,
+      "total_cycles": 10672
+    },
+    {
+      "case": 233,
+      "error": 0,
+      "preprocess_cycles": 10876,
+      "total_cycles": 10876
+    },
+    {
+      "case": 234,
+      "error": 0,
+      "preprocess_cycles": 10848,
+      "total_cycles": 10848
+    },
+    {
+      "case": 235,
+      "error": 0,
+      "preprocess_cycles": 10744,
+      "total_cycles": 10744
+    },
+    {
+      "case": 236,
+      "error": 0,
+      "preprocess_cycles": 10850,
+      "total_cycles": 10850
+    },
+    {
+      "case": 237,
+      "error": 0,
+      "preprocess_cycles": 10954,
+      "total_cycles": 10954
+    },
+    {
+      "case": 238,
+      "error": 0,
+      "preprocess_cycles": 10616,
+      "total_cycles": 10616
+    },
+    {
+      "case": 239,
+      "error": 0,
+      "preprocess_cycles": 10587,
+      "total_cycles": 10587
+    },
+    {
+      "case": 240,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 241,
+      "error": 0,
+      "preprocess_cycles": 10572,
+      "total_cycles": 10572
+    },
+    {
+      "case": 242,
+      "error": 0,
+      "preprocess_cycles": 10510,
+      "total_cycles": 10510
+    },
+    {
+      "case": 243,
+      "error": 0,
+      "preprocess_cycles": 10609,
+      "total_cycles": 10609
+    },
+    {
+      "case": 244,
+      "error": 0,
+      "preprocess_cycles": 10708,
+      "total_cycles": 10708
+    },
+    {
+      "case": 245,
+      "error": 0,
+      "preprocess_cycles": 10850,
+      "total_cycles": 10850
+    },
+    {
+      "case": 246,
+      "error": 0,
+      "preprocess_cycles": 10745,
+      "total_cycles": 10745
+    },
+    {
+      "case": 247,
+      "error": 0,
+      "preprocess_cycles": 10383,
+      "total_cycles": 10383
+    },
+    {
+      "case": 248,
+      "error": 0,
+      "preprocess_cycles": 10927,
+      "total_cycles": 10927
+    },
+    {
+      "case": 249,
+      "error": 0,
+      "preprocess_cycles": 11317,
+      "total_cycles": 11317
+    },
+    {
+      "case": 250,
+      "error": 0,
+      "preprocess_cycles": 11107,
+      "total_cycles": 11107
+    },
+    {
+      "case": 251,
+      "error": 0,
+      "preprocess_cycles": 10640,
+      "total_cycles": 10640
+    },
+    {
+      "case": 252,
+      "error": 0,
+      "preprocess_cycles": 10760,
+      "total_cycles": 10760
+    },
+    {
+      "case": 253,
+      "error": 0,
+      "preprocess_cycles": 10488,
+      "total_cycles": 10488
+    },
+    {
+      "case": 254,
+      "error": 0,
+      "preprocess_cycles": 10418,
+      "total_cycles": 10418
+    },
+    {
+      "case": 255,
+      "error": 0,
+      "preprocess_cycles": 10593,
+      "total_cycles": 10593
+    },
+    {
+      "case": 256,
+      "error": 0,
+      "preprocess_cycles": 10686,
+      "total_cycles": 10686
+    },
+    {
+      "case": 257,
+      "error": 0,
+      "preprocess_cycles": 10856,
+      "total_cycles": 10856
+    },
+    {
+      "case": 258,
+      "error": 0,
+      "preprocess_cycles": 10954,
+      "total_cycles": 10954
+    },
+    {
+      "case": 259,
+      "error": 0,
+      "preprocess_cycles": 42133,
+      "total_cycles": 42133
+    },
+    {
+      "case": 260,
+      "error": 0,
+      "preprocess_cycles": 42133,
+      "total_cycles": 42133
+    },
+    {
+      "case": 261,
+      "error": 0,
+      "preprocess_cycles": 8793,
+      "total_cycles": 8793
+    },
+    {
+      "case": 262,
+      "error": 0,
+      "preprocess_cycles": 9187,
+      "total_cycles": 9187
+    },
+    {
+      "case": 263,
+      "error": 0,
+      "preprocess_cycles": 8784,
+      "total_cycles": 8784
+    },
+    {
+      "case": 264,
+      "error": 0,
+      "preprocess_cycles": 8760,
+      "total_cycles": 8760
+    },
+    {
+      "case": 265,
+      "error": 0,
+      "preprocess_cycles": 11309,
+      "total_cycles": 11309
+    },
+    {
+      "case": 266,
+      "error": 0,
+      "preprocess_cycles": 11309,
+      "total_cycles": 11309
+    },
+    {
+      "case": 267,
+      "error": 0,
+      "preprocess_cycles": 10953,
+      "total_cycles": 10953
+    },
+    {
+      "case": 268,
+      "error": 0,
+      "preprocess_cycles": 10953,
+      "total_cycles": 10953
+    },
+    {
+      "case": 269,
+      "error": 0,
+      "preprocess_cycles": 10950,
+      "total_cycles": 10950
+    },
+    {
+      "case": 270,
+      "error": 0,
+      "preprocess_cycles": 10950,
+      "total_cycles": 10950
+    },
+    {
+      "case": 271,
+      "error": 0,
+      "preprocess_cycles": 11871,
+      "total_cycles": 11871
+    },
+    {
+      "case": 272,
+      "error": 0,
+      "preprocess_cycles": 11871,
+      "total_cycles": 11871
+    },
+    {
+      "case": 273,
+      "error": 0,
+      "preprocess_cycles": 9290,
+      "total_cycles": 9290
+    },
+    {
+      "case": 274,
+      "error": 0,
+      "preprocess_cycles": 9290,
+      "total_cycles": 9290
+    },
+    {
+      "case": 275,
+      "error": 0,
+      "preprocess_cycles": 9829,
+      "total_cycles": 9829
+    },
+    {
+      "case": 276,
+      "error": 0,
+      "preprocess_cycles": 9829,
+      "total_cycles": 9829
+    },
+    {
+      "case": 277,
+      "error": 0,
+      "preprocess_cycles": 12110,
+      "total_cycles": 12110
+    },
+    {
+      "case": 278,
+      "error": 0,
+      "preprocess_cycles": 16176,
+      "total_cycles": 16176
+    },
+    {
+      "case": 279,
+      "error": 0,
+      "preprocess_cycles": 14140,
+      "total_cycles": 14140
+    },
+    {
+      "case": 280,
+      "error": 0,
+      "preprocess_cycles": 12031,
+      "total_cycles": 12031
+    },
+    {
+      "case": 281,
+      "error": 0,
+      "preprocess_cycles": 19914,
+      "total_cycles": 19914
+    },
+    {
+      "case": 282,
+      "error": 0,
+      "preprocess_cycles": 25941,
+      "total_cycles": 25941
+    },
+    {
+      "case": 283,
+      "error": 0,
+      "preprocess_cycles": 13263,
+      "total_cycles": 13263
+    },
+    {
+      "case": 284,
+      "error": 0,
+      "preprocess_cycles": 9215,
+      "total_cycles": 9215
+    },
+    {
+      "case": 285,
+      "error": 0,
+      "preprocess_cycles": 29445,
+      "total_cycles": 29445
+    },
+    {
+      "case": 286,
+      "error": 0,
+      "preprocess_cycles": 34844,
+      "total_cycles": 34844
+    },
+    {
+      "case": 287,
+      "error": 0,
+      "preprocess_cycles": 9680,
+      "total_cycles": 9680
+    },
+    {
+      "case": 288,
+      "error": 0,
+      "preprocess_cycles": 14647,
+      "total_cycles": 14647
+    },
+    {
+      "case": 289,
+      "error": 0,
+      "preprocess_cycles": 13463,
+      "total_cycles": 13463
+    },
+    {
+      "case": 290,
+      "error": 0,
+      "preprocess_cycles": 10047,
+      "total_cycles": 10047
+    },
+    {
+      "case": 291,
+      "error": 0,
+      "preprocess_cycles": 27886,
+      "total_cycles": 27886
+    },
+    {
+      "case": 292,
+      "error": 0,
+      "preprocess_cycles": 33052,
+      "total_cycles": 33052
+    },
+    {
+      "case": 293,
+      "error": 0,
+      "preprocess_cycles": 16119,
+      "total_cycles": 16119
+    },
+    {
+      "case": 294,
+      "error": 0,
+      "preprocess_cycles": 14079,
+      "total_cycles": 14079
+    },
+    {
+      "case": 295,
+      "error": 0,
+      "preprocess_cycles": 34559,
+      "total_cycles": 34559
+    },
+    {
+      "case": 296,
+      "error": 0,
+      "preprocess_cycles": 10441,
+      "total_cycles": 10441
+    },
+    {
+      "case": 297,
+      "error": 0,
+      "preprocess_cycles": 30245,
+      "total_cycles": 30245
+    },
+    {
+      "case": 298,
+      "error": 0,
+      "preprocess_cycles": 31651,
+      "total_cycles": 31651
+    },
+    {
+      "case": 299,
+      "error": 0,
+      "preprocess_cycles": 27393,
+      "total_cycles": 27393
+    },
+    {
+      "case": 300,
+      "error": 0,
+      "preprocess_cycles": 14647,
+      "total_cycles": 14647
+    },
+    {
+      "case": 301,
+      "error": 2,
+      "preprocess_cycles": 75,
+      "total_cycles": 75
+    },
+    {
+      "case": 302,
+      "error": 2,
+      "preprocess_cycles": 75,
+      "total_cycles": 75
+    },
+    {
+      "case": 303,
+      "error": 1,
+      "preprocess_cycles": 1,
+      "total_cycles": 1
+    },
+    {
+      "case": 304,
+      "error": 1,
+      "preprocess_cycles": 1,
+      "total_cycles": 1
+    },
+    {
+      "case": 305,
+      "error": 1,
+      "preprocess_cycles": 1,
+      "total_cycles": 1
+    },
+    {
+      "case": 306,
+      "error": 1,
+      "preprocess_cycles": 1,
+      "total_cycles": 1
+    },
+    {
+      "case": 307,
+      "error": 1,
+      "preprocess_cycles": 1,
+      "total_cycles": 1
+    },
+    {
+      "case": 308,
+      "error": 3,
+      "preprocess_cycles": 9,
+      "total_cycles": 9
+    },
+    {
+      "case": 309,
+      "error": 3,
+      "preprocess_cycles": 66,
+      "total_cycles": 66
+    },
+    {
+      "case": 0,
+      "error": 0,
+      "preprocess_cycles": 10873,
+      "total_cycles": 10873
+    },
+    {
+      "case": 0,
+      "error": 0,
+      "preprocess_cycles": 10873,
+      "total_cycles": 10873
+    },
+    {
+      "case": 0,
+      "error": 0,
+      "preprocess_cycles": 10873,
+      "total_cycles": 10873
+    }
+  ],
+  "real_rois": 259,
+  "cases": 310,
+  "exact": true,
+  "source_unchanged": true,
+  "rtl_sha256": "5cfe427a23f70858d068e6cad65936d289318dfeb781709e645f4ac2ff64ace9",
+  "testbench_sha256": "7926c3c912b0ddb6bf32b80b011433fcb4306bc5db611c518ccb9d0a63eee2a4",
+  "vectors_sha256": "f9497fb3968684d5df0142aba814538aafcc07de6a949b9339693f6139b1cada",
+  "compiled_testbench_sha256": "7926c3c912b0ddb6bf32b80b011433fcb4306bc5db611c518ccb9d0a63eee2a4",
+  "compiled_input_snapshot": "tmp/blue-plate-char-preprocess/preprocess-inputs",
+  "provenance_note": "Initial bench source reconstructed from the CASEFILE-only edit and byte hash matches the pre-edit preprocess.json record. Working testbench hash at completion may include later CASEFILE support; DUT and compiled image were not changed.",
+  "exit_codes": [
+    0,
+    0
+  ]
+}

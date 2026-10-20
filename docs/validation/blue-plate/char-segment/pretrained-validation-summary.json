@@ -1,0 +1,106 @@
+{
+  "status": "fixed_q8_validation_complete_for_handoff",
+  "primary_threshold": 0.9931710550839266,
+  "comparison_only_threshold": 0.9386077887914179,
+  "threshold_fitting": false,
+  "results": {
+    "summary": {
+      "ocr_only_strict": {
+        "total": 84,
+        "correct": 68,
+        "wrong": 0,
+        "rejected": 16
+      },
+      "ocr_only_comparison": {
+        "total": 84,
+        "correct": 76,
+        "wrong": 2,
+        "rejected": 6
+      },
+      "ocr_only_raw_legal": {
+        "total": 84,
+        "correct": 77,
+        "wrong": 4,
+        "rejected": 3
+      },
+      "combined_strict": {
+        "total": 84,
+        "correct": 68,
+        "wrong": 0,
+        "rejected": 16
+      },
+      "combined_comparison": {
+        "total": 84,
+        "correct": 75,
+        "wrong": 2,
+        "rejected": 7
+      },
+      "combined_raw_legal": {
+        "total": 84,
+        "correct": 76,
+        "wrong": 4,
+        "rejected": 4
+      },
+      "old_backend": {
+        "total": 84,
+        "correct": 50,
+        "wrong": 3,
+        "rejected": 31
+      },
+      "teacher_frozen_native_combined": {
+        "total": 84,
+        "correct": 72,
+        "wrong": 0,
+        "rejected": 12
+      }
+    },
+    "validation_images": 84,
+    "validation_rois": 85,
+    "training_steps": 0,
+    "heldout_image_reads": 0,
+    "threshold_fitting": false,
+    "model_state_unchanged": true,
+    "development_delivery_unchanged": true,
+    "entry_development_checks": [
+      {
+        "roi_index": 0,
+        "logits_exact": true
+      },
+      {
+        "roi_index": 1,
+        "logits_exact": true
+      },
+      {
+        "roi_index": 13,
+        "logits_exact": true
+      },
+      {
+        "roi_index": 306,
+        "logits_exact": true
+      }
+    ],
+    "independent_dp_max_abs_error": 7.14597651885196e-16,
+    "elapsed_seconds": 11.22270539999954,
+    "cache_hashes": {
+      "val-inputs.npz": "33d44d3cd29ebcea00a9d536365d2512162ec0b8f3d854d64467db7ddf956bb3",
+      "val-manifest.json": "7879b0ae9c8b37b74641ff4bbb6fd530f784bb108022ed2eb8f21b6d919e7511"
+    }
+  },
+  "verification": {
+    "fixed_selection_and_counts_independently_match": true,
+    "no_threshold_sweep": true,
+    "input_contract_errors": [
+      "gray",
+      "wrong_size",
+      "float",
+      "batch",
+      "train_mode"
+    ],
+    "confirmation_artifacts_unchanged": true
+  },
+  "entry": "tools/blue_plate/char_segment/fixed_lprnet.py",
+  "contract": "docs/validation/blue-plate/char-segment/fixed-lprnet-contract.md",
+  "full_rejection_chain": "pending main implementation rerun",
+  "pretrained_identity_overlap": "unknown",
+  "tune76_role": "subset of development304 threshold-fitting set"
+}

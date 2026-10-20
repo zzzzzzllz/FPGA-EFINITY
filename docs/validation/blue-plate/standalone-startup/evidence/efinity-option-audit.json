@@ -1,0 +1,6 @@
+{
+  "path": "D:\\Efinity\\scripts\\efx_run.py",
+  "sha256": "9c100cadbadde01a2f86b851337aeee6187afbfdd26e70c77dd098c0f4758a03",
+  "pgmignoreopts_line": 843,
+  "observation": "cold_boot is excluded when collecting bitstream_generation XML parameters into pgm_opts; command line overrides are a separate path"
+}

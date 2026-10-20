@@ -1,0 +1,12 @@
+{
+  "script": "color_cnn_sharing.py",
+  "exit_code": 0,
+  "source_hashes_rechecked": true,
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\color_cnn_sharing.py": "c04d93581fcd98911757bad331fe148dfcfe462fcca0b920fad3c59138446c6d",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\color-cnn-sharing.md": "236c19f82e3eeae4b59c3aa18330eb2d960b22b5ee492d11b27c89dde086dff5",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\color-cnn-sharing.json": "5e3c544cac465eb1f37b2aecd195fd8042b86ce444fcedbea493e456f097e6bb",
+    "tmp\\blue-plate-whole-plate-budget\\color-cnn-sharing.log": "7c64199580f88a2f2e664dcf3ee924129fd8494e9006f422fb43f61dc2b35df0"
+  },
+  "scope": "Actual frozen ONNX, zero synthetic forward, shape and range/packing audit only; no dataset evaluation, quantization, RTL or synthesis"
+}

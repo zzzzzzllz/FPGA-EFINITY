@@ -1,0 +1,138 @@
+Efinity Synthesis report for project plate_osd
+Version: 2026.1.132.4.5
+Generated at: Oct 18, 2026 13:47:24
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : plate_osd
+
+family : Titanium
+device : Ti60F225
+project : plate_osd
+root : plate_osd
+binary-db : out\plate_osd.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : speed
+num_srl : -1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_osd
+project : plate_osd
+project-xml : D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_osd\plate_osd.xml
+retiming : 0
+root : plate_osd
+use-logic-for-small-rom : 0
+work-dir : work_syn
+write-efx-verilog : out\plate_osd.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_osd\plate_osd.v
+
+### ### Report Section Start ### ###
+
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 0
+Total number of FFs with enable signals: 0
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 1
+Total number of FFs with set/reset signals: 34
++---------+------------------+
+|SR Signal|Number of FF loads|
++---------+------------------+
+|rst_n    |               34 |
++---------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'font__D$2' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$c12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$d12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$e12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$f12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$g12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$h12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$i12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$j12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$k12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$l12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$m12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$n12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$o1' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$12' Port WDATA is tied off because it is disabled.
+Memory instance 'font__D$b12' Port WDATA is tied off because it is disabled.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                      FFs      SRLs      ADDs      LUTs    COMB4s      RAMs DSP/MULTs
+---------------------       ---      ----      ----      ----      ----      ---- ---------
+plate_osd:plate_osd      34(34)      0(0)      7(7)  475(475)      0(0)    16(16)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
+ No DSP in design
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++-----+----------+----------+------------+----------------+
+|Clock|Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++-----+----------+----------+------------+----------------+
+|clk  |       34 |        0 |         16 |              0 |
++-----+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Memory Mapping Report (begin) ### ### ###
+
+1. font (D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_osd\plate_osd.v:8):
+	EFX_RAM10: font__D$b12
+	EFX_RAM10: font__D$2
+	EFX_RAM10: font__D$c12
+	EFX_RAM10: font__D$d12
+	EFX_RAM10: font__D$e12
+	EFX_RAM10: font__D$f12
+	EFX_RAM10: font__D$g12
+	EFX_RAM10: font__D$h12
+	EFX_RAM10: font__D$i12
+	EFX_RAM10: font__D$j12
+	EFX_RAM10: font__D$k12
+	EFX_RAM10: font__D$l12
+	EFX_RAM10: font__D$m12
+	EFX_RAM10: font__D$n12
+	EFX_RAM10: font__D$o1
+	EFX_RAM10: font__D$12
+
+### ### Memory Mapping Report (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	767
+OUTPUT PORTS    : 	27
+
+EFX_ADD                 : 	7
+EFX_LUT4                : 	475
+   1-2  Inputs          : 	61
+   3    Inputs          : 	93
+   4    Inputs          : 	321
+EFX_FF                  : 	34
+EFX_RAM10               : 	16
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 2s
+Elapsed synthesis time : 2s

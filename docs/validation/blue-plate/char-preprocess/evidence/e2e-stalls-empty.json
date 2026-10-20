@@ -1,0 +1,51 @@
+{
+  "compile_seconds": 0.1,
+  "run_seconds": 3.077,
+  "end_to_end": true,
+  "stalls": true,
+  "metrics": [
+    {
+      "case": 310,
+      "error": 0,
+      "preprocess_cycles": 47388,
+      "total_cycles": 89184
+    },
+    {
+      "case": 311,
+      "error": 0,
+      "preprocess_cycles": 47389,
+      "total_cycles": 89185
+    },
+    {
+      "case": 312,
+      "error": 0,
+      "preprocess_cycles": 47384,
+      "total_cycles": 89180
+    },
+    {
+      "case": 310,
+      "error": 0,
+      "preprocess_cycles": 47390,
+      "total_cycles": 89186
+    },
+    {
+      "case": 310,
+      "error": 0,
+      "preprocess_cycles": 47388,
+      "total_cycles": 89184
+    },
+    {
+      "case": 310,
+      "error": 0,
+      "preprocess_cycles": 47388,
+      "total_cycles": 89184
+    }
+  ],
+  "real_rois": 0,
+  "cases": 3,
+  "exact": true,
+  "source_unchanged": true,
+  "rtl_sha256": "5cfe427a23f70858d068e6cad65936d289318dfeb781709e645f4ac2ff64ace9",
+  "testbench_sha256": "0ee21f5eb0ac15bb150e33acce509e3c8963dc453ddc6b651a3b2a65ad4a871e",
+  "vectors_sha256": "25b788855dbdfaed99f62780d2364f6cda38559bd86a4c737cb939bddcd5f169"
+}

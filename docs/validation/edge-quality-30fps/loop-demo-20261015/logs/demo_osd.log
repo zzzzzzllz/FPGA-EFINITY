@@ -1,0 +1,2 @@
+PASS: rendered all 13 step names, KEY2/KEY3 actions, navigation, NO CLIP and WAIT
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_demo_osd.v:29: $finish called at 13312026000 (1ps)

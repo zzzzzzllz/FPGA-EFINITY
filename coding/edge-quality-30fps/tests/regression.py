@@ -46,7 +46,7 @@ def main():
         py('test-canny-hysteresis','--medium');py('test-canny-store','--medium','--shape')
         for top,files in [('frame_memory_probe',['frame_memory_probe']),('frame_store_control',['frame_store_control']),('frame_reference_header',STORE),('frame_store',STORE)]:rtl(top,files)
         rtl('frame_store',STORE+['median_pair','sobel_pair'],['REAL_ALGORITHM'])
-        for top in ('edge_ui','threshold_control','threshold_osd','compare_display'):
+        for top in ('edge_ui','threshold_control','threshold_osd','demo_osd','compare_display'):
             rtl(top,['edge_ui','threshold_control','threshold_osd','compare_display'])
         rtl('gamma_rom',['gamma_conrrection/gamma_correction','true_dual_port_ram'],options=[PROJECT/'tests/tb_gamma_baseline.v'])
         rtl('debug_status_snapshot',['debug_status_snapshot']);rtl('shape_overlay',['threshold_osd'])
@@ -60,6 +60,8 @@ def main():
         if not STORE_ONLY:
             for defines in ([],['CANNY_DISPLAY'],['CANNY_DISPLAY','REFERENCE_DISPLAY']):rtl('frame_display',DISPLAY,defines)
     elif GROUP=='shape':
+        rtl('shape_budget',['shape_recognizer'])
+        py('test-shape-smoothing')
         py('test-shape-components');py('test-shape-reference')
         py('test-shape-rtl');py('test-shape-rtl','--stress');py('test-shape-rtl','--validation')
     elif GROUP=='quality_full':

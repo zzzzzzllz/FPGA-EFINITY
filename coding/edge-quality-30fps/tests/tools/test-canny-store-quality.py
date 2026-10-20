@@ -33,14 +33,14 @@ if target:
     y,x=np.indices((height,width));gray=np.full((height,width),235,np.uint8)
     gray[(x-350)**2+(y-300)**2<=90**2]=25
     gray[220:401,740:941]=25
-    state,*_=classify(gray,24,1,False,True);edge=hysteresis(state)[0]
+    state,*_=classify(gray,24,1,False,True,recognition=shape);edge=hysteresis(state)[0]
     rgb=gray.astype(np.uint32)*0x010101
     for suffix,data in [('input',(gray.astype(np.uint32)<<24)|rgb),('final',(edge.astype(np.uint32)<<31)|rgb)]:
         (vectors/f'targets-{suffix}.hex').write_text(''.join(f'{int(v):08x}\n' for v in data.flat))
     assert sorted(t['kind'] for t in recognize(edge)['targets'])==[1,2]
     cases=[dict(name='targets',config=0x6018)]
 else:
-    subprocess.run([sys.executable,str(root/'tools/canny_reference.py'),'--vectors',str(vectors),'--width',str(width),'--height',str(height),'--camera-rgby'],check=True)
+    subprocess.run([sys.executable,str(root/'tools/canny_reference.py'),'--vectors',str(vectors),'--width',str(width),'--height',str(height),'--camera-rgby',*(['--recognition'] if shape else [])],check=True)
     cases=json.loads((vectors/'manifest.json').read_text())
     if full: cases=[case for case in cases if case['config']==0x6820]
     elif medium: cases=[case for case in cases if case['name'] in ('1-1-1','5-1-1')]

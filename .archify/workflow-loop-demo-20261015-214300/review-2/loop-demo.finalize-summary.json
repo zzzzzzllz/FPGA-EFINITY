@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "workflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\candidate.json",
+    "sha256": "471bd3b5d377120f9f713bac6e8c9a0131bb6dca06826c5c4521cef89037b3ea",
+    "bytes": 8768
+  },
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\loop-demo.html",
+    "sha256": "1712b27bc0d78d958df5eb8c1d22b9e0ebd02bdbb02b55ef1313c3936fdb5813",
+    "bytes": 838145
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "fail"
+  },
+  "failedStage": "browser-check",
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\loop-demo.html"
+      },
+      "evidence": {
+        "reason": "Chrome DevTools write pipe failed: stream closed\nChrome process: still running.\nChrome stderr:\n[80308:40080:1015/214755.309:ERROR:components\\os_crypt\\async\\browser\\os_crypt_win.cc:63] Failed to encrypt: 系统找不到指定的文件。 (0x2)\r\n[80308:81780:1015/214755.359:ERROR:chrome\\installer\\util\\google_update_settings_win.cc:270] Failed opening key Software\\Google\\Update\\ClientStateMedium\\{8A69D345-D564-463c-AFF1-A69D9E530F96} to set usagestats; result: 5\r\n[80308:81604:1015/214755.474:ERROR:components\\password_manager\\core\\browser\\password_store\\login_database_async_helper.cc:100] Encryption is not available.\r\n[80308:53840:1015/214755.481:ERROR:components\\password_manager\\core\\browser\\password_store\\login_database_async_helper.cc:100] Encryption is not available.\r\n[80308:40080:1015/214755.581:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[80308:80888:1015/214755.582:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-loop-browser\\archify-visual-check-profile-lRQzaR\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[80308:40080:1015/214755.628:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[80308:40080:1015/214755.685:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[80308:80888:1015/214755.686:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-loop-browser\\archify-visual-check-profile-lRQzaR\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[80308:40080:1015/214755.737:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[80308:81780:1015/214755.788:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-loop-browser\\archify-visual-check-profile-lRQzaR\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[80308:40080:1015/214755.803:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[80308:81780:1015/214755.804:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-loop-browser\\archify-visual-check-profile-lRQzaR\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[80308:40080:1015/214755.845:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[80308:40080:1015/214755.845:FATAL:content\\browser\\gpu\\gpu_data_manager_impl_private.cc:389] GPU process isn't usable. Goodbye.\nChrome transport: Node v24.19.0, libuv 1.52.1, win32; pid=80308, exitCode=null, signalCode=null.\nChrome read pipe: readable=true, ended=false, destroyed=false, receivedBytes=1328, messages=3, bufferedBytes=0.\nChrome write pipe: writable=false, ended=true, destroyed=true, completedWrites=3, writtenBytes=255, bufferedBytes=0."
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\review-2\\loop-demo.finalize.json",
+    "summaryReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\review-2\\loop-demo.finalize-summary.json",
+    "browserCheckReceipt": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-loop-demo-20261015-214300\\review-2\\loop-demo.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4794
+}

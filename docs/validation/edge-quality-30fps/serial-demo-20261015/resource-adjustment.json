@@ -1,0 +1,25 @@
+{
+  "first_place_xlrs": 49329,
+  "total_xlrs": 60800,
+  "required_free_fraction": 0.2,
+  "osd_before": {
+    "lut4": 2026,
+    "ff": 713,
+    "ram10": 0
+  },
+  "osd_after": {
+    "lut4": 1620,
+    "ff": 713,
+    "ram10": 1
+  },
+  "control_before": {
+    "lut4": 2515,
+    "ff": 1465
+  },
+  "control_after": {
+    "lut4": 2193,
+    "ff": 1310
+  },
+  "osd_raster_identical": true,
+  "osd_raster_sha256": "a3b2ceb0c059185ef2aa81a3323406b050778f81fd414e90c2f5110956b61e94"
+}

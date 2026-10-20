@@ -1,13 +1,13 @@
 // Connected horizontal runs replace per-pixel neighbor traversal. Geometry still
 // checks every component pixel; DDR storage and the shared Canny cache are reused.
 module shape_recognizer #(
- parameter W=1280,H=720,MIN_SIZE=64,MAX_SIZE=400,MARGIN=16,
+ parameter W=1280,H=720,MIN_SIZE=64,MAX_SIZE=400,MARGIN=16,MAX_CYCLES=4000000,
  QUEUE_BASE=32'h0b000000,VISIT_BASE=32'h0b500000,STATE_BASE=32'h0b400000
 )(
  input clk,rst_n,start,input [1:0] slot,
  output reg busy,done,ok,output reg [2:0] count,output reg overflow,
  output reg [175:0] boxes,output reg [7:0] kinds,
- output reg [31:0] candidates,cycles,
+ output reg [31:0] candidates,cycles,output [5:0] debug_state,
  output reg mem_valid,mem_write,mem_copy,output reg [31:0] mem_address,
  output reg [127:0] mem_data,input mem_done,mem_error,input [127:0] mem_result
 );
@@ -25,6 +25,7 @@ module shape_recognizer #(
  RUN_WORD=53,RUN_MARKED=54,RUN_EXTEND=55,RUN_RIGHT=56,
  NEIGHBOR_READ=57,NEIGHBOR_RESUME=58,ITER_USE=59;
  reg [5:0] state,mem_return,math_return,push_return;
+ assign debug_state=state;
  reg [127:0] word;
  reg [19:0] scan,head,tail,index,pixel;
  reg [10:0] scan_x;reg [9:0] scan_y;
@@ -203,7 +204,11 @@ module shape_recognizer #(
   end else begin
    done<=0;mem_valid<=0;
    if(busy) cycles<=cycles+1'b1;
-   case(state)
+   // Drain an outstanding memory request before ending an overloaded frame.
+   // Publish edges with an explicit overflow flag, never partial shape boxes.
+   if(busy && cycles>=MAX_CYCLES && state!=MEM_WAIT && state!=FINISH) begin
+    count<=0;boxes<=0;kinds<=0;overflow<=1;state<=FINISH;
+   end else case(state)
     IDLE:if(start) begin
      busy<=1;ok<=1;count<=0;overflow<=0;boxes<=0;kinds<=0;candidates<=0;cycles<=0;scan<=0;scan_x<=0;scan_y<=0;
      mem_valid<=1;mem_copy<=1;mem_write<=0;mem_address<=STATE_BASE+{12'd0,slot,18'd0};mem_return<=SCAN;state<=MEM_WAIT;

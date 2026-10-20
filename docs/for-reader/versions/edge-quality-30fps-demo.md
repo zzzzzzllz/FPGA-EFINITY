@@ -1,4 +1,6 @@
-# 第二版上板导览
+# 第二版旧菜单上板记录（历史）
+
+本文记录 `0x6010100f` 的旧菜单，保留当时的运行证据。当前按键及加载配置见[串行演示与验收步骤](edge-quality-30fps-serial-demo.md)，不再按下列旧菜单操作。
 
 [按键、画面与架构思维导图](../../../tools/archify/edge-quality-30fps-guide-20261015/guide.html)
 

@@ -34,7 +34,7 @@ module tb_frame_display;
  threshold_osd osd(clk,rst,vs,de,video[30:24],video[23:0],osd_rgb,shown_threshold,shown_flags,shown_descriptor,shown_toggle,64'd0);
  wire [300:0] shown_descriptor;wire shown_toggle;
  always @(posedge clk) if(rst && de && osd.y>0) begin
-  if(shown_flags!=={1'b0,1'(REFERENCE || tag==1),1'b1}) $fatal(1,"OSD flags differ from actual frame");
+  if(shown_flags!=={1'b0,1'(!REFERENCE && tag==1),1'(!REFERENCE)}) $fatal(1,"OSD flags differ from actual frame");
   if(shown_threshold!==11'((tag*317)%2041)) $fatal(1,"OSD threshold does not match DDR frame");
   if(osd.bcd!=={4'(((tag*317)%2041)/1000),4'((((tag*317)%2041)/100)%10),4'((((tag*317)%2041)/10)%10),4'(((tag*317)%2041)%10)})
    $fatal(1,"OSD decimal conversion");
@@ -55,7 +55,7 @@ module tb_frame_display;
  end
  wire [15:0] display_config={2'd1,1'(CANNY),1'(tag==1),1'b1,11'((tag*317)%2041)};
  reg state_read=0,raw_response=0;reg [31:0] raw_pixel;integer byte_index,raw_position;
- frame_store_dma #(.WORDS(W*H/4),.ENABLE_CANNY(CANNY)) dma(.clk(axi),.rst_n(rst),.enabled(1'b1),
+ frame_store_dma #(.WORDS(W*H/4),.W(W),.H(H),.ENABLE_CANNY(CANNY)) dma(.clk(axi),.rst_n(rst),.enabled(1'b1),
  .job_canny(1'b0),.job_recognize(1'b0),.canny_req_valid(1'(CACHE_LOAD) && !cache_pending),.canny_req_write(1'b0),
  .canny_address(32'h08c00000),.canny_len(8'd255),.canny_req_ready(cache_ready),.canny_done(cache_done),
  .display_config(display_config),.display_frame_id(32'(tag)),
@@ -63,7 +63,7 @@ module tb_frame_display;
  .result_data(162'd0),.result_count(11'd0),.result_empty(1'b1),
  .job_start(job_start),.job_source(6'd0),.job_result(2'd0),.job_reader_ready(!1'(CACHE_LOAD)),.algorithm_used(11'd0),
  .display_period(period),.reference_mode(1'(REFERENCE)),.display_reset(reset_fifo),.display_valid(1'b1),.display_slot(2'd0),
- .reference_valid(1'(REFERENCE)),.reference_slot(6'd0),.display_data(fifo_data),.display_write(write_fifo),.display_used(used),
+ .saved_valid(tag==1?3'b001:3'b111),.saved_slots({6'd3,6'd2,6'd1}),.display_source(6'd4),.display_data(fifo_data),.display_write(write_fifo),.display_used(used),
  .araddr(araddr),.arlen(arlen),.arvalid(arvalid),.rready(rready),
  .awready(1'b0),.wready(1'b0),.bvalid(1'b0),.bresp(2'd0),
  .arready(arready),.rvalid(rvalid),.rlast(rlast),.rresp(2'd0),.rdata(rdata));
@@ -73,7 +73,9 @@ module tb_frame_display;
  assign dv=!empty_fifo && !period;
  // Keep processing reads queued throughout HDMI scanout.
  always @(negedge axi) job_start=rst && (!dma.job_active || dma.algorithm_offset==W*H/4);
- compare_display #(.W(W),.H(H)) comp(clk,rst,period,1'b1,1'b0,1'b0,(tag!=3),294'd0,words,dv,dr,pixels,pv,pr,sof,eol,mixed,completed,source_signature);
+ wire [293:0] frame_descriptor=REFERENCE ? (294'd1<<101) : 294'd0;
+ wire [300:0] expected_descriptor={1'b0,1'(!REFERENCE && tag!=3),2'b00,1'(!REFERENCE),1'(!REFERENCE && tag==1),1'(REFERENCE),frame_descriptor};
+ compare_display #(.W(W),.H(H)) comp(clk,rst,period,1'(!REFERENCE),1'b0,1'b0,(!REFERENCE && tag!=3),frame_descriptor,words,dv,dr,pixels,pv,pr,sof,eol,mixed,completed,source_signature);
  cvo_axi #(.SYMBOL_WIDTH(8),.SYMBOL_NUM(4),.PIXEL_NUM(1),.FIFO_DEPTH(1024),
   .FIFO_ALMOST_FULL(1000),.MAX_H_VALID(W),.MAX_V_VALID(H)) cvo(
   .o_clk(clk),.rst_n(rst),.s_axi_clk(clk),.fifo_rd_period(period),.fifo_rd_underflow(underflow),
@@ -108,9 +110,9 @@ module tb_frame_display;
   else if(REFERENCE && raw_response) begin
    rdata=0;
    if(dma.reader==2) for(byte_index=0;byte_index<16;byte_index=byte_index+1) begin
-    raw_position=(addr+byte_index)/3;
+    raw_position=((addr%32'h00300000)+byte_index)/3;
     if(byte_index==0 || (addr+byte_index)%3==0)
-     raw_pixel=pixel(tag+10,raw_position%W,raw_position/W);
+     raw_pixel=pixel(addr/32'h00300000==4 ? tag+10 : 10+addr/32'h00300000,raw_position%W,raw_position/W);
     rdata[127-byte_index*8 -:8]=raw_pixel[23-((addr+byte_index)%3)*8 -:8];
    end
   end else begin
@@ -138,25 +140,21 @@ module tb_frame_display;
   if(underflow && frames!=0) $fatal(1,"HDMI underflow after warmup");
   if(de) begin
    x=seen%W;y=seen/W;
-   if(y<H/4 || y>=3*H/4) expected=0;
+   if(REFERENCE) begin
+    sx=(x%(W/2))*2;sy=(y%(H/2))*2;
+    p=pixel(y<H/2 ? (x<W/2?11:12) : (x<W/2?13:tag+10),sx,sy);
+    expected={8'd0,(tag==1 && ((y<H/2 && x>=W/2) || (y>=H/2 && x<W/2)) ? 24'd0 : p[23:0])};
+   end else if(y<H/4 || y>=3*H/4) expected=0;
    else begin
     sx=(x%(W/2))*2;sy=(y-H/4)*2;sum=0;ev=0;medsum=0;
     for(integer z=0;z<4;z=z+1) begin
      p=pixel(tag,sx+z%2,sy+z/2);sum=sum+(tag==1?p[23:16]:luma(p));medsum=medsum+p[15:8];ev=ev|p[31];
     end
     sum=x<W/2 ? (sum+2)/4 : (tag==1?(medsum+2)/4:(ev?255:0));
-    if(REFERENCE) begin
-     sum=0;
-     for(integer z=0;z<4;z=z+1) begin
-      p=pixel(x<W/2 ? tag+10 : tag,sx+z%2,sy+z/2);
-      sum=sum+(x>=W/2 && tag==1 ? p[23:16] : luma(p));
-     end
-     sum=(sum+2)/4;
-    end
     expected={8'd0,{3{8'(sum)}}};
    end
-   expected[30:24]=y==0 && x==0 ? 7'(((tag)*317)%2041) : (y==0 && x==1 ? {1'b0,1'(REFERENCE || tag==1),1'b1,4'((((tag)*317)%2041)>>7)} : 7'd0);
-   if(y==0 && x==44) expected[30:24]={1'b0,1'(tag!=3),2'b00,1'b1,1'(REFERENCE || tag==1),1'b0};
+   expected[30:24]=y==0 && x==0 ? 7'(((tag)*317)%2041) : (y==0 && x==1 ? {1'b0,1'(!REFERENCE && tag==1),1'(!REFERENCE),4'((((tag)*317)%2041)>>7)} : 7'd0);
+   if(y==0 && x>=2 && x<=44) expected[30:24]=expected_descriptor>>((x-2)*7);
      if(video!==expected) $fatal(1,"pipeline tag=%0d xy=%0d,%0d got=%h expected=%h",tag,x,y,video,expected);
    seen=seen+1;
    if(seen==W*H) begin

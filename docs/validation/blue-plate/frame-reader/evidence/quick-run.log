@@ -1,0 +1,3 @@
+PASS normal commands=1, 640 exact pixels, 6 bursts
+PASS jobs=33 holds=32 releases=31 reset_clears=1 commands=5 pixels=1722 bursts=33
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-frame-reader\quick-v3b\simulation-inputs\tb_frame_reader.sv:303: $finish called at 100260000 (1ps)

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "frame_store_control-compile",
+    "returncode": 0,
+    "seconds": 0.174,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store_control-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "frame_store_control",
+    "returncode": 0,
+    "seconds": 0.315,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\frame_store_control.log",
+    "sha256": "84c68e07abad4baa8f831212f783962eb4866a85adbbd2c333b6d96583b35237"
+  }
+]

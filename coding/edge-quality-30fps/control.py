@@ -31,8 +31,8 @@ parser.add_argument('--samples', type=int, default=5)
 parser.add_argument('--interval', type=float, default=1)
 parser.add_argument('--edge', action='store_true', default=True, help='Use the edge-system project')
 parser.add_argument('--threshold', type=int, help='Threshold: Sobel 0..2040, Canny 1..2040')
-parser.add_argument('--view', choices=('color', 'gray', 'edge', 'compare', 'denoise', 'overlay', 'reference'), help='Edge display mode; keeps active gains')
-parser.add_argument('--frame', choices=('live','freeze','step','record','play','pause','next','reference','clear-reference'), help='Frame operation; record explicitly replaces the 32-frame clip')
+parser.add_argument('--view', choices=('color', 'gray', 'edge', 'compare', 'denoise', 'overlay', 'reference', 'denoise-edge'), help='Edge display mode; keeps active gains')
+parser.add_argument('--frame', choices=('live','freeze','step','record','play','pause','next','reference','clear-reference','demo-next','demo-prev','demo-home'), help='Frame operation; record explicitly replaces the 32-frame clip')
 parser.add_argument('--set', nargs=5, type=lambda s: int(s, 0),
                     metavar=('R', 'G', 'B', 'GAMMA', 'PHASE'),
                     help='Q8.8 gains (256=1x), gamma 0/1, Bayer phase 0..3')
@@ -101,15 +101,18 @@ try:
             else:
                 data = manager.vio_read(debug, 'status')
                 values = {name: int(value) for (name, _), value in zip(probes, data, strict=True)}
-            expected_id = 0x6010100f
+            expected_id = 0x60101704
             if values['build_id'] != expected_id:
                 raise RuntimeError(f'Expected build {expected_id:#x}, got {values["build_id"]:#x}')
             if args.edge:
                 state, ui = values['frame_state'], values['ui_state']
+                live = values['recognition_live']
+                values.update(hysteresis_busy=(live >> 14)&1, shape_busy=(live >> 13)&1,
+                              shape_state=(live >> 7)&63, shape_cycle_low=live&127)
                 values.update(frame_mode=state & 7, recorded_frames=(state >> 3) & 63,
                               playback_index=(state >> 9) & 31, reference_valid=(state >> 14) & 1,
                               frame_command_error=(state >> 15) & 15,
-                              ui_focus=ui & 7, ui_action=(ui >> 3) & 15, ui_view=(ui >> 7) & 7,
+                              demo_step=(ui >> 24) & 15, ui_view=(ui >> 7) & 7,
                               ui_median=(ui >> 10) & 1, ui_busy=(ui >> 11) & 1,
                               ui_error=(ui >> 12) & 7, ui_apply_ack=(ui >> 15) & 1,
                               algorithm=(ui >> 16) & 1, low_ratio=(ui >> 17) & 3,
@@ -162,9 +165,9 @@ try:
                 if settings is None:
                     settings = [current[name] for name in
                                 ('active_r', 'active_g', 'active_b', 'active_gamma', 'active_phase')]
-                requested_view = args.view or ('color','gray','edge','compare','denoise','overlay','reference')[current['ui_view']]
-                view = int(requested_view in ('gray', 'compare', 'denoise', 'reference'))
-                edge = int(requested_view in ('edge', 'compare', 'denoise', 'reference'))
+                requested_view = args.view or ('color','gray','edge','compare','denoise','overlay','reference','denoise-edge')[current['ui_view']]
+                view = int(requested_view in ('gray', 'compare', 'denoise', 'reference', 'denoise-edge'))
+                edge = int(requested_view in ('edge', 'compare', 'denoise', 'reference', 'denoise-edge'))
                 settings = [*settings, view, edge]
                 threshold = current['threshold_pending'] if args.threshold is None else args.threshold
                 algorithm = int(args.algorithm=='canny') if args.algorithm else current['algorithm']
@@ -177,9 +180,10 @@ try:
                 settings.extend([threshold, toggle])
                 widths.extend([1, 1, 11, 1, 1, 1, 1])
                 settings.extend([int(args.median=='on') if args.median else current['ui_median'],
-                                 int(requested_view=='denoise'), int(requested_view=='overlay')])
+                                 int(requested_view in ('denoise','denoise-edge')), int(requested_view in ('overlay','denoise-edge'))])
                 command = {'live':1,'freeze':2,'step':3,'record':4,'play':5,'pause':6,
-                           'next':7,'reference':8,'clear-reference':9}.get(args.frame,0)
+                           'next':7,'reference':8,'clear-reference':9,
+                           'demo-next':12,'demo-prev':13,'demo-home':14}.get(args.frame,0)
                 if args.frame == 'step' and current['frame_mode'] in (3,4):
                     command = 7
                 settings.extend([command, current['frame_command_ack'] ^ int(args.frame is not None),
@@ -193,9 +197,16 @@ try:
             print(json.dumps({'set': settings}), flush=True)
             time.sleep(0.3)
             if args.frame:
-                applied = read()
-                if applied['ui_busy'] or applied['frame_command_error']:
-                    raise RuntimeError(f'Frame command failed or still busy: {applied}')
+                deadline = time.monotonic()+5
+                while True:
+                    applied = read()
+                    if applied['frame_command_ack']==settings[13] and not applied['ui_busy']:
+                        break
+                    if time.monotonic() >= deadline:
+                        raise RuntimeError(f'Frame command timed out: {applied}')
+                    time.sleep(0.1)
+                if applied['frame_command_error'] or applied['ui_error']:
+                    raise RuntimeError(f'Frame command failed: {applied}')
         start = time.monotonic()
         for i in range(args.samples):
             print(json.dumps({'elapsed_s': round(time.monotonic()-start, 3),

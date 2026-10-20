@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "共用算法链：图像数据与控制接口",
+    "locale": "zh-CN",
+    "output": ".archify/dataflow-fpga-image-path-20261017-165857/algorithm-flow.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://localhost/archify-snapshots/fpga-image-path-20261017-165857.git",
+      "revision": "6871008d06f7d6583e300f3353b61ee6ec323b7d",
+      "link_mode": "local-only"
+    }
+  },
+  "stages": [
+    {
+      "label": "输入与任务完成"
+    },
+    {
+      "label": "中值与几何识别"
+    },
+    {
+      "label": "高斯与全帧连接"
+    },
+    {
+      "label": "梯度与 DDR"
+    },
+    {
+      "label": "分类与局部清理"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "input",
+      "type": "backend",
+      "label": "RGBY 输入",
+      "sublabel": "in_pixels[63:0]",
+      "stage": 0,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 1,
+          "end_line": 19
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 158,
+          "end_line": 184
+        }
+      ],
+      "tag": "in_config[15:0]"
+    },
+    {
+      "id": "median",
+      "type": "backend",
+      "label": "3×3 中值",
+      "sublabel": "median_pair",
+      "stage": 1,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 22,
+          "end_line": 29
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/median_pair.v",
+          "line": 111,
+          "end_line": 148
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/median_pair.v",
+          "line": 410,
+          "end_line": 418
+        }
+      ],
+      "tag": "bit11：开 / 旁路"
+    },
+    {
+      "id": "gaussian",
+      "type": "backend",
+      "label": "3×3 高斯",
+      "sublabel": "gaussian_pair",
+      "stage": 2,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 30,
+          "end_line": 34
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/gaussian_pair.v",
+          "line": 62,
+          "end_line": 75
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/gaussian_pair.v",
+          "line": 106,
+          "end_line": 114
+        }
+      ],
+      "tag": "bit13：Canny 才用"
+    },
+    {
+      "id": "sobel",
+      "type": "backend",
+      "label": "梯度与 Sobel",
+      "sublabel": "sobel_pair",
+      "stage": 3,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 35,
+          "end_line": 39
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/sobel_pair.v",
+          "line": 72,
+          "end_line": 97
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/sobel_pair.v",
+          "line": 144,
+          "end_line": 155
+        }
+      ],
+      "tag": "幅值 / 方向 / E"
+    },
+    {
+      "id": "nms",
+      "type": "backend",
+      "label": "NMS 与双阈值",
+      "sublabel": "canny_nms_pair",
+      "stage": 4,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 40,
+          "end_line": 45
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/canny_nms_pair.v",
+          "line": 59,
+          "end_line": 83
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/canny_nms_pair.v",
+          "line": 120,
+          "end_line": 128
+        }
+      ],
+      "tag": "高 T / 低 R×T"
+    },
+    {
+      "id": "cleanup",
+      "type": "backend",
+      "label": "局部边缘清理",
+      "sublabel": "edge_cleanup_pair",
+      "stage": 4,
+      "row": 1,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 46,
+          "end_line": 50
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/canny_nms_pair.v",
+          "line": 176,
+          "end_line": 223
+        }
+      ],
+      "tag": "Canny 条件清理"
+    },
+    {
+      "id": "intermediate",
+      "type": "database",
+      "label": "写结果与分类平面",
+      "sublabel": "frame_store_dma",
+      "stage": 3,
+      "row": 1,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 219,
+          "end_line": 238
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_dma.v",
+          "line": 230,
+          "end_line": 266
+        }
+      ],
+      "tag": "RGB24 + 状态"
+    },
+    {
+      "id": "hysteresis",
+      "type": "backend",
+      "label": "八邻域滞后连接",
+      "sublabel": "canny_hysteresis",
+      "stage": 2,
+      "row": 1,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 75,
+          "end_line": 97
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/canny_hysteresis.v",
+          "line": 1,
+          "end_line": 36
+        }
+      ],
+      "tag": "algorithm=1 时执行"
+    },
+    {
+      "id": "shape",
+      "type": "backend",
+      "label": "轮廓与形状判定",
+      "sublabel": "shape_recognizer",
+      "stage": 1,
+      "row": 1,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 75,
+          "end_line": 83
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/shape_recognizer.v",
+          "line": 1,
+          "end_line": 25
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/shape_recognizer.v",
+          "line": 295,
+          "end_line": 399
+        }
+      ],
+      "tag": "recognition=1 时执行"
+    },
+    {
+      "id": "finish",
+      "type": "backend",
+      "label": "同帧结果发布",
+      "sublabel": "job_done / job_ok",
+      "stage": 0,
+      "row": 1,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 65,
+          "end_line": 78
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_control.v",
+          "line": 168,
+          "end_line": 178
+        }
+      ],
+      "tag": "count / boxes / kinds"
+    }
+  ],
+  "flows": [
+    {
+      "id": "input-median",
+      "from": "input",
+      "to": "median",
+      "label": "Y + RGB",
+      "variant": "emphasis"
+    },
+    {
+      "id": "median-gaussian",
+      "from": "median",
+      "to": "gaussian",
+      "label": "Y中值 + RGB",
+      "variant": "emphasis"
+    },
+    {
+      "id": "gaussian-sobel",
+      "from": "gaussian",
+      "to": "sobel",
+      "label": "Y平滑 + RGB",
+      "variant": "emphasis"
+    },
+    {
+      "id": "sobel-nms",
+      "from": "sobel",
+      "to": "nms",
+      "label": "幅值方向 + RGB",
+      "variant": "emphasis"
+    },
+    {
+      "id": "nms-cleanup",
+      "from": "nms",
+      "to": "cleanup",
+      "label": "强 / 弱 / 无",
+      "variant": "emphasis"
+    },
+    {
+      "id": "cleanup-intermediate",
+      "from": "cleanup",
+      "to": "intermediate",
+      "label": "out_pixels",
+      "variant": "emphasis"
+    },
+    {
+      "id": "intermediate-hysteresis",
+      "from": "intermediate",
+      "to": "hysteresis",
+      "label": "Canny 写完",
+      "variant": "emphasis"
+    },
+    {
+      "id": "hysteresis-shape",
+      "from": "hysteresis",
+      "to": "shape",
+      "label": "识别开",
+      "variant": "emphasis"
+    },
+    {
+      "id": "shape-finish",
+      "from": "shape",
+      "to": "finish",
+      "label": "s_done / s_ok",
+      "variant": "emphasis"
+    },
+    {
+      "id": "intermediate-shape",
+      "from": "intermediate",
+      "to": "shape",
+      "label": "Sobel 识别开",
+      "variant": "default"
+    },
+    {
+      "id": "intermediate-finish",
+      "from": "intermediate",
+      "to": "finish",
+      "label": "Sobel 识别关",
+      "variant": "default"
+    },
+    {
+      "id": "hysteresis-finish",
+      "from": "hysteresis",
+      "to": "finish",
+      "label": "识别关",
+      "variant": "default"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Sobel 和 Canny 如何共用",
+      "items": [
+        "Sobel：中值（可开关）→ 高斯旁路 → |Gx|+|Gy| > T → NMS/cleanup 透传 → 跳过全帧滞后连接。",
+        "Canny：中值 → 3×3 高斯 → 共用 Sobel 梯度 → 四方向非极大值抑制 → 双阈值 → 条件局部清理 → 完整八邻域连接。",
+        "灰度和彩色页也使用这一任务路径；“选择显示原图”不等于物理绕开全部算法模块。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "in_config 的实际位定义",
+      "items": [
+        "[10:0] threshold：Sobel 二值阈值 / Canny 高阈值 T；默认 56。",
+        "[11] median：替换 Y 为中值；[12] denoise：启用 03 页比较载荷；[13] algorithm：0=Sobel，1=Canny。",
+        "[15:14] low_ratio：页面开放 0/1/2，对应 1/4、1/2、3/4。recognition_enable 独立传给 frame_store，不在这 16 bit 内。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "03 页为何能比较前后",
+      "items": [
+        "median_pair 额外输出 out_original_luma 和 out_raw_edge（未滤波 Sobel）。并未另建第二套完整图像处理链。",
+        "denoise=1 时，原 RGB24 载荷改装为原灰度、滤后灰度和未滤波边缘；主链继续产生滤后 Sobel 边缘。",
+        "显示器根据 view=4/7，选择灰度前后或边缘前后。中值关时两侧应一致。"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "识别的触发和输出",
+      "items": [
+        "识别关闭：edge_done 直接完成任务；识别开启：边缘成功后再启动 shape_recognizer，完成后发布。",
+        "输入是 DDR 中的最终边缘状态，输出 count[2:0]、boxes[175:0]、kinds[7:0] 和 overflow；最多四个目标。",
+        "识别复用 canny_hysteresis 的 ext_* 存储接口。threshold 并不直接调几何容差；圆径/矩形短边 64～400、边距 16 是 RTL 参数。"
+      ]
+    }
+  ]
+}

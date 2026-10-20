@@ -1,0 +1,15 @@
+{
+  "tools/blue_plate/char_model/confidence.py": "37d89e9ec15fabe544ff5d877e9dfbff30c2d85901bbc2859ca96c39e63f9cfc",
+  "tools/blue_plate/char_model/error_analysis.py": "230fd98c8e447e2760170acb9b96c2016ff5361d5a81f314848130e2b26c6c1f",
+  "tools/blue_plate/char_model/experiment.py": "dc214c89ce27ea1636548bec971e8ca3060765f83f7124bfda33cf790b9543f2",
+  "tools/blue_plate/char_model/export.py": "998e61dc9fae81d455a82ccebbd07228928666e38620c66df08b82e1b8d0d543",
+  "tools/blue_plate/char_model/model.py": "81c45cadb85199837314dc42c433b64b8276d3a3c1364ef41debbb54fcbd933c",
+  "tools/blue_plate/char_model/roi_diagnostic.py": "145ef7d5ca63c02283c40046523bc3c46763f8e2125b965c8c880e6d4b1f8845",
+  "tools/blue_plate/char_model/verify.py": "5ab20b75464d30cd68b62ec871df7a8473f31ad0bdaa58828e4f072f2d975657",
+  "tools/blue_plate/char_model/tests/check_vendor_lut.py": "ededd832416a42a7ced824fb73a230e0c4dc245cafab57e6a4e0aec1a5608043",
+  "tools/blue_plate/char_model/tests/prepare_synthesis.py": "94d7a6851bbbf6f96b1b2309515114aec34fb260f1cef367cf29ce669b87ce2f",
+  "tools/blue_plate/char_model/tests/run_sim.py": "d9ecf81b16365b7baaac97f6ca51ff56c65f8766b7d51692c5c78111bb4e33bc",
+  "tools/blue_plate/char_model/rtl/char_linear.v": "c29b621ce3d3acf6ff26656dac2140eda1e0c831029e73a2b86c508fb1073577",
+  "tools/blue_plate/char_model/tests/tb_char_linear.sv": "494ba17f26f1f25807fd22d3b4268a8da488ab465d1d805cea76692eed1113ef",
+  "tools/blue_plate/char_model/tests/tb_vendor_lut_init.sv": "62d06117bc1460922f532f1a976c72c29ed89657a0ff5591f7aebcfcd065d11e"
+}

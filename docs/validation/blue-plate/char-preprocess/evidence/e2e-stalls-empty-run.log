@@ -1,0 +1,8 @@
+CASE 310 error=0 preprocess_cycles=47388 total_cycles=89184
+CASE 311 error=0 preprocess_cycles=47389 total_cycles=89185
+CASE 312 error=0 preprocess_cycles=47384 total_cycles=89180
+CASE 310 error=0 preprocess_cycles=47390 total_cycles=89186
+CASE 310 error=0 preprocess_cycles=47388 total_cycles=89184
+CASE 310 error=0 preprocess_cycles=47388 total_cycles=89184
+PASS 6 completed cases; pixels/features/scores exact; reset in 3 phases; stalls=1
+D:\Desktop_New\EfinityNEW\tools\blue_plate\char_preprocess\tests\tb_char_preprocess.sv:145: $finish called at 6112970000 (1ps)

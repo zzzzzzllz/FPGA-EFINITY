@@ -1,0 +1,4 @@
+WARNING: cannot find correct IV value
+Creating D:\Desktop_New\EfinityNEW\tmp\blue-plate-video-base\live\outflow
+Running: efx_run_map.py blue_plate_video_live --family Titanium --device Ti60F225 --project_xml D:\Desktop_New\EfinityNEW\tmp\blue-plate-video-base\live\blue_plate_video_live.xml --output_dir outflow --work_dir work_syn --opt root=ti60f225_oob_top --opt veri_options=verilog_mode=sv_09,vhdl_mode=vhdl_2008 work-dir=work_syn write_efx_verilog=on
+   map :	PASS 

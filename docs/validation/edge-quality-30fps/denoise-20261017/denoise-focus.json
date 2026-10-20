@@ -1,0 +1,30 @@
+[
+  {
+    "name": "edge_ui-compile",
+    "returncode": 0,
+    "seconds": 0.614,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "edge_ui",
+    "returncode": 0,
+    "seconds": 0.26,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\edge_ui.log",
+    "sha256": "24a26edc8e2929fce2666fcb3034290eb70af37c6c6d07716b7e927555688afb"
+  },
+  {
+    "name": "canny_rules-compile",
+    "returncode": 0,
+    "seconds": 0.067,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\canny_rules-compile.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "canny_rules",
+    "returncode": 0,
+    "seconds": 0.114,
+    "log": "D:\\Desktop_New\\EfinityNEW\\tmp\\tests\\edge-quality-30fps\\regression\\canny_rules.log",
+    "sha256": "c2ea83e8a2d913600610aca630fae7c5a561125237b988cfd1022398be5e75a1"
+  }
+]

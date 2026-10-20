@@ -1,0 +1,22 @@
+{
+  "source_hashes_unchanged": true,
+  "compile_and_run_exit_zero": true,
+  "live_base_comparison": [
+    {
+      "file": "debug_top.v",
+      "same_original_and_live_base": true
+    },
+    {
+      "file": "full_view_profile.json",
+      "same_original_and_live_base": true
+    },
+    {
+      "file": "rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v",
+      "same_original_and_live_base": true
+    },
+    {
+      "file": "rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v",
+      "same_original_and_live_base": true
+    }
+  ]
+}

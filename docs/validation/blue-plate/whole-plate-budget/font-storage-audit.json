@@ -1,0 +1,116 @@
+{
+  "status": "Static content/address equivalence only; no candidate RTL, simulation or map",
+  "original": {
+    "words": 4096,
+    "width": 32,
+    "mapped_RAM": 16,
+    "mapped_LUT4": 475,
+    "mapped_FF": 34
+  },
+  "content": {
+    "glyphs": 69,
+    "class_glyphs": 65,
+    "reachable_rows": 2208,
+    "unused_tail_rows": 1888,
+    "zero_reachable_rows": 529,
+    "nonzero_reachable_rows": 1679,
+    "unique_rows": 756,
+    "unique_nonzero_rows": 755,
+    "ink_y": [
+      1,
+      29
+    ],
+    "ink_x": [
+      2,
+      29
+    ],
+    "most_common_rows": [
+      {
+        "hex": "00000000",
+        "count": 529
+      },
+      {
+        "hex": "0003c000",
+        "count": 63
+      },
+      {
+        "hex": "003c0000",
+        "count": 51
+      },
+      {
+        "hex": "03ffffc0",
+        "count": 38
+      },
+      {
+        "hex": "00f00780",
+        "count": 36
+      },
+      {
+        "hex": "1ffffff8",
+        "count": 32
+      },
+      {
+        "hex": "00078000",
+        "count": 32
+      },
+      {
+        "hex": "00007800",
+        "count": 29
+      }
+    ]
+  },
+  "candidate_row_split": {
+    "layout": [
+      "2048x32",
+      "256x32"
+    ],
+    "primitive_modes": [
+      "8 * 2048x4",
+      "2 * 512x16"
+    ],
+    "architectural_RAM_target": 10,
+    "actual_RAM": null
+  },
+  "candidate_bit_split": {
+    "layout": [
+      "65536x1",
+      "4096x1",
+      "blank constant"
+    ],
+    "primitive_modes": [
+      "8 * 8192x1",
+      "1 * 8192x1"
+    ],
+    "architectural_RAM_target": 9,
+    "actual_RAM": null,
+    "address": "low={glyph[5:0],row[4:0],column[4:0]}; high={glyph[1:0],row[4:0],column[4:0]}",
+    "bit_order": "column 0 is original row bit 31",
+    "target_registered_read_cycles": 1
+  },
+  "dictionary": {
+    "index_width": 10,
+    "index_entries": 2208,
+    "row_width": 32,
+    "row_entries": 756,
+    "raw_bits": 46272,
+    "problem": "Two synchronous dependent reads add a cycle; LUT lookup cost unknown"
+  },
+  "static_pixel_cases": 131072,
+  "tested_incoming_ids": 128,
+  "untested": "RTL clock/reset/control equivalence, inference mode, RAM count, mux logic and timing",
+  "source_sha256": {
+    "tools\\blue_plate\\plate_display\\plate_osd.v": "d6a8de82eab79e2769473e7659b62b2e972d8c5a20b9fd64157cf9dbdded6833",
+    "tools\\blue_plate\\plate_display\\plate_font.mem": "86a83630b7cf0d62f3e5aef2082786d57560744f93983b88307bd1128a32ff2e",
+    "tools\\blue_plate\\plate_display\\assets.json": "efbc4afa1f1d9cece2f84a2bcc4ee11e44b2176e023fde6730de533cd38144d1",
+    "tools\\blue_plate\\plate_display\\plate_defs.vh": "792145729b9d87cf7fc60023ee2c5bf564d3a72f8b961d642a02011c246f0cec",
+    "coding\\edge-quality-30fps\\rtl\\threshold_osd.v": "bda08246d2f34e4adb50f9074d9a764c0ee84f55ef105e5e46d816afe4e17123",
+    "docs\\validation\\blue-plate\\plate-display\\plate_osd.map.rpt": "45a8eb1c86d9101f2d15ada7cca24a09f967faee83c57572da2534afe8c035c8"
+  },
+  "research": [
+    {
+      "url": "https://www.efinixinc.com/docs/efinity-quantum-ti-primitives-ug-v1.3.pdf",
+      "section": "EFX_RAM10 allowed modes: 8192x1, 2048x4, 512x16; architecture targets require map confirmation"
+    }
+  ],
+  "sources_unchanged": true
+}

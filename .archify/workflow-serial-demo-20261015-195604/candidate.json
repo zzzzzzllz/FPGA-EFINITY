@@ -1,0 +1,354 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "第二版 · 串行演示路线（新按键草案）",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": ".archify/workflow-serial-demo-20261015-195604/serial-demo.html",
+    "legend": {
+      "entries": {
+        "frontend": {
+          "label": "拟设计的板上演示步骤"
+        },
+        "external": {
+          "label": "人工讲解与提交材料"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "basic",
+      "label": "一 · 基础功能"
+    },
+    {
+      "id": "advanced",
+      "label": "二 · 算法与识别"
+    },
+    {
+      "id": "frames",
+      "label": "三 · DDR 帧功能"
+    },
+    {
+      "id": "proof",
+      "label": "四 · 对比与验收"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "color",
+      "lane": "basic",
+      "col": 0,
+      "type": "frontend",
+      "label": "01 · 彩色原图",
+      "sublabel": "移动测试纸，观察实时画面",
+      "tag": "基础1：采集"
+    },
+    {
+      "id": "gray",
+      "lane": "basic",
+      "col": 1,
+      "type": "frontend",
+      "label": "02 · 灰度画面",
+      "sublabel": "自动转灰度，观察明暗层次",
+      "tag": "基础2：灰度"
+    },
+    {
+      "id": "sobel",
+      "lane": "basic",
+      "col": 2,
+      "type": "frontend",
+      "label": "03 · Sobel 边缘",
+      "sublabel": "K2 全屏边缘 / K3 灰度对比",
+      "tag": "基础3、4"
+    },
+    {
+      "id": "threshold",
+      "lane": "basic",
+      "col": 3,
+      "type": "frontend",
+      "label": "04 · 阈值调节",
+      "sublabel": "K2 降低 / K3 提高阈值",
+      "tag": "高阶2：实时调节"
+    },
+    {
+      "id": "median",
+      "lane": "advanced",
+      "col": 3,
+      "type": "frontend",
+      "label": "05 · 中值去噪",
+      "sublabel": "K2 关闭 / K3 开启中值",
+      "tag": "高阶1：去噪对照"
+    },
+    {
+      "id": "canny",
+      "lane": "advanced",
+      "col": 2,
+      "type": "frontend",
+      "label": "06 · Canny 细边缘",
+      "sublabel": "K2 降低 / K3 提高低阈值比例",
+      "tag": "高阶4：双阈值"
+    },
+    {
+      "id": "overlay",
+      "lane": "advanced",
+      "col": 1,
+      "type": "frontend",
+      "label": "07 · 彩色红边叠加",
+      "sublabel": "K2 隐藏 / K3 显示红色边缘",
+      "tag": "高阶5：彩色叠加"
+    },
+    {
+      "id": "shape",
+      "lane": "advanced",
+      "col": 0,
+      "type": "frontend",
+      "label": "08 · 圆形 / 矩形识别",
+      "sublabel": "K2 关闭 / K3 开启识别",
+      "tag": "高阶6：换图验证"
+    },
+    {
+      "id": "freeze",
+      "lane": "frames",
+      "col": 0,
+      "type": "frontend",
+      "label": "09 · 冻结画面",
+      "sublabel": "K2 冻结 / K3 恢复实时",
+      "tag": "高阶3：帧冻结"
+    },
+    {
+      "id": "step",
+      "lane": "frames",
+      "col": 1,
+      "type": "frontend",
+      "label": "10 · 现场单帧更新",
+      "sublabel": "K2 取新帧后冻结 / K3 实时",
+      "tag": "移动物体后再按K2"
+    },
+    {
+      "id": "record",
+      "lane": "frames",
+      "col": 2,
+      "type": "frontend",
+      "label": "11 · 录制32帧",
+      "sublabel": "K3 开始录制 / K2 停止回实时",
+      "tag": "录满自动暂停"
+    },
+    {
+      "id": "play",
+      "lane": "frames",
+      "col": 3,
+      "type": "frontend",
+      "label": "12 · 录像回放 / 逐帧",
+      "sublabel": "K2 播放或暂停 / K3 下一帧",
+      "tag": "须先在11录制"
+    },
+    {
+      "id": "reference",
+      "lane": "proof",
+      "col": 3,
+      "type": "frontend",
+      "label": "13 · 参考帧对比",
+      "sublabel": "K2 保存参考 / K3 清除参考",
+      "tag": "左参考灰度，右现场"
+    },
+    {
+      "id": "metrics",
+      "lane": "proof",
+      "col": 2,
+      "type": "frontend",
+      "label": "14 · 实时性能展示",
+      "sublabel": "看 C/P 帧率；移动物体看稳定性",
+      "tag": "板上路线终点"
+    },
+    {
+      "id": "evidence",
+      "lane": "proof",
+      "col": 1,
+      "type": "external",
+      "label": "15 · 技术证据讲解",
+      "sublabel": "展示 RTL、约束、时序与测试记录",
+      "tag": "人工讲解，无板上按钮"
+    },
+    {
+      "id": "finish",
+      "lane": "proof",
+      "col": 0,
+      "type": "external",
+      "label": "16 · 演示材料交付",
+      "sublabel": "提交完整源码、约束和实物视频",
+      "tag": "基础5；核对全部要求"
+    }
+  ],
+  "edges": [
+    {
+      "id": "to_gray",
+      "from": "color",
+      "to": "gray",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_sobel",
+      "from": "gray",
+      "to": "sobel",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_threshold",
+      "from": "sobel",
+      "to": "threshold",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_median",
+      "from": "threshold",
+      "to": "median",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_canny",
+      "from": "median",
+      "to": "canny",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_overlay",
+      "from": "canny",
+      "to": "overlay",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_shape",
+      "from": "overlay",
+      "to": "shape",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_freeze",
+      "from": "shape",
+      "to": "freeze",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_step",
+      "from": "freeze",
+      "to": "step",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_record",
+      "from": "step",
+      "to": "record",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_play",
+      "from": "record",
+      "to": "play",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_reference",
+      "from": "play",
+      "to": "reference",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_metrics",
+      "from": "reference",
+      "to": "metrics",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_evidence",
+      "from": "metrics",
+      "to": "evidence",
+      "role": "main",
+      "label": "讲解",
+      "variant": "default"
+    },
+    {
+      "id": "to_finish",
+      "from": "evidence",
+      "to": "finish",
+      "role": "main",
+      "label": "讲解",
+      "variant": "default"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "新规则：一个导航键，两个当前操作键",
+      "items": [
+        "K1=KEY1：短按下一步，长按约0.8秒上一步。进入一步自动设置算法、画面和参数；没有VIEW/FRAME等旧菜单，也不保留旧的长按冻结语义。",
+        "K2=KEY2、K3=KEY3：只执行框内写明的动作。第01、02、14步无需这两个键。屏幕固定显示步骤编号、名称及本步K2/K3提示。",
+        "第01步继续后退、第14步继续前进都停在本步；第15—16项由讲解者完成，不是虚构的板上界面。KEY0仍是系统复位，不用来翻页。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "每步自带预设，按顺序即可演示",
+      "items": [
+        "01彩色 → 02灰度 → 03Sobel分屏 → 04Sobel阈值 → 05中值前后对比 → 06Canny分屏 → 07彩色红边 → 08形状分类。",
+        "03/04默认中值关、识别关；04阈值初值暂用24、步长暂用16。05固定去噪对比，K3开启中值。06高阈值暂用24，低阈值比例1/4、1/2、3/4，默认1/2。",
+        "08默认识别关，K3开启，举圆形和矩形纸检查CIRCLE/RECT。普通图像步骤进入时恢复实时，避免上一页冻结状态污染下一页。"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "帧步骤可回退，素材不会被翻页抹掉",
+      "items": [
+        "09/10/11默认彩色实时，识别关。09演示冻结；10反复抓取新现场一帧；11只有按K3才覆盖旧片段录制，录满32帧自动暂停。",
+        "12进入时保持暂停，K2开始播放/再次暂停，K3前进一帧并暂停；没录过则显示“先返回11录制”，不能伪装成成功。",
+        "13恢复实时，K2才保存/更新参考并切左参考、右当前灰度对比；K3清参考。切步骤保留已有录像与参考，返回11/13不会自动覆盖素材。",
+        "切换配置和保存等短事务未完成时显示“正在切换/保存”，确认完成再允许下一动作；录制期间K2可停止。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "赛题全覆盖：画面之外还要拿出证据",
+      "items": [
+        "基础1—4在01—04及14展示；基础5在15—16交付。六项高阶分别在05、04、09—13、06、07、08覆盖。",
+        "第14步看已有C/P采集与处理帧率，并结合连续录像、HDMI信息、电脑计数验证≥640×480和显示≥640×480@60Hz、无丢帧/错位/闪烁/撕裂；显示刷新率不等于处理FPS。",
+        "第15项说明DSP/移位灰度、两行缓存3×3窗口、Gx/Gy与绝对值求和、按键消抖、中值排序、完整Canny阶段及DDR IP。用源码/波形/报告说明，不把切画面当作算法正确证明。",
+        "本版含DDR帧级调度与Canny滞后连接；全流水线要求的对应关系、实际吞吐与延迟需专项验证，不能声称零物理延迟。"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "用于对齐的新设计，固件尚未修改",
+      "items": [
+        "全部K1/K2/K3含义都是新方案，不是当前固件操作说明。现有功能可供复用，边缘闪动、去噪和形状识别等效果仍须实拍验收。",
+        "首轮只确认导航方式、步骤顺序、演示时长和电脑辅助方式；参数、页面文字与录制/回退细节随后逐轮收敛。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "source_weights_sha256": "b21a547399f17ecb50264d489eec4e4563c2269babab7149dc5447f7a12f5391",
+  "candidate_unchanged": true,
+  "candidate_hashes": {
+    "b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8",
+    "interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da",
+    "quantization.json": "b7023386b6dc168edcf4e213527258ce88dff808eae337a1ff3cdfe335838d89",
+    "test-vectors.json": "646eb819901c060e66279b21b75b59876b81e8d3e2b8936d4c516494a892d5bc",
+    "verification.json": "c3dc8003613e4e68b66f4c98d01333d14f3bd128795ea49cded9bfb57e24a9cd",
+    "w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+    "w1-s10.mem": "82da3e62e8470dcf3fbe9b846848fc23a0ca6e70c08d45f047db535769149949",
+    "w1.mem": "21091ebe1a12d595dbf4edb5ace5828f35af812de1dccae99ea7a1fce10538c1",
+    "weights.npz": "d9c78f399086b74d00417c982c37b6d5b2a1a836bfde8ad020bf9fe9d9c3da52"
+  },
+  "core_and_tb_sha256": {
+    "tools\\blue_plate\\char_model\\rtl\\char_linear.v": "f7369e67e7fea59beb4c0db75ebb874914fd94d42445647f343cd94484a6b879",
+    "tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv": "ade9b80ddcf0775551c501e94ae563e2772f4493a05083a650ef56b7ee78bc14"
+  },
+  "experiment_files_sha256": {
+    "b1.mem": "8404d488b71b9bf6ed0c94db84197f0232f8857ea087ee991a1396a06be69669",
+    "collect.py": "303dbca016954dff83be97928bd0af39021100155d5e4c778941f84901a426d7",
+    "geometry11_char_linear.v": "54e8b0479fb862ad2f4866b13c4abd21501f272ffdc910153d62ef9fc2365890",
+    "interface.json": "327dc7f199b9c0a81c1796ae8ad30ac37bfe9f4c10e3f87d209fbbd99b33072d",
+    "README.md": "d26862f3c5ebc5e4fcc0de64e9de7a59544a62264b7c871318af8edc29bc0627",
+    "run.py": "150ec2c4aa219992d080ef0aa837f425fffddf4ed4a657a426d3b4bfe7f51b27",
+    "w1-s11.bin": "1eaaa654492a8f4b532afffca93f530efe80349fe587c1d32f97eeff42a24a8c"
+  },
+  "rom_roundtrip": {
+    "weights_checked": 20800,
+    "biases_checked": 65,
+    "weight_range": [
+      -586,
+      468
+    ],
+    "outside_signed10": 1,
+    "w1_sha256": "1eaaa654492a8f4b532afffca93f530efe80349fe587c1d32f97eeff42a24a8c",
+    "b1_sha256": "8404d488b71b9bf6ed0c94db84197f0232f8857ea087ee991a1396a06be69669"
+  },
+  "thresholds": {
+    "province": {
+      "score": 174,
+      "margin": 4417
+    },
+    "alphanumeric": {
+      "score": -21431,
+      "margin": 4068
+    }
+  },
+  "absolute_accumulator_bound": 531070,
+  "tests": {
+    "default": {
+      "vectors": 159,
+      "scores": 10465,
+      "latency_cycles": 41796
+    },
+    "rtl": {
+      "vectors": 320,
+      "scores": 20930,
+      "latency_cycles": 41796,
+      "record_sha256": "f8fc62961dc8c75c78b4d6999dbf81cd124ac4183b4a9fab4325ab042cfe0ca9"
+    },
+    "boundary10": {
+      "vectors": 36,
+      "scores": 2470,
+      "latency_cycles": 41796,
+      "record_sha256": "05ac30fafc58dff3c36cca31ad50c6c1952e8fe6cc089b28545627ed6dd7496c"
+    },
+    "boundary": {
+      "vectors": 36,
+      "scores": 2470,
+      "latency_cycles": 41796,
+      "record_sha256": "70cf5a3dd7721100a50e5f939dc6a9d80b8a6dc2b2eaaf731dc1e7c8d213fe7a"
+    },
+    "mapped": {
+      "vectors": 9,
+      "scores": 715,
+      "latency_cycles": 41796,
+      "record_sha256": "705a8b6a8571f81d4d8c38f25f09ae3f7f895940bcd0f02e16702fcb5797c836"
+    }
+  },
+  "resources": {
+    "EFX_ADD": 65,
+    "EFX_LUT4": 471,
+    "EFX_DSP48": 1,
+    "EFX_FF": 216,
+    "EFX_RAM10": 36
+  },
+  "map_report_sha256": "59df3bbfe8e16124f78fb39a54fe31127f7256d70ef8b534428a65e38f26a77f",
+  "map_netlist_sha256": "fbece3859cf3a0a13430e3bab99258457a7ef2d8db09de66cf9c324c1df19c0a",
+  "scope": "Independent geometry model arithmetic/protocol/map verification; no heldout scoring, shared top, PNR, hardware operation or formal candidate replacement"
+}

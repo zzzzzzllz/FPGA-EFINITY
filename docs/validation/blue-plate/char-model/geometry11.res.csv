@@ -1,0 +1,9 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Oct 18, 2026 13:56:05
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	       FFs	      SRLs	      ADDs	      LUTs	    COMB4s	      RAMs	 DSP/MULTs
+geometry11_char_linear:geometry11_char_linear               	   216(0)	     0(0)	    65(0)	   471(0)	     0(0)	    36(0)	     1(0)	
+ +core:char_linear(WEIGHT_FILE="w1-s11.bin",PROVINCE_SCORE=174,PROVINCE_MARGIN=4417,ALNUM_SCORE=-21431,ALNUM_MARGIN=4068,WEIGHT_BITS=11)	 216(216)	     0(0)	   65(65)	 471(471)	     0(0)	   36(36)	     1(1)	

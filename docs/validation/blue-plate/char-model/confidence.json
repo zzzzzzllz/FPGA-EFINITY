@@ -1,0 +1,188 @@
+{
+  "linear0.1": {
+    "validation_1pct": {
+      "thresholds": {
+        "province": {
+          "score": -1351,
+          "margin": 4245
+        },
+        "alphanumeric": {
+          "score": -20593,
+          "margin": 3556
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "correct": 3522,
+        "wrong": 30,
+        "reject": 384
+      },
+      "test": {
+        "total": 3897,
+        "correct": 3542,
+        "wrong": 35,
+        "reject": 320
+      },
+      "development_roi": {
+        "plates": 15,
+        "correct": 8,
+        "wrong": 1,
+        "reject": 6
+      }
+    },
+    "validation_zero_errors": {
+      "thresholds": {
+        "province": {
+          "score": -10797,
+          "margin": 12025
+        },
+        "alphanumeric": {
+          "score": -20593,
+          "margin": 13019
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "correct": 2822,
+        "wrong": 0,
+        "reject": 1114
+      },
+      "test": {
+        "total": 3897,
+        "correct": 2855,
+        "wrong": 2,
+        "reject": 1040
+      },
+      "development_roi": {
+        "plates": 15,
+        "correct": 3,
+        "wrong": 0,
+        "reject": 12
+      }
+    }
+  },
+  "mlp64": {
+    "validation_1pct": {
+      "thresholds": {
+        "province": {
+          "score": 26100,
+          "margin": 29449
+        },
+        "alphanumeric": {
+          "score": -50301,
+          "margin": 17007
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "correct": 3487,
+        "wrong": 32,
+        "reject": 417
+      },
+      "test": {
+        "total": 3897,
+        "correct": 3448,
+        "wrong": 28,
+        "reject": 421
+      },
+      "development_roi": {
+        "plates": 15,
+        "correct": 5,
+        "wrong": 0,
+        "reject": 10
+      }
+    },
+    "validation_zero_errors": {
+      "thresholds": {
+        "province": {
+          "score": 111935,
+          "margin": 0
+        },
+        "alphanumeric": {
+          "score": -50301,
+          "margin": 99792
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "correct": 1289,
+        "wrong": 0,
+        "reject": 2647
+      },
+      "test": {
+        "total": 3897,
+        "correct": 1248,
+        "wrong": 2,
+        "reject": 2647
+      },
+      "development_roi": {
+        "plates": 15,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 15
+      }
+    }
+  },
+  "mlp128": {
+    "validation_1pct": {
+      "thresholds": {
+        "province": {
+          "score": -14298,
+          "margin": 30169
+        },
+        "alphanumeric": {
+          "score": -25666,
+          "margin": 16029
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "correct": 3575,
+        "wrong": 21,
+        "reject": 340
+      },
+      "test": {
+        "total": 3897,
+        "correct": 3553,
+        "wrong": 22,
+        "reject": 322
+      },
+      "development_roi": {
+        "plates": 15,
+        "correct": 8,
+        "wrong": 1,
+        "reject": 6
+      }
+    },
+    "validation_zero_errors": {
+      "thresholds": {
+        "province": {
+          "score": -14298,
+          "margin": 91277
+        },
+        "alphanumeric": {
+          "score": 116947,
+          "margin": 64014
+        }
+      },
+      "validation": {
+        "total": 3936,
+        "correct": 1922,
+        "wrong": 0,
+        "reject": 2014
+      },
+      "test": {
+        "total": 3897,
+        "correct": 1934,
+        "wrong": 0,
+        "reject": 1963
+      },
+      "development_roi": {
+        "plates": 15,
+        "correct": 1,
+        "wrong": 0,
+        "reject": 14
+      }
+    }
+  }
+}

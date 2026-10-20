@@ -8,9 +8,13 @@ module tb_canny_rules;
  reg [1:0] got;
  initial begin
   for(i=0;i<256;i=i+1)
-   if(gaussian.gaussian(i,i,i,i,i,i,i,i,i)!=i) $fatal(1,"Gaussian DC %0d",i);
-  if(gaussian.gaussian(0,0,0,0,1,0,0,0,0)!=0 || gaussian.gaussian(0,0,0,0,2,0,0,0,0)!=1)
+   if(gaussian.gaussian(1'b0,i,i,i,i,i,i,i,i,i)!=i) $fatal(1,"Gaussian DC %0d",i);
+  if(gaussian.gaussian(1'b0,0,0,0,0,255,0,0,0,0)!=64) $fatal(1,"Gaussian impulse suppression");
+  if(gaussian.gaussian(1'b0,0,0,0,0,1,0,0,0,0)!=0 || gaussian.gaussian(1'b0,0,0,0,0,2,0,0,0,0)!=1)
    $fatal(1,"Gaussian half-up rounding");
+  for(i=0;i<256;i=i+1)
+   if(gaussian.gaussian(1'b1,i,i,i,i,i,i,i,i,i)!=i) $fatal(1,"Box DC %0d",i);
+  if(gaussian.gaussian(1'b1,0,0,0,0,255,0,0,0,0)!=28) $fatal(1,"Box impulse");
   if(gradient.direction(256,106)!=0 || gradient.direction(256,107)!=2 ||
      gradient.direction(106,256)!=1 || gradient.direction(107,256)!=2 ||
      gradient.direction(-256,107)!=3 || gradient.direction(256,-107)!=3 ||

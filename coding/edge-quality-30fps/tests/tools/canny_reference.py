@@ -12,7 +12,7 @@ def windows(a):
     return [p[y:y+h, x:x+w] for y in range(3) for x in range(3)]
 
 
-def classify(gray, threshold=32, ratio=1, median=True, canny=True):
+def classify(gray, threshold=32, ratio=1, median=True, canny=True, recognition=False):
     if not 0 <= threshold <= 2040 or (canny and threshold == 0):
         raise ValueError('threshold outside algorithm range')
     if ratio not in (0, 1, 2):
@@ -20,8 +20,9 @@ def classify(gray, threshold=32, ratio=1, median=True, canny=True):
     filtered = np.median(windows(gray), axis=0).astype(np.int32) if median else gray.astype(np.int32)
     neighborhood = windows(filtered)
     total = sum(k*v for k,v in zip((1,2,1,2,4,2,1,2,1),neighborhood))
-    contrast = np.ptp(np.stack(neighborhood),axis=0)
-    smooth = np.where(contrast>=8,(total+16*filtered+16)//32,(total+8)//16) if canny else filtered
+    smooth = (total+8)//16 if canny else filtered
+    if canny and recognition:
+        smooth = (sum(neighborhood)+4)//9
     a,b,c,d,e,f,g,h,i = windows(smooth)
     gx, gy = c+2*f+i-a-2*d-g, g+2*h+i-a-2*b-c
     ax, ay = abs(gx), abs(gy)
@@ -128,7 +129,7 @@ def selftest():
     print('PASS reference: 576 local cases, long winding chain, no seed, corner contact, dense 720p')
 
 
-def vectors(out,w,h,camera_rgby=False):
+def vectors(out,w,h,camera_rgby=False,recognition=False):
     out.mkdir(parents=True,exist_ok=True)
     manifest = []
     for case,a in enumerate(images(w,h)):
@@ -136,7 +137,7 @@ def vectors(out,w,h,camera_rgby=False):
             for algorithm in (0,1):
                 ratio = case%3
                 threshold = (1,32,64,255,96,160,32,2040)[case]
-                state,filtered,*_ = classify(a,threshold,ratio,med,algorithm)
+                state,filtered,*_ = classify(a,threshold,ratio,med,algorithm,recognition)
                 edge,total,highwater = hysteresis(state)
                 # RGB carries a varying payload independent of the Y input, exposing misalignment.
                 y,x = np.indices(a.shape)
@@ -166,8 +167,9 @@ if __name__ == '__main__':
     p.add_argument('--width',type=int,default=32)
     p.add_argument('--height',type=int,default=24)
     p.add_argument('--camera-rgby',action='store_true')
+    p.add_argument('--recognition',action='store_true')
     args = p.parse_args()
     if args.vectors:
-        vectors(args.vectors,args.width,args.height,args.camera_rgby)
+        vectors(args.vectors,args.width,args.height,args.camera_rgby,args.recognition)
     else:
         selftest()

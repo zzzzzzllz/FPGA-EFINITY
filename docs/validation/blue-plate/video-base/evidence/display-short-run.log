@@ -1,0 +1,4 @@
+PERIOD tag=1 time=3511262000
+PERIOD tag=2 time=7022370000
+PASS display Canny=0 reference=0: 3 full 1280x128 live RGB frames, saturated algorithm read contention, AXI bubbles, all HDMI pixels and deadlines
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-video-base\tests\tb_live_display.v:153: $finish called at 10420878468 (1ps)

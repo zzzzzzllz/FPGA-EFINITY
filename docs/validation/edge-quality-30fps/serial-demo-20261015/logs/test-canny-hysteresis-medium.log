@@ -1,0 +1,25 @@
+winding
+PASS hysteresis 128x256 cycles=193828 enqueued=16129 highwater=191 cache_misses=2 transactions=196
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 1938345000 (1ps)
+
+no-seed
+PASS hysteresis 128x256 cycles=9094 enqueued=0 highwater=0 cache_misses=0 transactions=64
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 91005000 (1ps)
+
+corner
+PASS hysteresis 128x256 cycles=11424 enqueued=128 highwater=1 cache_misses=2 transactions=67
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 114305000 (1ps)
+
+dense
+PASS hysteresis 128x256 cycles=274423 enqueued=32768 highwater=32768 cache_misses=2 transactions=577
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 2744295000 (1ps)
+
+weak-dense
+PASS hysteresis 128x256 cycles=395960 enqueued=32768 highwater=16972 cache_misses=2 transactions=450
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 3959665000 (1ps)
+
+random
+PASS hysteresis 128x256 cycles=199223 enqueued=16318 highwater=3559 cache_misses=2 transactions=252
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_canny_hysteresis.v:73: $finish called at 1992295000 (1ps)
+
+PASS 6 complete DDR hysteresis cases, 128x256

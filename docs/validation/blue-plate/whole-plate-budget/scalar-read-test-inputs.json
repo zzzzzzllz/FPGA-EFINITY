@@ -1,0 +1,27 @@
+{
+  "inserted": {
+    "rtl": {
+      "original_cycles": 178888,
+      "cycles": 182056,
+      "saved_groups": 96,
+      "scalar_reads": 768
+    },
+    "mapped": {
+      "original_cycles": 5640,
+      "cycles": 8808,
+      "saved_groups": 96,
+      "scalar_reads": 768
+    }
+  },
+  "real_q_outputs": 64,
+  "real_fork_outputs": 8,
+  "real_mac_steps": 2320,
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\partial-sum\\rtl-vectors.txt": "7944817170f10ae3bc5e47cc54278351f1198a2a928ddd2df70caba87e8910ae",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\partial-sum\\mapped-vectors.txt": "5259b03b266846cb21574d600172e7708306c6877a204e32c81e9ca34cf1eea7",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\quantization-tap2-fork\\integer-config.json": "9bb4d04a2cbf7df353b5043477a981299dde987e377d71581868fb778cb70ade",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\quantization-tap2-fork\\integer-parameters.npz": "96952fd1c23ea946a5ede786d3fb5c3144785c687691792c4910554a3821ee15",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\integer-deployment-audit\\output-channel-mac-vectors.json": "e0f403bd9f67d4c1d36fea7ea6ec926641b333786fe2712aadc998f96f546d62",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\integer-deployment-audit\\output-channel-mac-vectors.npz": "bf1412756b2d8a85faab125df918bef6dd83033af903584ab69d63fd55e95790"
+  }
+}

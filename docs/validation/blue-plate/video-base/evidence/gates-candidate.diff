@@ -1,0 +1,11 @@
+--- source/rtl/ti60f225_oob_top.v
++++ candidate/rtl/ti60f225_oob_top.v
+@@ -637,7 +637,7 @@
+ wire           m_axis_tuser;
+ wire  fifo_rd_period;
+ // IMX219
+-  frame_store #(.ENABLE_CANNY(1),.ENABLE_SHAPE(1)) checker0(
++  frame_store #(.ENABLE_CANNY(0),.ENABLE_SHAPE(0)) checker0(
+  .rst_n(vid_rst_n),.core_clk(core_clk),.pixel_clk(i_mipi_rx_pclk),.display_clk(hdmi_tx_slow_clk),.enabled(cal_done),
+  .capture_pixels(gray_rgby),.capture_valid(gray_valid),.capture_sof(gray_sof),.capture_eof(gray_eof),.capture_frame_id(gray_frame_id),
+  .recognition_enable(recognition_active),.config_value({ratio_active,algorithm_active,denoise_active,median_active,threshold_active}),.config_epoch(config_epoch+threshold_epoch+median_epoch),

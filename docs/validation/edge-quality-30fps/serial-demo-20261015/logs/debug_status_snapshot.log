@@ -1,0 +1,2 @@
+PASS snapshot capture, immutable pages, recapture, padding and invalid page
+D:\Desktop_New\EfinityNEW\coding\edge-quality-30fps\tests\tb_debug_status_snapshot.v:22: $finish called at 38650000 (1ps)

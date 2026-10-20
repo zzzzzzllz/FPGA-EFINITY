@@ -1,0 +1,14 @@
+{
+  "tools/blue_plate/char_model/candidate/b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8",
+  "tools/blue_plate/char_model/candidate/interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da",
+  "tools/blue_plate/char_model/candidate/quantization.json": "b7023386b6dc168edcf4e213527258ce88dff808eae337a1ff3cdfe335838d89",
+  "tools/blue_plate/char_model/candidate/test-vectors.json": "646eb819901c060e66279b21b75b59876b81e8d3e2b8936d4c516494a892d5bc",
+  "tools/blue_plate/char_model/candidate/verification.json": "c3dc8003613e4e68b66f4c98d01333d14f3bd128795ea49cded9bfb57e24a9cd",
+  "tools/blue_plate/char_model/candidate/w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+  "tools/blue_plate/char_model/candidate/w1-s10.mem": "82da3e62e8470dcf3fbe9b846848fc23a0ca6e70c08d45f047db535769149949",
+  "tools/blue_plate/char_model/candidate/w1.mem": "21091ebe1a12d595dbf4edb5ace5828f35af812de1dccae99ea7a1fce10538c1",
+  "tools/blue_plate/char_model/candidate/weights.npz": "d9c78f399086b74d00417c982c37b6d5b2a1a836bfde8ad020bf9fe9d9c3da52",
+  "tmp/blue-plate-char-model/manifest-all.json": "d336e91e666eb33c21eb9dee88c3d5d5f63ca9c52759063e8b92f7c079f0ed73",
+  "tmp/blue-plate-char-model/manifest.json": "77965d01047104517273a8cec85ff2c4a59840870507915e5e0b97419a9b8f07",
+  "tmp/blue-plate-char-model/dataset.npz": "5f2d61354fb82e84e96677c15b9979c4d2871b7ecfb0acf7577b5aeec3adada3"
+}

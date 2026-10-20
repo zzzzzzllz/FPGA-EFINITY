@@ -1,0 +1,153 @@
+{
+  "kind": "mapped",
+  "elapsed_seconds": 747.062,
+  "weight_bits": 11,
+  "vectors": 9,
+  "expected_score_comparisons": 715,
+  "latency_cycles": 41796,
+  "rom_roundtrip": {
+    "weights_checked": 20800,
+    "biases_checked": 65,
+    "weight_range": [
+      -586,
+      468
+    ],
+    "outside_signed10": 1,
+    "w1_sha256": "1eaaa654492a8f4b532afffca93f530efe80349fe587c1d32f97eeff42a24a8c",
+    "b1_sha256": "8404d488b71b9bf6ed0c94db84197f0232f8857ea087ee991a1396a06be69669"
+  },
+  "source_hashes": {
+    "tools\\blue_plate\\char_model\\rtl\\char_linear.v": "f7369e67e7fea59beb4c0db75ebb874914fd94d42445647f343cd94484a6b879",
+    "tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv": "ade9b80ddcf0775551c501e94ae563e2772f4493a05083a650ef56b7ee78bc14"
+  },
+  "weights_sha256": "b21a547399f17ecb50264d489eec4e4563c2269babab7149dc5447f7a12f5391",
+  "records": [
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 12025,
+        "margin": 20781,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "008-oracle",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 18547,
+        "margin": 23991,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "016-automatic",
+      "truth": "皖",
+      "expected": {
+        "id": 0,
+        "char": "皖",
+        "score": 15919,
+        "margin": 25338,
+        "accepted": true
+      }
+    },
+    {
+      "position": 6,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "050-oracle",
+      "truth": "V",
+      "expected": {
+        "id": 51,
+        "char": "W",
+        "score": 928,
+        "margin": 10298,
+        "accepted": true
+      }
+    },
+    {
+      "position": 4,
+      "tie": false,
+      "kind": "real-frozen-roi",
+      "key": "115-automatic",
+      "truth": "Y",
+      "expected": {
+        "id": 53,
+        "char": "Y",
+        "score": 7600,
+        "margin": 10783,
+        "accepted": true
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 29,
+        "char": "宁",
+        "score": -5600,
+        "margin": 1967,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 23,
+        "char": "贵",
+        "score": -9326,
+        "margin": 1792,
+        "accepted": false
+      }
+    },
+    {
+      "position": 0,
+      "tie": false,
+      "kind": "extreme-random",
+      "expected": {
+        "id": 7,
+        "char": "辽",
+        "score": 2821,
+        "margin": 272,
+        "accepted": false
+      }
+    },
+    {
+      "position": 2,
+      "tie": false,
+      "kind": "geometry-outside-signed10",
+      "feature": 120,
+      "expected": {
+        "id": 62,
+        "char": "7",
+        "score": -2054,
+        "margin": 1066,
+        "accepted": false
+      }
+    }
+  ],
+  "result": "progress cycles=10000 vector=0 scores=14\nprogress cycles=20000 vector=0 scores=29\nprogress cycles=30000 vector=0 scores=45\nprogress cycles=40000 vector=0 scores=60\nprogress cycles=50000 vector=1 scores=10\nprogress cycles=60000 vector=1 scores=26\nprogress cycles=70000 vector=1 scores=41\nprogress cycles=80000 vector=1 scores=57\nprogress cycles=90000 vector=2 scores=7\nprogress cycles=100000 vector=2 scores=22\nprogress cycles=110000 vector=2 scores=38\nprogress cycles=120000 vector=2 scores=53\nprogress cycles=130000 vector=3 scores=3\nprogress cycles=140000 vector=3 scores=19\nprogress cycles=150000 vector=3 scores=34\nprogress cycles=160000 vector=3 scores=50\nprogress cycles=170000 vector=4 scores=0\nprogress cycles=180000 vector=4 scores=15\nprogress cycles=190000 vector=4 scores=31\nprogress cycles=200000 vector=4 scores=46\nprogress cycles=210000 vector=4 scores=62\nprogress cycles=220000 vector=5 scores=12\nprogress cycles=230000 vector=5 scores=27\nprogress cycles=240000 vector=5 scores=43\nprogress cycles=250000 vector=5 scores=58\nprogress cycles=260000 vector=6 scores=8\nprogress cycles=270000 vector=6 scores=24\nprogress cycles=280000 vector=6 scores=39\nprogress cycles=290000 vector=6 scores=55\nprogress cycles=300000 vector=7 scores=5\nprogress cycles=310000 vector=7 scores=20\nprogress cycles=320000 vector=7 scores=36\nprogress cycles=330000 vector=7 scores=52\nprogress cycles=340000 vector=8 scores=1\nprogress cycles=350000 vector=8 scores=17\nprogress cycles=360000 vector=8 scores=33\nprogress cycles=370000 vector=8 scores=48\nprogress cycles=380000 vector=8 scores=64\nprogress cycles=390000 vector=0 scores=14\nprogress cycles=400000 vector=0 scores=29\nprogress cycles=410000 vector=0 scores=45\nprogress cycles=420000 vector=0 scores=60\nprogress cycles=430000 vector=0 scores=10\nprogress cycles=440000 vector=0 scores=26\nprogress cycles=450000 vector=0 scores=41\nprogress cycles=460000 vector=0 scores=57\nPASS vectors=9 compared_scores=715 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv:144: $finish called at 4650440000 (1ps)\n",
+  "heldout_consumed": 0,
+  "mapped_netlist_sha256": "fbece3859cf3a0a13430e3bab99258457a7ef2d8db09de66cf9c324c1df19c0a",
+  "vendor_lut_adaptation": {
+    "original_sha256": "49f8494172ab8ff1be8f9a487015451e924cff911ab36cfcefe2555fbb06586e",
+    "adapted_sha256": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+    "change": "Same previously independently verified Icarus time-zero always_comb adaptation; no installed model or mapped netlist changes"
+  }
+}

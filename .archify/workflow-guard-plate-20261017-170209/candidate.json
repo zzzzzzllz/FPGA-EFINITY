@@ -1,0 +1,312 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "固定机位车辆看护｜产品逻辑提案",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": ".archify/workflow-guard-plate-20261017-170209/guard-plate.html",
+    "legend": {
+      "entries": {
+        "frontend": {
+          "label": "保安查看"
+        },
+        "backend": {
+          "label": "系统处理"
+        },
+        "database": {
+          "label": "图像与记录"
+        },
+        "messagebus": {
+          "label": "事件触发"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "photo",
+      "label": "看现场 · 留照片"
+    },
+    {
+      "id": "identity",
+      "label": "一次经过 · 一条记录"
+    },
+    {
+      "id": "motion",
+      "label": "32 帧 · 回看经过"
+    }
+  ],
+  "mainPath": [
+    "live",
+    "event",
+    "prepare",
+    "recognize",
+    "record",
+    "gallery"
+  ],
+  "nodes": [
+    {
+      "id": "live",
+      "lane": "photo",
+      "col": 0,
+      "type": "frontend",
+      "label": "实时监看",
+      "sublabel": "固定机位 · 始终更新"
+    },
+    {
+      "id": "event",
+      "lane": "identity",
+      "col": 0,
+      "type": "messagebus",
+      "label": "开始一次记录",
+      "sublabel": "候选出现／保安按键"
+    },
+    {
+      "id": "photo",
+      "lane": "photo",
+      "col": 1,
+      "type": "backend",
+      "label": "先拍现场照片",
+      "sublabel": "无需等待号码识别"
+    },
+    {
+      "id": "chosen",
+      "lane": "photo",
+      "col": 2,
+      "type": "database",
+      "label": "保留清晰照片",
+      "sublabel": "原图与车牌区域"
+    },
+    {
+      "id": "prepare",
+      "lane": "identity",
+      "col": 1,
+      "type": "backend",
+      "label": "找到车牌区域",
+      "sublabel": "颜色·灰度·边缘"
+    },
+    {
+      "id": "recognize",
+      "lane": "identity",
+      "col": 2,
+      "type": "backend",
+      "label": "读出车牌号码",
+      "sublabel": "切分·识别·多帧确认"
+    },
+    {
+      "id": "record",
+      "lane": "identity",
+      "col": 3,
+      "type": "database",
+      "label": "同一车辆记录",
+      "sublabel": "照片＋号码状态＋片段"
+    },
+    {
+      "id": "gallery",
+      "lane": "identity",
+      "col": 4,
+      "type": "frontend",
+      "label": "保安选择记录",
+      "sublabel": "实时小窗继续显示"
+    },
+    {
+      "id": "compare",
+      "lane": "photo",
+      "col": 4,
+      "type": "frontend",
+      "label": "照片并排核对",
+      "sublabel": "看车身·车牌·历史"
+    },
+    {
+      "id": "buffer",
+      "lane": "motion",
+      "col": 0,
+      "type": "database",
+      "label": "循环留存近况",
+      "sublabel": "建议每秒留 8 张"
+    },
+    {
+      "id": "lock",
+      "lane": "motion",
+      "col": 1,
+      "type": "backend",
+      "label": "保留触发前画面",
+      "sublabel": "8 帧 · 约 1 秒"
+    },
+    {
+      "id": "clip",
+      "lane": "motion",
+      "col": 2,
+      "type": "database",
+      "label": "补齐触发后画面",
+      "sublabel": "再留 24 帧 · 约 3 秒"
+    },
+    {
+      "id": "replay",
+      "lane": "motion",
+      "col": 4,
+      "type": "frontend",
+      "label": "回看该次经过",
+      "sublabel": "播放·暂停·逐帧"
+    }
+  ],
+  "edges": [
+    {
+      "id": "observe",
+      "from": "live",
+      "to": "event",
+      "label": "首次出现",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "route": "straight"
+    },
+    {
+      "id": "roll",
+      "from": "live",
+      "to": "buffer",
+      "role": "async",
+      "variant": "dashed",
+      "fromSide": "left",
+      "toSide": "left"
+    },
+    {
+      "id": "snap",
+      "from": "event",
+      "to": "photo",
+      "label": "同时拍照",
+      "role": "branch"
+    },
+    {
+      "id": "keep",
+      "from": "photo",
+      "to": "chosen"
+    },
+    {
+      "id": "photolink",
+      "from": "chosen",
+      "to": "record",
+      "label": "绑定原图"
+    },
+    {
+      "id": "find",
+      "from": "event",
+      "to": "prepare",
+      "variant": "emphasis"
+    },
+    {
+      "id": "read",
+      "from": "prepare",
+      "to": "recognize",
+      "variant": "emphasis"
+    },
+    {
+      "id": "result",
+      "from": "recognize",
+      "to": "record",
+      "label": "确认／未确认",
+      "variant": "emphasis"
+    },
+    {
+      "id": "triggerclip",
+      "from": "event",
+      "to": "lock",
+      "label": "同时触发",
+      "role": "branch"
+    },
+    {
+      "id": "history",
+      "from": "buffer",
+      "to": "lock",
+      "label": "前 8 帧"
+    },
+    {
+      "id": "after",
+      "from": "lock",
+      "to": "clip"
+    },
+    {
+      "id": "cliplink",
+      "from": "clip",
+      "to": "record",
+      "label": "关联 32 帧"
+    },
+    {
+      "id": "publish",
+      "from": "record",
+      "to": "gallery",
+      "label": "可供查看",
+      "variant": "emphasis"
+    },
+    {
+      "id": "comparephotos",
+      "from": "gallery",
+      "to": "compare",
+      "label": "看照片",
+      "role": "branch"
+    },
+    {
+      "id": "watchclip",
+      "from": "gallery",
+      "to": "replay",
+      "label": "看片段",
+      "role": "branch"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "这张图的主线",
+      "items": [
+        "固定机位与保留照片已确认；自动触发、选号与片段分配是本次建议。",
+        "识别、拍照、短片段采集同时开展；保安无需依次操作它们。",
+        "同一次经过共用记录编号；车辆持续停留时更新该记录，离开后才允许下一次自动触发。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "照片先留下，号码可以未确认",
+      "items": [
+        "看不清号码也保留现场照片，状态写“未确认”，交给保安核对。",
+        "确认后保存对应识别帧及裁剪图；照片、号码和片段不能串到下一辆车。",
+        "先支持人工并排看图；自动判断是否为历史车辆尚未确定。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "32 帧的产品用途：事件回看",
+      "items": [
+        "建议 8 张／秒：触发前 8 张＋触发后 24 张，约 4 秒的过程快照。",
+        "保安可检查车辆靠近或离开的过程，并从邻近帧看清单张照片模糊的细节。",
+        "4 秒是设计窗口，快慢车和遮挡需实拍验证；不承诺覆盖整个行驶过程。"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "当前工程与商业留档之间",
+      "items": [
+        "当前是手动连续录 32 帧；预录、间隔采样、自动触发与记录绑定均待实现。",
+        "当前 DDR 只留一段录像和三个保存画面，断电丢失。新片段覆盖后，旧记录须标明片段不可用。",
+        "商业版本需要可持久保存的照片与片段、时间记录及容量策略；本图未假定这些已经具备。"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "赛题功能放在哪里",
+      "items": [
+        "灰度、滤波、Sobel 用于处理展示与定位；保安默认看彩色实景。",
+        "保存照片、并排核对与片段回放承接 DDR 帧功能。",
+        "车牌 OCR 是应用扩展，赛题要求的其他功能仍单独验收。"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "参考依据",
+      "items": [
+        "事件触发前后缓冲参考 Axis 官方事件规则文档；8＋24 的分配为本项目建议。",
+        "https://help.axis.com/en-us/get-started-with-rules-for-events",
+        "本图是供讨论的目标流程，不是当前 RTL 的实现图。"
+      ]
+    }
+  ]
+}

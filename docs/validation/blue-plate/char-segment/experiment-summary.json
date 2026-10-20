@@ -1,0 +1,612 @@
+{
+  "status": "candidate_failed_effectiveness_gate; training stopped at 500 total optimizer steps",
+  "teacher_shape": [
+    1,
+    20,
+    78
+  ],
+  "input_metrics": {
+    "rgb_native": {
+      "total": 304,
+      "correct": 303,
+      "wrong": 1,
+      "reject": 0
+    },
+    "gray_native": {
+      "total": 304,
+      "correct": 303,
+      "wrong": 1,
+      "reject": 0
+    },
+    "gray_small_restored": {
+      "total": 304,
+      "correct": 304,
+      "wrong": 0,
+      "reject": 0
+    }
+  },
+  "group_counts": {
+    "train": 228,
+    "tune": 76
+  },
+  "train_positive_groups": 207,
+  "train_positive_rois": 207,
+  "visual_review": {
+    "reviewer": "Codex direct visual inspection of 10 contact sheets; not a human annotator signature",
+    "total": 307,
+    "excluded": 30,
+    "province_counts": {
+      "皖": 198,
+      "浙": 3,
+      "苏": 2,
+      "沪": 1,
+      "粤": 1,
+      "闽": 1,
+      "鲁": 1
+    }
+  },
+  "baseline_same_tune_groups": {
+    "source": "frozen old pipeline on same source groups; no teacher accuracy requirement",
+    "metrics": {
+      "total": 76,
+      "labeled": 76,
+      "correct": 49,
+      "wrong_number": 0,
+      "reject": 27,
+      "no_candidate": 4,
+      "segmentation_failure": 16,
+      "classifier_reject": 7,
+      "raw_exact": 51,
+      "raw_wrong": 5,
+      "localized_iou50": 69,
+      "localized_iou70": 66,
+      "localization_failure_iou50": 7,
+      "scored": 56,
+      "first_correct_raw": 53,
+      "characters_correct_raw": 386,
+      "unlabeled_output": 0,
+      "unlabeled_reject": 0
+    }
+  },
+  "sanity": {
+    "steps": 100,
+    "initial_loss": 63.66666030883789,
+    "final_loss": 1.1195954084396362,
+    "full_exact": 0
+  },
+  "pilot": {
+    "steps": 400,
+    "snapshots": [
+      {
+        "step": 0,
+        "loss": 60.84882011413574,
+        "threshold": 1.0,
+        "metrics": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "unfiltered": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "mean_blank_fraction": 0.0
+      },
+      {
+        "step": 100,
+        "loss": 3.221898945740291,
+        "threshold": 1.0,
+        "metrics": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "unfiltered": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "mean_blank_fraction": 0.9428571428571423
+      },
+      {
+        "step": 250,
+        "loss": 3.383548152446747,
+        "threshold": 1.0,
+        "metrics": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "unfiltered": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "mean_blank_fraction": 0.8139194139194138
+      },
+      {
+        "step": 400,
+        "loss": 3.1677362407956804,
+        "threshold": 1.0,
+        "metrics": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "unfiltered": {
+          "total": 76,
+          "correct": 0,
+          "wrong": 0,
+          "reject": 76,
+          "raw_exact": 0
+        },
+        "mean_blank_fraction": 0.8575091575091573
+      }
+    ],
+    "frozen": {
+      "step": 400,
+      "loss": 3.1677362407956804,
+      "threshold": 1.0,
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      },
+      "unfiltered": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      },
+      "mean_blank_fraction": 0.8575091575091573,
+      "checkpoint": "step-0400.pt",
+      "checkpoint_sha256": "48def2e7220b249d8515b1c14040447a91edd1b5a08a187cbed9c923421e88a5",
+      "source_hashes": {
+        "tools\\blue_plate\\char_segment\\experiment.py": "89248dc5da1049cb6f0a9c3adedf44ac204a8cee081dde742adf575de11e9163",
+        "tools\\blue_plate\\char_segment\\lprnet_cost.py": "48d21ac865bfef2561ff505f25812c3da34251b31ff7a497a937e89f29f582e4",
+        "tmp\\blue-plate-char-segment\\experiment\\dev-manifest.json": "d09091e14067c0d4ce2ed5dca9d2f10c951a70e6a42d4d4fecb4144a1c96a9b6",
+        "tmp\\blue-plate-char-segment\\experiment\\visual-review.json": "5f942fcfa75413f848794b00b5a221473c4874027c118c2a5cd204d1a2f0ebf4",
+        "tmp\\blue-plate-char-segment\\experiment\\dev-inputs.npz": "e82bae6766fd98135f10e2c383d63f65e165b1c13d64b4d432eefc843a5bd0be"
+      },
+      "selection": "max tune correct under <=3 wrong; then fewer wrong, lower reviewed tune loss, earlier step",
+      "total_optimizer_steps": 500,
+      "total_seconds": 19.65072809999765
+    }
+  },
+  "analysis": {
+    "train": {
+      "metrics": {
+        "total": 207,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 207,
+        "raw_exact": 0
+      },
+      "exact": 0,
+      "roi_count": 207,
+      "length_histogram": {
+        "4": 42,
+        "2": 61,
+        "5": 15,
+        "3": 84,
+        "6": 5
+      },
+      "common_outputs": [
+        [
+          "皖A1",
+          62
+        ],
+        [
+          "皖A",
+          61
+        ],
+        [
+          "皖A11",
+          20
+        ],
+        [
+          "皖A8",
+          12
+        ],
+        [
+          "皖A5",
+          6
+        ],
+        [
+          "皖A19",
+          4
+        ],
+        [
+          "皖A85",
+          3
+        ],
+        [
+          "皖A18",
+          2
+        ],
+        [
+          "皖A811",
+          2
+        ],
+        [
+          "皖A83",
+          2
+        ],
+        [
+          "皖A88",
+          2
+        ],
+        [
+          "皖A12",
+          2
+        ]
+      ],
+      "mean_blank_fraction": 0.8625258799171841,
+      "reviewed_label_ctc_loss": 2.8124616641353293
+    },
+    "train_batch_bn_diagnostic": {
+      "metrics": {
+        "total": 207,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 207,
+        "raw_exact": 0
+      },
+      "exact": 0,
+      "roi_count": 207,
+      "length_histogram": {
+        "4": 47,
+        "2": 46,
+        "3": 81,
+        "6": 10,
+        "5": 22,
+        "7": 1
+      },
+      "common_outputs": [
+        [
+          "皖A",
+          46
+        ],
+        [
+          "皖A5",
+          28
+        ],
+        [
+          "皖A1",
+          16
+        ],
+        [
+          "皖A2",
+          15
+        ],
+        [
+          "皖A8",
+          14
+        ],
+        [
+          "皖A55",
+          8
+        ],
+        [
+          "皖A3",
+          5
+        ],
+        [
+          "皖A18",
+          4
+        ],
+        [
+          "皖A52",
+          4
+        ],
+        [
+          "皖A15",
+          3
+        ],
+        [
+          "皖A85",
+          3
+        ],
+        [
+          "皖A51",
+          3
+        ]
+      ],
+      "mean_blank_fraction": 0.8669427191166321
+    },
+    "tune": {
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      },
+      "exact": 0,
+      "roi_count": 78,
+      "length_histogram": {
+        "2": 26,
+        "3": 33,
+        "4": 14,
+        "5": 5
+      },
+      "common_outputs": [
+        [
+          "皖A",
+          26
+        ],
+        [
+          "皖A1",
+          26
+        ],
+        [
+          "皖A11",
+          7
+        ],
+        [
+          "皖A8",
+          2
+        ],
+        [
+          "皖A81",
+          2
+        ],
+        [
+          "皖A118",
+          2
+        ],
+        [
+          "皖A3",
+          2
+        ],
+        [
+          "皖A6",
+          1
+        ],
+        [
+          "皖A7",
+          1
+        ],
+        [
+          "皖A18",
+          1
+        ],
+        [
+          "皖A08",
+          1
+        ],
+        [
+          "皖A111",
+          1
+        ]
+      ],
+      "mean_blank_fraction": 0.8575091575091573,
+      "reviewed_label_ctc_loss": 3.1677362407956804
+    },
+    "tune_batch_bn_diagnostic": {
+      "metrics": {
+        "total": 76,
+        "correct": 0,
+        "wrong": 0,
+        "reject": 76,
+        "raw_exact": 0
+      },
+      "exact": 0,
+      "roi_count": 78,
+      "length_histogram": {
+        "2": 19,
+        "3": 34,
+        "5": 9,
+        "4": 15,
+        "6": 1
+      },
+      "common_outputs": [
+        [
+          "皖A",
+          19
+        ],
+        [
+          "皖A5",
+          13
+        ],
+        [
+          "皖A2",
+          7
+        ],
+        [
+          "皖A1",
+          6
+        ],
+        [
+          "皖A8",
+          5
+        ],
+        [
+          "皖A12",
+          4
+        ],
+        [
+          "皖A3",
+          2
+        ],
+        [
+          "皖A32",
+          2
+        ],
+        [
+          "皖A821",
+          1
+        ],
+        [
+          "皖A52",
+          1
+        ],
+        [
+          "皖A15",
+          1
+        ],
+        [
+          "皖A55",
+          1
+        ]
+      ],
+      "mean_blank_fraction": 0.8725274725274722
+    },
+    "training_numerics": {
+      "steps": 400,
+      "clip_fraction": 0.1875,
+      "first_train_loss": 17.86058235168457,
+      "last_train_loss": 2.1771392822265625,
+      "branch_min_energy": 0.020558152347803116,
+      "epsilon_hits": 0,
+      "all_recorded_gradients_finite": true
+    },
+    "max_parameter_change": 0.2628621459007263,
+    "known_teacher_completion_probe": {
+      "path": "tmp\\blue-plate-normal-g1\\mature-detector\\rejection-probe\\left20_removed-0001-0002.png",
+      "sha256": "21912920fc6d20d459d36a27b3b3c62ddbee2fcc3c7450d48319946efe99dff1",
+      "prediction": {
+        "code": "皖A188",
+        "grammar": false,
+        "score": null,
+        "blank_fraction": 0.7428571428571429
+      },
+      "accepted": false,
+      "original_split": "development, sample_index=1"
+    },
+    "source_hashes": {
+      "tmp\\blue-plate-char-segment\\experiment\\pilot\\step-0400.pt": "48def2e7220b249d8515b1c14040447a91edd1b5a08a187cbed9c923421e88a5",
+      "tools\\blue_plate\\char_segment\\analyze_experiment.py": "c31f319f835c055341d2800815ca97da689ed0f42d6b7a95ec8cff5a7a5682db",
+      "tools\\blue_plate\\char_segment\\experiment.py": "89248dc5da1049cb6f0a9c3adedf44ac204a8cee081dde742adf575de11e9163"
+    },
+    "optimizer_steps": 0,
+    "validation_images_read": 0,
+    "heldout_images_read": 0
+  },
+  "rejection_probe": {
+    "left20_removed": {
+      "total": 16,
+      "accepted": 0
+    },
+    "right20_removed": {
+      "total": 16,
+      "accepted": 0
+    },
+    "top25_removed": {
+      "total": 16,
+      "accepted": 0
+    },
+    "bottom25_removed": {
+      "total": 16,
+      "accepted": 0
+    },
+    "blank": {
+      "total": 16,
+      "accepted": 0
+    }
+  },
+  "total_optimizer_steps": 500,
+  "total_training_seconds": 19.65072809999765,
+  "validation_images_read": 0,
+  "heldout_images_read": 0,
+  "classes": [
+    "皖",
+    "沪",
+    "津",
+    "渝",
+    "冀",
+    "晋",
+    "蒙",
+    "辽",
+    "吉",
+    "黑",
+    "苏",
+    "浙",
+    "京",
+    "闽",
+    "赣",
+    "鲁",
+    "豫",
+    "鄂",
+    "湘",
+    "粤",
+    "桂",
+    "琼",
+    "川",
+    "贵",
+    "云",
+    "藏",
+    "陕",
+    "甘",
+    "青",
+    "宁",
+    "新",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "<blank>"
+  ],
+  "blank": 65,
+  "source_hashes": {
+    "tools\\blue_plate\\char_segment\\experiment.py": "89248dc5da1049cb6f0a9c3adedf44ac204a8cee081dde742adf575de11e9163",
+    "tools\\blue_plate\\char_segment\\analyze_experiment.py": "c31f319f835c055341d2800815ca97da689ed0f42d6b7a95ec8cff5a7a5682db",
+    "tools\\blue_plate\\char_model\\candidate\\interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da",
+    "tmp\\blue-plate-char-segment\\experiment\\dev-manifest.json": "d09091e14067c0d4ce2ed5dca9d2f10c951a70e6a42d4d4fecb4144a1c96a9b6",
+    "tmp\\blue-plate-char-segment\\experiment\\visual-review.json": "5f942fcfa75413f848794b00b5a221473c4874027c118c2a5cd204d1a2f0ebf4",
+    "tmp\\blue-plate-char-segment\\experiment\\input-diagnosis.json": "003c89b6f11bde2bae38b5934264f9e72e74ccbe1965528942b2d41a970ec5a0",
+    "tmp\\blue-plate-char-segment\\experiment\\sanity\\summary.json": "c95669d346631f12af383af78c4454f5b4c0cf6a8e324cd591b4199d052de71f",
+    "tmp\\blue-plate-char-segment\\experiment\\pilot\\summary.json": "36cde3d8fda2e71a1cac6aa8f1a27d00d6027d82698b760404f7988c1ae3e93c",
+    "tmp\\blue-plate-char-segment\\experiment\\pilot\\frozen.json": "372bda772a6da8e0337374a08eb1843148bd4de06b74e01a1d3ca18473a68953",
+    "tmp\\blue-plate-char-segment\\experiment\\pilot\\failure-analysis.json": "c5bc1929ce6326d18d6146c6692653a4db41464328a0f3ed5925ff10c49279b0",
+    "tmp\\blue-plate-char-segment\\experiment\\pilot\\rejection-probe.json": "8848f8b8eaff150f0e0bdc8dadde34ebb3df8812aa948e87304cefdf3e401f64"
+  }
+}

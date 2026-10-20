@@ -55,37 +55,30 @@ module gaussian_pair #(
     wire [15:0] cm={center_q[63:56],center_q[31:24]};
     wire [15:0] cb=qy==HEIGHT ? cm : bottom_q;
 
+    // Bit 16 selects the recognition box filter; regular Canny keeps its Gaussian.
+    wire box_mode=(CONFIG_WIDTH>16) && frame_config[CONFIG_WIDTH-1];
     function [9:0] vertical_sum;
+        input box_filter;
         input [7:0] a,b,c;
-        begin vertical_sum={2'b0,a}+{1'b0,b,1'b0}+{2'b0,c}; end
+        begin vertical_sum={2'b0,a}+(box_filter ? {2'b0,b} : {1'b0,b,1'b0})+{2'b0,c}; end
     endfunction
-    function [7:0] min3;
-        input [7:0] a,b,c;
-        begin min3=(a<b ? a:b)<c ? (a<b ? a:b):c; end
-    endfunction
-    function [7:0] max3;
-        input [7:0] a,b,c;
-        begin max3=(a>b ? a:b)>c ? (a>b ? a:b):c; end
-    endfunction
-    // Gaussian in flat areas; halve its correction across local image detail.
-    // Both kernels have unit DC gain and use the same replicated border.
+    // Both 3x3 kernels share the same window and weighted sums.
     function [7:0] gaussian;
+        input box_filter;
         input [7:0] a,b,c,d,e,f,g,h,i;
-        reg [7:0] lo,hi;
         reg [11:0] total;
-        reg [8:0] detail;
+        reg [9:0] middle;
         begin
-            lo=min3(min3(a,d,g),min3(b,e,h),min3(c,f,i));
-            hi=max3(max3(a,d,g),max3(b,e,h),max3(c,f,i));
-            total={2'b0,vertical_sum(a,d,g)}
-                +({2'b0,vertical_sum(b,e,h)}<<1)+{2'b0,vertical_sum(c,f,i)};
-            detail={1'b0,total[11:4]}+{1'b0,e}+9'd1;
-            gaussian=({1'b0,hi}>={1'b0,lo}+9'd8) ? detail[8:1] : total[11:4]+{7'b0,total[3]};
+            middle=vertical_sum(box_filter,b,e,h);
+            total={2'b0,vertical_sum(box_filter,a,d,g)}
+                +(box_filter ? {2'b0,middle} : {1'b0,middle,1'b0})
+                +{2'b0,vertical_sum(box_filter,c,f,i)};
+            gaussian=box_filter ? (total+12'd4)/12'd9 : total[11:4]+{7'b0,total[3]};
         end
     endfunction
-    wire [7:0] g0=gaussian(qx==1?pt[15:8]:lt,pt[15:8],pt[7:0],
+    wire [7:0] g0=gaussian(box_mode,qx==1?pt[15:8]:lt,pt[15:8],pt[7:0],
         qx==1?pm[15:8]:lm,pm[15:8],pm[7:0],qx==1?pb[15:8]:lb,pb[15:8],pb[7:0]);
-    wire [7:0] g1=gaussian(pt[15:8],pt[7:0],q_tail?pt[7:0]:ct[15:8],
+    wire [7:0] g1=gaussian(box_mode,pt[15:8],pt[7:0],q_tail?pt[7:0]:ct[15:8],
         pm[15:8],pm[7:0],q_tail?pm[7:0]:cm[15:8],pb[15:8],pb[7:0],q_tail?pb[7:0]:cb[15:8]);
     always @(posedge clk) begin
         if(!rst_n) begin

@@ -32,7 +32,9 @@
 
 视图：color、gray、edge、compare、denoise、overlay、reference。算法：sobel或canny。帧操作：live、freeze、step、record、play、pause、next、reference、clear-reference。record会替换先前32帧录制内容。
 
-形状识别包含圆形/矩形和最多4个目标框，当前默认关闭；打开后不能保证30fps。中值开关也不是功能增删。画质版默认Canny24/12、中值关、识别关、实时灰度/边缘对比；原edge-30fps加载为原默认Sobel阈值32、中值开、识别关。
+第二版还可用 `--frame demo-next`、`demo-prev`、`demo-home` 调试串行路线，分别等同下一步、上一步和回第01步，保留录像和参考。单独使用 `--view` 等参数属于手动调试，不改变步骤编号；演示前执行 `--frame demo-home` 恢复路线预设。屏幕显示WAIT时等待完成再按键；忙碌期间的按键不会排队。
+
+形状识别包含圆形/矩形和最多4个目标框；进入第08步自动开启，运行 `coding/edge-quality-30fps/recognition.cmd` 可直接进入该页。KEY2/KEY3以4为步长调低/调高阈值，支持长按，见[任务8调参说明](task8-shapes.md)。识别开启后不能保证30fps。中值开关也不是功能增删。画质版加载后进入第01步彩色实时，中值关、识别关；[12页循环演示](versions/edge-quality-30fps-serial-demo.md)由KEY1导航，第07步恢复对应算法参数，第08步保留本页阈值，其他页恢复预设；原edge-30fps加载为原默认Sobel阈值32、中值开、识别关。
 
 曝光和增益操作须与算法/显示操作分开执行：
 

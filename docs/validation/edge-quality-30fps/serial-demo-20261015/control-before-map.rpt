@@ -1,0 +1,427 @@
+Efinity Synthesis report for project control
+Version: 2026.1.132.4.5
+Generated at: Oct 15, 2026 20:44:11
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : frame_store_control
+
+family : Titanium
+device : Ti60F225
+project : control
+root : frame_store_control
+binary-db : out\control.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : area2
+num_srl : -1
+mult-decomp-retime : 0
+operator-sharing : 1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before
+project : control
+project-xml : D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before\control.xml
+root : frame_store_control
+use-logic-for-small-rom : 8192
+work-dir : work_syn
+write-efx-verilog : out\control.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0677" : ... Memory 'result_source' is not initialized, assuming empty initial contents. (D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before.v:35)
+"MEM|SYN-0677" : ... Memory 'result_id' is not initialized, assuming empty initial contents. (D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before.v:36)
+"MEM|SYN-0677" : ... Memory 'result_epoch' is not initialized, assuming empty initial contents. (D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before.v:37)
+"MEM|SYN-0657" : Mapping into logic memory block 'result_source' (18 bits) (D:\Desktop_New\EfinityNEW\tmp\serial-osd-resource\control-before.v:35) because size is too small (<=64)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 22
+Total number of FFs with enable signals: 1203
++-----------------+------------------+
+|CE Signal        |Number of FF loads|
++-----------------+------------------+
+|n18701           |              416 |
+|n18684           |              182 |
+|n18617           |               72 |
+|i8657/n76        |               70 |
+|i8657/n74        |               70 |
+|i8657/n75        |               70 |
+|n5036            |               67 |
+|n5175            |               42 |
+|ceg_net43        |               38 |
+|n18662           |               38 |
+|n18626           |               32 |
+|n18714           |               32 |
+|not_equal_878/n63|               32 |
+|n18713           |               32 |
+|n18671           |                2 |
+|command_valid    |                2 |
+|ceg_net46        |                1 |
+|ceg_net30        |                1 |
+|ceg_net26        |                1 |
+|ceg_net25        |                1 |
+|ceg_net40        |                1 |
+|ceg_net38        |                1 |
++-----------------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 7
+Total number of FFs with set/reset signals: 775
++---------+------------------+
+|SR Signal|Number of FF loads|
++---------+------------------+
+|rst_n    |              769 |
+|n18697   |                1 |
+|n19138   |                1 |
+|n18695   |                1 |
+|n20721   |                1 |
+|n20720   |                1 |
+|n18699   |                1 |
++---------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Sequential Elements/Signals Trimming Report (begin) ### ### ### 
+'command_error[2]' (v:28) (optimized to 0)
+'command_error[3]' (v:28) (optimized to 0)
+'i8662/result_id__D$1[0][31]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][31]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][31]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][31]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][31]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][31]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][30]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][30]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][30]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][30]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][30]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][30]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][29]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][29]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][29]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][29]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][29]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][29]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][28]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][28]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][28]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][28]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][28]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][28]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][27]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][27]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][27]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][27]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][27]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][27]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][26]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][26]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][26]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][26]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][26]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][26]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][25]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][25]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][25]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][25]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][25]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][25]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][24]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][24]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][24]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][24]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][24]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][24]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][23]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][23]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][23]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][23]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][23]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][23]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][22]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][22]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][22]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][22]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][22]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][22]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][21]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][21]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][21]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][21]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][21]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][21]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[0][20]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[2][20]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[2][20]' (v:36) (merged to equivalence)
+'i8662/result_id__D$1[1][20]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[0][20]' (v:36) (merged to equivalence)
+'i8694/result_id_3__D$1[1][20]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][19]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][19]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][19]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][19]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][19]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][19]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][18]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][18]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][18]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][18]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][18]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][18]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][17]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][17]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][17]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][17]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][17]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][17]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][16]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][16]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][16]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][16]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][16]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][16]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][15]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][15]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][15]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][15]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][15]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][15]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][14]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][14]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][14]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][14]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][14]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][14]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][13]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][13]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][13]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][13]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][13]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][13]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][12]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][12]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][12]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][12]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][12]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][12]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][11]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][11]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][11]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][11]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][11]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][11]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][10]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][10]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][10]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][10]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][10]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][10]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][9]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][9]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][9]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][9]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][9]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][9]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][8]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][8]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][8]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][8]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][8]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][8]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][7]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][7]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][7]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][7]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][7]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][7]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][6]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][6]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][6]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][6]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][6]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][6]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][5]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][5]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][5]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][5]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][5]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][5]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][4]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][4]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][4]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][4]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][4]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][4]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][3]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][3]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][3]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][3]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][3]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][3]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][2]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][2]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][2]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][2]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][2]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][2]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][1]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][1]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][1]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][1]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][1]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][1]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[0][0]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[2][0]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[2][0]' (v:36) (merged to equivalence)
+'i8667/result_id__D$2[1][0]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[0][0]' (v:36) (merged to equivalence)
+'i8737/result_id_3__D$2[1][0]' (v:36) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][31]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][31]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][31]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][30]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][30]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][30]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][29]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][29]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][29]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][28]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][28]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][28]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][27]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][27]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][27]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][26]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][26]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][26]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][25]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][25]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][25]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][24]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][24]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][24]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][23]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][23]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][23]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][22]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][22]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][22]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][21]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][21]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][21]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[2][20]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[0][20]' (v:37) (merged to equivalence)
+'i8784/result_epoch_2__D$1[1][20]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][19]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[2][19]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][19]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][18]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[2][18]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][18]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][17]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[2][17]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][17]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][16]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[2][16]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][16]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][15]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][15]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][15]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][14]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][14]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][14]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][13]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][13]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][13]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][12]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][12]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][12]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][11]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][11]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][11]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][10]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][10]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][10]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][9]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][9]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][9]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][8]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][8]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][8]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][7]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][7]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][7]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][6]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][6]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][6]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][5]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][5]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][5]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][4]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][4]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][4]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][3]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][3]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][3]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][2]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][2]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][2]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][1]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][1]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[1][1]' (v:37) (merged to equivalence)
+'i8757/result_epoch__D$2[1][0]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[2][0]' (v:37) (merged to equivalence)
+'i8827/result_epoch_2__D$2[0][0]' (v:37) (merged to equivalence)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                           FFs      SRLs      ADDs       LUTs    COMB4s      RAMs DSP/MULTs
+-----------------------------------------        ---      ----      ----       ----      ----      ---- ---------
+frame_store_control:frame_store_control   1465(1465)  128(128)    99(99) 2515(2515)      0(0)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
+ No DSP in design
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++-----+----------+----------+------------+----------------+
+|Clock|Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++-----+----------+----------+------------+----------------+
+|clk  |     1465 |      128 |          0 |              0 |
++-----+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	82
+OUTPUT PORTS    : 	436
+
+EFX_ADD                 : 	99
+EFX_LUT4                : 	2515
+   1-2  Inputs          : 	234
+   3    Inputs          : 	808
+   4    Inputs          : 	1473
+EFX_FF                  : 	1465
+EFX_SRL8                : 	128
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 75s
+Elapsed synthesis time : 75s

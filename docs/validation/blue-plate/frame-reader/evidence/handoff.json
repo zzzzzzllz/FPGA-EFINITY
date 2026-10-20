@@ -1,0 +1,38 @@
+{
+  "rtl_sha256": "96de672190fa6792f797b2b53e9d11d17d2bdea861569efa3371adb2ab6539b3",
+  "testbench_sha256": "87261a126b5ae045c3e1797dbd847e94689b8987b3a910427a824a2c12921654",
+  "final_simulation_directory": "tmp/blue-plate-frame-reader/final-v3",
+  "simulation_exit_code": 0,
+  "synthesis_resources": {
+    "EFX_ADD": 205,
+    "EFX_LUT4": 1272,
+    "EFX_FF": 573,
+    "EFX_RAM10": 7
+  },
+  "synthesis_DSP": 0,
+  "full_scan_cycles": 3872104,
+  "verification": {
+    "jobs": 33,
+    "holds": 32,
+    "releases": 31,
+    "coordinated_reset_clears": 1,
+    "completed_commands": 522,
+    "verified_pixels": 1042260,
+    "bursts": 7380
+  },
+  "evidence_sha256": {
+    "final-execution.json": "0140f24da6b23dfa761169b7350e96e2dca2f0681373d67303082edfb14249bb",
+    "final-run.log": "60d4195bbea430663c55c6fda61203cc294990690b8fddbad78abe186fb2b288",
+    "final-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "quick-execution.json": "efb031ee55f2e8d456d50f1b7ffa796956272f6c6ede48372fb5db0280a2e66c",
+    "quick-run.log": "5366f0557428b16d561b0e0212c4fcfec37f7d020b3d5fe64c682445efd198eb",
+    "oracle.json": "b0f7d1f8738a00554e19ceff172b709c117b82681cac48ed8e7e9e1cd9ff0010",
+    "synthesis-summary.json": "913cb41491b5a8f30f90e9f7a1a9b648ff93839ee61e77174b99423bb5cbc76d",
+    "frame_reader.map.rpt": "fffa9f6a13cc15307b59fd20ba6b6f1771a329f1dfb5a82977aaf14420574140",
+    "map.console.log": "c441411019a4b8d0354c1c37b2992bc863b79327e08cf2d74882f886f5e5d514",
+    "input-hashes.json": "eaa4b12666f0c0ec530cf16f02ca854b5f338230b6b13982038d680e34c85615",
+    "frame_reader.before.xml": "29dfb23da3ec4c125387d2d5ac58f667c0c22fc38ad2bef3af59ccc169c21c92",
+    "frame_reader.after.xml": "3bbb8b3fce46601d4ec1519fc4e7a72cec566ea8a9e17327f775f395ee690470",
+    "xml-tool-rewrite.diff": "8e1331589e53530e2bac79747aab28f4ac5fa94dbede79c3f4128116740d46be"
+  }
+}

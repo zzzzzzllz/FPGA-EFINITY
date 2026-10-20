@@ -1,4 +1,6 @@
 /tmp/
+/.archify/**/browser-temp/
+/.archify/**/source-snapshot/
 __pycache__/
 *.py[cod]
 /tools/iverilog-12/

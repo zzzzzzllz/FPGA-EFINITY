@@ -1,0 +1,264 @@
+{
+  "status": "diagnostic_outputs_frozen_for_master_review",
+  "new_training_steps": 0,
+  "validation_image_reads": 0,
+  "heldout_image_reads": 0,
+  "pretrained_identity_overlap": "unknown",
+  "results": {
+    "original_cv2_linear": {
+      "ocr_only": {
+        "raw_legal_greedy_development": {
+          "correct": 290,
+          "wrong": 5,
+          "rejected": 9,
+          "total": 304
+        },
+        "raw_legal_greedy_tune": {
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4,
+          "total": 76
+        },
+        "max_wrong3": {
+          "threshold": 0.938015287287101,
+          "development": {
+            "correct": 285,
+            "wrong": 3,
+            "rejected": 16,
+            "total": 304
+          },
+          "tune": {
+            "correct": 70,
+            "wrong": 0,
+            "rejected": 6,
+            "total": 76
+          }
+        },
+        "zero_wrong": {
+          "threshold": 0.9928903523637759,
+          "development": {
+            "correct": 251,
+            "wrong": 0,
+            "rejected": 53,
+            "total": 304
+          },
+          "tune": {
+            "correct": 60,
+            "wrong": 0,
+            "rejected": 16,
+            "total": 76
+          }
+        }
+      },
+      "combined": {
+        "raw_legal_greedy_development": {
+          "correct": 288,
+          "wrong": 5,
+          "rejected": 11,
+          "total": 304
+        },
+        "raw_legal_greedy_tune": {
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4,
+          "total": 76
+        },
+        "max_wrong3": {
+          "threshold": 0.938015287287101,
+          "development": {
+            "correct": 283,
+            "wrong": 3,
+            "rejected": 18,
+            "total": 304
+          },
+          "tune": {
+            "correct": 70,
+            "wrong": 0,
+            "rejected": 6,
+            "total": 76
+          }
+        },
+        "zero_wrong": {
+          "threshold": 0.9928903523637759,
+          "development": {
+            "correct": 249,
+            "wrong": 0,
+            "rejected": 55,
+            "total": 304
+          },
+          "tune": {
+            "correct": 60,
+            "wrong": 0,
+            "rejected": 16,
+            "total": 76
+          }
+        }
+      },
+      "first_candidate_unfiltered_greedy": {
+        "development": {
+          "correct": 290,
+          "total": 304
+        },
+        "tune": {
+          "correct": 71,
+          "total": 76
+        }
+      }
+    },
+    "q8_bgr": {
+      "ocr_only": {
+        "raw_legal_greedy_development": {
+          "correct": 290,
+          "wrong": 6,
+          "rejected": 8,
+          "total": 304
+        },
+        "raw_legal_greedy_tune": {
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4,
+          "total": 76
+        },
+        "max_wrong3": {
+          "threshold": 0.9386077887914179,
+          "development": {
+            "correct": 285,
+            "wrong": 3,
+            "rejected": 16,
+            "total": 304
+          },
+          "tune": {
+            "correct": 69,
+            "wrong": 0,
+            "rejected": 7,
+            "total": 76
+          }
+        },
+        "zero_wrong": {
+          "threshold": 0.9931710550839266,
+          "development": {
+            "correct": 250,
+            "wrong": 0,
+            "rejected": 54,
+            "total": 304
+          },
+          "tune": {
+            "correct": 61,
+            "wrong": 0,
+            "rejected": 15,
+            "total": 76
+          }
+        }
+      },
+      "combined": {
+        "raw_legal_greedy_development": {
+          "correct": 288,
+          "wrong": 6,
+          "rejected": 10,
+          "total": 304
+        },
+        "raw_legal_greedy_tune": {
+          "correct": 71,
+          "wrong": 1,
+          "rejected": 4,
+          "total": 76
+        },
+        "max_wrong3": {
+          "threshold": 0.9386077887914179,
+          "development": {
+            "correct": 283,
+            "wrong": 3,
+            "rejected": 18,
+            "total": 304
+          },
+          "tune": {
+            "correct": 69,
+            "wrong": 0,
+            "rejected": 7,
+            "total": 76
+          }
+        },
+        "zero_wrong": {
+          "threshold": 0.9931710550839266,
+          "development": {
+            "correct": 249,
+            "wrong": 0,
+            "rejected": 55,
+            "total": 304
+          },
+          "tune": {
+            "correct": 61,
+            "wrong": 0,
+            "rejected": 15,
+            "total": 76
+          }
+        }
+      },
+      "first_candidate_unfiltered_greedy": {
+        "development": {
+          "correct": 290,
+          "total": 304
+        },
+        "tune": {
+          "correct": 71,
+          "total": 76
+        }
+      }
+    },
+    "audit": {
+      "model_state_unchanged": true,
+      "input_sources_unchanged": true,
+      "gate_associations_verified": 307,
+      "combined_gate_pass": 301,
+      "elapsed_seconds": 9820.371957
+    }
+  },
+  "verification": {
+    "original_cv2_linear": {
+      "ctc_max_abs_logp_error": 9.992007221626409e-16,
+      "candidates_checked": 307,
+      "repeated_targets_checked": 94,
+      "independent_selection_and_thresholds_match": true
+    },
+    "q8_bgr": {
+      "ctc_max_abs_logp_error": 8.881784197001252e-16,
+      "candidates_checked": 307,
+      "repeated_targets_checked": 93,
+      "independent_selection_and_thresholds_match": true
+    },
+    "resize_difference": {
+      "max_abs": 1,
+      "mean_abs": 0.11101726076343167,
+      "changed_fraction": 0.11101726076343167,
+      "changed_greedy_rois": 1
+    },
+    "previous_lpr_old_roi_frozen_threshold": {
+      "source": "tmp\\blue-plate-review\\mature-research\\ctc-comparison.json",
+      "source_sha256": "6c195050094231bd5eca80d0bff010e2b165d2921c1cb5ae2b22dc250f81e5ec",
+      "threshold": 0.9923383393106087,
+      "development": {
+        "correct": 175,
+        "wrong": 3,
+        "rejected": 126,
+        "total": 304
+      },
+      "tune": {
+        "correct": 37,
+        "wrong": 0,
+        "rejected": 39,
+        "total": 76
+      }
+    },
+    "frozen_artifacts_unchanged": true
+  },
+  "inference_freeze_sha256": "40579970d96d85d79ed3b15a6375a2930a88a8af45beb6676a646479d5210e35",
+  "source_script": "tools/blue_plate/char_segment/pretrained_new_rois.py",
+  "verification_script": "tools/blue_plate/char_segment/verify_pretrained_new_rois.py",
+  "source_metadata_research": "docs/validation/blue-plate/char-segment/data-source-research.md",
+  "old_backend_same76": {
+    "correct": 49,
+    "wrong": 0,
+    "rejected": 27
+  },
+  "hardware_or_quantization_authorized": false
+}

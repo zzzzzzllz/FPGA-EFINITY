@@ -1,0 +1,19 @@
+{
+  "changed_inputs": [
+    "tests/tb_edge_ui.v",
+    "tests/tb_frame_display.v",
+    "tests/tb_frame_store.v",
+    "tests/tb_frame_store_control.v",
+    "rtl/edge_ui.v",
+    "rtl/frame_store.v",
+    "rtl/frame_store_control.v",
+    "rtl/frame_store_dma.v",
+    "rtl/threshold_osd.v",
+    "rtl/ti60f225_oob_top.v",
+    "control.py"
+  ],
+  "parent_bitstream_sha256": "cb67ac8b6cfd1f5fb9a1e26817598186527080361d4c35f5909a9c7119e10892",
+  "bitstream_sha256": "43d80412f7d706f9864f9583d24723f2e8a65e01d9e339de8d8c85999d0ce1e1",
+  "build_id": "0x60101703",
+  "acceptance": "pending-user"
+}

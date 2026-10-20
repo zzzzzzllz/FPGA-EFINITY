@@ -1,0 +1,43 @@
+{
+  "status": "RTL, mapped-netlist golden comparison and map PASS",
+  "cycles_each": 18087,
+  "lane_state_checks_each": 144696,
+  "coverage": {
+    "writes": 8705,
+    "reads": 8717,
+    "mac_lanes": 53652,
+    "errors": 5,
+    "stalls": 477,
+    "resets": 3,
+    "loads": 8,
+    "overflow_lanes": 8
+  },
+  "all_addresses_read": 2048,
+  "resources": {
+    "EFX_ADD": 264,
+    "EFX_LUT4": 447,
+    "EFX_DSP48": 8,
+    "EFX_FF": 420,
+    "EFX_RAM10": 16
+  },
+  "physical_RAM_instances_checked": 16,
+  "timing_status": "Map only. SDC provided; no placed/routed STA or verified 100MHz.",
+  "source_and_test_hashes_rechecked": true,
+  "frozen_mac_sha256": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\build.ps1": "00ec85dd4509e0b8892cabb35e2e3e9b30ddbbcc7c96521fd2dbb28d828a3cb6",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\prepare_synthesis.py": "acbc4eb7bbc65eb76e5198c1743d25fec1c0cc997061c8780bdd0138c28e982f",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\README.md": "8240030341afe321f3b968a401b8e74c7bd5d5c3a1affd471d23cfd80dbf2d91",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\tb_weight_mac8.sv": "7f889bb69d21c04a580c86a75d0ae67f3fb44843d423cf156d7fa44c161f2f15",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\test_weight_mac8.py": "dc2a56404512c97beaa2a8dede9e0b74bef8ced3ba0cae35604ed42efa532016",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\verify_synthesis.py": "2e9ed41cb76defc1186d26bb026c1a77bcf730eab6765cd37e3d876dbf47eb40",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294",
+    "tmp\\blue-plate-whole-plate-budget\\weight-bank\\rtl-run.log": "4eec802423b6720b2eca0fe17948c200f2826795e3342b5e83f994c12d58beeb",
+    "tmp\\blue-plate-whole-plate-budget\\weight-bank\\mapped-run.log": "4eec802423b6720b2eca0fe17948c200f2826795e3342b5e83f994c12d58beeb",
+    "tmp\\blue-plate-whole-plate-budget\\weight-bank\\rtl-validation.json": "61d804f45622fbbb317a33b37472e06788ff2523ea20cbf6dbbf86a67d64621f",
+    "tmp\\blue-plate-whole-plate-budget\\weight-bank\\mapped-validation.json": "12755e4948c7e9882530e51895d92ef895528c8a92ace47e2384d9b6d6672288",
+    "tmp\\blue-plate-whole-plate-budget\\weight-bank\\synthesis\\synthesis-summary.json": "2e2bd1a0aa229fea11ac595e97d0dac1a214355529a00fbb985f8fbe07a3d34f",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\weight-bank-implementation.md": "a21b2c549a19adef39c82fe96e3518d0d1963bf825210f149b1e028c893e375d"
+  }
+}

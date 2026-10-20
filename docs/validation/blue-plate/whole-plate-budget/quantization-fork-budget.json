@@ -1,0 +1,60 @@
+{
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\char-segment\\quantization-fork-plan.md": "a291821deff029dbf33db2b3c749c384c0129a874a260333f12d6cea16ebae99",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_segment\\quantize_lprnet_fork.py": "0e8292c1525b3e9348a6db393177d8b2c0751d84ad5fbb12e68f56a40831a3a1",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_segment\\integer_lprnet_fork.py": "9849014a22bbc2d5734c86af651875309d806b9b7ff1a15cbae81df5c8c78d1e",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_segment\\quantize_lprnet.py": "fa0f15bf9b0ce0757ba3ad30c6b667a809455d318f7246428b4ba093fd2afda5",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-segment\\quantization-w8a8\\real-mac-vectors.json": "4ef30a60658787c5ac698c7e0e29ead386c58a7fc8544a229d01d2100d96164d",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\costs.json": "78a0bf006fe28a5222f67a29541d71a74842db99b340aea242f80882242e5285",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\color-cnn-sharing.json": "5e3c544cac465eb1f37b2aecd195fd8042b86ce444fcedbea493e456f097e6bb"
+  },
+  "source_unchanged": true,
+  "slot": {
+    "coarse_bytes": 202752,
+    "fine_bytes": 50688,
+    "total": 253440,
+    "capacity": 262144,
+    "remaining": 8704,
+    "old_input_bytes": 50688,
+    "live_bytes": 304128,
+    "pool_destination_bytes": 21504
+  },
+  "write_block": {
+    "coarse": 3072,
+    "fine": 768,
+    "total": 3840,
+    "capacity": 4096,
+    "spatial_tile": 12,
+    "tiles": 66,
+    "byte_coverage_exact": true
+  },
+  "parameters": {
+    "rows": 320,
+    "capacity_rows": 512,
+    "bytes": 2880,
+    "new_payload_bytes": 320,
+    "new_reserved_bytes": 576,
+    "selected_lane_offsets": [
+      0,
+      4
+    ],
+    "secondary_row": "256 + output_channel/4"
+  },
+  "weight_load": {
+    "layer_bytes": 16384,
+    "old_tiles": 50,
+    "new_tiles": 66,
+    "old_bytes": 819200,
+    "new_bytes": 1081344,
+    "delta_bytes": 262144
+  },
+  "extra_requantizations": 50688,
+  "extra_feature_write_bytes": 50688,
+  "extra_convolution_MACs": 0,
+  "ddr": {
+    "previous": 7014592,
+    "new": 7015168,
+    "capacity": 8388608
+  },
+  "scope": "No images or model evaluation; no changes to model files. Capacity passes, arithmetic/port contracts remain separate."
+}

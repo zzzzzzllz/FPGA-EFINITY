@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "994813f1-3978-462a-972d-9120c14b65fe",
+  "status": "current",
+  "command": "deliver",
+  "type": "workflow",
+  "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\candidate.json",
+  "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\workflow-guard-plate-20261017-170209\\guard-plate.html",
+  "specification": {
+    "sha256": "149a4308a7a547d14870ac71c09aebd5aa31b22e6dccd2580539a09350e71b95",
+    "bytes": 8073
+  },
+  "artifact": {
+    "sha256": "e5f40bd08921a4edb1b59130016576f11189be20111f6488f2a9e70e41ab075e",
+    "bytes": 831739
+  }
+}

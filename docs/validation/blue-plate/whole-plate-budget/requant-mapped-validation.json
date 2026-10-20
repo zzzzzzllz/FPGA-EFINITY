@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "stage": "mapped",
+  "cases": 218,
+  "real_cases": 100,
+  "latency": "19+shift enabled edges after accept; output held until CE and ready",
+  "frozen_sources_unchanged": true,
+  "stdout": "PASS requant cases=218 cycles=14249 stalls=1162\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant\\tb_requant.sv:74: $finish called at 142490000 (1ps)\n",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant\\test_requant.py": "825753ea33308a8a2edb160759289763268a4220de53dbe16ba853abf03a6d7c",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant\\golden.py": "110f4ec95896076f17e13e61470752d2b539b137de99498b806330732441f67b",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant\\tb_requant.sv": "dce581afe59858bd9c488a164c2251d0826f6eeeb7dfc61e2251959a95f837de",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant\\mapped-vectors.txt": "8c186203ac5f54640ed978ea57824a0501e771a645d0fb578c162019d850911a",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant\\synthesis\\out\\q31_psum_mac8.map.v": "cc20041f6f1212d47c6174c7074a8d7ee42e820deb39960b4a99d2f1db8d885c",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\rtl\\psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e"
+  }
+}

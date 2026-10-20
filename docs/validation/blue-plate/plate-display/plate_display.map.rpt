@@ -1,0 +1,177 @@
+Efinity Synthesis report for project plate_display
+Version: 2026.1.132.4.5
+Generated at: Oct 18, 2026 13:47:24
+Copyright (C) 2013 - 2026  All rights reserved.
+
+Top-level Entity Name : plate_display
+
+family : Titanium
+device : Ti60F225
+project : plate_display
+root : plate_display
+binary-db : out\plate_display.vdb
+insert-ios : 0
+insert-gclk : 0
+max-carry-cascade : 320
+max-dsp-cascade : 16
+max_mult : -1
+max_ram : -1
+mode : speed
+num_srl : -1
+output-dir : out
+proj_curr_path : D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display
+project : plate_display
+project-xml : D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_display.xml
+retiming : 0
+root : plate_display
+use-logic-for-small-rom : 0
+work-dir : work_syn
+write-efx-verilog : out\plate_display.map.v
+
+File List:
+
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_confirm.v
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_mailbox.v
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_display_state.v
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_osd.v
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_display.v
+
+### ### Report Section Start ### ###
+
+
+### ### EFX_FF CE enables (begin) ### ### ###
+
+Total number of enable signals: 16
+Total number of FFs with enable signals: 3942
++-------------------------+------------------+
+|CE Signal                |Number of FF loads|
++-------------------------+------------------+
+|state/confirm/n852       |              717 |
+|state/confirm/n855       |              716 |
+|state/n1896              |              716 |
+|frame_start              |              716 |
+|ceg_net472               |              708 |
+|state/n1462              |               65 |
+|state/cfg_received       |               65 |
+|state/config_link/n75    |               65 |
+|state/confirm/config_same|               64 |
+|state/confirm/n7522      |               32 |
+|state/confirm/n7524      |               32 |
+|state/confirm/n7525      |               32 |
+|ceg_net34                |               11 |
+|ceg_net2                 |                1 |
+|ceg_net11                |                1 |
+|ceg_net15                |                1 |
++-------------------------+------------------+
+
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+
+Total number of set/reset signals: 3
+Total number of FFs with set/reset signals: 4085
++------------------+------------------+
+|SR Signal         |Number of FF loads|
++------------------+------------------+
+|state/src_reset[1]|             2480 |
+|display_reset_n   |             1601 |
+|rst_n             |                4 |
++------------------+------------------+
+
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'osd/font__D$b12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$2' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$c12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$d12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$e12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$f12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$g12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$h12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$i12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$j12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$k12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$l12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$m12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$n12' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$o1' Port WDATA is tied off because it is disabled.
+Memory instance 'osd/font__D$12' Port WDATA is tied off because it is disabled.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                         FFs      SRLs      ADDs       LUTs    COMB4s      RAMs DSP/MULTs
+---------------------------------------        ---      ----      ----       ----      ----      ---- ---------
+plate_display:plate_display                4085(0)      0(0)    400(0)    2740(0)      0(0)     16(0)      3(0)
+ +state:plate_display_state             4051(1662)      0(0)   393(33)  2234(932)      0(0)      0(0)      3(0)
+  +confirm:plate_confirm                1597(1597)      0(0)  360(360) 1300(1300)      0(0)      0(0)      3(3)
+  +results:plate_mailbox(WIDTH=716)       722(722)      0(0)      0(0)       0(0)      0(0)      0(0)      0(0)
+  +config_link:plate_mailbox(WIDTH=64)      70(70)      0(0)      0(0)       2(2)      0(0)      0(0)      0(0)
+ +osd:plate_osd                             34(34)      0(0)      7(7)   506(506)      0(0)    16(16)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### DSP Usage Report (begin) ### ### ### 
+
++---------------------+-----+------+-------+------+-------+---------+----+
+|DSP                  |TYPE |SIGNED|SHIFTER|BFLOAT|CAS_OUT|    O    |REGS|
++---------------------+-----+------+-------+------+-------+---------+----+
+|state/confirm/mult_65|DSP48|      |       |      | (A*B) |         |A,B |
+|state/confirm/mult_67|DSP48|      |       |      |       |  (A*B)  |    |
+|state/confirm/mult_63|DSP48|      |       |      |       |(A*B)+CIN|    |
++---------------------+-----+------+-------+------+-------+---------+----+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
++---------+----------+----------+------------+----------------+
+|Clock    |Flip-Flops|Shift-Regs|Memory Ports|Multipliers/DSPs|
++---------+----------+----------+------------+----------------+
+|src_clk  |     2482 |        0 |          0 |              1 |
+|pixel_clk|     1603 |        0 |         16 |              0 |
++---------+----------+----------+------------+----------------+
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Memory Mapping Report (begin) ### ### ###
+
+1. osd/font (D:\Desktop_New\EfinityNEW\tmp\blue-plate-plate-display\synthesis\plate_display\plate_osd.v:8):
+	EFX_RAM10: osd/font__D$b12
+	EFX_RAM10: osd/font__D$2
+	EFX_RAM10: osd/font__D$c12
+	EFX_RAM10: osd/font__D$d12
+	EFX_RAM10: osd/font__D$e12
+	EFX_RAM10: osd/font__D$f12
+	EFX_RAM10: osd/font__D$g12
+	EFX_RAM10: osd/font__D$h12
+	EFX_RAM10: osd/font__D$i12
+	EFX_RAM10: osd/font__D$j12
+	EFX_RAM10: osd/font__D$k12
+	EFX_RAM10: osd/font__D$l12
+	EFX_RAM10: osd/font__D$m12
+	EFX_RAM10: osd/font__D$n12
+	EFX_RAM10: osd/font__D$o1
+	EFX_RAM10: osd/font__D$12
+
+### ### Memory Mapping Report (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+
+INPUT  PORTS    : 	866
+OUTPUT PORTS    : 	746
+
+EFX_ADD                 : 	400
+EFX_LUT4                : 	2740
+   1-2  Inputs          : 	846
+   3    Inputs          : 	955
+   4    Inputs          : 	939
+EFX_DSP48               : 	3
+EFX_FF                  : 	4085
+EFX_RAM10               : 	16
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 13s
+Elapsed synthesis time : 13s

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "browser-check",
+  "evidenceKind": "automated-browser",
+  "status": "fail",
+  "visualReview": "not-requested",
+  "provenance": "current",
+  "deliveryReceiptId": "b003efb7-d5f7-4d58-b8f7-023f22961555",
+  "artifact": {
+    "path": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html",
+    "sha256": "1f4c3d2024e2da69cd3972261752b4fbe90cd57457e61a2e68585506d8e6351a",
+    "bytes": 866130
+  },
+  "state": {
+    "detail": "read",
+    "motion": "still"
+  },
+  "chrome": {
+    "status": "available",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\demo-rehearsal.html"
+      },
+      "evidence": {
+        "reason": "Chrome DevTools write pipe failed: stream closed\nChrome process: still running.\nChrome stderr:\n[76680:68400:1015/195315.816:ERROR:components\\os_crypt\\async\\browser\\os_crypt_win.cc:63] Failed to encrypt: 系统找不到指定的文件。 (0x2)\r\n[76680:9932:1015/195315.850:ERROR:chrome\\installer\\util\\google_update_settings_win.cc:270] Failed opening key Software\\Google\\Update\\ClientStateMedium\\{8A69D345-D564-463c-AFF1-A69D9E530F96} to set usagestats; result: 5\r\n[76680:76860:1015/195315.947:ERROR:components\\password_manager\\core\\browser\\password_store\\login_database_async_helper.cc:100] Encryption is not available.\r\n[76680:32244:1015/195315.947:ERROR:components\\password_manager\\core\\browser\\password_store\\login_database_async_helper.cc:100] Encryption is not available.\r\n[76680:68400:1015/195316.045:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.046:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.076:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:68400:1015/195316.103:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.104:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.127:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.150:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.207:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.208:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.305:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:68400:1015/195316.305:FATAL:content\\browser\\gpu\\gpu_data_manager_impl_private.cc:389] GPU process isn't usable. Goodbye.\nChrome transport: Node v24.19.0, libuv 1.52.1, win32; pid=76680, exitCode=null, signalCode=null.\nChrome read pipe: readable=true, ended=false, destroyed=false, receivedBytes=1328, messages=3, bufferedBytes=0.\nChrome write pipe: writable=false, ended=true, destroyed=true, completedWrites=3, writtenBytes=255, bufferedBytes=0."
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "containment": {
+    "status": "fail",
+    "policy": "fit-or-reader-declared-readable-vertical-scroll",
+    "viewports": []
+  },
+  "themeStates": {
+    "status": "fail",
+    "viewports": []
+  },
+  "readability": {
+    "status": "fail",
+    "minimumProjectedNodeTextPx": 6,
+    "viewports": []
+  },
+  "viewerChrome": {
+    "status": "fail",
+    "viewports": []
+  },
+  "captures": {
+    "status": "not-requested",
+    "screenshots": [],
+    "contactSheet": null
+  },
+  "sidecars": {
+    "directory": "D:\\Desktop_New\\EfinityNEW\\.archify\\tree-demo-rehearsal-20261015-194823\\review-2",
+    "receipt": "demo-rehearsal.browser-check.json",
+    "files": []
+  },
+  "error": "Chrome DevTools write pipe failed: stream closed\nChrome process: still running.\nChrome stderr:\n[76680:68400:1015/195315.816:ERROR:components\\os_crypt\\async\\browser\\os_crypt_win.cc:63] Failed to encrypt: 系统找不到指定的文件。 (0x2)\r\n[76680:9932:1015/195315.850:ERROR:chrome\\installer\\util\\google_update_settings_win.cc:270] Failed opening key Software\\Google\\Update\\ClientStateMedium\\{8A69D345-D564-463c-AFF1-A69D9E530F96} to set usagestats; result: 5\r\n[76680:76860:1015/195315.947:ERROR:components\\password_manager\\core\\browser\\password_store\\login_database_async_helper.cc:100] Encryption is not available.\r\n[76680:32244:1015/195315.947:ERROR:components\\password_manager\\core\\browser\\password_store\\login_database_async_helper.cc:100] Encryption is not available.\r\n[76680:68400:1015/195316.045:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.046:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.076:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:68400:1015/195316.103:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.104:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.127:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.150:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.207:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:76216:1015/195316.208:ERROR:components\\viz\\host\\persistent_cache_sandboxed_file_factory.cc:153] Failed to open persistent cache files in directory \"D:\\Desktop_New\\EfinityNEW\\tmp\\archify-visual-check-profile-GWsvZ5\\GPUPersistentCache\\DawnGraphiteCache\\NR2GNA44OGQUBFRRNDBXIX2VC7JXKYAS\", error: 0: 另一个程序正在使用此文件，进程无法访问。 (0x20)\r\n[76680:68400:1015/195316.305:ERROR:content\\browser\\gpu\\gpu_process_host.cc:1043] GPU process exited unexpectedly: exit_code=-1073741790\r\n[76680:68400:1015/195316.305:FATAL:content\\browser\\gpu\\gpu_data_manager_impl_private.cc:389] GPU process isn't usable. Goodbye.\nChrome transport: Node v24.19.0, libuv 1.52.1, win32; pid=76680, exitCode=null, signalCode=null.\nChrome read pipe: readable=true, ended=false, destroyed=false, receivedBytes=1328, messages=3, bufferedBytes=0.\nChrome write pipe: writable=false, ended=true, destroyed=true, completedWrites=3, writtenBytes=255, bufferedBytes=0."
+}

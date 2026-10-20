@@ -1,0 +1,58 @@
+{
+  "build_id": "0x60101501",
+  "bitstream_sha256": "32c073fae8bac2b4e631fe09f88340bb88fe6ead897fef16cc1d082c4e667d19",
+  "offline_commands": 43,
+  "hardware_status_checks": 44,
+  "hardware_checked_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "physical_key_acceptance": "pending-user",
+  "visual_acceptance": "pending-user",
+  "timing_min_slack_ns": [
+    0.263,
+    0.026
+  ],
+  "resources": {
+    "xlrs": 48618,
+    "xlrs_total": 60800,
+    "memory_blocks": 190,
+    "memory_blocks_total": 256,
+    "dsp_blocks": 127,
+    "dsp_blocks_total": 160
+  },
+  "max_error_counts": {
+    "errors": 0,
+    "underflow": 0,
+    "failed_frames": 0,
+    "frame_bus_errors": 0,
+    "result_overflow": 0
+  },
+  "ready_state": "loaded-step-01-color-live-empty-clip-no-reference",
+  "ready_signals": {
+    "build_id": 1611666689,
+    "demo_step": 1,
+    "ui_view": 0,
+    "ui_busy": 0,
+    "ui_error": 0,
+    "frame_mode": 0,
+    "threshold_shown": 24,
+    "recorded_frames": 0,
+    "reference_valid": 0,
+    "errors": 0,
+    "underflow": 0,
+    "frame_bus_errors": 0
+  }
+}

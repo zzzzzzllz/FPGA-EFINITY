@@ -1,0 +1,72 @@
+{
+  "sources_sha256": {
+    "assets.json": "efbc4afa1f1d9cece2f84a2bcc4ee11e44b2176e023fde6730de533cd38144d1",
+    "FONT-OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "freeze_evidence.py": "4c20afb52833ab524b209be3b8850d63fb76831a741b66b4f711806de65b8a71",
+    "generate_assets.py": "b692a037ca3f2fbcdca2f254d05a0ff10f0bf736d356ca7e1250da64cbe8e0e8",
+    "plate_confirm.v": "3efbc03ee2a66c3db82299d48716ccfca58952c256ff6338f19f69dd58b1e9cd",
+    "plate_defs.vh": "792145729b9d87cf7fc60023ee2c5bf564d3a72f8b961d642a02011c246f0cec",
+    "plate_display.v": "1426c92959f5c98c829b4b9d3755d9b3eace1d3b3c2d6da9defc3bc50f5f445a",
+    "plate_display_state.v": "3171bb630740995da286cd11127bacfec5f48bd1dd57203fd6e9281e66ce45b5",
+    "plate_font.mem": "86a83630b7cf0d62f3e5aef2082786d57560744f93983b88307bd1128a32ff2e",
+    "plate_mailbox.v": "321f142e77c03869e485d0a6d41ba0df07a6eaae01ef3545c3849d7522e0dd82",
+    "plate_osd.v": "d6a8de82eab79e2769473e7659b62b2e972d8c5a20b9fd64157cf9dbdded6833",
+    "prepare_synthesis.py": "90ba9b10f55b7eae4c1399443ddd9a60109896600adb5af657d809af05574d0e",
+    "README.md": "058052b9c17e63d96559bd6e5de5ebee5a90a4d371036cc4403a2e8435c4ecbc",
+    "run_sim.py": "307ae0818a79af9d4c377f560bc560d8db85bec876a5736eb2a9b9b4b67f4807",
+    "tb_plate_osd.sv": "ea879770350ca4cbb7fbd911c20d25aaba08e35a8a8c0cc4e80c30de50f00aa8",
+    "tb_plate_state.sv": "13bce208802c5d7f17fefd860f8a8ad274bccda1a82223a48387a4f94847f36b"
+  },
+  "synthesis": {
+    "plate_osd": {
+      "resources": {
+        "EFX_ADD": 7,
+        "EFX_LUT4": 475,
+        "EFX_FF": 34,
+        "EFX_RAM10": 16
+      },
+      "map_report_sha256": "45a8eb1c86d9101f2d15ada7cca24a09f967faee83c57572da2534afe8c035c8",
+      "mapped_netlist_sha256": "ead5a671aa3df971a95f2a8753908e0cad2592bf8abd742bf62c4507228176f9",
+      "project_snapshot_sha256": "3d427c96d73789b7307dec94206c097b78e3d8db1ef7a05ec740d18c1da4c2df",
+      "scope": "map only; no PNR or board test"
+    },
+    "plate_display": {
+      "resources": {
+        "EFX_ADD": 400,
+        "EFX_LUT4": 2740,
+        "EFX_DSP48": 3,
+        "EFX_FF": 4085,
+        "EFX_RAM10": 16
+      },
+      "map_report_sha256": "67d8208a31372059c21f1b8e7967233af300738b5621b1d4a862dec4848fd465",
+      "mapped_netlist_sha256": "c81d2aca5a8b2754506ea8e2797bcab6ca6d2a17ccad91e4f1fed39e8f391367",
+      "project_snapshot_sha256": "91309cb3778a92b526c0c660b2c4c2b02f798b9939804b7eed5daee5e9cc7a45",
+      "scope": "map only; no PNR or board test"
+    }
+  },
+  "simulation_sha256": "4f1da561c1adb2e7372bf3516febe58838994d57f73a3d85d664e41f87614d99",
+  "state_checks_per_clock_ratio": 64,
+  "clock_periods_ns": [
+    [
+      10,
+      6
+    ],
+    [
+      10,
+      14
+    ],
+    [
+      10,
+      22
+    ]
+  ],
+  "pixels": 819200,
+  "pixel_mismatches": 0,
+  "rendered_class_count": 65,
+  "independent_review_source_differences": [
+    "plate_osd.v",
+    "tb_plate_osd.sv"
+  ],
+  "independent_review_note": "Final OSD uses explicit expression widths; local OSD test now exercises all 65 classes in valid seven-character layouts. State RTL is unchanged from independent review.",
+  "scope": "Synthetic result protocol, displayed pixels and standalone mapped resources; no real recognition, CDC timing closure, integration or board claim"
+}

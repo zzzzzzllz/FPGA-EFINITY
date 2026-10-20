@@ -1,0 +1,3 @@
+WARNING: cannot find correct IV value
+Running: efx_run_pt_unified.py blue_plate_video_gates Titanium Ti60F225 --output_dir outflow --timing_model I3 --project_xml blue_plate_video_gates.xml
+   interface :	PASS 

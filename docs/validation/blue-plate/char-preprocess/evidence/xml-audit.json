@@ -1,0 +1,9 @@
+{
+  "before_sha256": "b2fad8988e2577aa38375f6f7d84f78374421eb5e55233a97b86ccca24715e8f",
+  "after_sha256": "99dc14004aa4a72e13cc61148f17eb908d4c34e84cbf6fb0870ab2057add6da5",
+  "original_manifest_sha256": "b2fad8988e2577aa38375f6f7d84f78374421eb5e55233a97b86ccca24715e8f",
+  "original_manifest_preserved": true,
+  "xml_semantically_identical": true,
+  "changes": "Empty XML element serialization: /> becomes space />; XML elements/attributes/text unchanged.",
+  "reconstruction": "Original pre-tool XML reconstructed from exact literal in prepare_synthesis.py with Windows CRLF; byte hash equals the untouched original input-hashes.json."
+}

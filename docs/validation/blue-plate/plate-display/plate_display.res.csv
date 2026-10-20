@@ -1,0 +1,13 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Oct 18, 2026 13:47:24
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	        FFs	      SRLs	      ADDs	       LUTs	    COMB4s	      RAMs	 DSP/MULTs
+plate_display:plate_display            	   4085(0)	     0(0)	   400(0)	   2740(0)	     0(0)	    16(0)	     3(0)	
+ +state:plate_display_state            	4051(1662)	     0(0)	  393(33)	 2234(932)	     0(0)	     0(0)	     3(0)	
+  +confirm:plate_confirm               	1597(1597)	     0(0)	 360(360)	1300(1300)	     0(0)	     0(0)	     3(3)	
+  +results:plate_mailbox(WIDTH=716)    	  722(722)	     0(0)	     0(0)	      0(0)	     0(0)	     0(0)	     0(0)	
+  +config_link:plate_mailbox(WIDTH=64) 	    70(70)	     0(0)	     0(0)	      2(2)	     0(0)	     0(0)	     0(0)	
+ +osd:plate_osd                        	    34(34)	     0(0)	     7(7)	  506(506)	     0(0)	   16(16)	     0(0)	

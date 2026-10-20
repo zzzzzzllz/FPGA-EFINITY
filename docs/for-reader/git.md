@@ -1,6 +1,6 @@
 # 本地Git使用说明
 
-仓库位置：`D:\Desktop_New\EfinityNEW\.git`。沿用已有历史，未建立嵌套仓库，也未上传网络。`main`以第二版 `coding/edge-quality-30fps/` 为唯一开发工程。
+仓库位置：`D:\Desktop_New\EfinityNEW\.git`。沿用已有历史，未建立嵌套仓库。远程 `origin` 指向 [FPGA-EFINITY](https://github.com/zzzzzzllz/FPGA-EFINITY)。`main`以第二版 `coding/edge-quality-30fps/` 为唯一开发工程。
 
 ## 分支与恢复
 

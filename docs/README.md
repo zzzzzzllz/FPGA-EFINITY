@@ -5,12 +5,15 @@
 当前主线为第二版 `edge-quality-30fps`，其他代码版本已移到归档分支。旧文档中的工程链接需切换到对应分支；当前分支安排见 [本地Git使用说明](for-reader/git.md)。
 
 - [使用指南](for-reader/usage.md)：四个版本怎么构建、测试、烧录和控制。
+- [赛题四要求逐条解读](for-reader/contest-requirements.md)：平台、五项基础要求、六项高阶挑战及验收清单，对应赛题 PDF 第 12—17 页。
 - [第一版按键与效果导览](for-reader/versions/edge-30fps-demo.md)：原完整边缘版的上板检查顺序和思维导图。
 - [第二版画质版导览](for-reader/versions/edge-quality-30fps-demo.md)：画质版的默认参数、按键与架构图。
+- [第二版串行演示与验收](for-reader/versions/edge-quality-30fps-serial-demo.md)：14步按键路线、全部赛题要求对应环节、实现说明与验收顺序。
 - [第三版60帧导览](for-reader/versions/edge-60fps-demo.md)：归档60帧版本的电脑切换命令、效果与架构图。
 - [版本与目录说明](for-reader/project-structure-audit.md)：功能差异、目录边界与已知问题。
 - [术语](for-reader/GLOSSARY.md)：帧率、全视野、默认关闭和验收状态。
 - [当前系统结构](design/architecture.md)：采集、算法、存储、显示和控制的关系。
+- [纯 FPGA 蓝牌实时识别设计](design/license-plate-recognition.md)：实时画面与完整蓝牌号码显示，不建设保存系统；包含识别方案、资源预算和独立启动验收，尚未实现。
 - [第三方来源与许可](reference/third-party.md)：已采用实现的出处及许可证。
 - [迁移记录](validation/reorganization/progress.md)：本次整理的验证与清理结果。
 

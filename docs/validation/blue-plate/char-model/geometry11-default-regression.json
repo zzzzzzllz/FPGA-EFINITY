@@ -1,0 +1,34 @@
+{
+  "vectors": 159,
+  "real_and_rejection": 99,
+  "tie_injected_score_bus": 3,
+  "extreme_and_random": 57,
+  "expected_latency_cycles": 41796,
+  "clock_assumption_MHz": 100,
+  "hashes": {
+    "tools/blue_plate/char_model/rtl/char_linear.v": "f7369e67e7fea59beb4c0db75ebb874914fd94d42445647f343cd94484a6b879",
+    "tools/blue_plate/char_model/tests/tb_char_linear.sv": "ade9b80ddcf0775551c501e94ae563e2772f4493a05083a650ef56b7ee78bc14",
+    "tools/blue_plate/char_model/candidate/w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+    "tools/blue_plate/char_model/candidate/b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8",
+    "tools/blue_plate/char_model/candidate/interface.json": "c2d804b01654e800673368694998b55a583f7a981f18ee2ce4dad3e6a999b7da"
+  },
+  "result": "PASS vectors=159 compared_scores=10465 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv:144: $finish called at 67996990000 (1ps)\n",
+  "commands": [
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+      "-g2012",
+      "-Wall",
+      "-s",
+      "tb_char_linear",
+      "-o",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl\\sim.vvp",
+      "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\rtl\\char_linear.v",
+      "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv"
+    ],
+    [
+      "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+      "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-char-model\\rtl\\sim.vvp",
+      "+count=159"
+    ]
+  ]
+}

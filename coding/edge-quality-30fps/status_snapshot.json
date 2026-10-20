@@ -1,5 +1,5 @@
 {
-  "width": 1905,
+  "width": 1920,
   "page_width": 64,
   "pages": 30,
   "probes": [
@@ -386,6 +386,12 @@
       "width": 477,
       "init": null,
       "offset": 1428
+    },
+    {
+      "name": "recognition_live",
+      "width": 15,
+      "init": null,
+      "offset": 1905
     }
   ]
 }

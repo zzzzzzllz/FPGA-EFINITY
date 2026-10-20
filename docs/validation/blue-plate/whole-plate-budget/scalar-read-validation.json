@@ -1,0 +1,283 @@
+{
+  "status": "PASS independent scalar interface + Q31 candidate; mapped requires documented local LUT startup adaptation",
+  "frozen_static_candidate_unchanged": true,
+  "original_mac_bank_unchanged": true,
+  "resources": {
+    "budget": {
+      "XLR": 49248,
+      "RAM10": 204,
+      "physical_DSP": 128
+    },
+    "video_placed_XLR": 24090,
+    "maps": {
+      "reader": {
+        "EFX_ADD": 205,
+        "EFX_LUT4": 1272,
+        "EFX_FF": 573,
+        "EFX_RAM10": 7
+      },
+      "geometry_color": {
+        "EFX_ADD": 4300,
+        "EFX_LUT4": 9687,
+        "EFX_DSP48": 1,
+        "EFX_FF": 4730,
+        "EFX_RAM10": 2
+      },
+      "display": {
+        "EFX_ADD": 400,
+        "EFX_LUT4": 2740,
+        "EFX_DSP48": 3,
+        "EFX_FF": 4085,
+        "EFX_RAM10": 16
+      },
+      "shared_q31": {
+        "EFX_ADD": 456,
+        "EFX_LUT4": 2300,
+        "EFX_DSP48": 8,
+        "EFX_FF": 595,
+        "EFX_RAM10": 18
+      },
+      "ocr_resize": {
+        "EFX_ADD": 96,
+        "EFX_LUT4": 520,
+        "EFX_FF": 339,
+        "EFX_RAM10": 1
+      }
+    },
+    "added_comb_slots": 21976,
+    "added_FF": 10322,
+    "conditional_XLR": {
+      "ideal_cross_module_ff_pack": 46066,
+      "ideal_module_local_ff_pack": 47011,
+      "no_ff_pack": 56388
+    },
+    "remaining_XLR": {
+      "ideal_cross_module_ff_pack": 3182,
+      "ideal_module_local_ff_pack": 2237,
+      "no_ff_pack": -7140
+    },
+    "mapped_RAM10": 150,
+    "external_gray_allocation": 14,
+    "engine_target_RAM10": 51,
+    "engine_mapped_RAM10": 19,
+    "engine_unmapped_RAM10": 32,
+    "full_target_RAM10": 196,
+    "full_target_DSP": 97,
+    "scope": "Conditional packing arithmetic, not PNR bounds. Replaces frozen Q31; OCR RAM uses the existing resize allocation. Excludes unmapped logic."
+  },
+  "map_delta": {
+    "EFX_RAM10": 0,
+    "EFX_DSP48": 0,
+    "EFX_LUT4": 91,
+    "EFX_FF": 1,
+    "EFX_ADD": 0
+  },
+  "tests": {
+    "rtl-psum": [
+      "PASS psum cycles=182056 lane_states=1456448",
+      "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_psum.sv:50: $finish called at 1820566000 (1ps)"
+    ],
+    "rtl-scalar": [
+      "PASS scalar cycles=9112 all_address_checks=512 scalar_reads=573 real_q_outputs=64 stalls=164",
+      "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_scalar.sv:173: $finish called at 91120000 (1ps)"
+    ],
+    "mapped-psum": [
+      "PASS psum cycles=8808 lane_states=70464",
+      "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_psum.sv:50: $finish called at 88086000 (1ps)"
+    ],
+    "mapped-scalar": [
+      "PASS scalar cycles=9112 all_address_checks=512 scalar_reads=573 real_q_outputs=64 stalls=164",
+      "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_scalar.sv:173: $finish called at 91120000 (1ps)"
+    ]
+  },
+  "input_coverage": {
+    "rtl": {
+      "original_cycles": 178888,
+      "cycles": 182056,
+      "saved_groups": 96,
+      "scalar_reads": 768
+    },
+    "mapped": {
+      "original_cycles": 5640,
+      "cycles": 8808,
+      "saved_groups": 96,
+      "scalar_reads": 768
+    }
+  },
+  "real_q_outputs": 64,
+  "real_fork_outputs": 8,
+  "real_mac_steps": 2320,
+  "lut_checks": 39064,
+  "service": {
+    "dynamic_primary_outputs": 702480,
+    "standalone_read_cycles": 3,
+    "combined_dynamic_transaction_cycles": 29,
+    "old_restore_plus_dynamic_transaction_cycles": 44,
+    "saved_cycles": 10537200,
+    "previous_lpr_core_cycles": 53878692,
+    "new_lpr_core_cycles": 43341492,
+    "previous_known_three_model_cycles": 77553448,
+    "new_known_three_model_cycles": 67016248,
+    "scope": "Per-transaction timings verified on RTL and mapped; network totals projected. Existing K-split restores, dense MAC, all saves and prior omitted costs remain.",
+    "rows": [
+      {
+        "name": "backbone.0",
+        "dynamic_primary_outputs": 66792,
+        "old_restore_cycles": 1135464,
+        "new_read_overhead_cycles": 133584,
+        "saved_cycles": 1001880
+      },
+      {
+        "name": "backbone.4.block.0",
+        "dynamic_primary_outputs": 57600,
+        "old_restore_cycles": 979200,
+        "new_read_overhead_cycles": 115200,
+        "saved_cycles": 864000
+      },
+      {
+        "name": "backbone.4.block.2",
+        "dynamic_primary_outputs": 55800,
+        "old_restore_cycles": 948600,
+        "new_read_overhead_cycles": 111600,
+        "saved_cycles": 837000
+      },
+      {
+        "name": "backbone.4.block.4",
+        "dynamic_primary_outputs": 57600,
+        "old_restore_cycles": 979200,
+        "new_read_overhead_cycles": 115200,
+        "saved_cycles": 864000
+      },
+      {
+        "name": "backbone.4.block.6",
+        "dynamic_primary_outputs": 138600,
+        "old_restore_cycles": 2356200,
+        "new_read_overhead_cycles": 277200,
+        "saved_cycles": 2079000
+      },
+      {
+        "name": "backbone.8.block.0",
+        "dynamic_primary_outputs": 50688,
+        "old_restore_cycles": 861696,
+        "new_read_overhead_cycles": 101376,
+        "saved_cycles": 760320
+      },
+      {
+        "name": "backbone.8.block.2",
+        "dynamic_primary_outputs": 49104,
+        "old_restore_cycles": 834768,
+        "new_read_overhead_cycles": 98208,
+        "saved_cycles": 736560
+      },
+      {
+        "name": "backbone.8.block.4",
+        "dynamic_primary_outputs": 49896,
+        "old_restore_cycles": 848232,
+        "new_read_overhead_cycles": 99792,
+        "saved_cycles": 748440
+      },
+      {
+        "name": "backbone.8.block.6",
+        "dynamic_primary_outputs": 15048,
+        "old_restore_cycles": 255816,
+        "new_read_overhead_cycles": 30096,
+        "saved_cycles": 225720
+      },
+      {
+        "name": "backbone.11.block.0",
+        "dynamic_primary_outputs": 34848,
+        "old_restore_cycles": 592416,
+        "new_read_overhead_cycles": 69696,
+        "saved_cycles": 522720
+      },
+      {
+        "name": "backbone.11.block.2",
+        "dynamic_primary_outputs": 41184,
+        "old_restore_cycles": 700128,
+        "new_read_overhead_cycles": 82368,
+        "saved_cycles": 617760
+      },
+      {
+        "name": "backbone.11.block.4",
+        "dynamic_primary_outputs": 49104,
+        "old_restore_cycles": 834768,
+        "new_read_overhead_cycles": 98208,
+        "saved_cycles": 736560
+      },
+      {
+        "name": "backbone.11.block.6",
+        "dynamic_primary_outputs": 16632,
+        "old_restore_cycles": 282744,
+        "new_read_overhead_cycles": 33264,
+        "saved_cycles": 249480
+      },
+      {
+        "name": "backbone.16",
+        "dynamic_primary_outputs": 11232,
+        "old_restore_cycles": 190944,
+        "new_read_overhead_cycles": 22464,
+        "saved_cycles": 168480
+      },
+      {
+        "name": "backbone.20",
+        "dynamic_primary_outputs": 3456,
+        "old_restore_cycles": 58752,
+        "new_read_overhead_cycles": 6912,
+        "saved_cycles": 51840
+      },
+      {
+        "name": "container.0",
+        "dynamic_primary_outputs": 4896,
+        "old_restore_cycles": 83232,
+        "new_read_overhead_cycles": 9792,
+        "saved_cycles": 73440
+      }
+    ]
+  },
+  "research": {
+    "reference_url": "https://raw.githubusercontent.com/alexforencich/verilog-axis/master/rtl/axis_register.v",
+    "read_scope": "REG_TYPE==1, lines178-234, read through web tool; valid held until ready; reset clears valid",
+    "download": "urllib download timed out (WinError10060). Web source read succeeded; no downloaded source claimed or executed.",
+    "vendor_guide": "https://www.efinixinc.com/docs/efinity-quantum-ti-primitives-ug-v3.3.pdf",
+    "vendor_read_scope": "EFX_RAM10 pages22-25; optional output stage and read/reset controls",
+    "local_model": {
+      "path": "D:/Efinity/sim_models/verilog/efx_ram10.v",
+      "sha256": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+      "read_scope": "358-415 synchronous read and RDATA hold with RE=0; OUTPUT_REG=0 uses RDATA_out directly"
+    },
+    "decision": "Use existing RAM read output as one-entry held response; no copied RTL, no extra register bank."
+  },
+  "timing": "10ns constraint; map only, no PNR/100MHz STA, no DDR or board integration.",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\delivery-freeze.json": "64c3a4f1d9c2054d58acad01e9925da5b6a30aa58d6d6b7c1b3020ec6f47bdbc",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\requant-validation.json": "359e2cb9e8780181ee6fc396c016f70e35d008a9dcbdf8708bfbca77ccfa9161",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\requant-static-validation.json": "9e562d810719c8c1a8bf96f37066960a4e3fdc3d3eafa064b637c3281ad172a3",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\proof-and-schedule.json": "abd6b7150e02f52aa958b9675a67d9e4e9bb613a778938009961ab8220e071f4",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\test-inputs.json": "425ab804d9668ff850d4810364ded8364e99f188cddb1ddbe34822a72347f56f",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\rtl-psum-validation.json": "e089bc04c1ad41615d49c96011883f01ad8a1f4a63ec93d4d457084e408f3eff",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\rtl-scalar-validation.json": "8a94dd087105e6939e91cff15b2cd81e0dd5490b7ce8e30fb0ef860193560a11",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\mapped-psum-validation.json": "0f7169171c3a116ff7db5fb407814bde2b991ff63b8d0489a2a93c24426f54c0",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\mapped-scalar-validation.json": "029a408bb9650505c8a4304d945c645cc0c096c16fa57e61a287de3f6a3c17e8",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\lut-startup-validation.json": "878b87b1a61c295682c10eaeef6170ed8a8af6cd38f83a124773ff48ed58feaf",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\synthesis\\synthesis-summary.json": "fc9a43bfeefa0f15b7e073ea36fe45357b687f33e47547f0d6963a5185fc8989",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\scalar-read\\research\\sources.json": "e8636e1a772e054aceb8bdaf5b42554d2df3d20ed6b697e523d780080c3df3c8",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\build.ps1": "63867017233072eb5ebc631c621f2b287e25f38e6624775be45e68ef6338a973",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\finalize.py": "f55b226996eeb035633c39402da4a91d4bc909611cd3d9f5685f8b8b45169161",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\prepare_synthesis.py": "19318e2be593a5975c5a67884c34e255afb279a0e1c739d810363fabd5695ade",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\prepare_tests.py": "28b4856129eb95bf609107be782b0208bd74dba514a4c62a391cc3ec7914f2f9",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\README.md": "22055bf57dbe72aa797200dcb6cd1d867068833682d982f972b7eaa0cbf36d15",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_psum.sv": "b21f5514a1f2f8d0eb7b79c61b332752c3c3933a730d9d990c69d679c7833306",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\tb_scalar.sv": "e9918d6413dab6f71b18577ab7b11b4029141b9016866fd02da915d55270da95",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\test.py": "9fdc9b3b7e227778e3ce01c8197812e6d77229ef267f1757712d60281c4488bc",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\verify_synthesis.py": "71a1f0feba8c7fa775cb29f64caef887510e1b4630d7c6c4ab084da660736e8e",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\rtl\\psum_scalar_mac8.v": "e1c9eecdf67a7fddd0e6b93c4b84539fd7c9653d0ca3d9dc371a12b32a0b5a8b",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\scalar_read\\rtl\\q31_scalar_mac8.v": "93ad7ee9289ae1fb754f2ecf9501f212eda95833a4c5e5e22d5a746651f4e144",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-implementation.md": "a463f681be79042c85f681083d30a113c9f15e537d121d951b0cf4a3f040a781",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-rtl-psum-validation.json": "e089bc04c1ad41615d49c96011883f01ad8a1f4a63ec93d4d457084e408f3eff",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-rtl-scalar-validation.json": "8a94dd087105e6939e91cff15b2cd81e0dd5490b7ce8e30fb0ef860193560a11",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-mapped-psum-validation.json": "0f7169171c3a116ff7db5fb407814bde2b991ff63b8d0489a2a93c24426f54c0",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-mapped-scalar-validation.json": "029a408bb9650505c8a4304d945c645cc0c096c16fa57e61a287de3f6a3c17e8",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-lut-startup-validation.json": "878b87b1a61c295682c10eaeef6170ed8a8af6cd38f83a124773ff48ed58feaf",
+    "D:\\Desktop_New\\EfinityNEW\\docs\\validation\\blue-plate\\whole-plate-budget\\scalar-read-test-inputs.json": "425ab804d9668ff850d4810364ded8364e99f188cddb1ddbe34822a72347f56f"
+  }
+}

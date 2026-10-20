@@ -1,0 +1,24 @@
+{
+  "exit_code": 0,
+  "layers": 17,
+  "checks": [
+    "Frozen config/parameter hashes",
+    "16 original convs plus tap2 extra output",
+    "CSV sums equal JSON totals",
+    "MAC and weight reads match deployment audit",
+    "Actual 19+s and save/restore contract counts",
+    "All source hashes unchanged",
+    "Actual map primitive counts and placed video XLR",
+    "Existing TTL RTL/probe reviewed; no TTL changes"
+  ],
+  "source_file_count": 29,
+  "no_training_images_map_or_board_actions": true,
+  "files_sha256": {
+    "tools\\blue_plate\\whole_plate_budget\\service_cost.py": "96284feb0adf23061387c263f71bcf732bc81bf5bcf542b9a53a0cc6c8144ea4",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\service-cost.json": "c3091bc10120318643a020812d866ffef2727038db8613d7825bb26e1bf856ff",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\service-cost-layers.csv": "664f34ca9bf055af8c80469737e9fc4a21d02566b1eb874e4f3e679b66a669a9",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\service-cost.md": "7af410034dc3cbdfe81f40a4e7c2e068fe67575093396b72dc2897f170e44d53",
+    "tools\\blue_plate\\whole_plate_budget\\README.md": "d72942a29e8b26ed59a08438f7a8671f872df581a370619e9197f9245ac1007d",
+    "tmp\\blue-plate-whole-plate-budget\\service-cost\\run.log": "206194d2fd3a998d171146fe847e7a68adc1a1621fd2b0d555f7df48b4ab8fb0"
+  }
+}

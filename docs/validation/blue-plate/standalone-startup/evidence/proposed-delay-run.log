@@ -1,0 +1,3 @@
+MEASURE proposed_first_start_us=6581.101
+PASS proposed counter-only timing exceeds 4 ms in this logic model
+tmp\blue-plate-standalone-startup\tb_proposed_delay.sv:30: $finish called at 6582101000 (1ps)

@@ -1,0 +1,23 @@
+{
+  "exit_code": 0,
+  "stage": "mapped",
+  "cases": 271,
+  "real_cases": 100,
+  "latency": "25 enabled edges after dynamic accept; constant result valid at acceptance; output held until CE and ready",
+  "frozen_sources_unchanged": true,
+  "stdout": "PASS requant cases=271 constants=91 cycles=6147 stalls=360\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant_static\\tb_requant.sv:82: $finish called at 61470000 (1ps)\n",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant_static\\test_requant.py": "f30491803f10583c06c05a13f0de5a4ce6eaee1377bce631c704aa7a13b6e9ac",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant\\golden.py": "110f4ec95896076f17e13e61470752d2b539b137de99498b806330732441f67b",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant_static\\prove_schedule.py": "b9fb1e5cbe38c8bb94e20b8995a2d86c0f95337494b8a7c708f7b536056a9dfb",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\proof-and-schedule.json": "abd6b7150e02f52aa958b9675a67d9e4e9bb613a778938009961ab8220e071f4",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\requant_static\\tb_requant.sv": "5ba1ff2c9a4f600a1b460ac5506ff1f8090b9087e56fee5e12ee98c1fb9e7db0",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\mapped-vectors.txt": "118150d87e10879c8e4381778ecf56a7e7cddf4fad254ddd12f1c835d15bab19",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\synthesis\\out\\q31_static_mac8.map.v": "cdf91b9f5dbf6a5b06e41798beca440755950d12095c58e94d26c80c5961caea",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\requant-static\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\rtl\\psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e"
+  }
+}

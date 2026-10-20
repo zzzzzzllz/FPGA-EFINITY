@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "FPGA 图像主线：采集、处理、显示",
+    "locale": "zh-CN",
+    "output": ".archify/dataflow-fpga-image-path-20261017-165857/main-flow.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://localhost/archify-snapshots/fpga-image-path-20261017-165857.git",
+      "revision": "6871008d06f7d6583e300f3353b61ee6ec323b7d",
+      "link_mode": "local-only"
+    }
+  },
+  "stages": [
+    {
+      "label": "采集与输出"
+    },
+    {
+      "label": "彩色恢复与时序"
+    },
+    {
+      "label": "帧来源与呈现"
+    },
+    {
+      "label": "局部算法与读回"
+    },
+    {
+      "label": "全帧处理与发布"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sensor",
+      "type": "external",
+      "label": "MIPI 接收",
+      "sublabel": "csi_rx_controller",
+      "stage": 0,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 381,
+          "end_line": 448
+        }
+      ],
+      "tag": "RAW10"
+    },
+    {
+      "id": "color",
+      "type": "backend",
+      "label": "恢复彩色与灰度",
+      "sublabel": "raw_full_view / RGBY",
+      "stage": 1,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 849,
+          "end_line": 890
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/raw_edgeaware_area.v",
+          "line": 1,
+          "end_line": 12
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/rgb_to_gray.v",
+          "line": 15,
+          "end_line": 38
+        }
+      ],
+      "tag": "1280 × 720"
+    },
+    {
+      "id": "rawstore",
+      "type": "database",
+      "label": "原帧与任务调度",
+      "sublabel": "frame_store + DMA",
+      "stage": 2,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 31,
+          "end_line": 39
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_control.v",
+          "line": 180,
+          "end_line": 193
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_dma.v",
+          "line": 145,
+          "end_line": 167
+        }
+      ],
+      "tag": "RGB24 / DDR"
+    },
+    {
+      "id": "local",
+      "type": "backend",
+      "label": "共用局部算法链",
+      "sublabel": "edge_algorithm_pair",
+      "stage": 3,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/edge_algorithm_pair.v",
+          "line": 1,
+          "end_line": 59
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 896,
+          "end_line": 901
+        }
+      ],
+      "tag": "每拍两像素"
+    },
+    {
+      "id": "post",
+      "type": "backend",
+      "label": "全帧连接与识别",
+      "sublabel": "Canny / shape 可选",
+      "stage": 4,
+      "row": 0,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 65,
+          "end_line": 97
+        }
+      ],
+      "tag": "依配置启用"
+    },
+    {
+      "id": "publish",
+      "type": "database",
+      "label": "发布同帧结果",
+      "sublabel": "像素 + 框 + 参数",
+      "stage": 4,
+      "row": 2,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_control.v",
+          "line": 168,
+          "end_line": 193
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 194,
+          "end_line": 217
+        }
+      ],
+      "tag": "3 个结果槽"
+    },
+    {
+      "id": "readback",
+      "type": "backend",
+      "label": "结果读回",
+      "sublabel": "frame_store_dma",
+      "stage": 3,
+      "row": 2,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_dma.v",
+          "line": 333,
+          "end_line": 346
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store.v",
+          "line": 185,
+          "end_line": 217
+        }
+      ],
+      "tag": "128 bit"
+    },
+    {
+      "id": "quad",
+      "type": "backend",
+      "label": "四格原帧读回",
+      "sublabel": "3 保存 + 1 实时",
+      "stage": 2,
+      "row": 1,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_dma.v",
+          "line": 112,
+          "end_line": 121
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_dma.v",
+          "line": 284,
+          "end_line": 345
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/frame_store_control.v",
+          "line": 231,
+          "end_line": 235
+        }
+      ],
+      "tag": "屏幕 13"
+    },
+    {
+      "id": "compose",
+      "type": "backend",
+      "label": "画面选择与拼接",
+      "sublabel": "compare_display",
+      "stage": 2,
+      "row": 2,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 25,
+          "end_line": 63
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/compare_display.v",
+          "line": 84,
+          "end_line": 127
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 970,
+          "end_line": 975
+        }
+      ],
+      "tag": "彩色 / 灰度 / 边缘"
+    },
+    {
+      "id": "timing",
+      "type": "backend",
+      "label": "视频输出时序",
+      "sublabel": "cvo_axi + 对齐寄存",
+      "stage": 1,
+      "row": 2,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 666,
+          "end_line": 700
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 992,
+          "end_line": 1009
+        }
+      ],
+      "tag": "720p HDMI 时序"
+    },
+    {
+      "id": "osd",
+      "type": "backend",
+      "label": "框、类别与菜单",
+      "sublabel": "threshold_osd",
+      "stage": 0,
+      "row": 2,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 1013,
+          "end_line": 1016
+        },
+        {
+          "path": "coding/edge-quality-30fps/rtl/threshold_osd.v",
+          "line": 214,
+          "end_line": 277
+        }
+      ],
+      "tag": "CIRCLE / RECT"
+    },
+    {
+      "id": "hdmi",
+      "type": "external",
+      "label": "HDMI 编码输出",
+      "sublabel": "可选 Gamma → DVI",
+      "stage": 0,
+      "row": 3,
+      "sources": [
+        {
+          "path": "coding/edge-quality-30fps/rtl/ti60f225_oob_top.v",
+          "line": 1212,
+          "end_line": 1245
+        }
+      ],
+      "tag": "显示器"
+    }
+  ],
+  "flows": [
+    {
+      "id": "sensor-color",
+      "from": "sensor",
+      "to": "color",
+      "label": "RAW4 + 同步",
+      "variant": "emphasis"
+    },
+    {
+      "id": "color-rawstore",
+      "from": "color",
+      "to": "rawstore",
+      "label": "RGBY → RGB24",
+      "variant": "emphasis"
+    },
+    {
+      "id": "rawstore-local",
+      "from": "rawstore",
+      "to": "local",
+      "label": "读 RGB，重算 Y",
+      "variant": "emphasis"
+    },
+    {
+      "id": "local-post",
+      "from": "local",
+      "to": "post",
+      "label": "结果 / 分类图",
+      "variant": "emphasis"
+    },
+    {
+      "id": "post-publish",
+      "from": "post",
+      "to": "publish",
+      "label": "job_done / ok",
+      "variant": "emphasis"
+    },
+    {
+      "id": "publish-readback",
+      "from": "publish",
+      "to": "readback",
+      "label": "结果槽 + 描述符",
+      "variant": "emphasis"
+    },
+    {
+      "id": "readback-compose",
+      "from": "readback",
+      "to": "compose",
+      "label": "RGB + 最终边缘",
+      "variant": "emphasis"
+    },
+    {
+      "id": "rawstore-quad",
+      "from": "rawstore",
+      "to": "quad",
+      "label": "已保存原帧",
+      "variant": "default"
+    },
+    {
+      "id": "quad-compose",
+      "from": "quad",
+      "to": "compose",
+      "label": "四格 RGB",
+      "variant": "default"
+    },
+    {
+      "id": "compose-timing",
+      "from": "compose",
+      "to": "timing",
+      "label": "32 bit 像素流",
+      "variant": "emphasis"
+    },
+    {
+      "id": "timing-osd",
+      "from": "timing",
+      "to": "osd",
+      "label": "RGB + 帧元数据",
+      "variant": "emphasis"
+    },
+    {
+      "id": "osd-hdmi",
+      "from": "osd",
+      "to": "hdmi",
+      "label": "RGB + HS/VS/DE",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "主线是整帧任务，不是页面串联",
+      "items": [
+        "摄像头持续采集；frame_store_control 从实时、冻结或录像槽中选择 job_source。同一时刻执行一个算法任务。",
+        "原帧按 RGB24 存入 DDR。读给算法时重算 Y=(77R+150G+29B+128)>>8，形成每像素 32 bit 的 RGBY。",
+        "正常路径保留 RGB24，并把最高字节换为边缘/分类/元数据。01、02 页也走共用结果链，只是不显示边缘。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "显示取什么，由页面配置决定",
+      "items": [
+        "compare_display 选 RGB、由 RGB 重算的灰度、最终二值边缘，或用红色替换边缘像素。03 页使用专用比较载荷。",
+        "13 页是旁路：DMA 直接从三张保存原帧和当前显示对应原帧取样，拼成四个 640×360 画面。",
+        "识别框来自 shape_recognizer 的描述符；threshold_osd 最后画绿色框和类别，红边由 compare_display 画。"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "数据接口与时钟域",
+      "items": [
+        "采集/局部算法：i_mipi_rx_pclk；DDR、滞后连接、识别和调度：core_clk；显示：hdmi_tx_slow_clk。",
+        "跨域像素用 FIFO，配置和帧描述符用 frame_mailbox 或稳定载荷加 toggle/ack；不是软件函数调用。",
+        "DDR 总线为 128 bit AXI。局部算法是 64 bit 双像素 valid/ready，附 sof/eol/eof、frame_id、epoch。"
+      ]
+    }
+  ]
+}

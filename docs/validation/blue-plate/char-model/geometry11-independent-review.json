@@ -1,0 +1,121 @@
+{
+  "source_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\rtl\\char_linear.v": "f7369e67e7fea59beb4c0db75ebb874914fd94d42445647f343cd94484a6b879",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\tests\\tb_char_linear.sv": "ade9b80ddcf0775551c501e94ae563e2772f4493a05083a650ef56b7ee78bc14",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\experiments\\geometry11\\interface.json": "327dc7f199b9c0a81c1796ae8ad30ac37bfe9f4c10e3f87d209fbbd99b33072d",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\experiments\\geometry11\\w1-s11.bin": "1eaaa654492a8f4b532afffca93f530efe80349fe587c1d32f97eeff42a24a8c",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\char_model\\experiments\\geometry11\\b1.mem": "8404d488b71b9bf6ed0c94db84197f0232f8857ea087ee991a1396a06be69669"
+  },
+  "rom_weights": 20800,
+  "rom_biases": 65,
+  "absolute_bound": 531070,
+  "runs": {
+    "geometry": {
+      "vectors": 320,
+      "independent_scores": 20800,
+      "commands": [
+        [
+          "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_char_linear",
+          "-o",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\geometry\\sim.vvp",
+          "-Ptb_char_linear.WEIGHT_BITS=11",
+          "-Ptb_char_linear.WEIGHT_FILE=\"w1-s11.bin\"",
+          "-Ptb_char_linear.BIAS_FILE=\"b1.mem\"",
+          "-Ptb_char_linear.PROVINCE_SCORE=174",
+          "-Ptb_char_linear.PROVINCE_MARGIN=4417",
+          "-Ptb_char_linear.ALNUM_SCORE=-21431",
+          "-Ptb_char_linear.ALNUM_MARGIN=4068",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\char_linear.v",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\tb_char_linear.sv"
+        ],
+        [
+          "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\geometry\\sim.vvp",
+          "+count=320"
+        ]
+      ],
+      "result": "\nPASS vectors=320 compared_scores=20930 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\tb_char_linear.sv:144: $finish called at 135991120000 (1ps)\n",
+      "inputs": {
+        "features.mem": "b55dcb09415f8bcf8a5784834402b4fe390303ae7e7b4cedf63308a987d68775",
+        "scores.mem": "05ad6d8fa66f152eb312e91edffc2c88cc3a2c2f447c490ec6eb06f4224e920e",
+        "metadata.mem": "624b3ba286c066cb0a41d5be9b65e54265c769a8b35b29b17abd7422f03dd656",
+        "w1-s11.bin": "1eaaa654492a8f4b532afffca93f530efe80349fe587c1d32f97eeff42a24a8c",
+        "b1.mem": "8404d488b71b9bf6ed0c94db84197f0232f8857ea087ee991a1396a06be69669"
+      }
+    },
+    "boundary11": {
+      "vectors": 36,
+      "independent_scores": 2340,
+      "commands": [
+        [
+          "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_char_linear",
+          "-o",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\boundary11\\sim.vvp",
+          "-Ptb_char_linear.WEIGHT_BITS=11",
+          "-Ptb_char_linear.WEIGHT_FILE=\"w1-s11.bin\"",
+          "-Ptb_char_linear.BIAS_FILE=\"b1.mem\"",
+          "-Ptb_char_linear.PROVINCE_SCORE=174",
+          "-Ptb_char_linear.PROVINCE_MARGIN=4417",
+          "-Ptb_char_linear.ALNUM_SCORE=-21431",
+          "-Ptb_char_linear.ALNUM_MARGIN=4068",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\char_linear.v",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\tb_char_linear.sv"
+        ],
+        [
+          "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\boundary11\\sim.vvp",
+          "+count=36"
+        ]
+      ],
+      "result": "\nPASS vectors=36 compared_scores=2470 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\tb_char_linear.sv:144: $finish called at 16053090000 (1ps)\n",
+      "inputs": {
+        "features.mem": "af32ff97c35a061df0b102052c63c06402b02829beb2d88094a66ac28a68acd7",
+        "scores.mem": "513bb5795597ba4b7ca1cc2d27255bab1527e5319cbf3e279ca9cf333d8578e0",
+        "metadata.mem": "82aee9eabd1b9f7e20db40d95f207366677d5006efb91c4ab6cbbfe602dbca9c",
+        "w1-s11.bin": "a71331fd34bdc5d1ef1fe5774ff2853722a91e896e6d8914ee32aab6cdf76bf8",
+        "b1.mem": "6c22ec7424fd855609dc28b51baa30552f70faf3cabceca7c3d0d3ab80542af2"
+      }
+    },
+    "default10": {
+      "vectors": 159,
+      "independent_scores": 10335,
+      "commands": [
+        [
+          "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\iverilog.exe",
+          "-g2012",
+          "-Wall",
+          "-s",
+          "tb_char_linear",
+          "-o",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\default10\\sim.vvp",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\char_linear.v",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\tb_char_linear.sv"
+        ],
+        [
+          "D:\\Desktop_New\\EfinityNEW\\tools\\iverilog-12\\app\\bin\\vvp.exe",
+          "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\default10\\sim.vvp",
+          "+count=159"
+        ]
+      ],
+      "result": "PASS vectors=159 compared_scores=10465 latency_cycles=41796 input_stalls=seed701 output_backpressure=yes reset_load_mac_hold=yes invalid_input=yes\nD:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\geometry11\\tb_char_linear.sv:144: $finish called at 67996990000 (1ps)\n",
+      "inputs": {
+        "features.mem": "267478d9a92963171ce3bbf4d847a731f81b4375b601f07510cd4c523db2dcb9",
+        "scores.mem": "6ff8c72cf0dae87ea9a3d2c6c60ba6a253ef6ebdc5523082461fbd7889f66f85",
+        "metadata.mem": "e852d75f3ed1751a39451aac8605b91fc9cce1e97b21278a307f644484edf542",
+        "w1-s10.bin": "3d1f318934bf193bb5b9ce53eff73a28a8657ef61b88a6e2d97819af64535c37",
+        "b1.mem": "4bffe503d5da03c38d627e7876e3bc4e7a303f90ec393570eeb0f108277af4b8"
+      }
+    }
+  },
+  "source_unchanged": true,
+  "heldout_inference": false,
+  "review_script_recovery": "Initial script stopped before default regression because old snapshot only contained hexadecimal ROM. Confirmed all 20800 values equal current binary ROM, added equivalent binary file, revalidated frozen sources/inputs, collected completed 11bit runs and ran default regression."
+}

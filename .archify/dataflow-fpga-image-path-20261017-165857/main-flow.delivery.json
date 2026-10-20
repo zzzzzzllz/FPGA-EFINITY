@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7b7f702f-193e-4baf-ae36-b522f5003d8f",
+  "status": "current",
+  "command": "deliver",
+  "type": "dataflow",
+  "input": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.json",
+  "output": "D:\\Desktop_New\\EfinityNEW\\.archify\\dataflow-fpga-image-path-20261017-165857\\main-flow.html",
+  "specification": {
+    "sha256": "a61fa58d12807e50f9c547277573f7e5a2e15b719eea936106f16b7ad8ec401c",
+    "bytes": 10755
+  },
+  "artifact": {
+    "sha256": "45eaaedd0503fecd8b53dceae57fc43a0ecf9008e005769e55408e4e53a45d2f",
+    "bytes": 826962
+  }
+}

@@ -1,0 +1,6739 @@
+{
+  "source_sha256": {
+    "tmp\\blue-plate-normal-g1\\mature-detector\\y5fu_320x_sim.onnx": "2a985dc63a5cc947ec36d18503d6fc0fd54525b9dba17f2fe29a71e86b44456d",
+    "tmp\\blue-plate-normal-g1\\mature-detector\\model-costs.json": "1ffe9264f342eccb91ff40095a28f884a12b93aef4584139734391c29a083413",
+    "tmp\\blue-plate-review\\mature-research\\hyperlpr\\Prj-Python\\hyperlpr3\\inference\\multitask_detect.py": "895152d6a3947a2387c54693520daba05e73606472b4b40efeadc4c3e464d8bb"
+  },
+  "opencv_version": "4.13.0",
+  "synthetic_output": [
+    1,
+    6300,
+    15
+  ],
+  "layer_count": 435,
+  "layer_types": {
+    "": 1,
+    "Convolution": 85,
+    "Sigmoid": 69,
+    "NaryEltwise": 111,
+    "Pooling": 1,
+    "Concat": 32,
+    "Reshape": 38,
+    "Permute": 19,
+    "Slice": 59,
+    "Resize": 2,
+    "Const": 17,
+    "Identity": 1
+  },
+  "graph_edges": 582,
+  "width_assumption": "INT8 materialized core; INT32 constants and post-head decode. Not a quantized model export.",
+  "arena": {
+    "bytes": 8388608,
+    "live_peak_bytes": 1228800,
+    "first_fit_high_water_bytes": 1536000,
+    "peak_nodes": [
+      "onnx_node!Conv_0",
+      "onnx_node!Sigmoid_1",
+      "onnx_node!Mul_2"
+    ],
+    "detector_and_postprocess_reserved_bytes": 2040000,
+    "all_with_constants_descriptors_weights_rawcopy_bytes": 6041744,
+    "raw_copy_bytes": 2764800,
+    "descriptor_bytes": 111360,
+    "note": "Relative private DDR offsets, not assigned physical addresses; no in-place reuse or graph fusion"
+  },
+  "lifetimes": [
+    {
+      "name": "_input",
+      "type": "",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 307200,
+      "producer": 0,
+      "last_consumer": 1,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Conv_0",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 307200,
+      "size": 409600,
+      "producer": 1,
+      "last_consumer": 3,
+      "parents": [
+        "_input"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_1",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 716800,
+      "size": 409600,
+      "producer": 2,
+      "last_consumer": 3,
+      "parents": [
+        "onnx_node!Conv_0"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_2",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 1126400,
+      "size": 409600,
+      "producer": 3,
+      "last_consumer": 10,
+      "parents": [
+        "onnx_node!Conv_0",
+        "onnx_node!Sigmoid_1"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_3",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 204800,
+      "producer": 4,
+      "last_consumer": 6,
+      "parents": [
+        "onnx_node!Mul_2"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_4",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 204800,
+      "producer": 5,
+      "last_consumer": 6,
+      "parents": [
+        "onnx_node!Conv_3"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_5",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 409600,
+      "size": 204800,
+      "producer": 6,
+      "last_consumer": 7,
+      "parents": [
+        "onnx_node!Conv_3",
+        "onnx_node!Sigmoid_4"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_6",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 7,
+      "last_consumer": 9,
+      "parents": [
+        "onnx_node!Mul_5"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_7",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 8,
+      "last_consumer": 9,
+      "parents": [
+        "onnx_node!Conv_6"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_8",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 102400,
+      "producer": 9,
+      "last_consumer": 11,
+      "parents": [
+        "onnx_node!Conv_6",
+        "onnx_node!Sigmoid_7"
+      ]
+    },
+    {
+      "name": "onnx_node!MaxPool_9",
+      "type": "Pooling",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 10,
+      "last_consumer": 11,
+      "parents": [
+        "onnx_node!Mul_2"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_10",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 307200,
+      "size": 204800,
+      "producer": 11,
+      "last_consumer": 12,
+      "parents": [
+        "onnx_node!Mul_8",
+        "onnx_node!MaxPool_9"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_11",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 12,
+      "last_consumer": 14,
+      "parents": [
+        "onnx_node!Concat_10"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_12",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 13,
+      "last_consumer": 14,
+      "parents": [
+        "onnx_node!Conv_11"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_13",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 102400,
+      "producer": 14,
+      "last_consumer": 19,
+      "parents": [
+        "onnx_node!Conv_11",
+        "onnx_node!Sigmoid_12"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_14",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 15,
+      "last_consumer": 16,
+      "parents": [
+        "onnx_node!Mul_13"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_15",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 16,
+      "last_consumer": 18,
+      "parents": [
+        "onnx_node!Conv_14"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_16",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 51200,
+      "producer": 17,
+      "last_consumer": 18,
+      "parents": [
+        "onnx_node!Conv_15"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_17",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 128000,
+      "size": 51200,
+      "producer": 18,
+      "last_consumer": 26,
+      "parents": [
+        "onnx_node!Conv_15",
+        "onnx_node!Sigmoid_16"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_18",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 307200,
+      "size": 204800,
+      "producer": 19,
+      "last_consumer": 21,
+      "parents": [
+        "onnx_node!Mul_13"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_19",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 512000,
+      "size": 204800,
+      "producer": 20,
+      "last_consumer": 21,
+      "parents": [
+        "onnx_node!Conv_18"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_20",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 716800,
+      "size": 204800,
+      "producer": 21,
+      "last_consumer": 22,
+      "parents": [
+        "onnx_node!Conv_18",
+        "onnx_node!Sigmoid_19"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_21",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 22,
+      "last_consumer": 23,
+      "parents": [
+        "onnx_node!Mul_20"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_22",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 23,
+      "last_consumer": 25,
+      "parents": [
+        "onnx_node!Conv_21"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_23",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 24,
+      "last_consumer": 25,
+      "parents": [
+        "onnx_node!Conv_22"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_24",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 179200,
+      "size": 51200,
+      "producer": 25,
+      "last_consumer": 26,
+      "parents": [
+        "onnx_node!Conv_22",
+        "onnx_node!Sigmoid_23"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_25",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 26,
+      "last_consumer": 27,
+      "parents": [
+        "onnx_node!Mul_17",
+        "onnx_node!Mul_24"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_27",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 27,
+      "last_consumer": 28,
+      "parents": [
+        "onnx_node!Concat_25"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_28",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 28,
+      "last_consumer": 29,
+      "parents": [
+        "onnx_node!Reshape_27"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_30",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 29,
+      "last_consumer": 31,
+      "parents": [
+        "onnx_node!Transpose_28"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_41",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 30,
+      "last_consumer": 39,
+      "parents": [
+        "onnx_node!Reshape_30"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_44",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 31,
+      "last_consumer": 32,
+      "parents": [
+        "onnx_node!Reshape_30"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_45",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 51200,
+      "producer": 32,
+      "last_consumer": 34,
+      "parents": [
+        "onnx_node!Slice_44"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_46",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 33,
+      "last_consumer": 34,
+      "parents": [
+        "onnx_node!Conv_45"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_47",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 51200,
+      "producer": 34,
+      "last_consumer": 35,
+      "parents": [
+        "onnx_node!Conv_45",
+        "onnx_node!Sigmoid_46"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_48",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 35,
+      "last_consumer": 36,
+      "parents": [
+        "onnx_node!Mul_47"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_49",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 51200,
+      "producer": 36,
+      "last_consumer": 38,
+      "parents": [
+        "onnx_node!Conv_48"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_50",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 37,
+      "last_consumer": 38,
+      "parents": [
+        "onnx_node!Conv_49"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_51",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 51200,
+      "producer": 38,
+      "last_consumer": 39,
+      "parents": [
+        "onnx_node!Conv_49",
+        "onnx_node!Sigmoid_50"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_52",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 102400,
+      "producer": 39,
+      "last_consumer": 40,
+      "parents": [
+        "onnx_node!Slice_41",
+        "onnx_node!Mul_51"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_54",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 102400,
+      "producer": 40,
+      "last_consumer": 41,
+      "parents": [
+        "onnx_node!Concat_52"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_55",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 41,
+      "last_consumer": 42,
+      "parents": [
+        "onnx_node!Reshape_54"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_57",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 42,
+      "last_consumer": 44,
+      "parents": [
+        "onnx_node!Transpose_55"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_68",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 43,
+      "last_consumer": 52,
+      "parents": [
+        "onnx_node!Reshape_57"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_71",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 44,
+      "last_consumer": 45,
+      "parents": [
+        "onnx_node!Reshape_57"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_72",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 51200,
+      "producer": 45,
+      "last_consumer": 47,
+      "parents": [
+        "onnx_node!Slice_71"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_73",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 46,
+      "last_consumer": 47,
+      "parents": [
+        "onnx_node!Conv_72"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_74",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 51200,
+      "producer": 47,
+      "last_consumer": 48,
+      "parents": [
+        "onnx_node!Conv_72",
+        "onnx_node!Sigmoid_73"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 48,
+      "last_consumer": 49,
+      "parents": [
+        "onnx_node!Mul_74"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_76",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 51200,
+      "producer": 49,
+      "last_consumer": 51,
+      "parents": [
+        "onnx_node!Conv_75"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_77",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 50,
+      "last_consumer": 51,
+      "parents": [
+        "onnx_node!Conv_76"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_78",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 51200,
+      "producer": 51,
+      "last_consumer": 52,
+      "parents": [
+        "onnx_node!Conv_76",
+        "onnx_node!Sigmoid_77"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_79",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 102400,
+      "producer": 52,
+      "last_consumer": 53,
+      "parents": [
+        "onnx_node!Slice_68",
+        "onnx_node!Mul_78"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_81",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 102400,
+      "producer": 53,
+      "last_consumer": 54,
+      "parents": [
+        "onnx_node!Concat_79"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_82",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 54,
+      "last_consumer": 55,
+      "parents": [
+        "onnx_node!Reshape_81"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_84",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 55,
+      "last_consumer": 57,
+      "parents": [
+        "onnx_node!Transpose_82"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_95",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 56,
+      "last_consumer": 65,
+      "parents": [
+        "onnx_node!Reshape_84"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_98",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 57,
+      "last_consumer": 58,
+      "parents": [
+        "onnx_node!Reshape_84"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_99",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 51200,
+      "producer": 58,
+      "last_consumer": 60,
+      "parents": [
+        "onnx_node!Slice_98"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_100",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 59,
+      "last_consumer": 60,
+      "parents": [
+        "onnx_node!Conv_99"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_101",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 51200,
+      "producer": 60,
+      "last_consumer": 61,
+      "parents": [
+        "onnx_node!Conv_99",
+        "onnx_node!Sigmoid_100"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_102",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 61,
+      "last_consumer": 62,
+      "parents": [
+        "onnx_node!Mul_101"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_103",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 51200,
+      "producer": 62,
+      "last_consumer": 64,
+      "parents": [
+        "onnx_node!Conv_102"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_104",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 63,
+      "last_consumer": 64,
+      "parents": [
+        "onnx_node!Conv_103"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_105",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 51200,
+      "producer": 64,
+      "last_consumer": 65,
+      "parents": [
+        "onnx_node!Conv_103",
+        "onnx_node!Sigmoid_104"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_106",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 102400,
+      "producer": 65,
+      "last_consumer": 66,
+      "parents": [
+        "onnx_node!Slice_95",
+        "onnx_node!Mul_105"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_108",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 153600,
+      "size": 102400,
+      "producer": 66,
+      "last_consumer": 67,
+      "parents": [
+        "onnx_node!Concat_106"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_109",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 102400,
+      "producer": 67,
+      "last_consumer": 68,
+      "parents": [
+        "onnx_node!Reshape_108"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_111",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 102400,
+      "size": 102400,
+      "producer": 68,
+      "last_consumer": 254,
+      "parents": [
+        "onnx_node!Transpose_109"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_112",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 69,
+      "last_consumer": 70,
+      "parents": [
+        "onnx_node!Reshape_111"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_113",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 70,
+      "last_consumer": 72,
+      "parents": [
+        "onnx_node!Conv_112"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_114",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 71,
+      "last_consumer": 72,
+      "parents": [
+        "onnx_node!Conv_113"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_115",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 72,
+      "last_consumer": 80,
+      "parents": [
+        "onnx_node!Conv_113",
+        "onnx_node!Sigmoid_114"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_116",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 102400,
+      "producer": 73,
+      "last_consumer": 75,
+      "parents": [
+        "onnx_node!Reshape_111"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_117",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 307200,
+      "size": 102400,
+      "producer": 74,
+      "last_consumer": 75,
+      "parents": [
+        "onnx_node!Conv_116"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_118",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 409600,
+      "size": 102400,
+      "producer": 75,
+      "last_consumer": 76,
+      "parents": [
+        "onnx_node!Conv_116",
+        "onnx_node!Sigmoid_117"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_119",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 76,
+      "last_consumer": 77,
+      "parents": [
+        "onnx_node!Mul_118"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_120",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 77,
+      "last_consumer": 79,
+      "parents": [
+        "onnx_node!Conv_119"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_121",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 78,
+      "last_consumer": 79,
+      "parents": [
+        "onnx_node!Conv_120"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_122",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 79,
+      "last_consumer": 80,
+      "parents": [
+        "onnx_node!Conv_120",
+        "onnx_node!Sigmoid_121"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_123",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 80,
+      "last_consumer": 81,
+      "parents": [
+        "onnx_node!Mul_115",
+        "onnx_node!Mul_122"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_125",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 81,
+      "last_consumer": 82,
+      "parents": [
+        "onnx_node!Concat_123"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_126",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 82,
+      "last_consumer": 83,
+      "parents": [
+        "onnx_node!Reshape_125"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_128",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 83,
+      "last_consumer": 85,
+      "parents": [
+        "onnx_node!Transpose_126"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_139",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 84,
+      "last_consumer": 93,
+      "parents": [
+        "onnx_node!Reshape_128"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_142",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 85,
+      "last_consumer": 86,
+      "parents": [
+        "onnx_node!Reshape_128"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_143",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 86,
+      "last_consumer": 88,
+      "parents": [
+        "onnx_node!Slice_142"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_144",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 87,
+      "last_consumer": 88,
+      "parents": [
+        "onnx_node!Conv_143"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_145",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 88,
+      "last_consumer": 89,
+      "parents": [
+        "onnx_node!Conv_143",
+        "onnx_node!Sigmoid_144"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_146",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 89,
+      "last_consumer": 90,
+      "parents": [
+        "onnx_node!Mul_145"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_147",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 90,
+      "last_consumer": 92,
+      "parents": [
+        "onnx_node!Conv_146"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_148",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 91,
+      "last_consumer": 92,
+      "parents": [
+        "onnx_node!Conv_147"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_149",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 92,
+      "last_consumer": 93,
+      "parents": [
+        "onnx_node!Conv_147",
+        "onnx_node!Sigmoid_148"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_150",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 93,
+      "last_consumer": 94,
+      "parents": [
+        "onnx_node!Slice_139",
+        "onnx_node!Mul_149"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_152",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 94,
+      "last_consumer": 95,
+      "parents": [
+        "onnx_node!Concat_150"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_153",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 95,
+      "last_consumer": 96,
+      "parents": [
+        "onnx_node!Reshape_152"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_155",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 96,
+      "last_consumer": 98,
+      "parents": [
+        "onnx_node!Transpose_153"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_166",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 97,
+      "last_consumer": 106,
+      "parents": [
+        "onnx_node!Reshape_155"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_169",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 98,
+      "last_consumer": 99,
+      "parents": [
+        "onnx_node!Reshape_155"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_170",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 99,
+      "last_consumer": 101,
+      "parents": [
+        "onnx_node!Slice_169"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_171",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 100,
+      "last_consumer": 101,
+      "parents": [
+        "onnx_node!Conv_170"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_172",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 101,
+      "last_consumer": 102,
+      "parents": [
+        "onnx_node!Conv_170",
+        "onnx_node!Sigmoid_171"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_173",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 102,
+      "last_consumer": 103,
+      "parents": [
+        "onnx_node!Mul_172"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_174",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 103,
+      "last_consumer": 105,
+      "parents": [
+        "onnx_node!Conv_173"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_175",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 104,
+      "last_consumer": 105,
+      "parents": [
+        "onnx_node!Conv_174"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_176",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 105,
+      "last_consumer": 106,
+      "parents": [
+        "onnx_node!Conv_174",
+        "onnx_node!Sigmoid_175"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_177",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 106,
+      "last_consumer": 107,
+      "parents": [
+        "onnx_node!Slice_166",
+        "onnx_node!Mul_176"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_179",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 107,
+      "last_consumer": 108,
+      "parents": [
+        "onnx_node!Concat_177"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_180",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 108,
+      "last_consumer": 109,
+      "parents": [
+        "onnx_node!Reshape_179"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_182",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 109,
+      "last_consumer": 111,
+      "parents": [
+        "onnx_node!Transpose_180"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_193",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 110,
+      "last_consumer": 119,
+      "parents": [
+        "onnx_node!Reshape_182"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_196",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 111,
+      "last_consumer": 112,
+      "parents": [
+        "onnx_node!Reshape_182"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_197",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 112,
+      "last_consumer": 114,
+      "parents": [
+        "onnx_node!Slice_196"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_198",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 113,
+      "last_consumer": 114,
+      "parents": [
+        "onnx_node!Conv_197"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_199",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 114,
+      "last_consumer": 115,
+      "parents": [
+        "onnx_node!Conv_197",
+        "onnx_node!Sigmoid_198"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_200",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 115,
+      "last_consumer": 116,
+      "parents": [
+        "onnx_node!Mul_199"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_201",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 116,
+      "last_consumer": 118,
+      "parents": [
+        "onnx_node!Conv_200"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_202",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 117,
+      "last_consumer": 118,
+      "parents": [
+        "onnx_node!Conv_201"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_203",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 118,
+      "last_consumer": 119,
+      "parents": [
+        "onnx_node!Conv_201",
+        "onnx_node!Sigmoid_202"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_204",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 119,
+      "last_consumer": 120,
+      "parents": [
+        "onnx_node!Slice_193",
+        "onnx_node!Mul_203"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_206",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 120,
+      "last_consumer": 121,
+      "parents": [
+        "onnx_node!Concat_204"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_207",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 121,
+      "last_consumer": 122,
+      "parents": [
+        "onnx_node!Reshape_206"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_209",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 122,
+      "last_consumer": 124,
+      "parents": [
+        "onnx_node!Transpose_207"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_220",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 123,
+      "last_consumer": 132,
+      "parents": [
+        "onnx_node!Reshape_209"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_223",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 124,
+      "last_consumer": 125,
+      "parents": [
+        "onnx_node!Reshape_209"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_224",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 125,
+      "last_consumer": 127,
+      "parents": [
+        "onnx_node!Slice_223"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_225",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 126,
+      "last_consumer": 127,
+      "parents": [
+        "onnx_node!Conv_224"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_226",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 127,
+      "last_consumer": 128,
+      "parents": [
+        "onnx_node!Conv_224",
+        "onnx_node!Sigmoid_225"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_227",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 128,
+      "last_consumer": 129,
+      "parents": [
+        "onnx_node!Mul_226"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_228",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 129,
+      "last_consumer": 131,
+      "parents": [
+        "onnx_node!Conv_227"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_229",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 130,
+      "last_consumer": 131,
+      "parents": [
+        "onnx_node!Conv_228"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_230",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 131,
+      "last_consumer": 132,
+      "parents": [
+        "onnx_node!Conv_228",
+        "onnx_node!Sigmoid_229"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_231",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 132,
+      "last_consumer": 133,
+      "parents": [
+        "onnx_node!Slice_220",
+        "onnx_node!Mul_230"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_233",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 133,
+      "last_consumer": 134,
+      "parents": [
+        "onnx_node!Concat_231"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_234",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 134,
+      "last_consumer": 135,
+      "parents": [
+        "onnx_node!Reshape_233"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_236",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 135,
+      "last_consumer": 137,
+      "parents": [
+        "onnx_node!Transpose_234"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_247",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 136,
+      "last_consumer": 145,
+      "parents": [
+        "onnx_node!Reshape_236"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_250",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 137,
+      "last_consumer": 138,
+      "parents": [
+        "onnx_node!Reshape_236"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_251",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 138,
+      "last_consumer": 140,
+      "parents": [
+        "onnx_node!Slice_250"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_252",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 139,
+      "last_consumer": 140,
+      "parents": [
+        "onnx_node!Conv_251"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_253",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 140,
+      "last_consumer": 141,
+      "parents": [
+        "onnx_node!Conv_251",
+        "onnx_node!Sigmoid_252"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_254",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 141,
+      "last_consumer": 142,
+      "parents": [
+        "onnx_node!Mul_253"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_255",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 142,
+      "last_consumer": 144,
+      "parents": [
+        "onnx_node!Conv_254"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_256",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 143,
+      "last_consumer": 144,
+      "parents": [
+        "onnx_node!Conv_255"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_257",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 144,
+      "last_consumer": 145,
+      "parents": [
+        "onnx_node!Conv_255",
+        "onnx_node!Sigmoid_256"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_258",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 145,
+      "last_consumer": 146,
+      "parents": [
+        "onnx_node!Slice_247",
+        "onnx_node!Mul_257"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_260",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 146,
+      "last_consumer": 147,
+      "parents": [
+        "onnx_node!Concat_258"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_261",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 147,
+      "last_consumer": 148,
+      "parents": [
+        "onnx_node!Reshape_260"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_263",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 148,
+      "last_consumer": 150,
+      "parents": [
+        "onnx_node!Transpose_261"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_274",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 149,
+      "last_consumer": 158,
+      "parents": [
+        "onnx_node!Reshape_263"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_277",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 150,
+      "last_consumer": 151,
+      "parents": [
+        "onnx_node!Reshape_263"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_278",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 151,
+      "last_consumer": 153,
+      "parents": [
+        "onnx_node!Slice_277"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_279",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 152,
+      "last_consumer": 153,
+      "parents": [
+        "onnx_node!Conv_278"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_280",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 153,
+      "last_consumer": 154,
+      "parents": [
+        "onnx_node!Conv_278",
+        "onnx_node!Sigmoid_279"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_281",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 154,
+      "last_consumer": 155,
+      "parents": [
+        "onnx_node!Mul_280"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_282",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 155,
+      "last_consumer": 157,
+      "parents": [
+        "onnx_node!Conv_281"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_283",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 156,
+      "last_consumer": 157,
+      "parents": [
+        "onnx_node!Conv_282"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_284",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 157,
+      "last_consumer": 158,
+      "parents": [
+        "onnx_node!Conv_282",
+        "onnx_node!Sigmoid_283"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_285",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 158,
+      "last_consumer": 159,
+      "parents": [
+        "onnx_node!Slice_274",
+        "onnx_node!Mul_284"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_287",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 159,
+      "last_consumer": 160,
+      "parents": [
+        "onnx_node!Concat_285"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_288",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 160,
+      "last_consumer": 161,
+      "parents": [
+        "onnx_node!Reshape_287"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_290",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 161,
+      "last_consumer": 163,
+      "parents": [
+        "onnx_node!Transpose_288"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_301",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 162,
+      "last_consumer": 171,
+      "parents": [
+        "onnx_node!Reshape_290"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_304",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 163,
+      "last_consumer": 164,
+      "parents": [
+        "onnx_node!Reshape_290"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_305",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 164,
+      "last_consumer": 166,
+      "parents": [
+        "onnx_node!Slice_304"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_306",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 165,
+      "last_consumer": 166,
+      "parents": [
+        "onnx_node!Conv_305"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_307",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 166,
+      "last_consumer": 167,
+      "parents": [
+        "onnx_node!Conv_305",
+        "onnx_node!Sigmoid_306"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_308",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 167,
+      "last_consumer": 168,
+      "parents": [
+        "onnx_node!Mul_307"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_309",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 25600,
+      "producer": 168,
+      "last_consumer": 170,
+      "parents": [
+        "onnx_node!Conv_308"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_310",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 169,
+      "last_consumer": 170,
+      "parents": [
+        "onnx_node!Conv_309"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_311",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 76800,
+      "size": 25600,
+      "producer": 170,
+      "last_consumer": 171,
+      "parents": [
+        "onnx_node!Conv_309",
+        "onnx_node!Sigmoid_310"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_312",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 51200,
+      "producer": 171,
+      "last_consumer": 172,
+      "parents": [
+        "onnx_node!Slice_301",
+        "onnx_node!Mul_311"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_314",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 172,
+      "last_consumer": 173,
+      "parents": [
+        "onnx_node!Concat_312"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_315",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 51200,
+      "producer": 173,
+      "last_consumer": 174,
+      "parents": [
+        "onnx_node!Reshape_314"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_317",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 51200,
+      "size": 51200,
+      "producer": 174,
+      "last_consumer": 233,
+      "parents": [
+        "onnx_node!Transpose_315"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_318",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 175,
+      "last_consumer": 176,
+      "parents": [
+        "onnx_node!Reshape_317"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_319",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 176,
+      "last_consumer": 178,
+      "parents": [
+        "onnx_node!Conv_318"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_320",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 177,
+      "last_consumer": 178,
+      "parents": [
+        "onnx_node!Conv_319"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_321",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 178,
+      "last_consumer": 186,
+      "parents": [
+        "onnx_node!Conv_319",
+        "onnx_node!Sigmoid_320"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_322",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 51200,
+      "producer": 179,
+      "last_consumer": 181,
+      "parents": [
+        "onnx_node!Reshape_317"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_323",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 256000,
+      "size": 51200,
+      "producer": 180,
+      "last_consumer": 181,
+      "parents": [
+        "onnx_node!Conv_322"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_324",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 307200,
+      "size": 51200,
+      "producer": 181,
+      "last_consumer": 182,
+      "parents": [
+        "onnx_node!Conv_322",
+        "onnx_node!Sigmoid_323"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_325",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 182,
+      "last_consumer": 183,
+      "parents": [
+        "onnx_node!Mul_324"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_326",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 183,
+      "last_consumer": 185,
+      "parents": [
+        "onnx_node!Conv_325"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_327",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 184,
+      "last_consumer": 185,
+      "parents": [
+        "onnx_node!Conv_326"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_328",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 185,
+      "last_consumer": 186,
+      "parents": [
+        "onnx_node!Conv_326",
+        "onnx_node!Sigmoid_327"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_329",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 186,
+      "last_consumer": 187,
+      "parents": [
+        "onnx_node!Mul_321",
+        "onnx_node!Mul_328"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_331",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 187,
+      "last_consumer": 188,
+      "parents": [
+        "onnx_node!Concat_329"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_332",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 188,
+      "last_consumer": 189,
+      "parents": [
+        "onnx_node!Reshape_331"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_334",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 189,
+      "last_consumer": 191,
+      "parents": [
+        "onnx_node!Transpose_332"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_345",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 190,
+      "last_consumer": 199,
+      "parents": [
+        "onnx_node!Reshape_334"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_348",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 191,
+      "last_consumer": 192,
+      "parents": [
+        "onnx_node!Reshape_334"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_349",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 192,
+      "last_consumer": 194,
+      "parents": [
+        "onnx_node!Slice_348"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_350",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 193,
+      "last_consumer": 194,
+      "parents": [
+        "onnx_node!Conv_349"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_351",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 194,
+      "last_consumer": 195,
+      "parents": [
+        "onnx_node!Conv_349",
+        "onnx_node!Sigmoid_350"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_352",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 195,
+      "last_consumer": 196,
+      "parents": [
+        "onnx_node!Mul_351"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_353",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 196,
+      "last_consumer": 198,
+      "parents": [
+        "onnx_node!Conv_352"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_354",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 197,
+      "last_consumer": 198,
+      "parents": [
+        "onnx_node!Conv_353"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_355",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 198,
+      "last_consumer": 199,
+      "parents": [
+        "onnx_node!Conv_353",
+        "onnx_node!Sigmoid_354"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_356",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 25600,
+      "producer": 199,
+      "last_consumer": 200,
+      "parents": [
+        "onnx_node!Slice_345",
+        "onnx_node!Mul_355"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_358",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 25600,
+      "producer": 200,
+      "last_consumer": 201,
+      "parents": [
+        "onnx_node!Concat_356"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_359",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 201,
+      "last_consumer": 202,
+      "parents": [
+        "onnx_node!Reshape_358"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_361",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 202,
+      "last_consumer": 204,
+      "parents": [
+        "onnx_node!Transpose_359"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_372",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 203,
+      "last_consumer": 212,
+      "parents": [
+        "onnx_node!Reshape_361"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_375",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 204,
+      "last_consumer": 205,
+      "parents": [
+        "onnx_node!Reshape_361"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_376",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 205,
+      "last_consumer": 207,
+      "parents": [
+        "onnx_node!Slice_375"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_377",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 206,
+      "last_consumer": 207,
+      "parents": [
+        "onnx_node!Conv_376"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_378",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 207,
+      "last_consumer": 208,
+      "parents": [
+        "onnx_node!Conv_376",
+        "onnx_node!Sigmoid_377"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_379",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 208,
+      "last_consumer": 209,
+      "parents": [
+        "onnx_node!Mul_378"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_380",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 209,
+      "last_consumer": 211,
+      "parents": [
+        "onnx_node!Conv_379"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_381",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 210,
+      "last_consumer": 211,
+      "parents": [
+        "onnx_node!Conv_380"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_382",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 211,
+      "last_consumer": 212,
+      "parents": [
+        "onnx_node!Conv_380",
+        "onnx_node!Sigmoid_381"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_383",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 25600,
+      "producer": 212,
+      "last_consumer": 213,
+      "parents": [
+        "onnx_node!Slice_372",
+        "onnx_node!Mul_382"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_385",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 25600,
+      "producer": 213,
+      "last_consumer": 214,
+      "parents": [
+        "onnx_node!Concat_383"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_386",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 214,
+      "last_consumer": 215,
+      "parents": [
+        "onnx_node!Reshape_385"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_388",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 215,
+      "last_consumer": 217,
+      "parents": [
+        "onnx_node!Transpose_386"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_399",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 216,
+      "last_consumer": 225,
+      "parents": [
+        "onnx_node!Reshape_388"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_402",
+      "type": "Slice",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 217,
+      "last_consumer": 218,
+      "parents": [
+        "onnx_node!Reshape_388"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_403",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 218,
+      "last_consumer": 220,
+      "parents": [
+        "onnx_node!Slice_402"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_404",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 219,
+      "last_consumer": 220,
+      "parents": [
+        "onnx_node!Conv_403"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_405",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 220,
+      "last_consumer": 221,
+      "parents": [
+        "onnx_node!Conv_403",
+        "onnx_node!Sigmoid_404"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_406",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 221,
+      "last_consumer": 222,
+      "parents": [
+        "onnx_node!Mul_405"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_407",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 12800,
+      "producer": 222,
+      "last_consumer": 224,
+      "parents": [
+        "onnx_node!Conv_406"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_408",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 12800,
+      "producer": 223,
+      "last_consumer": 224,
+      "parents": [
+        "onnx_node!Conv_407"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_409",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 38400,
+      "size": 12800,
+      "producer": 224,
+      "last_consumer": 225,
+      "parents": [
+        "onnx_node!Conv_407",
+        "onnx_node!Sigmoid_408"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_410",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 25600,
+      "producer": 225,
+      "last_consumer": 226,
+      "parents": [
+        "onnx_node!Slice_399",
+        "onnx_node!Mul_409"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_412",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 25600,
+      "producer": 226,
+      "last_consumer": 227,
+      "parents": [
+        "onnx_node!Concat_410"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_413",
+      "type": "Permute",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 25600,
+      "producer": 227,
+      "last_consumer": 228,
+      "parents": [
+        "onnx_node!Reshape_412"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_415",
+      "type": "Reshape",
+      "element_bytes": 1,
+      "base": 25600,
+      "size": 25600,
+      "producer": 228,
+      "last_consumer": 229,
+      "parents": [
+        "onnx_node!Transpose_413"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_416",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 6400,
+      "producer": 229,
+      "last_consumer": 231,
+      "parents": [
+        "onnx_node!Reshape_415"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_417",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 6400,
+      "size": 6400,
+      "producer": 230,
+      "last_consumer": 231,
+      "parents": [
+        "onnx_node!Conv_416"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_418",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 6400,
+      "producer": 231,
+      "last_consumer": 294,
+      "parents": [
+        "onnx_node!Conv_416",
+        "onnx_node!Sigmoid_417"
+      ]
+    },
+    {
+      "name": "onnx_node!Resize_420",
+      "type": "Resize",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 25600,
+      "producer": 232,
+      "last_consumer": 233,
+      "parents": [
+        "onnx_node!Mul_418"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_421",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 76800,
+      "producer": 233,
+      "last_consumer": 243,
+      "parents": [
+        "onnx_node!Reshape_317",
+        "onnx_node!Resize_420"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_422",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 234,
+      "last_consumer": 236,
+      "parents": [
+        "onnx_node!Concat_421"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_423",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 12800,
+      "producer": 235,
+      "last_consumer": 236,
+      "parents": [
+        "onnx_node!Conv_422"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_424",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 32000,
+      "size": 12800,
+      "producer": 236,
+      "last_consumer": 237,
+      "parents": [
+        "onnx_node!Conv_422",
+        "onnx_node!Sigmoid_423"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_425",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 237,
+      "last_consumer": 239,
+      "parents": [
+        "onnx_node!Mul_424"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_426",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 12800,
+      "producer": 238,
+      "last_consumer": 239,
+      "parents": [
+        "onnx_node!Conv_425"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_427",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 32000,
+      "size": 12800,
+      "producer": 239,
+      "last_consumer": 240,
+      "parents": [
+        "onnx_node!Conv_425",
+        "onnx_node!Sigmoid_426"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_428",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 240,
+      "last_consumer": 242,
+      "parents": [
+        "onnx_node!Mul_427"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_429",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 12800,
+      "producer": 241,
+      "last_consumer": 242,
+      "parents": [
+        "onnx_node!Conv_428"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_430",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 32000,
+      "size": 12800,
+      "producer": 242,
+      "last_consumer": 246,
+      "parents": [
+        "onnx_node!Conv_428",
+        "onnx_node!Sigmoid_429"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_431",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 243,
+      "last_consumer": 245,
+      "parents": [
+        "onnx_node!Concat_421"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_432",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 12800,
+      "producer": 244,
+      "last_consumer": 245,
+      "parents": [
+        "onnx_node!Conv_431"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_433",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 44800,
+      "size": 12800,
+      "producer": 245,
+      "last_consumer": 246,
+      "parents": [
+        "onnx_node!Conv_431",
+        "onnx_node!Sigmoid_432"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_434",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 57600,
+      "size": 25600,
+      "producer": 246,
+      "last_consumer": 247,
+      "parents": [
+        "onnx_node!Mul_430",
+        "onnx_node!Mul_433"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_435",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 25600,
+      "producer": 247,
+      "last_consumer": 249,
+      "parents": [
+        "onnx_node!Concat_434"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_436",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 44800,
+      "size": 25600,
+      "producer": 248,
+      "last_consumer": 249,
+      "parents": [
+        "onnx_node!Conv_435"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_437",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 70400,
+      "size": 25600,
+      "producer": 249,
+      "last_consumer": 250,
+      "parents": [
+        "onnx_node!Conv_435",
+        "onnx_node!Sigmoid_436"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_438",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 25600,
+      "producer": 250,
+      "last_consumer": 252,
+      "parents": [
+        "onnx_node!Mul_437"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_439",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 44800,
+      "size": 25600,
+      "producer": 251,
+      "last_consumer": 252,
+      "parents": [
+        "onnx_node!Conv_438"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_440",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 70400,
+      "size": 25600,
+      "producer": 252,
+      "last_consumer": 274,
+      "parents": [
+        "onnx_node!Conv_438",
+        "onnx_node!Sigmoid_439"
+      ]
+    },
+    {
+      "name": "onnx_node!Resize_442",
+      "type": "Resize",
+      "element_bytes": 1,
+      "base": 204800,
+      "size": 102400,
+      "producer": 253,
+      "last_consumer": 254,
+      "parents": [
+        "onnx_node!Mul_440"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_443",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 307200,
+      "size": 204800,
+      "producer": 254,
+      "last_consumer": 264,
+      "parents": [
+        "onnx_node!Reshape_111",
+        "onnx_node!Resize_442"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_444",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 51200,
+      "producer": 255,
+      "last_consumer": 257,
+      "parents": [
+        "onnx_node!Concat_443"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_445",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 51200,
+      "producer": 256,
+      "last_consumer": 257,
+      "parents": [
+        "onnx_node!Conv_444"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_446",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 147200,
+      "size": 51200,
+      "producer": 257,
+      "last_consumer": 258,
+      "parents": [
+        "onnx_node!Conv_444",
+        "onnx_node!Sigmoid_445"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_447",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 51200,
+      "producer": 258,
+      "last_consumer": 260,
+      "parents": [
+        "onnx_node!Mul_446"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_448",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 51200,
+      "producer": 259,
+      "last_consumer": 260,
+      "parents": [
+        "onnx_node!Conv_447"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_449",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 147200,
+      "size": 51200,
+      "producer": 260,
+      "last_consumer": 261,
+      "parents": [
+        "onnx_node!Conv_447",
+        "onnx_node!Sigmoid_448"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_450",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 51200,
+      "producer": 261,
+      "last_consumer": 263,
+      "parents": [
+        "onnx_node!Mul_449"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_451",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 51200,
+      "producer": 262,
+      "last_consumer": 263,
+      "parents": [
+        "onnx_node!Conv_450"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_452",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 147200,
+      "size": 51200,
+      "producer": 263,
+      "last_consumer": 267,
+      "parents": [
+        "onnx_node!Conv_450",
+        "onnx_node!Sigmoid_451"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_453",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 51200,
+      "producer": 264,
+      "last_consumer": 266,
+      "parents": [
+        "onnx_node!Concat_443"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_454",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 51200,
+      "producer": 265,
+      "last_consumer": 266,
+      "parents": [
+        "onnx_node!Conv_453"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_455",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 198400,
+      "size": 51200,
+      "producer": 266,
+      "last_consumer": 267,
+      "parents": [
+        "onnx_node!Conv_453",
+        "onnx_node!Sigmoid_454"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_456",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 249600,
+      "size": 102400,
+      "producer": 267,
+      "last_consumer": 268,
+      "parents": [
+        "onnx_node!Mul_452",
+        "onnx_node!Mul_455"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_457",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 102400,
+      "producer": 268,
+      "last_consumer": 270,
+      "parents": [
+        "onnx_node!Concat_456"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_458",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 198400,
+      "size": 102400,
+      "producer": 269,
+      "last_consumer": 270,
+      "parents": [
+        "onnx_node!Conv_457"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_459",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 300800,
+      "size": 102400,
+      "producer": 270,
+      "last_consumer": 311,
+      "parents": [
+        "onnx_node!Conv_457",
+        "onnx_node!Sigmoid_458"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_460",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 25600,
+      "producer": 271,
+      "last_consumer": 273,
+      "parents": [
+        "onnx_node!Mul_459"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_461",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 44800,
+      "size": 25600,
+      "producer": 272,
+      "last_consumer": 273,
+      "parents": [
+        "onnx_node!Conv_460"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_462",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 25600,
+      "producer": 273,
+      "last_consumer": 274,
+      "parents": [
+        "onnx_node!Conv_460",
+        "onnx_node!Sigmoid_461"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_463",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 51200,
+      "producer": 274,
+      "last_consumer": 284,
+      "parents": [
+        "onnx_node!Mul_440",
+        "onnx_node!Mul_462"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_464",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 275,
+      "last_consumer": 277,
+      "parents": [
+        "onnx_node!Concat_463"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_465",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 70400,
+      "size": 12800,
+      "producer": 276,
+      "last_consumer": 277,
+      "parents": [
+        "onnx_node!Conv_464"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_466",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 83200,
+      "size": 12800,
+      "producer": 277,
+      "last_consumer": 278,
+      "parents": [
+        "onnx_node!Conv_464",
+        "onnx_node!Sigmoid_465"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_467",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 278,
+      "last_consumer": 280,
+      "parents": [
+        "onnx_node!Mul_466"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_468",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 70400,
+      "size": 12800,
+      "producer": 279,
+      "last_consumer": 280,
+      "parents": [
+        "onnx_node!Conv_467"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_469",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 83200,
+      "size": 12800,
+      "producer": 280,
+      "last_consumer": 281,
+      "parents": [
+        "onnx_node!Conv_467",
+        "onnx_node!Sigmoid_468"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_470",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 281,
+      "last_consumer": 283,
+      "parents": [
+        "onnx_node!Mul_469"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_471",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 70400,
+      "size": 12800,
+      "producer": 282,
+      "last_consumer": 283,
+      "parents": [
+        "onnx_node!Conv_470"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_472",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 83200,
+      "size": 12800,
+      "producer": 283,
+      "last_consumer": 287,
+      "parents": [
+        "onnx_node!Conv_470",
+        "onnx_node!Sigmoid_471"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_473",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 284,
+      "last_consumer": 286,
+      "parents": [
+        "onnx_node!Concat_463"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_474",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 12800,
+      "producer": 285,
+      "last_consumer": 286,
+      "parents": [
+        "onnx_node!Conv_473"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_475",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 32000,
+      "size": 12800,
+      "producer": 286,
+      "last_consumer": 287,
+      "parents": [
+        "onnx_node!Conv_473",
+        "onnx_node!Sigmoid_474"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_476",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 44800,
+      "size": 25600,
+      "producer": 287,
+      "last_consumer": 288,
+      "parents": [
+        "onnx_node!Mul_472",
+        "onnx_node!Mul_475"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_477",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 25600,
+      "producer": 288,
+      "last_consumer": 290,
+      "parents": [
+        "onnx_node!Concat_476"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_478",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 44800,
+      "size": 25600,
+      "producer": 289,
+      "last_consumer": 290,
+      "parents": [
+        "onnx_node!Conv_477"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_479",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 70400,
+      "size": 25600,
+      "producer": 290,
+      "last_consumer": 353,
+      "parents": [
+        "onnx_node!Conv_477",
+        "onnx_node!Sigmoid_478"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_480",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 6400,
+      "producer": 291,
+      "last_consumer": 293,
+      "parents": [
+        "onnx_node!Mul_479"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_481",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 6400,
+      "size": 6400,
+      "producer": 292,
+      "last_consumer": 293,
+      "parents": [
+        "onnx_node!Conv_480"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_482",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 6400,
+      "producer": 293,
+      "last_consumer": 294,
+      "parents": [
+        "onnx_node!Conv_480",
+        "onnx_node!Sigmoid_481"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_483",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 12800,
+      "producer": 294,
+      "last_consumer": 304,
+      "parents": [
+        "onnx_node!Mul_418",
+        "onnx_node!Mul_482"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_484",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 3200,
+      "producer": 295,
+      "last_consumer": 297,
+      "parents": [
+        "onnx_node!Concat_483"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_485",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 16000,
+      "size": 3200,
+      "producer": 296,
+      "last_consumer": 297,
+      "parents": [
+        "onnx_node!Conv_484"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_486",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 3200,
+      "producer": 297,
+      "last_consumer": 298,
+      "parents": [
+        "onnx_node!Conv_484",
+        "onnx_node!Sigmoid_485"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_487",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 3200,
+      "producer": 298,
+      "last_consumer": 300,
+      "parents": [
+        "onnx_node!Mul_486"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_488",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 16000,
+      "size": 3200,
+      "producer": 299,
+      "last_consumer": 300,
+      "parents": [
+        "onnx_node!Conv_487"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_489",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 3200,
+      "producer": 300,
+      "last_consumer": 301,
+      "parents": [
+        "onnx_node!Conv_487",
+        "onnx_node!Sigmoid_488"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_490",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 3200,
+      "producer": 301,
+      "last_consumer": 303,
+      "parents": [
+        "onnx_node!Mul_489"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_491",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 16000,
+      "size": 3200,
+      "producer": 302,
+      "last_consumer": 303,
+      "parents": [
+        "onnx_node!Conv_490"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_492",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 3200,
+      "producer": 303,
+      "last_consumer": 307,
+      "parents": [
+        "onnx_node!Conv_490",
+        "onnx_node!Sigmoid_491"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_493",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 3200,
+      "producer": 304,
+      "last_consumer": 306,
+      "parents": [
+        "onnx_node!Concat_483"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_494",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 3200,
+      "producer": 305,
+      "last_consumer": 306,
+      "parents": [
+        "onnx_node!Conv_493"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_495",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 3200,
+      "size": 3200,
+      "producer": 306,
+      "last_consumer": 307,
+      "parents": [
+        "onnx_node!Conv_493",
+        "onnx_node!Sigmoid_494"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_496",
+      "type": "Concat",
+      "element_bytes": 1,
+      "base": 6400,
+      "size": 6400,
+      "producer": 307,
+      "last_consumer": 308,
+      "parents": [
+        "onnx_node!Mul_492",
+        "onnx_node!Mul_495"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_497",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 0,
+      "size": 6400,
+      "producer": 308,
+      "last_consumer": 310,
+      "parents": [
+        "onnx_node!Concat_496"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_498",
+      "type": "Sigmoid",
+      "element_bytes": 1,
+      "base": 6400,
+      "size": 6400,
+      "producer": 309,
+      "last_consumer": 310,
+      "parents": [
+        "onnx_node!Conv_497"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_499",
+      "type": "NaryEltwise",
+      "element_bytes": 1,
+      "base": 12800,
+      "size": 6400,
+      "producer": 310,
+      "last_consumer": 393,
+      "parents": [
+        "onnx_node!Conv_497",
+        "onnx_node!Sigmoid_498"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_500",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 96000,
+      "size": 72000,
+      "producer": 311,
+      "last_consumer": 312,
+      "parents": [
+        "onnx_node!Mul_459"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_501",
+      "type": "Reshape",
+      "element_bytes": 4,
+      "base": 168000,
+      "size": 288000,
+      "producer": 312,
+      "last_consumer": 313,
+      "parents": [
+        "onnx_node!Conv_500"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_502",
+      "type": "Permute",
+      "element_bytes": 4,
+      "base": 456000,
+      "size": 288000,
+      "producer": 313,
+      "last_consumer": 317,
+      "parents": [
+        "onnx_node!Reshape_501"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_507",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 96000,
+      "producer": 314,
+      "last_consumer": 315,
+      "parents": [
+        "onnx_node!Transpose_502"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_508",
+      "type": "Sigmoid",
+      "element_bytes": 4,
+      "base": 192000,
+      "size": 96000,
+      "producer": 315,
+      "last_consumer": 319,
+      "parents": [
+        "onnx_node!Slice_507"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_513",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 288000,
+      "size": 153600,
+      "producer": 316,
+      "last_consumer": 319,
+      "parents": [
+        "onnx_node!Transpose_502"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_518",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 38400,
+      "producer": 317,
+      "last_consumer": 318,
+      "parents": [
+        "onnx_node!Transpose_502"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_519",
+      "type": "Sigmoid",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 318,
+      "last_consumer": 319,
+      "parents": [
+        "onnx_node!Slice_518"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_521",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 441600,
+      "size": 288000,
+      "producer": 319,
+      "last_consumer": 321,
+      "parents": [
+        "onnx_node!Sigmoid_508",
+        "onnx_node!Slice_513",
+        "onnx_node!Sigmoid_519"
+      ]
+    },
+    {
+      "name": "981",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 288000,
+      "producer": 320,
+      "last_consumer": 321,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_523",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 729600,
+      "size": 288000,
+      "producer": 321,
+      "last_consumer": 350,
+      "parents": [
+        "onnx_node!Concat_521",
+        "981"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_528",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 38400,
+      "producer": 322,
+      "last_consumer": 324,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "988",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 0,
+      "size": 16,
+      "producer": 323,
+      "last_consumer": 413,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_530",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 324,
+      "last_consumer": 326,
+      "parents": [
+        "onnx_node!Slice_528",
+        "988"
+      ]
+    },
+    {
+      "name": "990",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 16,
+      "size": 16,
+      "producer": 325,
+      "last_consumer": 406,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Sub_532",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 38400,
+      "producer": 326,
+      "last_consumer": 328,
+      "parents": [
+        "onnx_node!Mul_530",
+        "990"
+      ]
+    },
+    {
+      "name": "992",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 327,
+      "last_consumer": 328,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_534",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 134400,
+      "size": 38400,
+      "producer": 328,
+      "last_consumer": 330,
+      "parents": [
+        "onnx_node!Sub_532",
+        "992"
+      ]
+    },
+    {
+      "name": "994",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 16,
+      "producer": 329,
+      "last_consumer": 330,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_536",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 38400,
+      "producer": 330,
+      "last_consumer": 351,
+      "parents": [
+        "onnx_node!Add_534",
+        "994"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_541",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 331,
+      "last_consumer": 332,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_543",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 134400,
+      "size": 38400,
+      "producer": 332,
+      "last_consumer": 333,
+      "parents": [
+        "988",
+        "onnx_node!Slice_541"
+      ]
+    },
+    {
+      "name": "onnx_node!Pow_545",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 333,
+      "last_consumer": 335,
+      "parents": [
+        "988",
+        "onnx_node!Mul_543"
+      ]
+    },
+    {
+      "name": "1005",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 134400,
+      "size": 38400,
+      "producer": 334,
+      "last_consumer": 347,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_547",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 172800,
+      "size": 38400,
+      "producer": 335,
+      "last_consumer": 351,
+      "parents": [
+        "onnx_node!Pow_545",
+        "1005"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_552",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 336,
+      "last_consumer": 337,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_554",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 211200,
+      "size": 38400,
+      "producer": 337,
+      "last_consumer": 339,
+      "parents": [
+        "1005",
+        "onnx_node!Slice_552"
+      ]
+    },
+    {
+      "name": "1014",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 38400,
+      "producer": 338,
+      "last_consumer": 348,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_556",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 249600,
+      "size": 38400,
+      "producer": 339,
+      "last_consumer": 351,
+      "parents": [
+        "onnx_node!Mul_554",
+        "1014"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_561",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 211200,
+      "size": 38400,
+      "producer": 340,
+      "last_consumer": 341,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_563",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 288000,
+      "size": 38400,
+      "producer": 341,
+      "last_consumer": 342,
+      "parents": [
+        "1005",
+        "onnx_node!Slice_561"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_565",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 211200,
+      "size": 38400,
+      "producer": 342,
+      "last_consumer": 351,
+      "parents": [
+        "1014",
+        "onnx_node!Mul_563"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_570",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 288000,
+      "size": 38400,
+      "producer": 343,
+      "last_consumer": 344,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_572",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 326400,
+      "size": 38400,
+      "producer": 344,
+      "last_consumer": 345,
+      "parents": [
+        "1005",
+        "onnx_node!Slice_570"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_574",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 288000,
+      "size": 38400,
+      "producer": 345,
+      "last_consumer": 351,
+      "parents": [
+        "1014",
+        "onnx_node!Mul_572"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_579",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 326400,
+      "size": 38400,
+      "producer": 346,
+      "last_consumer": 347,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_581",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 364800,
+      "size": 38400,
+      "producer": 347,
+      "last_consumer": 348,
+      "parents": [
+        "1005",
+        "onnx_node!Slice_579"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_583",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 134400,
+      "size": 38400,
+      "producer": 348,
+      "last_consumer": 351,
+      "parents": [
+        "1014",
+        "onnx_node!Mul_581"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_588",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 96000,
+      "size": 19200,
+      "producer": 349,
+      "last_consumer": 351,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_593",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 326400,
+      "size": 38400,
+      "producer": 350,
+      "last_consumer": 351,
+      "parents": [
+        "onnx_node!Add_523"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_594",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 364800,
+      "size": 288000,
+      "producer": 351,
+      "last_consumer": 352,
+      "parents": [
+        "onnx_node!Mul_536",
+        "onnx_node!Mul_547",
+        "onnx_node!Add_556",
+        "onnx_node!Add_565",
+        "onnx_node!Add_574",
+        "onnx_node!Add_583",
+        "onnx_node!Slice_588",
+        "onnx_node!Slice_593"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_595",
+      "type": "Reshape",
+      "element_bytes": 4,
+      "base": 652800,
+      "size": 288000,
+      "producer": 352,
+      "last_consumer": 433,
+      "parents": [
+        "onnx_node!Concat_594"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_596",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 19200,
+      "size": 18000,
+      "producer": 353,
+      "last_consumer": 354,
+      "parents": [
+        "onnx_node!Mul_479"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_597",
+      "type": "Reshape",
+      "element_bytes": 4,
+      "base": 37200,
+      "size": 72000,
+      "producer": 354,
+      "last_consumer": 355,
+      "parents": [
+        "onnx_node!Conv_596"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_598",
+      "type": "Permute",
+      "element_bytes": 4,
+      "base": 109200,
+      "size": 72000,
+      "producer": 355,
+      "last_consumer": 359,
+      "parents": [
+        "onnx_node!Reshape_597"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_603",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 24000,
+      "producer": 356,
+      "last_consumer": 357,
+      "parents": [
+        "onnx_node!Transpose_598"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_604",
+      "type": "Sigmoid",
+      "element_bytes": 4,
+      "base": 43200,
+      "size": 24000,
+      "producer": 357,
+      "last_consumer": 361,
+      "parents": [
+        "onnx_node!Slice_603"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_609",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 67200,
+      "size": 38400,
+      "producer": 358,
+      "last_consumer": 361,
+      "parents": [
+        "onnx_node!Transpose_598"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_614",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 9600,
+      "producer": 359,
+      "last_consumer": 360,
+      "parents": [
+        "onnx_node!Transpose_598"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_615",
+      "type": "Sigmoid",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 360,
+      "last_consumer": 361,
+      "parents": [
+        "onnx_node!Slice_614"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_617",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 105600,
+      "size": 72000,
+      "producer": 361,
+      "last_consumer": 363,
+      "parents": [
+        "onnx_node!Sigmoid_604",
+        "onnx_node!Slice_609",
+        "onnx_node!Sigmoid_615"
+      ]
+    },
+    {
+      "name": "1094",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 72000,
+      "producer": 362,
+      "last_consumer": 363,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_619",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 177600,
+      "size": 72000,
+      "producer": 363,
+      "last_consumer": 390,
+      "parents": [
+        "onnx_node!Concat_617",
+        "1094"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_624",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 9600,
+      "producer": 364,
+      "last_consumer": 365,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_626",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 365,
+      "last_consumer": 366,
+      "parents": [
+        "988",
+        "onnx_node!Slice_624"
+      ]
+    },
+    {
+      "name": "onnx_node!Sub_628",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 9600,
+      "producer": 366,
+      "last_consumer": 368,
+      "parents": [
+        "990",
+        "onnx_node!Mul_626"
+      ]
+    },
+    {
+      "name": "1105",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 367,
+      "last_consumer": 368,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_630",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 28800,
+      "size": 9600,
+      "producer": 368,
+      "last_consumer": 370,
+      "parents": [
+        "onnx_node!Sub_628",
+        "1105"
+      ]
+    },
+    {
+      "name": "1107",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 16,
+      "producer": 369,
+      "last_consumer": 370,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_632",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 48,
+      "size": 9600,
+      "producer": 370,
+      "last_consumer": 391,
+      "parents": [
+        "onnx_node!Add_630",
+        "1107"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_637",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 371,
+      "last_consumer": 372,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_639",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 28800,
+      "size": 9600,
+      "producer": 372,
+      "last_consumer": 373,
+      "parents": [
+        "988",
+        "onnx_node!Slice_637"
+      ]
+    },
+    {
+      "name": "onnx_node!Pow_641",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 373,
+      "last_consumer": 375,
+      "parents": [
+        "988",
+        "onnx_node!Mul_639"
+      ]
+    },
+    {
+      "name": "1118",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 28800,
+      "size": 9600,
+      "producer": 374,
+      "last_consumer": 387,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_643",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 38400,
+      "size": 9600,
+      "producer": 375,
+      "last_consumer": 391,
+      "parents": [
+        "onnx_node!Pow_641",
+        "1118"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_648",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 376,
+      "last_consumer": 377,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_650",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 48000,
+      "size": 9600,
+      "producer": 377,
+      "last_consumer": 379,
+      "parents": [
+        "1118",
+        "onnx_node!Slice_648"
+      ]
+    },
+    {
+      "name": "1127",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 9600,
+      "producer": 378,
+      "last_consumer": 388,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_652",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 57600,
+      "size": 9600,
+      "producer": 379,
+      "last_consumer": 391,
+      "parents": [
+        "onnx_node!Mul_650",
+        "1127"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_657",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 48000,
+      "size": 9600,
+      "producer": 380,
+      "last_consumer": 381,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_659",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 67200,
+      "size": 9600,
+      "producer": 381,
+      "last_consumer": 382,
+      "parents": [
+        "1118",
+        "onnx_node!Slice_657"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_661",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 48000,
+      "size": 9600,
+      "producer": 382,
+      "last_consumer": 391,
+      "parents": [
+        "1127",
+        "onnx_node!Mul_659"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_666",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 67200,
+      "size": 9600,
+      "producer": 383,
+      "last_consumer": 384,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_668",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 76800,
+      "size": 9600,
+      "producer": 384,
+      "last_consumer": 385,
+      "parents": [
+        "1118",
+        "onnx_node!Slice_666"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_670",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 67200,
+      "size": 9600,
+      "producer": 385,
+      "last_consumer": 391,
+      "parents": [
+        "1127",
+        "onnx_node!Mul_668"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_675",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 76800,
+      "size": 9600,
+      "producer": 386,
+      "last_consumer": 387,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_677",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 86400,
+      "size": 9600,
+      "producer": 387,
+      "last_consumer": 388,
+      "parents": [
+        "1118",
+        "onnx_node!Slice_675"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_679",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 28800,
+      "size": 9600,
+      "producer": 388,
+      "last_consumer": 391,
+      "parents": [
+        "1127",
+        "onnx_node!Mul_677"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_684",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 19200,
+      "size": 4800,
+      "producer": 389,
+      "last_consumer": 391,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_689",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 76800,
+      "size": 9600,
+      "producer": 390,
+      "last_consumer": 391,
+      "parents": [
+        "onnx_node!Add_619"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_690",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 86400,
+      "size": 72000,
+      "producer": 391,
+      "last_consumer": 392,
+      "parents": [
+        "onnx_node!Mul_632",
+        "onnx_node!Mul_643",
+        "onnx_node!Add_652",
+        "onnx_node!Add_661",
+        "onnx_node!Add_670",
+        "onnx_node!Add_679",
+        "onnx_node!Slice_684",
+        "onnx_node!Slice_689"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_691",
+      "type": "Reshape",
+      "element_bytes": 4,
+      "base": 158400,
+      "size": 72000,
+      "producer": 392,
+      "last_consumer": 433,
+      "parents": [
+        "onnx_node!Concat_690"
+      ]
+    },
+    {
+      "name": "onnx_node!Conv_692",
+      "type": "Convolution",
+      "element_bytes": 1,
+      "base": 32,
+      "size": 4512,
+      "producer": 393,
+      "last_consumer": 394,
+      "parents": [
+        "onnx_node!Mul_499"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_693",
+      "type": "Reshape",
+      "element_bytes": 4,
+      "base": 4544,
+      "size": 18000,
+      "producer": 394,
+      "last_consumer": 395,
+      "parents": [
+        "onnx_node!Conv_692"
+      ]
+    },
+    {
+      "name": "onnx_node!Transpose_694",
+      "type": "Permute",
+      "element_bytes": 4,
+      "base": 22544,
+      "size": 18000,
+      "producer": 395,
+      "last_consumer": 399,
+      "parents": [
+        "onnx_node!Reshape_693"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_699",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 6000,
+      "producer": 396,
+      "last_consumer": 397,
+      "parents": [
+        "onnx_node!Transpose_694"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_700",
+      "type": "Sigmoid",
+      "element_bytes": 4,
+      "base": 6032,
+      "size": 6000,
+      "producer": 397,
+      "last_consumer": 401,
+      "parents": [
+        "onnx_node!Slice_699"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_705",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 12032,
+      "size": 9600,
+      "producer": 398,
+      "last_consumer": 401,
+      "parents": [
+        "onnx_node!Transpose_694"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_710",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 2400,
+      "producer": 399,
+      "last_consumer": 400,
+      "parents": [
+        "onnx_node!Transpose_694"
+      ]
+    },
+    {
+      "name": "onnx_node!Sigmoid_711",
+      "type": "Sigmoid",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 400,
+      "last_consumer": 401,
+      "parents": [
+        "onnx_node!Slice_710"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_713",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 21632,
+      "size": 18000,
+      "producer": 401,
+      "last_consumer": 403,
+      "parents": [
+        "onnx_node!Sigmoid_700",
+        "onnx_node!Slice_705",
+        "onnx_node!Sigmoid_711"
+      ]
+    },
+    {
+      "name": "1207",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 18000,
+      "producer": 402,
+      "last_consumer": 403,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_715",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 39632,
+      "size": 18000,
+      "producer": 403,
+      "last_consumer": 430,
+      "parents": [
+        "onnx_node!Concat_713",
+        "1207"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_720",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 2400,
+      "producer": 404,
+      "last_consumer": 405,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_722",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 405,
+      "last_consumer": 406,
+      "parents": [
+        "988",
+        "onnx_node!Slice_720"
+      ]
+    },
+    {
+      "name": "onnx_node!Sub_724",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 2400,
+      "producer": 406,
+      "last_consumer": 408,
+      "parents": [
+        "990",
+        "onnx_node!Mul_722"
+      ]
+    },
+    {
+      "name": "1218",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 407,
+      "last_consumer": 408,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_726",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 4832,
+      "size": 2400,
+      "producer": 408,
+      "last_consumer": 410,
+      "parents": [
+        "onnx_node!Sub_724",
+        "1218"
+      ]
+    },
+    {
+      "name": "1220",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 16,
+      "size": 16,
+      "producer": 409,
+      "last_consumer": 410,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_728",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 32,
+      "size": 2400,
+      "producer": 410,
+      "last_consumer": 431,
+      "parents": [
+        "onnx_node!Add_726",
+        "1220"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_733",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 411,
+      "last_consumer": 412,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_735",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 4832,
+      "size": 2400,
+      "producer": 412,
+      "last_consumer": 413,
+      "parents": [
+        "988",
+        "onnx_node!Slice_733"
+      ]
+    },
+    {
+      "name": "onnx_node!Pow_737",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 413,
+      "last_consumer": 415,
+      "parents": [
+        "988",
+        "onnx_node!Mul_735"
+      ]
+    },
+    {
+      "name": "1231",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 4832,
+      "size": 2400,
+      "producer": 414,
+      "last_consumer": 427,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Mul_739",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 7232,
+      "size": 2400,
+      "producer": 415,
+      "last_consumer": 431,
+      "parents": [
+        "onnx_node!Pow_737",
+        "1231"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_744",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 416,
+      "last_consumer": 417,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_746",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 9632,
+      "size": 2400,
+      "producer": 417,
+      "last_consumer": 419,
+      "parents": [
+        "1231",
+        "onnx_node!Slice_744"
+      ]
+    },
+    {
+      "name": "1240",
+      "type": "Const",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 2400,
+      "producer": 418,
+      "last_consumer": 428,
+      "parents": []
+    },
+    {
+      "name": "onnx_node!Add_748",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 12032,
+      "size": 2400,
+      "producer": 419,
+      "last_consumer": 431,
+      "parents": [
+        "onnx_node!Mul_746",
+        "1240"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_753",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 9632,
+      "size": 2400,
+      "producer": 420,
+      "last_consumer": 421,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_755",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 14432,
+      "size": 2400,
+      "producer": 421,
+      "last_consumer": 422,
+      "parents": [
+        "1231",
+        "onnx_node!Slice_753"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_757",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 9632,
+      "size": 2400,
+      "producer": 422,
+      "last_consumer": 431,
+      "parents": [
+        "1240",
+        "onnx_node!Mul_755"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_762",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 14432,
+      "size": 2400,
+      "producer": 423,
+      "last_consumer": 424,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_764",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 16832,
+      "size": 2400,
+      "producer": 424,
+      "last_consumer": 425,
+      "parents": [
+        "1231",
+        "onnx_node!Slice_762"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_766",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 14432,
+      "size": 2400,
+      "producer": 425,
+      "last_consumer": 431,
+      "parents": [
+        "1240",
+        "onnx_node!Mul_764"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_771",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 16832,
+      "size": 2400,
+      "producer": 426,
+      "last_consumer": 427,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Mul_773",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 19232,
+      "size": 2400,
+      "producer": 427,
+      "last_consumer": 428,
+      "parents": [
+        "1231",
+        "onnx_node!Slice_771"
+      ]
+    },
+    {
+      "name": "onnx_node!Add_775",
+      "type": "NaryEltwise",
+      "element_bytes": 4,
+      "base": 4832,
+      "size": 2400,
+      "producer": 428,
+      "last_consumer": 431,
+      "parents": [
+        "1240",
+        "onnx_node!Mul_773"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_780",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 2432,
+      "size": 1200,
+      "producer": 429,
+      "last_consumer": 431,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Slice_785",
+      "type": "Slice",
+      "element_bytes": 4,
+      "base": 16832,
+      "size": 2400,
+      "producer": 430,
+      "last_consumer": 431,
+      "parents": [
+        "onnx_node!Add_715"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_786",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 19232,
+      "size": 18000,
+      "producer": 431,
+      "last_consumer": 432,
+      "parents": [
+        "onnx_node!Mul_728",
+        "onnx_node!Mul_739",
+        "onnx_node!Add_748",
+        "onnx_node!Add_757",
+        "onnx_node!Add_766",
+        "onnx_node!Add_775",
+        "onnx_node!Slice_780",
+        "onnx_node!Slice_785"
+      ]
+    },
+    {
+      "name": "onnx_node!Reshape_787",
+      "type": "Reshape",
+      "element_bytes": 4,
+      "base": 0,
+      "size": 18000,
+      "producer": 432,
+      "last_consumer": 433,
+      "parents": [
+        "onnx_node!Concat_786"
+      ]
+    },
+    {
+      "name": "onnx_node!Concat_788",
+      "type": "Concat",
+      "element_bytes": 4,
+      "base": 230400,
+      "size": 378000,
+      "producer": 433,
+      "last_consumer": 434,
+      "parents": [
+        "onnx_node!Reshape_595",
+        "onnx_node!Reshape_691",
+        "onnx_node!Reshape_787"
+      ]
+    },
+    {
+      "name": "output",
+      "type": "Identity",
+      "element_bytes": 4,
+      "base": 608400,
+      "size": 378000,
+      "producer": 434,
+      "last_consumer": 435,
+      "parents": [
+        "onnx_node!Concat_788"
+      ]
+    }
+  ],
+  "convolutions": [
+    {
+      "name": "onnx_node!Conv_0",
+      "groups": 1,
+      "K": 27,
+      "output_channels": 16,
+      "positions": 25600,
+      "macs": 11059200,
+      "broadcast_cycles": 1382400,
+      "weight_tile_bytes": 216,
+      "padded_weights": 432,
+      "weight_reads": 716800,
+      "whole_row_bytes": 2560
+    },
+    {
+      "name": "onnx_node!Conv_3",
+      "groups": 1,
+      "K": 16,
+      "output_channels": 8,
+      "positions": 25600,
+      "macs": 3276800,
+      "broadcast_cycles": 409600,
+      "weight_tile_bytes": 128,
+      "padded_weights": 128,
+      "weight_reads": 204800,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_6",
+      "groups": 1,
+      "K": 72,
+      "output_channels": 16,
+      "positions": 6400,
+      "macs": 7372800,
+      "broadcast_cycles": 921600,
+      "weight_tile_bytes": 576,
+      "padded_weights": 1152,
+      "weight_reads": 460800,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_11",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 16,
+      "positions": 6400,
+      "macs": 3276800,
+      "broadcast_cycles": 409600,
+      "weight_tile_bytes": 256,
+      "padded_weights": 512,
+      "weight_reads": 204800,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_14",
+      "groups": 16,
+      "K": 9,
+      "output_channels": 16,
+      "positions": 1600,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 1152,
+      "weight_reads": 128000,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_15",
+      "groups": 1,
+      "K": 16,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 819200,
+      "broadcast_cycles": 102400,
+      "weight_tile_bytes": 128,
+      "padded_weights": 512,
+      "weight_reads": 51200,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_18",
+      "groups": 1,
+      "K": 16,
+      "output_channels": 32,
+      "positions": 6400,
+      "macs": 3276800,
+      "broadcast_cycles": 409600,
+      "weight_tile_bytes": 128,
+      "padded_weights": 512,
+      "weight_reads": 204800,
+      "whole_row_bytes": 2560
+    },
+    {
+      "name": "onnx_node!Conv_21",
+      "groups": 32,
+      "K": 9,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 460800,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 72,
+      "padded_weights": 2304,
+      "weight_reads": 256000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_22",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_45",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_48",
+      "groups": 32,
+      "K": 9,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 460800,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 72,
+      "padded_weights": 2304,
+      "weight_reads": 256000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_49",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_72",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_75",
+      "groups": 32,
+      "K": 9,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 460800,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 72,
+      "padded_weights": 2304,
+      "weight_reads": 256000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_76",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_99",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_102",
+      "groups": 32,
+      "K": 9,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 460800,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 72,
+      "padded_weights": 2304,
+      "weight_reads": 256000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_103",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_112",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_113",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_116",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 1600,
+      "macs": 6553600,
+      "broadcast_cycles": 819200,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 409600,
+      "whole_row_bytes": 2560
+    },
+    {
+      "name": "onnx_node!Conv_119",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_120",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_143",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_146",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_147",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_170",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_173",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_174",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_197",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_200",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_201",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_224",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_227",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_228",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_251",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_254",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_255",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_278",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_281",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_282",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_305",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_308",
+      "groups": 64,
+      "K": 9,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 230400,
+      "broadcast_cycles": 230400,
+      "weight_tile_bytes": 72,
+      "padded_weights": 4608,
+      "weight_reads": 128000,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_309",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_318",
+      "groups": 128,
+      "K": 9,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 115200,
+      "broadcast_cycles": 115200,
+      "weight_tile_bytes": 72,
+      "padded_weights": 9216,
+      "weight_reads": 71680,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_319",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_322",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 400,
+      "macs": 6553600,
+      "broadcast_cycles": 819200,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 409600,
+      "whole_row_bytes": 2560
+    },
+    {
+      "name": "onnx_node!Conv_325",
+      "groups": 128,
+      "K": 9,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 115200,
+      "broadcast_cycles": 115200,
+      "weight_tile_bytes": 72,
+      "padded_weights": 9216,
+      "weight_reads": 71680,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_326",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_349",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_352",
+      "groups": 128,
+      "K": 9,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 115200,
+      "broadcast_cycles": 115200,
+      "weight_tile_bytes": 72,
+      "padded_weights": 9216,
+      "weight_reads": 71680,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_353",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_376",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_379",
+      "groups": 128,
+      "K": 9,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 115200,
+      "broadcast_cycles": 115200,
+      "weight_tile_bytes": 72,
+      "padded_weights": 9216,
+      "weight_reads": 71680,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_380",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_403",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_406",
+      "groups": 128,
+      "K": 9,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 115200,
+      "broadcast_cycles": 115200,
+      "weight_tile_bytes": 72,
+      "padded_weights": 9216,
+      "weight_reads": 71680,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_407",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 128,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_416",
+      "groups": 1,
+      "K": 256,
+      "output_channels": 64,
+      "positions": 100,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 2048,
+      "padded_weights": 16384,
+      "weight_reads": 114688,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_422",
+      "groups": 1,
+      "K": 192,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 2457600,
+      "broadcast_cycles": 307200,
+      "weight_tile_bytes": 1536,
+      "padded_weights": 6144,
+      "weight_reads": 153600,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_425",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 409600,
+      "broadcast_cycles": 51200,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 25600,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_428",
+      "groups": 1,
+      "K": 288,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 3686400,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 2304,
+      "padded_weights": 9216,
+      "weight_reads": 230400,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_431",
+      "groups": 1,
+      "K": 192,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 2457600,
+      "broadcast_cycles": 307200,
+      "weight_tile_bytes": 1536,
+      "padded_weights": 6144,
+      "weight_reads": 153600,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_435",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_438",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_444",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 6553600,
+      "broadcast_cycles": 819200,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 4096,
+      "weight_reads": 409600,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_447",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_450",
+      "groups": 1,
+      "K": 288,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 14745600,
+      "broadcast_cycles": 1843200,
+      "weight_tile_bytes": 2304,
+      "padded_weights": 9216,
+      "weight_reads": 921600,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_453",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 32,
+      "positions": 1600,
+      "macs": 6553600,
+      "broadcast_cycles": 819200,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 4096,
+      "weight_reads": 409600,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_457",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 1600,
+      "macs": 6553600,
+      "broadcast_cycles": 819200,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 409600,
+      "whole_row_bytes": 2560
+    },
+    {
+      "name": "onnx_node!Conv_460",
+      "groups": 1,
+      "K": 576,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 14745600,
+      "broadcast_cycles": 1843200,
+      "weight_tile_bytes": 4608,
+      "padded_weights": 36864,
+      "weight_reads": 921600,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_464",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_467",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 409600,
+      "broadcast_cycles": 51200,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 25600,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_470",
+      "groups": 1,
+      "K": 288,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 3686400,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 2304,
+      "padded_weights": 9216,
+      "weight_reads": 230400,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_473",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 32,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_477",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 400,
+      "macs": 1638400,
+      "broadcast_cycles": 204800,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 102400,
+      "whole_row_bytes": 1280
+    },
+    {
+      "name": "onnx_node!Conv_480",
+      "groups": 1,
+      "K": 576,
+      "output_channels": 64,
+      "positions": 100,
+      "macs": 3686400,
+      "broadcast_cycles": 460800,
+      "weight_tile_bytes": 4608,
+      "padded_weights": 36864,
+      "weight_reads": 258048,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_484",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 32,
+      "positions": 100,
+      "macs": 409600,
+      "broadcast_cycles": 51200,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 4096,
+      "weight_reads": 28672,
+      "whole_row_bytes": 320
+    },
+    {
+      "name": "onnx_node!Conv_487",
+      "groups": 1,
+      "K": 32,
+      "output_channels": 32,
+      "positions": 100,
+      "macs": 102400,
+      "broadcast_cycles": 12800,
+      "weight_tile_bytes": 256,
+      "padded_weights": 1024,
+      "weight_reads": 7168,
+      "whole_row_bytes": 320
+    },
+    {
+      "name": "onnx_node!Conv_490",
+      "groups": 1,
+      "K": 288,
+      "output_channels": 32,
+      "positions": 100,
+      "macs": 921600,
+      "broadcast_cycles": 115200,
+      "weight_tile_bytes": 2304,
+      "padded_weights": 9216,
+      "weight_reads": 64512,
+      "whole_row_bytes": 320
+    },
+    {
+      "name": "onnx_node!Conv_493",
+      "groups": 1,
+      "K": 128,
+      "output_channels": 32,
+      "positions": 100,
+      "macs": 409600,
+      "broadcast_cycles": 51200,
+      "weight_tile_bytes": 1024,
+      "padded_weights": 4096,
+      "weight_reads": 28672,
+      "whole_row_bytes": 320
+    },
+    {
+      "name": "onnx_node!Conv_497",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 64,
+      "positions": 100,
+      "macs": 409600,
+      "broadcast_cycles": 51200,
+      "weight_tile_bytes": 512,
+      "padded_weights": 4096,
+      "weight_reads": 28672,
+      "whole_row_bytes": 640
+    },
+    {
+      "name": "onnx_node!Conv_500",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 45,
+      "positions": 1600,
+      "macs": 4608000,
+      "broadcast_cycles": 614400,
+      "weight_tile_bytes": 512,
+      "padded_weights": 3072,
+      "weight_reads": 307200,
+      "whole_row_bytes": 1800
+    },
+    {
+      "name": "onnx_node!Conv_596",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 45,
+      "positions": 400,
+      "macs": 1152000,
+      "broadcast_cycles": 153600,
+      "weight_tile_bytes": 512,
+      "padded_weights": 3072,
+      "weight_reads": 76800,
+      "whole_row_bytes": 900
+    },
+    {
+      "name": "onnx_node!Conv_692",
+      "groups": 1,
+      "K": 64,
+      "output_channels": 45,
+      "positions": 100,
+      "macs": 288000,
+      "broadcast_cycles": 38400,
+      "weight_tile_bytes": 512,
+      "padded_weights": 3072,
+      "weight_reads": 21504,
+      "whole_row_bytes": 450
+    }
+  ],
+  "phase_bank_ownership": {
+    "preprocess": {
+      "io": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "tags": [
+        27
+      ],
+      "two_RGB_rows": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "control": [
+        50
+      ]
+    },
+    "detect": {
+      "weights": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "parameters": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "io": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "tags": [
+        27
+      ],
+      "tables": [
+        47,
+        48
+      ],
+      "descriptor": [
+        50
+      ]
+    },
+    "postprocess": {
+      "io": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "tags": [
+        27
+      ],
+      "suppression_bitmap": [
+        28
+      ],
+      "control": [
+        50
+      ]
+    },
+    "rectify_resize": {
+      "io": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "resize": [
+        49
+      ],
+      "control": [
+        50
+      ]
+    },
+    "recognize": {
+      "weights": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "parameters": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "io": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "tags": [
+        27
+      ],
+      "height": [
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "logits": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "tables": [
+        47,
+        48
+      ],
+      "descriptor": [
+        50
+      ]
+    },
+    "ctc": {
+      "logits": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "tables": [
+        47,
+        48
+      ],
+      "control": [
+        50
+      ]
+    }
+  },
+  "compute": {
+    "macs": 183417600,
+    "broadcast8_cycles": 27110400,
+    "broadcast8_ms_100MHz": 271.104,
+    "depthwise_convs": 19,
+    "max_row_bytes": 2560,
+    "max_any_core_row_bytes": 5120,
+    "max_K": 576,
+    "max_weight_tile_bytes": 4608
+  },
+  "traffic": {
+    "weights_int8": 436800,
+    "metadata_int32_bias_multiplier_int8_shift": 45968,
+    "constants_materialization_read_and_write": 1058560,
+    "descriptor_reads": 111360,
+    "padded_weight_storage": 533952,
+    "ideal_one_read_per_edge_plus_output": 47838352,
+    "tile16_weight_read_bytes": 14039040,
+    "tile_metadata_bytes": 45968,
+    "scalar_read_16byte_beat_ceiling": 674854400,
+    "contiguous_output_bytes": 18630912,
+    "schedule_with_read_misses_and_contiguous_writes": 708740240,
+    "all_scalar_beats_ceiling": 931654928,
+    "note": "No retries; per-scalar read ceiling includes padding taps conservatively. No finite wall-time bound without DDR service guarantee."
+  },
+  "nms": {
+    "candidates": 6300,
+    "record_bytes": 64,
+    "records_ddr": 403200,
+    "sort_pair_bytes": 8,
+    "sort_buffers_ddr": 100800,
+    "suppressed_bitmap_bytes": 788,
+    "all_survive_pairs": 19841850,
+    "merge_sort_passes": 13,
+    "merge_sort_traffic": 1310400,
+    "pairwise_16byte_bbox_plus_16byte_index_traffic": 634939200,
+    "selected_record_traffic": 403200,
+    "note": "Full unbounded-candidate source semantics; no hidden top-K or two-ROI cap. IoU arithmetic and quantization not implemented."
+  },
+  "source_unchanged": true
+}

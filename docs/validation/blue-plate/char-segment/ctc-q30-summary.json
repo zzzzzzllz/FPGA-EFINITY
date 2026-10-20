@@ -1,0 +1,243 @@
+{
+  "results": {
+    "status": "PASS_FROZEN_LOGITS",
+    "summaries": {
+      "development": {
+        "rois": 307,
+        "legal_rois": 295,
+        "proven_reference_contained": 307,
+        "float_probability_contained": 307,
+        "roi_threshold_undecided": 0,
+        "counts": {
+          "ocr_only": {
+            "total": 304,
+            "correct": 251,
+            "wrong": 1,
+            "rejected": 52,
+            "undecided": 0
+          },
+          "combined": {
+            "total": 304,
+            "correct": 250,
+            "wrong": 1,
+            "rejected": 53,
+            "undecided": 0
+          }
+        },
+        "ranking_counts": {
+          "ocr_only": {
+            "selected": 295,
+            "no_candidate": 9
+          },
+          "combined": {
+            "selected": 293,
+            "no_candidate": 11
+          }
+        },
+        "max_probability_width_q30": 1289,
+        "max_legal_probability_width_q30": 1289
+      },
+      "validation": {
+        "rois": 85,
+        "legal_rois": 81,
+        "proven_reference_contained": 85,
+        "float_probability_contained": 85,
+        "roi_threshold_undecided": 0,
+        "counts": {
+          "ocr_only": {
+            "total": 84,
+            "correct": 70,
+            "wrong": 0,
+            "rejected": 14,
+            "undecided": 0
+          },
+          "combined": {
+            "total": 84,
+            "correct": 70,
+            "wrong": 0,
+            "rejected": 14,
+            "undecided": 0
+          }
+        },
+        "ranking_counts": {
+          "ocr_only": {
+            "selected": 81,
+            "no_candidate": 3
+          },
+          "combined": {
+            "selected": 80,
+            "no_candidate": 4
+          }
+        },
+        "max_probability_width_q30": 1286,
+        "max_legal_probability_width_q30": 1286
+      }
+    },
+    "unresolved_records": 0,
+    "difference_records": 0,
+    "max_probability_width_q30": 1289,
+    "max_probability_width": 1.2004747986793518e-06,
+    "measured_integer_widths": {
+      "softmax_sum_bits": 32,
+      "softmax_numerator_bits": 61,
+      "dp_sum_bits": 31,
+      "dp_product_bits": 61
+    },
+    "exponential_difference_proofs": 1021,
+    "fixed_q30_lut_bytes": 284,
+    "threshold_exact_rational": true,
+    "elapsed_seconds": 1.6006454000016674,
+    "image_reads": 0,
+    "network_inference_runs": 0,
+    "optimizer_steps": 0,
+    "heldout_reads": 0,
+    "input_files_unchanged": true,
+    "lut_unchanged": true,
+    "precision_search": false,
+    "hardware_rtl_pass": false
+  },
+  "synthetic_tests": {
+    "exact_path_enumeration_cases": 44,
+    "repeated_target_15_state_exact": true,
+    "blank_only_empty_target_exact": true,
+    "zero_path_exact": true,
+    "threshold_tests": 4,
+    "ranking_tests": 5,
+    "overlapping_intervals_remain_undecided": true
+  },
+  "finite_interface": {
+    "fraction_bits": 30,
+    "probability_storage": "uint32",
+    "accept_if_lower_ge": 1023453813,
+    "reject_if_upper_lt": 1023453813,
+    "otherwise": "undecided",
+    "input_logit_shape": [
+      68,
+      18
+    ],
+    "input_logit_type": "int16",
+    "blank_id": 67,
+    "legal_target_length": 7,
+    "hardware_state_count": 15,
+    "lut_lower_words": 71,
+    "lut_payload_bytes": 284,
+    "per_column_probability_bounds_bytes": 544,
+    "dp_two_rows_lower_upper_bytes": 240,
+    "state_ram_payload_bytes": 784,
+    "proposed_ctc_lut_ram_banks": 2,
+    "worst_case_unsigned_bits": {
+      "softmax_sum": 37,
+      "emission_dividend": 61,
+      "dp_predecessor_sum": 32,
+      "dp_product": 62
+    },
+    "integer_threshold_word_equivalence_checks": 392,
+    "minimum_legal_certainty_gap_q30": 356887,
+    "tune76_counts": {
+      "ocr_only": {
+        "correct": 60,
+        "wrong": 0,
+        "rejected": 16,
+        "undecided": 0
+      },
+      "combined": {
+        "correct": 60,
+        "wrong": 0,
+        "rejected": 16,
+        "undecided": 0
+      }
+    },
+    "hardware_map_pass": false,
+    "ram_organization": "two 512x20 banks, 16 useful bits each, shared effective 512x32 port",
+    "ram_word_regions": {
+      "lut": [
+        0,
+        71
+      ],
+      "column_probabilities": [
+        71,
+        207
+      ],
+      "dp": [
+        207,
+        267
+      ]
+    },
+    "ram_used_words": 267,
+    "ram_capacity_words": 512
+  },
+  "synthetic_ranking": {
+    "actual_identical_logits_tie": {
+      "status": "selected",
+      "selected_roi_index": 2,
+      "possible_roi_indices": [
+        2
+      ],
+      "exact_tie_proofs": [
+        {
+          "lower_roi": 2,
+          "higher_roi": 9,
+          "proof": "identical_logits_and_target"
+        }
+      ]
+    },
+    "actual_logits_source_roi": 0,
+    "constructed_overlap": {
+      "kind": "synthetic_pair_from_different_frames",
+      "roi_indices": [
+        7,
+        283
+      ],
+      "sample_indices": [
+        16,
+        453
+      ],
+      "ranking": {
+        "status": "undecided",
+        "selected_roi_index": null,
+        "possible_roi_indices": [
+          7,
+          283
+        ],
+        "exact_tie_proofs": []
+      },
+      "q30_bounds": [
+        [
+          1073577453,
+          1073578700
+        ],
+        [
+          1073578319,
+          1073579589
+        ]
+      ],
+      "float_probabilities": [
+        0.9998479716471057,
+        0.9998488376892775
+      ],
+      "q128_bounds": [
+        [
+          "340230634353175872268341378925931538136",
+          "340230634353175872268341378925931539461"
+        ],
+        [
+          "340230929052055701905168582984354145816",
+          "340230929052055701905168582984354147139"
+        ]
+      ]
+    },
+    "original_frame_undecided_count": 0,
+    "synthetic_overlap_expected_undecided": true,
+    "precision_changed": false
+  },
+  "deployment_status": "Frozen frames agree; constructed multi-candidate overlap remains undecided; no RTL acceptance",
+  "q31_cost_only": {
+    "evaluated": false,
+    "lut_entries": 73,
+    "lut_bytes": 292,
+    "predecessor_sum_bits": 33,
+    "dp_product_unsigned_bits": 64
+  },
+  "network_rtl_written": false,
+  "product_rom_exported": false
+}

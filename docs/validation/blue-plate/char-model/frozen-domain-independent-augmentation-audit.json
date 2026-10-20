@@ -1,0 +1,50 @@
+{
+  "validation_only": true,
+  "test_scored": false,
+  "scene_heldout_scored": false,
+  "features_independently_reconstructed": true,
+  "reports": {
+    "frozen-linear": {
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3726,
+        "correct": 3522,
+        "wrong": 30,
+        "reject": 384
+      },
+      "frozen_pairs_verified": 38,
+      "frozen_characters_verified": 259,
+      "signed_weight_bits": 10,
+      "absolute_accumulator_bound": 349142,
+      "weights_sha256": "d9c78f399086b74d00417c982c37b6d5b2a1a836bfde8ad020bf9fe9d9c3da52"
+    },
+    "geometry": {
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3726,
+        "correct": 3462,
+        "wrong": 31,
+        "reject": 443
+      },
+      "frozen_pairs_verified": 38,
+      "frozen_characters_verified": 259,
+      "signed_weight_bits": 11,
+      "absolute_accumulator_bound": 531070,
+      "weights_sha256": "b21a547399f17ecb50264d489eec4e4563c2269babab7149dc5447f7a12f5391"
+    },
+    "geometry-regularized": {
+      "validation": {
+        "total": 3936,
+        "raw_correct": 3707,
+        "correct": 3448,
+        "wrong": 28,
+        "reject": 460
+      },
+      "frozen_pairs_verified": 38,
+      "frozen_characters_verified": 259,
+      "signed_weight_bits": 10,
+      "absolute_accumulator_bound": 277019,
+      "weights_sha256": "9518e64009be7dd2b479e9a6fee6f98d11aeb58c5863088cbc856854f8cbf142"
+    }
+  }
+}

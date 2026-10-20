@@ -1,0 +1,23 @@
+{
+  "logs": {
+    "plate_state": "Configuration final value observed after 122000; bound 384 ns; clocks 10/14 ns\nPASS plate state: 64 checks; order, repeats, 499/500ms, future/wrap, config in flight, sticky clear, async clocks, backpressure, stop/reset and frame atomicity\nD:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\plate-display\\tb_plate_state.sv:154: $finish called at 50806000 (1ps)\n",
+    "plate_osd": "PASS OSD: 65 glyph renderings + unrecognized, 1689600 pixels, RGB/control latency and bounds\nD:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-review\\plate-display\\tb_plate_osd.sv:26: $finish called at 16896056000 (1ps)\n"
+  },
+  "source_hashes": {
+    "assets.json": "efbc4afa1f1d9cece2f84a2bcc4ee11e44b2176e023fde6730de533cd38144d1",
+    "plate_confirm.v": "3efbc03ee2a66c3db82299d48716ccfca58952c256ff6338f19f69dd58b1e9cd",
+    "plate_defs.vh": "792145729b9d87cf7fc60023ee2c5bf564d3a72f8b961d642a02011c246f0cec",
+    "plate_display.v": "1426c92959f5c98c829b4b9d3755d9b3eace1d3b3c2d6da9defc3bc50f5f445a",
+    "plate_display_state.v": "3171bb630740995da286cd11127bacfec5f48bd1dd57203fd6e9281e66ce45b5",
+    "plate_font.mem": "86a83630b7cf0d62f3e5aef2082786d57560744f93983b88307bd1128a32ff2e",
+    "plate_mailbox.v": "321f142e77c03869e485d0a6d41ba0df07a6eaae01ef3545c3849d7522e0dd82",
+    "plate_osd.v": "193926b2b59eba6806aa34150945a46fde5d7a1a734a747052b6a2029e2e0530",
+    "tb_plate_osd.sv": "a901a00391d9c03f90233ba8b98d9eea8a6ae1c0665c00cb980d3093a09cae12",
+    "tb_plate_state.sv": "13bce208802c5d7f17fefd860f8a8ad274bccda1a82223a48387a4f94847f36b"
+  },
+  "upstream_changes": {},
+  "rendered_pixels": 1689600,
+  "pixel_mismatches": 0,
+  "replay_changes": "Font path/output path redirected to isolated directory; OSD first-glyph sweep extended from 31 provinces to 65 model IDs. No product RTL logic changed.",
+  "scope": "Synthetic protocol and OSD simulation; not real plate accuracy, CDC timing closure or camera integration"
+}

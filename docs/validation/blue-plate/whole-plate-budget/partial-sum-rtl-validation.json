@@ -1,0 +1,73 @@
+{
+  "exit_code": 0,
+  "stage": "rtl",
+  "cycles": 178888,
+  "lane_state_checks": 1431104,
+  "coverage": {
+    "save_done": 114,
+    "restore_done": 114,
+    "errors": 6,
+    "stalls": 1874,
+    "resets": 4,
+    "mac_lanes": 958472,
+    "psum_writes": 913,
+    "psum_reads": 913
+  },
+  "physical_addresses_saved": 512,
+  "cases": [
+    {
+      "positions": 16,
+      "valid_lanes": 8,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 16,
+      "valid_lanes": 4,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 8,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 64
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 4,
+      "K": 3328,
+      "chunks": [
+        2048,
+        1280
+      ],
+      "exact_outputs": 64
+    }
+  ],
+  "frozen_sources_unchanged": true,
+  "scope": "All four spatial/tail cases use full K=3328",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\rtl\\psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\tb_psum.sv": "63958de044126dad25c3a6438439a3cbcf7201d4b193f40417cd0611dec868ce",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\test_psum.py": "287b5050348ac73d84d3b8bd8e5609f8e78e3e7f70e8553b6513357b8653eae6",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\partial-sum\\rtl-vectors.txt": "7944817170f10ae3bc5e47cc54278351f1198a2a928ddd2df70caba87e8910ae",
+    "D:\\Efinity\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+    "D:\\Efinity\\sim_models\\verilog\\efx_dsp48.v": "551e13efac2d55cd532097bb28bf50063848af637f62409890962216c1f5a581",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294"
+  },
+  "stdout": "PROGRESS psum cycles=8192\nPROGRESS psum cycles=16384\nPROGRESS psum cycles=24576\nPROGRESS psum cycles=32768\nPROGRESS psum cycles=40960\nPROGRESS psum cycles=49152\nPROGRESS psum cycles=57344\nPROGRESS psum cycles=65536\nPROGRESS psum cycles=73728\nPROGRESS psum cycles=81920\nPROGRESS psum cycles=90112\nPROGRESS psum cycles=98304\nPROGRESS psum cycles=106496\nPROGRESS psum cycles=114688\nPROGRESS psum cycles=122880\nPROGRESS psum cycles=131072\nPROGRESS psum cycles=139264\nPROGRESS psum cycles=147456\nPROGRESS psum cycles=155648\nPROGRESS psum cycles=163840\nPROGRESS psum cycles=172032\nPASS psum cycles=178888 lane_states=1431104\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\tb_psum.sv:39: $finish called at 1788886000 (1ps)\n"
+}

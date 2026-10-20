@@ -1,0 +1,14 @@
+{
+  "xor": {
+    "characters": 35,
+    "correct": 31,
+    "provinces_correct": 4,
+    "full_correct": 1
+  },
+  "ann": {
+    "characters": 35,
+    "correct": 32,
+    "provinces_correct": 4,
+    "full_correct": 2
+  }
+}

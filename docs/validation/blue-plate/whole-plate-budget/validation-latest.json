@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "script": "detector_sharing.py",
+      "exit_code": 0
+    },
+    {
+      "script": "depthwise_schedule.py",
+      "exit_code": 0,
+      "pool_scope": "Only actual unpadded MaxPool_9; out-of-range pool access asserts"
+    }
+  ],
+  "source_hashes_rechecked": true,
+  "network_layers": 435,
+  "graph_edges": 582,
+  "depthwise_int32_exact_elements": 524800,
+  "depthwise_uint8_exact_elements": 524800,
+  "pool_uint8_exact_elements": 102400,
+  "latest_model_mac_ms_100MHz": 229.776,
+  "files_sha256": {
+    "docs\\validation\\blue-plate\\whole-plate-budget\\depthwise-schedule.md": "82e3450c2a5798c128e676fd9ec3d2bdf2b88b6d6262a06a53b8454573a5ee59",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\detector-sharing.md": "94bff991f2831e753b8d440ead670bac0dcab7f2aa5f4a95a13e5447bf214360",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\report.md": "632fa86c1af64fed2dbbb8d205a9a22e2017ce76723d850c0a977fc9f2d7f63d",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\student-schedule.md": "a522d4b58ad7dda1d48073d715a1ec62e9fbec0dd42a8509c3fcbad97517bc7f",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\costs.json": "78a0bf006fe28a5222f67a29541d71a74842db99b340aea242f80882242e5285",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\depthwise-schedule.json": "15b0f1dcda29e34e8fa892e7b6a8417f0732e7a5ca8780c878e6e86658563cb9",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\depthwise-sources.json": "4660ec62dc781cfaa956796dc415e6d9c1889aaf1124995a5a625155c2e187f0",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\detector-sharing.json": "861eb523009ea5455721d338df286a153f2f35e7ee89ed2dace7b5316572d9a9",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\sources.json": "984857ab065ffac5767bb3e2db64f5aaf133e7c170876e8f0f6b44bcc02aa17a",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\student-schedule.json": "7967389ef8950de5b59b380d76e22592ae72aded26f316bbcedccccb6063cdb5",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\validation.json": "85e4551844fcb1a8655dc40c3a1a85312f53ae76b85ecc0e35b37becab851ec0",
+    "tools\\blue_plate\\whole_plate_budget\\audit.py": "a708fe9e286f783326d4006acc39150ffb02347f4fc95f3a9ee87573823b5f10",
+    "tools\\blue_plate\\whole_plate_budget\\depthwise_schedule.py": "21f261d8c1765b0281e4e4ec3c12d6abf3e8375f955daa885d7dee626dd79ce3",
+    "tools\\blue_plate\\whole_plate_budget\\detector_sharing.py": "77e3d71a82274bf621890cf1f613a2387f279900c02f75a31ff3e94b37a1c4ef",
+    "tools\\blue_plate\\whole_plate_budget\\student_schedule.py": "98f9404626c010ac84e886b918362f5a37fbe2ea6a36ff8b78f3e1a07eb653e8"
+  },
+  "scope": "Synthetic shape/address/arithmetic audit; no quantized model or full system fit, no synthesis or board access"
+}

@@ -1,0 +1,161 @@
+{
+  "status": "Full-int8 proof, RTL, bounded mapped with local LUT startup adaptation, and map PASS",
+  "constant_outputs": 658256,
+  "constant_channels": 873,
+  "six_stage_round_checks": 6882,
+  "tests": {
+    "rtl": {
+      "cases": 2387,
+      "constants": 1787,
+      "cycles": 25951,
+      "stalls": 1200
+    },
+    "mapped": {
+      "cases": 271,
+      "constants": 91,
+      "cycles": 6147,
+      "stalls": 360
+    }
+  },
+  "lut_checks": 39064,
+  "map": {
+    "EFX_ADD": 456,
+    "EFX_LUT4": 2209,
+    "EFX_DSP48": 8,
+    "EFX_FF": 594,
+    "EFX_RAM10": 18
+  },
+  "map_delta": {
+    "EFX_RAM10": 0,
+    "EFX_DSP48": 0,
+    "EFX_LUT4": 311,
+    "EFX_FF": 1,
+    "EFX_ADD": -7
+  },
+  "service": {
+    "old_lpr_core_cycles": 136445460,
+    "new_lpr_core_cycles": 53878692,
+    "old_known_three_model_cycles": 160120216,
+    "new_known_three_model_cycles": 77553448,
+    "total_saved_cycles": 82566768,
+    "constant_transaction_cycles": 1316512
+  },
+  "deployment_counts": {
+    "q31_outputs": 1376576,
+    "context_wide_gain_outputs": 37152,
+    "all_requantized_outputs": 1413728
+  },
+  "resources": {
+    "budget": {
+      "XLR": 49248,
+      "RAM10": 204,
+      "physical_DSP": 128
+    },
+    "video_placed_XLR": 24090,
+    "maps": {
+      "reader": {
+        "EFX_ADD": 205,
+        "EFX_LUT4": 1272,
+        "EFX_FF": 573,
+        "EFX_RAM10": 7
+      },
+      "geometry_color": {
+        "EFX_ADD": 4300,
+        "EFX_LUT4": 9687,
+        "EFX_DSP48": 1,
+        "EFX_FF": 4730,
+        "EFX_RAM10": 2
+      },
+      "display": {
+        "EFX_ADD": 400,
+        "EFX_LUT4": 2740,
+        "EFX_DSP48": 3,
+        "EFX_FF": 4085,
+        "EFX_RAM10": 16
+      },
+      "shared_q31": {
+        "EFX_ADD": 456,
+        "EFX_LUT4": 2209,
+        "EFX_DSP48": 8,
+        "EFX_FF": 594,
+        "EFX_RAM10": 18
+      },
+      "ocr_resize": {
+        "EFX_ADD": 96,
+        "EFX_LUT4": 520,
+        "EFX_FF": 339,
+        "EFX_RAM10": 1
+      }
+    },
+    "added_comb_slots": 21885,
+    "added_FF": 10321,
+    "conditional_XLR": {
+      "ideal_cross_module_ff_pack": 45975,
+      "ideal_module_local_ff_pack": 46920,
+      "no_ff_pack": 56296
+    },
+    "remaining_XLR": {
+      "ideal_cross_module_ff_pack": 3273,
+      "ideal_module_local_ff_pack": 2328,
+      "no_ff_pack": -7048
+    },
+    "mapped_RAM10": 150,
+    "external_gray_allocation": 14,
+    "engine_target_RAM10": 51,
+    "engine_mapped_RAM10": 19,
+    "engine_unmapped_RAM10": 32,
+    "full_target_RAM10": 196,
+    "full_target_DSP": 97,
+    "scope": "Conditional packing arithmetic, not PNR bounds. Replaces frozen Q31; OCR RAM uses the existing resize allocation. Excludes unmapped logic."
+  },
+  "frozen_baseline_unchanged": true,
+  "scope": "Independent candidate, not integrated. Per-transaction cycles verified; network cycle totals projected. No DDR/board/PNR test; 100MHz is a conversion assumption. Current 500ms/3-confirm contract is unchanged and is not a user hard requirement.",
+  "research": {
+    "retrieved": "2026-10-18",
+    "files": [
+      {
+        "file": "finn-reorder.py",
+        "url": "https://raw.githubusercontent.com/Xilinx/finn/main/src/finn/transformation/streamline/reorder.py",
+        "sha256": "c534df3d4012b3906ba61bfac05a0f6b1c929a3d224089915f560c4edce31e3d",
+        "read_scope": "MoveMaxPoolPastMultiThreshold lines986-1045; monotone transforms, linear nonfork segment, opposite ordering; not adopted for branched taps"
+      },
+      {
+        "file": "nnet_dense_latency.h",
+        "url": "https://raw.githubusercontent.com/fastmachinelearning/hls4ml/main/hls4ml/templates/vivado/nnet_utils/nnet_dense_latency.h",
+        "sha256": "38d0f0957711681d600f2328ad8ea8f0cdb977b4b7cc5e1f47194d97aaeae770",
+        "read_scope": "Entire file; fixed weights/bias instantiate and ordinary MAC; does not itself implement our static-channel shortcut"
+      },
+      {
+        "file": "nnet_dense_compressed.h",
+        "url": "https://raw.githubusercontent.com/fastmachinelearning/hls4ml/main/hls4ml/templates/vivado/nnet_utils/nnet_dense_compressed.h",
+        "sha256": "bd898a282cc1275b942da2a51289831dfab6d073b0dea2744c537ca85e86d7dd",
+        "read_scope": "Entire file; initializes biases, traverses n_nonzeros with row/column indices; confirms omitted zero terms mechanism, not a drop-in Ti60 RTL"
+      }
+    ],
+    "selected": "Per-output-channel static constant proof from frozen int8 weights and full int8 input bounds. Keep dense output values and original MAC schedule initially. No general sparse engine or model pruning.",
+    "evidence": "../service-cost/review-result.json",
+    "download_note": "PowerShell TLS authentication failed; Python urllib retrieved raw source with ordinary certificate verification. No downloaded script executed."
+  },
+  "files_sha256": {
+    "tmp\\blue-plate-whole-plate-budget\\requant-static\\proof-and-schedule.json": "abd6b7150e02f52aa958b9675a67d9e4e9bb613a778938009961ab8220e071f4",
+    "tmp\\blue-plate-char-segment\\deployment-roi0\\manifest.json": "8ef8bce5ce4fde222ac77ba5b182af63c85df438ae3502e2f5a1f7b1061f57b6",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\service-cost.json": "c3091bc10120318643a020812d866ffef2727038db8613d7825bb26e1bf856ff",
+    "tmp\\blue-plate-whole-plate-budget\\requant-static\\rtl-validation.json": "a331dd36b92e2123ebc51ceb51f9a9ae2c624491c1af6e521888243e74a4049e",
+    "tmp\\blue-plate-whole-plate-budget\\requant-static\\mapped-validation.json": "7b038ab4e3c5ace9b2ee736da833ada3f7a468f37f3b72eb1747ca8817970b13",
+    "tmp\\blue-plate-whole-plate-budget\\requant-static\\lut-startup-validation.json": "57ffa101ab9986ee8a0eaae6d79cf4dcfc925a349991d36035af282760c677ab",
+    "tmp\\blue-plate-whole-plate-budget\\requant-static\\synthesis\\synthesis-summary.json": "00d58ce3ee174eb5f998eb654049a5c36fb3d18a40374b9e63da262007ca5a7d",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\requant-validation.json": "359e2cb9e8780181ee6fc396c016f70e35d008a9dcbdf8708bfbca77ccfa9161",
+    "tmp\\blue-plate-review\\service-research\\research-record.json": "ac5ba8e3649dc4c51bddd218a6c59a6eb83ec31e0b4ff201d8cbecb3d8b3fb8d",
+    "tmp\\blue-plate-ocr-input\\synthesis\\out\\ocr_resize_q8.map.rpt": "7c30eaa3fdeda9c024a7f279cec222d2e0a35b3a2a26e2d9915b6f32307568b8",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\build.ps1": "21ef76ad88029b6b13452e95175f2d25a5b129ddaa0de6e1592264d300eba7d1",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\finalize.py": "dcbe77f54c58febb8f7829878057ff267fb68d22885b7f2e92b34dd0fc697f17",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\prepare_synthesis.py": "c00c9e3ee5ada887f37a6ae2b6a84c97af10791522a9beb4b02568e148fd60db",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\prove_schedule.py": "b9fb1e5cbe38c8bb94e20b8995a2d86c0f95337494b8a7c708f7b536056a9dfb",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\README.md": "d98b896b5b57bfb9304291d7597afd39496d69374339a55772ff87b33b571631",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\tb_requant.sv": "5ba1ff2c9a4f600a1b460ac5506ff1f8090b9087e56fee5e12ee98c1fb9e7db0",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\test_requant.py": "f30491803f10583c06c05a13f0de5a4ce6eaee1377bce631c704aa7a13b6e9ac",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\verify_synthesis.py": "88c25f5f271bf8d9a77cb62cc063e0897b14544db58cf192f284ac98542ea9df",
+    "tools\\blue_plate\\whole_plate_budget\\requant_static\\rtl\\q31_static_mac8.v": "1312f273bef2cb0e02380743ef503b9d6ae48ee754c394c761772131eba07cce",
+    "docs\\validation\\blue-plate\\whole-plate-budget\\requant-static-implementation.md": "1690ff9f65e80f2a70fefe86380beeef2873ff23c5e65f3a46e663fcb617591c"
+  }
+}

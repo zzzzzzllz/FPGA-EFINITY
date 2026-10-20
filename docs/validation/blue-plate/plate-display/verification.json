@@ -1,0 +1,142 @@
+{
+  "logs": {
+    "plate_state-dst3_compile": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module plate_confirm declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_confirm.v:3\n       :   -- module plate_display_state declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_display_state.v:2\n       :   -- module plate_mailbox declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_mailbox.v:3\n",
+    "plate_state-dst3": "Configuration final value observed after 86000; bound 256 ns; clocks 10/6 ns\nPASS plate state: 64 checks; order, repeats, 499/500ms, future/wrap, config in flight, sticky clear, async clocks, backpressure, stop/reset and frame atomicity\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\tb_plate_state.sv:154: $finish called at 26502000 (1ps)\n",
+    "plate_state-dst7_compile": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module plate_confirm declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_confirm.v:3\n       :   -- module plate_display_state declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_display_state.v:2\n       :   -- module plate_mailbox declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_mailbox.v:3\n",
+    "plate_state-dst7": "Configuration final value observed after 122000; bound 384 ns; clocks 10/14 ns\nPASS plate state: 64 checks; order, repeats, 499/500ms, future/wrap, config in flight, sticky clear, async clocks, backpressure, stop/reset and frame atomicity\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\tb_plate_state.sv:154: $finish called at 50806000 (1ps)\n",
+    "plate_state-dst11_compile": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module plate_confirm declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_confirm.v:3\n       :   -- module plate_display_state declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_display_state.v:2\n       :   -- module plate_mailbox declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_mailbox.v:3\n",
+    "plate_state-dst11": "Configuration final value observed after 208000; bound 512 ns; clocks 10/22 ns\nPASS plate state: 64 checks; order, repeats, 499/500ms, future/wrap, config in flight, sticky clear, async clocks, backpressure, stop/reset and frame atomicity\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\tb_plate_state.sv:154: $finish called at 75152000 (1ps)\n",
+    "plate_osd_compile": "warning: Some design elements have no explicit time unit and/or\n       : time precision. This may cause confusing timing results.\n       : Affected design elements are:\n       :   -- module plate_osd declared here: D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\plate_osd.v:3\n",
+    "plate_osd": "PASS OSD: 31 province renderings + unrecognized, 819200 pixels, RGB/control latency and bounds\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\plate_display\\tb_plate_osd.sv:28: $finish called at 8192056000 (1ps)\n"
+  },
+  "rendered_pixels": 819200,
+  "pixel_mismatches": 0,
+  "rendered_class_count": 65,
+  "synthetic_samples": [
+    "皖A43Y26",
+    "沪BFGHJK",
+    "津CLMNPQ",
+    "渝DRSTUV",
+    "冀EWXYZ0",
+    "晋F12345",
+    "蒙G6789A",
+    "辽HBCDEF",
+    "吉JGHJKL",
+    "黑KMNPQR",
+    "苏LSTUVW",
+    "浙MXYZ01",
+    "京N23456",
+    "闽P789AB",
+    "赣QCDEFG",
+    "鲁RHJKLM",
+    "豫SNPQRS",
+    "鄂TTUVWX",
+    "湘UYZ012",
+    "粤B12345",
+    "桂W89ABC",
+    "琼XDEFGH",
+    "川YJKLMN",
+    "贵ZPQRST",
+    "云AUVWXY",
+    "藏BZ0123",
+    "陕C45678",
+    "甘D9ABCD",
+    "青EEFGHJ",
+    "宁FKLMNP",
+    "新GQRSTU"
+  ],
+  "scope": "Synthetic protocol and display verification only; no real recognition claim",
+  "sources_sha256": {
+    "assets.json": "efbc4afa1f1d9cece2f84a2bcc4ee11e44b2176e023fde6730de533cd38144d1",
+    "FONT-OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "generate_assets.py": "b692a037ca3f2fbcdca2f254d05a0ff10f0bf736d356ca7e1250da64cbe8e0e8",
+    "plate_confirm.v": "3efbc03ee2a66c3db82299d48716ccfca58952c256ff6338f19f69dd58b1e9cd",
+    "plate_defs.vh": "792145729b9d87cf7fc60023ee2c5bf564d3a72f8b961d642a02011c246f0cec",
+    "plate_display.v": "1426c92959f5c98c829b4b9d3755d9b3eace1d3b3c2d6da9defc3bc50f5f445a",
+    "plate_display_state.v": "3171bb630740995da286cd11127bacfec5f48bd1dd57203fd6e9281e66ce45b5",
+    "plate_font.mem": "86a83630b7cf0d62f3e5aef2082786d57560744f93983b88307bd1128a32ff2e",
+    "plate_mailbox.v": "321f142e77c03869e485d0a6d41ba0df07a6eaae01ef3545c3849d7522e0dd82",
+    "plate_osd.v": "d6a8de82eab79e2769473e7659b62b2e972d8c5a20b9fd64157cf9dbdded6833",
+    "prepare_synthesis.py": "90ba9b10f55b7eae4c1399443ddd9a60109896600adb5af657d809af05574d0e",
+    "run_sim.py": "307ae0818a79af9d4c377f560bc560d8db85bec876a5736eb2a9b9b4b67f4807",
+    "tb_plate_osd.sv": "ea879770350ca4cbb7fbd911c20d25aaba08e35a8a8c0cc4e80c30de50f00aa8",
+    "tb_plate_state.sv": "13bce208802c5d7f17fefd860f8a8ad274bccda1a82223a48387a4f94847f36b"
+  },
+  "assets": {
+    "font_name": "Blue Plate Bitmap Subset",
+    "license": "OFL-1.1",
+    "upstream": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+    "upstream_font_sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "class_source_sha256": "81c45cadb85199837314dc42c433b64b8276d3a3c1364ef41debbb54fcbd933c",
+    "classes": "皖沪津渝冀晋蒙辽吉黑苏浙京闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新ABCDEFGHJKLMNPQRSTUVWXYZ0123456789",
+    "glyphs": "皖沪津渝冀晋蒙辽吉黑苏浙京闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新ABCDEFGHJKLMNPQRSTUVWXYZ0123456789未识别 ",
+    "glyph_count": 69,
+    "size": [
+      32,
+      32
+    ],
+    "font_size": 30,
+    "weight": 600,
+    "threshold": 128,
+    "rom_sha256": "86a83630b7cf0d62f3e5aef2082786d57560744f93983b88307bd1128a32ff2e",
+    "packet_bits": 715,
+    "fields": {
+      "version": {
+        "offset": 0,
+        "width": 8
+      },
+      "status": {
+        "offset": 8,
+        "width": 8
+      },
+      "frame": {
+        "offset": 16,
+        "width": 32
+      },
+      "epoch": {
+        "offset": 48,
+        "width": 32
+      },
+      "generation": {
+        "offset": 80,
+        "width": 32
+      },
+      "time": {
+        "offset": 112,
+        "width": 32
+      },
+      "x": {
+        "offset": 144,
+        "width": 11
+      },
+      "y": {
+        "offset": 155,
+        "width": 10
+      },
+      "w": {
+        "offset": 165,
+        "width": 11
+      },
+      "h": {
+        "offset": 176,
+        "width": 10
+      },
+      "ids": {
+        "offset": 186,
+        "width": 49
+      },
+      "scores": {
+        "offset": 235,
+        "width": 224
+      },
+      "margins": {
+        "offset": 459,
+        "width": 224
+      },
+      "task_ms": {
+        "offset": 683,
+        "width": 32
+      }
+    }
+  }
+}

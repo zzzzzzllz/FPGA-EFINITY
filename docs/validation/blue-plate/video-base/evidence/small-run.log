@@ -1,0 +1,6 @@
+CHECK changing RGB frame 10 complete
+CHECK changing RGB frame 11 complete
+CHECK changing RGB frame 12 complete
+CHECK changing RGB frame 13 complete
+PASS live RGB 32x16: four changing frames, exact RGB/coordinates, AXI and display stalls, no history commands
+D:\Desktop_New\EfinityNEW\tmp\blue-plate-video-base\tests\tb_live_rgb.v:175: $finish called at 158911000 (1ps)

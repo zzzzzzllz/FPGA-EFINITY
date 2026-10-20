@@ -1,0 +1,75 @@
+{
+  "exit_code": 0,
+  "stage": "mapped",
+  "cycles": 5640,
+  "lane_state_checks": 45120,
+  "coverage": {
+    "save_done": 114,
+    "restore_done": 114,
+    "errors": 6,
+    "stalls": 1346,
+    "resets": 4,
+    "mac_lanes": 3464,
+    "psum_writes": 913,
+    "psum_reads": 913
+  },
+  "physical_addresses_saved": 512,
+  "cases": [
+    {
+      "positions": 16,
+      "valid_lanes": 8,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 16,
+      "valid_lanes": 4,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 128
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 8,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 64
+    },
+    {
+      "positions": 8,
+      "valid_lanes": 4,
+      "K": 12,
+      "chunks": [
+        7,
+        5
+      ],
+      "exact_outputs": 64
+    }
+  ],
+  "frozen_sources_unchanged": true,
+  "scope": "Bounded protocol/serial-port mapped test; K=12",
+  "files_sha256": {
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\rtl\\psum_weight_mac8.v": "9201a4f73f20331dbbc847fe34e8e9238a539e590999af2c8b13b290ff251a4e",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\tb_psum.sv": "63958de044126dad25c3a6438439a3cbcf7201d4b193f40417cd0611dec868ce",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\test_psum.py": "287b5050348ac73d84d3b8bd8e5609f8e78e3e7f70e8553b6513357b8653eae6",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\partial-sum\\mapped-vectors.txt": "5259b03b266846cb21574d600172e7708306c6877a204e32c81e9ca34cf1eea7",
+    "D:\\Efinity\\sim_models\\verilog\\efx_ram10.v": "dd8db45116a67b9754920856dc380eb2dc73ca51e0a6a62cc74cda01c0e31a33",
+    "D:\\Efinity\\sim_models\\verilog\\efx_dsp48.v": "551e13efac2d55cd532097bb28bf50063848af637f62409890962216c1f5a581",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\mac8\\rtl\\mac8.v": "f3490692d9bd2160144da3c92693bb8b65f0cbe0a9d435dc4321514cd2c7ffee",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_bank8.v": "58efc434e8750c1951e6143e27206ba7b11938b0115241014ecc1c635c096f86",
+    "D:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\weight_bank\\rtl\\weight_mac8.v": "73835aa728ec3922ada18bf06242ed28f427df2a1ef67be19c6fd0b376a13294",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\partial-sum\\synthesis\\out\\psum_weight_mac8.map.v": "6fe5524578ffe3debffba9f3d8146532b390bc55612edc0abb890d62e0f99f81",
+    "D:\\Desktop_New\\EfinityNEW\\tmp\\blue-plate-whole-plate-budget\\partial-sum\\efx_lut4_startup.sv": "70c2e9fa0e813d2152dcc9dcaee614a60214b394be2a9855d5648671a7c1abfe"
+  },
+  "stdout": "PASS psum cycles=5640 lane_states=45120\nD:\\Desktop_New\\EfinityNEW\\tools\\blue_plate\\whole_plate_budget\\partial_sum\\tb_psum.sv:39: $finish called at 56406000 (1ps)\n"
+}

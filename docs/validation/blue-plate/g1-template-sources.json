@@ -1,0 +1,3872 @@
+[
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_2443.jpg",
+    "sha256": "cae33db535995445991d4f6447fc0b0ed4eadf801691a0f544bd418e90738e36"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_1501.jpg",
+    "sha256": "a0bffcb0a5015057330d2826dacce7b5d6359a09ba4ad97a5d9b7a945221ff69"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_197.jpg",
+    "sha256": "bc57a78ce7236f091078a23688fe5138dc6dec91bb246af404d9eb4b423fa7b3"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_1186.jpg",
+    "sha256": "31c0e57c6286ed2544d9a6dfbe685ebf0f1beafc496103028c63d0f35704a5dc"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_1070.jpg",
+    "sha256": "1696187c4a37a29a572ee9f4864ae2cb197f5daa21782ecee03511087edb6335"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/gt_182_3.jpg",
+    "sha256": "3661cd00e7672b7fc5730ff0d991ebb30da0b7fdf8dbf775b13d63af7d06f68d"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_56.jpg",
+    "sha256": "d2d0b3da4ce4aae80a2bde14bb7e09e65ddfd6bd54884b235547a3f5f613e02e"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/gt_731_5.jpg",
+    "sha256": "9ec3d444aef4f04de19a4f4827c59d398cb78fe149ee014016441c077dcce886"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/97-2.jpg",
+    "sha256": "ae5545ec166a6386b2a40ba4a5415219644bbbaf5a2f3e512c446f34dd4f68c4"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/50-4.jpg",
+    "sha256": "da13d880ad73b08400b4455b3b034321da59659144b475575b5ae8d672c60377"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/140-3.jpg",
+    "sha256": "e0810c0bef6a79cba3875618c9a0f66dd3080b6dc135be8c87c35473df99fb35"
+  },
+  {
+    "char": "0",
+    "path": "tmp/blue-plate-g1/characters/0/debug_char_auxRoi_2541.jpg",
+    "sha256": "f57789445d2b3dda6789b6b956c8037b49f6f536fdb12c0b7fa7f432175f7f1f"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_2790.jpg",
+    "sha256": "65584a976cf0a72bd6ef0125d6eded951cb4302782bd65b50d0fe0b48d6b8833"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/35-0.jpg",
+    "sha256": "e8f7841c244ab78e40e5c74eb556e7651910b446f695f8f090d1481ec80ea29f"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_1936.jpg",
+    "sha256": "b274211fdf852652c2b45b81ab01f623a10a8b464b62eb329941327c81dd580e"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_1854.jpg",
+    "sha256": "18e5fe092799c4fd4bc7ca6decbe202996a03db1b60508c30a614944e0126270"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/127-4.jpg",
+    "sha256": "d3b948ca9c978fb14168277df076228d67d2dde5b198369b95e97bc5ef31d834"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/gt_136_3.jpg",
+    "sha256": "fd0584fa012e95f6ad827c081c2af1dc3fe6cf215dbec45fc0d0b6ab3303d3f2"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_1238.jpg",
+    "sha256": "6d022e1cf6eaa5d98fcd045e22092bf0b141f06c0da9dd806c05eb4d61a334de"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/gt_511_5.jpg",
+    "sha256": "98c37f5f967044f3c41e6d7a6ae2a0bbe0a8e9dca0eee448b9c17558732a27af"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_1038.jpg",
+    "sha256": "4310f02a3cdb86a85c9da976e269f345cc2148ad6817b9a4ec16fcb52aff9c49"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_78.jpg",
+    "sha256": "724a802d6b74a5fbbd58b0fe664bed291475f6a7edd600bfcb49dea90dce60b4"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/debug_char_auxRoi_1158.jpg",
+    "sha256": "beb05a35f47c59770ea49bd8e7e1f1cf8f1ae2ff0e1c245a61a59a7210539cca"
+  },
+  {
+    "char": "1",
+    "path": "tmp/blue-plate-g1/characters/1/gt_624_2.jpg",
+    "sha256": "0f864fa35d0b81d014b9a53fdfdefa6d2c59526b1ea6423e36997b149eee8bb2"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/debug_char_auxRoi_1951.jpg",
+    "sha256": "c4f94ecbdc13a5c484ca345bbbc3c92173b4d6ab41f0a404c6079306fff107f1"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/debug_char_auxRoi_2506.jpg",
+    "sha256": "c3a2db23fd08b503d3cdc89c4b8ec6169ab34997d6c179eaa06428329cf884ee"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/gt_10_4.jpg",
+    "sha256": "62efd5de37c6b87f09ababb9044db7eec8cf46bb4021e03e78e3faf064457b57"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/debug_char_auxRoi_1143.jpg",
+    "sha256": "f51a3facf60a5a76bd445a3bfb4bc94d1acf0b4b8b65f13eeefa16369b2cc064"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/159-3.jpg",
+    "sha256": "b3469801d7c10cc10467502c3a9a8aa5cf75c436419e78a4b572ae5cac35b8e2"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/gt_248_6.jpg",
+    "sha256": "799a4a33dc5a7acd2b46ae9d49d1491b274e2ad7476ad65de088d20421157f07"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/127-3.jpg",
+    "sha256": "4a29f29beda403856c61e427e388490b0ef10cc466da7f5596be325aea49ca07"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/debug_char_auxRoi_2944.jpg",
+    "sha256": "e1bc4e0bd2bd7b5dcda2b378bdbb924f7248b30e2a03d01940262b447750a7e5"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/debug_char_auxRoi_1087.jpg",
+    "sha256": "5f7980154ee61751c85cea4e888f8bd53222cf6e21b3911c192a539abcba6cc2"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/203-2.jpg",
+    "sha256": "446961c308114ebd5d745d1f5d2ca29e5d74a5dc38318ff2238342768e08c167"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/174-5.jpg",
+    "sha256": "ba2f317ae95843f0e4e76cb8f4a9b8611d2f8b6972f24885bf9ba049bc52bc0c"
+  },
+  {
+    "char": "2",
+    "path": "tmp/blue-plate-g1/characters/2/133-1.jpg",
+    "sha256": "d5357db41ea6a10be7af0f765b5f5e1c9c9275cd3b9d9a06f7e7419bc27f465b"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_2778.jpg",
+    "sha256": "d5371187f633f6bac0e8b1a610e4014380a2feca90ad762d62f009db28864384"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/gt_308_3.jpg",
+    "sha256": "307e06270f4ffc6df178a3726d96837deebca1de09cb99fb38f17a2a9cee89f9"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_1363.jpg",
+    "sha256": "4d766a4fb0160498522ff4a8dfb3f06432b5d6b9a0d5e45145da67271356a424"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/45-2.jpg",
+    "sha256": "aa008f53909a997c83a220462a1f089fa67df0d8de459f1c73ff255e2e0ad6c9"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_2554.jpg",
+    "sha256": "192f45b6363824a23f25c4d749603a027ce23e03c8c9c796a74b044e846481bd"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/gt_488_2.jpg",
+    "sha256": "6b25788817a54169f0e8a04651ef570d9c8cd1bb7e18f61501290a20dcb3a221"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_2645.jpg",
+    "sha256": "fff7dca45e0a4c2cde1be89567a170e45e1a8e9dfc20633868e94d721bc8b18b"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_1925.jpg",
+    "sha256": "07254efd984ea24027f5d1a64b9ed756a6e17640c85d3c749038eb72bb4ea778"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_1196.jpg",
+    "sha256": "e1f06aaf4b4bac0e6ad90a09887b0822e7a9d23e64e9c4e455eec09729b247f4"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/debug_char_auxRoi_1464.jpg",
+    "sha256": "92a19cc82a7f50a33c5813262d6245095b6ef33d54d13b76517ab0704fad501a"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/gt_716_3.jpg",
+    "sha256": "19d830c32fcaef258dfcc03b3c781d8c60f5b809596e392f75f822b9cb2bb5be"
+  },
+  {
+    "char": "3",
+    "path": "tmp/blue-plate-g1/characters/3/175-6.jpg",
+    "sha256": "096b030adc9dc85807436d08c3bbd8a0375ca2df53746ac478c345f2a1d59080"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/204-8.jpg",
+    "sha256": "9c9c5f6d772950df31ed47ee99cb1bad1af12c5ebb9303805eba2e21430d5c0a"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/debug_char_auxRoi_2257.jpg",
+    "sha256": "f34dbc9bf52f5914049b6cdc46d57b023d18bde9bd0c256ba34b95ed75c05407"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/340-2.jpg",
+    "sha256": "706323c7de73fa600b2f139e67b91fcce3bdf46907adb82756b29a1983c24847"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/debug_char_auxRoi_2265.jpg",
+    "sha256": "5540c845994c88bac321b5030b439c8776468864e210840468fe03591717152a"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/gt_979_6.jpg",
+    "sha256": "632b234bda2b4397de918fe63ef227f4da3305478939224c93a8f8db49d13b3f"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/debug_char_auxRoi_423.jpg",
+    "sha256": "016292c000ccbbdd3f6de71f9a13e7bbbcea975e259d6bfa5884a97794bd5197"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/280-1.jpg",
+    "sha256": "e877a2160af8c5e13ee8685c28064685155c6d05fc45f2c2590f34a664300065"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/141-4.jpg",
+    "sha256": "225312b7930f082b9325fb2d8e80ef0a47dc99afe2a7f94036755747e9db1391"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/164-3.jpg",
+    "sha256": "9620f70af16320fa075ab974dd11a47665716716d7c02f69f17f8a665bd8f53d"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/gt_987_4.jpg",
+    "sha256": "fa1b4b730e037d93db501ee88386579d80f37a1f6a61bab628ded80e858b0853"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/gt_915_2.jpg",
+    "sha256": "31d28112166451e3aa202fb45b865664c67fdbc426ba580716af4192ffb73a4e"
+  },
+  {
+    "char": "4",
+    "path": "tmp/blue-plate-g1/characters/4/240-5.jpg",
+    "sha256": "e24cb476cc1f0923193751433abcec9e43c3ad93582e9a008cf79c5bdaa70d01"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/debug_char_auxRoi_2879.jpg",
+    "sha256": "c95198c9d618d404bab80667c1f0351ed706f5b4b9325db1c30a0dfee3ff783a"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/gt_1528_4.jpg",
+    "sha256": "00552d5d321aa2f06c9da5c174bb2b14ac196b8219d96f3ece9324ab7be2f3fa"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/gt_1024_5.jpg",
+    "sha256": "c8c9565ce5cfc698db09e035d77e86102157ee2db1f7167de11a7a685abeb608"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/61-1.jpg",
+    "sha256": "24e6f36901374419ef6c9f03cd90d51147ceb1a12617fc7898758c9d944b6d5a"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/117-7.jpg",
+    "sha256": "b63b9f7af5d74d588c6bf609c6314a8adf3b3af4496a9327a6c522979b03a521"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/gt_232_3.jpg",
+    "sha256": "269002ac9aaf53dd1cdfda9b52a83b5a5c9ee111b9e32caa8c465dc9056713a9"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/65-2.jpg",
+    "sha256": "59938e9d29503fc0baf8106a34848630ff0d0ee7d04a6c9c255212eef4acbce9"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/debug_char_auxRoi_2296.jpg",
+    "sha256": "2406eb8b743df5ff24f87d149f2916274695588920af6d3604a68f0ec78ce6ee"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/debug_char_auxRoi_1376.jpg",
+    "sha256": "94c508ec9f790df524a58576f7023882293906dbdc93252cad2083f1bca4b996"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/159-4.jpg",
+    "sha256": "4104ab6cd80fed98e9360c142d32386368eae0c8345a392984e2e2be46929cda"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/157-3.jpg",
+    "sha256": "069ff2ab55084ba3afa2db476a8a44f7a94c215b25475455654819fc6a66ba28"
+  },
+  {
+    "char": "5",
+    "path": "tmp/blue-plate-g1/characters/5/211-4.jpg",
+    "sha256": "60693190b11b725629b11a341e611df9166f9bf382d407e8fc05206413adf1a0"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/79-3.jpg",
+    "sha256": "7f707d49d2163811b182111d047cbcd5a1a2f42b3b9f1adb00d79220352c8e30"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/229-2.jpg",
+    "sha256": "45011a7094524e2fdc6f2c914853a2cfaccc2dc7abb0d4b6cb0102f9c1f85509"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/198-3.jpg",
+    "sha256": "8404a70467c0c201ee6fc3b5e9a1ab321ddf518af5a372740574730f01d37162"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/gt_144_5.jpg",
+    "sha256": "d7586156489d4f20bd836b1cb2fc9d83ef64f4a6fedbd0f445d761981d671114"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/71-1.jpg",
+    "sha256": "b0095263c20a508b9fabbec5ca77c61b5125af395aa701b9722081d9bbf46028"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/gt_531_2.jpg",
+    "sha256": "377185d9abcfb47de126121cff5f07c4690d2c65d48c871a74efca52f5984f46"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/gt_871_5.jpg",
+    "sha256": "2a0bb8570771ebf71f69e5f3d757689676e8585f47366df304d18549b71a9454"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/debug_char_auxRoi_2349.jpg",
+    "sha256": "0922c51e45e8fefccd0422098da9d22153aefad3a3600fea4d458788668d0c10"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/gt_385_5.jpg",
+    "sha256": "6ff1a4d3d4fbdc18b761d69a6df784a986f50aa546c1c10b45f9bed33d38d259"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/109-2.jpg",
+    "sha256": "0cd133ac8ec78563227dee937383d3a387130f5b881156ab26e2414edba9cd13"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/gt_772_4.jpg",
+    "sha256": "2a7274828bcb00568b1b926be8c0473f4fce94c1141e1e05ab2da4c2d27c465e"
+  },
+  {
+    "char": "6",
+    "path": "tmp/blue-plate-g1/characters/6/gt_9_2.jpg",
+    "sha256": "d57377de861f99ab965022fdca11fa384a403cc29f88efcc5b178f56f3ec237f"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_681_6.jpg",
+    "sha256": "451461e70b42c5081d2c07cbc197786102cd829a298c79498c05fb0ad0f600cc"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_970_6.jpg",
+    "sha256": "04f58f9ec1a53b87b448fa720a7ab9e1dbb68ed202a16029e93205ff279fa793"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/48-3.jpg",
+    "sha256": "3c39940f9a9fe87ddf3f03a50e488461a104a7c256f06869c89633aa961bb1a7"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_457_3.jpg",
+    "sha256": "0da709210b1816bba3aa01ead2490e04c7b4fb774c9b8cf80515a71a60428c4f"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_171_5.jpg",
+    "sha256": "f27c64aa6cf33e2aebd01a706dbbf3c05272ef033135a18d6f017bccc615b5f2"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_396_6.jpg",
+    "sha256": "6bb08be34453dfa64ef2e339fdc1bfba3d0ddd7884bf158a91562f72876273f7"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_1968_4.jpg",
+    "sha256": "4dd64c86d5e921566a307a3cef4470521188c7cb5ca07810bbfc09894cb3b99d"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_643_4.jpg",
+    "sha256": "39d47b90cc3f832cc722c116685d5f6b6d432e7819c97da623f653968506d320"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/debug_char_auxRoi_6566.jpg",
+    "sha256": "c6960ee17a0124e363c7baf9d1d253ff8c10a74be71fae589d2e914e037f0517"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/debug_char_auxRoi_2143.jpg",
+    "sha256": "951f353071ba7323666bfc6cc27efccea224a1eb6436a9be2cfa16b7f1552ee1"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/debug_char_auxRoi_2277.jpg",
+    "sha256": "cc30cf45f8037f16ba9a5946a172427c1c5174c73c027290d91b836d8118d9de"
+  },
+  {
+    "char": "7",
+    "path": "tmp/blue-plate-g1/characters/7/gt_616_4.jpg",
+    "sha256": "fc64bc2bde6a2e4fc111c904931d2c52fb6384f9b985ba48118615c7c0f770c6"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/gt_1941_3.jpg",
+    "sha256": "61dd52868393970277eaa67272f730acec316e6f55c4c5045eeff80f5a041b26"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_1092.jpg",
+    "sha256": "125b8ab99f39618bd419e3a0af8e0d38239441de47e04e5073d0324c5105fee3"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/gt_1699_5.jpg",
+    "sha256": "cccfb0c2b60990333b4a7ebe9f40fe6c00ca56790acb6efc1c810d28f33d4291"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_2613 (2).jpg",
+    "sha256": "631ce9f35943efe3cfe51499ad74392eaab4c4aa2994a2b7bf864862bca2c64e"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_2177.jpg",
+    "sha256": "4d5a0455de4e97d4e93b4b512d79e40447803498ec2373763db09c74d07ca4ba"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/228-1.jpg",
+    "sha256": "a8c0160d4fcdf730213f9342cb69804a8e46a84815b0447b85df33598ae56f8a"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_994.jpg",
+    "sha256": "589937bf2f869f12a2df89840659f673d62de1b3276ca2ad26d07709b154cb9c"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_6284.jpg",
+    "sha256": "cd9e13b88472cfef5c22748031c0456d9b86efa05f4384186a3723f9f26aa8a2"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/gt_730_4.jpg",
+    "sha256": "040d1f2ae58edf6e35db1c97e8c006048148057d3c92c2697a40b4d2bb001e31"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/debug_char_auxRoi_1971.jpg",
+    "sha256": "3bbdc68ddac6de42ce2d02eb90c66ff0fc2b9750f916b058351750fa055abb20"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/gt_492_3.jpg",
+    "sha256": "0d722d18a3d617ce76dfa6d67fa9912796a5d078ad70325eaf16cceef635bbdb"
+  },
+  {
+    "char": "8",
+    "path": "tmp/blue-plate-g1/characters/8/gt_265_6.jpg",
+    "sha256": "1679855d04f56836efc7b535b0e846b273a36bd0b0404a0d33bdaa8313251c01"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/130-4.jpg",
+    "sha256": "6f13886af2c33f90399b8d2faac43690a2dfe288c8c6a5f1e5f4468794f2e21e"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/debug_char_auxRoi_2749.jpg",
+    "sha256": "ac6d8d3dacf28e9f70d048e1a4fca4fe5c7f9efca8d7026687eef02a5b42cf44"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/200-6.jpg",
+    "sha256": "57270ace420649b2a91bb9a9c67cd6c63ce0eac6cbdd410a328e0a67e63ecf60"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/debug_char_auxRoi_86.jpg",
+    "sha256": "4ca2c408f5645a59bcfc8b7b6a362c5fdfddd100ad8e23cf2b864c2a7178259d"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/gt_532_3.jpg",
+    "sha256": "082e0628a69d3e5eeebefe5e21df44cebda828ac6e99cdd89b4eccbf717e8aa6"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/debug_char_auxRoi_1494.jpg",
+    "sha256": "e2c2e8fbc53725fcd968c43ea0db60998161b42be345393e6f2388a6aeb02196"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/debug_char_auxRoi_392.jpg",
+    "sha256": "7d6361e04b262b8201f069edcc5a06149b551ace321be0487da116e88bf28b47"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/gt_1405_2.jpg",
+    "sha256": "04aed85f4a2fa4f5e0e9680138ae746c040c4d11042be679b7266b408029b4a9"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/gt_808_3.jpg",
+    "sha256": "166534c4b39068c98547747e474401eba434b30b92422db5c5a5db33d1524490"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/186-4.jpg",
+    "sha256": "d2d6d71e5ab38af06a9c1e8da03d01ce926ad24ddbb7544418d374b9b70ac0dc"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/debug_char_auxRoi_855.jpg",
+    "sha256": "7e87fc8dd36c994c0c9a9787f890689d815425f0b57836487c18ea56670b315a"
+  },
+  {
+    "char": "9",
+    "path": "tmp/blue-plate-g1/characters/9/168-3.jpg",
+    "sha256": "53450f84de023d5248f4b2526c64be814c1040d329fbc5a62f31106a10810254"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/228-5.jpg",
+    "sha256": "e0bc6711ed0fe744385e48d3b3a606f5162f33df7a1b7ac32a41ded863d315f5"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/gt_623_3.jpg",
+    "sha256": "deb00b0dbfb899eeec4586d6f0ea782956234a15f5af52d7583689807e628dae"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/gt_606_1.jpg",
+    "sha256": "007cc6bf6b4431d4dbf52206438b850f876be0e39a334b3f0651e3a6ab4b79c5"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/86-6.jpg",
+    "sha256": "2c86d647e069512237d672cb9dc90209da4b3a356fd6375c059d6a1a7555f863"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/185-5.jpg",
+    "sha256": "fe7e4c9f862cf82060cafaf8594021db13f2c2233d4a7a0ff04296aac10a257c"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/gt_1217_1.jpg",
+    "sha256": "005e608b5b6f97a6938e5a944ee6e805c41a9d2088e91b74115e11227e41a709"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/gt_353_1.jpg",
+    "sha256": "3f5d41a10bc3a4877840214db69218be6fb434b551f9bcdcb51ef79723ca1daf"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/debug_char_auxRoi_1677.jpg",
+    "sha256": "1e654f37d5053b6949caa2c42504e4b658665e5bb561588e532a19e48da53d67"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/131-6.jpg",
+    "sha256": "6094178c3390110615fb2bfe40b1fc881d13360362db2cb119d81ba4fb089b9d"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/gt_1849_2.jpg",
+    "sha256": "f2c8b8e6591f227ff0507821ba635a62faa893e82dd5e433815fbcafa3c3717e"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/debug_char_auxRoi_2602.jpg",
+    "sha256": "81e9727dc27d314772fea6ee368e525bd69cb9613c3afc0a87ba36cacc45dd18"
+  },
+  {
+    "char": "A",
+    "path": "tmp/blue-plate-g1/characters/A/gt_916_1.jpg",
+    "sha256": "1c631299685a03a8366919b30eb59526c73f5913c3517e0be30ca18ba9e47570"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_1789_3.jpg",
+    "sha256": "190e0290a3150b44fcf792afa3553070aacfd9f57c32752fa31c460945bdbca1"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/debug_char_auxRoi_6281.jpg",
+    "sha256": "2680b637806ced79da0621c4bf9824467f6801715387154b1e8e2039761a98cb"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_1268_1.jpg",
+    "sha256": "ea6d39b9f79e7f159293b0731a1e79fb2dd3e479b6f0da3060a186386cb12f5b"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_924_2.jpg",
+    "sha256": "405ba6adb70121392f064d00a8c5687aeca1e18f20588977087907719713ad0b"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/48-7.jpg",
+    "sha256": "f97ef7d7acdc76882fb6a9177fb3c59505e2f29690e7d57d294afcdaaa2bb727"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_1519_6.jpg",
+    "sha256": "0d79fd2265cf4bd59ece7dfcf73587977c023e1ce134d3b0614e722115bb3afc"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_1258_2.jpg",
+    "sha256": "2a752de5eb06ba1277f0d007b3aaa3f6bee4f5fead80ac0841cb5eb34af7186b"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/debug_char_auxRoi_2241.jpg",
+    "sha256": "ac92c2f0c5d478ba826993eff9d5dff814072a456d0b29f640db62efaa57c74c"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_520_1.jpg",
+    "sha256": "05b8b53b8b433b6630f8cce54d83a657df34200f503622fe6efffb9103e90313"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/gt_1407_3.jpg",
+    "sha256": "cdab7bd2c01af7627eae4187260de4833ff42d0dc8cca98b6f774a26b650526c"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/debug_char_auxRoi_349.jpg",
+    "sha256": "4093d1c7ac098a27fd4e25399be33e1d1d1b115d91fc353cc5e2df879fdf1791"
+  },
+  {
+    "char": "B",
+    "path": "tmp/blue-plate-g1/characters/B/debug_specMat178.jpg",
+    "sha256": "f15f4e4ab2b2a92f5857a1784348aaf005d2d246fb6f4c7db6477a10a45eee9f"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/gt_726_1.jpg",
+    "sha256": "879fb6bfb558ffa56f773870c6293d6493cf6d3c4ef4ff431b82318f9ef6699e"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/212-2.jpg",
+    "sha256": "8e4efaf24843f1192a8dbbf4a7736955895f7395f58cf82d379161c60330b1aa"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/debug_char_auxRoi_846 (2).jpg",
+    "sha256": "754e0498a57b4829464154f08cf84033cca6487e8247c2182698c9f5f068870a"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/gt_646_2.jpg",
+    "sha256": "2213bdff0560a7a831be8e065ca5a93435d453832cc27481d81ef91f26470f74"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/debug_char_auxRoi_853.jpg",
+    "sha256": "dcc38781e84287f55aeef97ae7fea5f470c027e88259a1396eaadab4ee920cb3"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/gt_1448_1.jpg",
+    "sha256": "125ef606f1ae5c6c3bb0e0b3ab8de6d21a8040fdc0edd63b5d8cfe54e4ffcd3a"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/gt_689_1.jpg",
+    "sha256": "622ee3628b3347ac4825467071eba1ea103ce923f0fad9ac3f80c3baa4fe7f91"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/157-2.jpg",
+    "sha256": "52771d5c1291c176315ee5112eafe161f2ce4e9cefb18f03ff43c6e1bcd26e1d"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/gt_1282_1.jpg",
+    "sha256": "3c4fb191c99fcdc69f580c0fbe45b317b37dd1e1bc206f66326376ee4a94265d"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/debug_char_auxRoi_1188.jpg",
+    "sha256": "b2ee7a644e852892aaa4101504748e4fd78bfe7d1e499a0afeeada59bfb853e5"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/debug_char_auxRoi_157.jpg",
+    "sha256": "78dec3fa3890c1d03dd08d5579ba031247550241bba1d3aa9e9f1340714e261a"
+  },
+  {
+    "char": "C",
+    "path": "tmp/blue-plate-g1/characters/C/gt_308_2.jpg",
+    "sha256": "c936da3dd31c8ab0fe308653c1f04f700b026b8a00ef739adf7ee49556b722f9"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/gt_1084_1.jpg",
+    "sha256": "9ea4d59b51c78085f2f13c142925f13ccced4948e1bf7109c6b048ac80308e2a"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/debug_char_auxRoi_984.jpg",
+    "sha256": "f24b1fe0838c70c2cd308adcd8298244e53e27d664b53376af0019e5c708af89"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/319_sun_D_7.jpg",
+    "sha256": "51db75c9f1b4886912d5dac8dd8e1899775a468b38cfd1f6e9376ca2f23dfc84"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/gt_249_1.jpg",
+    "sha256": "f66dea7858106bc48d66596bc77c773102036596d1e477c534fd5b3569cfe134"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/gt_1056_1.jpg",
+    "sha256": "2f11b06ca531602edfed9eb6b10efa61e0d0bd1eae8a68ee3f93915ae5c19eba"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/178-5.jpg",
+    "sha256": "91d04cfae55294645fab0bc75d77c218ccf0e392553a4510f5963821f05444cb"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/gt_1779_6.jpg",
+    "sha256": "7199aa5ec10fcf72c4b68461546a8d2ceca1224749881f05f1363beec10439a8"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/148-6.jpg",
+    "sha256": "95dea97872e8c98848d3aa259d210dff733e2c63dfd50e66a7db17f3207bc6f0"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/debug_char_auxRoi_1499.jpg",
+    "sha256": "daf473c03d3a2d8c369a7b4c0f33600fdf4c4e9b47f184849cfc2bda275e6287"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/264-2.jpg",
+    "sha256": "20912f948ca9bb811991d1bd3e869c9531e8a5ea3603fd58e77629d922953aa2"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/167-6.jpg",
+    "sha256": "58a010cd3f5bc80579a6e05b036ac0251dbb839ca422d07d54354f8660a6b0f9"
+  },
+  {
+    "char": "D",
+    "path": "tmp/blue-plate-g1/characters/D/223-5.jpg",
+    "sha256": "365bac5891d3c575e46700513c09878a4ad64511f4462e246cfd4acbb1155ada"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/debug_char_auxRoi_2446.jpg",
+    "sha256": "982d6863edcff5831e1e14d31a04bfba05529bcc1e913e48a0551f3e1e5210e9"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/40-6.jpg",
+    "sha256": "122cb8415994d2ef5d844374d8c091deb119d4fff2a1e57de3e4a574aac0c8e9"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/gt_1462_1.jpg",
+    "sha256": "ef7405a8a92e3dd7e584266a8eb1ff7940325ea75d643bd837c435cf2a34e7fa"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/gt_871_3.jpg",
+    "sha256": "1d20cae001a59a398355ed7a2dbd232604a91d2e053afd657c170f515f861f60"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/debug_char_auxRoi_2617.jpg",
+    "sha256": "f431da67214b259089b4438eee449b7269f9a6f28ffeb9804cacb3c077c9dfac"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/242-6.jpg",
+    "sha256": "92029820310554150976342e5320195834487b9f9490305876476b618e33cdbe"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/196-7.jpg",
+    "sha256": "44b85fddd5852132702dce3ead5175226e6bd7baae355534deef776da4e7ec7f"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/gt_1235_2.jpg",
+    "sha256": "00f5d64a367bdf1c4505562432757b0c5b38dc773e2e51d0dadec07e8fa0987e"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/gt_468_1.jpg",
+    "sha256": "4249df57d119ced63e36621a1105f86a212e993b6fbd0b774552ee0d5978ad0d"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/97-1.jpg",
+    "sha256": "9b253329f9f6961953b824a5db584fb8d8d719aac4f958f0b266832cfd01eb87"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/155-5.jpg",
+    "sha256": "bd7a3ff8833a028aa633f224c6720d583210efca5bbf3dc5a8a7a7395fa47a90"
+  },
+  {
+    "char": "E",
+    "path": "tmp/blue-plate-g1/characters/E/279-6.jpg",
+    "sha256": "feb470da2f04aeeafdaeccdcaf06b673cd27fafe0ed106a98e694464b13cb2e3"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/213-5.jpg",
+    "sha256": "56d17bc249425e6e914fdffe45a089d5eb229178589641cb76ebe081977bbfb8"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/gt_1773_6.jpg",
+    "sha256": "41c55b82db57f4da14f4afc2924b7ce4f20df3358ce819b2bc76bf6464abc43b"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/169-2.jpg",
+    "sha256": "8560fe960131eeb5c9224780254f36cc1219839150b0ec2d3b4b1994ce7fb515"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/429-1.jpg",
+    "sha256": "740ec1d7f644190e0c4e501b0a4390d7f1a9005db272e578bfe6eb1fee54e621"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/357-7.jpg",
+    "sha256": "1d240d7804682a57cbaedeb7734d48ba719259ecd139c286e5432ea73719f342"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/gt_932_3.jpg",
+    "sha256": "05c9a1a2d70840845893c7e53bec9d2e401882b279ffce8a3dfda4455a8add01"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/gt_1469_1.jpg",
+    "sha256": "8414b6b2b9ab9858e645985d0da7350966103b3a71db79905a6e3ddac4cd1794"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/247-5.jpg",
+    "sha256": "197ec828cc61f86de7363a1e530b656fd644c1de13b09bbb4160dc6471b7dcd6"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/gt_636_1.jpg",
+    "sha256": "2119b161501bacd8d468e93dbd3983ab23db8fc4124cf371019496c9a3474c82"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/381-6.jpg",
+    "sha256": "589975a48353854d004aceb853f2756b4e71d727ce92cebac3f21aa12b6f789a"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/debug_specMat158.jpg",
+    "sha256": "62f65e25c80e0e4d34d8087a6456e155d4877d00f7888dc82096b8cb36b06299"
+  },
+  {
+    "char": "F",
+    "path": "tmp/blue-plate-g1/characters/F/gt_135_1.jpg",
+    "sha256": "fbd9425863ced467b4c5e6659e274d94bc199d35f64b70cfc78aacf6987a02ec"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/144-3.jpg",
+    "sha256": "d69b5c76ef33d9878b4046fa21d9dd37e3a69ea3545dd4546aeaa21eae086a41"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/127-5.jpg",
+    "sha256": "340ccd26a0ae8e272422a06464e36241d17555121fca9acb43e64f1a0d27d146"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/37-5.jpg",
+    "sha256": "16f736fde5f87a91f3b610b09c2b50c7112d4104722adb4383cbc24d13bdbde3"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/gt_681_2.jpg",
+    "sha256": "962b78a2689ed7be49b9e2558ab3f51c55b5b9f061784a148454aeeb297adfd9"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/gt_970_2.jpg",
+    "sha256": "e2a3f14ec85096a45cf006ed69dadeaeab3cd8e8e2afc6506eeceb5420dde2d1"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/203-4.jpg",
+    "sha256": "9a8931041fd3b66ef3b4047a17374e13bb8e66cdaeb6d185ab15cd7862182192"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/debug_char_auxRoi_1098.jpg",
+    "sha256": "2fe0f9d3223b69c7a9aba332080613bcea70f4a329c295faf4cd67c1ba1fa550"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/140-4.jpg",
+    "sha256": "7ed1640fd30706c8eedc366d2e0ac8a8fb7c7c2fdebeb2d318db327406977d9e"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/gt_972_2.jpg",
+    "sha256": "6923045a2c553897b71ae24b8bc2208ac90ca6bf7b7ec6ff1dd39e8f2c5cc755"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/136-1.jpg",
+    "sha256": "63be5d823896ecba8adf4de16de3f567af6baea92b69c912c191e4a60a331b13"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/257-5.jpg",
+    "sha256": "2060fd346aa33a92c31509116a8a4db66a1858f56be928507581aab96ecc8907"
+  },
+  {
+    "char": "G",
+    "path": "tmp/blue-plate-g1/characters/G/86-4.jpg",
+    "sha256": "7706ac8a26ffedcdbcfb46435263c1cd422f5572ab796aa2bcab9e1eb6587744"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/debug_char_auxRoi_1097.jpg",
+    "sha256": "51914d066951237a1a2a4eeac72c143ca4bd497f52659f4ca9d4d402c247e464"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/gt_1160_1.jpg",
+    "sha256": "08c4945548dd4a0c6787413c542fe37f1c2b13380c0df4eeac561cc2c6fad309"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/debug_char_auxRoi_2434.jpg",
+    "sha256": "48ecaebfbcd2d4f7a8ab2ea2b50152e8fc4ba5efc7d514f4b4f667f8717608a3"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/gt_1793_2.jpg",
+    "sha256": "1be3e95c2741d44fa2972e30626fc67eee6b3e3e66f119310d1ef0e1b804d4b3"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/gt_1217_3.jpg",
+    "sha256": "c30d86b558ff1df782523ab8d4985c2635c77ee17b1172ff2e6a6b1210534674"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/gt_1485_1.jpg",
+    "sha256": "e3f8cd3287fd67228cdd30cf56dcdbe710acfe83b9828c26e6567840d6af9b6e"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/163-4.jpg",
+    "sha256": "88da084fe4e845bf1bb5cdfa5906ccac6852ecededbde3060c030d45fcd64c50"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/debug_char_auxRoi_648.jpg",
+    "sha256": "550ecc6a693b09377c24ce9dffb8b6fe44d5ab72ea9a2f8afb4050593e912db6"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/67-5.jpg",
+    "sha256": "9fcb509e6a0830c15c0af0b7d85e730eead14ac6e90277ddd02e4ccda65b18b1"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/debug_char_auxRoi_1791.jpg",
+    "sha256": "8bfa605c159d38c55e1fe5d7f6e586ce81c848ab6583fc838ab44bcc954520d8"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/debug_char_auxRoi_641.jpg",
+    "sha256": "d9aa050197cbb5d318244d4c991553f03536e61a26ec7ad01db3a6a0fa02286b"
+  },
+  {
+    "char": "H",
+    "path": "tmp/blue-plate-g1/characters/H/286-3.jpg",
+    "sha256": "1251b4976c00931919c6d9aed95841bd074c35d70e08a1bad5f1f373b99d6d4c"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/202-4.jpg",
+    "sha256": "2ba5b1f6bfc1f1ebcd38087b99248302ebcf39a3e159339640eaba0e5cbb432f"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/gt_866_1.jpg",
+    "sha256": "fde9f6bf8151ab145c6f2d48c285bdf8321c0790576668cbc4597e75c522fab4"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/164-4.jpg",
+    "sha256": "25d456381a843e84c3c56bb9834d5571f744dc807a73f70262191cae6ad3bd77"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/debug_specMat28.jpg",
+    "sha256": "bdd65833b479a928d157c9fc7817124b06414c7aee84fd2fb8a4942c84645c63"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/debug_char_auxRoi_857.jpg",
+    "sha256": "a7b67939be34bddb2cc061e32d72a0b8ecb31fe25638ce21e23f035d15301a41"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/170-4.jpg",
+    "sha256": "a0319fff6bab79227bf5be2e11cfa5a47f0b0369cd7d5b357bed361aa4fdce59"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/gt_1266_2.jpg",
+    "sha256": "428f8ba036c00e1929267184004e41c721ed57eadf648c13794b6fb200a29c99"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/gt_1365_3.jpg",
+    "sha256": "46540d36733234a77daf3184fcfe1ad7d22dd412153585cc19b7ac2858010e90"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/gt_1255_4.jpg",
+    "sha256": "8f85ba3aad92e70a4a223de13a76492df3f17f4355f0d0ff32a2717160e1491c"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/109-4.jpg",
+    "sha256": "ddf24bb2f26b6cf286067d84e9a8cb1f2404128c503adf71b9098978bbd80d87"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/302-4.jpg",
+    "sha256": "814dec492c63d1d737ff974051a0b0a42dd3308718078801cce086a42c2c9987"
+  },
+  {
+    "char": "J",
+    "path": "tmp/blue-plate-g1/characters/J/220-5.jpg",
+    "sha256": "a97955b8104f51aad19a74cd2e19cf6c62ab37ea1cfbe3f3009df1dd85f5db6b"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/416-6.jpg",
+    "sha256": "5978eaff5ac0659e28aaefd3aa6b4b4759a76e2cb4f33959cf0c7b90a71be134"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/182-4.jpg",
+    "sha256": "47159cbdf37d2decbd20e7802d0f573379f99c632d5a20ea9865fdd71846622b"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/357-4.jpg",
+    "sha256": "a40a9f540cfb94e3d1d3759895afda5b1276c83f1a2e77cd1784f13569a32e26"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/debug_char_auxRoi_237.jpg",
+    "sha256": "fe7b40ab0005a70f854f4a37dfadc007b3bd542ac3db93f53c245ad0ca83d769"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/442-6.jpg",
+    "sha256": "aa8a2a460defece8fbc71e8cd0bd5036dc3e77ac3b4b9749e85377bd5ea6bfa6"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/gt_908_3.jpg",
+    "sha256": "3b3bed548be4ae8dc5fe8b464f89d2c896ae5e209000504754006e997f6d0d35"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/71-5.jpg",
+    "sha256": "e4bdd9585c905ab2e90ba9845868b2029465b79b73d59ed651350cbd42afe8dd"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/debug_char_auxRoi_1794.jpg",
+    "sha256": "0a283bb69f6d085a57e06fe1e9b37c3dce816c070e4ae7c020ca72c4eb01dc4e"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/debug_char_auxRoi_2260.jpg",
+    "sha256": "d774f3d74944e630e1ab58681dde814abbf0269909c36e560b22b827f0cd0cee"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/gt_1517_1.jpg",
+    "sha256": "fd3c8ba738e1c58ec57c9332f7486f7086e7a2d0f45cec03ebdd515f70d8e339"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/126-5.jpg",
+    "sha256": "e2a0cac55b41f122c63ed72c8ed9db016f367de6beecc9b49f92217b45d45b5d"
+  },
+  {
+    "char": "K",
+    "path": "tmp/blue-plate-g1/characters/K/gt_263_4.jpg",
+    "sha256": "880a660f26c347bd714768cd04200ce7ffada5ee46aebde1a18e797384c3e830"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_382.jpg",
+    "sha256": "ada3dbdc35251669697e70e5fbdf468e21c521ff376e9bb4a0cd3324c56246a2"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/gt_1715_2.jpg",
+    "sha256": "17e4b0c8c8ab463e513f3b26d6a78fe00e2169a182327383c5fad38441cbccce"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_6285.jpg",
+    "sha256": "3a847dd619036deee5113158827949247b54ef7144f35d01cadd6079aa5308d9"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_1673.jpg",
+    "sha256": "c9283b24fa057e08f54abddfc00bec3fe4099dfcad1d5b3918993be1baa2b1f7"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_2754.jpg",
+    "sha256": "7fd4a6c452c4288b3847baeaeaecc8328aa00bad1f396bf9ec05ec3a97768ad0"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/19-1.jpg",
+    "sha256": "9d8acf234570731bc0b2857ec7def1367589e1ae17fad0cdf61d3bc258f755f4"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/80-4.jpg",
+    "sha256": "174debdb69765a6e75f95d172413df4331eefa526b71dd2e12b7d16c231a41d9"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_specMat66.jpg",
+    "sha256": "4ef9926e1456103dec4ad8faa513491111d5d417c66d9054c4716a1d9f744b1e"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_295.jpg",
+    "sha256": "17cf21b405029466dbe891ccfa33602d255a0f6a8bfe13071bf5c0237e45702b"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/debug_char_auxRoi_757.jpg",
+    "sha256": "101818161c423b1350d949ce9b67f9bbdec29ad436f9002436e3839c18e73730"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/157-5.jpg",
+    "sha256": "7381c5890a3cfe39248ae71e5320e1b3c51088bd4bdc7677ad81a9da8d754394"
+  },
+  {
+    "char": "L",
+    "path": "tmp/blue-plate-g1/characters/L/gt_1036_2.jpg",
+    "sha256": "39919196575ad68fd3b7818a3eaff7d6f1012f0147a415dfe166ed259a9db5c9"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/debug_char_auxRoi_1444.jpg",
+    "sha256": "40946e52959d571c814fd34b6f84ef6ef948a74a0fa969e068bdad27f2007b43"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/160-7.jpg",
+    "sha256": "3ac75d83532df9c356548ad9f0f6a528ed40bc1af6a22b913474e3b2d6fa0698"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/gt_1662_1.jpg",
+    "sha256": "38eb641032b2cc7af9dfbe2f0acd105ee0e7ba207ad6397f65c8e3ab4a6d08ea"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/121-3.jpg",
+    "sha256": "5c56eb9fb44ac113e0f85cb8be2d42f3a622a1fc7f3803a041d77cbfc45d7fed"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/debug_char_auxRoi_713.jpg",
+    "sha256": "a76873612c31339b0ffe40f77cb5aeae7063efe28dee0b49e2c3a9a02593c9a6"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/167-3.jpg",
+    "sha256": "01f0f2def2294863df05c9f65478008e43c378957e7107524d21aaa959ed4376"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/gt_145_1.jpg",
+    "sha256": "540b27ebf3aedc3d93a2724fd74c044afa32255c537c5009b61f280a6b518e4a"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/gt_904_1.jpg",
+    "sha256": "438a9b9b37e2c1e817ebd30bdd650a7ca4cda98a29bdd7e6959d36639b298b72"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/gt_1208_4.jpg",
+    "sha256": "6539007865fde034cfb211cc817f9b8496d7a1db223b1e3873266f44914c044a"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/gt_1907_1.jpg",
+    "sha256": "390a1b2d0866f7b831331e579ff73f46a4015e0c97b9d3a5bdfe970b57093bdc"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/gt_1653_1.jpg",
+    "sha256": "705aa1aac066310a22dd439ee2deac93d604ab5c22cb5876ff4b055e6f5a4e77"
+  },
+  {
+    "char": "M",
+    "path": "tmp/blue-plate-g1/characters/M/267-3.jpg",
+    "sha256": "1ddcc63ff52f8a0b183c8c995968c490feb9a089cbd9d1a289e7bdb885a0f192"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/debug_char_auxRoi_1112.jpg",
+    "sha256": "c8ab6d3c32199f0ee08f8489c289a87088c9b0ea574a8baba9d1cf8fe82eaf7d"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/170-6.jpg",
+    "sha256": "25cf58e730d4c8f7bc1609f324ddaf91bca243a94fb4f64a59a6c61f64df1d8f"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/debug_char_auxRoi_1570.jpg",
+    "sha256": "b56f0010dc2675670f26846390955a266f0f990d72f334168e5663ecf266dbe9"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/159-5.jpg",
+    "sha256": "2b42b9f4096d584d070f334c05ff175201345e47e23693957818f62c32218c49"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/122-5.jpg",
+    "sha256": "f2d5704f885743269582fc13a44fb9a777dac74dd9b1665d93bce607a65f562b"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/459-6.jpg",
+    "sha256": "b476ecacba9f59895affee1c023622dea53dbf456f6fbfffd8dfcc0c4ccd33be"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/gt_1710_1.jpg",
+    "sha256": "7eb5ae21c6d6e8742fbd16c3e11331781cdfcafd6be97ec1161ab097ed9f1636"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/gt_1684_1.jpg",
+    "sha256": "07446e4274fc4e7003f23b9cde2169f0dced93942b32e5b5ca1d0629f1ee820d"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/gt_1706_1.jpg",
+    "sha256": "e95e256ff6702afe47f86c6448f778eda9e81fe231666c803b503dd88da8ac90"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/gt_661_3.jpg",
+    "sha256": "27a90691497033d9f7f679757907c8718d6680503e12bd32e7696d2db4c0f293"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/278-5.jpg",
+    "sha256": "59a2e0fbfdf566a68d7c6030e585e995a8af6a0acd662823131033a11d9edc48"
+  },
+  {
+    "char": "N",
+    "path": "tmp/blue-plate-g1/characters/N/gt_888_2.jpg",
+    "sha256": "c2d936e713b9ee8d4cd22a2c240f79e8fce8620f29fa682ba1ccb87487f1cbc2"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/debug_char_auxRoi_1561.jpg",
+    "sha256": "218dcd01f76c4bd36ec994cef1de13282842dc10c511f020886568d1bd2ae2ab"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/547-4.jpg",
+    "sha256": "d6a9d51195a67da1778c892987443645c5259008f4e7fe6c442f0a7c1fea1e8e"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/261-0.jpg",
+    "sha256": "0a06a2dbbe1b81a7ae87f1f7c824113a27b73f1b5925e247ee76beb395e31a1d"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/debug_char_auxRoi_2505.jpg",
+    "sha256": "6f77cc3f6245d6e0ef93e1aecd232159f2a89d5e71c549f8947d9c8790f8d94a"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/172-1.jpg",
+    "sha256": "95fe59ef493f24423e04ca241e0906354130fea7d75618ee63a26c4f131c8ec9"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/gt_110_2.jpg",
+    "sha256": "7be5b9828cba3bf48abaa334982ed4b43d8a9689817258d3986dd80920afd7c6"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/492-4.jpg",
+    "sha256": "1bb2f1f2facb9ebaa8e4d7a988067618b8ec26bb5022c2c9570721b863460baa"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/gt_1715_1.jpg",
+    "sha256": "892b2adfc91889736c33f993234d1aaac98941b66802756e3ac07279381fceab"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/debug_char_auxRoi_267.jpg",
+    "sha256": "58fc76cb3cb1c4c18999f6b78fa67a79543d7467eccc2fa4e9d90188f0e3ccc1"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/189-4.jpg",
+    "sha256": "3739723a3a104af6ad23b1466232d4f960b642d0fd467bf161d827cf76d45bf7"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/gt_930_3.jpg",
+    "sha256": "1a4e18a241f8c3e1fd6567ef5454872c932ab1ec8eb3f06a58976af7f151a6a1"
+  },
+  {
+    "char": "P",
+    "path": "tmp/blue-plate-g1/characters/P/debug_char_auxRoi_2806.jpg",
+    "sha256": "9da2db2a8943e1843f7cf7fb0be31f41b8d1f423706f198cd41e4e850be22974"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/450-3.jpg",
+    "sha256": "029d0af3541751de84457fad130267792f07286c024f5e75d71bfb68f05ff862"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/debug_char_auxRoi_1942.jpg",
+    "sha256": "70e70fea218a5e05d73150954d39186e708b5842d05df0d47a6c0dfc5c17ba13"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/gt_657_2.jpg",
+    "sha256": "264fbe3118a81b2a3dfedde5d9f7278ca1530922ad72eb0e4e59a67543c66a09"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/519-4.jpg",
+    "sha256": "51f5c4950312a017647b8d1ed02968add155f3b89e91f5e2235cc6bd2be3fcec"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/129-4.jpg",
+    "sha256": "75854d26409885ff263e3d6fd8d565e5e422f9e44b6eb7430bea925c9a7093b3"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/187-1.jpg",
+    "sha256": "0b3107da5ad3beabafe6d27e00d35a0abc1f2b96c11790d23c96133b433296fc"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/371-3.jpg",
+    "sha256": "c2c253e697f501a0e71d642c0b3b39fc2c76c1494cb7f91f739025b398155a07"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/gt_598_1.jpg",
+    "sha256": "a12d0f533915903ac2fe9947ef0a197b5fb7c8f849df49a6f4505e603adef2a1"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/528-4.jpg",
+    "sha256": "6bc303d5c9e2d587620625e396548493840de326d2148818a4ce7a0a0146e3f1"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/89-5.jpg",
+    "sha256": "4e0acbf03907437a3c7b97d8554a8e7f6d799089705d658465bb4a73cb4e01b0"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/269-3.jpg",
+    "sha256": "0bd42f3d4dbda5494535b20d25c38d8c4194dc50b29ed81feb340b668a3a3f17"
+  },
+  {
+    "char": "Q",
+    "path": "tmp/blue-plate-g1/characters/Q/263-8.jpg",
+    "sha256": "fa584bf4c845e054ecd437a8b3cc546901d193cc9d63b5c101ce4e4acc36bbd2"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/debug_char_auxRoi_1478.jpg",
+    "sha256": "d1d9656ac960c27147999d504b15c788eb8fd26c2325f1fc888860bef9e44e73"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/gt_1485_6.jpg",
+    "sha256": "c757d4a672c92202f827ef2143895249c56020aed5e58d0b63b5842dd8da1828"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/165-5.jpg",
+    "sha256": "e3aad0a570b7762e20a1a33d89270cce7168fc52108237e34c0c6f7705aabd03"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/debug_char_auxRoi_425.jpg",
+    "sha256": "659f212e36852f8c93b7dc42ec5a1a943fab41be6bb08ad3286a8b03eedbc1be"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/147-3.jpg",
+    "sha256": "0614270e3137e3354739e7d2b06e67ea345561d0277249da0bae6de3c0f7f1c1"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/221-5.jpg",
+    "sha256": "990e5ec73dfd33bc13153e2e953836471aac6fced516d73afc12b69a944d7dc6"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/gt_1367_1.jpg",
+    "sha256": "72238383c8c0ccd3dfd8671c61c75db49179802064feed47c952c189de81d53d"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/387-6.jpg",
+    "sha256": "7015ec74977967ffa22dbdcb862a48b1e970439cf2a94e93d77582257b62b07b"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/256-0.jpg",
+    "sha256": "4825a12f1ad26a00fb0c97220bb8b3c14914b51db9ba0fdacf94719ea3bfbc24"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/debug_char_auxRoi_2300.jpg",
+    "sha256": "fe80e4dd3bb8712043c628a10ba9afbfd6b9b2e374c8bcd71d7b9d5c2e9b3b06"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/gt_418_2.jpg",
+    "sha256": "e19fd2b06503d705803beb8f40b4123517d96991476934159177d6b208a3e668"
+  },
+  {
+    "char": "R",
+    "path": "tmp/blue-plate-g1/characters/R/debug_char_auxRoi_2447.jpg",
+    "sha256": "021c779cf76a0d6a56b720428332935cb486ce195b4a5f382547fcfe44f84ff8"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/46-1.jpg",
+    "sha256": "c7691657401e2c7197a1ca3a5232171e80b934823d5fe4f6a63512ab57f61b36"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/debug_char_auxRoi_1808.jpg",
+    "sha256": "c22a6a0f1e1adbc80d2ded74e78ae0ac921a3b8a56cb9916986060b1983d37f5"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/gt_1008_2.jpg",
+    "sha256": "d28523e3e7399fb6555facbaf2832ab7edef2b4f01a5bd24750252e80b1537f7"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/110-5.jpg",
+    "sha256": "d636d3c3a9977a950ad0a5fff42fc904c4eee82404e3cb853aea0b6456589df8"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/debug_char_auxRoi_2546.jpg",
+    "sha256": "f9b1625cc5786069b2257f97bb64b3e1248b3a6a4971a7c301b0c78d45434200"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/201-5.jpg",
+    "sha256": "a44e911efd23a6cdd3f180fd1d20359b5de5c15a48b2517652552b6902a25835"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/debug_char_auxRoi_6563.jpg",
+    "sha256": "20b123dc26cd25d2f002852cc09855f19cb36c5c7ea43316731680b8f9ce82c7"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/577-1.jpg",
+    "sha256": "d3616963b52d0d43f44bb7bae326d25ddcabd8aeefc717e8a13c5a93991c7c7d"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/gt_1757_1.jpg",
+    "sha256": "946d203959b5cd269dc78fd24244f14da8ddc0679940354c3f0b8e18feb42aa8"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/debug_char_auxRoi_1945.jpg",
+    "sha256": "a0a05c911adf4e89bad0e069e022975299f4f6f0c189fc8f6e62071487585cfd"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/gt_1744_1.jpg",
+    "sha256": "f0c613555114981b8f97cd1a512327adf93963d442bacb8f97c94a68d96fde04"
+  },
+  {
+    "char": "S",
+    "path": "tmp/blue-plate-g1/characters/S/gt_1012_2.jpg",
+    "sha256": "db58a443e467d71a2d561871f97947a65366d2ff135a435b5d690ab4c8daad68"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_54.jpg",
+    "sha256": "a561d9d7a21a420530a1b83f0b74499fd0966c11b723b8557fb5a588791b4c03"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/gt_1137_2.jpg",
+    "sha256": "205683377ef8f2d89169174de6ad15f3b7d7591e08eae3cbdda6c964bfaba235"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/gt_1420_3.jpg",
+    "sha256": "642d6e106af92877788bee34dddf71043b1db2c0c17e02eda25bf8b216a6a0c0"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/151-2.jpg",
+    "sha256": "0696af0af2e4d770a2f31feb6360836f671dbec2a4352430c17d5974bc85a123"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_1768.jpg",
+    "sha256": "a3b6b2eaf54f7208ddee85ee5e6c13740e15b18397ee9c55c86972f44aaf0231"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_573.jpg",
+    "sha256": "42a850d0eea99fe17fabc301520d8fabde03c394afdb937b3507fa2e5a663d2d"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_2152.jpg",
+    "sha256": "8b05358d27f70f67e8b2af9cae04efac19adbb0ae29790876429a2b40c6f4026"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_1743.jpg",
+    "sha256": "78a024b222d5a625d47be9cd6ebe032667f67031f070b7a80ec8d26a564e1a65"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/319_sun_t_1.jpg",
+    "sha256": "0b27b5e189e16ba292044653c05fc2f80e38d6e37ead7d6020dddcfee0d8e2f0"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/412-5.jpg",
+    "sha256": "155b349631c42029f65f94ce6d6d08f55d3aedb23ea36385325c28e2b95f6b68"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_1822.jpg",
+    "sha256": "716256ca72cd0d76d635dda5cf071434e23ac2957c36763692a0d964bfcda0b9"
+  },
+  {
+    "char": "T",
+    "path": "tmp/blue-plate-g1/characters/T/debug_char_auxRoi_71.jpg",
+    "sha256": "33d9f8cd98463c2c147898892d56101054a2cd79e03cdcb915572fabf46092d0"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/310-5.jpg",
+    "sha256": "f02970ecac4dcdfebedfc1a834b74e1570cb98d8ee51081251ab30b361f406d1"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/122-3.jpg",
+    "sha256": "38c2d7118e4fd4ad36674e6cc722fee7e59e7a95969d809b16a6276cfa88da6a"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/237-7.jpg",
+    "sha256": "1884bbd185c46e82ec0280384e507bca38d1e0ac0aa138e0400e6113b4131167"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/572-5.jpg",
+    "sha256": "2cc1425a8e91061dc3d94281e21eded783aa70321b9e8180c2712d075f712f10"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/debug_char_auxRoi_1555.jpg",
+    "sha256": "cac984d1f172370e6a2632567e7a99fe21255cbee414328e70bc5270061d1b29"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/74-5.jpg",
+    "sha256": "f31a808ea4211f3f394d02e56992cbbe882b3883ab2405c41c4a93cea9107db0"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/161-0.jpg",
+    "sha256": "da22d4ed093f5b60c7d8dca396d2061847d70fe5ff1f5e5ac4a5985865ecf2df"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/gt_1950_2.jpg",
+    "sha256": "51551c21ccc94c6a68ef4e0915b6c5df9e3b9401b35cfb7eccd29f6e6e50aa67"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/357-3.jpg",
+    "sha256": "63e93ba44e428097bdb505ff61d4de318c2e19c15b9f4a0633befd777e7aefab"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/gt_1378_3.jpg",
+    "sha256": "4821185d155de91a8bfcd43867a16c997a762b4fa382d754f7980a2f2db6bd89"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/debug_char_auxRoi_2381.jpg",
+    "sha256": "f72150cb72fa3351e726379f1f75a4f423298c47dd01ac6ffea154797c6256a2"
+  },
+  {
+    "char": "U",
+    "path": "tmp/blue-plate-g1/characters/U/308-4.jpg",
+    "sha256": "5f07bb65c6ff7bac1eada0456920076545e9f9b35690736e09e65e508550c657"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/91-3.jpg",
+    "sha256": "a2cc45da8c28fbb90e4332eee808107f71735ab891b3a8d07ca63933a7c89ec6"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/166-4.jpg",
+    "sha256": "b4615432df639d91edd73d625888f2b8bfd83721a90a987fbd5b0648bdc6ed96"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/gt_909_3.jpg",
+    "sha256": "d9032bdf57fef00dedfaca56675ed5fc0714058e51d48c48956e3845a08e6a6c"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/319_sun_v_7.jpg",
+    "sha256": "7b584cbbd1410512490bd4368614e301defd43486b941229bfce894f9ecb1a72"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/319_sun_v_1.jpg",
+    "sha256": "a75f07e2c59ec68abcf1dcd3bef6915c0f31c781ec8c8adc83508670e30021ce"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/453-5.jpg",
+    "sha256": "9cbe1e3d978797a71349c3b3b0238c5f2ea8fe5c95f5dcec1d6e83c8bd4b5c1a"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/113-4.jpg",
+    "sha256": "05b7ebaa651f6289b5cf7e289db77e02e0514ca1a371ebf68f220c50a282f4e2"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/debug_char_auxRoi_2222.jpg",
+    "sha256": "c0e8b2b2cc09fbee371519228d168f18d2fffca328aea26611972acc1b7a4dec"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/354-4.jpg",
+    "sha256": "6ba430b44de8ce309bcca002483776de34cca1836661d700e60d2fb6a73205eb"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/debug_char_auxRoi_1044.jpg",
+    "sha256": "de98c4cfe2ebd37369ae633d242047cda8bcde9f37f4a63d188e7275828e3354"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/143-5.jpg",
+    "sha256": "d6c0e0fa22af144b1b84d8d56c28899cc2c97a2f00990bf4d6f98fc386adc2df"
+  },
+  {
+    "char": "V",
+    "path": "tmp/blue-plate-g1/characters/V/430-4.jpg",
+    "sha256": "99322e139e4b18bd4f4d698796d4f838673f56592c68868167eac0405fc963b6"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/gt_1230_3.jpg",
+    "sha256": "ffde35a15000266f20f1f4bdc6b44bf74078423dd64598a52936533755073d12"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/110-8.jpg",
+    "sha256": "06e9d80e32c0271c54484498a56323160c17df2528e5c3ae3d008e5bf58eb9a3"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/148-4.jpg",
+    "sha256": "f0111b1d8055a6567e5698753f42d2ff5cd995a2c50c356c0de15f9d708ab9e3"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/155-4.jpg",
+    "sha256": "19a8394cd7a9358e3e0076a6d80142992daeebf4b445696e06b769fa7967e2d5"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/gt_1922_3.jpg",
+    "sha256": "db92fade0ec626f9d015e01c43b2b19e45d923c1d46390a125da7d6b3287486e"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/144-4.jpg",
+    "sha256": "db2f925f112b1265cf42db70bfc388fea9123d19a5c6ae83dc740e29b165fc48"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/122-4.jpg",
+    "sha256": "43a233f178af1097c71f9b9489763410c258e8a6dfc6e31dabb3d268ae734c43"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/166-3.jpg",
+    "sha256": "0671f980e3c68f566734dabce87d8dabb086d24a9ed43e35384955c80d1e0f04"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/debug_char_auxRoi_2414.jpg",
+    "sha256": "bf829d50b19a1c2a699526be235c6e21502445611159271c7c7400283a7d0249"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/266-5.jpg",
+    "sha256": "b9eb44f8fa71aa7498bda95c7aab55300fad61fe26feb176e5907c0300a75cf6"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/349-5.jpg",
+    "sha256": "9d72372698ce823a4763642282a127084581a2d388ae7ace468f2c56f8826703"
+  },
+  {
+    "char": "W",
+    "path": "tmp/blue-plate-g1/characters/W/422-2.jpg",
+    "sha256": "f3da5d24a4dec7ce8a444cb13f47030cc505ca4a71e0f805c6a3d5c4a29bac4e"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/gt_1138_2.jpg",
+    "sha256": "9f6b3d5aea82be67d34b2653cc28ab4262beb22501c827342d0a011f6a55ab1c"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/431-1.jpg",
+    "sha256": "7e78084a0fd461596c5392afc96a63d0d476aa4018dbb09961ba8bd8d8952413"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/311-8.jpg",
+    "sha256": "1b123c779c980062ffba49fe1e6024ecb36b0a81d2702e2aa1237758d7dac233"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/402-4.jpg",
+    "sha256": "be78d83fb91d5e62574cc28fb60fd18cd17abd9b36513ae8e0b3e6ca1425db0e"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/263-7.jpg",
+    "sha256": "c96a6408fd0c67767680fc04bf58f83e46f21d8326ecff717075ead6129fccc5"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/471-4.jpg",
+    "sha256": "1b9726eb9026629d44f9ea6c703ba2b809ad8103b4b4762df6ccf69c77ef311a"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_1986.jpg",
+    "sha256": "c228469ef8a3f6d23331108c347e4ced2ba9f590adb4b0c9d73152234aa309ea"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_2189.jpg",
+    "sha256": "67de0d3e975c66209ceedb64961f458a226e2bb28422bee8e6679eb1897642dd"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/239-6.jpg",
+    "sha256": "ba668f7124bd1ffb11fc282b6eda0fcbdfe2176792bdb24a416e84314d4c14b0"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/261-4.jpg",
+    "sha256": "edc983fff0d787fdacd6696f614a9302db546e99b8a2b0854826b6f43080951f"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/debug_char_auxRoi_856.jpg",
+    "sha256": "ef310298fac378abe54458544f14291e5939986821f7afeb6215ccac9ade2f80"
+  },
+  {
+    "char": "X",
+    "path": "tmp/blue-plate-g1/characters/X/319_sun_x_2.jpg",
+    "sha256": "b133dbe341be520d8a34b99b15bf6b3edd2430495c963ce35474ee64459ea115"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/162-4.jpg",
+    "sha256": "8f5b920ca0c3990d32ce4f2db5c0473acbf79c762cbd3b04557bc954d153dc9e"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/107-5.jpg",
+    "sha256": "5d3ce2fed0ad38e6f0321d592f9ae54b0741ac3332bac6357bf7bf9b3a3e199a"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/267-4.jpg",
+    "sha256": "a156ebed0dae000864f35165e2789dfbab5e96c065030a7f7bbf6e965689337d"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/174-4.jpg",
+    "sha256": "2ca33a6d43cdc1426e719d0dcadcc81bce32e987995fba41c239225a41ee17df"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/gt_0_5.jpg",
+    "sha256": "d1dc0c7fc9a2b606183de5d10b21e9d8d9568c2441b7548abcf848caf9bbfaa7"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/203-0.jpg",
+    "sha256": "d6a6f34aa899943b761b62eb46e76f9432caa0048fc9cc9b1685666d0ccdaf33"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/gt_1699_6.jpg",
+    "sha256": "68a8622ac7a7696631b0caf6f5b8f1d8937fabf5632320b01dad07d44f4004a1"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/406-5.jpg",
+    "sha256": "e3a80bb5389072c25d105aab777cfae595fe4410adeb7ccef149850f73e53b16"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/260-5.jpg",
+    "sha256": "c8c835fab04b2d887e5dfa03cec4bdc8c888f38c068ea72fad2a1ee02d86023e"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/debug_char_auxRoi_688.jpg",
+    "sha256": "2cb69d6b5fe19e9e9259700c3508b913a4a63d268f06d5cdf71303237e92d7b6"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/494-3.jpg",
+    "sha256": "fd239c42b83d582bc4d913c776761c6804e076d9fef24e99ed99832cc412de6c"
+  },
+  {
+    "char": "Y",
+    "path": "tmp/blue-plate-g1/characters/Y/106-1.jpg",
+    "sha256": "81e5f97a540379d2e372b6caff2931fc298fd7a0351a1eab5279ee2ebd194883"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/debug_char_auxRoi_438.jpg",
+    "sha256": "9a70b6e4dd467f7979dd0b5b7b2e6db0503e7406ca7d956bc39cf2154da1d030"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/debug_char_auxRoi_1077.jpg",
+    "sha256": "25b87b6aa58bc6f9f457f792e91f68f3be3d5b4a5367d1a7b17095595dca315e"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/gt_1777_3.jpg",
+    "sha256": "b9a834c4c65cb22a25d53ed3520c90a02a9b8ba3c14ff7c8f0b202d971ccc017"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/gt_25_4.jpg",
+    "sha256": "93866952c69bf19e803c8ec56ad9650f7cd4f178deb917d1c24ef78884b784c2"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/gt_1865_2.jpg",
+    "sha256": "74ea75cfa5e89de6b89769591ef953c6395a16b18cfb4534e76e80443184996f"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/245-5.jpg",
+    "sha256": "1056880df8a0de348635445a0d39257d172c435ae4ac6fe74264e42532999e24"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/229-4.jpg",
+    "sha256": "612543255006eb954fff27fb121925206cff05645c996500441eed370cbbdce9"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/debug_char_auxRoi_1866.jpg",
+    "sha256": "cfbcf5db803c404072bc48b5657ac4622b9e28d942c74fecf41febc3d39157a0"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/117-2.jpg",
+    "sha256": "a1351bf2f5fa3787a1b91e5bb9353d2a716846349bfa87cf2bbc58dbc4484dfc"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/gt_1222_6.jpg",
+    "sha256": "e6d6e19c2ad19337e6ce23d1ff5dc64639dde60af28ef6f8efd2ca65cf21da13"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/326-4.jpg",
+    "sha256": "1985f3b39136abb7636952265a29e65dab703e75c8acebbf724b7f9c8f82ba6f"
+  },
+  {
+    "char": "Z",
+    "path": "tmp/blue-plate-g1/characters/Z/176-2.jpg",
+    "sha256": "e9a3dfb52f5cc8093ce183badc5e8be10c20d9bb9a747f570a3a9176714df860"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/7.jpg",
+    "sha256": "a3ad0ffed224e4e19f9849c39ab9aaca78ed622c21d6956911a969f583d62b05"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/1.jpg",
+    "sha256": "f8071bd1c1273c7aa2cec7332fe632dd4b157ce6a553ab536fe139b99b55d529"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/debug_char_auxRoi_96.jpg",
+    "sha256": "4987fc76c8227b787d99cdaaa0446966b27e631754da9d53aa95fecd12b263ac"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/debug_char_auxRoi_121.jpg",
+    "sha256": "9e66e3f1df0d313e280c68f78e0c7bb53befea5e0380c381665fd0c50c977045"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/13.jpg",
+    "sha256": "ce015181958b60482ff8f444280861152995da35f3dfe441a4dabf6a073496ba"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/2.jpg",
+    "sha256": "c6e3696a045b50cbce5903ec51ce57d199841472a9958af4ed0872bc27cb639a"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/22.jpg",
+    "sha256": "c9e9e4f2680bdeb6f0625b7f14573514ad331b34fbf7a4bf620b359fb83297a9"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/29.jpg",
+    "sha256": "bedbf1cc801cd5fe255ef3b52c279cc137ba6d053a425c884c95d2312c3089a5"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/debug_char_auxRoi_103.jpg",
+    "sha256": "f974e357d19634eae31f702dc044f7de5451694a2389e55d640c4a65b19a7974"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/debug_char_auxRoi_5901.jpg",
+    "sha256": "7163af67edd7a9d16fef9d22000dfca238815a7bf48ee5eab0ca027ffff73308"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/23.jpg",
+    "sha256": "93155b1568a5edf43d8843ae18c868324a7b9839e24d32660a5918fe6a6ee9ed"
+  },
+  {
+    "char": "川",
+    "path": "tmp/blue-plate-g1/characters/zh_cuan/debug_char_auxRoi_110.jpg",
+    "sha256": "b7d67ac5514b00868796873a96c439697ee96cd2666e9eaf82963a0859654df2"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_specMat79.jpg",
+    "sha256": "49443d864db1ee420f83828120fa1506c3d3e9b1376d40d10ef82d838237888e"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/1113-0-9.jpg",
+    "sha256": "08e57eda04c37bb3521e299d9087079026bd3095ca1ee3c2212c98f49717b7a0"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat71.jpg",
+    "sha256": "5859599041a52da41c64d734c8baaea5b1980d01dcc2027659bd187a43f568e3"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat139.jpg",
+    "sha256": "66f9144a0567272e8ffa1ea52fa61758ee3b56d5bbd7b8c6c759dceb827488ad"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat87.jpg",
+    "sha256": "cd94c18220173ba7d72afb342f2febe36e0acab0e13cb2990fe98cff24ed4e72"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_specMat95.jpg",
+    "sha256": "5085cd6b4ff1d009aa7fcbcdbcb97fbe0bcb4033ccb6ea83ad6506641366911a"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat145.jpg",
+    "sha256": "286a259f438ecc89e709265309c8f47d6a31655ec6242c08c648be0d7c57ceba"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/1101-0-9.jpg",
+    "sha256": "45b6aa300cf93abf2ff12f389bfbf45127adf80321cb4dcf9c6af3ac3741b887"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/1103-0-9.jpg",
+    "sha256": "cc4a211d6b0191bdf97b09730cd52d9cb246ec4b9545e8c8b42c9ef5aef1b14b"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat129.jpg",
+    "sha256": "0d2d9b93984a328715e61b609fc0be6b7094b483a163eaae5ff62ce4768e2428"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/debug_chineseMat75.jpg",
+    "sha256": "63f372d6edfeac7d6cb6e234ecd1e058a0cdd49f6f97f8bca8c386dd05d34261"
+  },
+  {
+    "char": "鄂",
+    "path": "tmp/blue-plate-g1/characters/zh_e/319_sun_e_8.jpg",
+    "sha256": "ba0b695be22287f5eac77ea0d9710e99570e9251ea3cd2059d4e2fae612cc690"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_char_auxRoi_2587.jpg",
+    "sha256": "fa5b97c25c9da508d3d7f39d4b8eaf7e945343244f47e91db2281e2f7e560383"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat178.jpg",
+    "sha256": "2e9982eaaa7398e9c8597546658828b48607b4fe1892367ff10f742c01aed388"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/gt_1893_0.jpg",
+    "sha256": "dda3d1fb182f9683115c6d2d42c990aeaf50ddf2c0cd0c14239a7f2172fb74db"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat102.jpg",
+    "sha256": "f50f0bf49fb04dc9a00527bca39bd0651bde3e43159b616571fc50a1eae10a9f"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat116.jpg",
+    "sha256": "2aa88be6b2636a8dd650d19bfa7e5e3e99570a24d958c3189259decfda9f992d"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat190.jpg",
+    "sha256": "12bac45d6f95a78076dc5def88a0f191f4b989d3f799b4b3a61aeca52464f892"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat196.jpg",
+    "sha256": "26039dc51585a4724cfffaf0296cab3ff9e9b20379c205710718eec48fadd41a"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat106.jpg",
+    "sha256": "1db2b94189058fba063d252f363320344b058eed113fd22fe3a78d82d2094336"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_char_auxRoi_2742.jpg",
+    "sha256": "321e164e43eccb65e0a01c91c3207b40d4aa77f4d01941fd7e90ca9de2b5c999"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat105.jpg",
+    "sha256": "797c0e85fcffe1e0b8b30e62e2791dfc2e7bee007eed8b312c5860fecc3fa9bf"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/147-0-8.jpg",
+    "sha256": "d0ff18d252d7cea463f1ea18351a711f310eeb0bb9dcbfa39f3cb1f65f3fe7f3"
+  },
+  {
+    "char": "赣",
+    "path": "tmp/blue-plate-g1/characters/zh_gan/debug_chineseMat168.jpg",
+    "sha256": "f9a6391e864c645fb051ddc7b22eea76934ec15ab72c79751c5dac10612cc1d4"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat179.jpg",
+    "sha256": "e73e31b1a26fff8a14fe4170a790a460d8079f28dbdcb4988060f56faa514039"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat184.jpg",
+    "sha256": "4b55b4d787d74d05bff5b449dd076b8eae088e571c81f149b69a1da8208a71ef"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat127.jpg",
+    "sha256": "23d6ba427a459fbec96c277ede9b842c1b304dd5326c9c9f7f77fda4d574a999"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat185.jpg",
+    "sha256": "fa3288dbb13dca43cd26da9f6959c7702b491dbd3e6e603ed48ded378c38f54f"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat150.jpg",
+    "sha256": "c807588696257fbe9bfd7b5d590ceed3852423e06fbfda11f14a5d27766fb61b"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat129.jpg",
+    "sha256": "2aaafeff01e8de5a7fc4b2d9654b83242d7776b01b2d70d684cd4b36a6a5bccb"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat125.jpg",
+    "sha256": "d8364ba1aa13517c77e588d55fd175e053ac866aa8845a98ceebdb01a7ca9336"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat143.jpg",
+    "sha256": "1ce604a65608a1de53c4af49336e846a0c831c63bd458c9b4894cae3797b9fbd"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat133.jpg",
+    "sha256": "b3f75519fc9812c5851d8bff7d51414b1a19f9bd01d8d5bfcb2dc58725729ebd"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat141.jpg",
+    "sha256": "f7f5c807afde1003dbb86a0ecb70f1a85cca054275b7b500784443045c02cdc9"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat173.jpg",
+    "sha256": "ee32231510d8b5d0d060c78ade113c291ab6c6b3bc40064924749789ee18ecab"
+  },
+  {
+    "char": "甘",
+    "path": "tmp/blue-plate-g1/characters/zh_gan1/debug_chineseMat154.jpg",
+    "sha256": "1c11329675c30870c509bff6fafb781dc163808f823ee5cff958927adc317db8"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat215.jpg",
+    "sha256": "547e5ee68225e6eb3e4d4356e1fac6b5c5f88ae2b5187b89712961bf48548f12"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat216.jpg",
+    "sha256": "592e846d402704a6b4d6afce71cfd2c64a71974769da2374987c952e2856ea07"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat224.jpg",
+    "sha256": "e730a7548e9832a0d5a7a764290d48fa90c9fe5749a83b04938ed0b30131956e"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat232.jpg",
+    "sha256": "b89ef0b10116517ec7648529a51bb585c7bee59b5b2e077a2b656e5b4b13b16c"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat218.jpg",
+    "sha256": "f7a713f2918729e7096816877fe4dd4f8be708f61731224c09124ecee6f57274"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat197.jpg",
+    "sha256": "c12133ea6d914dd2c34c0c48180589b5f79c40e2f0d9a556bf7f0ecaf15ee802"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat201.jpg",
+    "sha256": "75ded012b54b1dabfef1c660e84408e610efaeb2bc077ca6174ad48962420459"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat205.jpg",
+    "sha256": "d87f6661c0ad6aad3e8cb107cdbfb6e3d3a72a04696816907071bf2f1c0abc18"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat195.jpg",
+    "sha256": "e3658cccb801d5bdea6bed7be61786cb22f210c87790e6851742f1a3639d0ba4"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat221.jpg",
+    "sha256": "d9dee3bde34de1a42fd803a31f73ed7a7ee8685a4c60aa244faf0556eaea2ba2"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat231.jpg",
+    "sha256": "8fd2611a6fe4519f8a4fc1077da1e77ea3f45808a895d4d6d2fbc18fac8ecf34"
+  },
+  {
+    "char": "贵",
+    "path": "tmp/blue-plate-g1/characters/zh_gui/debug_chineseMat200.jpg",
+    "sha256": "589d79c249ce005e46ba21aaa3448acc8d558ea261b4079d7cb69ecb7e5775a1"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat316.jpg",
+    "sha256": "45d7552653f9760599c977b1cff257d5d34f77e3e6fd873651888d6b163cd306"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat335.jpg",
+    "sha256": "0a46611f0553c0444ff98467d91785075111990d418c444701272aed262bd323"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat313.jpg",
+    "sha256": "455f7b0ee447da71ee1feaed993e18f541817a30ec28a9bc0ada7df0b9093186"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat343.jpg",
+    "sha256": "8bf95954ca97d5ce40a363de0335f7435330ddbd0e3b5cb86cef1bda0922ff5b"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat300.jpg",
+    "sha256": "bfec0e6f05a86ad3825f41f70febbd54d90bc91b19da698d6e4f73fd48e8c93c"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat305.jpg",
+    "sha256": "d36119781d10b3130ee8e9864e348ee6dcb19bff07062cd5944fdf9ca0128266"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat319.jpg",
+    "sha256": "9ad037f8bfc4a93ec91269afd371834a71c81336d5896b7520a88fc2b7e962ab"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat301.jpg",
+    "sha256": "a1b71c92a6ef2948466d2bf9ac51247232f80a81f009aff7712bbf6d2ce0f0fa"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat303.jpg",
+    "sha256": "58b0827684dde6a809fd9c0a09de0bdff4c82777e107da2d56b653b55f2af0fe"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat340.jpg",
+    "sha256": "8f7c437711ae081b0e7c1474d121c7972f030dd1c8077bbcbb774b6eb4c4cf16"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat332.jpg",
+    "sha256": "3b14d2362cf3dde592bf5de058f6224304ff925a6086c7f46afb8335c1a48310"
+  },
+  {
+    "char": "桂",
+    "path": "tmp/blue-plate-g1/characters/zh_gui1/debug_chineseMat321.jpg",
+    "sha256": "95300bfcde71b6fa58158b3aa163e9120fa4a6e97edf61624d97aeef29047222"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat274.jpg",
+    "sha256": "8e5a7f55a3505c176156fd22ba0ac9efb2d3eddd07161192493e8155bb90e133"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat251.jpg",
+    "sha256": "2e6311cfed7cf8b4682098d1075f1343d7cfd683a8a7700ba5b029b1c82dbfcf"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_char_auxRoi_0221.jpg",
+    "sha256": "a4b4ff9313cbe185804e55373e95dae58985f614866c776ebef499fd58d3463d"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/67-0.jpg",
+    "sha256": "c72752b166f6f72a90cdd23093a560083dc4c2f79a62119592d40c905ba01804"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_char_auxRoi_2795.jpg",
+    "sha256": "1da2a29ea9e3fae3ddf48f2bea4e57c91a599eabfa159bd7ec186b61ec67d41a"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat296.jpg",
+    "sha256": "d789d73ebe9a00946aaa5ec9fc1dea210642d96a2a9800d63c85156064b27c6f"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat309.jpg",
+    "sha256": "0b3d59776c80cc831ae5ed0b84abb3a3956996e8c4423aec6c8de1155a354431"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat276.jpg",
+    "sha256": "42d348df60d26b5890a63e783f97b58ec9b73b1567313ee7616308bac3423f32"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat231.jpg",
+    "sha256": "8c7c5060e309ec7334e8a0279e6a6b9cdd5bde89f731a0a5b9d28aa23a587c30"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_char_auxRoi_0220.jpg",
+    "sha256": "3f683576e784c5aaec165474c71f3b1fc2604e3604745dee11e69a7f005d5e7a"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_char_auxRoi_0219.jpg",
+    "sha256": "e63b16805efd458b698b96cf047fdcdaf952d8b75dec604e489fc03abbc9a131"
+  },
+  {
+    "char": "黑",
+    "path": "tmp/blue-plate-g1/characters/zh_hei/debug_chineseMat314.jpg",
+    "sha256": "5e87b14cf49f67af4d4ac376f57ca8a139651d9f18a3ef954c2fa2d4436fc9fe"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/1-0-3.jpg",
+    "sha256": "4cd84a2dedae89bcd7cb3eb600294a8ff3777d6bd1bfb2ba02c4e755272fc221"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/97-0-9.jpg",
+    "sha256": "b87f3f7383cca1062042c41ae785e70070e44ff42e8b0e2f73b8fe8cd04b2b4a"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/debug_char_auxRoi_208.jpg",
+    "sha256": "f4236564c7637df99c340557599530424162c64c379b1856d2ec882fceffabad"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/0-0-3.jpg",
+    "sha256": "27b28cbbec148c0173987b30a700c1cf152b43cafbbb04552c180667e78e208e"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/3-0-3.jpg",
+    "sha256": "6d7296b510963406805884f91ef4a8c342795753db3e37b7976e5ab29d1561d4"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/2-0-3.jpg",
+    "sha256": "53247e7b08afca9e2973cd5f5bd5f8a828c0c2bf9fbd89e3af667f23e5551099"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/debug_char_auxRoi_229.jpg",
+    "sha256": "fa46fcc5c02cda1711efdff03043ea87c3acc15811cd5e8b71af0f7ddd438e9a"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/35-0-8.jpg",
+    "sha256": "c486b9f7c15711ab3894cb784e579ac1177009d53fa43f6c4e0357ee8505a9a9"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/debug_char_auxRoi_166.jpg",
+    "sha256": "f22a78048da70678c5c978873b749732d2473cfea861dd414e1ad97e891fabdb"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/266-0-9.jpg",
+    "sha256": "7ee3d4d5ab31c24eae6b720b4039444759584f024875896e892c993d29f83e80"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/10-0-4.jpg",
+    "sha256": "177adec948651dcfd091f84e204dde144f89c5bb40a40d9bfb371a17aad26f37"
+  },
+  {
+    "char": "沪",
+    "path": "tmp/blue-plate-g1/characters/zh_hu/301-0-9.jpg",
+    "sha256": "9d33aa4313753e96ed1f116e945a202216ad747ba5e8d2d5328520f2880cb292"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat375.jpg",
+    "sha256": "1caa1b48323447894b7fb177d76206a872638c780023678bd86ee6dfb2fa8c20"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat402.jpg",
+    "sha256": "9e303554c7cd72b00d78371532a83d85cbf401c73da3c340c2df46d9b66ba995"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/6-0-8.jpg",
+    "sha256": "e1223446684f1a0f96e254c9bf6f9e7e48d32ab5e86f7ff0a647032b63d9484b"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat361.jpg",
+    "sha256": "355c345c30ca7048070556975c48c1bbb7b16562d2e4f651a401224cbcff5de0"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat407.jpg",
+    "sha256": "ba3808dbb0674da63d94dd67c62753e9be1a84e9187e1cce3ad68a1bee1f8b75"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/7-0-8.jpg",
+    "sha256": "5b1c2072c46daaed5f43d3457bcd4519b8fac70c289652267ea36fa1ab83c0a4"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat13.jpg",
+    "sha256": "2bd610dc0ac9485ed878a7b06b07d9b89361a30ce3c7b2051a22263fdca99a14"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/45-0-9.jpg",
+    "sha256": "40be137189a285deccbdee8830c2319d1e9873769ffad1b022cd9b8175434490"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat379.jpg",
+    "sha256": "d7098b87c1a179b43fd4ace6f50bcbb65bd3c25c39a14169b608d976f423e0fe"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/37-0-9.jpg",
+    "sha256": "7deef3c14d39b7fbbb9f8ad37e2e49b481b5943e8a5727d0e5f91d26e62fa094"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_chineseMat333.jpg",
+    "sha256": "eef84a821cbf30be7354c2f9b05b775f7e1b75c711f53e973b4ba02ebc0d0503"
+  },
+  {
+    "char": "冀",
+    "path": "tmp/blue-plate-g1/characters/zh_ji/debug_char_auxRoi_2641.jpg",
+    "sha256": "f6675b472114ee0a2eab66482c776b3d7a5bf2610dcbd3643c1a46ddd145b6e0"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/386-0-9.jpg",
+    "sha256": "78871fc83206c04e05d09aab1d72414aa059754ee7cfa5d7c93d29825f687feb"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat476.jpg",
+    "sha256": "4ad66adacea5b2d5e04d85d8f916fe327637f940feed4aead22732b228e40750"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_char_auxRoi_685.jpg",
+    "sha256": "12e6278feacbcb2cd1a57cda7a300ea086228884fcc0abd0d0c8ed9a0ae81acd"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat60.jpg",
+    "sha256": "ef8521a67339f107eae49e62e9eebb8a7efd4dec0a001262057596dbb446a8e5"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/tj_7.jpg",
+    "sha256": "62490a1547ff5c2dee002a9deb8fcfbdc10a2e96ccfe77a6c45be0c689537599"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/tj_1.jpg",
+    "sha256": "518e3412ef9d30711b4e6df4f0d4de59df29444e4dd97b9d5bbdfa09a9074752"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat56.jpg",
+    "sha256": "85884d3e47d1e219b3cbebdd92730670443856e0eb84eaa986231e4db41de20b"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat55.jpg",
+    "sha256": "5b9da80449ed62810e191036ca6b41553df363759ac0bbb52615d6b2d9328bcf"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/0-0-1.jpg",
+    "sha256": "a6dc21cfcc74eecbdc0eb54c7d5d42fafb084df09766c516d12f7cce8f8f6812"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_char_auxRoi_606.jpg",
+    "sha256": "260b5f4d3dc63a92c841e57b509c27c3d1294c39bc9930c34237888271d2a517"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_char_auxRoi_535.jpg",
+    "sha256": "9c5a3e99b31c896d9d3f5ec1c17d0d2f40d38d72b8aaa8e8acf191761a7ce284"
+  },
+  {
+    "char": "津",
+    "path": "tmp/blue-plate-g1/characters/zh_jin/debug_chineseMat448.jpg",
+    "sha256": "5c00128b00623cc58579c5b5781f2026aaf002df7e9b0164bc5d875578222093"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/debug_chineseMat11.jpg",
+    "sha256": "7bfe56fc2e6343f8655168c4d3a458a6d1ba8d97028b0908800d5f348977004f"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/debug_chineseMat0 (2).jpg",
+    "sha256": "eedafb9156bf725a471bc2cbbd7fabb0b3b78bbf1c1d6be9e4ec725cd19064a9"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/11-0-9.jpg",
+    "sha256": "c947900b07856ecfc0a9dae32feebfb79456501612e0b0f5b90378c02cc5222f"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/0-0-1.jpg",
+    "sha256": "946860971005576220689c6c48df0ecba4eef702577b14499ab4cb7bf8eaf9b8"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/1-0-1.jpg",
+    "sha256": "446a83625a24d0053a5d051c494d6f526e30dfe8f7bd19f75e9491365fe168d8"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/11-0-1.jpg",
+    "sha256": "c81d7e3d88ee5b8749ae593ab3a2b789cd20c9ca932f31022ccaf1cb03e6f2ef"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/5-0-1.jpg",
+    "sha256": "d2efd265f1ff85796c08d598b451e2d2a4fad700b8c441d4e061a9fcfdf0cf72"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/4-0-1.jpg",
+    "sha256": "4c8a84c1a53e4d2f077a99e12676d60597afaa0cade697c6a9179b3778dead05"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/debug_chineseMat61.jpg",
+    "sha256": "82ca073c34bff908f5cae2250e9e6b009fa247c2be0260256674486aa4b5094e"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/3-0-9.jpg",
+    "sha256": "43c77dbe3be7a4070a93da13007cc7ae273e7dcd68e08517a8112f66f802e61f"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/8-0-1.jpg",
+    "sha256": "82de17c433dc27bbec3d6b81e9e981c8ab068565903740a6e4bf7cb24240919a"
+  },
+  {
+    "char": "京",
+    "path": "tmp/blue-plate-g1/characters/zh_jing/7-0-1.jpg",
+    "sha256": "e6c3f28a15bc03d63be67ec31435f35f2036c622f55d8437cbc1ea22e11d8dc7"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat865.jpg",
+    "sha256": "f8b2dc142eef4df288a2ad83d0688f96ec3e20cb3ad476827022963cc9438113"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/60-0-9.jpg",
+    "sha256": "c5c1a57c22abaf9fe2d9a20add1e0fa67f9a35701c3573ff3bd5338ef5f48239"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat855.jpg",
+    "sha256": "796178c67998ebfbbc8a80bac67046163d7949924394253c38495a134e2501bc"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat868.jpg",
+    "sha256": "c9a6820ab36a7ad1f52e55bf3d6e82cd22a7262197bd748d7a697dba315b198c"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat907.jpg",
+    "sha256": "666ed1f1ca2ac15ac481cee9ac8a4b772b8e01d98812b994b2e642df01127456"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat864.jpg",
+    "sha256": "369c2ce9100af4b6eeddcba754fba7304353024603436cae2b7d05bc7bb807bb"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat900.jpg",
+    "sha256": "943e6dd05fcfcbdfc414d9092dd11479da6c003eb87dc401c591cb8d82de98bb"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat860.jpg",
+    "sha256": "bd7ee8a8701243e1e242c3b61f52787af8715f329c7b592f9300a1e249ac341c"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat866.jpg",
+    "sha256": "ebb5faffc6cf044f132eefef9a98e6d74f10493e669780146e33692ee898000f"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat870.jpg",
+    "sha256": "56c602e3b2fd20c56993245b203b788dc38899acc8dbafcae1cc3c2f04dd38e8"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/59-0-9.jpg",
+    "sha256": "393adefa776d06bc962fb4c29bc65723f9f3a80428f3372646d857b64f6f9e1f"
+  },
+  {
+    "char": "吉",
+    "path": "tmp/blue-plate-g1/characters/zh_jl/debug_chineseMat858.jpg",
+    "sha256": "2c03e67d95722a7cef53104fc74e7bd07ad652ed7456629c2b8a9c44e2f35608"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat955.jpg",
+    "sha256": "652a6ec12c00116b5ee631df65fb8ee7a8f674a5bc0efdec78a069f685a423cf"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_char_auxRoi_0204.jpg",
+    "sha256": "28acbbea48c81a909c6655219a0827f67bc62d3df8832be25f091db1920cdc5b"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/319_sun_liao_11.jpg",
+    "sha256": "834b6707e81e32741c394e67116ebc423ec8405a051ab488d10cae3365f663bf"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat916.jpg",
+    "sha256": "48ff11a4feb252ff3601dccdbea45f90d2906752452d63064a7ad6010f163dfa"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_char_auxRoi_2643.jpg",
+    "sha256": "07d7cf6086c211837e8677e481906517c847efdbd4cfa1b5576309c051e53612"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat909.jpg",
+    "sha256": "8b50394c7e25f8de1bbbeeebcce710e461982e2f138f4a3833b586abcc80ddb1"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_specMat200.jpg",
+    "sha256": "0cfc0064b289f22264a5bb5fe9225c6109b839c40ffe92168db06a4d6797f5ea"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/gt_1911_0.jpg",
+    "sha256": "6e58c03a947cb94f66028df369259ff7b6b34bd798e0de1136a77221dbae198d"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_char_auxRoi_2812.jpg",
+    "sha256": "190c08cd9ce3a4be1cdfaac84170b0d62c52fa6f29f102ec23a197859c073a51"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_char_auxRoi_0205.jpg",
+    "sha256": "64b7762afa4b4d1fff304c3d313eca5ab684bc902a5ea1002687d6c76c012aa4"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_char_auxRoi_2650.jpg",
+    "sha256": "acb1c4ea1f3e087ee8a000cb61526972610f5e8f094b4f5eeebb910538cd82c1"
+  },
+  {
+    "char": "辽",
+    "path": "tmp/blue-plate-g1/characters/zh_liao/debug_chineseMat202.jpg",
+    "sha256": "5d349c7230a7c3ea9b5e1ba3f30a2f6e372f722980ae85c43f1f13308eb16a3a"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/debug_char_auxRoi_0213.jpg",
+    "sha256": "07e0c48b68a1c581d62f34f1d51208fc58702f1bf5d6a0a9bec0290f5d21b921"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/debug_char_auxRoi_0215.jpg",
+    "sha256": "744dc1c208fbd3af33a1112b1891eefd19d859f48c1d1e38be22e91dbbbe47e5"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/66-0-6.jpg",
+    "sha256": "b6105b9ece2c0f3a5ddb1af22ecc312b63ef47496e1c46ab941d273be65350c3"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/157-0-8.jpg",
+    "sha256": "71b8a90e68a4515bfd485ab2ee9e94778a334e8bbae8c90c80f3a7739e2031ca"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/1182-0-9.jpg",
+    "sha256": "2b3bedac508437864b0adc5ec37e1aa3646e51ec33dbc515f125c0140e6a5785"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/1181-0-9.jpg",
+    "sha256": "6314667c106440189c16ca6ba4276c57430391ecdde5b6eca509a9cdfd9105d3"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/159-0-8.jpg",
+    "sha256": "14218774ae754f5edb033006d654c044f7fcb22967378462f92eb6d2303f3eaf"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/debug_char_auxRoi_0217.jpg",
+    "sha256": "44cab71ec2882911ca1695402d51eb61d5aca6ccd95f5b5da691969db30f66e3"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/debug_char_auxRoi_0209.jpg",
+    "sha256": "b44ef62f3d9b222c9f8a19f53c2ee5e0b59fc6382a8f60a120b1071a2fe09675"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/327_sun_lu_1.jpg",
+    "sha256": "44afbf1f052caeeeab1f811681f734884c72f6cbebfeb2a6c3ddfe8ab354bb3d"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/debug_char_auxRoi_197_0.jpg",
+    "sha256": "454a85846edeeebeaedb6b01061d143d2c2f861f5820bfeb68c922e0bb7d92c6"
+  },
+  {
+    "char": "鲁",
+    "path": "tmp/blue-plate-g1/characters/zh_lu/debug_char_auxRoi_0212.jpg",
+    "sha256": "71fd3ee20d33cc5a2f393bdb5f05c8ce8a27034af7a89bc960882c0ad02d0095"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat416.jpg",
+    "sha256": "4d89508876eb40220e306a24d0aeeb7e52ee418a53ab53a5c4072c8cedcf4819"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat349.jpg",
+    "sha256": "f07eb114ccfc157be463e0a9ae2c43472ca00da9857f51e0fce0af27c3e5d207"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat393.jpg",
+    "sha256": "8c1ac3c44de94be469455fe0668ac0f5070d45d1d1b343bdc4e653044972acb3"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat395.jpg",
+    "sha256": "a64b89f7fb4d13683b49dc19f2a977eb928252e04bdb5428230ba787c46c7e86"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat378.jpg",
+    "sha256": "0bfb1c206f67c9b72d115b45ec11d923e552595804066c4a8891eaa3f174d6ac"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat386.jpg",
+    "sha256": "d859631e0f6a36795f7e4f32474ae836ef605a9d2fd4c969ca7889f3be7756d1"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat350.jpg",
+    "sha256": "e6dc2ed4f6bdfc5b69a99d3550161542288a3f1bd3257fe3a309c04b190b189a"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat379.jpg",
+    "sha256": "42fc15b122fde982066453766d3f80da143f10c211c9bbd56f7df9897e226aae"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat368.jpg",
+    "sha256": "d620fadfd9171af4588b7971460aa5fe6bb37feb01e761372866420be7321efd"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat346.jpg",
+    "sha256": "32c5722aa800359177c69f2716b15be04b75af701414660f5d4ee8604b8864e3"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat356.jpg",
+    "sha256": "6d0a29029492b0472883ca83f69ca1abcffed0659996705940b7345aefbdbe39"
+  },
+  {
+    "char": "蒙",
+    "path": "tmp/blue-plate-g1/characters/zh_meng/debug_chineseMat388.jpg",
+    "sha256": "5e513ef0d3224ed5ced845f7ac62671bfe84d636bda1ff6135fba569b3cf5e0d"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/debug_char_auxRoi_2664.jpg",
+    "sha256": "1239498a79976e3cb2497404f7e5836620dc710acedd948e590288bc9b191031"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/217-0-5.jpg",
+    "sha256": "7a85823fbba10e099dff4c2a6ae703bb7d6d15084a6511eaeadf571219a9f019"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/1140-0-9.jpg",
+    "sha256": "300b9b437201bcf7524441b12f18640a0ad7ddec8b8f6fd98e637da400366267"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/debug_chineseMat1025.jpg",
+    "sha256": "c928687b1a8dfdf8ad6ab2d6973f7a15875e56dbf57cacce0c3d00e4a5cbe410"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/1133-0-9.jpg",
+    "sha256": "6e3263dcbe530e28b7c17e92313bf66b6212bef614184d19c11216c3484162ba"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/debug_chineseMat1006.jpg",
+    "sha256": "46aaa76aaf7493185a96900b5c61d7c2e56621a848f3783c7045fd2f72ad1620"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/gt_1948_0.jpg",
+    "sha256": "e4041e96917bccc910cb923f3afb3c4fea891f8efe4a982bcd2f8c980513cfd6"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/1138-0-9.jpg",
+    "sha256": "0c9eb23a15afeaab5c1a172573fd6383e2ea88e0f761cafd5452e0f0bd08fcf6"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/1142-0-9.jpg",
+    "sha256": "923382318fc26871f7d9911dd2c69d1cdecaa51c2ebcc97456bb7848879b6c73"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/1134-0-9.jpg",
+    "sha256": "86ea8a72459fc273290fe655789ec7faec59ff013a6d53896ff61153deadb931"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/1137-0-9.jpg",
+    "sha256": "4714e2f7b6199ebc0815a6f34c8cb87b51ac8b7922b749df324599d4e7b2db99"
+  },
+  {
+    "char": "闽",
+    "path": "tmp/blue-plate-g1/characters/zh_min/debug_chineseMat1002.jpg",
+    "sha256": "f7b0412b43a41f57f162d26ab63591d569288c360257abdaea76ddd169605965"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat452.jpg",
+    "sha256": "6ef7a9b2b7cc0fc83751e1fb793d882a216ee353e758225c62512f5a17f21461"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/67-0-9.jpg",
+    "sha256": "a183465942395328b9e15869b20864bba1c050636551f033ab17a261c7b9c7e0"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat433.jpg",
+    "sha256": "d3003ea08158cade843ad1b5567af7198552c1ce456f94150ea8cb17336c734a"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/66-0-9.jpg",
+    "sha256": "c32612f9122643b1845b28cb532e091db2d31707eb8b7cfcc95e0c7eb00c710f"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat436.jpg",
+    "sha256": "a811d500291ff79d67337f17e070edd2402e3fbca47f238d061a06f485b5aa18"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat435.jpg",
+    "sha256": "e4e603dae2866c9160e56617e184e86dce60a1d37000896b5d67979a1d527a2a"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat437.jpg",
+    "sha256": "1294b6acc707fed53b21a585222a29cdf11b7a90d19fdac10b157e8bc5bb2aac"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/62-0-9.jpg",
+    "sha256": "33844901bf3dc95fd5ddb3b8fe7d97105902096ce768721a2c4ef914f8c0bfed"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat447.jpg",
+    "sha256": "02a97d788c0d74e21f16de853c4450e913bfae6e23490862c42d0b1ff801b7cf"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat438.jpg",
+    "sha256": "95b034f25333aa1425ebc1fb5c2751c91932ba38975c937c2805d7e9d4777bdd"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat457.jpg",
+    "sha256": "e5400943ca8ea96a38f41c6f85634289d91ab49a88c2df5bc21b636e115e1059"
+  },
+  {
+    "char": "宁",
+    "path": "tmp/blue-plate-g1/characters/zh_ning/debug_chineseMat449.jpg",
+    "sha256": "d9d0b4f18cb458e8a3b7e5528e65f4167cbd647b81a4d26d16e657c31d726af7"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat10.jpg",
+    "sha256": "84fb3059543775234a4994b9bb18e46289a072c7b6cb00f159a02807d6ed9900"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat103.jpg",
+    "sha256": "bca420dc3b9fc80abf9ef418eca7171060aebc7dd250aa80d86cd8c98a180e07"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat2.jpg",
+    "sha256": "f048eedbd999a4f54d8eb7bfaecb7aa21e9250ca50bbd0a6d2f9775d80dd829b"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat11.jpg",
+    "sha256": "f2c1521b269b00c3951aad2d55288df99d2712222e29d3bb9f60e2bb1aeea1bb"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat19.jpg",
+    "sha256": "cf5e664133e43a435c7fe9bb7204e108c579cacfd6a0a051885bdd8fc85de36f"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat60.jpg",
+    "sha256": "92ba78a2d5a16f10859caf6c438a799612bcd2242a548b8c5ff4bd14aac3636d"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat40.jpg",
+    "sha256": "8e6596d7cdbf80eab2e174354cc8bcdbd41956f63e8019c1399aad2c24a79a76"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat36.jpg",
+    "sha256": "8b1887ef9dd36701038d1b170941e85f468ae74e636cb2ca83dafb1c977ee995"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat12.jpg",
+    "sha256": "957894739154a55093d4c6adc9dfa9eeff6bc2853e09c7214214fbaa6c9de4f2"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat104.jpg",
+    "sha256": "334f709f35d5fc492cd2cd18b2ced1d9c6a0f9e52cb5099c4a9a3213d3edd254"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat41.jpg",
+    "sha256": "1b7728091237162669489a8f39df886ef50b39ff92bcdce28c257d0f13ba09cc"
+  },
+  {
+    "char": "青",
+    "path": "tmp/blue-plate-g1/characters/zh_qing/debug_chineseMat42.jpg",
+    "sha256": "5a47aac380141faef1ea61705b7a15dd7bfcc9d06e13832cd24cde30fa42eab3"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat106.jpg",
+    "sha256": "c281c68497bbb3f95e0fd157a7b72f5498800d0794fd0885599e3ecf3c57f57d"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat146.jpg",
+    "sha256": "8853727d15da64971cce75f7e0101a64b48d5f6a8eafe7bdf8b32b395ec864bc"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat133.jpg",
+    "sha256": "23dc315c8d3c054365553fdc3e3cb1e82c79c3ec24849eca5adde3e974a24799"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat135.jpg",
+    "sha256": "da46301a2ec0d4c96d76efd27da71f30a8c2a529a74a28bbd5d3ec4f7feb73ee"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat115.jpg",
+    "sha256": "cd7b806ba4502dc0670297738625e62193c737130eed19c10a539e891ea31f1e"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat134.jpg",
+    "sha256": "a10c454232d6bb0f1ea650e011ba571bccf2908b518d39fc79f61d13369b8a3b"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat121.jpg",
+    "sha256": "4f2761a754f5060d9bbbc9d4ff06ec1865dcd1a64311445918fde3e2762e4cb5"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat112.jpg",
+    "sha256": "052af981c10b2924825ccd0dfacceee25ce276f19b7229aed19a9a1660ccc31b"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat126.jpg",
+    "sha256": "6cbc0d3ef5f3727297d2ed55bb65b700302596d7c64f758abb7365349de87a88"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat105.jpg",
+    "sha256": "cae42f67df1dc42dd138a3085232eb5d8733a5676681835c274f5e860f226f4e"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat122.jpg",
+    "sha256": "85a70bd6c43f932a6d2d794c232c577a7b4578b471ad0a0822973f5bdfaf313c"
+  },
+  {
+    "char": "琼",
+    "path": "tmp/blue-plate-g1/characters/zh_qiong/debug_chineseMat143.jpg",
+    "sha256": "dba2fb06dc14237904b794817ef7280972f8e39c40674d12aabdb1b3cf5f886e"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat529.jpg",
+    "sha256": "efc123333660f849291e6dc9924138011a2cb05777fa4fc164d7eb0451e80831"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/gt_1965_0.jpg",
+    "sha256": "02bc52a4ce4c6eb23cfebf1ce07e0040bad0353aef4fe15e8dcb94af59077966"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/1153-0-9.jpg",
+    "sha256": "0e89ed377dd5680644c2f2263fdfb84d0d86f8162e78cfe44dc9f01e778e2f31"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat538.jpg",
+    "sha256": "81218d3661e343123c5ff30c75922f7dc60218bed7999f9dc90a4dc28b4fdd2d"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat540.jpg",
+    "sha256": "d7e8a9844d08459190e9c72b53a9ca817f0ae6a8a0f153c020f845a0ca01539d"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/1151-0-9.jpg",
+    "sha256": "6f497206ef6780bed8369ccc7abc5c616f26aa59581842515b6276d716996036"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat516.jpg",
+    "sha256": "32ce502eb4b4f76dbc2359b940c4e8da61dc36ce6de618bf536f66939248a794"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat465.jpg",
+    "sha256": "ae60576248f05e659e4b48ada16df4a901cccdb657920daee45896aee7012366"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat476.jpg",
+    "sha256": "d45930aeeaef7387328980f3de60da1ee6924fab827e40b92cc8e44d04a367a3"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/1152-0-9.jpg",
+    "sha256": "758100d9c8e6a06b92f891eb007b8a4e3fc0c65c42e8cc35cfc53d0945801631"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/debug_chineseMat488.jpg",
+    "sha256": "4a0d085bbf9080bbe101a025d6e30b60bb128da6c202b80a6eaa6474dea8233d"
+  },
+  {
+    "char": "陕",
+    "path": "tmp/blue-plate-g1/characters/zh_shan/1149-0-9.jpg",
+    "sha256": "9aa881f1557fad84bdaffdab59b47903d0be9cb39f8e3e5c515af8133dca7925"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/debug_char_auxRoi_2427.jpg",
+    "sha256": "9d9160c3c72eafb8115fbdb9bdaa60ff32ba879d5302c8c0ffc4ff3bb12cda20"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/67-0-3.jpg",
+    "sha256": "0b21a7ade4e242477d60c84cde69365fab714333f6669152bb90e9c5dcd93267"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/120-0-4.jpg",
+    "sha256": "60668fb3926c9d4c624452fbc11508d1c8b7328fabe2389a5139a476c92ede75"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/45-0.jpg",
+    "sha256": "103bca3ac7a5acf33b8f8d732ff0d3e7f7c2010b9c790a945ab66b405dca466a"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/17-0-3.jpg",
+    "sha256": "542161f02787ebdc1b13592d8f3834e4a8c47d6880ef79920349fad89764acb4"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/110-0-4.jpg",
+    "sha256": "ed1d08ae4c948b811d2c6854e53bcfc74f170d32cf23035dba20a1c9580906f4"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/33-0-3.jpg",
+    "sha256": "0f347a90398d72e98110c564b5511226d6ea493e1dd2ab075a06aa164c17f3c8"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/59-0-3.jpg",
+    "sha256": "d0cd6fbb0e8275155a4b8c0ccadadd447f3abd3582053ffcaecc568094f1bb38"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/28-0-3.jpg",
+    "sha256": "9f357dc3a48b75864cca36a3083d94dab521ad472c51f879a06a68aa30f6b9f4"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/29-0-3.jpg",
+    "sha256": "114fe0406b59c3fcb1b96ccc83c3a195391e079e566d9b3d45835913d0d763f6"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/22-0-3.jpg",
+    "sha256": "7738fc52cee3e23572d0cf3da5f72bb735f2d8da472bbcec1ea43c51695edfe2"
+  },
+  {
+    "char": "苏",
+    "path": "tmp/blue-plate-g1/characters/zh_su/185-6.jpg",
+    "sha256": "bc3b9834722a9c6aa557f90f5666300abd84a8f43f4a4d0368332d30fd67a9da"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/81-0-9.jpg",
+    "sha256": "9c9b0878ab65f4141ce426a387bb49d2af4c180e08052da97580f2fa50ab681a"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/debug_chineseMat658.jpg",
+    "sha256": "a892eb15393a2ce58b1cd52310ae058ed8f51730cce315b9932368140a947160"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/debug_specMat603.jpg",
+    "sha256": "c6c595b0835b30032ad2fb6f114e05ad684e38cb3eec1b3c79602fcb66f9cf59"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/debug_chineseMat616.jpg",
+    "sha256": "3d837891a446b84133c5f22f99797a40641d99e7d774439f152402451142f6b1"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/85-0-9.jpg",
+    "sha256": "925abbef695c47cca00452c551f5c2a5a85d807ac4e54942e47bf945a80a1d0e"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/319_sun_sx_2.jpg",
+    "sha256": "083897c3fd3e0678cb10f1f772a26181e98564391b22e0dc543ff53280890867"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/苏_900_0.jpg",
+    "sha256": "6c56ad29dc84ed0384c9f5d5f065b0fe5ceb501c158b6fcd2020e5f04e91af3c"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/319_sun_jin_14.jpg",
+    "sha256": "11c498eea93f14a284da5bca4b743c3f288ee6039318a94f11114b360c614786"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/debug_chineseMat664.jpg",
+    "sha256": "1b07bfc7ae6f8e55f1c4c4de6699e63faaebb2eaf81cb24b01dfaecf8b8417e4"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/debug_chineseMat571.jpg",
+    "sha256": "0043abdcc67071828d12d9fca5a0f5066ce29b70d46c340013c9baf8614efd88"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/78-0-9.jpg",
+    "sha256": "37f9539f3dd98c41b2a03bde157a0f8cf5d8d9b4fc1f5a6d9f801fc12cb01955"
+  },
+  {
+    "char": "晋",
+    "path": "tmp/blue-plate-g1/characters/zh_sx/debug_chineseMat567.jpg",
+    "sha256": "b19652bad9534640bd62d91e4614413c2c0e5562cba4c9b01c64a8794b929b47"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/13-0-6.jpg",
+    "sha256": "dc94fcfe55aa1630f4166a7bef2a786015aa5d63106392c14850c0100957f0e0"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/17-0-4.jpg",
+    "sha256": "ae853a29717f713e8c48a5cf2564ad762290a48e2ab9c635191f6ea1cf339c8c"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/840-0-9.jpg",
+    "sha256": "7961070fd9a6166eae8607351bcc34e73464bcf402470a8743dcedee74e9c66c"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/830-0-9.jpg",
+    "sha256": "3ec9bb8054d3c535a67ca2bcdc9dbd16d88cdbd444d813d1f06c7354aa554542"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/debug_char_auxRoi_1716.jpg",
+    "sha256": "e0a02b6ce9800e47ff3f1d92810515fe426310fdbced3aca5d6a272890bd963e"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/849-0-9.jpg",
+    "sha256": "ae5af7ebe58187224ad2c7087cf17ba4a16f33f7fff0d2059abc9bd6ddf4c34c"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/949-0-9.jpg",
+    "sha256": "d1ba41dbb0e333f0801a5d9a41472e7be06bd1563cfcac81f5d05865ba4438d6"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/817-0-9.jpg",
+    "sha256": "1b14286756299553aabaec451bae99c98880673e7d43f8dd1dc401d09bf41a5c"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/debug_char_auxRoi_1864.jpg",
+    "sha256": "a35db4155e8999623687ecc759ae6fc4776d789bee09d2649d70d921a336bdf5"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/17-0-6.jpg",
+    "sha256": "c64e03bff9baa2b5350712b7f4acf9dde55e783d1cb04136c6a8c4d76af4cea3"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/debug_char_auxRoi_1772.jpg",
+    "sha256": "c56c5727e344b55c4729f190d929053a11085225e9ae604bf578b58d2ce25175"
+  },
+  {
+    "char": "皖",
+    "path": "tmp/blue-plate-g1/characters/zh_wan/26-0-4.jpg",
+    "sha256": "dd98cb337d02b57487aaa988b1a865cabfd66954e1d4e2405b8b7122f8a40adc"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_093.jpg",
+    "sha256": "afd35c90aaaf90b5226eb124fa7f0e7924aa3354511795da44b40784d82fc85d"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_1642.jpg",
+    "sha256": "cc11769cf864bda58ebb8c54082c1f5c7832c53d3b62b5702369a55dce21975f"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_098.jpg",
+    "sha256": "02970d206d8f67a407854cffe804bf36355277fe8e202afb44f94a05fbcf69ae"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_2763.jpg",
+    "sha256": "9c8f6acda87939fe991380acdf65ccd75e78ef7895092d3f8e3d9faeb7eecff9"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_1184.jpg",
+    "sha256": "dbd8ca4ebe9c0ab699aff7ca629d17992b2300efb122d3d156cf1dd880330353"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_1374.jpg",
+    "sha256": "a8b2ecc5e8266369dcea47b34e0650bde5e00e4662dff8208243a36dae71846c"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_094.jpg",
+    "sha256": "8d6faf9c131ab95342f496a8f37257e16c0cadf3172d843bf65a4c51163360ba"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_chineseMat85.jpg",
+    "sha256": "0b7638623b51f942bc3b443e6b0047a7ad3f95894ce2c468d7a838ab280c3822"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_1551.jpg",
+    "sha256": "63cde85da91d2c8551780ca6dd90df40c29f182e4a233e683dac9a124befd287"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_0118.jpg",
+    "sha256": "7d8f88e4d18c35da97d79bdcfd2cf680af966b1803071092e737e958e88a2f40"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_0120.jpg",
+    "sha256": "a8483a83d1c25ff8e8309cafb041b8e1b054fece308fb112c104036641505ec1"
+  },
+  {
+    "char": "湘",
+    "path": "tmp/blue-plate-g1/characters/zh_xiang/debug_char_auxRoi_0117.jpg",
+    "sha256": "8ca1d9ea2eb0b8f77eaae0150e2c0eb7f33ff649a2d2adafe3f8c247a0f8ebb5"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat830.jpg",
+    "sha256": "680625e0af79d3c81c5de3531e69c071ec100e7b9104a85f0ad01421a2a000a6"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat846.jpg",
+    "sha256": "55e48f0fd83d0fd064761b99446c78b569699f4b0483384a3a5a989f79798541"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat843.jpg",
+    "sha256": "ff9bca3413f019e9d66bd95523aa4861a884e8fcbbe3fa69f114727f7055b2ed"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat839.jpg",
+    "sha256": "218097eae2faddbbadf838d84a2dd3262cf0038b4f2811a96555e5fe049e38e7"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat832.jpg",
+    "sha256": "6420714509491538499f598b2d985010dba5577d720baca3830eadfa7d29dc50"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat841.jpg",
+    "sha256": "3f4f92a979f2280938b3c3d9f95991d9c1313756c9cab99de0bda2d233f1cc26"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat828.jpg",
+    "sha256": "75ad0c76f252de3c7cc207ec1e1ea3f83aad4b9648b44e3dee7bfc8274e3b8f6"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat838.jpg",
+    "sha256": "ca0bed0f23d14b0ca3afce38415513e0417edb9f82987e0db00524f7391effdc"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat829.jpg",
+    "sha256": "8a0774c660636d8acd88213c4a071c82c67a86aae80b2bce6fe51377dc53e90a"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat836.jpg",
+    "sha256": "793cea91b1bf1401776c0e8286d95f74bf71f104b3185450a494c6fb3978b3a4"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_chineseMat850.jpg",
+    "sha256": "f4412b77fd0042a20093960486b78e395518eddcf13ffa3b801a65b4c925a87a"
+  },
+  {
+    "char": "新",
+    "path": "tmp/blue-plate-g1/characters/zh_xin/debug_specMat847.jpg",
+    "sha256": "b745d9306ba68a48586f014fbe39db318a7f73f683d399faee7da5965aee13d5"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_char_auxRoi_2373.jpg",
+    "sha256": "8d81a185ca0de493a6376b8f332e82295866461cfb3a32a2f13e00a64077844c"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/73-0.jpg",
+    "sha256": "a206219f983f65ad4045b6c426fb9ae8091ceded6722f6100798401761ca62fc"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_char_auxRoi_2531.jpg",
+    "sha256": "f0ac88f9b16ea510305968b64cb87190ac2062e08b499fb476471b87ddaacd84"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_char_auxRoi_2448.jpg",
+    "sha256": "c8db96092b0cb340802a501b56a3752ac935cb0e3baeb1cdc04a8c332103666b"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_char_auxRoi_2302.jpg",
+    "sha256": "c289c608d0b36463b858264e9b06f3324ee32706d54182f8f463a2060985a1b4"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_chineseMat670.jpg",
+    "sha256": "911d6b17131ab6abcec7f21d1d4840aef1015ba38a36dec52e83bf539e329ead"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/136-0-8.jpg",
+    "sha256": "d87dacdc99f7be8930dcf15bad5549f57369033231be1fbbf4b8a2ecd0a7ee1a"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/1044-0-9.jpg",
+    "sha256": "072084dae5aac61969a9c8ee92dfe45f2bf7bdbca4757f056abb02c73a7495df"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_char_auxRoi_2486.jpg",
+    "sha256": "cfc4cb0f77f4e9e73f5468208eb73fabe3c82d31f3e1b8a8d78e586c00563c4f"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/debug_char_auxRoi_2438.jpg",
+    "sha256": "916ffa8bf1af072f449c1ff02cb388f0e6d8a6fb78f5dd13673a132e7c3d56af"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/1056-0-9.jpg",
+    "sha256": "9ef5c9b2ab43c9555c63f09342359e904c69410ba303675e11e901899585ee81"
+  },
+  {
+    "char": "豫",
+    "path": "tmp/blue-plate-g1/characters/zh_yu/1046-0-9.jpg",
+    "sha256": "f8977871f491c09adbbee7281e72ec12dcffc20c89a24e48f09d9d0bf684fcf7"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat207.jpg",
+    "sha256": "0f089a5d743b1a84e083a1cf9bb3bb06a422de82b8ee15412ff91a1f07eaf527"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat185.jpg",
+    "sha256": "cd419fbafddda49721b1638054e63234bc949e9533b5d5597f467bdc207ca683"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat199.jpg",
+    "sha256": "349fdef37c23e51c4cb5686407a2a10f86c8606dfca4d3ca84494659ef8345e0"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat162.jpg",
+    "sha256": "023796b9e742fff0a264bd614581092ca59994347b2130adf140615e5e5e39c3"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat201.jpg",
+    "sha256": "c4350ad3f74b02a930787bfe0ef8157b346f84c10e25f0f2bba901dae08020e5"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat182.jpg",
+    "sha256": "1b40853ed3de38d1e6a9d41b7358a21dd66ceb123e8b0703b2ce3d04b906b613"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat160.jpg",
+    "sha256": "d328b777c9c6df414eabc37d215230491f7f75eff37a618964754a5b26b02efc"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat164.jpg",
+    "sha256": "b5bece18e087b1609ec7c75d5922aee1627461d0eb7f20ea192321dea9e00ec8"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat168.jpg",
+    "sha256": "9d5a544cdba7b108b6a69eacf1bd58dd675191306f0e998b01a5560958b664e1"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat187.jpg",
+    "sha256": "49de26aa09de6c5191886eaf8183d244b258e2343c3850482603563086d9d228"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat211.jpg",
+    "sha256": "5cc046db56ea206e590fe77a10ab2a39c3af2041956fb8938ef1edeceaab5bfb"
+  },
+  {
+    "char": "渝",
+    "path": "tmp/blue-plate-g1/characters/zh_yu1/debug_chineseMat180.jpg",
+    "sha256": "d0121140ca879d16d405ec405a376532ac8da1c6cf67b577c7e5175ae0def907"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/debug_char_auxRoi_2101.jpg",
+    "sha256": "47f02207384ef7644c597d294d85e88d3c25be7b60379f09acc0c26508270c8a"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/debug_chineseMat705.jpg",
+    "sha256": "796563aee95ea83f168338e6f71f5e5404946b1f1364ec887043a7ea120f2074"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/debug_char_auxRoi_2181.jpg",
+    "sha256": "9bdf0ba2c25c67faa0fa47491c669ace1e4bee006920857a345cc3bc833b34e5"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/963-0-9.jpg",
+    "sha256": "54ec3d8bf042314a92acd4b6f524cf023255bbb1d852c64f0126a3afee090fbf"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/960-0-9.jpg",
+    "sha256": "caf7c9363561e92b55b851bb4e42d9df6d1b84f0e560d0776c58abeefc2a2b01"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/132-0-8.jpg",
+    "sha256": "9ead896eaa44f224f68d2c5298da0c2e4abffbf7730110471dea75e448a47971"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/13-0.jpg",
+    "sha256": "191af06b21529a02411f055026bae80af70c913ec81b1dd2fbc36a7c96e5035f"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/gt_1770_0.jpg",
+    "sha256": "eb1577683e2a2694c5cf38418171fc7c88d70e290eb5bf68ad05782d3a644958"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/962-0-9.jpg",
+    "sha256": "875e7f396960aa8b8905e979e338116c6199f5be37783669fce9fe7c8abb9797"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/319_sun_yue_9.jpg",
+    "sha256": "471f5a6f8b509153bbf6439d4a28a4b35c501a5d92ce9cbff4e75f84f6d9038e"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/debug_char_auxRoi_2210.jpg",
+    "sha256": "c641b14007a430e83cce7bc80a8e808dd31081baae1cefd493d67de58aa33d77"
+  },
+  {
+    "char": "粤",
+    "path": "tmp/blue-plate-g1/characters/zh_yue/debug_char_auxRoi_2187.jpg",
+    "sha256": "10aa617f76425e32b1452c4af5eac804363fff486ff4e3f096d99c5e60445d62"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat7.jpg",
+    "sha256": "841c82eca57272b0162057f26fd3d66356a1a0aa27b473b042e508c026c82178"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat40.jpg",
+    "sha256": "29e41465b96dc7881773bdb0a4c0a0be61208c53cf4d77f4931d8fa171034e7d"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat33.jpg",
+    "sha256": "97e0074101a8222fe6b4c15fc1e86a2bcb27727b247ba56050fc52468b7ef2e1"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat9.jpg",
+    "sha256": "c6cd8522cb81c82c1091fa04241e458617c42ff690faad57d7005162450e998e"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat28.jpg",
+    "sha256": "96426bf27c329de6b543d1510aa9611bccf1577cd1c1fe62cf889e2c65352a0a"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat15.jpg",
+    "sha256": "9cc893294cd2c4b5d58af3f986013652f0d80b39d60535a1cc8746628585fd6a"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat29.jpg",
+    "sha256": "e2b95707782af5fabfd85a3efd8895d3be44adb49121370c6d50134050af5eea"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat17.jpg",
+    "sha256": "058b8c8e041f708a29bee45f7fa620087e495efc582e7a4f18603e7c33191709"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat19.jpg",
+    "sha256": "6eae98df72bdf9fd6ad9367f28d15b4107ec9567e7d8a22daa9de449e45f619e"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat37.jpg",
+    "sha256": "7e57f51acde59a0b5f7b2d6ed9a858de8bf25f3944ee9813122c944250553150"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat12.jpg",
+    "sha256": "91d504400ad1859cc8bb4e1923e2de82391e3e3cd97b9b2054dfcbc341564d79"
+  },
+  {
+    "char": "云",
+    "path": "tmp/blue-plate-g1/characters/zh_yun/debug_chineseMat41.jpg",
+    "sha256": "52b60058873bd495b41a8a0b3743f72191472afb8c8e339547315b1f7957bbb0"
+  },
+  {
+    "char": "藏",
+    "path": "tmp/blue-plate-g1/characters/zh_zang/debug_chineseMat227.jpg",
+    "sha256": "d5d3215da446245778e1724eb7c952e1a277d04e7948922f1ddf49f65a7b29a3"
+  },
+  {
+    "char": "藏",
+    "path": "tmp/blue-plate-g1/characters/zh_zang/debug_chineseMat0.jpg",
+    "sha256": "8e575df66e2a1797f40421a8e5a3fc20141f0d89604f593cd4a9c2767a0d9c86"
+  },
+  {
+    "char": "藏",
+    "path": "tmp/blue-plate-g1/characters/zh_zang/debug_chineseMat221.jpg",
+    "sha256": "15edc272340def363cb1eb0076900c23fd95000d6df5331a64893cbface37e0f"
+  },
+  {
+    "char": "藏",
+    "path": "tmp/blue-plate-g1/characters/zh_zang/debug_chineseMat223.jpg",
+    "sha256": "be3b72632f5847a507e04ba2b42ab1e41fb0a1ad31864b6aaa477bae3df9198c"
+  },
+  {
+    "char": "藏",
+    "path": "tmp/blue-plate-g1/characters/zh_zang/debug_chineseMat4.jpg",
+    "sha256": "d5d3215da446245778e1724eb7c952e1a277d04e7948922f1ddf49f65a7b29a3"
+  },
+  {
+    "char": "藏",
+    "path": "tmp/blue-plate-g1/characters/zh_zang/debug_chineseMat222.jpg",
+    "sha256": "8e575df66e2a1797f40421a8e5a3fc20141f0d89604f593cd4a9c2767a0d9c86"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_884.jpg",
+    "sha256": "03ae4e8325aa835a9e1bfef338f87bc2a82adfd83968dbdb15ac852090bdcbcf"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_913.jpg",
+    "sha256": "7de447b6a98f33dd545dd7c80cb69908ad6791ae4d55f795b6607c5bada8287a"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_932.jpg",
+    "sha256": "b059344cc0fe2fa52a6bd77e1a94177edb6d8e164ab7ae7cf06bc2ec3da02e6e"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/473-6.jpg",
+    "sha256": "91190d4f5cdc4e65a7ef5acfc47e4315d07cf5cb5590635d03f9d1da70f0852b"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/14-0-4.jpg",
+    "sha256": "07732240dea7135d40c1ae2ebf0f0f4c694623918a64ce834db3dff471e2d92a"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/474-0-9.jpg",
+    "sha256": "ccb68a76d25d49fb8def79941c114580653b0e05751761f455db427216ec6219"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/11-0-6.jpg",
+    "sha256": "d5c603403004b941a847d11c42a4dd30e223c065ede45d0394054d52ba39cb86"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_806.jpg",
+    "sha256": "d3afc001a9273e06437573713c236e655bb09c4c5137725261a509465a95aec8"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/71-0-8.jpg",
+    "sha256": "d9fc18d035094c73e16750b428dd999b1188ec6b4f8139820588dd4e1c1522f5"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_851.jpg",
+    "sha256": "e07c6f621982725eaec8e2ad8409328f5fc2e8e703ea1f8b4be5bd91eb156bf3"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/427-0-9.jpg",
+    "sha256": "d6b3e10e9a1f2f0856898f2631f92b67d059b5ddc4c586648a6c637a72cc3988"
+  },
+  {
+    "char": "浙",
+    "path": "tmp/blue-plate-g1/characters/zh_zhe/debug_char_auxRoi_1111.jpg",
+    "sha256": "c0c05f79aa3bfc21ccac663c41bb31d18d35b185e94cc559e5ac075dc49c61b6"
+  }
+]

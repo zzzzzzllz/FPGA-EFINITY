@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "第二版 · 13步循环演示路线",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "output": ".archify/workflow-loop-demo-20261015-214300/loop-demo.html",
+    "legend": {
+      "entries": {
+        "frontend": {
+          "label": "板上演示步骤"
+        },
+        "external": {
+          "label": "人工讲解与提交材料"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "basic",
+      "label": "一 · 基础功能"
+    },
+    {
+      "id": "advanced",
+      "label": "二 · 算法与识别"
+    },
+    {
+      "id": "frames",
+      "label": "三 · DDR 帧功能"
+    },
+    {
+      "id": "proof",
+      "label": "四 · 对比与验收"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "color",
+      "lane": "basic",
+      "col": 0,
+      "type": "frontend",
+      "label": "01 · 彩色原图",
+      "sublabel": "移动测试纸，观察实时画面",
+      "tag": "基础1：采集"
+    },
+    {
+      "id": "gray",
+      "lane": "basic",
+      "col": 1,
+      "type": "frontend",
+      "label": "02 · 灰度画面",
+      "sublabel": "自动转灰度，观察明暗层次",
+      "tag": "基础2：灰度"
+    },
+    {
+      "id": "median",
+      "lane": "basic",
+      "col": 2,
+      "type": "frontend",
+      "label": "03 · 中值去噪",
+      "sublabel": "K2 中值开关 / K3 灰度或边缘对比",
+      "tag": "高阶1：去噪对照"
+    },
+    {
+      "id": "sobel",
+      "lane": "basic",
+      "col": 3,
+      "type": "frontend",
+      "label": "04 · Sobel 边缘",
+      "sublabel": "K2 全屏边缘 / K3 灰度对比",
+      "tag": "基础3、4"
+    },
+    {
+      "id": "threshold",
+      "lane": "advanced",
+      "col": 3,
+      "type": "frontend",
+      "label": "05 · 阈值调节",
+      "sublabel": "K2 降低 / K3 提高阈值",
+      "tag": "高阶2：实时调节"
+    },
+    {
+      "id": "canny",
+      "lane": "advanced",
+      "col": 2,
+      "type": "frontend",
+      "label": "06 · Canny 细边缘",
+      "sublabel": "K2 降低 / K3 提高低阈值比例",
+      "tag": "高阶4：双阈值"
+    },
+    {
+      "id": "overlay",
+      "lane": "advanced",
+      "col": 1,
+      "type": "frontend",
+      "label": "07 · Canny红边叠加",
+      "sublabel": "K2 隐藏 / K3 显示红色边缘",
+      "tag": "高阶5：彩色叠加"
+    },
+    {
+      "id": "shape",
+      "lane": "advanced",
+      "col": 0,
+      "type": "frontend",
+      "label": "08 · 圆形 / 矩形识别",
+      "sublabel": "K2 关闭 / K3 开启识别",
+      "tag": "高阶6：换图验证"
+    },
+    {
+      "id": "freeze",
+      "lane": "frames",
+      "col": 0,
+      "type": "frontend",
+      "label": "09 · 冻结画面",
+      "sublabel": "K2 冻结 / K3 恢复实时",
+      "tag": "高阶3：帧冻结"
+    },
+    {
+      "id": "step",
+      "lane": "frames",
+      "col": 1,
+      "type": "frontend",
+      "label": "10 · 现场单帧更新",
+      "sublabel": "K2 取新帧后冻结 / K3 实时",
+      "tag": "移动物体后再按K2"
+    },
+    {
+      "id": "record",
+      "lane": "frames",
+      "col": 2,
+      "type": "frontend",
+      "label": "11 · 录制32帧",
+      "sublabel": "K3 开始录制 / K2 停止回实时",
+      "tag": "录满自动暂停"
+    },
+    {
+      "id": "play",
+      "lane": "frames",
+      "col": 3,
+      "type": "frontend",
+      "label": "12 · 录像回放 / 逐帧",
+      "sublabel": "K2 播放或暂停 / K3 下一帧",
+      "tag": "须先在11录制"
+    },
+    {
+      "id": "reference",
+      "lane": "proof",
+      "col": 3,
+      "type": "frontend",
+      "label": "13 · 参考帧对比",
+      "sublabel": "K2 保存参考 / K3 清除参考",
+      "tag": "K1 返回01，素材保留"
+    },
+    {
+      "id": "evidence",
+      "lane": "proof",
+      "col": 2,
+      "type": "external",
+      "label": "技术证据",
+      "sublabel": "讲解算法、缓存、时序与验证",
+      "tag": "人工讲解，无板上按钮"
+    },
+    {
+      "id": "finish",
+      "lane": "proof",
+      "col": 1,
+      "type": "external",
+      "label": "材料交付",
+      "sublabel": "提交完整源码、约束和实物视频",
+      "tag": "基础5；核对全部要求"
+    }
+  ],
+  "edges": [
+    {
+      "id": "to_gray",
+      "from": "color",
+      "to": "gray",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_median",
+      "from": "gray",
+      "to": "median",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_sobel",
+      "from": "median",
+      "to": "sobel",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_threshold",
+      "from": "sobel",
+      "to": "threshold",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_canny",
+      "from": "threshold",
+      "to": "canny",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_overlay",
+      "from": "canny",
+      "to": "overlay",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_shape",
+      "from": "overlay",
+      "to": "shape",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_freeze",
+      "from": "shape",
+      "to": "freeze",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_step",
+      "from": "freeze",
+      "to": "step",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_record",
+      "from": "step",
+      "to": "record",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_play",
+      "from": "record",
+      "to": "play",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "to_reference",
+      "from": "play",
+      "to": "reference",
+      "role": "main",
+      "label": "K1",
+      "variant": "emphasis"
+    },
+    {
+      "id": "loop",
+      "from": "reference",
+      "to": "color",
+      "role": "return",
+      "label": "K1 回到彩色",
+      "variant": "emphasis",
+      "route": "auto"
+    },
+    {
+      "id": "to_evidence",
+      "from": "reference",
+      "to": "evidence",
+      "role": "branch",
+      "label": "讲解"
+    },
+    {
+      "id": "to_finish",
+      "from": "evidence",
+      "to": "finish",
+      "role": "branch",
+      "label": "交付"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "一条路线，首尾循环",
+      "items": [
+        "KEY1短按下一步，13后回01彩色；长按约0.8秒上一页，01前回13。KEY0仍是硬件复位。",
+        "每步恢复预设：阈值24，中值关，识别关；06—08采用Canny。等待WAIT消失再操作。01、02的K2/K3无动作。"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "03中值：比较类型与开关分开控制",
+      "items": [
+        "K2开／关中值；K3在灰度／灰度和Sobel边缘／Sobel边缘之间切换，保留中值开关。",
+        "两种对比均为左未去噪、右按开关处理；同一帧、同一阈值，中值关时左右应一致。进入04重新关闭中值。"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "录像和参考跨循环保留",
+      "items": [
+        "11按K3才覆盖录制32帧，12从首帧暂停开始，K2播放／暂停，K3下一帧并暂停。",
+        "13按K2保存／更新参考，K3清除；从13回01再返回13，参考保留。07红边来源明确为Canny。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "演示之外的赛题证据",
+      "items": [
+        "不设实时性能页，也不显示C/P帧率。分辨率、HDMI时序和连续运行稳定性用配置、报告与实物视频验证。",
+        "03中值、05按键阈值、06完整Canny、07叠边、08识别、09—13帧存储覆盖六项高阶要求；人工讲解灰度、行缓存、流水线与DDR，并提交RTL、约束和演示视频。"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "已确认的操作方案",
+      "items": [
+        "本图按本轮确认意见更新，代码及验证状态以第二版循环演示文档为准；图本身不代替实物验收。"
+      ]
+    }
+  ]
+}

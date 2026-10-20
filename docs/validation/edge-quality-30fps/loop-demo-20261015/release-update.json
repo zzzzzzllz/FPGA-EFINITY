@@ -1,0 +1,18 @@
+{
+  "changed_inputs": [
+    "tests/tb_compare_display.v",
+    "tests/tb_edge_ui.v",
+    "rtl/compare_display.v",
+    "rtl/edge_algorithm_pair.v",
+    "rtl/edge_ui.v",
+    "rtl/median_pair.v",
+    "rtl/threshold_osd.v",
+    "rtl/ti60f225_oob_top.v",
+    "control.py",
+    "tests/tb_demo_osd.v"
+  ],
+  "parent_bitstream_sha256": "32c073fae8bac2b4e631fe09f88340bb88fe6ead897fef16cc1d082c4e667d19",
+  "bitstream_sha256": "6dd97ef3ecbd9f3e326b8ff08c381139e7ca27f025e0831a4c232fa183654ece",
+  "build_id": "0x60101502",
+  "acceptance": "pending-user"
+}

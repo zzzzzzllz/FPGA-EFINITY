@@ -8,7 +8,7 @@ module tb_compare_display;
  wire [31:0] out_data,mixed,completed,source_signature;
  integer f,src,dst,x,y,k,sx,sy,sum,ev,cycles;
  reg [31:0] expected,p;
- reg gm=0,em=0,om=0;integer medsum;
+ reg gm=0,em=0,om=0;integer medsum,raw_ev;
  reg [31:0] seed=32'h31415926;
  reg [104:0] descriptor;reg [104:0] expected_descriptor;
  compare_display #(.W(W),.H(H)) dut(clk,rst_n,period,mode,gm,em,om,descriptor,data,valid,in_ready,
@@ -48,11 +48,12 @@ module tb_compare_display;
      end
      else if(y<H/4 || y>=3*H/4) expected=0;
      else begin
-      sx=(x%(W/2))*2;sy=(y-H/4)*2;sum=0;ev=0;medsum=0;
+      sx=(x%(W/2))*2;sy=(y-H/4)*2;sum=0;ev=0;medsum=0;raw_ev=0;
       for(k=0;k<4;k=k+1) begin
-       p=pixel(f+1,sx+k%2,sy+k/2);sum=sum+((f==1 || f==5 || f==7 || f==10)?p[23:16]:luma(p));medsum=medsum+p[15:8];ev=ev|p[31];
+       p=pixel(f+1,sx+k%2,sy+k/2);sum=sum+((f==1 || f==5 || f==7 || f==10)?p[23:16]:luma(p));medsum=medsum+p[15:8];ev=ev|p[31];raw_ev=raw_ev|p[0];
       end
       sum=x<W/2 ? (sum+2)/4 : ((f==1 || f==5 || f==7 || f==10)?(medsum+2)/4:(ev?255:0));
+      if(f==7 || f==10) sum=(x<W/2?raw_ev:ev)?255:0;
       expected={8'd0,{3{8'(sum)}}};
      end
      expected[30:24]=y==0 && x==0 ? 7'(((f+1)*317)%2041) : (y==0 && x==1 ? {1'(f>=6 && f!=7 && f!=8 && f!=10),1'(f==1 || f==5 || f==7 || f==10),1'((f+1)%2),4'((((f+1)*317)%2041)>>7)} : 7'd0);
